@@ -21,3 +21,25 @@ Meanwhile, you can keep contemplating your inputs, keeping in mind that we shall
 Please visit the Hackathon Github page [here](https://github.com/BioinfoNet/OpenScienceKEHackathon) for more information.
 
 You can also follow the [issues](https://github.com/BioinfoNet/OpenScienceKEHackathon/issues) to get a glimpse of the bearing of the discussions on the major topics.
+
+## Some Examples of the current discuss of Open Science in Kenya
+* **Research Papers**: [Open access: academic publishing and its implications for knowledge equity in Kenya](https://www.ncbi.nlm.nih.gov/pmc/articles/PMC4046522/). 
+
+Matheka _et al.,_ 2014. doi:  10.1186/1744-8603-10-26, PubMed ID: 24716579
+
+* **Blogs**: [Training for Open Science in Kenya](https://www.poverty-action.org/blog/training-open-science-kenya), Jennifer Sturdy and Stephanie Wykstra, 2016.
+
+* **Institutional websites**:
+
+  * [COMMISSION FOR UNIVERSITY EDUCATION](http://www.cue.or.ke/index.php/services/library-information-services/open-access-resources), Kenya.
+
+  * [Kenya National Library Service](http://www.knls.ac.ke/index.php/open-access-databases).
+
+  * [AAS Open Research](https://aasopenresearch.org/).
+
+  * [Kenya Education Network - KENET](https://kenet.or.ke/blog/admin/kenet-hosts-open-science-workshop).
+
+  
+* **News Magazines**: [Daily Nation](https://www.nation.co.ke/health/Platform-aims-to-boost-Africas-science-footprint/3476990-4204786-bldbyiz/index.html)
+
+
