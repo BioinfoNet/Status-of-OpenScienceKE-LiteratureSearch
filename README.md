@@ -43,4 +43,6 @@ Matheka _et al.,_ 2014. doi:  10.1186/1744-8603-10-26, PubMed ID: 24716579
   
 * **News Magazines**: [Daily Nation](https://www.nation.co.ke/health/Platform-aims-to-boost-Africas-science-footprint/3476990-4204786-bldbyiz/index.html)
 
+## License
+All content of this repo is released under the [CC-BY 4.0 license](https://creativecommons.org/licenses/by/4.0/legalcode)
 
