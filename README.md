@@ -1,4 +1,5 @@
-# Status-of-OpenScienceKE-LiteratureSearch
+# Status of Open Science in Kenya: Literature Search
+
 The aim of this team is to scan through public databases for literature, or material that would shed light on the adoption and practice of Open Science in Kenya.
 
 Our findings will be organized into a report that will contribute to the greater OpenScienceKE project that is to assess the status of Open Science in Kenya.
