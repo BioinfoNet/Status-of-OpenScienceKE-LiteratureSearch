@@ -1,7 +1,7 @@
 #!/bin/bash
 ### Running for loops with Open Science keywords against the PubMed database ###
 # A count of the PubMed search results for the corresponding keywords
-rm -r keyCounts.txt pmids_all.txt pmids_fa.txt
+rm -r keyCounts.txt testResult_1.txt testResult_2.txt
 for kwd in \
 	"open science"\
 	"open source"\
