@@ -43,7 +43,7 @@ Matheka _et al.,_ 2014. doi:  10.1186/1744-8603-10-26, PubMed ID: 24716579
   
 * **News Magazines**: [Daily Nation](https://www.nation.co.ke/health/Platform-aims-to-boost-Africas-science-footprint/3476990-4204786-bldbyiz/index.html)
 
-## Search Examples
+## In This Repo
 In this repository is also a short code based on the NCBI EDirect tool for PubMed search. A ```Search.md``` file describes the code and two test result files are also included, containing PMIDs for papers that are associated with Kenyan researchers [testResult_1.txt](https://github.com/BioinfoNet/Status-of-OpenScienceKE-LiteratureSearch/blob/master/testResult_1.txt) and/or Kenyan institutions [testResult_2.txt](https://github.com/BioinfoNet/Status-of-OpenScienceKE-LiteratureSearch/blob/master/testResult_2.txt)
 
 ## License
