@@ -63,5 +63,5 @@ done
 echo -e "\nSearch completed!"
 
 # Articles in the Open Access (OA) subset of PubMed Central (PMC)
-# esearch -db pmc -query "$kwd[filter]" | # count: 2110453
+# esearch -db pmc -query "open access[filter]" | 
 # efetch -format xml > pmcOA.txt
