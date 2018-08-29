@@ -1,4 +1,4 @@
-# Potetntial Strategies and Sources for Literature Search
+# Potential Strategies and Sources for Literature Search
 Proper scanning for literature on Open Science in Kenya will require robust search strategies and particular careful choice of keywords.
 
 A great place to start would be the 'Open Science facets as a beehive' from FOSTER (https://www.fosteropenscience.eu/content/what-open-science-introduction)
