@@ -113,7 +113,7 @@ The result of this command is piped into the next command
 ### Printing and saving the PubMed ID of such papers in a pmids.txt file for subsequent abstract/full text retrieval
 
 ```
-$ awk '{print $1}' > pmids_all.txt
+$ awk '{print $1}' > testResult_1.txt
 ```
 
 ### Extracting all PMIDS, Journal titles, the last names of only first authors of each paper, and their respetive affiliations into tab separated columns
@@ -131,7 +131,7 @@ $ grep "Kenya"
 ### Print the PubMed ID of such papers
 
 ```
-$ awk '{print $1}' > pmids_fa.txt
+$ awk '{print $1}' > testResult_2.txt
 
 done
 ```
@@ -143,4 +143,7 @@ $ esearch -db pmc -query "open access[filter]" |
   efetch -format uid > pmcid.txt
 ```
 
-After running this code, we should be able to retrieve the papers in PubMed on Open Science with specific insd
+After running this code, we should be able to retrieve the papers from PubMed.
+
+## Code
+Please refer to the ```Search.sh``` file for the code.
