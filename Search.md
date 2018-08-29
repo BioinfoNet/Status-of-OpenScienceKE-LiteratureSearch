@@ -1,5 +1,5 @@
 # Potential Strategies and Sources for Literature Search
-Proper scanning for literature on Open Science in Kenya will require robust search strategies and particular careful choice of keywords.
+Proper scanning for literature on Open Science in Kenya will require robust search strategies and particularly careful choice of keywords.
 
 A great place to start would be the 'Open Science facets as a beehive' from FOSTER (https://www.fosteropenscience.eu/content/what-open-science-introduction)
 
@@ -8,7 +8,7 @@ A great place to start would be the 'Open Science facets as a beehive' from FOST
 ## Search Terms/Keywords
 Using the Open Science terms on the figure as keywords, we could search various literature databases for Open Science Papers in general.
 
-Then, using specific filters, we could fine tune our search to include only papers published by researchers in Kenyan institutions.
+Then, using specific filters, we could fine-tune our search to include only papers published by researchers in Kenyan institutions.
 
 This may require some processing. You are welcome to suggest advanced search or filter options.
 
@@ -58,7 +58,7 @@ NCBI's EDirect tool for Unix environments can extract valuable information from 
 A count of the PubMed search results for the corresponding keywords
 
 ```
-for kwd in \
+$ for kwd in \
 	"open science" \
 	"open source" \
 	"open data" \
@@ -71,17 +71,17 @@ for kwd in \
 	"open resource" \
 	"citizen science" \
 	"scientific social network"
-do 
+  do 
 	esearch -db pubmed -query "$kwd[keyword]" |
 	efetch -format uid | 
 	wc -l > keyCounts.txt
-done
+  done
 ```
 
 ### Extracting PMIDS, Journal titles, and Author LastNames of each paper, and their respective affiliations into tab separated columns
 
 ```
-for kwd in \
+$ for kwd in \
 	"open science" \
 	"open source" \
 	"open data" \
@@ -94,7 +94,7 @@ for kwd in \
 	"open resource" \
 	"citizen science" \
 	"scientific social network"
-do 
+  do 
 	esearch -db pubmed -query "$kwd[keyword]" |
 	efetch -format xml |
 	xtract -pattern MedlineCitation -sep "\t" -element MedlineCitation/PMID, Journal/Title -block Author -sep "\t" -element LastName, Affiliation |
@@ -105,7 +105,7 @@ The result of this code is piped into the next command
 ### Printing all lines of papers with author affiliations in Kenya. These would represent open science studies with Kenyan affiliate(s) whether conducted at a Kenyan institution or not
 
 ```
-grep "Kenya" | 
+$ grep "Kenya" | 
 ```
 
 The result of this command is piped into the next command
@@ -113,25 +113,25 @@ The result of this command is piped into the next command
 ### Printing and saving the PubMed ID of such papers in a pmids.txt file for subsequent abstract/full text retrieval
 
 ```
-awk '{print $1}' > pmids_all.txt
+$ awk '{print $1}' > pmids_all.txt
 ```
 
 ### Extracting all PMIDS, Journal titles, the last names of only first authors of each paper, and their respetive affiliations into tab separated columns
 
 ```
-xtract -pattern PubmedArticle -sep "\t" -element MedlineCitation/PMID, Journal/Title, -first Author Affiliation |
+$ xtract -pattern PubmedArticle -sep "\t" -element MedlineCitation/PMID, Journal/Title, -first Author Affiliation |
 ```
 
 ### Print only lines with first authors in Kenyan institutions. This would represent Open Science studies conducted at Kenyan institutions
 
 ```
-grep "Kenya"
+$ grep "Kenya"
 ```
 
 ### Print the PubMed ID of such papers
 
 ```
-awk '{print $1}' > pmids_fa.txt
+$ awk '{print $1}' > pmids_fa.txt
 
 done
 ```
@@ -139,8 +139,8 @@ done
 ### Articles in the Open Access (OA) subset of PubMed Central (PMC)
 
 ```
-esearch -db pmc -query "$kwd[filter]" |
-efetch -format uid > pmcid.txt
+$ esearch -db pmc -query "open access[filter]" |
+  efetch -format uid > pmcid.txt
 ```
 
 After running this code, we should be able to retrieve the papers in PubMed on Open Science with specific insd
