@@ -147,3 +147,5 @@ After running this code, we should be able to retrieve the papers from PubMed.
 
 ## Code
 Please refer to the ```Search.sh``` file for the code.
+
+To be able to run this code you will need to install the EDirect tool [here](https://github.com/esohkevin/OpenScienceKEHackathon/blob/master/EDirect.md)
