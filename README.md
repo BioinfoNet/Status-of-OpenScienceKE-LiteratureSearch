@@ -5,13 +5,19 @@ The aim of this team is to scan through public databases for literature, or mate
 Our findings will be organized into a report that will contribute to the greater OpenScienceKE project that is to assess the status of Open Science in Kenya.
 
 ## Members of Our Team
-* Esoh Kevin (Group Leader)(Podcasts)
-* Daniel Ouso (Surveys and Podcasts)
-* Esther Seroney (News Articles)
-* Elizabeth Mwangi (Social Media)
-* Angela Muraya (Institutional Websites)
-* Fredrick Musila ()
-* Kibet Gilbert (Journals)
+* Esoh Kevin (Group Leader)
+  * Activity: Podcasts
+* Daniel Ouso 
+  * Activity: Surveys and Blogs
+* Esther Seroney 
+  * Activity: News Articles
+* Elizabeth Mwangi 
+  * Activity: Social Media
+* Angela Muraya 
+  * Activity: Institutional Websites
+* Fredrick Musila
+* Kibet Gilbert 
+  * Activity: Journals
 * Ronald Tonui
 
 As we prepare to make our big contributions on August 30th and 31st, you are welcome to make inputs/comments.
