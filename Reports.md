@@ -1,3 +1,6 @@
+# The etherpad link
+[Let's meet here](https://public.etherpad-mozilla.org/p/Status-of-OpenScienceKE_Hackathon_KENET18)
+
 # Literature
 ## Searching Google Scholar using keywords
 
