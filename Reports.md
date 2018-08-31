@@ -48,3 +48,5 @@ In 2017, [Sci-GaIA](https://www.youtube.com/playlist?list=PLpDEU1mUCxGa6tLSP-kV0
 "Energising Scientific Endeavour through Science Gateways and e-Infrastructures in Africa" organized a workshop at the Kenyatta University on Open Science.
 
 This brout stakeholders of different fields together in the discuss Open Science in Kenya.
+
+
