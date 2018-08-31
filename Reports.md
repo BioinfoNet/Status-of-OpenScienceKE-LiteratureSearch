@@ -31,6 +31,17 @@ tips](https://www.wur.nl/en/article/Google-Scholar-13-search-tips.htm) and
 [Google search help: Refine web
 searches](https://support.google.com/websearch/answer/2466433)
 
+**For a wider look in the African continent search**
+```
+allintitle:africa("Open data"|"open science"|"open source"|"open
+access"|"open peer review"|"open science"|"open review"|"open notebooks"|"open
+educational resources"|"scientific social network")
+```
+There over 270 resutls of articles with **_africa_** and the keywords in their
+titles.
+
+**[Google search results for
+Africa](https://scholar.google.com/scholar?hl=en&as_sdt=0%2C5&q=allintitle%3Aafrica%28%22Open+data%22%7C%22open+science%22%7C%22open+source%22%7C%22open+access%22%7C%22open+peer+review%22%7C%22open+science%22%7C%22open+review%22%7C%22open+notebooks%22%7C%22open+educational+resources%22%7C%22scientific+social+network%22%29&btnG=)**
 
 # Institutional Websites
 
