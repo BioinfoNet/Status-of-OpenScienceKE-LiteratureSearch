@@ -12,7 +12,7 @@ Definition of open Learning as: Open Learning: The   teaching   method   that   
 independent learning. ODL philosophy is all about removing barriers of acquiring an education e.g distance, age. Learners can study what they want,  when  they  want,  where  they  want  and  at  whatever  age  they  may  wish  to  do  so.  ODL 
 systems  typically  use  technology  to  mediate  learning;  for  example,  printed  study  materials, 
 audio,  computers,  TV,  mobile  and  wire  telephones  and  the  web.  
-ODL  can  give  learners access to education that they would not otherwise have had for various reasons. Principle of providing  education  that  has  open  door  and  alternative  systems  of  entry  to  ensure opportunities for continuous learning. EDUCATION  FOR  MARGINALISED,HARD-TO-REACH AND VULNERABLE GROUPS Promote Open Distance Learning [ODL]using local radio stations and mobile telephony to enhance access. [Link to Education Policy](Link to Policy to Educahttps://www.strathmore.edu/wp-content/uploads/2016/10/sessional_paper_19th_june_nqf.pdf)
+ODL  can  give  learners access to education that they would not otherwise have had for various reasons. Principle of providing  education  that  has  open  door  and  alternative  systems  of  entry  to  ensure opportunities for continuous learning. EDUCATION  FOR  MARGINALISED,HARD-TO-REACH AND VULNERABLE GROUPS Promote Open Distance Learning [ODL]using local radio stations and mobile telephony to enhance access. [Link to Education Policy](https://www.strathmore.edu/wp-content/uploads/2016/10/sessional_paper_19th_june_nqf.pdf)
 
 Kenyatta University Repository
 Advocating for students to observe the Open Science week: affiliating with SPARC. [Link Here](http://library.ku.ac.ke/open-access-week-2017/)
