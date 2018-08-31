@@ -16,6 +16,12 @@ Open Science: [BLOGLINK](https://openscience.com/hybrid-open-access-mega-journal
 * Mentions the efforts of AAS situated in Kenya
 * Thinks the hybrid systems of APC would apply well in Kenya
 
+First OpenCon on OA: [BLOGLINK](https://ocsdnet.org/my-journey-as-opencon-organizer-in-nairobi-advocating-for-open-access-open-data-and-open-education/)
+* I tend to think there are a lot of unconsolidated efforts in OA/OS initiatives that if ammulgamated would greatly benefit the cause
+
+Paper drawing a map of OA adoption in Kenya:[Open access: academic publishing and its implications for knowledge equity in Kenya](https://www.ncbi.nlm.nih.gov/pmc/articles/PMC4046522/)
+* A lot of talk by institutions on OA, recommedations, policy formulation, initiatives etec
+
 # Social Media
 
 
