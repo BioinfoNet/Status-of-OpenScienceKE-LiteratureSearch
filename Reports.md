@@ -13,7 +13,7 @@ You get over **_20,000 articles_** that mention **_kenya and any of the other wo
 
 **To refine the search to _titles only_**
 ```
-alltitle:kenya("Open data"|"open science"|"open source"|"open access"|"open peer
+allintitle:kenya("Open data"|"open science"|"open source"|"open access"|"open peer
 review"|"open science"|"open review"|"open notebooks"|"open educational
 resources"|"scientific social network")
 ```
@@ -37,11 +37,15 @@ allintitle:africa("Open data"|"open science"|"open source"|"open
 access"|"open peer review"|"open science"|"open review"|"open notebooks"|"open
 educational resources"|"scientific social network")
 ```
-There over 270 resutls of articles with **_africa_** and the keywords in their
+There over **_270 results_** of articles with **_africa_** and the keywords in their
 titles.
 
 **[Google search results for
 Africa](https://scholar.google.com/scholar?hl=en&as_sdt=0%2C5&q=allintitle%3Aafrica%28%22Open+data%22%7C%22open+science%22%7C%22open+source%22%7C%22open+access%22%7C%22open+peer+review%22%7C%22open+science%22%7C%22open+review%22%7C%22open+notebooks%22%7C%22open+educational+resources%22%7C%22scientific+social+network%22%29&btnG=)**
+
+## What has been published about Open Science in Kenya.
+
+
 
 # Institutional Websites
 
