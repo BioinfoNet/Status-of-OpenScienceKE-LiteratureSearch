@@ -49,4 +49,4 @@ In 2017, [Sci-GaIA](https://www.youtube.com/playlist?list=PLpDEU1mUCxGa6tLSP-kV0
 
 This brout stakeholders of different fields together in the discuss of Open Science in Kenya.
 
-
+Many African countries have not integrated open source softwares with their library systems. This led Amollo in 2013 to assess the feasibility of adapting open source softwares with Kenya Library services. He found o
