@@ -149,3 +149,5 @@ After running this code, we should be able to retrieve the papers from PubMed.
 Please refer to the ```Search.sh``` file for the code.
 
 To be able to run this code you will need to install the EDirect tool [here](https://github.com/esohkevin/OpenScienceKEHackathon/blob/master/EDirect.md)
+
+learn more about EDirect [here](https://dataguide.nlm.nih.gov/classes/edirect-for-pubmed/materials.html). It includes the course material for several webinars NCBI offered this year.

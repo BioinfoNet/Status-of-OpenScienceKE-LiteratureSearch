@@ -91,6 +91,6 @@ the importance of Open Access, Open Data and Open Education in Kenya were discus
 In 2017, [Sci-GaIA](https://www.youtube.com/playlist?list=PLpDEU1mUCxGa6tLSP-kV0dXpP88XKvmpI), an an EU Horizon 2020 funded project
 "Energising Scientific Endeavour through Science Gateways and e-Infrastructures in Africa" organized a workshop at the Kenyatta University on Open Science.
 
-This brout stakeholders of different fields together in the discuss of Open Science in Kenya.
+This brought stakeholders of different fields together in the discuss of Open Science in Kenya.
 
-Many African countries have not integrated open source softwares with their library systems. This led Amollo in 2013 to assess the feasibility of adapting open source softwares with Kenya Library services. He found o
+Many African countries have not integrated open source softwares with their library systems. This led Amollo in 2013 to assess the feasibility of adapting open source softwares with Kenyan Library services. He found...
