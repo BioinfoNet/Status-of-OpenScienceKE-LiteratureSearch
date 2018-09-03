@@ -1,0 +1,3280 @@
+<?xml version="1.0" ?>
+<!DOCTYPE PubmedArticleSet PUBLIC "-//NLM//DTD PubMedArticle, 1st June 2018//EN" "https://dtd.nlm.nih.gov/ncbi/pubmed/out/pubmed_180601.dtd">
+<PubmedArticleSet>
+<PubmedArticle>
+<MedlineCitation Status="MEDLINE" Owner="NLM">
+<PMID Version="1">26063746</PMID>
+<DateCompleted>
+<Year>2016</Year>
+<Month>10</Month>
+<Day>18</Day>
+</DateCompleted>
+<DateRevised>
+<Year>2018</Year>
+<Month>04</Month>
+<Day>29</Day>
+</DateRevised>
+<Article PubModel="Print-Electronic">
+<Journal>
+<ISSN IssnType="Electronic">1527-974X</ISSN>
+<JournalIssue CitedMedium="Internet">
+<Volume>23</Volume>
+<Issue>1</Issue>
+<PubDate>
+<Year>2016</Year>
+<Month>Jan</Month>
+</PubDate>
+</JournalIssue>
+<Title>Journal of the American Medical Informatics Association : JAMIA</Title>
+<ISOAbbreviation>J Am Med Inform Assoc</ISOAbbreviation>
+</Journal>
+<ArticleTitle>Innovating to enhance clinical data management using non-commercial and open source solutions across a multi-center network supporting inpatient pediatric care and research in Kenya.</ArticleTitle>
+<Pagination>
+<MedlinePgn>184-92</MedlinePgn>
+</Pagination>
+<ELocationID EIdType="doi" ValidYN="Y">10.1093/jamia/ocv028</ELocationID>
+<Abstract>
+<AbstractText Label="OBJECTIVE" NlmCategory="OBJECTIVE">To share approaches and innovations adopted to deliver a relatively inexpensive clinical data management (CDM) framework within a low-income setting that aims to deliver quality pediatric data useful for supporting research, strengthening the information culture and informing improvement efforts in local clinical practice.</AbstractText>
+<AbstractText Label="MATERIALS AND METHODS" NlmCategory="METHODS">The authors implemented a CDM framework to support a Clinical Information Network (CIN) using Research Electronic Data Capture (REDCap), a noncommercial software solution designed for rapid development and deployment of electronic data capture tools. It was used for collection of standardized data from case records of multiple hospitals' pediatric wards. R, an open-source statistical language, was used for data quality enhancement, analysis, and report generation for the hospitals.</AbstractText>
+<AbstractText Label="RESULTS" NlmCategory="RESULTS">In the first year of CIN, the authors have developed innovative solutions to support the implementation of a secure, rapid pediatric data collection system spanning 14 hospital sites with stringent data quality checks. Data have been collated on over 37 000 admission episodes, with considerable improvement in clinical documentation of admissions observed. Using meta-programming techniques in R, coupled with branching logic, randomization, data lookup, and Application Programming Interface (API) features offered by REDCap, CDM tasks were configured and automated to ensure quality data was delivered for clinical improvement and research use.</AbstractText>
+<AbstractText Label="CONCLUSION" NlmCategory="CONCLUSIONS">A low-cost clinically focused but geographically dispersed quality CDM (Clinical Data Management) in a long-term, multi-site, and real world context can be achieved and sustained and challenges can be overcome through thoughtful design and implementation of open-source tools for handling data and supporting research.</AbstractText>
+<CopyrightInformation>© The Author 2015. Published by Oxford University Press on behalf of the American Medical Informatics Association.</CopyrightInformation>
+</Abstract>
+<AuthorList CompleteYN="Y">
+<Author ValidYN="Y">
+<LastName>Tuti</LastName>
+<ForeName>Timothy</ForeName>
+<Initials>T</Initials>
+<AffiliationInfo>
+<Affiliation>KEMRI-Wellcome Trust Research Programme, P. O. Box 43640 - 00100, Nairobi, Kenya TTuti@kemri-wellcome.org.</Affiliation>
+</AffiliationInfo>
+</Author>
+<Author ValidYN="Y">
+<LastName>Bitok</LastName>
+<ForeName>Michael</ForeName>
+<Initials>M</Initials>
+<AffiliationInfo>
+<Affiliation>KEMRI-Wellcome Trust Research Programme, P. O. Box 43640 - 00100, Nairobi, Kenya.</Affiliation>
+</AffiliationInfo>
+</Author>
+<Author ValidYN="Y">
+<LastName>Paton</LastName>
+<ForeName>Chris</ForeName>
+<Initials>C</Initials>
+<AffiliationInfo>
+<Affiliation>Nuffield Department of Medicine, University of Oxford John Radcliffe Hospital, Headington, Oxford, OX3 9DU, UK.</Affiliation>
+</AffiliationInfo>
+</Author>
+<Author ValidYN="Y">
+<LastName>Makone</LastName>
+<ForeName>Boniface</ForeName>
+<Initials>B</Initials>
+<AffiliationInfo>
+<Affiliation>KEMRI-Wellcome Trust Research Programme, P. O. Box 43640 - 00100, Nairobi, Kenya.</Affiliation>
+</AffiliationInfo>
+</Author>
+<Author ValidYN="Y">
+<LastName>Malla</LastName>
+<ForeName>Lucas</ForeName>
+<Initials>L</Initials>
+<AffiliationInfo>
+<Affiliation>KEMRI-Wellcome Trust Research Programme, P. O. Box 43640 - 00100, Nairobi, Kenya.</Affiliation>
+</AffiliationInfo>
+</Author>
+<Author ValidYN="Y">
+<LastName>Muinga</LastName>
+<ForeName>Naomi</ForeName>
+<Initials>N</Initials>
+<AffiliationInfo>
+<Affiliation>KEMRI-Wellcome Trust Research Programme, P. O. Box 43640 - 00100, Nairobi, Kenya.</Affiliation>
+</AffiliationInfo>
+</Author>
+<Author ValidYN="Y">
+<LastName>Gathara</LastName>
+<ForeName>David</ForeName>
+<Initials>D</Initials>
+<AffiliationInfo>
+<Affiliation>KEMRI-Wellcome Trust Research Programme, P. O. Box 43640 - 00100, Nairobi, Kenya.</Affiliation>
+</AffiliationInfo>
+</Author>
+<Author ValidYN="Y">
+<LastName>English</LastName>
+<ForeName>Mike</ForeName>
+<Initials>M</Initials>
+<AffiliationInfo>
+<Affiliation>KEMRI-Wellcome Trust Research Programme, P. O. Box 43640 - 00100, Nairobi, Kenya Nuffield Department of Medicine, University of Oxford John Radcliffe Hospital, Headington, Oxford, OX3 9DU, UK.</Affiliation>
+</AffiliationInfo>
+</Author>
+</AuthorList>
+<Language>eng</Language>
+<GrantList CompleteYN="Y">
+<Grant>
+<GrantID>092654</GrantID>
+<Agency>Wellcome Trust</Agency>
+<Country>United Kingdom</Country>
+</Grant>
+<Grant>
+<GrantID>097170</GrantID>
+<Agency>Wellcome Trust</Agency>
+<Country>United Kingdom</Country>
+</Grant>
+</GrantList>
+<PublicationTypeList>
+<PublicationType UI="D016428">Journal Article</PublicationType>
+<PublicationType UI="D013485">Research Support, Non-U.S. Gov't</PublicationType>
+</PublicationTypeList>
+<ArticleDate DateType="Electronic">
+<Year>2015</Year>
+<Month>06</Month>
+<Day>10</Day>
+</ArticleDate>
+</Article>
+<MedlineJournalInfo>
+<Country>England</Country>
+<MedlineTA>J Am Med Inform Assoc</MedlineTA>
+<NlmUniqueID>9430800</NlmUniqueID>
+<ISSNLinking>1067-5027</ISSNLinking>
+</MedlineJournalInfo>
+<CitationSubset>IM</CitationSubset>
+<CommentsCorrectionsList>
+<CommentsCorrections RefType="Cites">
+<RefSource>J Biomed Inform. 2009 Apr;42(2):377-81</RefSource>
+<PMID Version="1">18929686</PMID>
+</CommentsCorrections>
+<CommentsCorrections RefType="Cites">
+<RefSource>Trop Med Int Health. 2011 Jun;16(6):721-30</RefSource>
+<PMID Version="1">21395928</PMID>
+</CommentsCorrections>
+<CommentsCorrections RefType="Cites">
+<RefSource>J Med Trop. 2012;14(1):1-6</RefSource>
+<PMID Version="1">25243111</PMID>
+</CommentsCorrections>
+<CommentsCorrections RefType="Cites">
+<RefSource>Int J Infect Dis. 2015 Apr;33:109-13</RefSource>
+<PMID Version="1">25281905</PMID>
+</CommentsCorrections>
+<CommentsCorrections RefType="Cites">
+<RefSource>Health Policy Plan. 2005 Nov;20(6):375-84</RefSource>
+<PMID Version="1">16143590</PMID>
+</CommentsCorrections>
+<CommentsCorrections RefType="Cites">
+<RefSource>PLoS One. 2009;4(5):e5483</RefSource>
+<PMID Version="1">19434234</PMID>
+</CommentsCorrections>
+<CommentsCorrections RefType="Cites">
+<RefSource>Malar J. 2004 Mar 3;3:3</RefSource>
+<PMID Version="1">14998435</PMID>
+</CommentsCorrections>
+<CommentsCorrections RefType="Cites">
+<RefSource>BMC Health Serv Res. 2014;14:119</RefSource>
+<PMID Version="1">24613001</PMID>
+</CommentsCorrections>
+<CommentsCorrections RefType="Cites">
+<RefSource>BMC Int Health Hum Rights. 2006 Jul 20;6:9</RefSource>
+<PMID Version="1">16857044</PMID>
+</CommentsCorrections>
+<CommentsCorrections RefType="Cites">
+<RefSource>BMC Pediatr. 2010;10:90</RefSource>
+<PMID Version="1">21144065</PMID>
+</CommentsCorrections>
+<CommentsCorrections RefType="Cites">
+<RefSource>Int J Med Inform. 2005 Jun;74(5):345-55</RefSource>
+<PMID Version="1">15893257</PMID>
+</CommentsCorrections>
+<CommentsCorrections RefType="Cites">
+<RefSource>Proc AMIA Symp. 2002;:792-5</RefSource>
+<PMID Version="1">12463933</PMID>
+</CommentsCorrections>
+<CommentsCorrections RefType="Cites">
+<RefSource>Clin Infect Dis. 2015 Apr 15;60(8):1216-24</RefSource>
+<PMID Version="1">25550349</PMID>
+</CommentsCorrections>
+<CommentsCorrections RefType="Cites">
+<RefSource>Implement Sci. 2011;6:124</RefSource>
+<PMID Version="1">22132875</PMID>
+</CommentsCorrections>
+<CommentsCorrections RefType="Cites">
+<RefSource>BMC Pediatr. 2012;12:1</RefSource>
+<PMID Version="1">22208358</PMID>
+</CommentsCorrections>
+<CommentsCorrections RefType="Cites">
+<RefSource>PLoS Negl Trop Dis. 2014 Sep 11;8(9):e3134</RefSource>
+<PMID Version="1">25210976</PMID>
+</CommentsCorrections>
+<CommentsCorrections RefType="Cites">
+<RefSource>Arch Dis Child. 2015 Jan;100(1):42-7</RefSource>
+<PMID Version="1">25138104</PMID>
+</CommentsCorrections>
+<CommentsCorrections RefType="Cites">
+<RefSource>JACC Cardiovasc Interv. 2008 Jun;1(3):211-7</RefSource>
+<PMID Version="1">19463302</PMID>
+</CommentsCorrections>
+<CommentsCorrections RefType="Cites">
+<RefSource>PLoS Med. 2011 Apr;8(4):e1001018</RefSource>
+<PMID Version="1">21483712</PMID>
+</CommentsCorrections>
+<CommentsCorrections RefType="Cites">
+<RefSource>Int J Med Inform. 2000 Oct;60(1):21-8</RefSource>
+<PMID Version="1">10974639</PMID>
+</CommentsCorrections>
+<CommentsCorrections RefType="Cites">
+<RefSource>BMC Health Serv Res. 2014;14 Suppl 1:S2</RefSource>
+<PMID Version="1">25079241</PMID>
+</CommentsCorrections>
+</CommentsCorrectionsList>
+<MeshHeadingList>
+<MeshHeading>
+<DescriptorName UI="D035843" MajorTopicYN="Y">Biomedical Research</DescriptorName>
+</MeshHeading>
+<MeshHeading>
+<DescriptorName UI="D002648" MajorTopicYN="N">Child</DescriptorName>
+</MeshHeading>
+<MeshHeading>
+<DescriptorName UI="D002986" MajorTopicYN="N">Clinical Trials as Topic</DescriptorName>
+</MeshHeading>
+<MeshHeading>
+<DescriptorName UI="D003625" MajorTopicYN="N">Data Collection</DescriptorName>
+<QualifierName UI="Q000379" MajorTopicYN="Y">methods</QualifierName>
+</MeshHeading>
+<MeshHeading>
+<DescriptorName UI="D006760" MajorTopicYN="N">Hospitalization</DescriptorName>
+</MeshHeading>
+<MeshHeading>
+<DescriptorName UI="D006801" MajorTopicYN="N">Humans</DescriptorName>
+</MeshHeading>
+<MeshHeading>
+<DescriptorName UI="D016247" MajorTopicYN="N">Information Storage and Retrieval</DescriptorName>
+<QualifierName UI="Q000379" MajorTopicYN="N">methods</QualifierName>
+</MeshHeading>
+<MeshHeading>
+<DescriptorName UI="D007630" MajorTopicYN="N">Kenya</DescriptorName>
+</MeshHeading>
+<MeshHeading>
+<DescriptorName UI="D010067" MajorTopicYN="N">Ownership</DescriptorName>
+</MeshHeading>
+<MeshHeading>
+<DescriptorName UI="D010372" MajorTopicYN="Y">Pediatrics</DescriptorName>
+</MeshHeading>
+<MeshHeading>
+<DescriptorName UI="D012984" MajorTopicYN="Y">Software</DescriptorName>
+</MeshHeading>
+</MeshHeadingList>
+<OtherID Source="NLM">EMS65061</OtherID>
+<KeywordList Owner="NOTNLM">
+<Keyword MajorTopicYN="N">clinical data management</Keyword>
+<Keyword MajorTopicYN="N">clinical research</Keyword>
+<Keyword MajorTopicYN="N">metaprogramming</Keyword>
+<Keyword MajorTopicYN="N">open source</Keyword>
+<Keyword MajorTopicYN="N">quality assurance</Keyword>
+</KeywordList>
+</MedlineCitation>
+<PubmedData>
+<History>
+<PubMedPubDate PubStatus="received">
+<Year>2014</Year>
+<Month>12</Month>
+<Day>11</Day>
+</PubMedPubDate>
+<PubMedPubDate PubStatus="accepted">
+<Year>2015</Year>
+<Month>03</Month>
+<Day>08</Day>
+</PubMedPubDate>
+<PubMedPubDate PubStatus="entrez">
+<Year>2015</Year>
+<Month>6</Month>
+<Day>12</Day>
+<Hour>6</Hour>
+<Minute>0</Minute>
+</PubMedPubDate>
+<PubMedPubDate PubStatus="pubmed">
+<Year>2015</Year>
+<Month>6</Month>
+<Day>13</Day>
+<Hour>6</Hour>
+<Minute>0</Minute>
+</PubMedPubDate>
+<PubMedPubDate PubStatus="medline">
+<Year>2016</Year>
+<Month>10</Month>
+<Day>19</Day>
+<Hour>6</Hour>
+<Minute>0</Minute>
+</PubMedPubDate>
+</History>
+<PublicationStatus>ppublish</PublicationStatus>
+<ArticleIdList>
+<ArticleId IdType="pubmed">26063746</ArticleId>
+<ArticleId IdType="pii">ocv028</ArticleId>
+<ArticleId IdType="doi">10.1093/jamia/ocv028</ArticleId>
+<ArticleId IdType="pmc">PMC4681113</ArticleId>
+<ArticleId IdType="mid">EMS65061</ArticleId>
+</ArticleIdList>
+</PubmedData>
+</PubmedArticle>
+
+
+<PubmedArticle>
+<MedlineCitation Status="MEDLINE" Owner="NLM">
+<PMID Version="1">26327966</PMID>
+<DateCompleted>
+<Year>2016</Year>
+<Month>06</Month>
+<Day>01</Day>
+</DateCompleted>
+<DateRevised>
+<Year>2015</Year>
+<Month>09</Month>
+<Day>05</Day>
+</DateRevised>
+<Article PubModel="Electronic-eCollection">
+<Journal>
+<ISSN IssnType="Electronic">1937-8688</ISSN>
+<JournalIssue CitedMedium="Internet">
+<Volume>21</Volume>
+<PubDate>
+<Year>2015</Year>
+</PubDate>
+</JournalIssue>
+<Title>The Pan African medical journal</Title>
+<ISOAbbreviation>Pan Afr Med J</ISOAbbreviation>
+</Journal>
+<ArticleTitle>Open access, open education resources and open data in Uganda.</ArticleTitle>
+<Pagination>
+<MedlinePgn>129</MedlinePgn>
+</Pagination>
+<ELocationID EIdType="doi" ValidYN="Y">10.11604/pamj.2015.21.129.6325</ELocationID>
+<Abstract>
+<AbstractText>As a follow up to OpenCon 2014, International Federation of Medical Students' Associations (IFMSA) students organized a 3 day workshop Open Access, Open Education Resources and Open Data in Kampala from 15-18 December 2014. One of the aims of the workshop was to engage the Open Access movement in Uganda which encompasses the scientific community, librarians, academia, researchers and students. The IFMSA students held the workshop with the support of: Consortium for Uganda University Libraries (CUUL), The Right to Research Coalition, Electronic Information for Libraries (EIFL), Makerere University, International Health Sciences University (IHSU), Pan African Medical Journal (PAMJ) and the Centre for Health Human Rights and Development (CEHURD). All these organizations are based or have offices in Kampala. The event culminated in a meeting with the Science and Technology Committee of Parliament of Uganda in order to receive the support of the Ugandan Members of Parliament and to make a concrete change for Open Access in the country.</AbstractText>
+</Abstract>
+<AuthorList CompleteYN="Y">
+<Author ValidYN="Y">
+<LastName>Salvo</LastName>
+<ForeName>Ivana Di</ForeName>
+<Initials>ID</Initials>
+<AffiliationInfo>
+<Affiliation>International Federation of Medical Students' Associations ; University of Pavia, Italia.</Affiliation>
+</AffiliationInfo>
+</Author>
+<Author ValidYN="Y">
+<LastName>Mwoka</LastName>
+<ForeName>Meggie</ForeName>
+<Initials>M</Initials>
+<AffiliationInfo>
+<Affiliation>International Federation of Medical Students' Associations ; University of Nairobi, Kenya.</Affiliation>
+</AffiliationInfo>
+</Author>
+<Author ValidYN="Y">
+<LastName>Kwaga</LastName>
+<ForeName>Teddy</ForeName>
+<Initials>T</Initials>
+<AffiliationInfo>
+<Affiliation>International Federation of Medical Students' Associations ; Mbarara University of Science and Technology, Uganda.</Affiliation>
+</AffiliationInfo>
+</Author>
+<Author ValidYN="Y">
+<LastName>Rukundo</LastName>
+<ForeName>Priscilla Aceng</ForeName>
+<Initials>PA</Initials>
+<AffiliationInfo>
+<Affiliation>International Federation of Medical Students' Associations ; Mbarara University of Science and Technology, Uganda.</Affiliation>
+</AffiliationInfo>
+</Author>
+<Author ValidYN="Y">
+<LastName>Ernest</LastName>
+<ForeName>Dennis Ssesanga</ForeName>
+<Initials>DS</Initials>
+<AffiliationInfo>
+<Affiliation>International Federation of Medical Students' Associations ; International University of Health Sciences.</Affiliation>
+</AffiliationInfo>
+</Author>
+<Author ValidYN="Y">
+<LastName>Osaheni</LastName>
+<ForeName>Louis Aikoriogie</ForeName>
+<Initials>LA</Initials>
+<AffiliationInfo>
+<Affiliation>International Federation of Medical Students' Associations ; University of Benin, Benin.</Affiliation>
+</AffiliationInfo>
+</Author>
+<Author ValidYN="Y">
+<LastName>John</LastName>
+<ForeName>Kasibante</ForeName>
+<Initials>K</Initials>
+<AffiliationInfo>
+<Affiliation>International Federation of Medical Students' Associations ; Gulu University, Uganda.</Affiliation>
+</AffiliationInfo>
+</Author>
+<Author ValidYN="Y">
+<LastName>Shafik</LastName>
+<ForeName>Kasirye</ForeName>
+<Initials>K</Initials>
+<AffiliationInfo>
+<Affiliation>International Federation of Medical Students' Associations ; Gulu University, Uganda.</Affiliation>
+</AffiliationInfo>
+</Author>
+<Author ValidYN="Y">
+<LastName>de Sousa</LastName>
+<ForeName>Agostinho Moreira</ForeName>
+<Initials>AM</Initials>
+<AffiliationInfo>
+<Affiliation>International Federation of Medical Students' Associations ; Universidad do Porto, Portugal.</Affiliation>
+</AffiliationInfo>
+</Author>
+</AuthorList>
+<Language>eng</Language>
+<PublicationTypeList>
+<PublicationType UI="D016428">Journal Article</PublicationType>
+</PublicationTypeList>
+<ArticleDate DateType="Electronic">
+<Year>2015</Year>
+<Month>06</Month>
+<Day>16</Day>
+</ArticleDate>
+</Article>
+<MedlineJournalInfo>
+<Country>Uganda</Country>
+<MedlineTA>Pan Afr Med J</MedlineTA>
+<NlmUniqueID>101517926</NlmUniqueID>
+</MedlineJournalInfo>
+<CitationSubset>IM</CitationSubset>
+<MeshHeadingList>
+<MeshHeading>
+<DescriptorName UI="D022126" MajorTopicYN="Y">Access to Information</DescriptorName>
+</MeshHeading>
+<MeshHeading>
+<DescriptorName UI="D004501" MajorTopicYN="N">Education, Medical</DescriptorName>
+<QualifierName UI="Q000458" MajorTopicYN="Y">organization &amp; administration</QualifierName>
+</MeshHeading>
+<MeshHeading>
+<DescriptorName UI="D006801" MajorTopicYN="N">Humans</DescriptorName>
+</MeshHeading>
+<MeshHeading>
+<DescriptorName UI="D007390" MajorTopicYN="N">International Agencies</DescriptorName>
+</MeshHeading>
+<MeshHeading>
+<DescriptorName UI="D013337" MajorTopicYN="Y">Students, Medical</DescriptorName>
+</MeshHeading>
+<MeshHeading>
+<DescriptorName UI="D014454" MajorTopicYN="N" Type="Geographic">Uganda</DescriptorName>
+</MeshHeading>
+</MeshHeadingList>
+<KeywordList Owner="NOTNLM">
+<Keyword MajorTopicYN="N">Open Access</Keyword>
+<Keyword MajorTopicYN="N">medical journals</Keyword>
+<Keyword MajorTopicYN="N">medical students</Keyword>
+</KeywordList>
+</MedlineCitation>
+<PubmedData>
+<History>
+<PubMedPubDate PubStatus="received">
+<Year>2015</Year>
+<Month>02</Month>
+<Day>12</Day>
+</PubMedPubDate>
+<PubMedPubDate PubStatus="accepted">
+<Year>2015</Year>
+<Month>02</Month>
+<Day>26</Day>
+</PubMedPubDate>
+<PubMedPubDate PubStatus="entrez">
+<Year>2015</Year>
+<Month>9</Month>
+<Day>2</Day>
+<Hour>6</Hour>
+<Minute>0</Minute>
+</PubMedPubDate>
+<PubMedPubDate PubStatus="pubmed">
+<Year>2015</Year>
+<Month>9</Month>
+<Day>4</Day>
+<Hour>6</Hour>
+<Minute>0</Minute>
+</PubMedPubDate>
+<PubMedPubDate PubStatus="medline">
+<Year>2016</Year>
+<Month>6</Month>
+<Day>2</Day>
+<Hour>6</Hour>
+<Minute>0</Minute>
+</PubMedPubDate>
+</History>
+<PublicationStatus>epublish</PublicationStatus>
+<ArticleIdList>
+<ArticleId IdType="pubmed">26327966</ArticleId>
+<ArticleId IdType="doi">10.11604/pamj.2015.21.129.6325</ArticleId>
+<ArticleId IdType="pii">PAMJ-21-129</ArticleId>
+<ArticleId IdType="pmc">PMC4546711</ArticleId>
+</ArticleIdList>
+</PubmedData>
+</PubmedArticle>
+
+
+<PubmedArticle>
+<MedlineCitation Status="MEDLINE" Owner="NLM">
+<PMID Version="1">27217873</PMID>
+<DateCompleted>
+<Year>2017</Year>
+<Month>01</Month>
+<Day>17</Day>
+</DateCompleted>
+<DateRevised>
+<Year>2017</Year>
+<Month>01</Month>
+<Day>17</Day>
+</DateRevised>
+<Article PubModel="Electronic-eCollection">
+<Journal>
+<ISSN IssnType="Electronic">1937-8688</ISSN>
+<JournalIssue CitedMedium="Internet">
+<Volume>23</Volume>
+<PubDate>
+<Year>2016</Year>
+</PubDate>
+</JournalIssue>
+<Title>The Pan African medical journal</Title>
+<ISOAbbreviation>Pan Afr Med J</ISOAbbreviation>
+</Journal>
+<ArticleTitle>The Pan African Medical Journal 2015--A year in review.</ArticleTitle>
+<Pagination>
+<MedlinePgn>47</MedlinePgn>
+</Pagination>
+<ELocationID EIdType="doi" ValidYN="Y">10.11604/pamj.2016.23.47.8934</ELocationID>
+<AuthorList CompleteYN="Y">
+<Author ValidYN="Y">
+<LastName>Kamadjeu</LastName>
+<ForeName>Raoul</ForeName>
+<Initials>R</Initials>
+<AffiliationInfo>
+<Affiliation>Managing Editor, the Pan African Medical Journal, Nairobi, Kenya.</Affiliation>
+</AffiliationInfo>
+</Author>
+</AuthorList>
+<Language>eng</Language>
+<PublicationTypeList>
+<PublicationType UI="D016428">Journal Article</PublicationType>
+</PublicationTypeList>
+<ArticleDate DateType="Electronic">
+<Year>2016</Year>
+<Month>02</Month>
+<Day>19</Day>
+</ArticleDate>
+</Article>
+<MedlineJournalInfo>
+<Country>Uganda</Country>
+<MedlineTA>Pan Afr Med J</MedlineTA>
+<NlmUniqueID>101517926</NlmUniqueID>
+</MedlineJournalInfo>
+<CitationSubset>IM</CitationSubset>
+<CommentsCorrectionsList>
+<CommentsCorrections RefType="Cites">
+<RefSource>J Med Libr Assoc. 2009 Oct;97(4):241-3; author reply 243</RefSource>
+<PMID Version="1">19851485</PMID>
+</CommentsCorrections>
+<CommentsCorrections RefType="Cites">
+<RefSource>PLoS One. 2010;5(6):e11273</RefSource>
+<PMID Version="1">20585653</PMID>
+</CommentsCorrections>
+</CommentsCorrectionsList>
+<MeshHeadingList>
+<MeshHeading>
+<DescriptorName UI="D006801" MajorTopicYN="N">Humans</DescriptorName>
+</MeshHeading>
+<MeshHeading>
+<DescriptorName UI="D066295" MajorTopicYN="Y">Open Access Publishing</DescriptorName>
+</MeshHeading>
+<MeshHeading>
+<DescriptorName UI="D010506" MajorTopicYN="N">Periodicals as Topic</DescriptorName>
+<QualifierName UI="Q000706" MajorTopicYN="Y">statistics &amp; numerical data</QualifierName>
+</MeshHeading>
+</MeshHeadingList>
+<KeywordList Owner="NOTNLM">
+<Keyword MajorTopicYN="N">Africa</Keyword>
+<Keyword MajorTopicYN="N">Publishing</Keyword>
+<Keyword MajorTopicYN="N">medical journal</Keyword>
+<Keyword MajorTopicYN="N">open access</Keyword>
+</KeywordList>
+</MedlineCitation>
+<PubmedData>
+<History>
+<PubMedPubDate PubStatus="received">
+<Year>2016</Year>
+<Month>01</Month>
+<Day>24</Day>
+</PubMedPubDate>
+<PubMedPubDate PubStatus="accepted">
+<Year>2016</Year>
+<Month>02</Month>
+<Day>02</Day>
+</PubMedPubDate>
+<PubMedPubDate PubStatus="entrez">
+<Year>2016</Year>
+<Month>5</Month>
+<Day>25</Day>
+<Hour>6</Hour>
+<Minute>0</Minute>
+</PubMedPubDate>
+<PubMedPubDate PubStatus="pubmed">
+<Year>2016</Year>
+<Month>5</Month>
+<Day>25</Day>
+<Hour>6</Hour>
+<Minute>0</Minute>
+</PubMedPubDate>
+<PubMedPubDate PubStatus="medline">
+<Year>2017</Year>
+<Month>1</Month>
+<Day>18</Day>
+<Hour>6</Hour>
+<Minute>0</Minute>
+</PubMedPubDate>
+</History>
+<PublicationStatus>epublish</PublicationStatus>
+<ArticleIdList>
+<ArticleId IdType="pubmed">27217873</ArticleId>
+<ArticleId IdType="doi">10.11604/pamj.2016.23.47.8934</ArticleId>
+<ArticleId IdType="pii">PAMJ-23-47</ArticleId>
+<ArticleId IdType="pmc">PMC4862792</ArticleId>
+</ArticleIdList>
+</PubmedData>
+</PubmedArticle>
+
+
+<PubmedArticle>
+<MedlineCitation Status="MEDLINE" Owner="NLM">
+<PMID Version="1">27439397</PMID>
+<DateCompleted>
+<Year>2017</Year>
+<Month>10</Month>
+<Day>04</Day>
+</DateCompleted>
+<DateRevised>
+<Year>2018</Year>
+<Month>07</Month>
+<Day>20</Day>
+</DateRevised>
+<Article PubModel="Electronic">
+<Journal>
+<ISSN IssnType="Electronic">1472-6947</ISSN>
+<JournalIssue CitedMedium="Internet">
+<Volume>16</Volume>
+<PubDate>
+<Year>2016</Year>
+<Month>07</Month>
+<Day>20</Day>
+</PubDate>
+</JournalIssue>
+<Title>BMC medical informatics and decision making</Title>
+<ISOAbbreviation>BMC Med Inform Decis Mak</ISOAbbreviation>
+</Journal>
+<ArticleTitle>Surveillance of HIV assisted partner services using routine health information systems in Kenya.</ArticleTitle>
+<Pagination>
+<MedlinePgn>97</MedlinePgn>
+</Pagination>
+<ELocationID EIdType="doi" ValidYN="Y">10.1186/s12911-016-0337-9</ELocationID>
+<Abstract>
+<AbstractText Label="BACKGROUND">The utilization of routine health information systems (HIS) for surveillance of assisted partner services (aPS) for HIV in sub-Saharan is sub-optimal, in part due to poor data quality and limited use of information technology. Consequently, little is known about coverage, scope and quality of HIV aPS. Yet, affordable electronic data tools, software and data transmission infrastructure are now widely accessible in sub-Saharan Africa.</AbstractText>
+<AbstractText Label="METHODS">We designed and implemented a cased-based surveillance system using the HIV testing platform in 18 health facilities in Kenya. The components of this system included an electronic HIV Testing and Counseling (HTC) intake form, data transmission on the Global Systems for Mobile Communication (GSM), and data collection using the Open Data Kit (ODK) platform. We defined rates of new HIV diagnoses, and characterized HIV-infected cases. We also determined the proportion of clients who reported testing for HIV because a) they were notified by a sexual partner b) they were notified by a health provider, or c) they were informed of exposure by another other source. Data collection times were evaluated.</AbstractText>
+<AbstractText Label="RESULTS">Among 4351 clients, HIV prevalence was 14.2 %, ranging from 4.4-25.4 % across facilities. Regardless of other reasons for testing, only 107 (2.5 %) of all participants reported testing after being notified by a health provider or sexual partner. A similar proportion, 1.8 % (79 of 4351), reported partner notification as the only reason for seeking an HIV test. Among 79 clients who reported HIV partner services as the reason for testing, the majority (78.5 %), were notified by their sexual partners. The majority (52.8 %) of HIV-infected patients initiated their HIV testing, and 57.2 % tested in a Voluntary Counseling and Testing (VCT) site co-located in a health facility. Median time for data capture was 4 min (IQR: 3-15), with a longer duration for HIV-infected participants, and there was no reported data loss.</AbstractText>
+<AbstractText Label="CONCLUSION">aPS surveillance using new technologies is feasible, and could be readily expanded into HIV registries in Kenya and other sub-Saharan countries. Partner services are under-utilized in Kenya but further documentation of coverage and implementation gaps for HIV and aPS services is required.</AbstractText>
+</Abstract>
+<AuthorList CompleteYN="Y">
+<Author ValidYN="Y">
+<LastName>Cherutich</LastName>
+<ForeName>Peter</ForeName>
+<Initials>P</Initials>
+<AffiliationInfo>
+<Affiliation>Ministry of Health, Nairobi, Kenya. pcheru@uw.edu.</Affiliation>
+</AffiliationInfo>
+<AffiliationInfo>
+<Affiliation>National AIDS/STI Control Programme (NASCOP), Kenyatta Hospital Grounds, off Hospital Road, Nairobi, Kenya. pcheru@uw.edu.</Affiliation>
+</AffiliationInfo>
+</Author>
+<Author ValidYN="Y">
+<LastName>Golden</LastName>
+<ForeName>Matthew</ForeName>
+<Initials>M</Initials>
+<AffiliationInfo>
+<Affiliation>University of Washington, Seattle, USA.</Affiliation>
+</AffiliationInfo>
+</Author>
+<Author ValidYN="Y">
+<LastName>Betz</LastName>
+<ForeName>Bourke</ForeName>
+<Initials>B</Initials>
+<AffiliationInfo>
+<Affiliation>University of Washington, Seattle, USA.</Affiliation>
+</AffiliationInfo>
+</Author>
+<Author ValidYN="Y">
+<LastName>Wamuti</LastName>
+<ForeName>Beatrice</ForeName>
+<Initials>B</Initials>
+<AffiliationInfo>
+<Affiliation>Kenyatta National Hospital, Nairobi, Kenya.</Affiliation>
+</AffiliationInfo>
+</Author>
+<Author ValidYN="Y">
+<LastName>Ng'ang'a</LastName>
+<ForeName>Anne</ForeName>
+<Initials>A</Initials>
+<AffiliationInfo>
+<Affiliation>Ministry of Health, Nairobi, Kenya.</Affiliation>
+</AffiliationInfo>
+</Author>
+<Author ValidYN="Y">
+<LastName>Maingi</LastName>
+<ForeName>Peter</ForeName>
+<Initials>P</Initials>
+<AffiliationInfo>
+<Affiliation>Kenyatta National Hospital, Nairobi, Kenya.</Affiliation>
+</AffiliationInfo>
+</Author>
+<Author ValidYN="Y">
+<LastName>Macharia</LastName>
+<ForeName>Paul</ForeName>
+<Initials>P</Initials>
+<AffiliationInfo>
+<Affiliation>Ministry of Health, Nairobi, Kenya.</Affiliation>
+</AffiliationInfo>
+</Author>
+<Author ValidYN="Y">
+<LastName>Sambai</LastName>
+<ForeName>Betsy</ForeName>
+<Initials>B</Initials>
+<AffiliationInfo>
+<Affiliation>Kenyatta National Hospital, Nairobi, Kenya.</Affiliation>
+</AffiliationInfo>
+</Author>
+<Author ValidYN="Y">
+<LastName>Abuna</LastName>
+<ForeName>Felix</ForeName>
+<Initials>F</Initials>
+<AffiliationInfo>
+<Affiliation>Kenyatta National Hospital, Nairobi, Kenya.</Affiliation>
+</AffiliationInfo>
+</Author>
+<Author ValidYN="Y">
+<LastName>Bukusi</LastName>
+<ForeName>David</ForeName>
+<Initials>D</Initials>
+<AffiliationInfo>
+<Affiliation>Kenyatta National Hospital, Nairobi, Kenya.</Affiliation>
+</AffiliationInfo>
+</Author>
+<Author ValidYN="Y">
+<LastName>Dunbar</LastName>
+<ForeName>Mathew</ForeName>
+<Initials>M</Initials>
+<AffiliationInfo>
+<Affiliation>University of Washington, Seattle, USA.</Affiliation>
+</AffiliationInfo>
+</Author>
+<Author ValidYN="Y">
+<LastName>Farquhar</LastName>
+<ForeName>Carey</ForeName>
+<Initials>C</Initials>
+<AffiliationInfo>
+<Affiliation>University of Washington, Seattle, USA.</Affiliation>
+</AffiliationInfo>
+</Author>
+</AuthorList>
+<Language>eng</Language>
+<GrantList CompleteYN="Y">
+<Grant>
+<GrantID>K24 AI087399</GrantID>
+<Acronym>AI</Acronym>
+<Agency>NIAID NIH HHS</Agency>
+<Country>United States</Country>
+</Grant>
+<Grant>
+<GrantID>R01 AI099974</GrantID>
+<Acronym>AI</Acronym>
+<Agency>NIAID NIH HHS</Agency>
+<Country>United States</Country>
+</Grant>
+<Grant>
+<GrantID>R24 HD042828</GrantID>
+<Acronym>HD</Acronym>
+<Agency>NICHD NIH HHS</Agency>
+<Country>United States</Country>
+</Grant>
+</GrantList>
+<PublicationTypeList>
+<PublicationType UI="D016428">Journal Article</PublicationType>
+<PublicationType UI="D052061">Research Support, N.I.H., Extramural</PublicationType>
+</PublicationTypeList>
+<ArticleDate DateType="Electronic">
+<Year>2016</Year>
+<Month>07</Month>
+<Day>20</Day>
+</ArticleDate>
+</Article>
+<MedlineJournalInfo>
+<Country>England</Country>
+<MedlineTA>BMC Med Inform Decis Mak</MedlineTA>
+<NlmUniqueID>101088682</NlmUniqueID>
+<ISSNLinking>1472-6947</ISSNLinking>
+</MedlineJournalInfo>
+<CitationSubset>IM</CitationSubset>
+<CommentsCorrectionsList>
+<CommentsCorrections RefType="Cites">
+<RefSource>Implement Sci. 2015 Feb 13;10:23</RefSource>
+<PMID Version="1">25884936</PMID>
+</CommentsCorrections>
+<CommentsCorrections RefType="Cites">
+<RefSource>Lancet. 2010 Aug 14;376(9740):532-9</RefSource>
+<PMID Version="1">20638713</PMID>
+</CommentsCorrections>
+<CommentsCorrections RefType="Cites">
+<RefSource>J Acquir Immune Defic Syndr. 2014 May 1;66 Suppl 1:S3-12</RefSource>
+<PMID Version="1">24732819</PMID>
+</CommentsCorrections>
+<CommentsCorrections RefType="Cites">
+<RefSource>PLoS Med. 2010 Jan 26;7(1):e1000223</RefSource>
+<PMID Version="1">20126260</PMID>
+</CommentsCorrections>
+<CommentsCorrections RefType="Cites">
+<RefSource>BMC Med Inform Decis Mak. 2009 Dec 23;9:51</RefSource>
+<PMID Version="1">20030813</PMID>
+</CommentsCorrections>
+<CommentsCorrections RefType="Cites">
+<RefSource>BMC Med Inform Decis Mak. 2008 Mar 19;8:11</RefSource>
+<PMID Version="1">18366687</PMID>
+</CommentsCorrections>
+<CommentsCorrections RefType="Cites">
+<RefSource>Lancet. 2012 Jul 28;380(9839):367-77</RefSource>
+<PMID Version="1">22819660</PMID>
+</CommentsCorrections>
+<CommentsCorrections RefType="Cites">
+<RefSource>Sex Transm Dis. 1990 Apr-Jun;17(2):113-4</RefSource>
+<PMID Version="1">2360130</PMID>
+</CommentsCorrections>
+<CommentsCorrections RefType="Cites">
+<RefSource>J Acquir Immune Defic Syndr. 2011 Apr 15;56(5):437-42</RefSource>
+<PMID Version="1">22046601</PMID>
+</CommentsCorrections>
+<CommentsCorrections RefType="Cites">
+<RefSource>Health Policy Plan. 2016 Feb;31(1):129-35</RefSource>
+<PMID Version="1">25887561</PMID>
+</CommentsCorrections>
+<CommentsCorrections RefType="Cites">
+<RefSource>Sex Transm Dis. 2005 Dec;32(12):734-41</RefSource>
+<PMID Version="1">16314769</PMID>
+</CommentsCorrections>
+<CommentsCorrections RefType="Cites">
+<RefSource>PLoS Med. 2010 Nov 30;7(11):e1001006</RefSource>
+<PMID Version="1">21152416</PMID>
+</CommentsCorrections>
+<CommentsCorrections RefType="Cites">
+<RefSource>Health Promot Perspect. 2011 Dec 20;1(2):86-94</RefSource>
+<PMID Version="1">24688904</PMID>
+</CommentsCorrections>
+<CommentsCorrections RefType="Cites">
+<RefSource>J Acquir Immune Defic Syndr. 2014 May 1;66 Suppl 1:S27-36</RefSource>
+<PMID Version="1">24732818</PMID>
+</CommentsCorrections>
+<CommentsCorrections RefType="Cites">
+<RefSource>Int J Environ Res Public Health. 2014 Nov 12;11(11):11559-82</RefSource>
+<PMID Version="1">25396767</PMID>
+</CommentsCorrections>
+<CommentsCorrections RefType="Cites">
+<RefSource>J Am Med Inform Assoc. 2012 Jul-Aug;19(4):655-9</RefSource>
+<PMID Version="1">22366295</PMID>
+</CommentsCorrections>
+<CommentsCorrections RefType="Cites">
+<RefSource>Glob Health Action. 2014 Oct 27;7:25606</RefSource>
+<PMID Version="1">25361730</PMID>
+</CommentsCorrections>
+<CommentsCorrections RefType="Cites">
+<RefSource>Popul Health Metr. 2014 Jul 26;12:19</RefSource>
+<PMID Version="1">25435814</PMID>
+</CommentsCorrections>
+<CommentsCorrections RefType="Cites">
+<RefSource>Health Place. 2012 May;18(3):630-8</RefSource>
+<PMID Version="1">22281441</PMID>
+</CommentsCorrections>
+<CommentsCorrections RefType="Cites">
+<RefSource>J Acquir Immune Defic Syndr. 2007 Dec 1;46(4):479-84</RefSource>
+<PMID Version="1">18077837</PMID>
+</CommentsCorrections>
+<CommentsCorrections RefType="Cites">
+<RefSource>Sex Transm Dis. 2013 Dec;40(12):909-14</RefSource>
+<PMID Version="1">24220349</PMID>
+</CommentsCorrections>
+<CommentsCorrections RefType="Cites">
+<RefSource>Popul Health Metr. 2010 Sep 29;8:26</RefSource>
+<PMID Version="1">20920214</PMID>
+</CommentsCorrections>
+<CommentsCorrections RefType="Cites">
+<RefSource>Health Policy Plan. 2014 Jan;29(1):115-26</RefSource>
+<PMID Version="1">23325584</PMID>
+</CommentsCorrections>
+</CommentsCorrectionsList>
+<MeshHeadingList>
+<MeshHeading>
+<DescriptorName UI="D000328" MajorTopicYN="N">Adult</DescriptorName>
+</MeshHeading>
+<MeshHeading>
+<DescriptorName UI="D016358" MajorTopicYN="N">Contact Tracing</DescriptorName>
+<QualifierName UI="Q000706" MajorTopicYN="Y">statistics &amp; numerical data</QualifierName>
+</MeshHeading>
+<MeshHeading>
+<DescriptorName UI="D062665" MajorTopicYN="N">Epidemiological Monitoring</DescriptorName>
+</MeshHeading>
+<MeshHeading>
+<DescriptorName UI="D005260" MajorTopicYN="N">Female</DescriptorName>
+</MeshHeading>
+<MeshHeading>
+<DescriptorName UI="D015658" MajorTopicYN="N">HIV Infections</DescriptorName>
+<QualifierName UI="Q000175" MajorTopicYN="Y">diagnosis</QualifierName>
+<QualifierName UI="Q000453" MajorTopicYN="N">epidemiology</QualifierName>
+</MeshHeading>
+<MeshHeading>
+<DescriptorName UI="D063005" MajorTopicYN="N">Health Information Systems</DescriptorName>
+<QualifierName UI="Q000706" MajorTopicYN="Y">statistics &amp; numerical data</QualifierName>
+</MeshHeading>
+<MeshHeading>
+<DescriptorName UI="D006801" MajorTopicYN="N">Humans</DescriptorName>
+</MeshHeading>
+<MeshHeading>
+<DescriptorName UI="D007630" MajorTopicYN="N">Kenya</DescriptorName>
+<QualifierName UI="Q000453" MajorTopicYN="N">epidemiology</QualifierName>
+</MeshHeading>
+<MeshHeading>
+<DescriptorName UI="D008297" MajorTopicYN="N">Male</DescriptorName>
+</MeshHeading>
+<MeshHeading>
+<DescriptorName UI="D012747" MajorTopicYN="Y">Sexual Partners</DescriptorName>
+</MeshHeading>
+<MeshHeading>
+<DescriptorName UI="D055815" MajorTopicYN="N">Young Adult</DescriptorName>
+</MeshHeading>
+</MeshHeadingList>
+<KeywordList Owner="NOTNLM">
+<Keyword MajorTopicYN="Y">Assisted partner services</Keyword>
+<Keyword MajorTopicYN="Y">HIV</Keyword>
+<Keyword MajorTopicYN="Y">Health information</Keyword>
+<Keyword MajorTopicYN="Y">Kenya</Keyword>
+<Keyword MajorTopicYN="Y">Open data kit</Keyword>
+<Keyword MajorTopicYN="Y">Surveillance</Keyword>
+</KeywordList>
+</MedlineCitation>
+<PubmedData>
+<History>
+<PubMedPubDate PubStatus="received">
+<Year>2016</Year>
+<Month>01</Month>
+<Day>29</Day>
+</PubMedPubDate>
+<PubMedPubDate PubStatus="accepted">
+<Year>2016</Year>
+<Month>07</Month>
+<Day>13</Day>
+</PubMedPubDate>
+<PubMedPubDate PubStatus="entrez">
+<Year>2016</Year>
+<Month>7</Month>
+<Day>22</Day>
+<Hour>6</Hour>
+<Minute>0</Minute>
+</PubMedPubDate>
+<PubMedPubDate PubStatus="pubmed">
+<Year>2016</Year>
+<Month>7</Month>
+<Day>22</Day>
+<Hour>6</Hour>
+<Minute>0</Minute>
+</PubMedPubDate>
+<PubMedPubDate PubStatus="medline">
+<Year>2017</Year>
+<Month>10</Month>
+<Day>5</Day>
+<Hour>6</Hour>
+<Minute>0</Minute>
+</PubMedPubDate>
+</History>
+<PublicationStatus>epublish</PublicationStatus>
+<ArticleIdList>
+<ArticleId IdType="pubmed">27439397</ArticleId>
+<ArticleId IdType="doi">10.1186/s12911-016-0337-9</ArticleId>
+<ArticleId IdType="pii">10.1186/s12911-016-0337-9</ArticleId>
+<ArticleId IdType="pmc">PMC4955244</ArticleId>
+</ArticleIdList>
+</PubmedData>
+</PubmedArticle>
+
+
+<PubmedArticle>
+<MedlineCitation Status="PubMed-not-MEDLINE" Owner="NLM">
+<PMID Version="1">27508058</PMID>
+<DateCompleted>
+<Year>2016</Year>
+<Month>08</Month>
+<Day>10</Day>
+</DateCompleted>
+<DateRevised>
+<Year>2017</Year>
+<Month>02</Month>
+<Day>20</Day>
+</DateRevised>
+<Article PubModel="Electronic-eCollection">
+<Journal>
+<ISSN IssnType="Print">2046-1402</ISSN>
+<JournalIssue CitedMedium="Print">
+<Volume>5</Volume>
+<PubDate>
+<Year>2016</Year>
+</PubDate>
+</JournalIssue>
+<Title>F1000Research</Title>
+<ISOAbbreviation>F1000Res</ISOAbbreviation>
+</Journal>
+<ArticleTitle>Can free open access resources strengthen knowledge-based emerging public health priorities, policies and programs in Africa?</ArticleTitle>
+<Pagination>
+<MedlinePgn>853</MedlinePgn>
+</Pagination>
+<ELocationID EIdType="doi" ValidYN="Y">10.12688/f1000research.8662.1</ELocationID>
+<Abstract>
+<AbstractText>Tackling emerging epidemics and infectious diseases burden in Africa requires increasing unrestricted open access and free use or reuse of regional and global policies reforms as well as timely communication capabilities and strategies. Promoting, scaling up data and information sharing between African researchers and international partners are of vital importance in accelerating open access at no cost. Free Open Access (FOA) health data and information acceptability, uptake tactics and sustainable mechanisms are urgently needed. These are critical in establishing real time and effective knowledge or evidence-based translation, proven and validated approaches, strategies and tools to strengthen and revamp health systems. As such, early and timely access to needed emerging public health information is meant to be instrumental and valuable for policy-makers, implementers, care providers, researchers, health-related institutions and stakeholders including populations when guiding health financing, and planning contextual programs.</AbstractText>
+</Abstract>
+<AuthorList CompleteYN="Y">
+<Author ValidYN="Y">
+<LastName>Tambo</LastName>
+<ForeName>Ernest</ForeName>
+<Initials>E</Initials>
+<AffiliationInfo>
+<Affiliation>Department of Biochemistry and Pharmaceutical Sciences, Universite des Montagnes, Bangangté, Cameroon; Africa Disease Intelligence and Surveillance, Communication and Response (Africa DISCoR) Foundation, Yaoundé, Cameroon.</Affiliation>
+</AffiliationInfo>
+</Author>
+<Author ValidYN="Y">
+<LastName>Madjou</LastName>
+<ForeName>Ghislaine</ForeName>
+<Initials>G</Initials>
+<AffiliationInfo>
+<Affiliation>Africa Disease Intelligence and Surveillance, Communication and Response (Africa DISCoR) Foundation, Yaoundé, Cameroon.</Affiliation>
+</AffiliationInfo>
+</Author>
+<Author ValidYN="Y">
+<LastName>Khayeka-Wandabwa</LastName>
+<ForeName>Christopher</ForeName>
+<Initials>C</Initials>
+<AffiliationInfo>
+<Affiliation>Africa Population and Health Research Center (APHRC), Nairobi, Kenya.</Affiliation>
+</AffiliationInfo>
+</Author>
+<Author ValidYN="Y">
+<LastName>Tekwu</LastName>
+<ForeName>Emmanuel N</ForeName>
+<Initials>EN</Initials>
+<AffiliationInfo>
+<Affiliation>Noguchi Memorial Institute for Medical Research (NMIMR), College of Health Science, University of Ghana, Greater Accra Region, Ghana.</Affiliation>
+</AffiliationInfo>
+</Author>
+<Author ValidYN="Y">
+<LastName>Olalubi</LastName>
+<ForeName>Oluwasogo A</ForeName>
+<Initials>OA</Initials>
+<AffiliationInfo>
+<Affiliation>Department of Public Health, Kwara State University (KWASU), Malete, Kwara State, Nigeria.</Affiliation>
+</AffiliationInfo>
+</Author>
+<Author ValidYN="Y">
+<LastName>Midzi</LastName>
+<ForeName>Nicolas</ForeName>
+<Initials>N</Initials>
+<AffiliationInfo>
+<Affiliation>National Institute of Health Research, Harare, Zimbabwe.</Affiliation>
+</AffiliationInfo>
+</Author>
+<Author ValidYN="Y">
+<LastName>Bengyella</LastName>
+<ForeName>Louis</ForeName>
+<Initials>L</Initials>
+<AffiliationInfo>
+<Affiliation>Department of Biomedical Sciences, School of Basic and Biomedical Sciences, University of Health and Allied Sciences (UHAS), Ho, Volta Region, Ghana.</Affiliation>
+</AffiliationInfo>
+</Author>
+<Author ValidYN="Y">
+<LastName>Adedeji</LastName>
+<ForeName>Ahmed A</ForeName>
+<Initials>AA</Initials>
+<AffiliationInfo>
+<Affiliation>Department of Pharmacology and Therapeutics, Kampala International University, Kansaga, Kampala, Uganda.</Affiliation>
+</AffiliationInfo>
+</Author>
+<Author ValidYN="Y">
+<LastName>Ngogang</LastName>
+<ForeName>Jeanne Y</ForeName>
+<Initials>JY</Initials>
+<AffiliationInfo>
+<Affiliation>Service de Biochimie, Centre Hospitalier Universitaire (CHU), Yaoundé, Cameroon.</Affiliation>
+</AffiliationInfo>
+</Author>
+</AuthorList>
+<Language>eng</Language>
+<PublicationTypeList>
+<PublicationType UI="D016428">Journal Article</PublicationType>
+<PublicationType UI="D016454">Review</PublicationType>
+</PublicationTypeList>
+<ArticleDate DateType="Electronic">
+<Year>2016</Year>
+<Month>05</Month>
+<Day>09</Day>
+</ArticleDate>
+</Article>
+<MedlineJournalInfo>
+<Country>England</Country>
+<MedlineTA>F1000Res</MedlineTA>
+<NlmUniqueID>101594320</NlmUniqueID>
+<ISSNLinking>2046-1402</ISSNLinking>
+</MedlineJournalInfo>
+<CommentsCorrectionsList>
+<CommentsCorrections RefType="Cites">
+<RefSource>BMJ Open. 2016 Feb 25;6(2):e010377</RefSource>
+<PMID Version="1">26916695</PMID>
+</CommentsCorrections>
+<CommentsCorrections RefType="Cites">
+<RefSource>Politics Life Sci. 2015 Fall;34(2):7-43</RefSource>
+<PMID Version="1">26742592</PMID>
+</CommentsCorrections>
+<CommentsCorrections RefType="Cites">
+<RefSource>J Med Internet Res. 2013 Jul 15;15(7):e107</RefSource>
+<PMID Version="1">23856364</PMID>
+</CommentsCorrections>
+<CommentsCorrections RefType="Cites">
+<RefSource>Inform Prim Care. 2005;13(1):55-60</RefSource>
+<PMID Version="1">15949176</PMID>
+</CommentsCorrections>
+<CommentsCorrections RefType="Cites">
+<RefSource>Sci Data. 2016 Feb 16;3:160010</RefSource>
+<PMID Version="1">26882539</PMID>
+</CommentsCorrections>
+<CommentsCorrections RefType="Cites">
+<RefSource>Health Policy Plan. 2014 Jan;29(1):85-95</RefSource>
+<PMID Version="1">23307907</PMID>
+</CommentsCorrections>
+<CommentsCorrections RefType="Cites">
+<RefSource>BMC Fam Pract. 2016 Feb 17;17 :21</RefSource>
+<PMID Version="1">26888411</PMID>
+</CommentsCorrections>
+<CommentsCorrections RefType="Cites">
+<RefSource>Global Health. 2015 Feb 12;11:5</RefSource>
+<PMID Version="1">25890069</PMID>
+</CommentsCorrections>
+<CommentsCorrections RefType="Cites">
+<RefSource>PLoS One. 2012;7(11):e49430</RefSource>
+<PMID Version="1">23173061</PMID>
+</CommentsCorrections>
+<CommentsCorrections RefType="Cites">
+<RefSource>PLoS Comput Biol. 2014 Nov 13;10(11):e1003892</RefSource>
+<PMID Version="1">25392913</PMID>
+</CommentsCorrections>
+<CommentsCorrections RefType="Cites">
+<RefSource>Glob Health Sci Pract. 2013 Mar 21;1(1):117-33</RefSource>
+<PMID Version="1">25276522</PMID>
+</CommentsCorrections>
+<CommentsCorrections RefType="Cites">
+<RefSource>Online J Issues Nurs. 2011 Nov 23;17(1):7</RefSource>
+<PMID Version="1">22320873</PMID>
+</CommentsCorrections>
+<CommentsCorrections RefType="Cites">
+<RefSource>Implement Sci. 2015 Sep 03;10:126</RefSource>
+<PMID Version="1">26334760</PMID>
+</CommentsCorrections>
+<CommentsCorrections RefType="Cites">
+<RefSource>Annu Rev Public Health. 2016;37:83-96</RefSource>
+<PMID Version="1">26735429</PMID>
+</CommentsCorrections>
+<CommentsCorrections RefType="Cites">
+<RefSource>PLoS Med. 2014 Mar 11;11(3):e1001612</RefSource>
+<PMID Version="1">24618823</PMID>
+</CommentsCorrections>
+<CommentsCorrections RefType="Cites">
+<RefSource>N Engl J Med. 2004 Mar 4;350(10):966-8</RefSource>
+<PMID Version="1">14999107</PMID>
+</CommentsCorrections>
+<CommentsCorrections RefType="Cites">
+<RefSource>Lancet. 2010 Dec 4;376(9756):1923-58</RefSource>
+<PMID Version="1">21112623</PMID>
+</CommentsCorrections>
+<CommentsCorrections RefType="Cites">
+<RefSource>BMJ Open. 2016 Jan 28;6(1):e009692</RefSource>
+<PMID Version="1">26823178</PMID>
+</CommentsCorrections>
+<CommentsCorrections RefType="Cites">
+<RefSource>Prev Vet Med. 2014 Oct 1;116(3):325-35</RefSource>
+<PMID Version="1">23906393</PMID>
+</CommentsCorrections>
+</CommentsCorrectionsList>
+<KeywordList Owner="NOTNLM">
+<Keyword MajorTopicYN="N">Africa</Keyword>
+<Keyword MajorTopicYN="N">Open access</Keyword>
+<Keyword MajorTopicYN="N">evidence</Keyword>
+<Keyword MajorTopicYN="N">free access</Keyword>
+<Keyword MajorTopicYN="N">information</Keyword>
+<Keyword MajorTopicYN="N">intervention</Keyword>
+<Keyword MajorTopicYN="N">policy</Keyword>
+<Keyword MajorTopicYN="N">program</Keyword>
+</KeywordList>
+</MedlineCitation>
+<PubmedData>
+<History>
+<PubMedPubDate PubStatus="accepted">
+<Year>2016</Year>
+<Month>04</Month>
+<Day>27</Day>
+</PubMedPubDate>
+<PubMedPubDate PubStatus="entrez">
+<Year>2016</Year>
+<Month>8</Month>
+<Day>11</Day>
+<Hour>6</Hour>
+<Minute>0</Minute>
+</PubMedPubDate>
+<PubMedPubDate PubStatus="pubmed">
+<Year>2016</Year>
+<Month>8</Month>
+<Day>11</Day>
+<Hour>6</Hour>
+<Minute>0</Minute>
+</PubMedPubDate>
+<PubMedPubDate PubStatus="medline">
+<Year>2016</Year>
+<Month>8</Month>
+<Day>11</Day>
+<Hour>6</Hour>
+<Minute>1</Minute>
+</PubMedPubDate>
+</History>
+<PublicationStatus>epublish</PublicationStatus>
+<ArticleIdList>
+<ArticleId IdType="pubmed">27508058</ArticleId>
+<ArticleId IdType="doi">10.12688/f1000research.8662.1</ArticleId>
+<ArticleId IdType="pmc">PMC4955019</ArticleId>
+</ArticleIdList>
+</PubmedData>
+</PubmedArticle>
+
+
+<PubmedArticle>
+<MedlineCitation Status="PubMed-not-MEDLINE" Owner="NLM">
+<PMID Version="1">28630942</PMID>
+<DateRevised>
+<Year>2018</Year>
+<Month>01</Month>
+<Day>23</Day>
+</DateRevised>
+<Article PubModel="Electronic-eCollection">
+<Journal>
+<ISSN IssnType="Print">2398-502X</ISSN>
+<JournalIssue CitedMedium="Print">
+<Volume>2</Volume>
+<PubDate>
+<Year>2017</Year>
+</PubDate>
+</JournalIssue>
+<Title>Wellcome open research</Title>
+<ISOAbbreviation>Wellcome Open Res</ISOAbbreviation>
+</Journal>
+<ArticleTitle>Antimalarial drugs and the prevalence of mental and neurological manifestations: A systematic review and meta-analysis.</ArticleTitle>
+<Pagination>
+<MedlinePgn>13</MedlinePgn>
+</Pagination>
+<ELocationID EIdType="doi" ValidYN="Y">10.12688/wellcomeopenres.10658.2</ELocationID>
+<Abstract>
+<AbstractText>Background: Antimalarial drugs affect the central nervous system, but it is difficult to differentiate the effect of these drugs from that of the malaria illness. We conducted a systematic review to determine the association between anti-malarial drugs and mental and neurological impairment in humans. Methods: We systematically searched online databases, including Medline/PubMed, PsychoInfo, and Embase, for articles published up to 14th July 2016. Pooled prevalence, heterogeneity and factors associated with prevalence of mental and neurological manifestations were determined using meta-analytic techniques. Results: Of the 2,349 records identified in the initial search, 51 human studies met the eligibility criteria. The median pooled prevalence range of mental and neurological manifestations associated with antimalarial drugs ranged from 0.7% (dapsone) to 48.3% (minocycline) across all studies, while it ranged from 0.6% (pyrimethamine) to 42.7% (amodiaquine) during treatment of acute malaria, and 0.7% (primaquine/dapsone) to 55.0% (sulfadoxine) during prophylaxis. Pooled prevalence of mental and neurological manifestations across all studies was associated with an increased number of antimalarial drugs (prevalence ratio= 5.51 (95%CI, 1.05-29.04); P=0.045) in a meta-regression analysis. Headaches (15%) and dizziness (14%) were the most common mental and neurological manifestations across all studies. Of individual antimalarial drugs still on the market, mental and neurological manifestations were most common with the use of sulphadoxine (55%) for prophylaxis studies and amodiaquine (42.7%) for acute malaria studies. Mefloquine affected more domains of mental and neurological manifestations than any other antimalarial drug. Conclusions: Antimalarial drugs, particularly those used for prophylaxis, may be associated with mental and neurological manifestations, and the number of antimalarial drugs taken determines the association. Mental and neurological manifestations should be assessed following the use of antimalarial drugs.</AbstractText>
+</Abstract>
+<AuthorList CompleteYN="Y">
+<Author ValidYN="Y">
+<LastName>Bitta</LastName>
+<ForeName>Mary A</ForeName>
+<Initials>MA</Initials>
+<Identifier Source="ORCID">0000-0003-0258-9931</Identifier>
+<AffiliationInfo>
+<Affiliation>KEMRI-Wellcome Trust Research Programme, Centre for Geographic Medicine Research (Coast), Kilifi, Kenya.</Affiliation>
+</AffiliationInfo>
+</Author>
+<Author ValidYN="Y">
+<LastName>Kariuki</LastName>
+<ForeName>Symon M</ForeName>
+<Initials>SM</Initials>
+<AffiliationInfo>
+<Affiliation>KEMRI-Wellcome Trust Research Programme, Centre for Geographic Medicine Research (Coast), Kilifi, Kenya.</Affiliation>
+</AffiliationInfo>
+</Author>
+<Author ValidYN="Y">
+<LastName>Mwita</LastName>
+<ForeName>Clifford</ForeName>
+<Initials>C</Initials>
+<AffiliationInfo>
+<Affiliation>Department of Surgery, Thika Level 5 Hospital, Thika, Kenya.</Affiliation>
+</AffiliationInfo>
+<AffiliationInfo>
+<Affiliation>Joanna Briggs Institute (JBI) Affiliate Centre for Evidence-Based Healthcare in Kenya, Clinical Research Evidence Synthesis and Translation Unit, Afya Research Africa, Nairobi, Kenya.</Affiliation>
+</AffiliationInfo>
+</Author>
+<Author ValidYN="Y">
+<LastName>Gwer</LastName>
+<ForeName>Samson</ForeName>
+<Initials>S</Initials>
+<AffiliationInfo>
+<Affiliation>Joanna Briggs Institute (JBI) Affiliate Centre for Evidence-Based Healthcare in Kenya, Clinical Research Evidence Synthesis and Translation Unit, Afya Research Africa, Nairobi, Kenya.</Affiliation>
+</AffiliationInfo>
+<AffiliationInfo>
+<Affiliation>Department of Medical Physiology, School of Medicine, Kenyatta University, Nairobi, Kenya.</Affiliation>
+</AffiliationInfo>
+</Author>
+<Author ValidYN="Y">
+<LastName>Mwai</LastName>
+<ForeName>Leah</ForeName>
+<Initials>L</Initials>
+<AffiliationInfo>
+<Affiliation>Joanna Briggs Institute (JBI) Affiliate Centre for Evidence-Based Healthcare in Kenya, Clinical Research Evidence Synthesis and Translation Unit, Afya Research Africa, Nairobi, Kenya.</Affiliation>
+</AffiliationInfo>
+</Author>
+<Author ValidYN="Y">
+<LastName>Newton</LastName>
+<ForeName>Charles R J C</ForeName>
+<Initials>CRJC</Initials>
+<AffiliationInfo>
+<Affiliation>KEMRI-Wellcome Trust Research Programme, Centre for Geographic Medicine Research (Coast), Kilifi, Kenya.</Affiliation>
+</AffiliationInfo>
+<AffiliationInfo>
+<Affiliation>Department of Psychiatry, University of Oxford, Oxford, UK.</Affiliation>
+</AffiliationInfo>
+</Author>
+</AuthorList>
+<Language>eng</Language>
+<GrantList CompleteYN="Y">
+<Grant>
+<GrantID>107769</GrantID>
+<Agency>Wellcome Trust</Agency>
+<Country>United Kingdom</Country>
+</Grant>
+<Grant>
+<GrantID>099782</GrantID>
+<Agency>Wellcome Trust</Agency>
+<Country>United Kingdom</Country>
+</Grant>
+<Grant>
+<GrantID>083744</GrantID>
+<Agency>Wellcome Trust</Agency>
+<Country>United Kingdom</Country>
+</Grant>
+</GrantList>
+<PublicationTypeList>
+<PublicationType UI="D016428">Journal Article</PublicationType>
+</PublicationTypeList>
+<ArticleDate DateType="Electronic">
+<Year>2017</Year>
+<Month>06</Month>
+<Day>02</Day>
+</ArticleDate>
+</Article>
+<MedlineJournalInfo>
+<Country>England</Country>
+<MedlineTA>Wellcome Open Res</MedlineTA>
+<NlmUniqueID>101696457</NlmUniqueID>
+<ISSNLinking>2398-502X</ISSNLinking>
+</MedlineJournalInfo>
+<CommentsCorrectionsList>
+<CommentsCorrections RefType="Cites">
+<RefSource>Acta Trop. 2002 Feb;81(2):167-73</RefSource>
+<PMID Version="1">11801224</PMID>
+</CommentsCorrections>
+<CommentsCorrections RefType="Cites">
+<RefSource>Lupus. 2014 Feb;23(2):188-93</RefSource>
+<PMID Version="1">24297641</PMID>
+</CommentsCorrections>
+<CommentsCorrections RefType="Cites">
+<RefSource>Med Hypotheses. 2006;67(5):1090-4</RefSource>
+<PMID Version="1">16843615</PMID>
+</CommentsCorrections>
+<CommentsCorrections RefType="Cites">
+<RefSource>Travel Med Infect Dis. 2013 Mar-Apr;11(2):71-80</RefSource>
+<PMID Version="1">23541791</PMID>
+</CommentsCorrections>
+<CommentsCorrections RefType="Cites">
+<RefSource>Lancet. 1993 May 22;341(8856):1299-303</RefSource>
+<PMID Version="1">8098447</PMID>
+</CommentsCorrections>
+<CommentsCorrections RefType="Cites">
+<RefSource>Clin Pharmacol Ther. 2002 Sep;72(3):294-301</RefSource>
+<PMID Version="1">12235450</PMID>
+</CommentsCorrections>
+<CommentsCorrections RefType="Cites">
+<RefSource>Stat Med. 1998 Apr 30;17(8):857-72</RefSource>
+<PMID Version="1">9595616</PMID>
+</CommentsCorrections>
+<CommentsCorrections RefType="Cites">
+<RefSource>Coll Antropol. 2011 Jan;35 Suppl 1:313-8</RefSource>
+<PMID Version="1">21648354</PMID>
+</CommentsCorrections>
+<CommentsCorrections RefType="Cites">
+<RefSource>Clin Ther. 2006 Oct;28(10):1607-18</RefSource>
+<PMID Version="1">17157116</PMID>
+</CommentsCorrections>
+<CommentsCorrections RefType="Cites">
+<RefSource>BMJ. 1996 Dec 14;313(7071):1552</RefSource>
+<PMID Version="1">8978255</PMID>
+</CommentsCorrections>
+<CommentsCorrections RefType="Cites">
+<RefSource>Trans R Soc Trop Med Hyg. 2004 May;98(5):261-7; discussion 268-9</RefSource>
+<PMID Version="1">15109547</PMID>
+</CommentsCorrections>
+<CommentsCorrections RefType="Cites">
+<RefSource>Malar J. 2012 Jan 04;11:2</RefSource>
+<PMID Version="1">22217214</PMID>
+</CommentsCorrections>
+<CommentsCorrections RefType="Cites">
+<RefSource>Eur J Clin Pharmacol. 2002 Sep;58(6):441-5</RefSource>
+<PMID Version="1">12242605</PMID>
+</CommentsCorrections>
+<CommentsCorrections RefType="Cites">
+<RefSource>Am J Trop Med Hyg. 1999 Apr;60(4):547-55</RefSource>
+<PMID Version="1">10348227</PMID>
+</CommentsCorrections>
+<CommentsCorrections RefType="Cites">
+<RefSource>Indian J Psychiatry. 1994 Apr;36(2):85-7</RefSource>
+<PMID Version="1">21743675</PMID>
+</CommentsCorrections>
+<CommentsCorrections RefType="Cites">
+<RefSource>Travel Med Infect Dis. 2012 May;10(3):144-51</RefSource>
+<PMID Version="1">22494697</PMID>
+</CommentsCorrections>
+<CommentsCorrections RefType="Cites">
+<RefSource>J Clin Epidemiol. 2011 Apr;64(4):380-2</RefSource>
+<PMID Version="1">21185693</PMID>
+</CommentsCorrections>
+<CommentsCorrections RefType="Cites">
+<RefSource>BMC Infect Dis. 2012 Aug 10;12:186</RefSource>
+<PMID Version="1">22876748</PMID>
+</CommentsCorrections>
+<CommentsCorrections RefType="Cites">
+<RefSource>Arch Intern Med. 1967 Jun;119(6):561-6</RefSource>
+<PMID Version="1">5338485</PMID>
+</CommentsCorrections>
+<CommentsCorrections RefType="Cites">
+<RefSource>Am J Trop Med Hyg. 1994 Sep;51(3):251-9</RefSource>
+<PMID Version="1">7943542</PMID>
+</CommentsCorrections>
+<CommentsCorrections RefType="Cites">
+<RefSource>Curr Drug Saf. 2006 Jan;1(1):1-15</RefSource>
+<PMID Version="1">18690910</PMID>
+</CommentsCorrections>
+<CommentsCorrections RefType="Cites">
+<RefSource>Clin Pediatr (Phila). 1990 Aug;29(8):448-50</RefSource>
+<PMID Version="1">2208904</PMID>
+</CommentsCorrections>
+<CommentsCorrections RefType="Cites">
+<RefSource>Lancet. 1985 Apr 20;1(8434):885-8</RefSource>
+<PMID Version="1">2858743</PMID>
+</CommentsCorrections>
+<CommentsCorrections RefType="Cites">
+<RefSource>Am J Med. 2002 Feb 1;112(2):147-9</RefSource>
+<PMID Version="1">11835955</PMID>
+</CommentsCorrections>
+<CommentsCorrections RefType="Cites">
+<RefSource>BMJ. 2015 Jan 02;350:g7647</RefSource>
+<PMID Version="1">25555855</PMID>
+</CommentsCorrections>
+<CommentsCorrections RefType="Cites">
+<RefSource>Trans R Soc Trop Med Hyg. 1991 Jul-Aug;85(4):444-5</RefSource>
+<PMID Version="1">1755044</PMID>
+</CommentsCorrections>
+<CommentsCorrections RefType="Cites">
+<RefSource>Ann Pharmacother. 2005 Mar;39(3):551-4</RefSource>
+<PMID Version="1">15728331</PMID>
+</CommentsCorrections>
+<CommentsCorrections RefType="Cites">
+<RefSource>Am J Forensic Med Pathol. 2012 Jun;33(2):e8</RefSource>
+<PMID Version="1">22104331</PMID>
+</CommentsCorrections>
+<CommentsCorrections RefType="Cites">
+<RefSource>Malar J. 2008 Jul 11;7:127</RefSource>
+<PMID Version="1">18620577</PMID>
+</CommentsCorrections>
+<CommentsCorrections RefType="Cites">
+<RefSource>Drug Saf. 2004;27(3):203-13</RefSource>
+<PMID Version="1">14756582</PMID>
+</CommentsCorrections>
+<CommentsCorrections RefType="Cites">
+<RefSource>BMJ. 2009 Jul 21;339:b2700</RefSource>
+<PMID Version="1">19622552</PMID>
+</CommentsCorrections>
+<CommentsCorrections RefType="Cites">
+<RefSource>J Neurol Neurosurg Psychiatry. 2000 Oct;69(4):433-41</RefSource>
+<PMID Version="1">10990500</PMID>
+</CommentsCorrections>
+<CommentsCorrections RefType="Cites">
+<RefSource>Int J Parasitol Drugs Drug Resist. 2014 Apr 05;4(2):118-25</RefSource>
+<PMID Version="1">25057461</PMID>
+</CommentsCorrections>
+<CommentsCorrections RefType="Cites">
+<RefSource>Antimicrob Agents Chemother. 2002 Aug;46(8):2315-20</RefSource>
+<PMID Version="1">12121898</PMID>
+</CommentsCorrections>
+<CommentsCorrections RefType="Cites">
+<RefSource>Am J Trop Med Hyg. 1991 Jul;45(1):86-91</RefSource>
+<PMID Version="1">1867351</PMID>
+</CommentsCorrections>
+<CommentsCorrections RefType="Cites">
+<RefSource>Indian J Pediatr. 2004 Apr;71(4):291-5</RefSource>
+<PMID Version="1">15107507</PMID>
+</CommentsCorrections>
+<CommentsCorrections RefType="Cites">
+<RefSource>BMJ. 1996 Aug 31;313(7056):525-8</RefSource>
+<PMID Version="1">8789977</PMID>
+</CommentsCorrections>
+<CommentsCorrections RefType="Cites">
+<RefSource>Bull World Health Organ. 1983;61(4):713-8</RefSource>
+<PMID Version="1">6354507</PMID>
+</CommentsCorrections>
+<CommentsCorrections RefType="Cites">
+<RefSource>Expert Opin Drug Saf. 2016 Jul;15(7):903-10</RefSource>
+<PMID Version="1">27077782</PMID>
+</CommentsCorrections>
+<CommentsCorrections RefType="Cites">
+<RefSource>Ann Trop Med Parasitol. 2005 Jul;99(5):449-55</RefSource>
+<PMID Version="1">16004704</PMID>
+</CommentsCorrections>
+<CommentsCorrections RefType="Cites">
+<RefSource>Br J Clin Pharmacol. 2004 Apr;57(4):506-12</RefSource>
+<PMID Version="1">15025750</PMID>
+</CommentsCorrections>
+<CommentsCorrections RefType="Cites">
+<RefSource>J Natl Med Assoc. 1981 Nov;73(11):1073-6</RefSource>
+<PMID Version="1">7310924</PMID>
+</CommentsCorrections>
+<CommentsCorrections RefType="Cites">
+<RefSource>Am J Psychiatry. 1977 Jul;134(7):798-601</RefSource>
+<PMID Version="1">326063</PMID>
+</CommentsCorrections>
+<CommentsCorrections RefType="Cites">
+<RefSource>J Psychiatr Res. 2014 Jun;53:119-24</RefSource>
+<PMID Version="1">24656425</PMID>
+</CommentsCorrections>
+<CommentsCorrections RefType="Cites">
+<RefSource>Am J Trop Med Hyg. 2006 May;74(5):744-9</RefSource>
+<PMID Version="1">16687673</PMID>
+</CommentsCorrections>
+<CommentsCorrections RefType="Cites">
+<RefSource>J Pak Med Assoc. 2007 Oct;57(10):502-5</RefSource>
+<PMID Version="1">17990426</PMID>
+</CommentsCorrections>
+<CommentsCorrections RefType="Cites">
+<RefSource>J Acquir Immune Defic Syndr. 2012 Sep 1;61(1):64-72</RefSource>
+<PMID Version="1">22706291</PMID>
+</CommentsCorrections>
+<CommentsCorrections RefType="Cites">
+<RefSource>Eye (Lond). 2010 May;24(5):756-62; quiz 763</RefSource>
+<PMID Version="1">20395978</PMID>
+</CommentsCorrections>
+<CommentsCorrections RefType="Cites">
+<RefSource>Trop Med Int Health. 2005 Jan;10(1):3-10</RefSource>
+<PMID Version="1">15655008</PMID>
+</CommentsCorrections>
+<CommentsCorrections RefType="Cites">
+<RefSource>Ann Rheum Dis. 2014 Mar;73(3):492-509</RefSource>
+<PMID Version="1">24161836</PMID>
+</CommentsCorrections>
+<CommentsCorrections RefType="Cites">
+<RefSource>Clin Pharmacol Ther. 2006 Oct;80(4):367-74</RefSource>
+<PMID Version="1">17015054</PMID>
+</CommentsCorrections>
+<CommentsCorrections RefType="Cites">
+<RefSource>BMJ. 2005 Feb 12;330(7487):334</RefSource>
+<PMID Version="1">15705690</PMID>
+</CommentsCorrections>
+<CommentsCorrections RefType="Cites">
+<RefSource>Am J Trop Med Hyg. 2014 Jul;91(1):62-73</RefSource>
+<PMID Version="1">24865683</PMID>
+</CommentsCorrections>
+<CommentsCorrections RefType="Cites">
+<RefSource>Mil Med. 2008 Dec;173(12):1194-8</RefSource>
+<PMID Version="1">19149338</PMID>
+</CommentsCorrections>
+<CommentsCorrections RefType="Cites">
+<RefSource>Trans R Soc Trop Med Hyg. 1994 Jun;88 Suppl 1:S33-6</RefSource>
+<PMID Version="1">8053022</PMID>
+</CommentsCorrections>
+<CommentsCorrections RefType="Cites">
+<RefSource>BMJ. 2003 Nov 8;327(7423):1078</RefSource>
+<PMID Version="1">14604928</PMID>
+</CommentsCorrections>
+<CommentsCorrections RefType="Cites">
+<RefSource>J Am Acad Psychiatry Law. 2013;41(2):224-35</RefSource>
+<PMID Version="1">23771936</PMID>
+</CommentsCorrections>
+<CommentsCorrections RefType="Cites">
+<RefSource>J Infect Dis. 2009 Sep 15;200(6):991-1001</RefSource>
+<PMID Version="1">19656069</PMID>
+</CommentsCorrections>
+<CommentsCorrections RefType="Cites">
+<RefSource>Bull World Health Organ. 1995;73(5):631-42</RefSource>
+<PMID Version="1">8846489</PMID>
+</CommentsCorrections>
+<CommentsCorrections RefType="Cites">
+<RefSource>Am J Psychiatry. 1968 Mar;124(9):1257-60</RefSource>
+<PMID Version="1">5637914</PMID>
+</CommentsCorrections>
+<CommentsCorrections RefType="Cites">
+<RefSource>Lancet Neurol. 2010 Dec;9(12):1173-1181</RefSource>
+<PMID Version="1">21056005</PMID>
+</CommentsCorrections>
+<CommentsCorrections RefType="Cites">
+<RefSource>Antimicrob Agents Chemother. 1998 Jan;42(1):135-9</RefSource>
+<PMID Version="1">9449273</PMID>
+</CommentsCorrections>
+<CommentsCorrections RefType="Cites">
+<RefSource>Intern Med J. 2006 Jul;36(7):465-7</RefSource>
+<PMID Version="1">16780456</PMID>
+</CommentsCorrections>
+<CommentsCorrections RefType="Cites">
+<RefSource>Malar J. 2010 Oct 21;9:291</RefSource>
+<PMID Version="1">20964849</PMID>
+</CommentsCorrections>
+<CommentsCorrections RefType="Cites">
+<RefSource>BMJ Case Rep. 2013 Dec 17;2013:null</RefSource>
+<PMID Version="1">24347450</PMID>
+</CommentsCorrections>
+<CommentsCorrections RefType="Cites">
+<RefSource>Ann Neurol. 2005 Nov;58(5):812-3</RefSource>
+<PMID Version="1">16240360</PMID>
+</CommentsCorrections>
+<CommentsCorrections RefType="Cites">
+<RefSource>J Travel Med. 2001 Sep-Oct;8(5):243-6</RefSource>
+<PMID Version="1">11703906</PMID>
+</CommentsCorrections>
+<CommentsCorrections RefType="Cites">
+<RefSource>Antimicrob Agents Chemother. 1977 Nov;12(5):642-6</RefSource>
+<PMID Version="1">303498</PMID>
+</CommentsCorrections>
+<CommentsCorrections RefType="Cites">
+<RefSource>Auris Nasus Larynx. 1997 Apr;24(2):131-6</RefSource>
+<PMID Version="1">9134134</PMID>
+</CommentsCorrections>
+<CommentsCorrections RefType="Cites">
+<RefSource>Am J Trop Med Hyg. 2000 Jan;62(1):65-9</RefSource>
+<PMID Version="1">10761725</PMID>
+</CommentsCorrections>
+<CommentsCorrections RefType="Cites">
+<RefSource>Travel Med Infect Dis. 2015 Jan-Feb;13(1):80-8</RefSource>
+<PMID Version="1">25435322</PMID>
+</CommentsCorrections>
+<CommentsCorrections RefType="Cites">
+<RefSource>Case Rep Psychiatry. 2011;2011:350417</RefSource>
+<PMID Version="1">22937403</PMID>
+</CommentsCorrections>
+<CommentsCorrections RefType="Cites">
+<RefSource>Clin Infect Dis. 2001 Oct 1;33(7):1015-21</RefSource>
+<PMID Version="1">11528574</PMID>
+</CommentsCorrections>
+<CommentsCorrections RefType="Cites">
+<RefSource>Travel Med Infect Dis. 2009 Jan;7(1):2-6</RefSource>
+<PMID Version="1">19174293</PMID>
+</CommentsCorrections>
+<CommentsCorrections RefType="Cites">
+<RefSource>Brain. 2011 May;134(Pt 5):1519-28</RefSource>
+<PMID Version="1">21482551</PMID>
+</CommentsCorrections>
+<CommentsCorrections RefType="Cites">
+<RefSource>Gen Hosp Psychiatry. 2014 Mar-Apr;36(2):181-6</RefSource>
+<PMID Version="1">24290896</PMID>
+</CommentsCorrections>
+<CommentsCorrections RefType="Cites">
+<RefSource>Trans R Soc Trop Med Hyg. 1996 Jul-Aug;90(4):415-7</RefSource>
+<PMID Version="1">8882193</PMID>
+</CommentsCorrections>
+<CommentsCorrections RefType="Cites">
+<RefSource>J Clin Psychiatry. 2005 Feb;66(2):199-204</RefSource>
+<PMID Version="1">15705005</PMID>
+</CommentsCorrections>
+<CommentsCorrections RefType="Cites">
+<RefSource>Malar J. 2010 Dec 09;9:357</RefSource>
+<PMID Version="1">21143906</PMID>
+</CommentsCorrections>
+<CommentsCorrections RefType="Cites">
+<RefSource>Encephale. 2011 Oct;37(5):393-6</RefSource>
+<PMID Version="1">22032283</PMID>
+</CommentsCorrections>
+<CommentsCorrections RefType="Cites">
+<RefSource>Drug Saf. 2004;27(1):25-61</RefSource>
+<PMID Version="1">14720085</PMID>
+</CommentsCorrections>
+<CommentsCorrections RefType="Cites">
+<RefSource>J R Nav Med Serv. 2014;100(3):232-7</RefSource>
+<PMID Version="1">25895400</PMID>
+</CommentsCorrections>
+<CommentsCorrections RefType="Cites">
+<RefSource>Trans R Soc Trop Med Hyg. 1990 Jan-Feb;84(1):50-3</RefSource>
+<PMID Version="1">2189246</PMID>
+</CommentsCorrections>
+<CommentsCorrections RefType="Cites">
+<RefSource>JAMA Ophthalmol. 2014 Sep;132(9):1137-42</RefSource>
+<PMID Version="1">24969516</PMID>
+</CommentsCorrections>
+<CommentsCorrections RefType="Cites">
+<RefSource>Pharmacol Biochem Behav. 1998 Jun;60(2):449-58</RefSource>
+<PMID Version="1">9632228</PMID>
+</CommentsCorrections>
+<CommentsCorrections RefType="Cites">
+<RefSource>P N G Med J. 2002 Sep-Dec;45(3-4):219-21</RefSource>
+<PMID Version="1">12968793</PMID>
+</CommentsCorrections>
+<CommentsCorrections RefType="Cites">
+<RefSource>J Am Geriatr Soc. 2004 Mar;52(3):381-7</RefSource>
+<PMID Version="1">14962152</PMID>
+</CommentsCorrections>
+<CommentsCorrections RefType="Cites">
+<RefSource>Am J Trop Med Hyg. 2011 Apr;84(4):517-31</RefSource>
+<PMID Version="1">21460003</PMID>
+</CommentsCorrections>
+<CommentsCorrections RefType="Cites">
+<RefSource>Malar J. 2006 Aug 23;5:74</RefSource>
+<PMID Version="1">16925829</PMID>
+</CommentsCorrections>
+<CommentsCorrections RefType="Cites">
+<RefSource>J Child Neurol. 2009 Aug;24(8):1008-9</RefSource>
+<PMID Version="1">19295181</PMID>
+</CommentsCorrections>
+<CommentsCorrections RefType="Cites">
+<RefSource>Malar J. 2016 Jun 22;15:332</RefSource>
+<PMID Version="1">27335053</PMID>
+</CommentsCorrections>
+<CommentsCorrections RefType="Cites">
+<RefSource>Glia. 2014 Mar;62(3):399-410</RefSource>
+<PMID Version="1">24357027</PMID>
+</CommentsCorrections>
+<CommentsCorrections RefType="Cites">
+<RefSource>J Clin Epidemiol. 2009 Sep;62(9):944-52</RefSource>
+<PMID Version="1">19230612</PMID>
+</CommentsCorrections>
+<CommentsCorrections RefType="Cites">
+<RefSource>J Neurol Neurosurg Psychiatry. 2005 Apr;76(4):476-81</RefSource>
+<PMID Version="1">15774431</PMID>
+</CommentsCorrections>
+<CommentsCorrections RefType="Cites">
+<RefSource>Am J Trop Med Hyg. 1991 Dec;45(6):702-13</RefSource>
+<PMID Version="1">1763797</PMID>
+</CommentsCorrections>
+<CommentsCorrections RefType="Cites">
+<RefSource>Int J Health Policy Manag. 2014 Aug 13;3(3):123-8</RefSource>
+<PMID Version="1">25197676</PMID>
+</CommentsCorrections>
+<CommentsCorrections RefType="Cites">
+<RefSource>J Travel Med. 2000 Jan;7(1):5-9</RefSource>
+<PMID Version="1">10689231</PMID>
+</CommentsCorrections>
+</CommentsCorrectionsList>
+<KeywordList Owner="NOTNLM">
+<Keyword MajorTopicYN="Y">Antimalarial drugs</Keyword>
+<Keyword MajorTopicYN="Y">Mental and neurological manifestations</Keyword>
+<Keyword MajorTopicYN="Y">Meta-Analysis</Keyword>
+<Keyword MajorTopicYN="Y">Systematic review</Keyword>
+<Keyword MajorTopicYN="Y">Toxicity</Keyword>
+</KeywordList>
+<CoiStatement>Competing interests: The authors declare that they have no competing interests.</CoiStatement>
+</MedlineCitation>
+<PubmedData>
+<History>
+<PubMedPubDate PubStatus="accepted">
+<Year>2017</Year>
+<Month>06</Month>
+<Day>01</Day>
+</PubMedPubDate>
+<PubMedPubDate PubStatus="entrez">
+<Year>2017</Year>
+<Month>6</Month>
+<Day>21</Day>
+<Hour>6</Hour>
+<Minute>0</Minute>
+</PubMedPubDate>
+<PubMedPubDate PubStatus="pubmed">
+<Year>2017</Year>
+<Month>6</Month>
+<Day>21</Day>
+<Hour>6</Hour>
+<Minute>0</Minute>
+</PubMedPubDate>
+<PubMedPubDate PubStatus="medline">
+<Year>2017</Year>
+<Month>6</Month>
+<Day>21</Day>
+<Hour>6</Hour>
+<Minute>1</Minute>
+</PubMedPubDate>
+</History>
+<PublicationStatus>epublish</PublicationStatus>
+<ArticleIdList>
+<ArticleId IdType="pubmed">28630942</ArticleId>
+<ArticleId IdType="doi">10.12688/wellcomeopenres.10658.2</ArticleId>
+<ArticleId IdType="pmc">PMC5473418</ArticleId>
+</ArticleIdList>
+</PubmedData>
+</PubmedArticle>
+
+
+<PubmedArticle>
+<MedlineCitation Status="PubMed-not-MEDLINE" Owner="NLM">
+<PMID Version="1">28944301</PMID>
+<DateRevised>
+<Year>2018</Year>
+<Month>01</Month>
+<Day>20</Day>
+</DateRevised>
+<Article PubModel="Electronic-eCollection">
+<Journal>
+<ISSN IssnType="Print">2398-502X</ISSN>
+<JournalIssue CitedMedium="Print">
+<Volume>2</Volume>
+<PubDate>
+<Year>2017</Year>
+</PubDate>
+</JournalIssue>
+<Title>Wellcome open research</Title>
+<ISOAbbreviation>Wellcome Open Res</ISOAbbreviation>
+</Journal>
+<ArticleTitle>Intravenous rehydration of malnourished children with acute gastroenteritis and severe dehydration: A systematic review.</ArticleTitle>
+<Pagination>
+<MedlinePgn>65</MedlinePgn>
+</Pagination>
+<ELocationID EIdType="doi" ValidYN="Y">10.12688/wellcomeopenres.12346.1</ELocationID>
+<Abstract>
+<AbstractText>Background: Rehydration strategies in children with severe acute malnutrition (SAM) and severe dehydration are extremely cautious. The World Health Organization (WHO) SAM guidelines advise strongly against intravenous fluids unless the child is shocked or severely dehydrated and unable to tolerate oral fluids. Otherwise, guidelines recommend oral or nasogastric rehydration using low sodium oral rehydration solutions. There is limited evidence to support these recommendations. Methods: We conducted a systematic review of randomised controlled trials (RCTs) and observational studies on 15 th June 2017 comparing different strategies of rehydration therapy in children with acute gastroenteritis and severe dehydration, specifically relating to intravenous rehydration, using standard search terms. Two authors assessed papers for inclusion. The primary endpoint was evidence of fluid overload. Results: Four studies were identified, all published in English, including 883 children, all of which were conducted in low resource settings. Two were randomised controlled trials and two observational cohort studies, one incorporated assessment of myocardial and haemodynamic function. There was no evidence of fluid overload or other fluid-related adverse events, including children managed on more liberal rehydration protocols. Mortality was high overall, and particularly in children with shock managed on WHO recommendations (day-28 mortality 82%). There was no difference in safety outcomes when different rates of intravenous rehydration were compared. Conclusions: The current 'strong recommendations' for conservative rehydration of children with SAM are not based on emerging evidence. We found no clinical trials providing a direct assessment of the current WHO guidelines, and those that were available suggested that these children have a high mortality and remain fluid depleted on current therapy. Recent studies have reported no evidence of fluid overload or heart failure with more liberal rehydration regimens. Clinical trials are urgently required to inform guidelines on routes and rates of intravenous rehydration therapy for dehydration in children with SAM.</AbstractText>
+</Abstract>
+<AuthorList CompleteYN="Y">
+<Author ValidYN="Y">
+<LastName>Houston</LastName>
+<ForeName>Kirsty A</ForeName>
+<Initials>KA</Initials>
+<AffiliationInfo>
+<Affiliation>Department of Paediatrics, Faculty of Medicine, Imperial College, London, W2 1PG, UK.</Affiliation>
+</AffiliationInfo>
+<AffiliationInfo>
+<Affiliation>KEMRI-Wellcome Trust Research Programme, Kilifi, 80108, Kenya.</Affiliation>
+</AffiliationInfo>
+</Author>
+<Author ValidYN="Y">
+<LastName>Gibb</LastName>
+<ForeName>Jack G</ForeName>
+<Initials>JG</Initials>
+<AffiliationInfo>
+<Affiliation>Department of Paediatrics, Faculty of Medicine, Imperial College, London, W2 1PG, UK.</Affiliation>
+</AffiliationInfo>
+<AffiliationInfo>
+<Affiliation>KEMRI-Wellcome Trust Research Programme, Kilifi, 80108, Kenya.</Affiliation>
+</AffiliationInfo>
+</Author>
+<Author ValidYN="Y">
+<LastName>Maitland</LastName>
+<ForeName>Kathryn</ForeName>
+<Initials>K</Initials>
+<Identifier Source="ORCID">https://orcid.org/0000-0002-0007-0645</Identifier>
+<AffiliationInfo>
+<Affiliation>Department of Paediatrics, Faculty of Medicine, Imperial College, London, W2 1PG, UK.</Affiliation>
+</AffiliationInfo>
+<AffiliationInfo>
+<Affiliation>KEMRI-Wellcome Trust Research Programme, Kilifi, 80108, Kenya.</Affiliation>
+</AffiliationInfo>
+</Author>
+</AuthorList>
+<Language>eng</Language>
+<PublicationTypeList>
+<PublicationType UI="D016428">Journal Article</PublicationType>
+</PublicationTypeList>
+<ArticleDate DateType="Electronic">
+<Year>2017</Year>
+<Month>08</Month>
+<Day>18</Day>
+</ArticleDate>
+</Article>
+<MedlineJournalInfo>
+<Country>England</Country>
+<MedlineTA>Wellcome Open Res</MedlineTA>
+<NlmUniqueID>101696457</NlmUniqueID>
+<ISSNLinking>2398-502X</ISSNLinking>
+</MedlineJournalInfo>
+<CommentsCorrectionsList>
+<CommentsCorrections RefType="Cites">
+<RefSource>Clin Pediatr (Phila). 1994 Mar;33(3):147-54</RefSource>
+<PMID Version="1">8194289</PMID>
+</CommentsCorrections>
+<CommentsCorrections RefType="Cites">
+<RefSource>Eur J Clin Nutr. 2006 Apr;60(4):502-10</RefSource>
+<PMID Version="1">16319835</PMID>
+</CommentsCorrections>
+<CommentsCorrections RefType="Cites">
+<RefSource>Am J Clin Nutr. 1977 Mar;30(3):334-48</RefSource>
+<PMID Version="1">402806</PMID>
+</CommentsCorrections>
+<CommentsCorrections RefType="Cites">
+<RefSource>J Pediatr. 1997 Jun;130(6):853-5</RefSource>
+<PMID Version="1">9202602</PMID>
+</CommentsCorrections>
+<CommentsCorrections RefType="Cites">
+<RefSource>J Am Coll Nutr. 2005 Feb;24(1):38-43</RefSource>
+<PMID Version="1">15670983</PMID>
+</CommentsCorrections>
+<CommentsCorrections RefType="Cites">
+<RefSource>Lancet. 2013 Jul 20;382(9888):209-22</RefSource>
+<PMID Version="1">23680352</PMID>
+</CommentsCorrections>
+<CommentsCorrections RefType="Cites">
+<RefSource>Circ Heart Fail. 2010 Sep;3(5):606-11</RefSource>
+<PMID Version="1">20573993</PMID>
+</CommentsCorrections>
+<CommentsCorrections RefType="Cites">
+<RefSource>Lancet. 2010 Jun 5;375(9730):1969-87</RefSource>
+<PMID Version="1">20466419</PMID>
+</CommentsCorrections>
+<CommentsCorrections RefType="Cites">
+<RefSource>BMC Pediatr. 2010 Feb 22;10:10</RefSource>
+<PMID Version="1">20175902</PMID>
+</CommentsCorrections>
+<CommentsCorrections RefType="Cites">
+<RefSource>Lancet. 1999 Jun 5;353(9168):1919-22</RefSource>
+<PMID Version="1">10371570</PMID>
+</CommentsCorrections>
+<CommentsCorrections RefType="Cites">
+<RefSource>J Pediatr Gastroenterol Nutr. 2009 Mar;48(3):318-27</RefSource>
+<PMID Version="1">19274788</PMID>
+</CommentsCorrections>
+<CommentsCorrections RefType="Cites">
+<RefSource>J Paediatr Child Health. 2001 Feb;37(1):14-7</RefSource>
+<PMID Version="1">11168862</PMID>
+</CommentsCorrections>
+<CommentsCorrections RefType="Cites">
+<RefSource>Arch Dis Child. 1988 Nov;63(11):1359-62</RefSource>
+<PMID Version="1">3202643</PMID>
+</CommentsCorrections>
+<CommentsCorrections RefType="Cites">
+<RefSource>Int J Cardiol. 1992 Apr;35(1):19-25</RefSource>
+<PMID Version="1">1563875</PMID>
+</CommentsCorrections>
+<CommentsCorrections RefType="Cites">
+<RefSource>Indian Pediatr. 1989 Sep;26(9):875-81</RefSource>
+<PMID Version="1">2517425</PMID>
+</CommentsCorrections>
+<CommentsCorrections RefType="Cites">
+<RefSource>Clin Infect Dis. 2012 Dec;55 Suppl 4:S232-45</RefSource>
+<PMID Version="1">23169936</PMID>
+</CommentsCorrections>
+<CommentsCorrections RefType="Cites">
+<RefSource>Crit Care. 2017 May 3;21(1):103</RefSource>
+<PMID Version="1">28468633</PMID>
+</CommentsCorrections>
+<CommentsCorrections RefType="Cites">
+<RefSource>BMC Pediatr. 2010 Oct 06;10:71</RefSource>
+<PMID Version="1">20923577</PMID>
+</CommentsCorrections>
+<CommentsCorrections RefType="Cites">
+<RefSource>Nutr J. 2011 Sep 13;10:92</RefSource>
+<PMID Version="1">21910909</PMID>
+</CommentsCorrections>
+<CommentsCorrections RefType="Cites">
+<RefSource>PLoS One. 2012;7(6):e38321</RefSource>
+<PMID Version="1">22675542</PMID>
+</CommentsCorrections>
+<CommentsCorrections RefType="Cites">
+<RefSource>Heart. 2003 Aug;89(8):875-8</RefSource>
+<PMID Version="1">12860862</PMID>
+</CommentsCorrections>
+<CommentsCorrections RefType="Cites">
+<RefSource>BMJ. 2011 Oct 18;343:d5928</RefSource>
+<PMID Version="1">22008217</PMID>
+</CommentsCorrections>
+<CommentsCorrections RefType="Cites">
+<RefSource>PLoS Med. 2006 Dec;3(12):e500</RefSource>
+<PMID Version="1">17194194</PMID>
+</CommentsCorrections>
+<CommentsCorrections RefType="Cites">
+<RefSource>Arch Dis Child. 2016 Feb;101(2):166-71</RefSource>
+<PMID Version="1">26553908</PMID>
+</CommentsCorrections>
+<CommentsCorrections RefType="Cites">
+<RefSource>Crit Care. 2017 Jan 11;21(1):10</RefSource>
+<PMID Version="1">28073375</PMID>
+</CommentsCorrections>
+</CommentsCorrectionsList>
+<KeywordList Owner="NOTNLM">
+<Keyword MajorTopicYN="N">Africa</Keyword>
+<Keyword MajorTopicYN="N">Asia</Keyword>
+<Keyword MajorTopicYN="N">dehydration</Keyword>
+<Keyword MajorTopicYN="N">gastroenteritis</Keyword>
+<Keyword MajorTopicYN="N">malnutrition</Keyword>
+<Keyword MajorTopicYN="N">rehydration</Keyword>
+<Keyword MajorTopicYN="N">systematic review</Keyword>
+</KeywordList>
+<CoiStatement>Competing interests: No competing interests were disclosed.</CoiStatement>
+</MedlineCitation>
+<PubmedData>
+<History>
+<PubMedPubDate PubStatus="accepted">
+<Year>2017</Year>
+<Month>08</Month>
+<Day>16</Day>
+</PubMedPubDate>
+<PubMedPubDate PubStatus="entrez">
+<Year>2017</Year>
+<Month>9</Month>
+<Day>26</Day>
+<Hour>6</Hour>
+<Minute>0</Minute>
+</PubMedPubDate>
+<PubMedPubDate PubStatus="pubmed">
+<Year>2017</Year>
+<Month>9</Month>
+<Day>26</Day>
+<Hour>6</Hour>
+<Minute>0</Minute>
+</PubMedPubDate>
+<PubMedPubDate PubStatus="medline">
+<Year>2017</Year>
+<Month>9</Month>
+<Day>26</Day>
+<Hour>6</Hour>
+<Minute>1</Minute>
+</PubMedPubDate>
+</History>
+<PublicationStatus>epublish</PublicationStatus>
+<ArticleIdList>
+<ArticleId IdType="pubmed">28944301</ArticleId>
+<ArticleId IdType="doi">10.12688/wellcomeopenres.12346.1</ArticleId>
+<ArticleId IdType="pmc">PMC5590082</ArticleId>
+</ArticleIdList>
+</PubmedData>
+</PubmedArticle>
+
+
+<PubmedArticle>
+<MedlineCitation Status="PubMed-not-MEDLINE" Owner="NLM">
+<PMID Version="1">29090271</PMID>
+<DateRevised>
+<Year>2018</Year>
+<Month>01</Month>
+<Day>20</Day>
+</DateRevised>
+<Article PubModel="Electronic-eCollection">
+<Journal>
+<ISSN IssnType="Print">2398-502X</ISSN>
+<JournalIssue CitedMedium="Print">
+<Volume>2</Volume>
+<PubDate>
+<Year>2017</Year>
+</PubDate>
+</JournalIssue>
+<Title>Wellcome open research</Title>
+<ISOAbbreviation>Wellcome Open Res</ISOAbbreviation>
+</Journal>
+<ArticleTitle>Oral rehydration of malnourished children with diarrhoea and dehydration: A systematic review.</ArticleTitle>
+<Pagination>
+<MedlinePgn>66</MedlinePgn>
+</Pagination>
+<ELocationID EIdType="doi" ValidYN="Y">10.12688/wellcomeopenres.12357.3</ELocationID>
+<Abstract>
+<AbstractText>Background: Diarrhoea complicates over half of admissions to hospital with severe acute malnutrition (SAM). World Health Organization (WHO) guidelines for the management of dehydration recommend the use of oral rehydration with ReSoMal (an oral rehydration solution (ORS) for SAM), which has lower sodium (45mmols/l) and higher potassium (40mmols/l) content than old WHO ORS. The composition of ReSoMal was designed specifically to address theoretical risks of sodium overload and potential under-treatment of severe hypokalaemia with rehydration using standard ORS. In African children, severe hyponatraemia at admission is a major risk factor for poor outcome in children with SAM complicated by diarrhoea. We therefore reviewed the evidence for oral rehydration therapy in children with SAM. Methods: We conducted a systematic review of randomised controlled trials (RCTs) on 18 th July 2017 comparing different oral rehydration solutions in severely malnourished children with diarrhoea and dehydration, using standard search terms. The author assessed papers for inclusion. The primary endpoint was frequency of hyponatraemia during rehydration. Results: Six RCTs were identified, all published in English and conducted in low resource settings in Asia. A range of ORS were evaluated in these studies, including old WHO ORS, standard hypo-osmolar WHO ORS and ReSoMal. Hyponatraemia was observed in two trials evaluating ReSoMal, three children developed severe hyponatraemia with one experiencing convulsions. Hypo-osmolar ORS was found to have benefits in time to rehydration, reduction of stool output and duration of diarrhoea. No trials reported over-hydration or fatalities. Conclusions: Current WHO guidelines strongly recommend the use of ReSoMal based on low quality of evidence. Studies indicate a significant risk of hyponatraemia on ReSoMal in Asian children, none have been conducted in Africa, where SAM mortality remains high. Further research should be conducted in Africa to evaluate optimal ORS for children with SAM and to generate evidence based, practical guidelines.</AbstractText>
+<CopyrightInformation>© 2017 Houston KA et al.</CopyrightInformation>
+</Abstract>
+<AuthorList CompleteYN="Y">
+<Author ValidYN="Y">
+<LastName>Houston</LastName>
+<ForeName>Kirsty A</ForeName>
+<Initials>KA</Initials>
+<AffiliationInfo>
+<Affiliation>Department of Paediatrics, Faculty of Medicine, Imperial College, London, W2 1PG, UK.</Affiliation>
+</AffiliationInfo>
+<AffiliationInfo>
+<Affiliation>KEMRI-Wellcome Trust Research Programme, Kilifi, 80108, Kenya.</Affiliation>
+</AffiliationInfo>
+</Author>
+<Author ValidYN="Y">
+<LastName>Gibb</LastName>
+<ForeName>Jack G</ForeName>
+<Initials>JG</Initials>
+<AffiliationInfo>
+<Affiliation>Department of Paediatrics, Faculty of Medicine, Imperial College, London, W2 1PG, UK.</Affiliation>
+</AffiliationInfo>
+<AffiliationInfo>
+<Affiliation>KEMRI-Wellcome Trust Research Programme, Kilifi, 80108, Kenya.</Affiliation>
+</AffiliationInfo>
+</Author>
+<Author ValidYN="Y">
+<LastName>Maitland</LastName>
+<ForeName>Kathryn</ForeName>
+<Initials>K</Initials>
+<Identifier Source="ORCID">https://orcid.org/0000-0002-0007-0645</Identifier>
+<AffiliationInfo>
+<Affiliation>Department of Paediatrics, Faculty of Medicine, Imperial College, London, W2 1PG, UK.</Affiliation>
+</AffiliationInfo>
+<AffiliationInfo>
+<Affiliation>KEMRI-Wellcome Trust Research Programme, Kilifi, 80108, Kenya.</Affiliation>
+</AffiliationInfo>
+</Author>
+</AuthorList>
+<Language>eng</Language>
+<PublicationTypeList>
+<PublicationType UI="D016428">Journal Article</PublicationType>
+</PublicationTypeList>
+<ArticleDate DateType="Electronic">
+<Year>2017</Year>
+<Month>10</Month>
+<Day>27</Day>
+</ArticleDate>
+</Article>
+<MedlineJournalInfo>
+<Country>England</Country>
+<MedlineTA>Wellcome Open Res</MedlineTA>
+<NlmUniqueID>101696457</NlmUniqueID>
+<ISSNLinking>2398-502X</ISSNLinking>
+</MedlineJournalInfo>
+<CommentsCorrectionsList>
+<CommentsCorrections RefType="Cites">
+<RefSource>Acta Paediatr. 2011 Dec;100(12):e275-9</RefSource>
+<PMID Version="1">21627690</PMID>
+</CommentsCorrections>
+<CommentsCorrections RefType="Cites">
+<RefSource>J Paediatr Child Health. 2006 Oct;42(10):583-93</RefSource>
+<PMID Version="1">16972963</PMID>
+</CommentsCorrections>
+<CommentsCorrections RefType="Cites">
+<RefSource>Wellcome Open Res. 2017 Aug 18;2:65</RefSource>
+<PMID Version="1">28944301</PMID>
+</CommentsCorrections>
+<CommentsCorrections RefType="Cites">
+<RefSource>Lancet. 1999 Jun 5;353(9168):1919-22</RefSource>
+<PMID Version="1">10371570</PMID>
+</CommentsCorrections>
+<CommentsCorrections RefType="Cites">
+<RefSource>Arch Dis Child. 2001 Mar;84(3):237-40</RefSource>
+<PMID Version="1">11207173</PMID>
+</CommentsCorrections>
+<CommentsCorrections RefType="Cites">
+<RefSource>J Pediatr Gastroenterol Nutr. 2009 Mar;48(3):318-27</RefSource>
+<PMID Version="1">19274788</PMID>
+</CommentsCorrections>
+<CommentsCorrections RefType="Cites">
+<RefSource>J Trop Pediatr. 2015 Dec;61(6):435-41</RefSource>
+<PMID Version="1">26314308</PMID>
+</CommentsCorrections>
+<CommentsCorrections RefType="Cites">
+<RefSource>Cochrane Database Syst Rev. 2002;(1):CD002847</RefSource>
+<PMID Version="1">11869639</PMID>
+</CommentsCorrections>
+<CommentsCorrections RefType="Cites">
+<RefSource>J Health Popul Nutr. 2015 May 01;34:3</RefSource>
+<PMID Version="1">26825757</PMID>
+</CommentsCorrections>
+<CommentsCorrections RefType="Cites">
+<RefSource>J Health Popul Nutr. 2015 May 01;34:10</RefSource>
+<PMID Version="1">26825923</PMID>
+</CommentsCorrections>
+<CommentsCorrections RefType="Cites">
+<RefSource>J Health Popul Nutr. 2011 Jun;29(3):229-35</RefSource>
+<PMID Version="1">21766558</PMID>
+</CommentsCorrections>
+<CommentsCorrections RefType="Cites">
+<RefSource>Lancet. 1967 Aug 19;2(7512):384-7</RefSource>
+<PMID Version="1">4166331</PMID>
+</CommentsCorrections>
+<CommentsCorrections RefType="Cites">
+<RefSource>Nutr J. 2011 Oct 11;10:110</RefSource>
+<PMID Version="1">21989455</PMID>
+</CommentsCorrections>
+<CommentsCorrections RefType="Cites">
+<RefSource>Crit Care. 2017 May 3;21(1):103</RefSource>
+<PMID Version="1">28468633</PMID>
+</CommentsCorrections>
+<CommentsCorrections RefType="Cites">
+<RefSource>Nutr J. 2011 Sep 13;10:92</RefSource>
+<PMID Version="1">21910909</PMID>
+</CommentsCorrections>
+<CommentsCorrections RefType="Cites">
+<RefSource>Indian Pediatr. 2000 Sep;37(9):952-60</RefSource>
+<PMID Version="1">10992331</PMID>
+</CommentsCorrections>
+<CommentsCorrections RefType="Cites">
+<RefSource>Ann Trop Paediatr. 2011;31(2):97-107</RefSource>
+<PMID Version="1">21575313</PMID>
+</CommentsCorrections>
+<CommentsCorrections RefType="Cites">
+<RefSource>PLoS One. 2012;7(6):e38321</RefSource>
+<PMID Version="1">22675542</PMID>
+</CommentsCorrections>
+<CommentsCorrections RefType="Cites">
+<RefSource>J Pediatr. 2003 Nov;143(5):614-9</RefSource>
+<PMID Version="1">14615732</PMID>
+</CommentsCorrections>
+<CommentsCorrections RefType="Cites">
+<RefSource>PLoS Med. 2006 Dec;3(12):e500</RefSource>
+<PMID Version="1">17194194</PMID>
+</CommentsCorrections>
+<CommentsCorrections RefType="Cites">
+<RefSource>Arch Dis Child. 2016 Feb;101(2):166-71</RefSource>
+<PMID Version="1">26553908</PMID>
+</CommentsCorrections>
+</CommentsCorrectionsList>
+<KeywordList Owner="NOTNLM">
+<Keyword MajorTopicYN="Y">Africa</Keyword>
+<Keyword MajorTopicYN="Y">Asia</Keyword>
+<Keyword MajorTopicYN="Y">dehydration</Keyword>
+<Keyword MajorTopicYN="Y">gastroenteritis</Keyword>
+<Keyword MajorTopicYN="Y">malnutrition</Keyword>
+<Keyword MajorTopicYN="Y">oral rehydration solution</Keyword>
+<Keyword MajorTopicYN="Y">rehydration</Keyword>
+<Keyword MajorTopicYN="Y">systematic review</Keyword>
+</KeywordList>
+<CoiStatement>Competing interests: No competing interest were declared.</CoiStatement>
+</MedlineCitation>
+<PubmedData>
+<History>
+<PubMedPubDate PubStatus="accepted">
+<Year>2017</Year>
+<Month>10</Month>
+<Day>28</Day>
+</PubMedPubDate>
+<PubMedPubDate PubStatus="entrez">
+<Year>2017</Year>
+<Month>11</Month>
+<Day>2</Day>
+<Hour>6</Hour>
+<Minute>0</Minute>
+</PubMedPubDate>
+<PubMedPubDate PubStatus="pubmed">
+<Year>2017</Year>
+<Month>11</Month>
+<Day>2</Day>
+<Hour>6</Hour>
+<Minute>0</Minute>
+</PubMedPubDate>
+<PubMedPubDate PubStatus="medline">
+<Year>2017</Year>
+<Month>11</Month>
+<Day>2</Day>
+<Hour>6</Hour>
+<Minute>1</Minute>
+</PubMedPubDate>
+</History>
+<PublicationStatus>epublish</PublicationStatus>
+<ArticleIdList>
+<ArticleId IdType="pubmed">29090271</ArticleId>
+<ArticleId IdType="doi">10.12688/wellcomeopenres.12357.3</ArticleId>
+<ArticleId IdType="pmc">PMC5657219</ArticleId>
+</ArticleIdList>
+</PubmedData>
+</PubmedArticle>
+
+
+<PubmedArticle>
+<MedlineCitation Status="PubMed-not-MEDLINE" Owner="NLM">
+<PMID Version="1">29511741</PMID>
+<DateRevised>
+<Year>2018</Year>
+<Month>03</Month>
+<Day>11</Day>
+</DateRevised>
+<Article PubModel="Electronic-eCollection">
+<Journal>
+<ISSN IssnType="Print">2398-502X</ISSN>
+<JournalIssue CitedMedium="Print">
+<Volume>3</Volume>
+<PubDate>
+<Year>2018</Year>
+</PubDate>
+</JournalIssue>
+<Title>Wellcome open research</Title>
+<ISOAbbreviation>Wellcome Open Res</ISOAbbreviation>
+</Journal>
+<ArticleTitle>Evaluating healthcare priority setting at the meso level: A thematic review of empirical literature.</ArticleTitle>
+<Pagination>
+<MedlinePgn>2</MedlinePgn>
+</Pagination>
+<ELocationID EIdType="doi" ValidYN="Y">10.12688/wellcomeopenres.13393.2</ELocationID>
+<Abstract>
+<AbstractText>Background: Decentralization of health systems has made sub-national/regional healthcare systems the backbone of healthcare delivery. These regions are tasked with the difficult responsibility of determining healthcare priorities and resource allocation amidst scarce resources. We aimed to review empirical literature that evaluated priority setting practice at the meso level of health systems. Methods: We systematically searched PubMed, ScienceDirect and Google scholar databases and supplemented these with manual searching for relevant studies, based on the reference list of selected papers. We only included empirical studies that described and evaluated, or those that only evaluated priority setting practice at the meso-level. A total of 16 papers were identified from LMICs and HICs. We analyzed data from the selected papers by thematic review. Results: Few studies used systematic priority setting processes, and all but one were from HICs. Both formal and informal criteria are used in priority-setting, however, informal criteria appear to be more perverse in LMICs compared to HICs. The priority setting process at the meso-level is a top-down approach with minimal involvement of the community. Accountability for reasonableness was the most common evaluative framework as it was used in 12 of the 16 studies. Efficiency, reallocation of resources and options for service delivery redesign were the most common outcome measures used to evaluate priority setting. Limitations: Our study was limited by the fact that there are very few empirical studies that have evaluated priority setting at the meso-level and there is likelihood that we did not capture all the studies. Conclusions: Improving priority setting practices at the meso level is crucial to strengthening health systems. This can be achieved through incorporating and adapting systematic priority setting processes and frameworks to the context where used, and making considerations of both process and outcome measures during priority setting and resource allocation.</AbstractText>
+</Abstract>
+<AuthorList CompleteYN="Y">
+<Author ValidYN="Y">
+<LastName>Waithaka</LastName>
+<ForeName>Dennis</ForeName>
+<Initials>D</Initials>
+<Identifier Source="ORCID">https://orcid.org/0000-0002-2879-5226</Identifier>
+<AffiliationInfo>
+<Affiliation>KEMRI-Wellcome Trust Research Programme, Kilifi, Kenya.</Affiliation>
+</AffiliationInfo>
+</Author>
+<Author ValidYN="Y">
+<LastName>Tsofa</LastName>
+<ForeName>Benjamin</ForeName>
+<Initials>B</Initials>
+<AffiliationInfo>
+<Affiliation>KEMRI-Wellcome Trust Research Programme, Kilifi, Kenya.</Affiliation>
+</AffiliationInfo>
+</Author>
+<Author ValidYN="Y">
+<LastName>Barasa</LastName>
+<ForeName>Edwine</ForeName>
+<Initials>E</Initials>
+<AffiliationInfo>
+<Affiliation>Health Economics Research Unit, KEMRI-Wellcome Trust Research Programme, Nairobi, Kenya.</Affiliation>
+</AffiliationInfo>
+<AffiliationInfo>
+<Affiliation>Nuffield Department of Medicine, University of Oxford, Oxford, UK.</Affiliation>
+</AffiliationInfo>
+</Author>
+</AuthorList>
+<Language>eng</Language>
+<PublicationTypeList>
+<PublicationType UI="D016428">Journal Article</PublicationType>
+</PublicationTypeList>
+<ArticleDate DateType="Electronic">
+<Year>2018</Year>
+<Month>01</Month>
+<Day>08</Day>
+</ArticleDate>
+</Article>
+<MedlineJournalInfo>
+<Country>England</Country>
+<MedlineTA>Wellcome Open Res</MedlineTA>
+<NlmUniqueID>101696457</NlmUniqueID>
+<ISSNLinking>2398-502X</ISSNLinking>
+</MedlineJournalInfo>
+<CommentsCorrectionsList>
+<CommentsCorrections RefType="Cites">
+<RefSource>CMAJ. 1997 Jul 15;157(2):163-7</RefSource>
+<PMID Version="1">9238146</PMID>
+</CommentsCorrections>
+<CommentsCorrections RefType="Cites">
+<RefSource>Implement Sci. 2011 Feb 10;6:11</RefSource>
+<PMID Version="1">21310021</PMID>
+</CommentsCorrections>
+<CommentsCorrections RefType="Cites">
+<RefSource>Healthc Q. 2005;8(2):50-9, 4</RefSource>
+<PMID Version="1">15828568</PMID>
+</CommentsCorrections>
+<CommentsCorrections RefType="Cites">
+<RefSource>Pan Afr Med J. 2015 Oct 20;22:156</RefSource>
+<PMID Version="1">26889337</PMID>
+</CommentsCorrections>
+<CommentsCorrections RefType="Cites">
+<RefSource>Health Policy. 2014 Aug;117(2):266-74</RefSource>
+<PMID Version="1">24815208</PMID>
+</CommentsCorrections>
+<CommentsCorrections RefType="Cites">
+<RefSource>Int J Health Plann Manage. 2014 Oct-Dec;29(4):342-61</RefSource>
+<PMID Version="1">23775594</PMID>
+</CommentsCorrections>
+<CommentsCorrections RefType="Cites">
+<RefSource>Glob Health Action. 2011;4:null</RefSource>
+<PMID Version="1">22072991</PMID>
+</CommentsCorrections>
+<CommentsCorrections RefType="Cites">
+<RefSource>J Health Serv Res Policy. 2006 Jul;11(3):150-4</RefSource>
+<PMID Version="1">16824261</PMID>
+</CommentsCorrections>
+<CommentsCorrections RefType="Cites">
+<RefSource>Health Policy Plan. 2015 Apr;30(3):386-96</RefSource>
+<PMID Version="1">24604831</PMID>
+</CommentsCorrections>
+<CommentsCorrections RefType="Cites">
+<RefSource>Health Policy. 2007 Jun;82(1):78-94</RefSource>
+<PMID Version="1">17034898</PMID>
+</CommentsCorrections>
+<CommentsCorrections RefType="Cites">
+<RefSource>BMC Health Serv Res. 2010 Dec 01;10:322</RefSource>
+<PMID Version="1">21122123</PMID>
+</CommentsCorrections>
+<CommentsCorrections RefType="Cites">
+<RefSource>Trop Med Int Health. 2009 Aug;14(8):930-9</RefSource>
+<PMID Version="1">19563479</PMID>
+</CommentsCorrections>
+<CommentsCorrections RefType="Cites">
+<RefSource>Health Care Anal. 2007 Sep;15(3):159-67</RefSource>
+<PMID Version="1">17922194</PMID>
+</CommentsCorrections>
+<CommentsCorrections RefType="Cites">
+<RefSource>Health Policy. 2007 Dec;84(2-3):220-33</RefSource>
+<PMID Version="1">17628202</PMID>
+</CommentsCorrections>
+<CommentsCorrections RefType="Cites">
+<RefSource>BMJ. 2015 Jan 02;350:g7647</RefSource>
+<PMID Version="1">25555855</PMID>
+</CommentsCorrections>
+<CommentsCorrections RefType="Cites">
+<RefSource>Int J Health Plann Manage. 2011 Apr-Jun;26(2):e102-120</RefSource>
+<PMID Version="1">20603818</PMID>
+</CommentsCorrections>
+<CommentsCorrections RefType="Cites">
+<RefSource>BMC Health Serv Res. 2009 Mar 05;9:43</RefSource>
+<PMID Version="1">19265518</PMID>
+</CommentsCorrections>
+<CommentsCorrections RefType="Cites">
+<RefSource>Soc Sci Med. 2013 Dec;98:162-8</RefSource>
+<PMID Version="1">24331895</PMID>
+</CommentsCorrections>
+<CommentsCorrections RefType="Cites">
+<RefSource>J Health Serv Res Policy. 2006 Jan;11(1):32-7</RefSource>
+<PMID Version="1">16378530</PMID>
+</CommentsCorrections>
+<CommentsCorrections RefType="Cites">
+<RefSource>Cost Eff Resour Alloc. 2004 Apr 22;2(1):3</RefSource>
+<PMID Version="1">15104792</PMID>
+</CommentsCorrections>
+<CommentsCorrections RefType="Cites">
+<RefSource>BMC Med Res Methodol. 2008 Jul 10;8:45</RefSource>
+<PMID Version="1">18616818</PMID>
+</CommentsCorrections>
+<CommentsCorrections RefType="Cites">
+<RefSource>Health Aff (Millwood). 1998 Sep-Oct;17(5):50-64</RefSource>
+<PMID Version="1">9769571</PMID>
+</CommentsCorrections>
+<CommentsCorrections RefType="Cites">
+<RefSource>Soc Sci Med. 2012 Dec;75(12):2386-93</RefSource>
+<PMID Version="1">23083894</PMID>
+</CommentsCorrections>
+<CommentsCorrections RefType="Cites">
+<RefSource>Health Policy. 2003 Jun;64(3):335-48</RefSource>
+<PMID Version="1">12745172</PMID>
+</CommentsCorrections>
+<CommentsCorrections RefType="Cites">
+<RefSource>Bioethics. 2008 Feb;22(2):101-12</RefSource>
+<PMID Version="1">18251770</PMID>
+</CommentsCorrections>
+<CommentsCorrections RefType="Cites">
+<RefSource>Malar J. 2010 Nov 01;9:309</RefSource>
+<PMID Version="1">21040552</PMID>
+</CommentsCorrections>
+<CommentsCorrections RefType="Cites">
+<RefSource>Soc Sci Med. 2014 May;108:257-61</RefSource>
+<PMID Version="1">24647102</PMID>
+</CommentsCorrections>
+<CommentsCorrections RefType="Cites">
+<RefSource>Soc Sci Med. 2010 Aug;71(4):751-9</RefSource>
+<PMID Version="1">20554365</PMID>
+</CommentsCorrections>
+<CommentsCorrections RefType="Cites">
+<RefSource>Soc Sci Med. 2014 Feb;102:190-200</RefSource>
+<PMID Version="1">24565157</PMID>
+</CommentsCorrections>
+<CommentsCorrections RefType="Cites">
+<RefSource>Health Policy. 2017 Sep;121(9):937-946</RefSource>
+<PMID Version="1">28734682</PMID>
+</CommentsCorrections>
+<CommentsCorrections RefType="Cites">
+<RefSource>BMC Health Serv Res. 2014 Feb 18;14:75</RefSource>
+<PMID Version="1">24548767</PMID>
+</CommentsCorrections>
+<CommentsCorrections RefType="Cites">
+<RefSource>Int J Health Policy Manag. 2015 Sep 16;4(11):719-32</RefSource>
+<PMID Version="1">26673332</PMID>
+</CommentsCorrections>
+<CommentsCorrections RefType="Cites">
+<RefSource>Health Policy Plan. 2017 Apr 1;32(3):329-337</RefSource>
+<PMID Version="1">27679522</PMID>
+</CommentsCorrections>
+</CommentsCorrectionsList>
+<KeywordList Owner="NOTNLM">
+<Keyword MajorTopicYN="N">evaluation</Keyword>
+<Keyword MajorTopicYN="N">meso-level</Keyword>
+<Keyword MajorTopicYN="N">priority setting</Keyword>
+<Keyword MajorTopicYN="N">resource allocation</Keyword>
+</KeywordList>
+<CoiStatement>No competing interests were disclosed.</CoiStatement>
+</MedlineCitation>
+<PubmedData>
+<History>
+<PubMedPubDate PubStatus="accepted">
+<Year>2018</Year>
+<Month>01</Month>
+<Day>03</Day>
+</PubMedPubDate>
+<PubMedPubDate PubStatus="entrez">
+<Year>2018</Year>
+<Month>3</Month>
+<Day>8</Day>
+<Hour>6</Hour>
+<Minute>0</Minute>
+</PubMedPubDate>
+<PubMedPubDate PubStatus="pubmed">
+<Year>2018</Year>
+<Month>3</Month>
+<Day>8</Day>
+<Hour>6</Hour>
+<Minute>0</Minute>
+</PubMedPubDate>
+<PubMedPubDate PubStatus="medline">
+<Year>2018</Year>
+<Month>3</Month>
+<Day>8</Day>
+<Hour>6</Hour>
+<Minute>1</Minute>
+</PubMedPubDate>
+</History>
+<PublicationStatus>epublish</PublicationStatus>
+<ArticleIdList>
+<ArticleId IdType="pubmed">29511741</ArticleId>
+<ArticleId IdType="doi">10.12688/wellcomeopenres.13393.2</ArticleId>
+<ArticleId IdType="pmc">PMC5814743</ArticleId>
+</ArticleIdList>
+</PubmedData>
+</PubmedArticle>
+
+
+<PubmedArticle>
+<MedlineCitation Status="PubMed-not-MEDLINE" Owner="NLM">
+<PMID Version="1">29669709</PMID>
+<DateRevised>
+<Year>2018</Year>
+<Month>08</Month>
+<Day>15</Day>
+</DateRevised>
+<Article PubModel="Electronic">
+<Journal>
+<ISSN IssnType="Print">2291-9694</ISSN>
+<JournalIssue CitedMedium="Print">
+<Volume>6</Volume>
+<Issue>2</Issue>
+<PubDate>
+<Year>2018</Year>
+<Month>Apr</Month>
+<Day>18</Day>
+</PubDate>
+</JournalIssue>
+<Title>JMIR medical informatics</Title>
+<ISOAbbreviation>JMIR Med Inform</ISOAbbreviation>
+</Journal>
+<ArticleTitle>Implementing an Open Source Electronic Health Record System in Kenyan Health Care Facilities: Case Study.</ArticleTitle>
+<Pagination>
+<MedlinePgn>e22</MedlinePgn>
+</Pagination>
+<ELocationID EIdType="doi" ValidYN="Y">10.2196/medinform.8403</ELocationID>
+<Abstract>
+<AbstractText Label="BACKGROUND" NlmCategory="BACKGROUND">The Kenyan government, working with international partners and local organizations, has developed an eHealth strategy, specified standards, and guidelines for electronic health record adoption in public hospitals and implemented two major health information technology projects: District Health Information Software Version 2, for collating national health care indicators and a rollout of the KenyaEMR and International Quality Care Health Management Information Systems, for managing 600 HIV clinics across the country. Following these projects, a modified version of the Open Medical Record System electronic health record was specified and developed to fulfill the clinical and administrative requirements of health care facilities operated by devolved counties in Kenya and to automate the process of collating health care indicators and entering them into the District Health Information Software Version 2 system.</AbstractText>
+<AbstractText Label="OBJECTIVE" NlmCategory="OBJECTIVE">We aimed to present a descriptive case study of the implementation of an open source electronic health record system in public health care facilities in Kenya.</AbstractText>
+<AbstractText Label="METHODS" NlmCategory="METHODS">We conducted a landscape review of existing literature concerning eHealth policies and electronic health record development in Kenya. Following initial discussions with the Ministry of Health, the World Health Organization, and implementing partners, we conducted a series of visits to implementing sites to conduct semistructured individual interviews and group discussions with stakeholders to produce a historical case study of the implementation.</AbstractText>
+<AbstractText Label="RESULTS" NlmCategory="RESULTS">This case study describes how consultants based in Kenya, working with developers in India and project stakeholders, implemented the new system into several public hospitals in a county in rural Kenya. The implementation process included upgrading the hospital information technology infrastructure, training users, and attempting to garner administrative and clinical buy-in for adoption of the system. The initial deployment was ultimately scaled back due to a complex mix of sociotechnical and administrative issues. Learning from these early challenges, the system is now being redesigned and prepared for deployment in 6 new counties across Kenya.</AbstractText>
+<AbstractText Label="CONCLUSIONS" NlmCategory="CONCLUSIONS">Implementing electronic health record systems is a challenging process in high-income settings. In low-income settings, such as Kenya, open source software may offer some respite from the high costs of software licensing, but the familiar challenges of clinical and administration buy-in, the need to adequately train users, and the need for the provision of ongoing technical support are common across the North-South divide. Strategies such as creating local support teams, using local development resources, ensuring end user buy-in, and rolling out in smaller facilities before larger hospitals are being incorporated into the project. These are positive developments to help maintain momentum as the project continues. Further integration with existing open source communities could help ongoing development and implementations of the project. We hope this case study will provide some lessons and guidance for other challenging implementations of electronic health record systems as they continue across Africa.</AbstractText>
+<CopyrightInformation>©Naomi Muinga, Steve Magare, Jonathan Monda, Onesmus Kamau, Stuart Houston, Hamish Fraser, John Powell, Mike English, Chris Paton. Originally published in JMIR Medical Informatics (http://medinform.jmir.org), 18.04.2018.</CopyrightInformation>
+</Abstract>
+<AuthorList CompleteYN="Y">
+<Author ValidYN="Y" EqualContrib="Y">
+<LastName>Muinga</LastName>
+<ForeName>Naomi</ForeName>
+<Initials>N</Initials>
+<Identifier Source="ORCID">http://orcid.org/0000-0002-0749-0255</Identifier>
+<AffiliationInfo>
+<Affiliation>KEMRI/Wellcome Trust Research Programme, Nairobi, Kenya.</Affiliation>
+</AffiliationInfo>
+</Author>
+<Author ValidYN="Y">
+<LastName>Magare</LastName>
+<ForeName>Steve</ForeName>
+<Initials>S</Initials>
+<Identifier Source="ORCID">http://orcid.org/0000-0003-2876-4208</Identifier>
+<AffiliationInfo>
+<Affiliation>KEMRI/Wellcome Trust Research Programme, Nairobi, Kenya.</Affiliation>
+</AffiliationInfo>
+</Author>
+<Author ValidYN="Y">
+<LastName>Monda</LastName>
+<ForeName>Jonathan</ForeName>
+<Initials>J</Initials>
+<Identifier Source="ORCID">http://orcid.org/0000-0002-0086-9000</Identifier>
+<AffiliationInfo>
+<Affiliation>KEMRI/Wellcome Trust Research Programme, Nairobi, Kenya.</Affiliation>
+</AffiliationInfo>
+</Author>
+<Author ValidYN="Y">
+<LastName>Kamau</LastName>
+<ForeName>Onesmus</ForeName>
+<Initials>O</Initials>
+<Identifier Source="ORCID">http://orcid.org/0000-0003-2940-6306</Identifier>
+<AffiliationInfo>
+<Affiliation>e-Health and Systems Development Unit, Ministry of Health, Nairobi, Kenya.</Affiliation>
+</AffiliationInfo>
+</Author>
+<Author ValidYN="Y">
+<LastName>Houston</LastName>
+<ForeName>Stuart</ForeName>
+<Initials>S</Initials>
+<Identifier Source="ORCID">http://orcid.org/0000-0002-3175-082X</Identifier>
+<AffiliationInfo>
+<Affiliation>Vimak Company Limited, Nairobi, Kenya.</Affiliation>
+</AffiliationInfo>
+</Author>
+<Author ValidYN="Y">
+<LastName>Fraser</LastName>
+<ForeName>Hamish</ForeName>
+<Initials>H</Initials>
+<Identifier Source="ORCID">http://orcid.org/0000-0003-4383-2854</Identifier>
+<AffiliationInfo>
+<Affiliation>Brown Center for Biomedical Informatics, Brown University, Providence, RI, United States.</Affiliation>
+</AffiliationInfo>
+</Author>
+<Author ValidYN="Y">
+<LastName>Powell</LastName>
+<ForeName>John</ForeName>
+<Initials>J</Initials>
+<Identifier Source="ORCID">http://orcid.org/0000-0002-1456-4857</Identifier>
+<AffiliationInfo>
+<Affiliation>Nuffield Department of of Primary Care Health Sciences, University of Oxford, Oxford, United Kingdom.</Affiliation>
+</AffiliationInfo>
+</Author>
+<Author ValidYN="Y">
+<LastName>English</LastName>
+<ForeName>Mike</ForeName>
+<Initials>M</Initials>
+<Identifier Source="ORCID">http://orcid.org/0000-0002-7427-0826</Identifier>
+<AffiliationInfo>
+<Affiliation>KEMRI/Wellcome Trust Research Programme, Nairobi, Kenya.</Affiliation>
+</AffiliationInfo>
+<AffiliationInfo>
+<Affiliation>Nuffield Department of Medicine, University of Oxford, Oxford, United Kingdom.</Affiliation>
+</AffiliationInfo>
+</Author>
+<Author ValidYN="Y">
+<LastName>Paton</LastName>
+<ForeName>Chris</ForeName>
+<Initials>C</Initials>
+<Identifier Source="ORCID">http://orcid.org/0000-0001-6952-9621</Identifier>
+<AffiliationInfo>
+<Affiliation>Centre for Tropical Medicine and Global Health, Nuffield Department of Medicine, University of Oxford, Oxford, United Kingdom.</Affiliation>
+</AffiliationInfo>
+</Author>
+</AuthorList>
+<Language>eng</Language>
+<GrantList CompleteYN="Y">
+<Grant>
+<Agency>Wellcome Trust</Agency>
+<Country>United Kingdom</Country>
+</Grant>
+<Grant>
+<GrantID>MR/N005600/1</GrantID>
+<Agency>Medical Research Council</Agency>
+<Country>United Kingdom</Country>
+</Grant>
+</GrantList>
+<PublicationTypeList>
+<PublicationType UI="D016428">Journal Article</PublicationType>
+</PublicationTypeList>
+<ArticleDate DateType="Electronic">
+<Year>2018</Year>
+<Month>04</Month>
+<Day>18</Day>
+</ArticleDate>
+</Article>
+<MedlineJournalInfo>
+<Country>Canada</Country>
+<MedlineTA>JMIR Med Inform</MedlineTA>
+<NlmUniqueID>101645109</NlmUniqueID>
+</MedlineJournalInfo>
+<CommentsCorrectionsList>
+<CommentsCorrections RefType="Cites">
+<RefSource>Stud Health Technol Inform. 2010;160(Pt 1):371-5</RefSource>
+<PMID Version="1">20841711</PMID>
+</CommentsCorrections>
+<CommentsCorrections RefType="Cites">
+<RefSource>AMIA Annu Symp Proc. 2010 Nov 13;2010:232-6</RefSource>
+<PMID Version="1">21346975</PMID>
+</CommentsCorrections>
+<CommentsCorrections RefType="Cites">
+<RefSource>Pediatrics. 2013 Mar;131(3):e789-96</RefSource>
+<PMID Version="1">23439898</PMID>
+</CommentsCorrections>
+<CommentsCorrections RefType="Cites">
+<RefSource>J Biomed Inform. 2011 Dec;44(6):958-67</RefSource>
+<PMID Version="1">21846508</PMID>
+</CommentsCorrections>
+<CommentsCorrections RefType="Cites">
+<RefSource>Inform Prim Care. 2005;13(2):83-95</RefSource>
+<PMID Version="1">15992493</PMID>
+</CommentsCorrections>
+<CommentsCorrections RefType="Cites">
+<RefSource>Lancet HIV. 2016 Feb;3(2):e76-84</RefSource>
+<PMID Version="1">26847229</PMID>
+</CommentsCorrections>
+<CommentsCorrections RefType="Cites">
+<RefSource>Stud Health Technol Inform. 2007;129(Pt 1):382-6</RefSource>
+<PMID Version="1">17911744</PMID>
+</CommentsCorrections>
+<CommentsCorrections RefType="Cites">
+<RefSource>BMC Med Inform Decis Mak. 2016 Sep 06;16:116</RefSource>
+<PMID Version="1">27600269</PMID>
+</CommentsCorrections>
+<CommentsCorrections RefType="Cites">
+<RefSource>BMC Int Health Hum Rights. 2006 Jul 20;6:9</RefSource>
+<PMID Version="1">16857044</PMID>
+</CommentsCorrections>
+<CommentsCorrections RefType="Cites">
+<RefSource>Sci Transl Med. 2010 Nov 10;2(57):57cm29</RefSource>
+<PMID Version="1">21068440</PMID>
+</CommentsCorrections>
+<CommentsCorrections RefType="Cites">
+<RefSource>AMIA Annu Symp Proc. 2006;:529-33</RefSource>
+<PMID Version="1">17238397</PMID>
+</CommentsCorrections>
+<CommentsCorrections RefType="Cites">
+<RefSource>Int J Med Inform. 2017 Jan;97:68-75</RefSource>
+<PMID Version="1">27919397</PMID>
+</CommentsCorrections>
+<CommentsCorrections RefType="Cites">
+<RefSource>N Engl J Med. 2010 Feb 4;362(5):382-5</RefSource>
+<PMID Version="1">20042745</PMID>
+</CommentsCorrections>
+<CommentsCorrections RefType="Cites">
+<RefSource>BMJ Glob Health. 2016 May 24;1(1):e000028</RefSource>
+<PMID Version="1">27398232</PMID>
+</CommentsCorrections>
+<CommentsCorrections RefType="Cites">
+<RefSource>Inform Prim Care. 2011;19(4):241-50</RefSource>
+<PMID Version="1">22828579</PMID>
+</CommentsCorrections>
+<CommentsCorrections RefType="Cites">
+<RefSource>PLoS One. 2014 Apr 10;9(4):e90110</RefSource>
+<PMID Version="1">24721980</PMID>
+</CommentsCorrections>
+<CommentsCorrections RefType="Cites">
+<RefSource>Stud Health Technol Inform. 2001;84(Pt 1):619-22</RefSource>
+<PMID Version="1">11604811</PMID>
+</CommentsCorrections>
+<CommentsCorrections RefType="Cites">
+<RefSource>JAMA. 2010 Oct 20;304(15):1709-10</RefSource>
+<PMID Version="1">20959581</PMID>
+</CommentsCorrections>
+<CommentsCorrections RefType="Cites">
+<RefSource>JMIR Med Inform. 2016 Jun 01;4(2):e19</RefSource>
+<PMID Version="1">27251559</PMID>
+</CommentsCorrections>
+<CommentsCorrections RefType="Cites">
+<RefSource>PLoS Med. 2016 Apr 12;13(4):e1001991</RefSource>
+<PMID Version="1">27070913</PMID>
+</CommentsCorrections>
+<CommentsCorrections RefType="Cites">
+<RefSource>Stud Health Technol Inform. 2010;160(Pt 1):585-9</RefSource>
+<PMID Version="1">20841754</PMID>
+</CommentsCorrections>
+<CommentsCorrections RefType="Cites">
+<RefSource>Health Informatics J. 2006 Dec;12(4):304-18</RefSource>
+<PMID Version="1">17093001</PMID>
+</CommentsCorrections>
+<CommentsCorrections RefType="Cites">
+<RefSource>BMC Med. 2015 Jul 06;13:160</RefSource>
+<PMID Version="1">26149722</PMID>
+</CommentsCorrections>
+<CommentsCorrections RefType="Cites">
+<RefSource>J R Soc Promot Health. 1999 Sep;119(3):180-4</RefSource>
+<PMID Version="1">10518358</PMID>
+</CommentsCorrections>
+<CommentsCorrections RefType="Cites">
+<RefSource>Int J Med Inform. 2014 Aug;83(8):548-58</RefSource>
+<PMID Version="1">24969270</PMID>
+</CommentsCorrections>
+<CommentsCorrections RefType="Cites">
+<RefSource>Int J Med Inform. 2000 Oct;60(1):21-8</RefSource>
+<PMID Version="1">10974639</PMID>
+</CommentsCorrections>
+<CommentsCorrections RefType="Cites">
+<RefSource>Ann Intern Med. 2012 Aug 7;157(3):207-10</RefSource>
+<PMID Version="1">22868839</PMID>
+</CommentsCorrections>
+<CommentsCorrections RefType="Cites">
+<RefSource>Bull World Health Organ. 2008 Dec;86(12):939-47</RefSource>
+<PMID Version="1">19142294</PMID>
+</CommentsCorrections>
+<CommentsCorrections RefType="Cites">
+<RefSource>J Am Med Inform Assoc. 2001 Jul-Aug;8(4):299-308</RefSource>
+<PMID Version="1">11418536</PMID>
+</CommentsCorrections>
+</CommentsCorrectionsList>
+<KeywordList Owner="NOTNLM">
+<Keyword MajorTopicYN="N">Kenya</Keyword>
+<Keyword MajorTopicYN="N">electronic health records</Keyword>
+<Keyword MajorTopicYN="N">medical records</Keyword>
+<Keyword MajorTopicYN="N">open source</Keyword>
+<Keyword MajorTopicYN="N">software</Keyword>
+</KeywordList>
+</MedlineCitation>
+<PubmedData>
+<History>
+<PubMedPubDate PubStatus="received">
+<Year>2017</Year>
+<Month>08</Month>
+<Day>17</Day>
+</PubMedPubDate>
+<PubMedPubDate PubStatus="accepted">
+<Year>2018</Year>
+<Month>01</Month>
+<Day>31</Day>
+</PubMedPubDate>
+<PubMedPubDate PubStatus="revised">
+<Year>2018</Year>
+<Month>01</Month>
+<Day>16</Day>
+</PubMedPubDate>
+<PubMedPubDate PubStatus="entrez">
+<Year>2018</Year>
+<Month>4</Month>
+<Day>20</Day>
+<Hour>6</Hour>
+<Minute>0</Minute>
+</PubMedPubDate>
+<PubMedPubDate PubStatus="pubmed">
+<Year>2018</Year>
+<Month>4</Month>
+<Day>20</Day>
+<Hour>6</Hour>
+<Minute>0</Minute>
+</PubMedPubDate>
+<PubMedPubDate PubStatus="medline">
+<Year>2018</Year>
+<Month>4</Month>
+<Day>20</Day>
+<Hour>6</Hour>
+<Minute>1</Minute>
+</PubMedPubDate>
+</History>
+<PublicationStatus>epublish</PublicationStatus>
+<ArticleIdList>
+<ArticleId IdType="pubmed">29669709</ArticleId>
+<ArticleId IdType="pii">v6i2e22</ArticleId>
+<ArticleId IdType="doi">10.2196/medinform.8403</ArticleId>
+<ArticleId IdType="pmc">PMC5932328</ArticleId>
+</ArticleIdList>
+</PubmedData>
+</PubmedArticle>
+
+
+<PubmedArticle>
+<MedlineCitation Status="PubMed-not-MEDLINE" Owner="NLM">
+<PMID Version="1">29766075</PMID>
+<DateRevised>
+<Year>2018</Year>
+<Month>05</Month>
+<Day>20</Day>
+</DateRevised>
+<Article PubModel="Electronic-eCollection">
+<Journal>
+<ISSN IssnType="Electronic">2397-5776</ISSN>
+<JournalIssue CitedMedium="Internet">
+<Volume>1</Volume>
+<Issue>1</Issue>
+<PubDate>
+<Year>2016</Year>
+</PubDate>
+</JournalIssue>
+<Title>Trauma surgery &amp; acute care open</Title>
+<ISOAbbreviation>Trauma Surg Acute Care Open</ISOAbbreviation>
+</Journal>
+<ArticleTitle>Surgical intensivist and global critical care: is there a role?</ArticleTitle>
+<Pagination>
+<MedlinePgn>e000058</MedlinePgn>
+</Pagination>
+<ELocationID EIdType="doi" ValidYN="Y">10.1136/tsaco-2016-000058</ELocationID>
+<AuthorList CompleteYN="Y">
+<Author ValidYN="Y">
+<LastName>MacLeod</LastName>
+<ForeName>Jana B A</ForeName>
+<Initials>JBA</Initials>
+<AffiliationInfo>
+<Affiliation>Kenyatta University, Nairobi, Kenya.</Affiliation>
+</AffiliationInfo>
+</Author>
+<Author ValidYN="Y">
+<LastName>Kirton</LastName>
+<ForeName>Orlando C</ForeName>
+<Initials>OC</Initials>
+<AffiliationInfo>
+<Affiliation>Department of Surgery, Abington-Jefferson Health, Abington, Pennsylvania, USA.</Affiliation>
+</AffiliationInfo>
+</Author>
+<Author ValidYN="Y">
+<LastName>Maerz</LastName>
+<ForeName>Linda L</ForeName>
+<Initials>LL</Initials>
+<AffiliationInfo>
+<Affiliation>Department of Surgery, Yale School of Medicine, New Haven, Connecticut, USA.</Affiliation>
+</AffiliationInfo>
+</Author>
+</AuthorList>
+<Language>eng</Language>
+<PublicationTypeList>
+<PublicationType UI="D016428">Journal Article</PublicationType>
+</PublicationTypeList>
+<ArticleDate DateType="Electronic">
+<Year>2016</Year>
+<Month>12</Month>
+<Day>21</Day>
+</ArticleDate>
+</Article>
+<MedlineJournalInfo>
+<Country>England</Country>
+<MedlineTA>Trauma Surg Acute Care Open</MedlineTA>
+<NlmUniqueID>101698646</NlmUniqueID>
+<ISSNLinking>2397-5776</ISSNLinking>
+</MedlineJournalInfo>
+<CommentsCorrectionsList>
+<CommentsCorrections RefType="Cites">
+<RefSource>N Engl J Med. 2003 Jan 2;348(1):5-14</RefSource>
+<PMID Version="1">12510037</PMID>
+</CommentsCorrections>
+<CommentsCorrections RefType="Cites">
+<RefSource>Lancet. 2010 Oct 16;376(9749):1339-46</RefSource>
+<PMID Version="1">20934212</PMID>
+</CommentsCorrections>
+<CommentsCorrections RefType="Cites">
+<RefSource>Trop Med Int Health. 2009 Feb;14(2):143-8</RefSource>
+<PMID Version="1">19207174</PMID>
+</CommentsCorrections>
+<CommentsCorrections RefType="Cites">
+<RefSource>Lancet. 2006 Oct 7;368(9543):1284-99</RefSource>
+<PMID Version="1">17027735</PMID>
+</CommentsCorrections>
+<CommentsCorrections RefType="Cites">
+<RefSource>Curr Opin Crit Care. 2005 Dec;11(6):568-75</RefSource>
+<PMID Version="1">16292061</PMID>
+</CommentsCorrections>
+<CommentsCorrections RefType="Cites">
+<RefSource>Crit Care Med. 2013 Dec;41(12):2712-9</RefSource>
+<PMID Version="1">23963122</PMID>
+</CommentsCorrections>
+<CommentsCorrections RefType="Cites">
+<RefSource>Anesth Analg. 2008 Mar;106(3):942-8, table of contents</RefSource>
+<PMID Version="1">18292444</PMID>
+</CommentsCorrections>
+<CommentsCorrections RefType="Cites">
+<RefSource>J Acquir Immune Defic Syndr. 2012 Aug 15;60 Suppl 3:S113-9</RefSource>
+<PMID Version="1">22797732</PMID>
+</CommentsCorrections>
+<CommentsCorrections RefType="Cites">
+<RefSource>Crit Care Med. 2010 Jan;38(1):65-71</RefSource>
+<PMID Version="1">19730257</PMID>
+</CommentsCorrections>
+<CommentsCorrections RefType="Cites">
+<RefSource>Lancet. 2014 Sep 13;384(9947):957-79</RefSource>
+<PMID Version="1">24797572</PMID>
+</CommentsCorrections>
+<CommentsCorrections RefType="Cites">
+<RefSource>Ann R Coll Surg Engl. 1986 May;68(3):122-4</RefSource>
+<PMID Version="1">3729258</PMID>
+</CommentsCorrections>
+<CommentsCorrections RefType="Cites">
+<RefSource>Int J Gynaecol Obstet. 2005 Feb;88(2):208-15</RefSource>
+<PMID Version="1">15694109</PMID>
+</CommentsCorrections>
+<CommentsCorrections RefType="Cites">
+<RefSource>Trop Med Int Health. 1998 Feb;3(2):130-7</RefSource>
+<PMID Version="1">9537275</PMID>
+</CommentsCorrections>
+<CommentsCorrections RefType="Cites">
+<RefSource>JAMA. 2010 Apr 14;303(14):1371-2</RefSource>
+<PMID Version="1">20388892</PMID>
+</CommentsCorrections>
+<CommentsCorrections RefType="Cites">
+<RefSource>Crit Care Med. 2006 Apr;34(4):1234-42</RefSource>
+<PMID Version="1">16484925</PMID>
+</CommentsCorrections>
+<CommentsCorrections RefType="Cites">
+<RefSource>S Afr Med J. 2007 Apr;97(4):268, 270, 272</RefSource>
+<PMID Version="1">17446951</PMID>
+</CommentsCorrections>
+<CommentsCorrections RefType="Cites">
+<RefSource>Lancet. 2014 Sep 13;384(9947):1005-70</RefSource>
+<PMID Version="1">25059949</PMID>
+</CommentsCorrections>
+<CommentsCorrections RefType="Cites">
+<RefSource>Lancet. 2015 Aug 22;386(9995):743-800</RefSource>
+<PMID Version="1">26063472</PMID>
+</CommentsCorrections>
+<CommentsCorrections RefType="Cites">
+<RefSource>World J Surg. 2010 Mar;34(3):438-44</RefSource>
+<PMID Version="1">19795163</PMID>
+</CommentsCorrections>
+<CommentsCorrections RefType="Cites">
+<RefSource>Pediatr Crit Care Med. 2009 Sep;10(5):597-600</RefSource>
+<PMID Version="1">19451845</PMID>
+</CommentsCorrections>
+<CommentsCorrections RefType="Cites">
+<RefSource>Crit Care Med. 2013 Feb;41(2):580-637</RefSource>
+<PMID Version="1">23353941</PMID>
+</CommentsCorrections>
+<CommentsCorrections RefType="Cites">
+<RefSource>Lancet. 2003 Jun 28;361(9376):2226-34</RefSource>
+<PMID Version="1">12842379</PMID>
+</CommentsCorrections>
+</CommentsCorrectionsList>
+<KeywordList Owner="NOTNLM">
+<Keyword MajorTopicYN="N">International</Keyword>
+<Keyword MajorTopicYN="N">capacity</Keyword>
+<Keyword MajorTopicYN="N">critical care</Keyword>
+<Keyword MajorTopicYN="N">resource allocation</Keyword>
+</KeywordList>
+<CoiStatement>Competing interests: None declared.</CoiStatement>
+</MedlineCitation>
+<PubmedData>
+<History>
+<PubMedPubDate PubStatus="received">
+<Year>2016</Year>
+<Month>11</Month>
+<Day>02</Day>
+</PubMedPubDate>
+<PubMedPubDate PubStatus="accepted">
+<Year>2016</Year>
+<Month>11</Month>
+<Day>27</Day>
+</PubMedPubDate>
+<PubMedPubDate PubStatus="entrez">
+<Year>2018</Year>
+<Month>5</Month>
+<Day>17</Day>
+<Hour>6</Hour>
+<Minute>0</Minute>
+</PubMedPubDate>
+<PubMedPubDate PubStatus="pubmed">
+<Year>2016</Year>
+<Month>12</Month>
+<Day>21</Day>
+<Hour>0</Hour>
+<Minute>0</Minute>
+</PubMedPubDate>
+<PubMedPubDate PubStatus="medline">
+<Year>2016</Year>
+<Month>12</Month>
+<Day>21</Day>
+<Hour>0</Hour>
+<Minute>1</Minute>
+</PubMedPubDate>
+</History>
+<PublicationStatus>epublish</PublicationStatus>
+<ArticleIdList>
+<ArticleId IdType="pubmed">29766075</ArticleId>
+<ArticleId IdType="doi">10.1136/tsaco-2016-000058</ArticleId>
+<ArticleId IdType="pii">tsaco-2016-000058</ArticleId>
+<ArticleId IdType="pmc">PMC5891709</ArticleId>
+</ArticleIdList>
+</PubmedData>
+</PubmedArticle>
+
+
+<PubmedArticle>
+<MedlineCitation Status="PubMed-not-MEDLINE" Owner="NLM">
+<PMID Version="1">30151175</PMID>
+<DateRevised>
+<Year>2018</Year>
+<Month>08</Month>
+<Day>30</Day>
+</DateRevised>
+<Article PubModel="Electronic-eCollection">
+<Journal>
+<ISSN IssnType="Print">2045-7758</ISSN>
+<JournalIssue CitedMedium="Print">
+<Volume>8</Volume>
+<Issue>15</Issue>
+<PubDate>
+<Year>2018</Year>
+<Month>Aug</Month>
+</PubDate>
+</JournalIssue>
+<Title>Ecology and evolution</Title>
+<ISOAbbreviation>Ecol Evol</ISOAbbreviation>
+</Journal>
+<ArticleTitle>Living on the edge: Multiscale habitat selection by cheetahs in a human-wildlife landscape.</ArticleTitle>
+<Pagination>
+<MedlinePgn>7611-7623</MedlinePgn>
+</Pagination>
+<ELocationID EIdType="doi" ValidYN="Y">10.1002/ece3.4269</ELocationID>
+<Abstract>
+<AbstractText>Animals select habitats that will ultimately optimize their fitness through access to favorable resources, such as food, mates, and breeding sites. However, access to these resources may be limited by bottom-up effects, such as availability, and top-down effects, such as risk avoidance and competition, including that with humans. Competition between wildlife and people over resources, specifically over space, has played a significant role in the worldwide decrease in large carnivores. The goal of this study was to determine the habitat selection of cheetahs (Acinonyx jubatus) in a human-wildlife landscape at multiple spatial scales. Cheetahs are a wide-ranging, large carnivore, whose significant decline is largely attributed to habitat loss and fragmentation. It is believed that 77% of the global cheetah population ranges outside protected areas, yet little is known about cheetahs' resource use in areas where they co-occur with people. The selection, or avoidance, of three anthropogenic variables (human footprint density, distance to main roads and wildlife areas) and five environmental variables (open habitat, semiclosed habitat, edge density, patch density and slope), at multiple spatial scales, was determined by analyzing collar data from six cheetahs. Cheetahs selected variables at different scales; anthropogenic variables were selected at broader scales (720-1440 m) than environmental variables (90-180 m), suggesting that anthropogenic pressures affect habitat selection at a home-range level, whilst environmental variables influence site-level habitat selection. Cheetah presence was best explained by human presence, wildlife areas, semiclosed habitat, edge density and slope. Cheetahs showed avoidance for humans and steep slopes and selected for wildlife areas and areas with high proportions of semiclosed habitat and edge density. Understanding a species' resource requirements, and how these might be affected by humans, is crucial for conservation. Using a multiscale approach, we provide new insights into the habitat selection of a large carnivore living in a human-wildlife landscape.</AbstractText>
+</Abstract>
+<AuthorList CompleteYN="Y">
+<Author ValidYN="Y">
+<LastName>Klaassen</LastName>
+<ForeName>Britt</ForeName>
+<Initials>B</Initials>
+<Identifier Source="ORCID">0000-0003-1532-4991</Identifier>
+<AffiliationInfo>
+<Affiliation>Institute of Environmental Sciences (CML) Leiden University Leiden The Netherlands.</Affiliation>
+</AffiliationInfo>
+</Author>
+<Author ValidYN="Y">
+<LastName>Broekhuis</LastName>
+<ForeName>Femke</ForeName>
+<Initials>F</Initials>
+<Identifier Source="ORCID">0000-0002-4216-8819</Identifier>
+<AffiliationInfo>
+<Affiliation>Kenya Wildlife Trust Nairobi Kenya.</Affiliation>
+</AffiliationInfo>
+<AffiliationInfo>
+<Affiliation>Wildlife Conservation Research Unit Department of Zoology Recanati-Kaplan Centre University of Oxford Tubney UK.</Affiliation>
+</AffiliationInfo>
+</Author>
+</AuthorList>
+<Language>eng</Language>
+<DataBankList CompleteYN="Y">
+<DataBank>
+<DataBankName>Dryad</DataBankName>
+<AccessionNumberList>
+<AccessionNumber>10.5061/dryad.8t0m6v7</AccessionNumber>
+</AccessionNumberList>
+</DataBank>
+</DataBankList>
+<PublicationTypeList>
+<PublicationType UI="D016428">Journal Article</PublicationType>
+</PublicationTypeList>
+<ArticleDate DateType="Electronic">
+<Year>2018</Year>
+<Month>07</Month>
+<Day>09</Day>
+</ArticleDate>
+</Article>
+<MedlineJournalInfo>
+<Country>England</Country>
+<MedlineTA>Ecol Evol</MedlineTA>
+<NlmUniqueID>101566408</NlmUniqueID>
+<ISSNLinking>2045-7758</ISSNLinking>
+</MedlineJournalInfo>
+<CommentsCorrectionsList>
+<CommentsCorrections RefType="Cites">
+<RefSource>Sci Rep. 2017 Jan 25;7:41450</RefSource>
+<PMID Version="1">28120950</PMID>
+</CommentsCorrections>
+<CommentsCorrections RefType="Cites">
+<RefSource>PLoS One. 2016 Apr 11;11(4):e0153439</RefSource>
+<PMID Version="1">27064680</PMID>
+</CommentsCorrections>
+<CommentsCorrections RefType="Cites">
+<RefSource>J Anim Ecol. 2013 Sep;82(5):1098-105</RefSource>
+<PMID Version="1">23692142</PMID>
+</CommentsCorrections>
+<CommentsCorrections RefType="Cites">
+<RefSource>Science. 2014 Jan 10;343(6167):1241484</RefSource>
+<PMID Version="1">24408439</PMID>
+</CommentsCorrections>
+<CommentsCorrections RefType="Cites">
+<RefSource>Ecology. 2007 Nov;88(11):2783-92</RefSource>
+<PMID Version="1">18051647</PMID>
+</CommentsCorrections>
+<CommentsCorrections RefType="Cites">
+<RefSource>Conserv Biol. 2007 Jun;21(3):602-11</RefSource>
+<PMID Version="1">17531039</PMID>
+</CommentsCorrections>
+<CommentsCorrections RefType="Cites">
+<RefSource>J Anim Ecol. 2012 Nov;81(6):1268-1287</RefSource>
+<PMID Version="1">22640527</PMID>
+</CommentsCorrections>
+<CommentsCorrections RefType="Cites">
+<RefSource>J Anim Ecol. 2014 Nov;83(6):1418-27</RefSource>
+<PMID Version="1">24724917</PMID>
+</CommentsCorrections>
+<CommentsCorrections RefType="Cites">
+<RefSource>Sci Adv. 2015 May 01;1(4):e1400103</RefSource>
+<PMID Version="1">26601172</PMID>
+</CommentsCorrections>
+<CommentsCorrections RefType="Cites">
+<RefSource>Trends Ecol Evol. 2016 Aug;31(8):575-578</RefSource>
+<PMID Version="1">27377600</PMID>
+</CommentsCorrections>
+<CommentsCorrections RefType="Cites">
+<RefSource>PLoS One. 2016 Sep 27;11(9):e0163249</RefSource>
+<PMID Version="1">27676077</PMID>
+</CommentsCorrections>
+<CommentsCorrections RefType="Cites">
+<RefSource>Ecology. 2013 Nov;94(11):2619-31</RefSource>
+<PMID Version="1">24400513</PMID>
+</CommentsCorrections>
+<CommentsCorrections RefType="Cites">
+<RefSource>J Anim Ecol. 2006 Jul;75(4):887-98</RefSource>
+<PMID Version="1">17009752</PMID>
+</CommentsCorrections>
+<CommentsCorrections RefType="Cites">
+<RefSource>J Anim Ecol. 2008 Jul;77(4):814-29</RefSource>
+<PMID Version="1">18422558</PMID>
+</CommentsCorrections>
+<CommentsCorrections RefType="Cites">
+<RefSource>Trends Ecol Evol. 1992 Feb;7(2):50-5</RefSource>
+<PMID Version="1">21235950</PMID>
+</CommentsCorrections>
+<CommentsCorrections RefType="Cites">
+<RefSource>Ecol Evol. 2018 Jun 17;8(13):6748-6755</RefSource>
+<PMID Version="1">30038771</PMID>
+</CommentsCorrections>
+<CommentsCorrections RefType="Cites">
+<RefSource>Proc Natl Acad Sci U S A. 2017 Jan 17;114(3):528-533</RefSource>
+<PMID Version="1">28028225</PMID>
+</CommentsCorrections>
+<CommentsCorrections RefType="Cites">
+<RefSource>Ecol Evol. 2017 Nov 05;7(24):10630-10639</RefSource>
+<PMID Version="1">29299244</PMID>
+</CommentsCorrections>
+<CommentsCorrections RefType="Cites">
+<RefSource>PLoS One. 2016 May 02;11(5):e0153875</RefSource>
+<PMID Version="1">27135614</PMID>
+</CommentsCorrections>
+<CommentsCorrections RefType="Cites">
+<RefSource>Conserv Biol. 2017 Aug;31(4):934-943</RefSource>
+<PMID Version="1">27958641</PMID>
+</CommentsCorrections>
+<CommentsCorrections RefType="Cites">
+<RefSource>Ecol Appl. 2012 Jun;22(4):1068-83</RefSource>
+<PMID Version="1">22827119</PMID>
+</CommentsCorrections>
+</CommentsCorrectionsList>
+<KeywordList Owner="NOTNLM">
+<Keyword MajorTopicYN="N">GPS radio‐collars</Keyword>
+<Keyword MajorTopicYN="N">Maasai Mara</Keyword>
+<Keyword MajorTopicYN="N">cheetah</Keyword>
+<Keyword MajorTopicYN="N">habitat selection</Keyword>
+<Keyword MajorTopicYN="N">human‐wildlife landscape</Keyword>
+<Keyword MajorTopicYN="N">multiscale</Keyword>
+<Keyword MajorTopicYN="N">resource selection functions</Keyword>
+</KeywordList>
+</MedlineCitation>
+<PubmedData>
+<History>
+<PubMedPubDate PubStatus="received">
+<Year>2018</Year>
+<Month>01</Month>
+<Day>13</Day>
+</PubMedPubDate>
+<PubMedPubDate PubStatus="revised">
+<Year>2018</Year>
+<Month>05</Month>
+<Day>14</Day>
+</PubMedPubDate>
+<PubMedPubDate PubStatus="accepted">
+<Year>2018</Year>
+<Month>05</Month>
+<Day>17</Day>
+</PubMedPubDate>
+<PubMedPubDate PubStatus="entrez">
+<Year>2018</Year>
+<Month>8</Month>
+<Day>29</Day>
+<Hour>6</Hour>
+<Minute>0</Minute>
+</PubMedPubDate>
+<PubMedPubDate PubStatus="pubmed">
+<Year>2018</Year>
+<Month>8</Month>
+<Day>29</Day>
+<Hour>6</Hour>
+<Minute>0</Minute>
+</PubMedPubDate>
+<PubMedPubDate PubStatus="medline">
+<Year>2018</Year>
+<Month>8</Month>
+<Day>29</Day>
+<Hour>6</Hour>
+<Minute>1</Minute>
+</PubMedPubDate>
+</History>
+<PublicationStatus>epublish</PublicationStatus>
+<ArticleIdList>
+<ArticleId IdType="pubmed">30151175</ArticleId>
+<ArticleId IdType="doi">10.1002/ece3.4269</ArticleId>
+<ArticleId IdType="pii">ECE34269</ArticleId>
+<ArticleId IdType="pmc">PMC6106172</ArticleId>
+</ArticleIdList>
+</PubmedData>
+</PubmedArticle>
+
+</PubmedArticleSet>

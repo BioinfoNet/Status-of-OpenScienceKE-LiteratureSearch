@@ -1,5 +1,38 @@
-# Literature
+# The etherpad link
+[Let's meet here!](https://public.etherpad-mozilla.org/p/Status-of-OpenScienceKE_Hackathon_KENET18)
 
+# Literature
+## Searching Google Scholar using keywords
+
+Search in **[Google Scholar/Schoogle](https://scholar.google.com/)** for the
+following terms using the syntax below.
+
+```
+kenya("Open data"|"open science"|"open source"|"open access"|"open peer
+review"|"open science"|"open review"|"open notebooks"|"open educational
+resources"|"scientific social network") -"open access article"
+```
+You get over **_20,000 articles_** that mention **_kenya and any of the other words_**.
+
+**To refine the search to _titles only_**
+```
+alltitle:kenya("Open data"|"open science"|"open source"|"open access"|"open peer
+review"|"open science"|"open review"|"open notebooks"|"open educational
+resources"|"scientific social network")
+```
+You get **_87 artices_** that mention **_kenya and any of the other words_** in
+the title.
+
+Includes citations and patents (there are no patents eitherway) which can be easily excluded to
+remain with **_56 articles_**.
+
+The results can be found on this **[Google Scholar search
+results](https://scholar.google.com/scholar?start=40&q=allintitle:+kenya\(%22Open+data%22%7C%22open+science%22%7C%22open+source%22%7C%22open+access%22%7C%22open+peer+review%22%7C%22open+science%22%7C%22open+review%22%7C%22open+notebooks%22%7C%22open+educational+resources%22%7C%22scientific+social+network%22\)&hl=en&as_sdt=0,5)**
+
+For more on advanced search in Goolgle Scholar help go to [Google Scholar: 13 search
+tips](https://www.wur.nl/en/article/Google-Scholar-13-search-tips.htm) and
+[Google search help: Refine web
+searches](https://support.google.com/websearch/answer/2466433)
 
 
 # Institutional Websites
@@ -15,6 +48,17 @@
 
 
 # News Articles
+## Daily Nation
+
+Daily nation article' **Researchers will no longer have to jump impossible hoops set up by international journals**' Vera okeyo reported that ,during an interview with Marianne Mureithis, a microbiologist who works as a clinical researcher at the Kenya Aids Vaccine Initiative, she laminated that when she was a post-doctoral researcher in West Africa her paper on infectious diseases was rejected by an international scientific journal  even after making several changes asked of her. Surprisingly, when she went to Harvard in 2009 and submitted the same paper, it was immediately accepted. she said concluded that the work was accepted based on the her association with Harvard. Due to her tribulation as an African researcher, she added that the high cost of publishing in those journals limits the growth of career of most African researchers and more so even after paying those journals to publish your own work one has to pay to access it. Furthermore, the African scientists are disadvantaged in accessing the high impact journals because they have no place can be found for them in the pecking order of science. The publishing process in most  prestigious journals also is afflicted with complaints of  discrimination and favoritism.
+
+This challenge has led Kenya-based pan-African organization to establishment an open access science publishing platform for African researchers that is aimed at raising the continent contribution to the global scientific knowledge base from the current one per cent.
+
+Vero Okeyo also reported that in May,2018 during a science conference in Ghana,researchers from Kenya and other african countries had a debate on **open access publishing**.some of the researchers supported open access publishing saying that it would  reduce the cost of publishing especially if the research is funded by the tax payers.Their main concern was the high cost of subscription has made many scientists not  to access their previously published research in the traditional journals, hence there are many replicated research which has previously being done because the scientists had no idea that the research already existed. 
+
+The scientist who were opposing the open access platform, main concern was that their credibility and  career growth is bound to the types of journals they publish in. most scientists careers rely on the number  of citation their papers have  and open access journals are not discernible to this type of tracking.
+
+[https://www.nation.co.ke/health/Platform-aims-to-boost-Africas-science-footprint/3476990-4204786-bldbyiz/index.html]
 
 
 
