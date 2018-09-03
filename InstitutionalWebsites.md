@@ -21,14 +21,8 @@ The progress towards complete legally embedded practice of open science in Kenya
 
 
 INSTITUTION | Open access repository (IRs) | Open Access Policies | Trainings or Events | Infrastructure
------------ | ---------------------------- | -------------------- | ------------------- | ---------------
-UoN | Digital Repository http://erepository.uonbi.ac.ke/ 
-Open Access Resource Center http://uonlibrary.uonbi.ac.ke/node/3304 
-Access to Open access resources e.g.  journals, papers, books | UoN Open Access Policy 2012 
-stakeholders must deposit their research on the digital repository 
-UoN Plagiarism Policy 2013  Advocates attribution | Open Access week 2015
-https://www.slideshare.net/CIARD_/university-of-nairobi-open-access-initiatives 
-Open access  Week 2016 http://www.uonbi.ac.ke/content/library-open-dayopen-access-week | Open Distance Learning Modules Jomo Kenyatta Memorial Library houses KENET in JKML
+|------------| ---------------------------- | -------------------- | ------------------- | ---------------|
+| UoN | Digital Repository http://erepository.uonbi.ac.ke/, Open Access Resource Center http://uonlibrary.uonbi.ac.ke/node/3304, Access to Open access resources e.g. journals, papers, books | UoN Open Access Policy 2012, UoN Plagiarism Policy 2013 | Open Access week 2015 https://www.slideshare.net/CIARD_/university-of-nairobi-open-access-initiatives, Open access  Week 2016 http://www.uonbi.ac.ke/content/library-open-dayopen-access-week | Open Distance Learning Modules, Jomo Kenyatta Memorial Library houses KENET in JKML|
 
 
 JKUAT
