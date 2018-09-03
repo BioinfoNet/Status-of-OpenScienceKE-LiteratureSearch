@@ -1,4 +1,6 @@
 # **The Position of Kenya's Institutions on Open Science and Open Research.**
+___
+
 Open Science advocates for freely available, collaborative research of high standard that is reproducible and peer-reviewed and can be developed used by the public.. It involves several facets of open research which are open access, open source (codes), open data, open software, open educational resources, open learning.  Kenya has several public and private universities and also several local and international research instituions and they have embraced the open research at different degrees and in different ways. This report zeros in on a sample few from each category. The University of Nairobi (UoN), Kenyatta University (KU)and Jomo Kenyatta University of Agriculture and Technology (JKUAT) will represent the public universities while the private ones include the African Nazarene Univesity (ANU), Strathmore University and Catholic University of East Africa (CUEA). The local research instituions will be represented by the Kenya Agricultural Livestork Research Organisation(KALRO), the Kenya Medical Research Institute (KEMRI) and two regulatory bodies: National Commision of Science Technology and Innovation (NACOSTI) and Commission of University Education(CUE). The international research instituions on focus are International Livestork Research Institute (ILRI) and International Center of Insect Physiology and Entomology (ICIPE). 
 
 ## **Public Universities**
@@ -48,6 +50,7 @@ Institutional Repository (IR): A hub that is available online and is used for co
 Open Source: Free access of source code and distribution of open-source software i.e. software collectively developed by and available to the public. https://opensource.org/osd
 
 __Food for Thought:__
+___
 
 Many Kenyan universities offer Open learning but charge the students to learn these modules. Is this truly Open learning? Is it freely accessible?
 
