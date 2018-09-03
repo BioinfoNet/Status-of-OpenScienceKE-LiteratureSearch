@@ -17,4 +17,4 @@ National Commision of Science Technology and Innovation (NACOSTI) is the nationa
 
 The progress towards complete legally embedded practice of open science in Kenyan instituitions is hopeful and progressive. It is up to the new researchers to embrace it full what had already been pioneered in their own resaerch journey by learning, practicing and sharing open science principles in their work. 
 
-[This table](https://docs.google.com/document/d/12avIdUgKIdKRUpJr84kJf84Cva_WDwr_miXZE0-DzSw/edit) briefly highlights modes of approach and use of Open Science by selected Kenyan Institutions.
+![This table](https://docs.google.com/document/d/12avIdUgKIdKRUpJr84kJf84Cva_WDwr_miXZE0-DzSw/edit) briefly highlights modes of approach and use of Open Science by selected Kenyan Institutions.
