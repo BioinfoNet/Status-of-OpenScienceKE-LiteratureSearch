@@ -33,7 +33,7 @@ African Nazarene University | Selected Institutional Repository within the [Grac
 
 
 
-Extra Notes:
+**_Extra Notes_**:
 
 Universities affiliated with National Open University of Kenya:
 * UoN
@@ -47,7 +47,7 @@ Institutional Repository (IR): A hub that is available online and is used for co
 
 Open Source: Free access of source code and distribution of open-source software i.e. software collectively developed by and available to the public. https://opensource.org/osd
 
-Food for Thought:
+__Food for Thought:__
 
 Many Kenyan universities offer Open learning but charge the students to learn these modules. Is this truly Open learning? Is it freely accessible?
 
