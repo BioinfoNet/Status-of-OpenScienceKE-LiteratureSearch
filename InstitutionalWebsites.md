@@ -22,108 +22,14 @@ The progress towards complete legally embedded practice of open science in Kenya
 
 INSTITUTION | Open access repository (IRs) | Open Access Policies | Trainings or Events | Infrastructure
 |------------| ---------------------------- | -------------------- | ------------------- | ---------------|
-| UoN | Digital Repository http://erepository.uonbi.ac.ke/, Open Access Resource Center http://uonlibrary.uonbi.ac.ke/node/3304, Access to Open access resources e.g. journals, papers, books | UoN Open Access Policy 2012, UoN Plagiarism Policy 2013 | Open Access week 2015 https://www.slideshare.net/CIARD_/university-of-nairobi-open-access-initiatives, Open access  Week 2016 http://www.uonbi.ac.ke/content/library-open-dayopen-access-week | Open Distance Learning Modules, Jomo Kenyatta Memorial Library houses KENET in JKML|
-JKUAT | Have an ICT Center of Excellence and Open Data http://www.jkuat.ac.ke/directorates/iceod/  with a sub task force iODaV that advocates for various open science principles | :------: | [Open Data Workshop 19th Sept 2017](http://www.jkuat.ac.ke/free-access-information-still-challenge-africa/) |:-------: |
-
- 
-
-
-Open Access Workshop
-http://www.jkuat.ac.ke/open-access-workshop/ Theme: Benefits of Open Access for Research Dissemination, Usage, Visibility and Impact.
-
-Open Access Week on August 18th to 24th 2010
-http://www.jkuat.ac.ke/open-access-week-at-jkuat/
-
-
-Open and Distance Learning Modules 
-http://sodel3.jkuat.ac.ke/
-
-
-Rift Valley Institute
-
-
-
-
-
-
-Housing Sudan Open Archive - open access resource for all info known about Sudan
-Kenyatta University
-Open Access databases. Has links to open acess journals, courseWare and e-books http://library.ku.ac.ke/open-access-databases/
-
-Institutional repository http://ir-library.ku.ac.ke/
-
-
-
-
-Creating awareness about Open Science during Library Open Week in 2016 https://www.ku.ac.ke/ku/item/365-library-open-week
-
-
-Open and Distance Learning
-http://www.ku.ac.ke/dsvol/
-
-
-
-ILRI
-ILRI Repository
-https://cgspace.cgiar.org/handle/10568/1
-
-
-
-Strategy on Research Publishing http://hdl.handle.net/10568/17220
-
-Research publishing procedure 6: Open Access http://hdl.handle.net/10568/63491
-high quality science published in
-Peer-reviewed open access journals
-Reproducible and open-licensed
-
-ILRI policy on Open Access https://cgspace.cgiar.org/handle/10568/63498
-
-Intellectual Assets
-http://hdl.handle.net/10568/34091
-Data Management
-http://hdl.handle.net/10568/63496
-
-
-Workshops and trainings on Open science, open access and open data 
-https://www.ilri.org/open
-Open  Data Portal for access to open source platform
-http://data.ilri.org/
- 
-KARLO
-KALRO Repository
-http://www.kalro.org:8080/repository/
-
-
-
-
-
-
-
-
-CUE Kenya
-Open Access Resource http://www.cue.or.ke/index.php/services/library-information-services/open-access-resources
-
-
-
-
-
-
-
-
-African Nazarene University
-Selected Institutional Repository within the Grace Roles Library
-https://www.anu.ac.ke/library/e-resources/selected-institutional-repository/
-
-E- Resource center for free access to open access journals  https://www.google.com/url?sa=t&rct=j&q=&esrc=s&source=web&cd=3&cad=rja&uact=8&ved=2ahUKEwii-ZyTsJfdAhWDyIUKHZWKAXgQFjACegQICRAB&url=https%3A%2F%2Fwww.anu.ac.ke%2Flibrary%2Fe-resources%2F&usg=AOvVaw3rwOY2_6ZGO3EF7UzLQpz8
- 
-
-
-
-
-
-
-
-Institute of Open and Distance Learning https://www.anu.ac.ke/institute-of-open-and-distance-learning-2/
+| UoN | [Digital Repository](http://erepository.uonbi.ac.ke/), [Open Access Resource Center](http://uonlibrary.uonbi.ac.ke/node/3304) access to Open access resources e.g. journals, papers, books | UoN Open Access Policy 2012, UoN Plagiarism Policy 2013 | [Open Access week 2015 ](https://www.slideshare.net/CIARD_/university-of-nairobi-open-access-initiatives) - open access initiatives , [Open access  Week 2016](http://www.uonbi.ac.ke/content/library-open-dayopen-access-week) | Open Distance Learning Modules, Jomo Kenyatta Memorial Library houses KENET in JKML|
+JKUAT | Have an [ICT Center of Excellence and Open Data](http://www.jkuat.ac.ke/directorates/iceod/)  with a sub task force iODaV that advocates for various open science principles | | [Open Data Workshop 19th Sept 2017](http://www.jkuat.ac.ke/free-access-information-still-challenge-africa/)  [Open Access Workshop](http://www.jkuat.ac.ke/open-access-workshop/)  Theme: Benefits of Open Access for Research Dissemination, Usage, Visibility and Impact. [Open Access Week on August 18th to 24th 2010](http://www.jkuat.ac.ke/open-access-week-at-jkuat/) | [Open and Distance Learning Modules](http://sodel3.jkuat.ac.ke/) |
+Rift Valley Institute | | |Housing [Sudan Open Archive](https://www.sudanopenarchive.net) - open access resource for all info known about Sudan |
+Kenyatta University | [Open Access databases](http://library.ku.ac.ke/open-access-databases/) has links to open acess journals, courseWare and e-books,  [Institutional repository](http://ir-library.ku.ac.ke/) | | Creating awareness about Open Science during [Library Open Week in 2016](https://www.ku.ac.ke/ku/item/365-library-open-week) | [Open and Distance Learning](http://www.ku.ac.ke/dsvol/) |
+ILRI | [ILRI Repository](https://cgspace.cgiar.org/handle/10568/1) | [Strategy on Research Publishing](http://hdl.handle.net/10568/17220),  [Research publishing procedure 6: Open Access](http://hdl.handle.net/10568/63491) high quality science published in peer-reviewed open access journals; reproducible and open-licensed,  ILRI policy on [Open Access](https://cgspace.cgiar.org/handle/10568/63498),  [Intellectual Assets](http://hdl.handle.net/10568/34091),  [Data Management](http://hdl.handle.net/10568/63496) | Workshops and trainings on Open science, open access and open data [ILRI Open](https://www.ilri.org/open),  [Open  Data Portal](http://data.ilri.org/) for access to open source platform |
+KARLO | [KALRO Repository](http://www.kalro.org:8080/repository/) |  |  |  |
+CUE Kenya | [Open Access Resource](http://www.cue.or.ke/index.php/services/library-information-services/open-access-resources) |  |  |  |
+African Nazarene University | Selected Institutional Repository within the [Grace Roles Library](https://www.anu.ac.ke/library/e-resources/selected-institutional-repository/),  [E- Resource Center](https://www.google.com/url?sa=t&rct=j&q=&esrc=s&source=web&cd=3&cad=rja&uact=8&ved=2ahUKEwii-ZyTsJfdAhWDyIUKHZWKAXgQFjACegQICRAB&url=https%3A%2F%2Fwww.anu.ac.ke%2Flibrary%2Fe-resources%2F&usg=AOvVaw3rwOY2_6ZGO3EF7UzLQpz8) for free access to open access journals | |  | [Institute of Open and Distance Learning](https://www.anu.ac.ke/institute-of-open-and-distance-learning-2/)
 
 
 
