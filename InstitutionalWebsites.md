@@ -34,9 +34,10 @@ African Nazarene University | Selected Institutional Repository within the [Grac
 
 
 Extra Notes:
+
 Universities affiliated with National Open University of Kenya:
-UoN
-JKUAT
+* UoN
+* JKUAT
 
 “NAUK seeks to give more Kenyans an opportunity to acquire higher education without restriction of time or space,” says Prof. Mboroki http://www.jkuat.ac.ke/open-university-of-kenya-officials-visit-jkuat/
 
@@ -48,7 +49,7 @@ Open Source: Free access of source code and distribution of open-source software
 
 Food for Thought:
 
-Many Kenyan universities offer Open learning but charge the students to learn these modules. Does this Open learning truly free access?
+Many Kenyan universities offer Open learning but charge the students to learn these modules. Is this truly Open learning? Is it freely accessible?
 
 Kenya Open Data: Is the information being utilized?
 
