@@ -7,14 +7,14 @@ Our findings will be organized into a report that will contribute to the greater
 ## Members of Our Team
 |Name | Activity |
 |:-----:|:-----:|
-|Esoh Kevin (Group Leader) | Podcasts|
-|Daniel Ouso | Surveys and Blogs|
-|Esther Seroney | News Articles|
-|Elizabeth Mwangi | Social Media|
-|Angela Muraya | Institutional Websites|
-|Fredrick Musila | |
-|Kibet Gilbert | Journals|
-|Ronald Tonui | |
+|**Esoh Kevin** (Team Leader) | Podcasts|
+|**Daniel Ouso** | Surveys and Blogs|
+|**Esther Seroney** | News Articles|
+|**Elizabeth Mwangi** | Social Media|
+|**Angela Muraya** | Institutional Websites|
+|**Fredrick Musila** | |
+|**Kibet Gilbert** | Journals|
+|**Ronald Tonui** | |
 
 As we prepare to make our big contributions on August 30th and 31st, you are welcome to make inputs/comments.
 
