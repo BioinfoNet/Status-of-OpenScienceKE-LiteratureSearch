@@ -1,0 +1,70 @@
+
+.item_metadata_more
+{	
+	margin-top: 4px;
+	padding-bottom: 10px;
+	padding-left: 5px;
+	width: 25px;
+	/*height: 10px;*/
+	cursor: pointer;
+	font-size: 0.8em;
+}
+.ds-artifact-item-with-popup.even .item_metadata_slider table.ds-includeSet-metadata-table tr td
+{
+	background-color: #F9FAFC;
+}
+.ds-artifact-item-with-popup.odd .item_metadata_slider table.ds-includeSet-metadata-table tr td
+{
+	background-color: #ECECEF;
+}
+table.ds-includeSet-metadata-table
+{
+	margin: 0;
+	color: #353550;
+}
+.item_metadata_slider
+{
+	position: relative;
+	left: 37px;
+	top: -26px;
+	width: 555px;
+	font-size: 0.95em;
+	clear: both;
+}
+
+.item_metadata_slider.hidden
+{
+	display: none;
+	visibility: visible; /* Added due to mirage theme makes it hidden! */
+}
+
+.item_metadata_slider tr.ds-table-row.even,
+.item_metadata_slider tr.ds-table-row.odd
+{
+	background: transparent !important;
+}
+
+ul.ds-artifact-list .ds-artifact-item.odd,
+td.ds-table-header-cell.odd,
+td.ds-table-cell.odd
+{
+    /* background-color: #ececef; */
+    background-color: #f9fafc;
+}
+
+ul.ds-artifact-list .ds-artifact-item.even,
+td.ds-table-header-cell.even,
+td.ds-table-cell.even
+{
+    /* background-color: #f9fafc; */
+    background-color: #ececef;
+}
+
+.noborder, .noborder tr, .noborder th, .noborder td { 
+    border: none;
+}
+
+.item-view-toggle-bottom{
+padding-top: 10px;
+}
+

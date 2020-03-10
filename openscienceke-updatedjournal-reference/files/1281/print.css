@@ -1,0 +1,86 @@
+html,
+body,
+#contentWrapper,
+.home #contentWrapper *,
+#contentWrapper #headerWrap,
+#contentWrapper #header,
+#contentWrapper #headerUtilityBar,
+#contentWrapper #loginNav,
+#contentWrapper #utilityNav,
+#contentWrapper #columnWrapper,
+#contentWrapper #pageBody,
+#contentWrapper #columnOne,
+#contentWrapper #mainContent,
+#contentWrapper #readPanel,
+#contentWrapper #footerWrap,
+#contentWrapper #footer,
+#contentWrapper #footerDetail,
+#contentWrapper #footerCopyright,
+#contentWrapper #footerLogoWrap {
+	background: transparent none;
+	position: static;
+	float: none;
+	height: auto;
+	width: auto;
+	margin: 10px 0;
+	padding: 0;
+	min-height: 0;
+	border:0 none;
+}
+
+#contentWrapper #headerUtilityBar,
+#contentWrapper #quickSearch,
+#contentWrapper #navigation,
+#contentWrapper #columnsTop,
+#contentWrapper #tocWrapper,
+#contentWrapper #toc,
+#contentWrapper #entryPrevNextNav,
+#contentWrapper #pageLinks,
+#contentWrapper #columnsBottom,
+#contentWrapper #footerNav,
+#contentWrapper #sideSearchBox,
+#contentWrapper .resultsBar,
+#contentWrapper #searchWithinDocument,
+#contentWrapper .smartNavWrapper,
+#contentWrapper #columnOne,
+#contentWrapper a.clearAll,
+#contentWrapper a.modifySearch,
+#contentWrapper .searchHeader .remove
+{
+	display: none;
+}
+
+*,#contentWrapper *{color:black;}
+
+#contentWrapper #headerLogo{position:static;font-size:25px;line-height:40px;color:black;background:transparent none; height: 40px;}
+#contentWrapper #headerLogo a{display:inline; height: 40px;}
+#contentWrapper #headerLogo a span{position:static;}
+
+#readPanel .popoutContent{display:block;}
+#readPanel table.popoutContent{display:table;}
+#readPanel .popoutContentLink{display:none;}
+
+.bookDetail dl.metaInfo,
+.bookDetail dl#citations{display:block;margin:10px 0;overflow:hidden;}
+.bookDetail dl.metaInfo dt,
+.bookDetail dl#citations dt {float: left;clear:both;margin-right:0.333em;font-weight:bold;}
+.bookDetail #citations {display:block;}
+
+#contentWrapper #footerAccounts{width:auto;height:auto;position:static;float:none;}
+#contentWrapper #footerAccounts div{position:static;font-size:20px;line-height:40px;color:black;background:transparent none;float:none;padding:0;height:auto;width:auto;}
+#contentWrapper #footerAccounts a{position:static;font-size:20px;line-height:40px;color:black;background:transparent none;float:none;display:block;padding:0;height:auto;width:auto;text-indent:0;}
+#contentWrapper #institutioninfo span.preamble{display:inline;float:none;height:auto;line-height:1em;margin:0 0.333em 0 0;}
+#contentWrapper #institutioninfo img{display:none;}
+#contentWrapper #institutioninfo span{position:static;}
+
+
+#contentWrapper #footerLogoWrap .attribution{float:none;font-size:12px;line-height:40px;display:inline;}
+#contentWrapper #footerLogo{position:static;font-size:20px;line-height:40px;color:black;background:transparent none;float:none;display:inline;}
+#contentWrapper #footerLogo a{display:inline;}
+#contentWrapper #footerLogo a span{position:static;}
+
+
+
+/**** DO NOT DELETE THESE TWO STYLE DECLARATIONS ****/
+#contentWrapper{width:994px;margin:10px auto;}
+@media print{#contentWrapper{width:auto;margin:0;}}

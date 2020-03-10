@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!DOCTYPE svg PUBLIC "-//W3C//DTD SVG 1.1//EN" "http://www.w3.org/Graphics/SVG/1.1/DTD/svg11.dtd">
+<svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="20" height="20" viewBox="0 0 20 20" x="0" y="0">
+    <rect x="9.01" y="-2.95" width="1.97" height="25.91" transform="translate(9.86 -4.29) rotate(45)"></rect>
+    <rect x="9.01" y="-2.95" width="1.97" height="25.91" transform="translate(24 9.86) rotate(135)"></rect>
+</svg>

@@ -1,0 +1,400 @@
+<!--?xml version="1.0" encoding="UTF-8"?-->
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" class=" js flexbox canvas canvastext webgl no-touch geolocation postmessage no-websqldatabase no-indexeddb hashchange history draganddrop websockets rgba hsla multiplebgs backgroundsize borderimage borderradius boxshadow textshadow opacity cssanimations csscolumns cssgradients no-cssreflections csstransforms csstransforms3d csstransitions fontface video audio localstorage sessionstorage webworkers applicationcache svg inlinesvg smil svgclippaths"><head>
+<meta content="text/html; charset=UTF-8" http-equiv="Content-Type">
+<meta content="IE=edge,chrome=1" http-equiv="X-UA-Compatible">
+<meta content="width=device-width; initial-scale=1.0; maximum-scale=1.0;" name="viewport">
+<link rel="shortcut icon" href="http://41.204.187.24:8080/themes/Mirage/images/favicon.ico">
+<link rel="apple-touch-icon" href="http://41.204.187.24:8080/themes/Mirage/images/apple-touch-icon.png">
+<meta name="Generator" content="DSpace 5.1">
+<link type="text/css" rel="stylesheet" media="screen" href="reset.css">
+<link type="text/css" rel="stylesheet" media="screen" href="base.css">
+<link type="text/css" rel="stylesheet" media="screen" href="helper.css">
+<link type="text/css" rel="stylesheet" media="screen" href="jquery-ui-1.css">
+<link type="text/css" rel="stylesheet" media="screen" href="style.css">
+<link type="text/css" rel="stylesheet" media="screen" href="authority-control.css">
+<link type="text/css" rel="stylesheet" media="handheld" href="handheld.css">
+<link type="text/css" rel="stylesheet" media="print" href="print.css">
+<link type="text/css" rel="stylesheet" media="all" href="media.css">
+<link type="application/opensearchdescription+xml" rel="search" href="http://41.204.187.24:8080/open-search/description.xml" title="DSpace">
+<script type="text/javascript">
+                                //Clear default text of empty text areas on focus
+                                function tFocus(element)
+                                {
+                                        if (element.value == ' '){element.value='';}
+                                }
+                                //Clear default text of empty text areas on submit
+                                function tSubmit(form)
+                                {
+                                        var defaultedElements = document.getElementsByTagName("textarea");
+                                        for (var i=0; i != defaultedElements.length; i++){
+                                                if (defaultedElements[i].value == ' '){
+                                                        defaultedElements[i].value='';}}
+                                }
+                                //Disable pressing 'enter' key to submit a form (otherwise pressing 'enter' causes a submission to start over)
+                                function disableEnterKey(e)
+                                {
+                                     var key;
+
+                                     if(window.event)
+                                          key = window.event.keyCode;     //Internet Explorer
+                                     else
+                                          key = e.which;     //Firefox and Netscape
+
+                                     if(key == 13)  //if "Enter" pressed, then disable!
+                                          return false;
+                                     else
+                                          return true;
+                                }
+
+                                function FnArray()
+                                {
+                                    this.funcs = new Array;
+                                }
+
+                                FnArray.prototype.add = function(f)
+                                {
+                                    if( typeof f!= "function" )
+                                    {
+                                        f = new Function(f);
+                                    }
+                                    this.funcs[this.funcs.length] = f;
+                                };
+
+                                FnArray.prototype.execute = function()
+                                {
+                                    for( var i=0; i < this.funcs.length; i++ )
+                                    {
+                                        this.funcs[i]();
+                                    }
+                                };
+
+                                var runAfterJSImports = new FnArray();
+            </script>
+<script xmlns:i18n="http://apache.org/cocoon/i18n/2.1" type="text/javascript" src="modernizr-1.js"> </script>
+<title>Open Access Week Activities in Kenya</title>
+<link rel="schema.DCTERMS" href="http://purl.org/dc/terms/">
+<link rel="schema.DC" href="http://purl.org/dc/elements/1.1/">
+<meta name="DC.creator" content="Ndungu, Miriam">
+<meta name="DC.creator" content="Gikandi, Jane">
+<meta name="DC.creator" content="Librarians Jomo Kenyatta University of Agriculture and Technology (JKUAT)">
+<meta name="DCTERMS.dateAccepted" content="2014-07-02T15:41:43Z" scheme="DCTERMS.W3CDTF">
+<meta name="DCTERMS.available" content="2014-07-02T15:41:43Z" scheme="DCTERMS.W3CDTF">
+<meta name="DCTERMS.issued" content="2014-07-02" scheme="DCTERMS.W3CDTF">
+<meta name="DC.identifier" content="http://hdl.handle.net/123456789/1475" scheme="DCTERMS.URI">
+<meta name="DC.description" content="Promotion of open access resources" xml:lang="en_US">
+<meta name="DCTERMS.abstract" content="The Jomo Kenyatta University of Agriculture &amp;
+Technology (JKUAT) Open Access Week took place from
+the 15-22 October and was a huge success. By partnering
+with JKUAT students, who brought in the necessary
+energy and creativity, we successfully carried out all of the
+planned activities. A major contribution from the students
+came in making the site visible, as they designed
+promotional posters, invitation cards, bandanas, name tags
+and a banner that was mounted at the University’s main
+gate." xml:lang="en_US">
+<meta name="DC.description" content="Inasp/eifl" xml:lang="en_US">
+<meta name="DC.language" content="en" xml:lang="en_US" scheme="DCTERMS.RFC1766">
+<meta name="DC.relation" content="INASP Newsletter;Winter 2010">
+<meta name="DC.subject" content="open access" xml:lang="en_US">
+<meta name="DC.title" content="Open Access Week Activities in Kenya" xml:lang="en_US">
+<meta name="DC.type" content="Article" xml:lang="en_US">
+
+<meta content="Open Access Week Activities in Kenya" name="citation_title">
+<meta content="Gikandi, Jane" name="citation_author">
+<meta content="http://localhost:8080/xmlui/bitstream/123456789/1475/1/INASP-News-43_web.pdf" name="citation_pdf_url">
+<meta content="http://localhost:8080/xmlui/handle/123456789/1475" name="citation_abstract_html_url">
+<meta content="2014-07-02" name="citation_date">
+<meta content="open access; Article" name="citation_keywords">
+<meta content="Librarians Jomo Kenyatta University of Agriculture and Technology (JKUAT)" name="citation_author">
+<meta content="en" name="citation_language">
+<meta content="Ndungu, Miriam" name="citation_author">
+</head><!--[if lt IE 7 ]> <body class="ie6"> <![endif]-->
+                <!--[if IE 7 ]>    <body class="ie7"> <![endif]-->
+                <!--[if IE 8 ]>    <body class="ie8"> <![endif]-->
+                <!--[if IE 9 ]>    <body class="ie9"> <![endif]-->
+                <!--[if (gt IE 9)|!(IE)]><!--><body><!--<![endif]-->
+<div id="ds-main">
+<div id="ds-header-wrapper">
+<div class="clearfix" id="ds-header">
+<a id="ds-header-logo-link" href="http://41.204.187.24:8080/">
+<span id="ds-header-logo">&nbsp;</span>
+<span id="ds-header-logo-text">
+</span>
+</a>
+<h1 xmlns:i18n="http://apache.org/cocoon/i18n/2.1" class="pagetitle visuallyhidden">Open Access Week Activities in Kenya</h1>
+<div id="ds-user-box">
+<p>
+<a href="http://41.204.187.24:8080/login">Login</a>
+</p>
+</div>
+</div>
+</div>
+<div xmlns:i18n="http://apache.org/cocoon/i18n/2.1" id="ds-trail-wrapper">
+<ul id="ds-trail">
+<li class="ds-trail-link first-link ">
+<a href="http://41.204.187.24:8080/">Repository Home</a>
+</li>
+<li xmlns:i18n="http://apache.org/cocoon/i18n/2.1" xmlns="http://di.tamu.edu/DRI/1.0/" class="ds-trail-arrow">→</li>
+<li class="ds-trail-link ">
+<a href="http://41.204.187.24:8080/handle/123456789/1068">JKUAT Library</a>
+</li>
+<li class="ds-trail-arrow">→</li>
+<li class="ds-trail-link ">
+<a href="http://41.204.187.24:8080/handle/123456789/1315">Library publications</a>
+</li>
+<li class="ds-trail-arrow">→</li>
+<li class="ds-trail-link last-link">View Item</li>
+</ul>
+</div>
+<div xmlns:i18n="http://apache.org/cocoon/i18n/2.1" xmlns="http://di.tamu.edu/DRI/1.0/" class="hidden" id="no-js-warning-wrapper">
+<div id="no-js-warning">
+<div class="notice failure">JavaScript is disabled for your browser. Some features of this site may not work without it.</div>
+</div>
+</div>
+<div id="ds-content-wrapper">
+<div class="clearfix" id="ds-content">
+<div id="ds-body">
+<div id="aspect_artifactbrowser_ItemViewer_div_item-view" class="ds-static-div primary">
+<p class="ds-paragraph item-view-toggle item-view-toggle-top">
+<a href="http://41.204.187.24:8080/handle/123456789/1475">Show simple item record</a>
+</p>
+<!-- External Metadata URL: cocoon://metadata/handle/123456789/1475/mets.xml-->
+<table xmlns:i18n="http://apache.org/cocoon/i18n/2.1" xmlns="http://di.tamu.edu/DRI/1.0/" xmlns:oreatom="http://www.openarchives.org/ore/atom/" xmlns:ore="http://www.openarchives.org/ore/terms/" xmlns:atom="http://www.w3.org/2005/Atom" class="ds-includeSet-table detailtable">
+<tbody><tr class="ds-table-row odd ">
+<td class="label-cell">dc.contributor.author</td>
+<td>Ndungu, Miriam</td>
+<td>
+</td></tr>
+<tr class="ds-table-row even ">
+<td class="label-cell">dc.contributor.author</td>
+<td>Gikandi, Jane</td>
+<td>
+</td></tr>
+<tr class="ds-table-row odd ">
+<td class="label-cell">dc.contributor.author</td>
+<td>Librarians Jomo Kenyatta University of Agriculture and Technology (JKUAT)</td>
+<td>
+</td></tr>
+<tr class="ds-table-row even ">
+<td class="label-cell">dc.date.accessioned</td>
+<td>2014-07-02T15:41:43Z</td>
+<td>
+</td></tr>
+<tr class="ds-table-row odd ">
+<td class="label-cell">dc.date.available</td>
+<td>2014-07-02T15:41:43Z</td>
+<td>
+</td></tr>
+<tr class="ds-table-row even ">
+<td class="label-cell">dc.date.issued</td>
+<td>2014-07-02</td>
+<td>
+</td></tr>
+<tr class="ds-table-row odd ">
+<td class="label-cell">dc.identifier.uri</td>
+<td>http://hdl.handle.net/123456789/1475</td>
+<td>
+</td></tr>
+<tr class="ds-table-row even ">
+<td class="label-cell">dc.description</td>
+<td>Promotion of open access resources</td>
+<td>en_US</td>
+</tr>
+<tr class="ds-table-row odd ">
+<td class="label-cell">dc.description.abstract</td>
+<td>The Jomo Kenyatta University of Agriculture &amp;
+Technology (JKUAT) Open Access Week took place from
+the 15-22 October and was a huge success. By partnering
+with JKUAT students, who brought in the necessary
+energy and creativity, we successfully carried out all of the
+planned activities. A major contribution from the students
+came in making the site visible, as they designed
+promotional posters, invitation cards, bandanas, name tags
+and a banner that was mounted at the University’s main
+gate.</td>
+<td>en_US</td>
+</tr>
+<tr class="ds-table-row even ">
+<td class="label-cell">dc.description.sponsorship</td>
+<td>Inasp/eifl</td>
+<td>en_US</td>
+</tr>
+<tr class="ds-table-row odd ">
+<td class="label-cell">dc.language.iso</td>
+<td>en</td>
+<td>en_US</td>
+</tr>
+<tr class="ds-table-row even ">
+<td class="label-cell">dc.relation.ispartofseries</td>
+<td>INASP Newsletter;Winter 2010</td>
+<td>
+</td></tr>
+<tr class="ds-table-row odd ">
+<td class="label-cell">dc.subject</td>
+<td>open access</td>
+<td>en_US</td>
+</tr>
+<tr class="ds-table-row even ">
+<td class="label-cell">dc.title</td>
+<td>Open Access Week Activities in Kenya</td>
+<td>en_US</td>
+</tr>
+<tr class="ds-table-row odd ">
+<td class="label-cell">dc.type</td>
+<td>Article</td>
+<td>en_US</td>
+</tr>
+</tbody></table>
+<span xmlns:oreatom="http://www.openarchives.org/ore/atom/" xmlns:ore="http://www.openarchives.org/ore/terms/" xmlns:atom="http://www.w3.org/2005/Atom" class="Z3988" title="ctx_ver=Z39.88-2004&amp;rft_val_fmt=info%3Aofi%2Ffmt%3Akev%3Amtx%3Adc&amp;rft_id=http%3A%2F%2Fhdl.handle.net%2F123456789%2F1475&amp;rfr_id=info%3Asid%2Fdspace.org%3Arepository&amp;">
+            ﻿ 
+        </span>
+<h2 xmlns:oreatom="http://www.openarchives.org/ore/atom/" xmlns:ore="http://www.openarchives.org/ore/terms/" xmlns:atom="http://www.w3.org/2005/Atom">Files in this item</h2>
+<div xmlns:i18n="http://apache.org/cocoon/i18n/2.1" xmlns:oreatom="http://www.openarchives.org/ore/atom/" xmlns:ore="http://www.openarchives.org/ore/terms/" xmlns:atom="http://www.w3.org/2005/Atom" class="file-list">
+<div class="file-wrapper clearfix">
+<div style="width: 80px;" class="thumbnail-wrapper">
+<a class="image-link" href="http://41.204.187.24:8080/bitstream/handle/123456789/1475/INASP-News-43_web.pdf?sequence=1&amp;isAllowed=y">
+<img style="height: 80px;" src="mime.png" alt="Icon">
+</a>
+</div>
+<div style="height: 80px;" class="file-metadata">
+<div>
+<span class="bold">Name:</span>
+<span xmlns:i18n="http://apache.org/cocoon/i18n/2.1" title="INASP-News-43_web.pdf">INASP-News-43_web.pdf</span>
+</div>
+<div>
+<span class="bold">Size:</span>
+<span xmlns:i18n="http://apache.org/cocoon/i18n/2.1">760.3Kb</span>
+</div>
+<div xmlns:i18n="http://apache.org/cocoon/i18n/2.1">
+<span class="bold">Format:</span>
+<span xmlns:i18n="http://apache.org/cocoon/i18n/2.1">PDF</span>
+</div>
+</div>
+<div xmlns:i18n="http://apache.org/cocoon/i18n/2.1" style="height: 80px;" class="file-link">
+<a href="http://41.204.187.24:8080/bitstream/handle/123456789/1475/INASP-News-43_web.pdf?sequence=1&amp;isAllowed=y">View/<wbr xmlns:i18n="http://apache.org/cocoon/i18n/2.1">Open</a>
+</div>
+</div>
+</div>
+<h2 class="ds-list-head">This item appears in the following Collection(s)</h2>
+<ul xmlns:i18n="http://apache.org/cocoon/i18n/2.1" xmlns="http://di.tamu.edu/DRI/1.0/" xmlns:oreatom="http://www.openarchives.org/ore/atom/" xmlns:ore="http://www.openarchives.org/ore/terms/" xmlns:atom="http://www.w3.org/2005/Atom" class="ds-referenceSet-list">
+<!-- External Metadata URL: cocoon://metadata/handle/123456789/1315/mets.xml-->
+<li>
+<a href="http://41.204.187.24:8080/handle/123456789/1315">Library publications</a> [14]<br>
+</li>
+</ul>
+<p class="ds-paragraph item-view-toggle item-view-toggle-bottom">
+<a href="http://41.204.187.24:8080/handle/123456789/1475">Show simple item record</a>
+</p>
+</div>
+</div>
+<div xmlns:i18n="http://apache.org/cocoon/i18n/2.1" xmlns="http://di.tamu.edu/DRI/1.0/" id="ds-options-wrapper">
+<div id="ds-options">
+<h1 class="ds-option-set-head" id="ds-search-option-head">Search Repository</h1>
+<div xmlns:i18n="http://apache.org/cocoon/i18n/2.1" class="ds-option-set" id="ds-search-option">
+<form method="post" id="ds-search-form" action="/discover">
+<fieldset>
+<input class="ds-text-field " name="query" type="text">
+<input xmlns:i18n="http://apache.org/cocoon/i18n/2.1" value="Go" name="submit" class="ds-button-field " onclick='
+                                        var radio = document.getElementById("ds-search-form-scope-container");
+                                        if (radio != undefined &amp;&amp; radio.checked)
+                                        {
+                                        var form = document.getElementById("ds-search-form");
+                                        form.action=
+                                    "/handle/" + radio.value + "/discover" ; 
+                                        }
+                                    ' type="submit">
+<label>
+<input checked="checked" value="" name="scope" id="ds-search-form-scope-all" type="radio">Search Repository</label>
+<br xmlns:i18n="http://apache.org/cocoon/i18n/2.1">
+<label>
+<input name="scope" id="ds-search-form-scope-container" value="123456789/1315" type="radio">This Collection</label>
+</fieldset>
+</form>
+</div>
+<h1 xmlns:i18n="http://apache.org/cocoon/i18n/2.1" class="ds-option-set-head">Browse</h1>
+<div xmlns:i18n="http://apache.org/cocoon/i18n/2.1" xmlns="http://di.tamu.edu/DRI/1.0/" id="aspect_viewArtifacts_Navigation_list_browse" class="ds-option-set">
+<ul class="ds-options-list">
+<li>
+<h2 class="ds-sublist-head">All of DSpace</h2>
+<ul xmlns:i18n="http://apache.org/cocoon/i18n/2.1" xmlns="http://di.tamu.edu/DRI/1.0/" class="ds-simple-list sublist">
+<li class="ds-simple-list-item">
+<a href="http://41.204.187.24:8080/community-list">Communities &amp; Collections</a>
+</li>
+<li xmlns:i18n="http://apache.org/cocoon/i18n/2.1" xmlns="http://di.tamu.edu/DRI/1.0/" class="ds-simple-list-item">
+<a href="http://41.204.187.24:8080/browse?type=dateissued">By Issue Date</a>
+</li>
+<li xmlns:i18n="http://apache.org/cocoon/i18n/2.1" xmlns="http://di.tamu.edu/DRI/1.0/" class="ds-simple-list-item">
+<a href="http://41.204.187.24:8080/browse?type=author">Authors</a>
+</li>
+<li xmlns:i18n="http://apache.org/cocoon/i18n/2.1" xmlns="http://di.tamu.edu/DRI/1.0/" class="ds-simple-list-item">
+<a href="http://41.204.187.24:8080/browse?type=title">Titles</a>
+</li>
+<li xmlns:i18n="http://apache.org/cocoon/i18n/2.1" xmlns="http://di.tamu.edu/DRI/1.0/" class="ds-simple-list-item">
+<a href="http://41.204.187.24:8080/browse?type=subject">Subjects</a>
+</li>
+</ul>
+</li>
+<li xmlns:i18n="http://apache.org/cocoon/i18n/2.1" xmlns="http://di.tamu.edu/DRI/1.0/">
+<h2 class="ds-sublist-head">This Collection</h2>
+<ul xmlns:i18n="http://apache.org/cocoon/i18n/2.1" xmlns="http://di.tamu.edu/DRI/1.0/" class="ds-simple-list sublist">
+<li class="ds-simple-list-item">
+<a href="http://41.204.187.24:8080/handle/123456789/1315/browse?type=dateissued">By Issue Date</a>
+</li>
+<li xmlns:i18n="http://apache.org/cocoon/i18n/2.1" xmlns="http://di.tamu.edu/DRI/1.0/" class="ds-simple-list-item">
+<a href="http://41.204.187.24:8080/handle/123456789/1315/browse?type=author">Authors</a>
+</li>
+<li xmlns:i18n="http://apache.org/cocoon/i18n/2.1" xmlns="http://di.tamu.edu/DRI/1.0/" class="ds-simple-list-item">
+<a href="http://41.204.187.24:8080/handle/123456789/1315/browse?type=title">Titles</a>
+</li>
+<li xmlns:i18n="http://apache.org/cocoon/i18n/2.1" xmlns="http://di.tamu.edu/DRI/1.0/" class="ds-simple-list-item">
+<a href="http://41.204.187.24:8080/handle/123456789/1315/browse?type=subject">Subjects</a>
+</li>
+</ul>
+</li>
+</ul>
+</div>
+<h1 xmlns:i18n="http://apache.org/cocoon/i18n/2.1" xmlns="http://di.tamu.edu/DRI/1.0/" class="ds-option-set-head">My Account</h1>
+<div xmlns:i18n="http://apache.org/cocoon/i18n/2.1" xmlns="http://di.tamu.edu/DRI/1.0/" id="aspect_viewArtifacts_Navigation_list_account" class="ds-option-set">
+<ul class="ds-simple-list">
+<li class="ds-simple-list-item">
+<a href="http://41.204.187.24:8080/login">Login</a>
+</li>
+<li xmlns:i18n="http://apache.org/cocoon/i18n/2.1" xmlns="http://di.tamu.edu/DRI/1.0/" class="ds-simple-list-item">
+<a href="http://41.204.187.24:8080/register">Register</a>
+</li>
+</ul>
+</div>
+</div>
+</div>
+
+</div>
+</div>
+<div xmlns:i18n="http://apache.org/cocoon/i18n/2.1" xmlns="http://di.tamu.edu/DRI/1.0/" id="ds-footer-wrapper">
+<div id="ds-footer">
+<div id="ds-footer-left">
+                    
+                     copyright&nbsp;©&nbsp;&nbsp; <a target="_blank" href="http://www.jkuat.ac.ke/">Jomo Kenyatta University of Agriculture and Technology</a>
+</div>
+<div id="ds-footer-right">
+<a href="http://41.204.187.24:8080/contact">Contact Us</a> | <a xmlns:i18n="http://apache.org/cocoon/i18n/2.1" href="http://41.204.187.24:8080/feedback">Send Feedback</a>
+</div>
+<div xmlns:i18n="http://apache.org/cocoon/i18n/2.1" id="ds-footer-links">
+<a class="hidden" href="http://41.204.187.24:8080/htmlmap">&nbsp;</a>
+</div>
+</div>
+</div>
+<script src="jquery.js" type="text/javascript"> </script>
+<script type="text/javascript">!window.jQuery && document.write('<script type="text/javascript" src="/static/js/jquery-1.6.2.min.js"> <\/script>')</script>
+<script type="text/javascript" src="jquery-ui-1.js"> </script><!--[if lt IE 7 ]>
+<script type="text/javascript" src="/themes/Mirage/lib/js/DD_belatedPNG_0.0.8a.js?v=1"> </script>
+<script type="text/javascript">DD_belatedPNG.fix('#ds-header-logo');DD_belatedPNG.fix('#ds-footer-logo');$.each($('img[src$=png]'), function() {DD_belatedPNG.fixPng(this);});</script><![endif]-->
+<script type="text/javascript">
+            runAfterJSImports.execute();
+        </script>
+<script type="text/javascript">
+                         if(typeof window.orcid === 'undefined'){
+                            window.orcid={};
+                          };
+                        window.orcid.contextPath= '';window.orcid.themePath= '/themes/Mirage';</script>
+</div></body></html>

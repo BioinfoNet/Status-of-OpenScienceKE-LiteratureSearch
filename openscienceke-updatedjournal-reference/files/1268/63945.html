@@ -1,0 +1,542 @@
+<!DOCTYPE html>
+<html><head prefix="dspace: https://run.unl.pt">
+        <title>RUN: Impact of land cover changes on carbon stock trends in Kenya using free open data</title>
+        <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+        <meta name="Generator" content="DSpace 5.2">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+        <!-- RCCAP - Open Graph Protocol implementation-->
+        <meta property="og:title" content="Impact of land cover changes on carbon stock trends in Kenya using free open data">
+        <meta property="og:type" content="dspace:page">
+        <meta property="og:url" content="https://run.unl.pt/handle/10362/63945">
+        <meta property="og:image" content="https://run.unl.pt/image/logos/logo.png">
+        <!-- /RCCAP - Open Graph Protocol implementation-->
+
+        <!-- Stylesheets -->
+        <link rel="shortcut icon" href="https://run.unl.pt/favicon.ico" type="image/x-icon">
+	    <link rel="stylesheet" href="jquery-ui-1.css" type="text/css">	    
+	    <link rel="stylesheet" href="layout2.css" type="text/css">	    
+        <link rel="stylesheet" href="dspace-theme.css" type="text/css">
+
+        <!-- RSS -->
+
+        <link rel="search" type="application/opensearchdescription+xml" href="https://run.unl.pt/open-search/description.xml" title="RUN">
+
+
+<link rel="schema.DCTERMS" href="http://purl.org/dc/terms/">
+<link rel="schema.DC" href="http://purl.org/dc/elements/1.1/">
+<meta name="DC.contributor" content="Cabral, Pedro da Costa Brito">
+<meta name="DC.contributor" content="Silva, Joel Dinis Baptista Ferreira da">
+<meta name="DC.contributor" content="Mateu, Jorge">
+<meta name="DC.creator" content="Nyamari, Nicodemus Ontweka">
+<meta name="DCTERMS.dateAccepted" content="2019-03-20T17:57:53Z" scheme="DCTERMS.W3CDTF">
+<meta name="DCTERMS.available" content="2019-03-20T17:57:53Z" scheme="DCTERMS.W3CDTF">
+<meta name="DCTERMS.issued" content="2019-03-01" scheme="DCTERMS.W3CDTF">
+<meta name="DC.identifier" content="http://hdl.handle.net/10362/63945" scheme="DCTERMS.URI">
+<meta name="DC.description" content="Dissertation submitted in partial fulfilment of the requirements for the Degree of Master of Science in Geospatial Technologies" xml:lang="pt_PT">
+<meta name="DCTERMS.abstract" content="Terrestrial carbon stock estimates information has signi cant importance in planning
+decisions for amicable mitigation of global warming and climate change related disasters.
+However, conventional estimation methods are usually expensive and time demanding
+particularly on national or regional scales. Therefore, this study sought to
+estimate and analyze carbon stock changes in Kenya as a consequence of land cover
+change (LCC) using open data and software to provide a ordable and timely solutions.
+Using Random Forest (RF) decision trees, the land cover for 2028 was modelled from
+2004 and 2016 land cover under Business as Usual (BAU) and an alternative, Reducing
+of Emissions from Forest Degradation and Deforestation (REDD+) scenarios. The
+modelled land cover maps were thereafter input in InVEST carbon model for estimation
+and valuation of carbon stock between 2004 and 2028. The results show a 16% decline
+in carbon stock between 2004 and 2028 with a likelihood of losing up to 21 billion US$
+under BAU scenario at a national level. On a regional scale, the results revealed a
+gradual decline in carbon stock in the Coastal and Central regions of the study area
+while other regions exhibited mixed results. However, the trend can be reversed by
+implementation of REDD+ scenario with a possible increase of 1.6% between 2016 and
+2028, translating to a gain of approximately 1 billion US$. This study contributes to
+the understanding of spatiotemporal carbon stock changes under di erent scenarios for
+e ective spatial planning, land use policy development and keeping balances during
+natural resource utilization." xml:lang="pt_PT">
+<meta name="DC.language" content="eng" xml:lang="pt_PT" scheme="DCTERMS.RFC1766">
+<meta name="DC.rights" content="openAccess" xml:lang="pt_PT">
+<meta name="DC.rights" content="http://creativecommons.org/licenses/by/4.0/" xml:lang="pt_PT" scheme="DCTERMS.URI">
+<meta name="DC.subject" content="Ecosystems services" xml:lang="pt_PT">
+<meta name="DC.subject" content="InVEST carbon model" xml:lang="pt_PT">
+<meta name="DC.subject" content="Land cover changes modelling" xml:lang="pt_PT">
+<meta name="DC.subject" content="Random Forest Decision Trees" xml:lang="pt_PT">
+<meta name="DC.subject" content="REDD+" xml:lang="pt_PT">
+<meta name="DC.title" content="Impact of land cover changes on carbon stock trends in Kenya using free open data" xml:lang="pt_PT">
+<meta name="DC.type" content="masterThesis" xml:lang="pt_PT">
+<meta name="DC.identifier" content="202200949" xml:lang="pt_PT">
+
+<meta name="citation_author" content="Nyamari, Nicodemus Ontweka">
+<meta name="citation_date" content="2019-03-01">
+<meta name="citation_abstract_html_url" content="https://run.unl.pt/handle/10362/63945">
+<meta name="citation_language" content="eng">
+<meta name="citation_pdf_url" content="https://run.unl.pt/bitstream/10362/63945/1/TGEO0213.pdf">
+<meta name="citation_keywords" content="Ecosystems services; InVEST carbon model; Land cover changes modelling; Random Forest Decision Trees; REDD+; masterThesis">
+<meta name="citation_title" content="Impact of land cover changes on carbon stock trends in Kenya using free open data">
+<meta name="citation_dissertation_name" content="Impact of land cover changes on carbon stock trends in Kenya using free open data">
+
+
+
+    <!-- JS -->
+	<script type="text/javascript" async="" src="ga.js"></script><script type="text/javascript" src="jquery-1.js"></script>
+	<script type="text/javascript" src="jquery-ui-1.js"></script>
+	<script type="text/javascript" src="bootstrap.js"></script>
+	<script type="text/javascript" src="holder.js"></script>
+	<script type="text/javascript" src="utils.js"></script>
+    <script type="text/javascript" src="choice-support.js"> </script>
+
+    
+    
+        <script type="text/javascript">
+            var _gaq = _gaq || [];
+            _gaq.push(['_setAccount', 'UA-19965733-29']);
+            _gaq.push(['_trackPageview']);
+
+            (function() {
+                var ga = document.createElement('script'); ga.type = 'text/javascript'; ga.async = true;
+                ga.src = ('https:' == document.location.protocol ? 'https://ssl' : 'http://www') + '.google-analytics.com/ga.js';
+                var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(ga, s);
+            })();
+        </script>
+    
+    
+
+<!-- HTML5 shim and Respond.js IE8 support of HTML5 elements and media queries -->
+<!--[if lt IE 9]>
+  <script src="/static/js/html5shiv.js"></script>
+  <script src="/static/js/respond.min.js"></script>
+<![endif]-->
+
+
+<!-- Begin Cookie Consent plugin by Silktide - http://silktide.com/cookieconsent -->
+<link rel="stylesheet" type="text/css" href="cookieconsent.css">
+<script src="cookieconsent.js"></script>
+<script>
+window.addEventListener("load", function(){
+window.cookieconsent.initialise({
+ "palette": {
+   "popup": {
+     "background": "#000"
+   },
+   "button": {
+     "background": "#f1d600"
+   }
+ },
+ "showLink": false,
+ "theme": "classic",
+ "content": {
+   "message": "This website uses cookies to ensure you get the best experience on our website.",
+   "dismiss": "Got it!"
+ }
+})});
+</script>
+<!-- End Cookie Consent plugin -->
+    <style id="holderjs-style" type="text/css">.holderjs-fluid {font-size:16px;font-weight:bold;text-align:center;font-family:sans-serif;margin:0}</style><style></style></head>
+
+    
+    
+    <body class="undernavigation"><div role="dialog" aria-live="polite" aria-label="cookieconsent" aria-describedby="cookieconsent:desc" class="cc-window cc-banner cc-type-info cc-theme-classic cc-bottom cc-color-override-688238583 " style=""><!--googleoff: all--><span id="cookieconsent:desc" class="cc-message">This website uses cookies to ensure you get the best experience on our website.</span><div class="cc-compliance"><a aria-label="dismiss cookie message" role="button" tabindex="0" class="cc-btn cc-dismiss">Got it!</a></div><!--googleon: all--></div>
+<a class="sr-only" href="#content">Skip navigation</a>
+<header class="navbar navbar-inverse navbar-fixed-top">    
+
+    
+
+    
+            <div class="container">
+                
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+       <div class="navbar-header">
+         <button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-collapse">
+           <span class="icon-bar"></span>
+           <span class="icon-bar"></span>
+           <span class="icon-bar"></span>
+         </button>
+       </div>
+       <nav class="collapse navbar-collapse bs-navbar-collapse" role="navigation">
+         <ul class="nav navbar-nav">
+           <li class=""><a href="https://run.unl.pt/"><span class="glyphicon glyphicon-home"></span> Home</a></li>
+                
+           <li class="dropdown">
+             <a href="#" class="dropdown-toggle" data-toggle="dropdown">Browse <b class="caret"></b></a>
+             <ul class="dropdown-menu">
+               <li><a href="https://run.unl.pt/community-list">Communities<br>&amp;&nbsp;Collections</a></li>
+				<li class="divider"></li>
+        <li class="dropdown-header">Browse Items by:</li>
+				
+				
+				
+				      			<li><a href="https://run.unl.pt/browse?type=dateissued">Issue Date</a></li>
+					
+				      			<li><a href="https://run.unl.pt/browse?type=author">Author</a></li>
+					
+				      			<li><a href="https://run.unl.pt/browse?type=advisor">Advisor</a></li>
+					
+				      			<li><a href="https://run.unl.pt/browse?type=title">Title</a></li>
+					
+				      			<li><a href="https://run.unl.pt/browse?type=subject">Subject</a></li>
+					
+				      			<li><a href="https://run.unl.pt/browse?type=type">Document Type</a></li>
+					
+				      			<li><a href="https://run.unl.pt/browse?type=rights">Access Type</a></li>
+					
+				      			<li><a href="https://run.unl.pt/browse?type=lcAuthor">Authority Index</a></li>
+					
+				    
+				
+
+            </ul>
+          </li>
+          <li class=""><script type="text/javascript">
+<!-- Javascript starts here
+document.write('<a href="#" onClick="var popupwin = window.open(\'/help/index.html\',\'dspacepopup\',\'height=600,width=550,resizable,scrollbars\');popupwin.focus();return false;">Help<\/a>');
+// -->
+</script><a href="#" onclick="var popupwin = window.open('/help/index.html','dspacepopup','height=600,width=550,resizable,scrollbars');popupwin.focus();return false;">Help</a><noscript><a href="/help/index.html" target="dspacepopup">Help</a></noscript></li>
+       </ul>
+
+ 
+    <div class="nav navbar-nav navbar-right">
+	 <ul class="nav navbar-nav navbar-right">
+      <li class="dropdown">
+       <a href="#" class="dropdown-toggle" data-toggle="dropdown">Language<b class="caret"></b></a>
+        <ul class="dropdown-menu">
+ 
+      <li>
+        <a onclick="javascript:document.repost.locale.value='pt_PT';
+                  document.repost.submit();" href="https://run.unl.pt/handle/10362/63945?locale=pt_PT">
+         português
+       </a>
+      </li>
+ 
+      <li>
+        <a onclick="javascript:document.repost.locale.value='en';
+                  document.repost.submit();" href="https://run.unl.pt/handle/10362/63945?locale=en">
+         english
+       </a>
+      </li>
+ 
+     </ul>
+    </li>
+    </ul>
+  </div>
+ 
+ 
+       <div class="nav navbar-nav navbar-right">
+		<ul class="nav navbar-nav navbar-right">
+         <li class="dropdown">
+         
+             <a href="#" class="dropdown-toggle" data-toggle="dropdown"><span class="glyphicon glyphicon-user"></span> Sign on to: <b class="caret"></b></a>
+	             
+             <ul class="dropdown-menu">
+               <li><a href="https://run.unl.pt/mydspace">My Account</a></li>
+               <li><a href="https://run.unl.pt/subscribe">Receive email<br>updates</a></li>
+               <li><a href="https://run.unl.pt/profile">Edit Profile</a></li>
+
+		
+             </ul>
+           </li>
+          </ul>
+          
+	
+    </div>
+    </nav>
+
+            </div>
+
+</header>
+
+
+<main id="content" role="main">
+
+<div class="container banner">		                
+		<div class="row">		
+			<div class="col-md-8 brand">		
+				<a href="https://run.unl.pt/"><img class="img-responsive" src="logo.png" alt="RUN logo"></a>		
+        	</div>		
+        	<div class="col-md-4 search">		
+        		                
+                
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+	<form method="get" action="/simple-search" class="navbar-form navbar-right">
+	    <div class="form-group">
+          <input class="form-control" placeholder="Search&nbsp;Repository" name="query" id="tequery" size="25" type="text">
+        </div>
+        <button type="submit" class="btn btn-primary"><span class="glyphicon glyphicon-search"></span></button>
+
+	</form>
+			
+        	</div>		
+		</div><!-- /row -->		
+	</div><!-- /container /banner -->	  
+
+
+                
+
+<div class="container">
+                
+
+
+
+
+
+
+
+
+
+
+<ol class="breadcrumb">
+
+
+  <li><a href="https://run.unl.pt/">RUN</a></li>
+
+  <li><a href="https://run.unl.pt/community-list">Communities and Collections</a></li>
+
+  <li><a href="https://run.unl.pt/handle/10362/2063">NOVA Information Management School (NIMS)</a></li>
+
+  <li><a href="https://run.unl.pt/handle/10362/2259">NIMS - MSc Dissertations Geospatial Technologies (Erasmus-Mundus)</a></li>
+
+</ol>
+
+</div>                
+
+
+        
+<div class="container">
+		
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+		
+		
+		
+		
+
+                
+                <div class="well">Please use this identifier to cite or link to this item:
+                <code>http://hdl.handle.net/10362/63945</code></div>
+
+
+
+    
+    <table class="table itemDisplayTable">
+<tbody><tr><td class="metadataFieldLabel">Title:&nbsp;</td><td class="metadataFieldValue">Impact of land cover changes on carbon stock trends in Kenya using free open data</td></tr>
+<tr><td class="metadataFieldLabel">Author:&nbsp;</td><td class="metadataFieldValue"><a class="author" href="https://run.unl.pt/browse?type=author&amp;value=Nyamari%2C+Nicodemus+Ontweka">Nyamari, Nicodemus Ontweka</a></td></tr>
+<tr><td class="metadataFieldLabel">Advisor:&nbsp;</td><td class="metadataFieldValue"><a class="advisor" href="https://run.unl.pt/browse?type=advisor&amp;value=Cabral%2C+Pedro+da+Costa+Brito">Cabral, Pedro da Costa Brito</a><br><a class="advisor" href="https://run.unl.pt/browse?type=advisor&amp;value=Silva%2C+Joel+Dinis+Baptista+Ferreira+da">Silva, Joel Dinis Baptista Ferreira da</a><br><a class="advisor" href="https://run.unl.pt/browse?type=advisor&amp;value=Mateu%2C+Jorge">Mateu, Jorge</a></td></tr>
+<tr><td class="metadataFieldLabel">Keywords:&nbsp;</td><td class="metadataFieldValue">Ecosystems services<br>InVEST carbon model<br>Land cover changes modelling<br>Random Forest Decision Trees<br>REDD+</td></tr>
+<tr><td class="metadataFieldLabel">Defense Date:&nbsp;</td><td class="metadataFieldValue">1-Mar-2019</td></tr>
+<tr><td class="metadataFieldLabel">Abstract:&nbsp;</td><td class="metadataFieldValue">Terrestrial carbon stock estimates information has signi cant importance in planning
+decisions for amicable mitigation of global warming and climate change related disasters.
+However, conventional estimation methods are usually expensive and time demanding
+particularly on national or regional scales. Therefore, this study sought to
+estimate and analyze carbon stock changes in Kenya as a consequence of land cover
+change (LCC) using open data and software to provide a ordable and timely solutions.
+Using Random Forest (RF) decision trees, the land cover for 2028 was modelled from
+2004 and 2016 land cover under Business as Usual (BAU) and an alternative, Reducing
+of Emissions from Forest Degradation and Deforestation (REDD+) scenarios. The
+modelled land cover maps were thereafter input in InVEST carbon model for estimation
+and valuation of carbon stock between 2004 and 2028. The results show a 16% decline
+in carbon stock between 2004 and 2028 with a likelihood of losing up to 21 billion US$
+under BAU scenario at a national level. On a regional scale, the results revealed a
+gradual decline in carbon stock in the Coastal and Central regions of the study area
+while other regions exhibited mixed results. However, the trend can be reversed by
+implementation of REDD+ scenario with a possible increase of 1.6% between 2016 and
+2028, translating to a gain of approximately 1 billion US$. This study contributes to
+the understanding of spatiotemporal carbon stock changes under di erent scenarios for
+e ective spatial planning, land use policy development and keeping balances during
+natural resource utilization.</td></tr>
+<tr><td class="metadataFieldLabel">Description:&nbsp;</td><td class="metadataFieldValue">Dissertation submitted in partial fulfilment of the requirements for the Degree of Master of Science in Geospatial Technologies</td></tr>
+<tr><td class="metadataFieldLabel">URI:&nbsp;</td><td class="metadataFieldValue"><a href="http://hdl.handle.net/10362/63945">http://hdl.handle.net/10362/63945</a></td></tr>
+<tr><td class="metadataFieldLabel">Designation:&nbsp;</td><td class="metadataFieldValue">Mestrado em Tecnologias Geoespaciais</td></tr>
+<tr><td class="metadataFieldLabel">Appears in Collections:</td><td class="metadataFieldValue"><a href="https://run.unl.pt/handle/10362/2259">NIMS - MSc Dissertations Geospatial Technologies (Erasmus-Mundus)</a><br></td></tr>
+</tbody></table><br>
+<div class="panel panel-info"><div class="panel-heading">Files in This Item:</div>
+<table class="table panel-body"><tbody><tr><th id="t1" class="standard">File</th>
+<th id="t2" class="standard">Description</th>
+<th id="t3" class="standard">Size</th><th id="t4" class="standard">Format</th><th>&nbsp;</th></tr>
+<tr><td headers="t1" class="standard"><a target="_blank" href="https://run.unl.pt/bitstream/10362/63945/1/TGEO0213.pdf">TGEO0213.pdf</a></td><td headers="t2" class="standard"></td><td headers="t3" class="standard">21,86 MB</td><td headers="t4" class="standard">Adobe PDF</td><td class="standard" align="center"><a class="btn btn-primary" target="_blank" href="https://run.unl.pt/bitstream/10362/63945/1/TGEO0213.pdf">View/Open</a></td></tr></tbody></table>
+</div>
+
+<div class="container row">
+
+
+    <a class="btn btn-primary" href="https://run.unl.pt/handle/10362/63945?mode=full">
+        Show full item record
+    </a>
+
+    <!--<a class="statisticsLink  btn btn-primary" href="/handle/10362/63945/statistics"><span class="glyphicon glyphicon-stats"></span></a>-->
+    <!--STATS ADDON  -->
+       
+               <a class="statisticsLink  btn btn-info" href="https://run.unl.pt/stats?level=item&amp;type=access&amp;page=downviews-series&amp;object=item&amp;object-id=10362/63945">
+               <span class="glyphicon glyphicon-stats"></span></a>
+                   
+   <!--END STATS ADDON  -->
+
+
+<a class="btn btn-success" href="https://run.unl.pt/feedback?feedback=I%20would%20like%20to%20give%20the%20feedback%20about%20the%20item:%20http://hdl.handle.net/10362/63945" target="new_window">
+               Give your opinion</a>
+
+
+    
+
+</div>
+<br>
+    
+
+<br>
+<!-- && !isAdmin removed. sharing bar will appear even to the Administration zone -->
+
+	
+	     <div class="container well sharingbar" style="height: 35px; padding-left: 10px; padding-right:10px; padding-top:6px">
+	        <div class="left" style="float: left">
+			            <a target="_blank" href="http://www.facebook.com/sharer/sharer.php?u=https%3A%2F%2Frun.unl.pt%2Fhandle%2F10362%2F63945"><img alt="Facebook" title="Partilhe no Facebook" src="facebook.png"></a><a target="_blank" href="http://twitter.com/home?status=Impact+of+land+cover+changes+on+carbon+stock+trends+in+Kenya+using+free+open+data-https%3A%2F%2Frun.unl.pt%2Fhandle%2F10362%2F63945"><img alt="Twitter" title="Partilhe no Twitter" src="twitter.png"></a><a target="_blank" href="http://delicious.com/post?url=https%3A%2F%2Frun.unl.pt%2Fhandle%2F10362%2F63945&amp;title=Impact+of+land+cover+changes+on+carbon+stock+trends+in+Kenya+using+free+open+data"><img alt="Delicious" title="Partilhe no Delicious" src="delicious.png"></a><a target="_blank" href="http://www.linkedin.com/shareArticle?mini=true&amp;url=https%3A%2F%2Frun.unl.pt%2Fhandle%2F10362%2F63945&amp;title=Impact+of+land+cover+changes+on+carbon+stock+trends+in+Kenya+using+free+open+data&amp;summary=Terrestrial+carbon+stock+estimates+information+has+signi+cant+importance+in+planning%0D%0Adecisions+for+amicable+mitigation+of+global+warming+and+climate+change+related+disasters.%0D%0AHowever%2C+conventional+estimation+methods+are+usually+expensive+and+time+demanding%0D%0Aparticularly+on+national+or+regional+scales.+Therefore%2C+this+study+sought+to%0D%0Aestimate+and+analyze+carbon+stock+changes+in+Kenya+as+a+consequence+of+land+cover%0D%0Achange+%28LCC%29+using+open+data+and+software+to+provide+a+ordable+and+timely+solutions.%0D%0AUsing+Random+Forest+%28RF%29+decision+trees%2C+the+land+cover+for+2028+was+modelled+from%0D%0A2004+and+2016+land+cover+under+Business+as+Usual+%28BAU%29+and+an+alternative%2C+Reducing%0D%0Aof+Emissions+from+Forest+Degradation+and+Deforestation+%28REDD%2B%29+scenarios.+The%0D%0Amodelled+land+cover+maps+were+thereafter+input+in+InVEST+carbon+model+for+estimation%0D%0Aand+valuation+of+carbon+stock+between+2004+and+2028.+The+results+show+a+16%25+decline%0D%0Ain+carbon+stock+between+2004+and+2028+with+a+likelihood+of+losing+up+to+21+billion+US%24%0D%0Aunder+BAU+scenario+at+a+national+level.+On+a+regional+scale%2C+the+results+revealed+a%0D%0Agradual+decline+in+carbon+stock+in+the+Coastal+and+Central+regions+of+the+study+area%0D%0Awhile+other+regions+exhibited+mixed+results.+However%2C+the+trend+can+be+reversed+by%0D%0Aimplementation+of+REDD%2B+scenario+with+a+possible+increase+of+1.6%25+between+2016+and%0D%0A2028%2C+translating+to+a+gain+of+approximately+1+billion+US%24.+This+study+contributes+to%0D%0Athe+understanding+of+spatiotemporal+carbon+stock+changes+under+di+erent+scenarios+for%0D%0Ae+ective+spatial+planning%2C+land+use+policy+development+and+keeping+balances+during%0D%0Anatural+resource+utilization."><img alt="LinkedIn" title="Partilhe no LinkedIn" src="linkedin.png"></a><a target="_blank" href="http://digg.com/submit?phase=2&amp;url=https%3A%2F%2Frun.unl.pt%2Fhandle%2F10362%2F63945"><img alt="Digg" title="Partilhe no Digg" src="digg.png"></a><a target="_blank" href="https://www.google.com/bookmarks/mark?op=add&amp;bkmk=https%3A%2F%2Frun.unl.pt%2Fhandle%2F10362%2F63945&amp;title=Impact+of+land+cover+changes+on+carbon+stock+trends+in+Kenya+using+free+open+data"><img alt="Google Bookmarks" title="Adicionar ao Google Bookmarks" src="googlebookmark.png"></a><a target="_blank" href="http://www.myspace.com/Modules/PostTo/Pages/?u=https%3A%2F%2Frun.unl.pt%2Fhandle%2F10362%2F63945"><img alt="MySpace" title="Partilhe no MySpace" src="myspace.png"></a>
+			       </div>
+			        <div class="right" style="float: right">
+			            <a href="https://run.unl.pt/sharing?handler=bibtex&amp;id=65429" target="_blank"><img src="bibtex.png" title="Exporte no formato BibTex" alt="Formato BibTex"></a><span class="sharingFloatLeft">&nbsp;</span><a target="_blank" href="https://www.mendeley.com/import/?url=https%3A%2F%2Frun.unl.pt%2Fhandle%2F10362%2F63945#"><img alt="Mendeley" title="Adicione ao Mendeley" src="mendeley.png"></a><a href="https://run.unl.pt/sharing?handler=endnote&amp;id=65429" target="_blank"><img src="endnote.png" title="Exporte no formato Endnote" alt="Endnote"></a><span class="sharingFloatLeft">&nbsp;</span>
+			        </div>
+	        <div class="clear"></div>
+	    </div>
+	    
+    
+
+    <p class="submitFormHelp alert alert-info">Items in Repository are protected by copyright, with all rights reserved, unless otherwise indicated.</p>
+  
+
+
+
+
+
+
+
+
+
+
+
+
+            
+
+<div class="footer-custom-rcaap">
+
+
+
+<div class="container">
+	<div class="col-md-8">
+	<ul class="list-inline copyright pull-left">
+		<li><a target="_blank" href="http://www.unl.pt/"> Universidade Nova de Lisboa</a></li>
+		<li><a href="https://run.unl.pt/stats?level=general&amp;type=access&amp;page=downviews-series">Statistics</a></li>
+		<li><a href="https://run.unl.pt/feedback">Feedback</a></li>
+	</ul>
+	</div>
+	<div class="col-md-4">
+	<ul class="list-inline pull-right">
+		<li><a href="http://www.rcaap.pt/" alt="RCAAP" target="_blank" title="RCAAP">
+		   <img src="rcaap3.jpg" alt="RCAAP" border="0"></a></li>
+
+	</ul>
+</div>
+</div>
+
+
+</div>
+
+</div></main>
+            
+             <footer class="navbar navbar-bottom">
+             <div id="designedby" class="container text-muted">
+	     			<div id="footer_feedback" class="pull-right">                                    
+	                                     <!--<p class="text-muted"><a target="_blank" href="http://www.dspace.org/">DSpace Software</a> Copyright&nbsp;&copy;&nbsp;2002-2013&nbsp; <a target="_blank" href="http://www.duraspace.org/">Duraspace</a>&nbsp;-
+	                                     <a target="_blank" href="/feedback">Feedback</a>
+	                                     <a href="/htmlmap"></a></p>-->
+	                                     </div>
+	     			</div>
+	    <!-- rcaap footer -->
+	    <div class="container">
+	    <div class="row">
+		<div class="col-md-6 promotors">
+			<p>Promotores do RCAAP:</p>
+			<a href="http://www.fccn.pt/" target="_blank" title="Fundação para a Ciência e a Tecnologia"><span class="hide-text  logos logos-logo-fct-fccn">Fundação para a Ciência e a Tecnologia - Fundação para a Computação Científica Nacional</span></a>
+			<a href="http://www.uminho.pt/" target="_blank" title="Universidade do Minho"><span class="hide-text logos logos-logo-uminho">Universidade do Minho</span></a>
+		</div>
+		<div class="col-md-6 sponsors">
+			<p>Financiadores do RCAAP:</p>
+			<a href="http://www.portugal.gov.pt/" target="_blank" title="República Portuguesa"><span class="hide-text logos logos-logo-rp-mctes">República Portuguesa · Ministério da Ciência, Tecnologia e Ensino Superior</span></a>
+			<!--a href="http://www.posc.mctes.pt/" target="_blank" title="POS_Conhecimento"><span class="hide-text logos logos-logo-posc">POS_C</span></a-->
+			<a href="https://europa.eu/european-union/index_pt" target="_blank" title="União Europeia"><span class="hide-text logos logos-logo_FEDER">União Europeia - Programa FEDER</span></a>
+		</div>
+	</div>
+	 </div>   
+    </footer>
+    
+
+
+</body></html>

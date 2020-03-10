@@ -1,0 +1,155 @@
+/*
+-----------------------------------------------
+bepress IR local stylesheet.
+Author:   Kyle G Sessions
+Version:  27 May 2011
+PLEASE SAVE THIS FILE LOCALLY!
+----------------------------------------------- */
+
+body {
+	padding-top: 37px;
+	background: #764c03 url(../assets/md5images/fb144ddf18967d30a7e92d2f9393499e.gif) top left repeat-x; }
+
+/* Header and Navigation */
+
+#ajis #subheader { height: 36px; }
+
+#ajis #subheader #tabs {
+	font-size: 12px;
+	height: 36px;
+	padding-top: 0; }
+
+#ajis #subheader #tabs ul { padding-top: 0; }
+
+#ajis #subheader #tabs li { margin: 0; }
+
+#ajis #subheader #tabs a {
+	border: 0;
+	float: left;
+	font-weight: normal;
+	line-height: 36px;
+	margin: 0;
+	padding: 0 10px;
+	background-color: transparent;
+	color: #fff; }
+
+#ajis #subheader #tabs a:link,
+#ajis #subheader #tabs a:visited {
+	text-decoration: none; }
+
+#ajis #subheader #tabs a:active,
+#ajis #subheader #tabs a:hover {
+	text-decoration: underline; }
+
+#ajis #header #logo { display: none; }
+
+#ajis #pagetitle,
+#ajis #header h1,
+#ajis #header h1 a {
+	display: block;
+	width: 980px;
+	height: 88px;
+	margin: 0;
+	padding: 0; }
+
+#ajis #header h1 a {
+	text-indent: -9999px;
+	background: #ffffff url(../assets/md5images/515aaf370e248dfaea09e82039673af5.jpg) top left no-repeat; }
+
+/* Sidebar */
+
+#ajis #sidebar a:link,
+#ajis #sidebar a:visited {
+	color: #000000;
+	text-decoration: none; }
+
+#ajis #sidebar a:active,
+#ajis #sidebar a:hover {
+	color: #000000;
+	text-decoration: underline; }
+
+#ajis #sidebar ul#navlist { border-top-color: #efb016; }
+
+#ajis #sidebar ul#navlist li a { border-bottom-color: #efb016; }
+
+#ajis #sidebar ul#navlist li a:link,
+#ajis #sidebar ul#navlist li a:visited {
+	color: #fff;
+	text-decoration: none;
+	background-color: #444; }
+
+#ajis #sidebar ul#navlist li a:active,
+#ajis #sidebar ul#navlist li a:hover {
+	color: #000;
+	text-decoration: underline;
+	background-color: #efb016; }
+
+#ajis #sidebar input#email_address, 
+#ajis #sidebar input#search,
+#ajis #sidebar select,
+#ajis .form-table select,
+#ajis .form-table input#author {	
+	border: 1px solid #444;
+	border-left: 5px solid #444; }
+
+/* Footer */
+
+#ajis #footer {
+	padding-top: 6px;
+	background: #444 url(../assets/md5images/4a9e2ddf4ced88bda094da100f519ac1.jpg) top left no-repeat; }
+
+#ajis #footer p {
+	font-size: 12px;
+	line-height: 35px;
+	padding-top: 0; }
+
+#ajis #footer p,
+#ajis #footer p a:link,
+#ajis #footer p a:visited {
+	color: #fff;
+	text-decoration: none; }
+
+#ajis #footer p a:active,
+#ajis #footer p a:hover {
+	color: #fff;
+	text-decoration: underline; }
+
+/* Main content area */
+
+#ajis #main.text a:link,
+#ajis #main.text a:visited {
+	color: #3e31a5;
+	text-decoration: underline; }
+
+#ajis #main.text a:active,
+#ajis #main.text a:hover {
+	color: #000;
+	text-decoration: underline; }
+
+#ajis #main.text h2 { font-size: 21px; }
+
+#ajis #main.text .article-list h1 { font-size: 24px; }
+
+#ajis #main.text .article-list h2 {
+	width: 420px;
+	padding-bottom: 0;
+	border-bottom: 2px solid #464646;
+	background-color: transparent; }
+
+#ajis #main.text .articleInfo a,
+#ajis #main.text .article-list a:link,
+#ajis #main.text .article-list a:visited {
+	text-decoration: none; }
+
+#ajis #main.text .article-list a:active,
+#ajis #main.text .article-list a:hover {
+	text-decoration: underline; }
+	
+/* Submit form fix */
+#ajis #submit .field .field-border, 
+.box-border, 
+fieldset#sort_menu, 
+#save_options, 
+table#import_table tbody tr:hover, 
+#date_publication_date td  { 
+	background-color: #F7F3E9; }

@@ -1,0 +1,82 @@
+#institution_banner,
+#search_bar_wrap,
+#menu_wrap,
+.banner_search_wrap,
+#previous_next_interface,
+#footer_block {
+	display: none !important;
+}
+#header,
+#header #search_banner {
+	background-color: #ffffff !important;
+}
+#header_logo_wrap {
+	float: none !important;
+	background-color: #6f6f6f !important;
+	-webkit-print-color-adjust: exact;
+	padding: 6px 10px !important;
+}
+#header_logo {
+	padding: 0 !important;
+}
+.banner_wrap,
+.banner_wrap .content {
+	background: none !important;
+}
+#journal_banner_title_wrap {
+	max-width: none !important;
+}
+.banner_title {
+	padding-bottom: 0 !important;
+}
+.banner_title_wrap,
+.banner_title h2 a {
+	color: #000 !important;
+	font-weight: 600 !important;
+	text-decoration: none !important;
+}
+.rnav_alternate_format,
+.title_social,
+.social, 
+.recommend {
+	display: none !important;
+}
+a, a:link, a:visited {
+	color: #000;
+	background: transparent;
+	font-weight: bold;
+	text-decoration: underline;
+}
+a[href]:after{
+	display: none !important;
+}
+.ir a:after,
+a[href^='#']:after,
+a[href^='javascript:']:after{
+	display: none !important;
+}
+#footdrop, #fr_display, #missing {
+	display: none !important;
+}
+.fn-group, .fn-group .fn, .ref-list, .ref-list .ref {
+	display: block !important;
+}
+#article_wrap,
+.chapter_wrap,
+.summary_wrap {
+	float: none !important;
+	width: 100% !important;
+}
+#rightnav_wrap {
+	float: none !important;
+	width: 100% !important;
+	padding-left: 4em !important;
+	padding-right: 4em !important;
+}
+#btn_top,
+#sticky_foot {
+	display: none !important;
+}
+#chapter {
+	padding: 0 0 20px 0 !important;
+}

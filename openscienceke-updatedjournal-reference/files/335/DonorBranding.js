@@ -1,0 +1,1 @@
+jQuery(function(a){a("#donorBrandingModal").modal("show");a("#donorBrandingModal").on("shown.bs.modal",function(){a("#donorBrandingButton").focus()})});

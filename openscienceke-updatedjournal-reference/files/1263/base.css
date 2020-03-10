@@ -1,0 +1,77 @@
+
+body, select, input, textarea {
+    color: #444;
+}
+h1, h2, h3, h4, h5, h6 {
+    font-weight: bold;
+    text-rendering: optimizelegibility;
+}
+html {
+}
+a:hover, a:active {
+    outline: medium none;
+    text-decoration: underline;
+}
+a, a:active, a:visited {
+    color: #4160c8;
+}
+a:hover {
+    color: #036;
+}
+ul {
+    margin-left: 30px;
+}
+ol {
+    list-style-type: decimal;
+    margin-left: 30px;
+}
+small {
+    font-size: 85%;
+}
+.bold, strong, th {
+    font-weight: bold;
+}
+td, td img {
+    vertical-align: top;
+}
+sub {
+    font-size: smaller;
+    vertical-align: sub;
+}
+sup {
+    font-size: smaller;
+    vertical-align: super;
+}
+pre {
+    padding: 15px;
+    white-space: pre-line;
+    word-wrap: break-word;
+}
+input[type="radio"] {
+    vertical-align: text-bottom;
+}
+input[type="checkbox"] {
+    vertical-align: bottom;
+}
+.ie6 input {
+    vertical-align: text-bottom;
+}
+label, input[type="button"], input[type="submit"], button {
+    cursor: pointer;
+}
+*::-moz-selection {
+    background: #5e9fff none repeat scroll 0 0;
+    color: #fff;
+    text-shadow: none;
+}
+a:link {
+}
+html {
+    overflow-y: scroll;
+}
+button {
+    overflow: visible;
+    width: auto;
+}
+.ie7 img {
+}
