@@ -1,0 +1,654 @@
+/* for XSL debugging */
+.xslDebugTemplate { color: #999999; font-size: 10px; font-family: sans-serif; padding-left: 2px; }
+.xslDebugNodePath { color: #ff0000; font-size: 10px; font-family: sans-serif; padding-left: 2px; }
+.xslDebugImport { color: #007f00; font-size: 10px; font-family: sans-serif; padding-left: 2px; }
+
+/* this is hack for <wbr>, try to be W3C valid and still compatible with older browsers
+   in modern browser &#8203; is ZERO WIDTH SPACE = invisible by it self
+   in older browsers we need occupy as little space as possible,
+   cannot use display: none because most browsers will ignore the &#8203; and won't wrap
+ */
+.wbr {
+    font-family: "Lucida Sans Unicode", "Arial Unicode MS", sans-serif;
+    font-size: 2pt;
+    color: #fff;
+    white-space: normal;
+    letter-spacing: 0;
+    word-spacing: 0;
+    word-wrap: break-word; /* IE only */
+}
+.noWrap,.nobrWithWbr {
+    white-space: nowrap;
+}
+.ff2 .nobrWithWbr{
+    white-space:normal;
+}
+/*
+    For multi-level ToC headings
+*/
+.tocHeading .subj-group {
+    display: block;
+    font-size: 90%;
+}
+/* boxed-text was originally rendered as blockquote */
+div.boxed-text-, div.boxed-text-anchor, div.boxed-text-float {
+    margin-left: 3em;
+}
+div.boxed-text-margin {
+    /* no rule */
+}
+.refnumber {
+    text-align: left;
+    vertical-align: top;
+}
+.references .note p {
+    padding: 0em;
+    margin: 0em;
+}
+/* TOC */
+.articleEntry {
+    margin-bottom: 1em;
+}
+/* OASIS table model, order of rules is important for correct overriding */
+/* by default table cells will have borders, to disable border colsep/rowsep should be set to "0" */
+.NLM_table-wrap td, .NLM_table-wrap th {
+    border-right: 1px solid black;
+    border-bottom: 1px solid black;
+}
+.NLM_table-wrap-foot p {
+    margin: 0;
+}
+.NLM_table-wrap table {
+    border: 1px solid black;
+    border-spacing: 0px;
+    border-collapse: collapse;
+    width: 95%;
+}
+.NLM_table-wrap table.frame_none {
+    border: none;
+}
+.NLM_table-wrap table.frame_left {
+    border: none;
+    border-left: 1px solid black;
+}
+.NLM_table-wrap table.frame_right {
+    border: none;
+    border-right: 1px solid black;
+}
+.NLM_table-wrap table.frame_top {
+    border: none;
+    border-top: 1px solid black;
+}
+.NLM_table-wrap table.frame_bottom {
+    border: none;
+    border-bottom: 1px solid black;
+}
+.NLM_table-wrap table.frame_sides {
+    border: none;
+    border-left: 1px solid black;
+    border-right: 1px solid black;
+}
+.NLM_table-wrap table.frame_topbot {
+    border: none;
+    border-top: 1px solid black;
+    border-bottom: 1px solid black;
+}
+table.rowsep0 td, table.rowsep0 th {
+    border-bottom: none;
+}
+table.rowsep1 td, table.rowsep1 th {
+    border-bottom: 1px solid black;
+}
+table.rowsep2 td, table.rowsep2 th {
+    border-bottom: 3px double black;
+}
+col.rowsep0, tr.rowsep0 td, tr.rowsep0 th {
+    border-bottom: none;
+}
+col.rowsep1, tr.rowsep1 td, tr.rowsep1 th {
+    border-bottom: 1px solid black;
+}
+col.rowsep2, tr.rowsep2 td, tr.rowsep2 th {
+    border-bottom: 3px double black;
+}
+tr th.rowsep0, tr td.rowsep0 {
+    border-bottom: none;
+}
+tr th.rowsep1, tr td.rowsep1 {
+    border-bottom: 1px solid black;
+}
+tr th.rowsep2, tr td.rowsep2 {
+    border-bottom: 3px double black;
+}
+table.colsep0 td, table.colsep0 th {
+    border-right: none;
+}
+table.colsep1 td, table.colsep1 th {
+    border-right: 1px solid black;
+}
+table.colsep2 td, table.colsep2 th {
+    border-right: 3px double black;
+}
+col.colsep0, tr.colsep0 td, tr.colsep0 th {
+    border-right: none;
+}
+col.colsep1, tr.colsep1 td, tr.colsep1 th {
+    border-right: 1px solid black;
+}
+col.colsep2, tr.colsep2 td, tr.colsep2 th {
+    border-right: 3px double black;
+}
+tr th.colsep0, tr td.colsep0 {
+    border-right: none;
+}
+tr th.colsep1, tr td.colsep1 {
+    border-right: 1px solid black;
+}
+tr th.colsep2, tr td.colsep2 {
+    border-right: 3px double black;
+}
+/* last element takes border from the table, have none on its own */
+.NLM_table-wrap table tr.last td {
+    border-bottom: none;
+}
+.NLM_table-wrap table tr td.last, .NLM_table-wrap table tr th.last {
+    border-right: none;
+}
+.NLM_table-wrap .align_right {
+    text-align: right;
+}
+.NLM_table-wrap .align_left {
+    text-align: left;
+}
+
+.NLM_def-list {
+    margin: 1em 0;
+}
+.NLM_def-list .NLM_title, .NLM_def-list .NLM_term-head, .NLM_def-list .NLM_def-head, .NLM_def-list .NLM_term {
+    font-weight: bold;
+    vertical-align: top;
+}
+.NLM_def-list .NLM_def {
+    vertical-align: top;
+}
+
+/* "list tables" in context of real tables */
+.NLM_table-wrap table tr td table.listgroup, .NLM_table-wrap table tr td table.listgroup td {
+    border: none;
+    width: auto;
+    text-align: left;
+}
+
+/* NLM title and inlinehead (heading[@format='inline']), for historic reason without NLM_ prefix */
+.title1, .title2, .title3, .title4, .title5, .inlinehead1, .inlinehead2, .inlinehead3, .inlinehead4, .inlinehead5 {
+    font-weight: bold;
+}
+
+.searchNone0, .searchNone1, .searchNone2, .searchNone3, .searchNone4,
+.searchNone5, .searchNone6, .searchNone7, .searchNone8, .searchNone9 {
+    color: inherit;
+    background-color: inherit;
+    font-weight: inherit;
+}
+.searchTerm0, .searchTerm1, .searchTerm2, .searchTerm3, .searchTerm4,
+.searchTerm5, .searchTerm6, .searchTerm7, .searchTerm8, .searchTerm8 {
+    font-weight: bold;
+}
+.searchTerm0, .searchTerm1, .searchTerm2, .searchTerm3, .searchTerm4 { color: black; }
+.searchTerm5, .searchTerm6, .searchTerm7, .searchTerm8, .searchTerm8 { color: white; }
+.searchTerm0 { background-color: #ffff66; }
+.searchTerm1 { background-color: #a0ffff; }
+.searchTerm2 { background-color: #99ff99; }
+.searchTerm3 { background-color: #ff9999; }
+.searchTerm4 { background-color: #ff66ff; }
+.searchTerm5 { background-color: #880000; }
+.searchTerm6 { background-color: #00aa00; }
+.searchTerm7 { background-color: #886800; }
+.searchTerm8 { background-color: #004699; }
+.searchTerm9 { background-color: #990099; }
+.single_highlight_class {
+    background-color: rgb(238, 238, 238);
+    padding:2px;
+}
+.citation_source-book, .citation_source-journal { font-style: italic; }
+.dash { font-size: 13px; }
+.quote { margin: 1em 0em 1em 5em; display: block; }
+
+/* entity images:
+	A: static entity image from fs
+	B: dynamic baseline
+	C: dynamic bottom
+	D: static text-bottom
+ */
+.entityA,.entityB, .entityC, .entityD { border: 0px; }
+.entityB { vertical-align: baseline; }
+.entityC { vertical-align: bottom; }
+.entityD { vertical-align: text-bottom; }
+.fromGoogle {
+    border-style: solid; border-color: red; border-width: 2px 0pt;
+    margin: 12px 0pt;
+    padding: 2px 0pt;
+    line-height: 20px;
+    font-size: 12px;
+}
+ol.simple { list-style: none; }
+ol.alphaLower { list-style: lower-latin; }
+ol.alphaUpper { list-style: upper-latin }
+ol.romanLower { list-style: lower-roman; }
+ol.romanUpper { list-style: upper-roman; }
+.smallcaps { font-variant: small-caps; }
+.strike { text-decoration: line-through; }
+.NLM_disp-formula { display: block; }
+a.roDisabled { color: GrayText; }
+.articleEntry .firstCell {
+    text-align: right;
+    vertical-align: top;
+    width: 18px;
+    padding-top: 0;
+}
+.sectionHeading{
+    background-color:#e1e1e1;
+}
+.sectionHeading th{
+    font-size: larger;
+}
+.artAuthors .NLM_bio {
+    font-weight: normal;
+}
+.multiIssueToc .issueTitle {
+    font-weight: bold;
+}
+.monospace {
+    font-family: monospace;
+}
+table.formula {
+    margin: 1em 0;
+    clear: both;
+}
+
+.IN_LIST-freeText, .IN_LIST-label, .IN_LIST-title {
+    list-style: none;
+    display: inline;
+    margin: 0;
+    padding: 0
+}
+.fullSideBullet{
+    width:15px;
+    vertical-align:top;
+}
+.accessIcon {
+    border: none;
+}
+.quickLinks_head, .quickSearch_head, .quickSearch_content, .quickLinks_content{
+    border:1px solid black;
+}
+.quickSearch_content, .quickLinks_content{
+    border-top:none;
+}
+
+/* Font replacement sizes as suggested http://www.w3.org/TR/CSS21/fonts.html#propdef-font-size */
+.fontSize1 { font-size: xx-small; }
+.fontSize2 { font-size: small; }
+.fontSize3 { font-size: medium; }
+.fontSize4 { font-size: large; }
+.fontSize5 { font-size: x-large; }
+.fontSize6 { font-size: xx-large; }
+.fontSize7 { font-size: xx-large; /* not defined in CSS2.1 recommendation */ }
+
+/* default widget styles */
+/* panel with header and footer decorated */
+.panelHeading, .panelFooter {
+    position: relative;
+    padding: 3px 10px;  /* minimal height 6px & make some room for background images */
+}
+
+.panelHeading .left, .panelHeading .right, .panelFooter .left, .panelFooter .right {
+    position: absolute;
+    width: 6px; /* background image size */
+    height: 6px;
+    background-repeat: no-repeat;
+}
+
+.panelHeading .left, .panelHeading .right { top: 0; }
+.panelFooter .left, .panelFooter .right { bottom: 0; }
+.panelHeading .left, .panelFooter .left { left: 0; }
+.panelHeading .right, .panelFooter .right { right: 0; }
+.panelHeading .left {background-image: url('images/curve_left_top.png')}
+.panelHeading .right {background-image: url('images/curve_right_top.png')}
+.panelFooter .left {background-image: url('images/curve_left_top.png')}
+.panelFooter .right {background-image: url('images/curve_right_bottom.png')}
+
+.panelHeading .content h3 {
+    margin: 0;
+    font-size: 1em;
+}
+
+.panelBody {
+    width: auto;
+    padding: .5em;
+}
+
+.panelBody .spacer {
+    clear: both;
+    /*float: left;*/
+    height: 1px;
+    width: 100%;
+}
+#mobileDevicePairingCode .char {
+    font: bold sans-serif x-large;
+    padding: 0.5em;
+    background-color: #000;
+    color: #fff;
+    margin-right: 0.5em;
+}
+.reprAndPerms {
+    margin: 10px;
+}
+.reprAndPerms .coverImage {
+    float: left;
+    min-height: 115px;
+    margin-right: 20px;
+}
+.reprAndPerms .article_meta div {
+    margin-bottom: 5px;
+}
+.reprAndPerms .article_meta label {
+    color: #0066ff;
+    font-weight: bold;
+    width: 20%;
+}
+.reprAndPerms .topContent {
+    margin-bottom: 20px;
+}
+.reprintsForm label {
+    float: left;
+    width: 20%;
+}
+.reprintsForm .labelGroup {
+    margin: 10px 5px;
+    height: 20px;
+}
+.reprintsForm .labelGroup input {
+    float: right;
+    width: 20%;
+}
+.reprintsForm .dropDownHeader {
+    color: #0066ff;
+    font-size: 10pt;
+    font-weight: bold;
+    margin-bottom: 5px;
+}
+.reprintsForm .subText {
+    margin-bottom: 10px;
+}
+.reprintsForm label {
+    font-weight: bold;
+}
+
+.regForm .error {
+    font-color: red;
+}
+
+.regForm .heading {
+    font-weight: bold;
+}
+
+.expired {
+    color: red;
+    font-weight: bold;
+}
+
+.hold {
+    color: red;
+}
+
+.grace {
+    color: orange;
+}
+.downloadTSV {
+    display: none;
+}
+
+.debugInfo {
+    /*border: red dotted 2px;*/
+    background: url('/templates/jsp/images/page.png') no-repeat 0 0;
+    padding: 1px;
+    display: block;
+}
+
+.debugInfo, .debugAttr {
+    display: none;
+}
+
+.debugPath:hover {
+    color: red;
+}
+
+.debugInfo {
+    padding-left: 20px;
+    z-index: 99999;
+}
+
+.debugBox {
+    border: 1px dotted red;
+}
+
+.debugTable {
+    /*width : 500px;*/
+    background-color: white;
+    border: 1px solid;
+    font-size: 11px;
+}
+
+.debugFCK, .debugFCV{
+    background-color: #EEE;
+}
+
+.debugAttr {
+    z-index: 9999;
+}
+
+.debugNoF {
+    border: #4A6B82 dotted 1px;
+    /*border: none;*/
+}
+
+.debugError {
+    border: 1px red solid;
+    padding: 1px;
+}
+
+.debugPE {
+    display: block;
+    width: 100%;
+    text-align: center;
+    color: white;
+    background-color: red;
+    padding-bottom: 2px;
+}
+
+.debugST {
+    display: none;
+    width: 100%;
+}
+
+.shadow {
+    -moz-box-shadow:    3px 3px 5px 6px #ccc;
+    -webkit-box-shadow: 3px 3px 5px 6px #ccc;
+    box-shadow:         3px 3px 5px 6px #ccc;
+}
+
+/*.includeDebug .includeDebug .includeDebug .includeDebug {*/
+/*border: 0;*/
+
+#SaveSearchForm #saveSearchHeader {
+    text-align: center;
+    font-weight: bolder;
+    font-size: 10pt;
+}
+#rssExplanationBox{
+    margin-top:1em;
+}
+.modifySearchSubmit {
+    background: transparent;
+    border: none;
+    cursor: pointer;
+    padding: 0;
+    margin: 0;
+    font-size: 8pt;
+}
+
+.saveSearchSubmit {
+    width: 45px;
+    border: none;
+    cursor: pointer;
+}
+
+#validatorDialog.show {
+    display: block;
+    background: #F0F0EE;
+    border: 1px solid #CCC;
+    width: 400px;
+    height: 95px;
+    margin-left: auto;
+    margin-right: auto;
+    text-align: center;
+}
+
+#validatorDialog.hidden {
+    display: none;
+}
+
+.dialogContainer {
+    width: 100%;
+    float: left;
+    position: fixed;
+    top: 200px;
+    z-index: 99999999;
+}
+
+.addressLink {
+    cursor: pointer;
+    text-decoration: underline;
+    color: #0000ff;
+}
+.addThisPlaceHolderTableData {
+    display: table-cell;
+    vertical-align:middle
+}
+
+.addThisButtonTableData {
+    display: table-cell;
+    vertical-align:middle;
+}
+.addThisButtonTableData div{
+    display: table-cell;
+    vertical-align:middle;
+}
+
+.addThisTable {
+    display: table;
+}
+
+.addThisTableRow {
+    display: table-row;
+}
+
+/* PDA institution administration */
+.pda-license-table {
+    width: 80%;
+    margin-bottom: 30px;
+}
+.pda-license-table td {
+    text-align: center;
+}
+.pda-license-table td:first-child {
+    text-align: left;
+}
+
+.pda-email-form .row {
+    margin-top: 5px;
+}
+
+.pda-email-form input, .pda-email-form label {
+    vertical-align: middle;
+}
+
+.pda-email-form  .submit {
+    margin-top: 10px;
+}
+
+.pda-email-form .radio {
+    margin-top: 0;
+}
+
+#deepdyve {
+    display: none;
+}
+ul.usageDataYearOptions div.usageReportsMonthRange{
+    padding-left: 25px;
+}
+
+ul.usageDataYearOptions div.usageReportsMonthRange label{
+    display: inline-block;
+    width:35px;
+}
+
+ul.usageDataYearOptions div.usageReportsMonthRange div.startRange{
+    padding: 3px 0 10px 0;
+}
+
+ul.usageDataYearOptions div.usageReportYearOnly label{
+    padding-right: 3px;
+}
+ul.usageDataYearOptions li{
+    list-style: none;
+}
+
+.labeledList {
+    list-style: none;
+}
+
+.inline {
+    display: inline;
+}
+
+.NLM_list-list_type-simple {
+    list-style: none;
+    display: block;
+}
+
+.NLM_list-list_type-alpha-lower {
+    list-style-type: lower-alpha;
+}
+
+.NLM_list-list_type-alpha-upper{
+    list-style-type: upper-alpha;
+}
+
+.NLM_list-list_type-roman-lower {
+    list-style-type: lower-roman;
+}
+
+.NLM_list-list_type-roman-upper {
+    list-style-type: upper-roman;
+}
+
+.NLM_list-list_type-bullet {
+    list-style-type: disc;
+}
+
+.NLM_list-list_type-circle {
+    list-style-type: circle;
+}
+
+.NLM_list-list_type-square {
+    list-style-type: square;
+}
+
+.equationTd {
+    width: 100%;
+}
+/* Hide only visually, but have it available for screenreaders: h5bp.com/v */
+.visuallyhidden { border: 0; clip: rect(0 0 0 0); height: 1px; margin: -1px; overflow: hidden; padding: 0; position: absolute; width: 1px; }
+/*End of Advanced Search Widget*/

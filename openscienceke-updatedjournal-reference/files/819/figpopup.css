@@ -1,0 +1,133 @@
+/*                         */
+/* styles for figure popup */
+/*                         */
+/* Author: Andrey Kolotev  */
+/* kolotev@ncbi            */
+
+
+/* figpopup related definitions ==================== */
+.figpopup,
+.in-progress,
+.inline-block
+{display:  -moz-inline-box !important; /* for FireFox 2.* */
+display:  inline-block !important;
+zoom:     1 !important;/* this and next line for IE6/7 to treat div as an inline element*/
+*display: inline !important;/* this and previuos line for IE6/7 to treat div as an inline element*/}
+
+.figpopup
+{cursor: pointer;
+.cursor: hand;
+}
+
+.figpopup:hover 
+{background-color: rgba(0,0,0, 0.05);
+-webkit-box-shadow: 0 0 2pt 2pt #aaa;
+-moz-box-shadow: 0 0 2pt 2pt #aaa;
+box-shadow: 0 0 2pt 2pt #aaa;
+}
+
+.large-thumb-canvas,
+.co
+{z-index: 10000;
+display: none;
+position: absolute;
+}
+
+.large-thumb-canvas,
+.co-default
+{
+color: #444;
+border: 10px #444 solid;
+border-color: rgba(0,0,0,0.7);
+.border-color: #444;
+.border-width: 10px;
+-moz-border-radius: 5px;
+-webkit-border-radius: 5px;
+border-radius: 5px;
+margin: 3mm;
+-moz-box-shadow: 0px 0px 10px 3px rgba(0,0,0, 0.3);
+-webkit-box-shadow: 0px 0px 10px 3px rgba(0,0,0, 0.3);
+box-shadhow: 0px 0px 10px 3px rgba(0,0,0, 0.3);
+}
+
+.large-thumb-canvas-1,
+.co-inner
+{display: block;
+background-color: #FFF;
+overflow: hidden;
+padding: 0.25em;
+}
+
+.affpopup {
+white-space: nowrap;
+}
+/* affiliation popup box */
+.co-affbox {
+max-width: 3.5in;
+max-height: 75%;
+-webkit-overflow-scrolling: touch;
+overflow: auto;
+border-color: transparent;
+background: #FFF;
+font-size: 0.833rem;
+}
+
+.co-affbox a {
+color: #2f4a8b;
+}
+
+.co-affbox a:hover,
+.co-affbox a:active {
+color: #985735;
+}
+
+.in-progress {
+background-color: #444;
+background-image: url('../pmcgifs/loading-in-progress.gif');
+background-repeat:no-repeat;
+background-position:center;
+width:35px;
+height:35px;
+border: 1px silver solid;
+margin: 2px;
+}
+
+.large-thumb
+{border: 1px solid #444;
+display: none;
+margin: 2px;
+max-width: none;
+}
+
+.small-thumb-canvas
+{border: 1px solid #444;
+max-width: 104px;
+white-space: normal;
+word-wrap: break-word;
+.width: 104px;}
+
+.small-thumb-canvas-1
+{border: transparent 1px solid;
+*border: 1px solid white; /*IE6 Fix*/}
+
+.small-thumb
+{width: 100px;
+border: 1px solid #444;
+max-width: none;}
+
+.figpopup-sensitive-area
+{cursor: pointer;
+.cursor: hand;
+text-decoration: none;
+position: absolute;
+top: 0;
+opacity: 0;
+filter: alpha(opacity=0);
+color: transparent;
+background-color: transparent;
+}
+
+
+/* end of figpopup related definitions ==================== */
+
+

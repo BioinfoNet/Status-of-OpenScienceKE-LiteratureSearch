@@ -1,0 +1,294 @@
+Analysis of haplotype networks: The randomized minimum spanning tree method - Paradis - 2018 - Methods in Ecology and Evolution - Wiley Online Library
+
+    Skip to Article Content
+    Skip to Article Information
+
+Access by ICIPE LIBRARY
+besjournals
+besjournals
+Access by ICIPE LIBRARY
+Search within
+
+    Search term
+    Advanced Search Citation Search
+    Search term
+    Advanced Search Citation Search
+
+Login / Register
+
+    Journals
+        Functional Ecology
+        Journal of Animal Ecology
+        Journal of Applied Ecology
+        Journal of Ecology
+        Methods in Ecology and Evolution
+        People and Nature
+
+    Join the BES
+    BES.org
+
+Journal list menu
+
+    Journal
+    About
+        Aims and Scope
+        Editorial Board
+        Subscribe  
+        Permissions
+        Contact Us
+        Author Guidelines
+        Society Information  
+
+Articles
+Browse
+
+    Accepted Articles
+    Early View
+    Current Issue
+    All Issues
+
+Virtual Issues
+Special Features
+
+    Actions
+    Tools
+    Follow journal
+    Alert
+    Facebook page
+    Twitter channel
+       Most recent (RSS)
+       Most cited (RSS)
+
+Methods in Ecology and Evolution
+Methods in Ecology and Evolution branding banner
+Navigation Bar
+Menu
+Home
+
+    Home
+    About
+        Aims and Scope
+        Editorial Board
+        Subscribe  
+        Permissions
+        Contact Us
+        Author Guidelines
+        Society Information  
+    Browse
+        Accepted Articles
+        Early View
+        Current Issue
+        All Issues
+    Virtual Issues
+    Special Features
+
+Follow journal
+
+    Alert
+    Twitter channel
+    Facebook page
+    RSS Feeds
+           Most recent (RSS)
+           Most cited (RSS)
+
+Methods in Ecology and Evolution
+Volume 9, Issue 5 Methods in Ecology and Evolution banner
+RESEARCH ARTICLE
+Analysis of haplotype networks: The randomized minimum spanning tree method
+Emmanuel Paradis
+
+Corresponding Author
+
+E-mail address: emmanuel.paradis@ird.fr
+
+ISEM, IRD, University of Montpellier, CNRS, EPHE, Montpellier, France
+
+Correspondence
+
+Emmanuel Paradis
+
+Email: emmanuel.paradis@ird.fr
+Search for more papers by this author
+Emmanuel Paradis
+
+Corresponding Author
+
+E-mail address: emmanuel.paradis@ird.fr
+
+ISEM, IRD, University of Montpellier, CNRS, EPHE, Montpellier, France
+
+Correspondence
+
+Emmanuel Paradis
+
+Email: emmanuel.paradis@ird.fr
+Search for more papers by this author
+First published:  17 January 2018
+https://doi.org/10.1111/2041-210X.12969
+Cited by: 3
+Read the full text
+About
+
+    Related
+    Information
+
+ePDF PDF
+PDF PDF
+
+ePDF PDF
+PDF PDF
+Tools
+
+    Request permission
+    Export citation
+    Add to favorites
+    Track citation
+
+Share
+
+Give access
+Share full text access
+Close modal
+
+Share full text access
+Please review our Terms and Conditions of Use and check box below to share full-text version of article.
+I have read and accept the Wiley Online Library Terms and Conditions of Use.
+Shareable Link
+
+Use the link below to share a full-text version of this article with your friends and colleagues. Learn more.
+Copy URL
+
+Share a link
+Share on
+
+    Email
+    Facebook
+    Twitter
+    Linked In
+    Reddit
+
+Abstract
+
+    Haplotype network construction is a widely used approach for analysing and visualizing the relationships among DNA sequences within a population or species. This approach has some problems such as how to quantify alternative links among sequences or how to plot efficiently networks to compare them easily.
+    In this paper, a new method is presented: the randomized minimum spanning tree method, based on randomizing the input order of the data in order to produce alternative branchings in the haplotype network. It is shown that this new method can produce, at least in some situations, networks with less alternative links than the minimum spanning network method.
+    A new graphical display of haplotype networks is introduced here. This is based on calculating the coordinates of the haplotypes from a multidimensional scaling of the haplotype distance matrix. The display can be done in two or three dimensions. The eigenvalues extracted from the multidimensional scaling analysis give an indication of the relevant number of dimensions.
+    These tools are illustrated with the analyses of published data on the leopard and on the jaguar. These analyses show interesting and contrasting patterns between these two species of big cats.
+    All tools are implemented in R and available in the package pegas.
+
+Citing Literature
+Supporting Information
+Filename 	Description
+mee312969-sup-0001-SupInfo.zip Zip archive, 11.5 MB 	 
+
+Please note: The publisher is not responsible for the content or functionality of any supporting information supplied by the authors. Any queries (other than missing content) should be directed to the corresponding author for the article.
+Publication cover image
+
+Volume 9 , Issue 5
+
+May 2018
+
+Pages 1308-1317
+This article also appears in:
+
+    Phylogenetics and Comparative Methods: The Bright and Dark Sides
+
+    Related
+    Information
+
+    Metrics
+    Citations: 3
+    Details
+
+    © 2018 The Author. Methods in Ecology and Evolution © 2018 British Ecological Society
+
+    Keywords
+        Hamming distance
+        haplotype network
+        microevolution
+        minimum spanning tree
+        Panthera
+    Publication History
+        Issue Online: 04 May 2018
+        Version of Record online: 08 February 2018
+        Accepted manuscript online: 17 January 2018
+        Manuscript accepted: 04 January 2018
+        Manuscript received: 01 October 2017
+
+Close Figure Viewer
+Browse All Figures Return to Figure
+Previous Figure Next Figure
+Caption
+back
+besjournals Logo
+© 2019 British Ecological Society
+
+    Home
+    Policy
+    Publications
+
+    Membership & Community
+    Learning & Resources
+    Funding
+
+    News & Opinions
+    Events
+
+British Ecological Society, 42 Wharf Road, London, N1 7GS  |  T: +44 20 3994 8282 
+E: hello@britishecologicalsociety.org  |  Charity Registration Number: 281213
+© 2019 British Ecological Society
+Additional links
+About Wiley Online Library
+
+    Privacy Policy
+    Terms of Use
+    Cookies
+    Accessibility
+
+Help & Support
+
+    Contact Us
+
+Opportunities
+
+    Subscription Agents
+    Advertisers & Corporate Partners
+
+Connect with Wiley
+
+    The Wiley Network
+    Wiley Press Room
+
+Copyright © 1999-2019 John Wiley & Sons, Inc . All rights reserved
+Wiley Home Page
+Log in to Wiley Online Library
+Email or Customer ID
+Password
+Forgot password?
+NEW USER > INSTITUTIONAL LOGIN >
+Change Password
+Old Password
+New Password
+Too Short Weak Medium Strong Very Strong Too Long
+Password Changed Successfully
+
+Your password has been changed
+Create a new account
+Email or Customer ID
+Returning user
+Forgot your password?
+
+Enter your email address below.
+Email or Customer ID
+
+"Please check your email for instructions on resetting your password. If you do not receive an email within 10 minutes, your email address may not be registered, and you may need to create a new Wiley Online Library account.
+Request Username
+
+Can't sign in? Forgot your username?
+
+Enter your email address below and we will send you your username
+Email or Customer ID
+Close
+
+If the address matches an existing account you will receive an email with instructions to retrieve your username
+Close crossmark popup
+

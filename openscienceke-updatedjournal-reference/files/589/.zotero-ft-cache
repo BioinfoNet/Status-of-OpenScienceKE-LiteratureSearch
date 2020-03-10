@@ -1,0 +1,57 @@
+Skip to main content 
+ScienceDirect 
+Journals & Books Register Sign in 
+ 
+    Journals & Books 
+    Register 
+ 
+    Sign In 
+    Help  
+ 
+  
+Download PDF Download 
+Export 
+Advanced 
+JavaScript is disabled on your browser. Please enable JavaScript to use all the features on this page. 
+Elsevier 
+Infection, Genetics and Evolution 
+Volume 10, Issue 6 , August 2010 , Pages 825-832 
+Infection, Genetics and Evolution 
+ABC: A useful Bayesian tool for the analysis of population data 
+Author links open overlay panel J.S. Lopes M.A. Beaumont 
+Show more 
+https://doi.org/10.1016/j.meegid.2009.10.010 Get rights and content 
+Abstract 
+ 
+Approximate Bayesian computation (ABC) is a recently developed technique for solving problems in Bayesian inference. Although typically less accurate than, for example, the frequently used Markov Chain Monte Carlo (MCMC) methods, they have greater flexibility because they do not require the specification of a likelihood function. For this reason considerable amounts of data can be analysed and more complex models can be used providing, thereby, a potential better fit of the model to the data. Since its first applications in the late 1990s its usage has been steadily increasing. The framework was originally developed to solve problems in population genetics. However, as its efficiency was recognized its popularity increased and, consequently, it started to be used in fields as diverse as phylogenetics, ecology, conservation, molecular evolution and epidemiology. While the ABC algorithm is still being greatly studied and alterations to it are being proposed, the statistical approach has already reached a level of maturity well demonstrated by the number of related computer packages that are being developed. As improved ABC algorithms are proposed, the expansion of the use of this method can only increase. In this paper we are going to depict the context that led to the development of ABC focusing on the field of infectious disease epidemiology. We are then going to describe its current usage in such field and present its most recent developments. 
+ 
+    Previous article in issue 
+    Next article in issue 
+ 
+Keywords 
+Approximate Bayesian computation 
+Population genetics 
+Epidemiology 
+Phylogenetics 
+Population history 
+Coalescence models 
+Likelihood-free inference 
+Biogeography 
+Population models 
+Loading... 
+Recommended articles Citing articles ( 0 ) 
+Copyright © 2009 Elsevier B.V. All rights reserved. 
+Recommended articles 
+No articles found. 
+Citing articles 
+Loading… 
+Article Metrics 
+View article metrics 
+Elsevier 
+ 
+About ScienceDirect Remote access Shopping cart Contact and support Terms and conditions Privacy policy 
+ 
+We use cookies to help provide and enhance our service and tailor content and ads. By continuing you agree to the use of cookies . 
+ 
+Copyright © 2018 Elsevier B.V. or its licensors or contributors. ScienceDirect ® is a registered trademark of Elsevier B.V. 
+RELX Group 

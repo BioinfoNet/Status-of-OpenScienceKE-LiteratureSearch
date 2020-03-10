@@ -1,0 +1,936 @@
+Phylogeography’s past, present, and future: 10 years after - ScienceDirect 
+Skip to main content 
+ScienceDirect 
+Journals & Books Register Sign in 
+ 
+    Journals & Books 
+    Register 
+ 
+    Sign In 
+    Help  
+ 
+  
+Outline 
+Download PDF Download 
+Export 
+Advanced 
+Outline 
+ 
+    Abstract 
+    Keywords 
+    1. Introduction– 9 years since Avise, 2000 
+    2. What kinds of questions has phylogeography addressed? 
+    3. The emergence of model-based methods in phylogeography 
+    4. Future directions for integrative comparative phylogeography 
+    5. Conclusion 
+    Acknowledgments 
+    References 
+    Glossary 
+ 
+Show full outline 
+JavaScript is disabled on your browser. Please enable JavaScript to use all the features on this page. 
+Elsevier 
+Molecular Phylogenetics and Evolution 
+Volume 54, Issue 1 , January 2010 , Pages 291-301 
+Molecular Phylogenetics and Evolution 
+Review 
+Phylogeography’s past, present, and future: 10 years after Avise, 2000 
+Author links open overlay panel M.J. Hickerson a B.C. Carstens b J. Cavender-Bares c K.A. Crandall d C.H. Graham e J.B. Johnson d L. Rissler f P.F. Victoriano g A.D. Yoder h 
+Show more 
+https://doi.org/10.1016/j.ympev.2009.09.016 Get rights and content 
+Abstract 
+ 
+Approximately 20 years ago, Avise and colleagues proposed the integration of phylogenetics and population genetics for investigating the connection between micro- and macroevolutionary phenomena. The new field was termed phylogeography. Since the naming of the field, the statistical rigor of phylogeography has increased, in large part due to concurrent advances in coalescent theory which enabled model-based parameter estimation and hypothesis testing. The next phase will involve phylogeography increasingly becoming the integrative and comparative multi-taxon endeavor that it was originally conceived to be. This exciting convergence will likely involve combining spatially-explicit multiple taxon coalescent models, genomic studies of natural selection, ecological niche modeling, studies of ecological speciation, community assembly and functional trait evolution. This ambitious synthesis will allow us to determine the causal links between geography, climate change, ecological interactions and the evolution and composition of taxa across whole communities and assemblages. Although such integration presents analytical and computational challenges that will only be intensified by the growth of genomic data in non-model taxa, the rapid development of “likelihood-free” approximate Bayesian methods should permit parameter estimation and hypotheses testing using complex evolutionary demographic models and genomic phylogeographic data. We first review the conceptual beginnings of phylogeography and its accomplishments and then illustrate how it evolved into a statistically rigorous enterprise with the concurrent rise of coalescent theory. Subsequently, we discuss ways in which model-based phylogeography can interface with various subfields to become one of the most integrative fields in all of ecology and evolutionary biology. 
+ 
+    Previous article in issue 
+    Next article in issue 
+ 
+Keywords 
+Comparative phylogeography 
+Statistical phylogeography 
+Ecological niche modeling (ENM) 
+Approximate Bayesian computation (ABC) 
+Coalescent theory 
+1. Introduction– 9 years since Avise, 2000 
+ 
+Interpreted literally, the term phylogeography simply means the phylogenetic analysis of organismal data in the context of the geographic distribution of the organism. Even a cursory look at the literature reveals, however, that the meaning of “ phylogeography ” and the field that it describes is considerably more subtle and far-reaching. The term that launched the field arrived with a flourish in 1987 with the seminal review paper by Avise and colleagues ( Avise et al., 1987 ), which aimed to unite evolutionary biologists in the disparate fields of phylogenetics and population genetics. Reaching back to the work of Dobzhansky (1937) and Mayr, 1963 , Avise et al., 1987 asked for a formal acknowledgement that “microevolutionary processes operating within species can be extrapolated to explain macroevolutionary differences among species and higher taxa” (p. 489). From our present perspective this connection appears obvious, but at the time of the paper’s publication the application of explicitly historical terms and methods was unknown to many empiricists working at or below the species level. This dearth of historical perspective for population genetic analysis has changed radically in intervening years, due in part to the publication of Avise’s monumental book Phylogeography (2000) and the rise of coalescent theory. 
+ 
+As Avise conceived it, phylogeography is the phylogenetic analysis of geographically contextualized genetic data for testing hypotheses regarding the causal relationship among geographic phenomena, species distributions, and the mechanisms driving speciation. Avise et al. (1987) also implored that genetic data from multiple codistributed taxa could augment investigation of deep-seated questions about the geographic, geological, and/or climatological phenomena that have generated the observed distribution of biodiversity (i.e., comparative phylogeography). This approach offers the opportunity of a natural experiment where focal objects (codistributed populations), have been independently submitted to the same “natural” evolutionary treatments (geologic and climate-change scenarios). 
+ 
+Fundamental to the empirical development of phylogeography was analysis of mitochondrial data at the species level. Mitochondrial DNA (mtDNA) in animals was promoted as the molecular marker of choice due to its lack of recombination, putative neutrality, and smaller effective population size, and consequently a shorter expected time to reciprocal monophyly between geographic regions. But the most salient and revolutionary aspect of the nascent field was the practice of treating segments of mtDNA, drawn from individuals within and among populations, as the operational taxonomic units (OTUs) in a phylogenetic analysis. Although this direct link between spatial patterning of different clades within a gene genealogy and organismal lineages within species might be conceptually misleading under some demographic histories ( Irwin, 2002 ), it gave phylogeographic analysis its perceived power and appeal. In a practical sense, clades within species were often assumed to reflect the boundaries of populations without accounting for statistical uncertainty under an appropriate statistical model, and phylogeography began to thereby implicitly explore the history of clade-defined lineages within species. 
+ 
+While Avise and colleagues catalyzed the growth of phylogeography, mathematicians and theoretical population geneticists turned population genetics upside down by introducing the mathematical formulation of coalescent theory ( Hudson, 1983 , Kingman, 1982a , Kingman, 1982b , Tajima, 1983 ). Traditional population genetics theory was typically based on forward-looking diffusion equations that allowed one to predict frequencies of alleles in future generations based on modeling entire populations ( Ewens, 1979 ). However, coalescent theory elegantly formalized a powerful way of using only the sample of alleles such that gene genealogies are modeled backwards in time under virtually any complex demographic history in order to estimate phylogeographic parameters such as historical population sizes, divergence times, and migration rates given the stochastic timing of coalescent events ( Wakeley, 2008 ). Even so, it took some time before statistical coalescent model-based methods percolated into the empirical phylogeography literature. Until statistical phylogeographicmethods became more commonly used ( Knowles and Maddison, 2002 ), empiricists generally relied on equating geographical patterns of the gene genealogy with the demographic history, as implied by the word “phylogeography”. Yet in the context of the coalescent, a single genealogy is but one realization of a stochastic process and estimating a single geographically contextualized phylogeny of multiple unlinked loci is often a misleading exercise ( Edwards, 2009 , Maddison, 1997 ). Instead of using estimated gene genealogies to directly infer the demographic history, coalescent methods generally treat these genealogies as a transition parameter to obtain estimates of biogeographically informative demographic parameters such as divergence times and migration rates ( Hey and Machado, 2003 ). 
+ 
+To move beyond equating genealogical patterns with biogeographic processes, Avise (2000) acknowledged coalescent theory to be the appropriate statistical and methodological framework for testing phylogeographic hypotheses. One of the insights from post-coalescent phylogeography was that the standard single locus mtDNA or cpDNA data sets that were most commonly collected in the 1990s were often insufficient for obtaining precise parameter estimates and that multi-locus data could dramatically improve the performance of analytical methods derived from the coalescent ( Carling and Brumfield, 2007 , Edwards and Beerli, 2000 , Felsenstein, 2006 , Hickerson et al., 2006a ). Phylogeography has therefore expanded its focus to nuclear markers ( Dolman and Moritz, 2006 , Hare and Avise, 1998 , Harlin-Cognato et al., 2007 , Hurt et al., 2009 , Ingvarsson, 2008 , Lee and Edwards, 2008 , Peters et al., 2008 , Rosenblum et al., 2007 ) with careful attention paid to the resolution of individual nuclear haplotypes ( Salem et al., 2005 ). The coalescent has also become relevant and necessary for phylogeographers to estimate species-level phylogeny at low levels of divergence given data from multiple loci and multiple individuals per subspecies or populations ( Edwards et al., 2007 , Kubatko et al., 2009 , Oliver, 2008 ). 
+ 
+As intended by the architects of the field, phylogeography is rapidly becoming one of the most integrative fields in evolutionary biology, as different analytical tools have been developed, and of necessity, as the complexity of the hypotheses being addressed has intensified. For example, phylogeographic parameter estimates and model testing can be potentially combined with ecological niche models ( Peterson et al., 2002 ), studies of ecological speciation and radiation, tests of community assembly models, as well as spatial analysis of quantitative trait variation and natural selection. Thus, the field that was originally conceived to bridge two disciplines—phylogenetics and population genetics—has evolved into one of the most integrative disciplines in all of biology. In addition to the intial integration of historical and contemporary genetic analysis, phylogeography borrows from fields as diverse as geospatial analysis, geology, climatology, and computer science, just to name a few. In this review, we will highlight the field’s intitial focal areas, touch on analytical advances, and point to exciting future directions integrating the analytical advances with emerging tools to distinguish between different complex historical demographic models while uncovering spatial patterns of adaptation, selection, and community membership. Throughout, we suspect that the reader will observe the many ways that phylogeographic theory and methods are woven together by the conceptual thread first developed by Avise, 2000 , Avise et al., 1987 . 
+2. What kinds of questions has phylogeography addressed? 
+2.1. Single species phylogeographic studies 
+ 
+Perhaps the greatest impact of phylogeographic approaches has been on the most basic of biological questions—what is a species? Species definitions are many and varied, but many of those in use today have some phylogeographic aspects either explicit or implicit in their definitions ( Avise and Ball, 1990 , De Queiroz, 2007 , Templeton, 2001 ). These can be incorporated into phylogeographic methods of species delimitation and provide operational practicality in the face of real data ( Leavitt et al., 2007 , Morando et al., 2003 , Sites and Marshall, 2004 ). However, species delimitation and/or DNA-barcoding methods will be most effective when incorporating coalescent stochasticity ( Hickerson et al., 2006b , Hudson and Coyne, 2002 , Knowles and Carstens, 2007 , Pons et al., 2006 , Rosenberg, 2003 , Rosenberg, 2007 ) or using robust non-coalescent models ( Meyer and Paulay, 2005 ). 
+ 
+Phylogeographic approaches can also identify historical hybridization events, hybrid zones, occurrences of introgression ( Gonzalez-Rodriguez et al., 2004 , Hewitt, 2001 , Swenson and Howard, 2005 ) and the geographic determinants of isolation. Such insights can be used to generate allopatric speciation hypotheses that are subsequently tested with genetic data in taxa that span the putative isolating barrier. When allopatric speciation is strongly supported, new methods have been developed to test alternative allopatric speciation models such as peripatric speciation, colonization or vicariance ( Hickerson and Meyer, 2008 ) or vicariance with recurrent migration ( Hey and Nielsen, 2004 ). 
+2.2. Multi-species phylogeographic studies 
+ 
+By comparing historical patterns of gene flow and divergence among species that overlap in time and space, comparative phylogeography has helped elucidate the relative influence of shared earth history events on current patterns of biodiversity. Although Pleistocene climatic oscillations have been implicated as important contributors to allopatric divergence ( Jordan, 1905 ) and range expansion ( Adams, 1905 ) since the turn of the century, this was also one of the first results in the nascent stages of comparative phylogeographic research ( Avise et al., 1987 ). Investigations have helped predict range shifts arising from future climate change by allowing insights into the dynamics and persistence of communities during Pleistocene climate cycling ( Hewitt, 2000 , Hewitt, 1996 ). While some tropical communities appear stable through historical climate-change cycles ( Moritz et al., 2000 ), other studies suggest that temperate and boreal communities experienced severe range fluctuations where codistributed taxa ranges shift congruently ( Alsos et al., 2007 , Hewitt, 1999 ) or independently ( Carstens et al., 2005a , McLachlan et al., 2005 , Wares and Cunningham, 2001 ) in response to Pleistocene climate cycling. 
+ 
+Some well-developed regional study systems include regions such as the Australian wet tropics ( Schneider et al., 1998 ), southeastern North America ( Avise et al., 1987 , Soltis et al., 2006 ), Baja California ( Leaché et al., 2007 , Riddle et al., 2000 , Riginos, 2005 ), the North Atlantic ( Maggs et al., 2008 , Olsen et al., 2004 ), the Indo-Pacific coral triangle ( Barber et al., 2000 ), the Pacific Northwest of North America ( Brunsfeld et al., 2001 , Carstens et al., 2005a ), California ( Lapointe and Rissler, 2005 ), the Pacific Coast of North America ( Cook et al., 2001 , Jacobs et al., 2004 ), the neotropical rainforests ( Burney and Brumfield, 2009 ), East Africa ( Fjeldsa and Bowie, 2008 ) and Europe ( Hewitt, 2000 , Weiss and Nuno, 2006 ). Notably, southern hemispheric regions have received much less attention ( Beheregaray, 2008 , Heckman et al., 2007 , Victoriano et al., 2008 , Yoder et al., 2005 ). However, a key challenge for comparative phylogeography is the need for developing analytical tools that can be used to evaluate spatial and temporal congruence or incongruence in phylogeographic patterns across multiple species, regardless of the system that these tools are applied to. 
+ 
+Inferences from such regional studies have subsequently helped inform conservation priorities by identifying and delimiting areas with codistributed singular evolutionary histories in order to prioritize geographical units for biological conservation. To date, the operative criteria for defining conservation areas are richness, endemism and phylogenetic diversity ( Brooks et al., 2002 , Lamoreux et al., 2006 , Orme et al., 2005 , Spathelf and Waite, 2007 ). However, knowledge about where unique evolutionary events or processes occurred have complemented diversity information thereby allowing us to conserve not only extant biodiversity but the processes that generate this diversity ( Moritz and Faith, 1998 ). Comparative phylogeography thus allows reconstruction of concerted evolutionary changes in codistributed species that have been affected by past climate changes (e.g., glacial and precipitation cycling) in addition to informing conservation planning. This approach will be useful for predicting how climate change will genetically, demographically, and spatially influence regional biodiversity ( Ferrier and Guisan, 2006 , Taberlet and Cheddadi, 2002 , Williams et al., 2007 ). So far the applications of comparative phylogeography provide a powerful battery for understanding evolutionary history and strengthening conservation efforts, yet this exciting next phase will require the deployment of powerful coalescent model-based statistical methods. 
+3. The emergence of model-based methods in phylogeography 
+3.1. Descriptive phylogeographic inference 
+ 
+In the first wave of phylogeography that coincided with the increased use of the polymerase chain reaction, study conclusions were often directly based on qualitative interpretations of each taxon’s single locus gene genealogy such that the shape of phylogenies, the geographic distribution of lineages, and estimated dates of gene tree branching events, could be used directly to infer the demographic history of each taxon. Under this approach, direct interpretations from geographically contextualized gene genealogies (i.e., geographically restricted monophyly = isolation) were often combined with reporting geographically defined summary statistics (i.e., hierarchically partitioned F statistics). For example, estimates of gene flow or divergence times can be obtained from the geographic patterns in a gene genealogy ( Slatkin and Maddison, 1989 ) or summary statistics that partition genetic differences among and within populations ( Nei and Li, 1979 , Wright, 1969 ). Permutation tests on various summary statistics were also commonly used to test for demographic expansion and/or geographic structuring of genetic variation ( Excoffier et al., 1992 , Fu and Li, 1993 , Tajima, 1989 ). In combining inference from estimated gene genealogies or gene networks with permutations of spatially-explicit summary statistics, the nested clade phylogeographic analysis (NCPA) became the paradigmadic method associated with this era of phylogeography. By testing for an association of geography and patterns in the gene genealogy, followed by using an inference key to interpret the patterns as being linked with particular historical scenarios ( Templeton, 1998 , Templeton, 2004 ), NCPA provided a statistical framework for using gene genealogies to directly infer demographic history. However, coalescent simulation studies from independent researchers have revealed the single locus implementation of this method to be potentially problematic ( Knowles and Maddison, 2002 , Panchal and Beaumont, 2007 , Petit and Grivet, 2002 ). 
+ 
+While such simulation testing of NCPA has provoked debate ( Beaumont, 2008b , Garrick et al., 2008 , Knowles, 2008 , Templeton, 2004 , Templeton, 2009a , Templeton, 2009b ), it is also a sign that the field is becoming a more statistically rigorous endeavor and that empiricists are coming to recognize that equating genealogical pattern with demographic and evolutionary processes can lead to over interpretation when ignoring coalescent stochasticity in the data ( Arbogast et al., 2002 , Edwards and Beerli, 2000 , Irwin, 2002 ). Along these lines, phylogeographic studies are increasingly using simulation-based statistical methods that employ an explicit parameterized coalescent model to estimate parameters as well as test alternative a priori historical hypotheses. In this new wave of studies, the demographic history is not directly interpreted from the gene genealogy and therefore the gene genealogy is not the central point of a phylogeographic analysis. Instead the gene genealogy is a transition variable for connecting data to demographic parameters under an explicit statistical coalescent model ( Hey and Machado, 2003 ). 
+3.2. Model-based statistical phylogeographic inference 
+ 
+Using statistical approaches based on coalescent models for parameter estimation and hypothesis testing has been described as statistical phylogeography ( Knowles and Maddison, 2002 ) and is philosophically consistent with a methodological approach first described by Chamberlin (1890) (reprinted 1965). In scientific disciplines that investigate historical events that cannot be observed directly or replicated experimentally, scientists have long proceeded by considering competing hypotheses that serve as separate but plausible explanations for a given phenomenon ( Chamberlin, 1890 (reprinted 1965)). Under this approach, one hypothesis is identified as more probable relative to others when all available data are more likely under the corresponding model. Chamberlin’s epistemological strategy fortuitously dovetails with the statistical phylogeographic approach whereby coalescent theory is used to build statistical models for hypothesis testing under a Bayesian and/or likelihood-based framework. Indeed, under the Bayesian/likelihood-based stratagem each competing hypotheses can be evaluated by fitting the data to each model relative to other models, by way of different decision theoretical methods (e.g., Bayes factors or likelihood ratio tests). Alternatively, under a null hypothesis framework, a model is treated as a null hypothesis whereby the probability of observing data more extreme than the observed data is calculated assuming the null hypothesis is true. Under either approach, any one competing model is never “true” but instead is a useful approximation that should capture the essential features of a demographic history and is most useful if it is somewhat robust to violation of model assumptions ( Anderson, 2007 , Wakeley, 2004 ). 
+ 
+These statistical phylogeographic approaches are greatly strengthened when a wide range of plausible models is considered. One way of informing the choice of plausible models is to generate competing models from external sources of data that provide clues about past populations, including where they were located, when they may have become isolated from other populations, or how they were affected by historical events such as glaciations, mountain orogeny, or habitat perturbation. External sources of data may come from packrat middens ( Cognato et al., 2003 ), fossils ( Brunhoff et al., 2003 ), paleo-environmental data ( Tribsch and Schonswetter, 2003 ), palynological data ( Brunsfeld et al., 2001 ) or even ancient DNA ( Barnes et al., 2007 , Hadly et al., 2004 ). However, these types of data are not widely available for all systems, and a more generalized approach to generating hypotheses is useful ( Richards et al., 2007 ). 
+ 
+Some models are relatively basic. For example, one might want to test two models, model A that posits that extant populations in the focal taxon arose from a single population that persisted since before the last glacial maximum (LGM), and model B that posits that extant populations descended from two isolated populations that both persisted since before the LGM. For example, in South America, different sets of independent evidence argue for two alternative histories. In one hypothesized history, LGM refugia are distributed mainly in the Coastal Range close to the Pacific ( Heusser et al., 1988 ). In a second hypothesized history suggested by pollen analyses ( Markgraf et al., 1995 ), multiple persistent isolated refugia during the LGM were located on both slopes of the Andes, or in fragmented areas within the ice shield ( Allnutt et al., 1999 , Marchelli et al., 1998 , Pastorino and Gallo, 2002 , Premoli et al., 2000 , Premoli, 1997 ). 
+ 
+In one commonly used model-based statistical approach, a summary statistic is calculated from simulated data sets under each model to obtain a distribution of the summary statistic under each respective model. In this scheme, the probabilities of both models are evaluated with respect to the summary statistic calculated from the empirical data ( Knowles, 2001 ). This simulation-based approach has become a useful method in statistical model-based phylogeography ( Alter et al., 2007 , Becquet et al., 2007 , Berthier et al., 2006 , Boul et al., 2007 , Burridge et al., 2008 , Carstens et al., 2005a , DeChaine and Martin, 2005 , Eckert et al., 2008 , Epps et al., 2005 , Hickerson and Cunningham, 2005 , Knowles, 2001 , Mardulyn and Milinkovitch, 2005 , Milot et al., 2000 , Moya et al., 2007 , Nettel and Dodd, 2007 , Pavoine and Bailly, 2007 , Spellman and Klicka, 2006 , Steele and Storfer, 2006 , Thalmann et al., 2007 , Vila et al., 2005 , Wilson, 2006 ). 
+ 
+Another common statistical approach is to assume a single model and estimate parameters under the model using full likelihood/Bayesian approaches that make use of all of the data ( Beerli and Felsenstein, 2001 , Hey and Nielsen, 2004 , Hey and Nielsen, 2007 , Kuhner, 2006 , Kuhner et al., 1998 ). However, these full likelihood-based methods become intractable for complex phylogeographic models that contain many demographic parameters. Fortunately, there are model-based statistical approaches that circumvent this problem, such as composite likelihood which treats polymorphic site as unlinked and calculates the likelihood function accordingly ( Nielsen and Beaumont, 2009 ). 
+ 
+Another promising family of methods called approximate Bayesian computation (ABC) circumvents this problem by bypassing the computational difficulties of calculating the likelihood functions ( Beaumont et al., 2002 , Pritchard et al., 1999 ). These “likelihood-free” ABC methods can approximate the posterior distribution of parameters thereby accomplishing estimation of parameters under an array of complex biogeographic scenarios by simulating data from a coalescent model using parameter values that are randomly drawn from the prior distribution ( Chan et al., 2006 , Cornuet et al., 2008 , Estoup et al., 2004 , Excoffier et al., 2005 , Jobin and Mountain, 2008 ). Here, the posterior is approximated from simulated data sets that most closely match the observed data set using sets of summary statistics that are identically calculated from each. 
+ 
+The added flexibility and power of ABC is that one can also use it for hypothesis testing in addition to parameter estimation by treating a set of models as a categorical discrete parameter that is estimated such that model testing and parameter estimation are achieved at the same time ( Beaumont, 2008a , Carnaval et al., 2009 , Fagundes et al., 2007 , François et al., 2008 , Hickerson and Meyer, 2008 , Verdu et al., 2009 ). While the computational shortcut in ABC does not make total use of the data and usually requires choosing summary statistics that are informative about parameters of interest ( Sousa et al., 2009 ) as well as choosing how to combine summary statistics ( Hamilton et al., 2005 ), side-stepping the need for an explicit likelihood frees up the practitioner to use sufficiently complex historical demographic models. 
+3.3. Comparative phylogeographic inference 
+ 
+Achieving comparative phylogeography’s central goals of testing hypotheses about how abiotic and/or ecological processes drive evolution within whole communities ( Arbogast and Kenagy, 2001 , Avise, 2000 , Bermingham and Moritz, 1998 ), methods for analysis are being developed that go beyond interpreting results from multiple single taxon analyses. One method statistically estimates levels of topological congruence across taxa and then assembles the genetic datasets from different taxa into a single supertree depicting geographic linkages ( Lapointe and Rissler, 2005 ). This tree can then be tested against potential drivers of lineage divergence (e.g., climate) to determine what factors are correlated with concordant genetic breaks. 
+ 
+Another method that is both coalescent model-based and combines intra-specific data sets into a single analysis is an ABC methods that employs a hierarchical Bayesian model ( Hickerson et al., 2006c ). Hierarchical Bayesian models have been used with ABC to incorporate mutation rate variation across loci ( Excoffier et al., 2005 , Pritchard et al., 1999 ), and now this strategy has been used to allow for variability in demographic parameters across taxa with a hyper-prior. In this case, each taxon’s demographic parameters are drawn from a prior that is itself conditional on a hyper-prior. This allows estimating the degree of congruence across taxa in these demographic sub-parameters (e.g., level of congruence in divergence times or effective population sizes) and/or estimating the degree of congruence in historical demographic models (e.g., vicariance vs dispersal) via posterior estimates of hyper-parameters ( Hickerson and Meyer, 2008 ) and hyper-posterior Bayes factors ( Kass and Raftery, 1995 ). Thus hyper-parameter estimates can inform us about biogeographic processes across taxa while demographic parameters are allowed to vary independently within each codistributed taxon. 
+ 
+Comparative phylogeographic ABC methods are in their infancy, yet have so far been used to test for simultaneous divergence times across codistributed taxa in a variety of biogeographic settings ( Hickerson et al., 2006c , Leaché et al., 2007 , Topp and Winker, 2008 , Voje et al., 2009 ). They have also been used to test for congruence in biogeographic scenarios across taxa such as vicariance or colonization in multiple gastropod taxa that span large portions of the Pacific ocean ( Hickerson and Meyer, 2008 ) as well as testing for congruence in forest refugia models across multiple frog taxa distributed along the South American coastal forest ( Carnaval et al., 2009 ). 
+4. Future directions for integrative comparative phylogeography 
+4.1. Ecological niche models 
+ 
+Integrating phylogeography with species range distribution models (i.e., ecological niche models; ENM; see glossary) is showing enormous promise for elucidating how isolation, speciation, and selection are directly or indirectly linked to abiotic factors ( Kozak et al., 2008 ). If environmental factors are implicated in divergence and speciation, such integration can aide in species delineation ( Bond and Stockman, 2008 , Raxworthy et al., 2007 , Rissler and Apodaca, 2007 ) and testing models of niche conservatism and niche divergence ( Losos, 2008 , Warren et al., 2008 ). Another useful application has been to compare phylogeographic historical parameter estimates with ancestral area predictions obtained from contemporary and paleo-ENMs ( Hugall et al., 2002 , Peterson and Nyári, 2007 , Richards et al., 2007 , Ruegg and Hijmans, 2006 ). 
+ 
+Comparative phylogeographic studies are starting to use ENMs from multiple taxa. At first such studies compared paleo-ENMs with phylogeographic parameter estimates across codistributed taxa to evaluate the extent to which codistributed taxa are spatially and temporally concordant. In one of the first of these integrative studies, Carstens and colleagues found that divergence time estimates were similar in a vole and a willow, which the authors attributed to a similar historic distribution and a shared response to climatic change at the end of the Pleistocene ( Carstens et al., 2005a ). However, the paleo-ENM models for these two taxa were markedly different suggesting recent niche divergence ( Carstens and Richards, 2007 ). Another such study compared paleo-ENMs with phylogeographic inferences from 20 intra-specific mammal and bird studies from North America and found that 14 out of 20 inferences of late Pleistocene refugia were spatially correlated with inferences from ENM models ( Waltari et al., 2007 ). There is also promise in using hierarchical ABC models to explicitly combine comparative phylogeographic data sets with ENM predictions. One such study did this to test environmental niche model predictions that three codistributed frog taxa co-expanded from putative coastal forest refugia after the LGM ( Carnaval et al., 2009 ). In this case, the paleo-ENMs were directly used to construct an a priori model such that Bayesian hypothesis testing was used to compare the fit of the genetic data relative to an alternative historic demographic model across all three taxa. Another promising direction will be the development of spatially-explicit coalescent models for more direct integration between ENMs and phylogeographic inference ( Barton et al., 2009 , Currat et al., 2004 ). 
+ 
+Nonetheless, it important to acknowledge that paleo-ENMs only predict the potential ranges under the assumption of niche conservatism ( Araújo and Guisan, 2006 ), and therefore model-based phylogeographic inference can be a way to test competing ancestral range predictions constructed under the alternative assumptions of niche stasis and niche liability. Although ENMs are a recently developed application with various sources of error ( Araújo and Guisan, 2006 , Lozier et al., 2009 , Stockwell and Peterson, 2002 ), this enterprise is rapidly advancing and we are bound to see important advances in the near-future. 
+4.2. Studies of natural selection 
+ 
+Although studies of natural selection could be integral to phylogeographic inference, they are usually omitted, perhaps due to the field’s early emphasis on neutral genetic variation and many of the subsequent analytical approaches that were developed around such assumptions. However, it is clear that selection plays a central role in generating biodiversity ( Funk et al., 2006 ), and thus should be an important integrative component in future comparative phylogeographic studies. As genomic data become available for non-model organisms ( Vera et al., 2008 ), comparative phylogeographic studies will allow identification of different locus-specific divergent selection patterns ( Ellegren and Sheldon, 2008 , Luikart et al., 2003 , MacCallum and Hill, 2006 ) between pairs of codistributed taxa or taxa that co-occur along the same geographic gradient ( Bonin et al., 2006 , Joost et al., 2007 , Joost et al., 2008 ) while also testing various multi-taxa demographic historical scenarios. This could involve identifying cases of simultaneous expansion into novel environments accompanied by congruent or incongruent patterns of selection or drift across suites of loci ( Gavrilets, 2004 ). Such large-scale analysis involving multiple taxa, multiple individuals and 100’s of loci will indeed bring serious analytical challenges ranging from data management to testing complex highly parameterized models of selection and demography, yet methodological advances such as ABC or composite likelihood should allow such studies to be tractable in the near-future ( Nielsen and Beaumont, 2009 ). 
+ 
+There are also now substantial opportunities to integrate studies of natural selection via population genomics and multi-species phylogeography with studies of quantitative genetics ( Stinchcombe and Hoekstra, 2008 ). By comparing variation in quantitative traits with neutral genetic variation ( Falconer and Mackay, 1996 ), and incorporating classic quantitative genetics experiments ( Wright, 1943 ) drawing from populations across their geographic ranges and environmental gradients, investigators have another means of detecting selection in a biogeographic context. This could not only include using direct comparisons of quantitative trait variation with neutral genetic variation using Qst—Fst comparisons ( McKay and Latta, 2002 ), but also include looking at eco-physiological trait differentiation and selection across geographic or climatic gradients ( Cavender-Bares, 2007 , Dudley, 1996 , Etterson, 2008 , Etterson, 2004 , Wright and Stanton, 2007 ). Looking further ahead, model-based phylogeographic inference tools can be used to relate divergence times and migration with levels of ecologically driven selection at genetic loci and quantitative traits. Furthermore, ENMs can be used to quantify and test for environmental divergence between pairs of taxa that are hypothesized to have undergone divergent selection at quantitative traits, genetic loci as well as geographic isolation ( Nakazato et al., 2008 , Warren et al., 2008 ). 
+4.3. Ecological speciation 
+ 
+Not only should researchers be able to uncover the genetic determinants of species boundaries ( Orr et al., 2004 ) using genetic markers believed to be associated with reproductive isolation ( Palopoli and Wu, 1994 , Wu and Davis, 1993 ), there is now great promise for comparative phylogeographic studies to unravel processes behind ecologically driven speciation ( Funk et al., 2006 , Mendelson and Shaw, 2005 , Rundle and Nosil, 2005 , Schluter, 2000 ) and the genomic basis of selection driving these patterns of ecological speciation ( Egan et al., 2008 , Rogers and Bernatchez, 2007 , Scluter, 2009 , Wood et al., 2008 ). A ‘unified framework’ for testing ecological speciation hypotheses can be deployed using divergence time estimates across sister taxon-pairs ( Funk, 1998 , Nosil et al., 2009 ). Ecologically driven selection is widely found in nature, yet cases that entail full reproductive isolation are less common and depend on either the strength of the divergent selection at single traits or the number of traits at which selection is acting ( Nosil et al., 2009 ). When traits under divergent selection can be identified in multiple sister taxon-pairs that are co-occur along an environmental gradient or have co-expanded into a novel environment, one could use model-based methods such as hierarchical ABC to initially subdivide these sister-pairs into different temporal waves of isolation via colonization and/or geographic expansion ( Leaché et al., 2007 ). The resulting groupings of taxon-pairs defined by isolation times could then be used within a multiple regression framework to estimate strength of selection at genetic loci, phenotypic traits as well as estimate divergence or stasis at ecological niche dimensions between the sister taxon-pairs. 
+ 
+If timing of isolation is positively correlated with reproductive isolation ( Funk et al., 2006 ), one could then test if timing of isolation is also correlated with the multifarious selection hypothesis where the completeness of reproductive isolation is positively correlated with the numbers of loci subject to selection ( Seehausen et al., 2008 ). Alternatively, one could test if the time since isolation or subsequent gene flow is correlated with the magnitude of selection at single genetic loci across taxon-pairs and thereby more consistent with the “stronger selection” hypothesis ( Nosil et al., 2009 ). Furthermore, if subsequent gene flow rather then time is positively correlated with the magnitude of selection, then stronger selection with reinforcement can be implicated across a subset of taxon-pairs ( Hoskin et al., 2005 , Howard, 1993 ). These inferences of ecological speciation, selection and timing of isolation could then be compared to estimates of divergence along an array of environmental gradients or ecological niche dimensions using ENMs ( Kozak and Wiens, 2007 , Seehausen et al., 2008 , Warren et al., 2008 ). 
+4.4. Integrating comparative phylogeography with studies of community assembly 
+ 
+One of the original objectives of comparative phylogeography was to resolve deep-seated questions about how climate change drives community assembly and evolution within whole biotas ( Avise et al., 1987 ). Although inter-specific phylogenetic data is increasingly being used to address questions of community assembly ( Cavender-Bares et al., 2009 , Emerson and Gillespie, 2008 , Jabot and Chave, 2009 , McPeek, 2008 , Vamosi et al., 2009 , Webb et al., 2002 ), using comparative phylogeographic data for such purposes has so far been handicapped because such studies rarely involve more than a handful of codistributed taxa. However, comparative phylogeographic datasets are bound to have explosive growth as collecting DNA sequence data across a wide diversity of taxa will soon scale up to the level of comprehensive ecosystem sampling. Such “community-scale” comparative phylogeographic data sets could potentially test classic biogeographic hypotheses (e.g., vicariance versus dispersal) at the community level ( Carlquist, 1966 , Rosen, 1978 ), as well as test controversial and fundamental hypotheses of community assembly such as Hubbell’s neutral theory ( Hubbell, 2001 ), Tilman’s stochastic competitive assembly model ( Tilman, 2004 ), and Diamond’s niche assembly rules ( Diamond, 1975 , Gotelli and McCabe, 2002 ). As comparative phylogeographic datasets grow to include >100 codistributed taxon-pairs, the computational advantages of the hierarchical ABC approach will be well suited to test community assembly models that are explicitly defined by temporal patterns of dispersal and speciation. Although species interactions may not be explicitly incorporated into such tets of community assembly models, hierarchical ABC could allow combining summary statistics from simulated phylogeographic data, phylogenetic data and species abundance data ( Jabot and Chave, 2009 ) to estimate parameters under various community assembly models as well as compare the relative likelihoods of these models. Another promising approach for potentially integrating comparative phylogeography with studies of community assembly is using fossil pollen data. One study used this approach to infer historical range expansion of major tree species after the last North American glaciation to understand the rate at which species can move in response to climate change and the extent to which communities reassemble after disturbance ( McLachlan et al., 2005 ). Finally, researchers will be able to combine these inferences with studies of selection, reproductive isolation, phenotypic evolution as well as inferences of niche conservatism and niche evolution using ENMs. 
+4.5. Empirical systems 
+ 
+Given this exciting opportunity to co-estimate divergent selection patterns and demographic histories across codistributed non-model taxa, what are some candidate empirical systems? In the same way that “model organisms” were carefully chosen for whole genomes, there are a plethora of interesting “model communities” that stand to benefit from this new wave in comparative phylogeography. At the broadest scale, such techniques could be deployed to investigate how latitudinal patterns in biodiversity arise. Selection driven by environmental gradients has been implicated as the cause of biogeographic diversity patterns in the tropics ( Moritz et al., 2000 ) and using emerging genomic tools for comparative phylogeography will provide a means to better test this controversial hypothesis as well as examine how selection drives biodiversity patterns in temperate regions that have experience cyclical range expansions throughout the Pleistocene. Such studies will be critical for identifying and preserving geographic patterns of endemism ( Crandall et al., 2000 , Moritz, 2002 ), just as determining whether populations are differentially adapted is an important issue in conservation biology and restoration ecology ( McKay et al., 2005 , Wilkinson, 2001 ). For instance, the geography of adaptive genetic variation may be more relevant for the conservation of locally adapted ecotypes than that of neutral variation ( Conover et al., 2006 ). 
+ 
+These new model-based comparative phylogeographic techniques could also be used to test patterns of co-speciation in multiple taxon-pairs of plant hosts and their insect mutualists or parasites. For example, phylogenetic data from multiple western Palearctic oak and gallwasp species suggests that host parasite relations are persistent and ancient ( Stone et al., 2009 ), and hierarchical ABC methods could be used to estimate temporal patterns of Pleistocene co-expansion from Asian into Europe. Subsequently, one could further investigate how timing of expansion in the host and parasite taxon-pairs relates to levels of selection, numbers of loci under selection, phenotypic divergence, and divergence along ecological niche dimensions. In studies of ecological speciation, excellent empirical systems for deploying hierarchical ABC methods to control for time when uncovering processes behind the ecological, physiological and environmental factors behind adaptive divergence and reproductive isolation include Andean tomato species ( Nakazato et al., 2008 ), stickleback stream-lake and ocean-freshwater taxon-pairs ( Hendry and Taylor, 2004 ), Trinidadian guppies ( Crispo et al., 2006 ), sister-pairs of walking-sticks living on different host plants ( Nosil, 2007 ), African cichlids ( Seehausen et al., 2008 ), Gambusia fishes ( Langerhans et al., 2007 ) and Heliconius butterflies ( Jiggins et al., 2004 ). 
+5. Conclusion 
+ 
+Nearly 10 years after Avise (2000) and 20 years after Avise et al. (1987) , phylogeography is entering a new and exciting phase. With regard to data analysis, the field is rapidly moving from descriptive methods and into using coalescent models for parameter estimation ( Kuhner, 2008 ), a priori model testing ( Beaumont, 2008a , Carstens et al., 2005b , Fagundes et al., 2007 ), the estimation of spatially-explicit demographic histories ( Lemmon and Moriarty Lemmon, 2008 ), and testing for temporal and/or spatial congruence across codistributed taxa ( Carnaval et al., 2009 , Hickerson et al., 2006c ). Concurrent with these methodological advances will be new ways to visualize phylogeographic data ( Kidd and Ritchie, 2006 ), a rapid growth in genomic phylogeographic data ( Townsend et al., 2008 , Vera et al., 2008 ), expansion of taxa included in comparative phylogeographic data sets ( Avise, 2008 ) as well as advances allowing analysis of ancient DNA ( Hofreiter, 2008 ) such that researchers can potentially resolve if humans were the causal agents in the extinction of large mammals at the last glacial maximum rather than climate changes ( Barnes et al., 2007 ). 
+ 
+Nonetheless, deciding which set of models to evaluate and use for parameter estimation remains to be a substantial challenge given the bewildering number of possible histories underlying any phylogeographic data set. Moreover, recent understanding of Pleistocene and Holocene climatic history suggests short-lived and extreme climate fluctuations with consequent cyclical changes of habitat suitability occurred with high frequency on timescales of centuries and millennia ( Ditlevsen et al., 1996 , Mayewski et al., 2004 ). Although phylogeographic models incorporating sufficient spatial complexity and frequency of these recurrent range expansions/contractions will require further analytical innovations, the rapid development of flexible methods should rise to the task. However, it should be recognized that tools for complex model-based inference that can be easily used by empiricists such as DIY-ABC ( Cornuet et al., 2008 ) is presently limited by the paucity of software packages. 
+ 
+Coinciding with these methodological advances is the explosion of opportunities for integrating comparative phylogeographic data with other fields that are also rapidly advancing. This includes ENMs ( Waltari et al., 2007 ), spatial analysis of genomic signatures in natural selection ( Joost et al., 2007 ), spatial analysis of morphological and functional trait evolution, studies of ecological speciation ( Scluter, 2009 ), and studies of community assembly that make use of ABC ( Jabot and Chave, 2009 ). With this potential interdisciplinary synthesis, comparative phylogeography is poised to achieve what Avise and colleagues originally envisioned - resolving deep-seated puzzles about how climate, geography, and ecological interactions determine and interact with community composition and evolution. 
+Acknowledgments 
+ 
+We thank J.W. Sites, and the organizers of a catalysis meeting at the National Evolutionary Synthesis Center (NESCent) NSF # EF-0423641 on Patagonia Phylogeography as well as thank M. Baker, T. Demos, K. Ilves, L. Knowles, A. Vogler and an anonymous reviewer for making constructive suggestions. This work was partly supported by the National Science Foundation’s (NSF) Partnerships in International Research and Education (PIRE) OISE 0530267 awarded to J. Johnson and Proyecto Fondecyt 1090664 awarded to P.F. Victoriano. 
+Recommended articles Citing articles ( 297 ) 
+References 
+ 
+Adams, 1905 
+    C.C. Adams The postglacial dispersal of the North American biota 
+    Biol. Bull., 9 (1905), pp. 53-71 
+Allnutt et al., 1999 
+    T.R. Allnutt, A.C. Newton, A. Lara, A. Premoli, J.J. Armesto, R. Vergara Genetic variation in Fitzroya cupressoides (alerce), a threatened South American conifer 
+    Mol. Ecol., 8 (1999), pp. 975-987 
+Alsos et al., 2007 
+    I.G. Alsos, P.B. Eidesen, D. Ehrich, I. Skrede, K. Westergaard, G.H. Jacobsen, J.Y. Landvik, P. Taberlet, C. Brochmann Frequent long-distance plant colonization in the changing Arctic 
+    Science, 316 (2007), pp. 1606-1609 
+Alter et al., 2007 
+    S.E. Alter, E. Rynes, S.R. Palumbi DNA evidence for historic population size and past ecosystem impacts of gray whales 
+    Proc. Natl. Acad. Sci. USA, 104 (2007), pp. 15162-15167 
+Anderson, 2007 
+    D.R. Anderson Model Based Inference in the Life Sciences: A Primer on Evidence 
+    Springer, New York (2007) 
+Araújo and Guisan, 2006 
+    M.B. Araújo, A. Guisan Five (or so) challenges for species distribution modeling 
+    J. Biogeogr., 33 (2006), pp. 1677-1688 
+Arbogast and Kenagy, 2001 
+    B.S. Arbogast, G.J. Kenagy Comparative phylogeography as an integrative approach to historical biogeography 
+    J. Biogeogr., 28 (2001), pp. 819-825 
+Arbogast et al., 2002 
+    B.S. Arbogast, S.V. Edwards, J. Wakeley, P. Beerli, J.B. Slowinski Estimating divergence times from molecular data on phylogenetic and population genetic timescales 
+    Annu. Rev. Ecol. Syst., 33 (2002), pp. 707-740 
+Avise, 2000 
+    J.C. Avise Phylogeography: The History and Formation of Species 
+    Harvard University Press, Cambridge (2000) 
+Avise, 2008 
+    J.C. Avise Phylogeography: retrospect and prospect 
+    J. Biogeogr., 36 (2008), pp. 3-15 
+Avise and Ball, 1990 
+    J.C. Avise, M.R. Ball Jr. Principles of geneological concordance in species concepts and biological taxonomy 
+    D.J. Futuyma, J. Antonovics (Eds.), Oxford Surveys in Evolutionary Biology, Oxford University Press, Oxford (1990), pp. 45-67 
+Avise et al., 1987 
+    J.C. Avise, J. Arnold, R.M. Ball, E. Bermingham, T. Lamb, J.E. Neigel, C.A. Reeb, N.C. Saunders Intraspecific phylogeography: the mitochondrial DNA bridge between population genetics and systematics 
+    Ann. Rev. Ecol. Syst., 18 (1987), pp. 489-522 
+Barber et al., 2000 
+    P.H. Barber, S.R. Palumbi, M.V. Erdmann, M.K. Moosa Biogeography—a marine Wallace’s line? 
+    Nature, 406 (2000), pp. 692-693 
+Barnes et al., 2007 
+    I. Barnes, B. Shapiro, T. Kuznetsova, A. Sher, D. Guthrie, A. Lister, M.G. Thomas Genetic structure and extinction of the woolly mammoth Mammuthus primigenius (Blum.) 
+    Curr. Biol., 17 (2007), pp. 1072-1075 
+Barton et al., 2009 
+    Barton, N.H., Etheridge, A.M., Veber, A., 2009. A new model for evolution in a spatial continuum. arXiv arXiv:0904.0210v1.  
+Beaumont, 2008a 
+    M.A. Beaumont Joint determination of topology, divergence time and immigration in population trees 
+    S. Matsumura, P. Forster, C. Renfrew (Eds.), Simulations, Genetics and Human Prehistory, McDonald Institute for Archaeological Research, Cambridge (2008), pp. 135-154 
+Beaumont, 2008b 
+    M.A. Beaumont On the validity of nested clade phylogeographical analysis 
+    Mol. Ecol., 17 (2008), pp. 2563-2565 
+Beaumont et al., 2002 
+    M.A. Beaumont, W. Zhang, D.J. Balding Approximate Bayesian computation in population genetics 
+    Genetics, 162 (2002), pp. 2025-2035 
+Becquet et al., 2007 
+    Becquet, C., Patterson, N., Stone, A.C., Przeworski, M., Reich, D., 2007. Genetic Structure of Chimpanzee Populations. PLoS Genet. 3, e66. doi: 10.1371/journal.pgen.0030066 .  
+Beerli and Felsenstein, 2001 
+    P. Beerli, J. Felsenstein Maximum likelihood estimation of a migration matrix and effective population sizes in n subpopulations by using a coalescent approach 
+    Proc. Natl. Acad. Sci. USA, 98 (2001), pp. 4563-4568 
+Beheregaray, 2008 
+    L.B. Beheregaray Twenty years of phylogeography: the state of the field and the challenges for the Southern Hemisphere 
+    Mol. Ecol., 17 (2008), pp. 3754-3774 
+Bermingham and Moritz, 1998 
+    E. Bermingham, C. Moritz Comparative phylogeography: concepts and applications 
+    Mol. Ecol., 7 (1998), pp. 367-369 
+Berthier et al., 2006 
+    P. Berthier, L. Excoffier, M. Ruedi Recurrent replacement of mtDNA and cryptic hybridization between two sibling bat species Myotis myotis and Myotis blythii 
+    Proc. R. Soc. B, 273 (2006), pp. 3101-3109 
+Bond and Stockman, 2008 
+    J. Bond, A. Stockman An integrative method for delimiting cohesion species: finding the population-species interface in a group of Californian trapdoor spiders with extreme genetic divergence and geographic structuring 
+    Syst. Biol., 57 (2008), pp. 628-646 
+Bonin et al., 2006 
+    A. Bonin, P. Taberlet, C. Miaud, F. Pompano Explorative genome scan to detect candidate loci for adaptation along a gradient of altitude in the common frog 
+    Mol. Biol. Evol., 23 (2006), pp. 773-783 
+Boul et al., 2007 
+    K.E. Boul, W.C. Funk, C.R. Darst, D.C. Cannatella, M.J. Ryan Sexual selection drives speciation in an Amazonian frog 
+    Proc. R. Soc. B, 7 (2007), pp. 399-406 
+Brooks et al., 2002 
+    T.M. Brooks, R.A. Mittermeier, C.G. Mittermeier, G.A.B. Da Fonseca, A.B. Rylandas, W.R. Konstant, P. Flick, J. Pilgrim, S. Oldfield, G. Magin, C. Hilton-Taylor Habitat loss and extinction in the hostspots of biodiversity 
+    Conserv. Biol., 16 (2002), pp. 909-923 
+Brunhoff et al., 2003 
+    C. Brunhoff, K.E. Galbreath, V.B. Fedorov, J.A. Cook, M. Jaarola Holartic phylogeography of the root vole ( Microtus oeconomus ): implications for late Quaternary biogeography of high latitudes 
+    Mol. Ecol., 12 (2003), pp. 957-968 
+Brunsfeld et al., 2001 
+    Brunsfeld, S.J., Sullivan, J., Soltis, D.E., Soltis, P.S., 2001. Comparative Phylogeography of Northwestern North America: A Synthesis. Blackwell Publishing.  
+Burney and Brumfield, 2009 
+    C.W. Burney, R.T. Brumfield Ecology predicts levels of genetic differentiation in Neotropical birds 
+    Am. Nat., 174 (2009), pp. 358-368 
+Burridge et al., 2008 
+    C.P. Burridge, D. Craw, D.C. Jack, T.M. King, J.M. Waters Does fish ecology predict dispersal across a river drainage divide? 
+    Evolution, 62 (2008), pp. 1484-1499 
+Carling and Brumfield, 2007 
+    Carling, M.D., Brumfield, R.T., 2007. Gene sampling strategies for multi-locus population estimates of genetic diversity (theta). PLoS One 2, e160. doi: 10.1371/journal.pone.0000160.  
+Carlquist, 1966 
+    C. Carlquist The biota of long-distance dispersal, I: principles of dispersal and evolution 
+    Q. Rev. Biol., 41 (1966), pp. 247-270 
+Carnaval et al., 2009 
+    A. Carnaval, M.J. Hickerson, C.F.B. Haddad, M.T. Rodrigues, C. Moritz Stability predicts genetic diversity in the Brazilian Atlantic Forest Hotspot 
+    Science, 323 (2009), pp. 785-789 
+Carstens and Richards, 2007 
+    B.C. Carstens, C.L. Richards Integrating coalescent and ecological niche modeling in comparative phylogeography 
+    Evolution, 61 (2007), pp. 1439-1454 
+Carstens et al., 2005a 
+    B.C. Carstens, S.J. Brunsfeld, J.R. Demboski, J.D. Good, J. Sullivan Investigating the evolutionary history of the Pacific Northwest mesic forest ecosystem: hypothesis testing within a comparative phylogeographic framework 
+    Evolution, 59 (2005), pp. 1639-1652 
+Carstens et al., 2005b 
+    B.C. Carstens, J.D. Degenhardt, A.L. Stevensen, J. Sullivan Accounting for coalescent stochasticity in testing phylogeographic hypotheses: modeling Pleistocene population structure in the Idaho Giant Salamander Dicamptodon aterrimus 
+    Mol. Ecol., 14 (2005), pp. 255-265 
+Cavender-Bares, 2007 
+    J. Cavender-Bares Chilling and freezing stress in live oaks (Quercus section Virentes): intra- and interspecific variation in PS II sensitivity corresponds to latitude of origin 
+    Photosynth. Res., 94 (2007), pp. 437-453 
+Cavender-Bares et al., 2009 
+    J. Cavender-Bares, K. Kozak, P. Fine, S. Kembel The merging of community ecology and phylogenetic biology 
+    Ecol. Lett., 12 (2009), pp. 693-715 
+Chamberlin, 1890 
+    Chamberlin, T.C., 1890. The method of multiple working hypotheses. Science 15, 92–96. Reprinted from: The method of multiple working hypotheses, 148, 754–759 (1965).  
+Chan et al., 2006 
+    Y.L. Chan, C.N.K. Anderson, E.A. Hadly Bayesian estimation of the timing and severity of a population bottleneck from ancient DNA 
+    PLoS Genet., 2 (2006), p. e59 
+Cognato et al., 2003 
+    A.I. Cognato, A.D. Harlin, M.L. Fisher Genetic structure among Pinyon pine beetle populations (Scolytinae: Ips confusus ) 
+    Environ. Entomol., 32 (2003), pp. 1262-1270 
+Conover et al., 2006 
+    D.O. Conover, L.M. Clarke, S.B. Munch, G.N. Wagner Spatial and temporal scales of adaptive divergence in marine fishes and the implications for conservation 
+    Fish Biol., 21 (2006), p. 47 
+Cook et al., 2001 
+    J.A. Cook, A.L. Bidlack, C.J. Conroy, J.R. Demboski, M.A. Fleming, A.M. Runck, K.D. Stone, S.O. MacDonald A phylogeographic perspective on endemism in the Alexander Archipelago of southeast Alaska 
+    Biol. Conserv., 97 (2001), pp. 215-227 
+Cornuet et al., 2008 
+    J.-M. Cornuet, F. Santos, M.A. Beaumont, C.P. Robert, J.-M. Marin, D.J. Balding, T. Guillemaud, A. Estoup Inferring population history with DIY ABC: a user-friendly approach to approximate Bayesian computation 
+    Bioinformatics, 24 (2008), pp. 2713-2719 
+Crandall et al., 2000 
+    K.A. Crandall, O.R.P. Bininda-Emonds, G.M. Mace, R.K. Wayne Considering evolutionary processes in conservation biology 
+    Trends Ecol. Evol., 15 (2000), pp. 290-295 
+Crispo et al., 2006 
+    E. Crispo, P. Bentzen, D.N. Reznick, M.T. Kinnison, A.P. Hendry The relative influence of natural selection and geography on gene flow in guppies 
+    Mol. Ecol., 15 (2006), pp. 49-62 
+Currat et al., 2004 
+    M. Currat, N. Ray, L. Excoffier Splatche: a program to simulate genetic diversity taking into account environmental heterogeneity 
+    Mol. Ecol. Notes, 4 (2004), pp. 139-142 
+De Queiroz, 2007 
+    K. De Queiroz Species concepts and species delimitation 
+    Syst. Biol., 56 (2007), pp. 879-886 
+DeChaine and Martin, 2005 
+    E.G. DeChaine, A.P. Martin Historical biogeography of two alpine butterflies in the Rocky Mountains: broad-scale concordance and local-scale discordance 
+    J. Biogeogr., 32 (2005), pp. 1943-1956 
+Diamond, 1975 
+    J.M. Diamond Assembly of species communities 
+    M.L. Cody, J.M. Diamond (Eds.), Ecology and Evolution of Communities, Harvard, Belknap (1975), pp. 342-444 
+Ditlevsen et al., 1996 
+    P.D. Ditlevsen, H. Svensmark, S. Johnsen Contrasting atmospheric and climatic dynamics of last-glacial and Holocene periods 
+    Nature, 379 (1996), pp. 810-812 
+Dobzhansky, 1937 
+    T.G. Dobzhansky Genetics and the Origin of Species 
+    Columbia University, New York (1937) 
+Dolman and Moritz, 2006 
+    G. Dolman, C. Moritz A multilocus perspective on refugial isolation and divergence in rainforest skinks ( carlia) 
+    Evolution, 60 (2006), pp. 573-582 
+Dudley, 1996 
+    S.A. Dudley Differing selection on plant physiological traits in response to environmental water availability: a test of adaptive hypotheses 
+    Evolution, 50 (1996), pp. 92-102 
+Eckert et al., 2008 
+    A.J. Eckert, B.T. Tearse, B.D. Hall A phylogeographical analysis of the range disjunction for foxtail pine (Pinus balfouriana, Pinaceae): the role of Pleistocene glaciation 
+    Mol. Ecol., 17 (2008), pp. 1983-1997 
+Edwards, 2009 
+    S.V. Edwards Is a new and general theory of molecular systematics emerging? 
+    Evolution, 63 (2009), pp. 1-19 
+Edwards and Beerli, 2000 
+    S.V. Edwards, P. Beerli Perspective: gene divergence, population divergence, and the variance in coalescence time in phylogeographic studies 
+    Evolution, 54 (2000), pp. 1839-1854 
+Edwards et al., 2007 
+    S.V. Edwards, L. Liu, D.K. Pearl High-resolution species trees without concatenation 
+    Proc. Natl. Acad. Sci. USA, 104 (2007), pp. 5936-5941 
+Egan et al., 2008 
+    S.P. Egan, P. Nosil, D.J. Funk Selection and genomic differentiation during ecological speciation: isolating the contributions of host association via a comparative genome scan of Neochlamisus Bebbianae leaf beetles 
+    Evolution, 62 (2008), pp. 1162-1181 
+Ellegren and Sheldon, 2008 
+    H. Ellegren, B.C. Sheldon Genetic basis of fitness differences in natural populations 
+    Nature, 452 (2008), pp. 169-175 
+Emerson and Gillespie, 2008 
+    B.C. Emerson, R.G. Gillespie Phylogenetic analysis of community assembly and structure over space and time 
+    Trends Ecol. Evol., 23 (2008), pp. 619-630 
+Epps et al., 2005 
+    C.W. Epps, P.J. Palsbøll, J.D. Wehausen, G.K. Roderick, R.R. Ramey II, D.R. McCullough Highways block gene flow and cause a rapid decline in genetic diversity of desert bighorn sheep 
+    Ecol. Lett., 8 (2005), pp. 1029-1038 
+Estoup et al., 2004 
+    A. Estoup, B.A. Beaumont, F. Sennedot, C. Moritz, J.-M. Cornuet Genetic analysis of complex demographic scenarios: spatially expanding populations of the cane toad, Bufo marinus 
+    Evolution, 58 (2004), pp. 2021-2036 
+Etterson, 2004 
+    J.R. Etterson Evolutionary potential of Chamaecrista fasciculata in relation to climate change I. Clinal patterns of selection along an environmental gradient in the Great Plains 
+    Evolution, 58 (2004), pp. 1446-1458 
+Etterson, 2008 
+    J. Etterson Evolution in response to climate change 
+    Chuck Fox, S.B. Carroll (Eds.), Conservation Biology: Evolution in Action, Oxford University Press, New York (2008), pp. 147-165 
+Ewens, 1979 
+    W.J. Ewens Mathematical Population Genetics 
+    Springer-Verlag, Berlin (1979) 
+Excoffier et al., 1992 
+    L. Excoffier, P.E. Smouse, J.M. Quattro Analysis of molecular variance inferred from metric distances among DNA haplotypes: application to human mitochondrial DNA restriction data 
+    Genetics, 131 (1992), pp. 479-491 
+Excoffier et al., 2005 
+    L. Excoffier, A. Estoup, J.-M. Cornuet Bayesian analysis of an admixture model with mutations and arbitrarily linked markers 
+    Genetics, 169 (2005), pp. 1727-1738 
+Fagundes et al., 2007 
+    N.J.R. Fagundes, N. Ray, M. Beaumont, S. Neuenschwander, F.M. Salzano, S.L. Bonatto, L. Excoffier Statistical evaluation of alternative models of human evolution 
+    Proc. Natl. Acad. Sci. USA, 104 (2007), pp. 17614-17619 
+Falconer and Mackay, 1996 
+    D.S. Falconer, T.F.C. Mackay Introduction to Quantitative Genetics 
+    Prentice Hall, New York (1996) 
+Felsenstein, 2006 
+    J. Felsenstein Accuracy of coalescent likelihood estimates: do we need more sites, more sequences, or more loci? 
+    Mol. Biol. Evol., 23 (2006), pp. 691-700 
+Ferrier and Guisan, 2006 
+    S. Ferrier, A. Guisan Spatial modelling of biodiversity at the community level 
+    J. Appl. Ecol., 43 (2006), pp. 393-404 
+Fjeldsa and Bowie, 2008 
+    J. Fjeldsa, R.C.K. Bowie New perspectives on the origin and diversification of Africa’s forest avifauna 
+    Afr. J. Ecol., 46 (2008), pp. 235-247 
+François et al., 2008 
+    François, O., Blum, M.G.B., Jakobsson, M., Rosenberg, N.A., 2008. Demographic history of european populations of arabidopsis thaliana . PLoS Genet. 4, e1000075. doi: 1000010.1001371/journal.pgen.1000075.  
+Fu and Li, 1993 
+    Y.-X. Fu, W.-H. Li Statistical tests of neutrality of mutations 
+    Genetics, 133 (1993), pp. 693-709 
+Funk, 1998 
+    D.J. Funk Isolating a role for natural selection in speciation: host adaptation and sexual isolation in Neochlamisus bebbianae leaf beetles 
+    Evolution, 52 (1998), pp. 1744-1759 
+Funk et al., 2006 
+    D.J. Funk, P. Nosil, W.J. Etges Ecological divergence exhibits consistently positive associations with reproductive isolation across disparate taxa 
+    PNAS, 103 (2006), pp. 3209-3213 
+Garrick et al., 2008 
+    R.C. Garrick, R.J. Dyer, L.B. Beheregaray, P. Sunnucks Babies and bathwater: a comment on the premature obituary for nested clade phylogeographical analysis 
+    Mol. Ecol., 17 (2008), pp. 1401-1403 
+Gavrilets, 2004 
+    S. Gavrilets Fitness Landscapes and the Origin of Species 
+    Princeton University Press, Princeton, NJ (2004) 
+Gonzalez-Rodriguez et al., 2004 
+    A. Gonzalez-Rodriguez, J.F. Bain, J.L. Golden, K. Oyama Chloroplast DNA variation in the Quercus affinis-Q. Laurina complex in Mexico: geographical structure and associations with nuclear and morphological variation 
+    Mol. Ecol., 13 (2004), pp. 3467-3476 
+Gotelli and McCabe, 2002 
+    N.J. Gotelli, D.J. McCabe Species co-occurrence. a meta-analysis of J.M. Diamond’s assembly rules model 
+    Ecology, 83 (2002), pp. 2091-2096 
+Hadly et al., 2004 
+    E.A. Hadly, U. Ramakrishnan, Y.L. Chan, M. van Tuinen, K. O’Keefe, P.A. Spaeth, C.J. Conroy Genetic response to climatic change: insights from ancient DNA and phylochronology 
+    PLoS Biol., 2 (2004), pp. 1600-1609 
+Hamilton et al., 2005 
+    G. Hamilton, M. Currat, N. Ray, G. Heckel, M. Beaumont, L. Excoffier Bayesian estimation of recent migration rates after a spatial expansion 
+    Genetics, 170 (2005), pp. 409-417 
+Hare and Avise, 1998 
+    M.P. Hare, J.C. Avise Population structure in the American Oyster as inferred by nuclear gene genealogies 
+    Mol. Biol. Evol., 15 (1998), pp. 119-128 
+Harlin-Cognato et al., 2007 
+    A. Harlin-Cognato, T. Markowitz, B. Wursig, R. Honeycutt Multi-locus phylogeography of the dusky dolphin ( Lagenorhynchus obscurus ): passive dispersal via the west-wind drift or response to prey species and climate change? 
+    BMC Evol. Biol., 7 (2007), p. 131 
+Heckman et al., 2007 
+    K.L. Heckman, C.L. Hanley, R. Rasoloarison, A.D. Yoder Multiple nuclear loci reveal patterns of incomplete lineage sorting and complex species history within western mouse lemurs ( Microcebus ) 
+    Mol. Phylogen. Evol., 43 (2007), pp. 353-367 
+Hendry and Taylor, 2004 
+    A.P. Hendry, E.B. Taylor How much of the variation in adaptive divergence can be explained by gene flow? An evaluation using lake-stream stickleback pairs 
+    Evolution, 58 (2004), pp. 2319-2331 
+Heusser et al., 1988 
+    C.J. Heusser, J. Rabassa, A. Brandant, R. Stuckenrath Late-Holocene vegetation of the Andean Araucaria region, Province Neuquen, Argentina 
+    Mt. Res. Dev., 8 (1988), pp. 53-63 
+Hewitt, 1996 
+    G.M. Hewitt Some genetic consequences of ice ages, and their role in divergence and speciation 
+    Biol. J. Linn. Soc., 58 (1996), pp. 247-276 
+Hewitt, 1999 
+    G.M. Hewitt Post-glacial re-colonization of European biota 
+    Biol. J. Linn. Soc., 68 (1999), pp. 87-112 
+Hewitt, 2000 
+    G. Hewitt The genetic legacy of the quaternary ice ages 
+    Nature, 405 (2000), pp. 907-913 
+Hewitt, 2001 
+    G.M. Hewitt Speciation, hybrid zones and phylogeography or seeing genes in space and time 
+    Mol. Ecol., 10 (2001), pp. 537-549 
+Hey and Machado, 2003 
+    J. Hey, C.A. Machado The study of structured populations—new hope for a difficult and divided science 
+    Nat. Rev. Genet., 4 (2003), pp. 535-543 
+Hey and Nielsen, 2004 
+    J. Hey, R. Nielsen Multilocus methods for estimating population sizes, migration rates and divergence time, with applications to the divergence of Drosophila pseudoobscura and D. persimilis 
+    Genetics, 167 (2004), pp. 747-760 
+Hey and Nielsen, 2007 
+    J. Hey, R. Nielsen Integration within the Felsenstein equation for improved Markov chain Monte Carlo methods in population genetics 
+    Proc. Natl. Acad. Sci. USA, 104 (2007), pp. 2785-2790 
+Hickerson and Cunningham, 2005 
+    M.J. Hickerson, C.W. Cunningham Contrasting quaternary histories in an ecologically divergent pair of low-dispersing intertidal fish ( Xiphister ) revealed by multi-locus DNA analysis 
+    Evolution, 59 (2005), pp. 344-360 
+Hickerson and Meyer, 2008 
+    Hickerson, M.J., Meyer, C., 2008. Testing comparative phylogeographic models of marine vicariance and dispersal using a hierarchical Bayesian approach. BMC Evol. Biol. doi: 10.1186/1471-2148-8-322 .  
+Hickerson et al., 2006a 
+    M.J. Hickerson, G. Dolman, C. Moritz Comparative phylogeographic summary statistics for testing simultaneous vicariance across taxon-pairs 
+    Mol. Ecol., 15 (2006), pp. 209-224 
+Hickerson et al., 2006b 
+    M.J. Hickerson, C. Meyer, C. Moritz DNA-Barcoding will often fail to discover new animal species over broad parameter space 
+    Syst. Biol., 55 (2006), pp. 729-739 
+Hickerson et al., 2006c 
+    M.J. Hickerson, E. Stahl, H.A. Lessios Test for simultaneous divergence using approximate Bayesian computation 
+    Evolution, 60 (2006), pp. 2435-2453 
+Hofreiter, 2008 
+    M. Hofreiter Long DNA sequences and large data sets: investigating the Quaternary via ancient DNA 
+    Q. Sci. Rev., 27 (2008), pp. 2586-2592 
+Hoskin et al., 2005 
+    C.J. Hoskin, M. Higgie, K.R. McDonald, C. Moritz Reinforcement drives rapid allopatric speciation 
+    Nature, 437 (2005), pp. 1353-1357 
+Howard, 1993 
+    D.J. Howard Reinforcement: origin, dynamics, and fate of an evolutionary hypothesis 
+    R.G. Harrison (Ed.), Hybrid Zones and the Evolutionary Process, Oxford University Press, New York (1993) 
+Hubbell, 2001 
+    S.P. Hubbell The Unified Neutral Theory of Biodiversity and Biogeography 
+    Princeton University Press, Princeton, NJ (2001) 
+Hudson, 1983 
+    R.R. Hudson Properties of a neutral model with intragenic recombination 
+    Theor. Popul. Biol., 23 (1983), pp. 183-201 
+Hudson and Coyne, 2002 
+    R.R. Hudson, J.A. Coyne Mathematical consequences of the genealogical species concept 
+    Evolution, 56 (2002), pp. 1557-1565 
+Hugall et al., 2002 
+    A. Hugall, C. Moritz, A. Moussalli, J. Stanisic Reconciling paleodistribution models and comparative phylogeography in the Wet Tropics rainforest land snail Gnarosophia bellendenkerensis (Brazier 1875) 
+    Proc. Natl. Acad. Sci. USA, 99 (2002), pp. 6112-6117 
+Hurt et al., 2009 
+    C. Hurt, A. Anker, N. Knowlton A multilocus test of simultaneous divergence across the Isthmus of Panama using snapping shrimp in the genus Alpheus 
+    Evolution, 63 (2009), pp. 514-530 
+Ingvarsson, 2008 
+    P.K. Ingvarsson Multilocus patterns of nucleotide polymorphism and the demographic history of Populus tremula 
+    Genetics, 180 (2008), pp. 329-340 
+Irwin, 2002 
+    D.E. Irwin Phylogeographic breaks without geographic barriers 
+    Evolution, 56 (2002), pp. 2383-2394 
+Jabot and Chave, 2009 
+    F. Jabot, J. Chave Inferring the parameters of the neutral theory of biodiversity using phylogenetic information and implications for tropical forests 
+    Ecol. Lett., 12 (2009), pp. 239-248 
+Jacobs et al., 2004 
+    D.K. Jacobs, T.A. Haney, K.D. Louie Genes, diversity, and geologic processes on the Pacific coast 
+    Annu. Rev. Earth Planet. Sci., 32 (2004), pp. 601-652 
+Jiggins et al., 2004 
+    C.D. Jiggins, C. Estrada, A. Rodrigues Mimicry and the evolution of premating isolation in Heliconius melpomene (Linnaeus) 
+    J. Evol. Biol., 17 (2004), pp. 680-691 
+Jobin and Mountain, 2008 
+    M.J. Jobin, J.L. Mountain REJECTOR: software for population history inference from genetic data via a rejection algorithm 
+    Bioinformatics, 24 (2008), pp. 2936-2937 
+Joost et al., 2007 
+    S.A.B. Joost, M.W. Bruford, L. Després, C. Conord, G. Erhardt, P. Taberlet A spatial analysis method (SAM) to detect candidate loci for selection: towards a landscape genomics approach to adaptation 
+    Mol. Ecol., 16 (2007), pp. 3955-3969 
+Joost et al., 2008 
+    S. Joost, M. Kalbermaten, A. Bonin Spatial analysis method (SAM): a software tool combining molecular and environmental data to identify candidate loci for selection 
+    Mol. Ecol. Resour., 8 (2008), p. 957 
+Jordan, 1905 
+    D.S. Jordan The origin of species through isolation 
+    Science, 22 (1905), pp. 545-562 
+Kass and Raftery, 1995 
+    R.E. Kass, A. Raftery Bayesian factors 
+    J. Am. Stat. Assoc., 90 (1995), pp. 773-795 
+Kidd and Ritchie, 2006 
+    D.M. Kidd, M.G. Ritchie Phylogeographic information systems: putting the geography into phylogeography 
+    J. Biogeogr., 33 (2006), pp. 1851-1865 
+Kingman, 1982a 
+    J.F.C. Kingman On the genealogy of large populations 
+    J. Appl. Probab., 19a (1982), pp. 27-43 
+Kingman, 1982b 
+    J.F.C. Kingman The coalescent 
+    Stoch. Process. Appl., 13 (1982), pp. 235-248 
+Knowles, 2001 
+    L.L. Knowles Did the Pleistocene glaciations promote divergence? Tests of explicit refugial models in montane grasshopprers 
+    Mol. Ecol., 10 (2001), pp. 691-702 
+Knowles, 2008 
+    L.L. Knowles Why does a method that fails continue to be used? 
+    Evolution, 62 (2008), pp. 2713-2717 
+Knowles and Carstens, 2007 
+    L.L. Knowles, B.C. Carstens Delimiting species without monophyletic gene trees 
+    Syst. Biol., 56 (2007), pp. 887-895 
+Knowles and Maddison, 2002 
+    L.L. Knowles, W.P. Maddison Statistical phylogeography 
+    Mol. Ecol., 11 (2002), pp. 2623-2635 
+Kozak and Wiens, 2007 
+    K.H. Kozak, J.J. Wiens Climatic zonation drives latitudinal variation in speciation mechanisms 
+    Proc. Biol. Sci., 274 (2007), pp. 2995-3003 
+Kozak et al., 2008 
+    K.H. Kozak, C.H. Graham, J.J. Wiens Integrating GIS-based environmental data into evolutionary biology 
+    Trends Ecol. Evol., 23 (2008), pp. 141-148 
+Kubatko et al., 2009 
+    Kubatko, L., Carstens, B.C., Knowles, L.L., 2009. Species tree estimation using maximum likelihood for gene trees under coalescence. Bioinformatics. doi: 10.1093/bioinformatics/btp079 .  
+Kuhner, 2006 
+    M.K. Kuhner LAMARC 2.0: maximum likelihood and Bayesian estimation of population parameters 
+    Bioinformatics, 22 (2006), pp. 768-770 
+Kuhner, 2008 
+    M.K. Kuhner Coalescent genealogy samplers: windows into population history 
+    Trends Ecol. Evol., 24 (2008), pp. 86-93 
+Kuhner et al., 1998 
+    M.K. Kuhner, J. Yamato, J. Felsenstein Maximum likelihood estimation of population growth rates based on the coalescent 
+    Genetics, 149 (1998), pp. 429-434 
+Lamoreux et al., 2006 
+    J.F. Lamoreux, J.C. Morrison, T.H. Ricketts, D.M. Olson, E. Dinerstein, M.W. McKnight, H.H. Shugart Global tests of biodiversity concordance and the importance of endemism 
+    Nature, 440 (2006), pp. 212-214 
+Langerhans et al., 2007 
+    R.B. Langerhans, M.E. Gifford, E.O. Joseph, D. Funk Ecological speciation in gambusia fishes 
+    Evolution, 61 (2007), pp. 2056-2074 
+Lapointe and Rissler, 2005 
+    F.-J. Lapointe, L.J. Rissler Congruence, concensus, and the comparative phylogeography of codistributed species in California 
+    Am. Nat., 166 (2005), pp. 290-299 
+Leaché et al., 2007 
+    A. Leaché, S.A. Crews, M.J. Hickerson Did an ancient seaway across Baja California cause community isolation? 
+    Biol. Lett., 3 (2007), pp. 646-650 
+Leavitt et al., 2007 
+    D.H. Leavitt, R.L. Bezy, K.A. Crandal, J.W. Sites Jr. Multi-locus DNA sequence data reveal a history of deep cryptic vicariance and habitat-driven convergence in the desert night lizard Xantusia vigilis species complex (Squamata: Xantusiidae) 
+    Mol. Ecol., 16 (2007), pp. 4455-4481 
+Lee and Edwards, 2008 
+    J.Y. Lee, S.V. Edwards Divergence across Australia’s carpentarian barrier: statistical phylogeography of the red-backed fairy wren ( Malurus melanocephalus ) 
+    Evolution, 62 (2008), pp. 3117-3134 
+Lemmon and Moriarty Lemmon, 2008 
+    A.R. Lemmon, E. Moriarty Lemmon A likelihood framework for estimating phylogeographic history using geographically continuous genetic data 
+    Syst. Biol., 57 (2008), pp. 544-561 
+Losos, 2008 
+    J.B. Losos Phylogenetic niche conservatism, phylogenetic signal and the relationship between phylogenetic relatedness and ecological similarity among species 
+    Ecol. Lett., 11 (2008), pp. 995-1003 
+Lozier et al., 2009 
+    Lozier, J.D., Aniello, P., Hickerson, M.J., 2009. Predicting the distribution of Sasquatch in western North America: anything goes with ecological niche modeling. J. Biogeogr. doi: 10.1111/j.1365-2699.2009.02152.x .  
+Luikart et al., 2003 
+    G. Luikart, P.R. England, D. Tallman, S. Jordan, P. Taberlet The power and promise of population genomics: from genotyping to genome typing 
+    Nat. Rev. Genet., 4 (2003), pp. 981-994 
+MacCallum and Hill, 2006 
+    C. MacCallum, E. Hill Being positive about selection 
+    PLoS Biol., 4 (2006), pp. 293-295 
+Maddison, 1997 
+    W.P. Maddison Gene trees in species trees 
+    Syst. Biol., 46 (1997), pp. 523-536 
+Maggs et al., 2008 
+    C.A. Maggs, R. Castilho, D. Foltz, C. Henzler, M.T. Jolly, J. Kelly, J. Olsen, K.E. Perez, W. Stam, R. Väinölä, F. Viard, J. Wares Evaluating signatures of glacial refugia for North Atlantic benthic marine taxa 
+    Ecology, 89 (2008), pp. S108-S122 
+Marchelli et al., 1998 
+    P. Marchelli, L. Gallo, F. Scholz, B. Ziegenhagen Chloroplast DNA markers reveal a geographical divide across Argentinean southern beech Nothofagus nervosa (Phil.) Dim. et Mil. distribution area 
+    Theor. Appl. Genet., 97 (1998), pp. 642-646 
+Mardulyn and Milinkovitch, 2005 
+    P. Mardulyn, M.C. Milinkovitch Inferring contemporary levels of gene flow and demographic history in a local population of the leaf beetle Gonioctena olivacea from mitochondrial DNA sequence variation 
+    Mol. Ecol., 14 (2005), pp. 1641-1653 
+Markgraf et al., 1995 
+    V. Markgraf, M. McGlone, G. Hope Neogene paleoenvironmental and paleoclimatic change in southern temperate ecosystems: a southern perspective 
+    Trends Ecol. Evol., 10 (1995), pp. 143-147 
+Mayewski et al., 2004 
+    P.A. Mayewski, E.E. Rohling, J.C. Stager, W. KarlÈn, K.A. Maasch, D.M. L, E.A. Meyerson, F. Gasse, S. van Kreveld, K. Holmgren, J. Lee-Thorp, G. Rosqvist, F. Rack, M. Staubwasser, R.R. Schneider, E.J. Steig Holocene climate variability 
+    Quat. Res., 62 (2004), pp. 243-255 
+Mayr, 1963 
+    E. Mayr Animal Species and Evolution 
+    Harvard University Press, Cambridge, MA (1963) 
+McKay and Latta, 2002 
+    J.K. McKay, R.G. Latta Adaptive population divergence. markers, QTL and traits 
+    Trends Ecol. Evol., 17 (2002), pp. 285-291 
+McKay et al., 2005 
+    J.K. McKay, C.E. Christian, S. Harrison, K.J. Rice How local is local?—A review of practical and conceptual issues in the genetics of restoration 
+    Restor. Ecol., 13 (2005), pp. 432-440 
+McLachlan et al., 2005 
+    J.S. McLachlan, J.S. Clark, P.S. Manos Molecular indicators of tree migration capacity under rapid climate change 
+    Ecology, 86 (2005), pp. 2088-2098 
+McPeek, 2008 
+    M.A. McPeek The ecological dynamics of clade diversification and community assembly 
+    Am. Nat., 172 (2008), pp. E270-E284 
+Mendelson and Shaw, 2005 
+    T.C. Mendelson, K.L. Shaw Rapid speciation in an arthropod: the likely force behind an explosion of new Hawaiian cricket species revealed 
+    Nature, 433 (2005), pp. 375-376 
+Meyer and Paulay, 2005 
+    C.P. Meyer, G. Paulay DNA barcoding: error rates based on comprehensive sampling 
+    PLoS Biol., 3 (2005), p. e422 
+Milot et al., 2000 
+    M. Milot, H.L. Gibbs, K.A. Hobson Phylogeography and genetic structure of northern populations of the yellow warbler ( Dendroica petechia ) 
+    Mol. Ecol., 9 (2000), pp. 667-681 
+Morando et al., 2003 
+    M. Morando, L. Avila, J.W. Sites Jr. Sampling strategies for delimiting species: genes, individuals, and populations in the Liolaemus elongatus-kriegi complex (Squamata: Liolaemidae) in Andean-Patagonian South America 
+    Syst. Biol., 52 (2003), pp. 159-185 
+Moritz, 2002 
+    C. Moritz Strategies to protect biological diversity and the evolutionary processes that sustain it 
+    Syst. Biol., 51 (2002), pp. 238-254 
+Moritz and Faith, 1998 
+    C. Moritz, D. Faith Comparative phylogeography and the identification of genetically divergent areas for conservation 
+    Mol. Ecol., 7 (1998), pp. 419-429 
+Moritz et al., 2000 
+    C. Moritz, J.L. Patton, C.J. Schneider, T.B. Smith Diversification of rainforest faunas: an integrated molecular approach 
+    Annu. Rev. Ecol. Syst., 31 (2000), pp. 533-563 
+Moya et al., 2007 
+    O. Moya, H.-G. Contreras-Díaz, P. Oromí, W. Juan Phylogeography of a ground beetle species in La Gomera (Canary Islands): the effects of landscape topology and population history 
+    Heredity, 99 (2007), pp. 322-330 
+Nakazato et al., 2008 
+    T. Nakazato, M. Bogonovich, L.C. Moyle Environmental factors predict adaptive phenotypic differentiation within and between two wild Andean tomatoes 
+    Evolution, 62 (2008), pp. 774-792 
+Nei and Li, 1979 
+    M. Nei, W. Li Mathematical model for studying variation in terms of restriction endonucleases 
+    Proc. Natl. Acad. Sci. USA, 76 (1979), pp. 5269-5273 
+Nettel and Dodd, 2007 
+    A. Nettel, R.S. Dodd Drifting propagules and receding swamps: genetic footprints of mangrove recolonization and dispersal along tropical coasts 
+    Evolution, 61 (2007), pp. 958-971 
+Nielsen and Beaumont, 2009 
+    R. Nielsen, M.A. Beaumont Statistical inferences in phylogeography 
+    Mol. Ecol., 18 (2009), pp. 1034-1047 
+Nosil, 2007 
+    P. Nosil Divergent host–plant adaptation and reproductive isolation between ecotypes of Timema cristinae walking-sticks 
+    Am. Nat., 169 (2007), pp. 151-162 
+Nosil et al., 2009 
+    P. Nosil, L.J. Harmon, O. Seehausen Ecological explanations for (incomplete) speciation 
+    Trends Ecol. Evol., 24 (2009), pp. 145-156 
+Oliver, 2008 
+    J.C. Oliver AUGIST: inferring species trees while accommodating gene tree uncertainty 
+    Bioinformatics, 24 (2008), pp. 2932-2933 
+Olsen et al., 2004 
+    J.L. Olsen, W.T. Stam, J.A. Coyer, T.B.H. Reusch, M. Billingham, C. Bostrom, E. Calvert, H. Christie, S. Granger, R. La Lumiere, N. Milchakova, M.P. Oudot-Le Secq, G. Procaccini, B. Sanjabi, E. Serrao, J. Veldsink, S. Widdicombe, S. Wyllie-Echeverria North Atlantic phylogeography and large-scale population differentiation of the seagrass Zostera marina L 
+    Mol. Ecol., 13 (2004), pp. 1923-1941 
+Orme et al., 2005 
+    C.D.L. Orme, R.G. Davies, M. Burgess, F. Eigenbrod, N. Pickup, V.A. Olson, A.J. Webster, T. Ding, P.C. Rasmussen, R.S. Ridgely, A.J. Stattersfield, P.M. Bennett, T.M. Blackburn, K.J. Gaston, I.P.F. Owens Global hotspots of species richness are not congruent with endemism or threat 
+    Nature, 436 (2005), pp. 1016-1019 
+Orr et al., 2004 
+    H.A. Orr, J.P. Masly, D.C. Presgraves Speciation genes 
+    Curr. Opin. Genet. Dev., 14 (2004), pp. 675-679 
+Palopoli and Wu, 1994 
+    M. Palopoli, C.-I. Wu Genetics of hybrid male sterility between Drosophila sibling species: a complex web of epistasis is revealed in interspecific studies 
+    Genetics, 138 (1994), pp. 329-341 
+Panchal and Beaumont, 2007 
+    M. Panchal, B.A. Beaumont The automation and evaluation of nested clade phylogeographic analysis 
+    Evolution, 61 (2007), pp. 1466-1480 
+Pastorino and Gallo, 2002 
+    M.J. Pastorino, L.A. Gallo Quaternary evolutionary history of Austrocedrus chilensis , a cypress native to the Andean–Patagonian forest 
+    J. Biogeogr., 29 (2002), pp. 1167-1178 
+Pavoine and Bailly, 2007 
+    Pavoine, S., Bailly, X., 2007. New analysis for consistency among markers in the study of genetic diversity: development and application to the description of bacterial diversity. BMC Evol. Biol. 7. doi: 10.1186/1471-2148-1187-1156 .  
+Peters et al., 2008 
+    J.L. Peters, Y.N. Zhuravlev, I. Fefelov, E.M. Humphries, K.E. Omland Multilocus phylogeography of a Holarctic duck: colonization of North America from Eurasia by gadwall ( anas strepera ) 
+    Evolution, 62 (2008), pp. 1469-1483 
+Peterson and Nyári, 2007 
+    A.T. Peterson, S. Nyári Ecological niche conservatism and Pleistocene refugia in the thrush-like mourner 
+    Evolution, 62 (2007), pp. 173-183 
+Peterson et al., 2002 
+    A.T. Peterson, J. Soberon, V. Sanchez-Cordero Distributional prediction based on ecological niche modeling of primary occurrence data 
+    J.M. Scott, P.J. Heglund, M. Morrison, J.B. Haufler, M.G. Raphael, W.A. Wall, F.B. Samson (Eds.), Predicting Species Occurrences: Issues of Scale and Accuracy, Island Press, Washington, DC (2002), pp. 617-623 
+Petit and Grivet, 2002 
+    R.J. Petit, D. Grivet Optimal randomization strategies when testing the existence of a phylogeographic structure 
+    Genetics, 161 (2002), pp. 469-471 
+Pons et al., 2006 
+    J. Pons, T.G. Barraclough, J. Gomez-Zurita, A. Cardoso, D.P. Duran, S. Hazell, S. Kamoun, W.D. Sumlin, A.P. Vogler Sequence-based species delimitation for the DNA taxonomy of undescribed insects 
+    Syst. Biol., 55 (2006), pp. 595-609 
+Premoli, 1997 
+    A.C. Premoli Genetic variation in a geographically restricted and two widespread species of South American Nothofagus 
+    J. Biogeogr., 24 (1997), pp. 883-892 
+Premoli et al., 2000 
+    A. Premoli, T. Kitzberger, T.T. Veblem Isozyme variation and recent biogeographical history of the long-lived conifer Fitzroya cupressoides 
+    J. Biogeogr., 27 (2000), pp. 251-260 
+Pritchard et al., 1999 
+    J.K. Pritchard, M.T. Seielstad, A. Perez-Lenzacen, M.W. Feldman Population growth of human Y chromosomes: a study of Y chromosome microsatellites 
+    Mol. Biol. Evol., 16 (1999), pp. 1791-1798 
+Raxworthy et al., 2007 
+    C.J. Raxworthy, C. Ingram, N. Rabibisoa, R. Pearson Applications of ecological niche modeling for species delimitation: a review and empirical evaluation using day geckos ( phelsuma ) from Madagascar 
+    Syst. Biol., 56 (2007), pp. 907-923 
+Richards et al., 2007 
+    C.L. Richards, B.C. Carstens, L.L. Knowles Distribution modeling and statistical phylogeography: an integrative framework for generating and testing alternative biogeographic hypotheses 
+    J. Biogeogr., 34 (2007), pp. 1833-1845 
+Riddle et al., 2000 
+    B.R. Riddle, D.J. Hafner, L.F. Alexander, J.R. Jaeger Cryptic vicariance in the historical assembly of a Baja California Peninsular Desert biota 
+    Proc. Natl. Acad. Sci. USA, 97 (2000), pp. 14438-14443 
+Riginos, 2005 
+    C. Riginos Cryptic vicariance in Gulf of California fishes parallels vicariant patterns found in Baja, California mammals and reptiles 
+    Evolution, 59 (2005), pp. 2678-2690 
+Rissler and Apodaca, 2007 
+    L.J. Rissler, J.J. Apodaca Adding more ecology into species delimitation: ecological niche models and phylogeography help define cryptic species in the black salamander ( Aneides flavipunctatus ) 
+    Syst. Biol., 56 (2007), pp. 924-942 
+Rogers and Bernatchez, 2007 
+    S.M. Rogers, L. Bernatchez The genetic architecture of ecological speciation and the association with signatures of selection in natural lake whitefish ( Coregonus sp. salmonidae ) species pairs 
+    Mol. Biol. Evol., 24 (2007), pp. 1423-1438 
+Rosen, 1978 
+    D.E. Rosen Vicariant patterns and historical explanation in biogeography 
+    Syst. Zool., 27 (1978), pp. 159-188 
+Rosenberg, 2003 
+    N.A. Rosenberg The shapes of neutral gene genealogies in two species: probabilities of monophyly, paraphyly, and polyphyly in a coalescent model 
+    Evolution, 57 (2003), pp. 1465-1477 
+Rosenberg, 2007 
+    N.A. Rosenberg Statistical tests for taxonomic distinctiveness from observations of monophyly 
+    Evolution, 61 (2007), pp. 317-323 
+Rosenblum et al., 2007 
+    E. Rosenblum, M.J. Hickerson, C. Moritz A multilocus perspective on colonization accompanied by selection and gene flow 
+    Evolution, 61 (2007), pp. 2971-2985 
+Ruegg and Hijmans, 2006 
+    K.C. Ruegg, R.J. Hijmans Climate change and the origin of migratory pathways in the Swainson’s thrush, Catharus ustulatus 
+    J. Biogeogr., 33 (2006), pp. 1172-1182 
+Rundle and Nosil, 2005 
+    H.D. Rundle, P. Nosil Ecological speciation 
+    Ecol. Lett., 8 (2005), pp. 336-352 
+Salem et al., 2005 
+    R.M. Salem, J. Wessel, N.J. Schork A comprehensive literature review of haplotyping software and methods for use with unrelated individuals 
+    Human Genomics., 2 (2005), pp. 39-66 
+Schluter, 2000 
+    D. Schluter The Ecology of Adaptive Radiation 
+    Oxford University Press, Oxford (2000) 
+Schneider et al., 1998 
+    C.J. Schneider, M. Cunningham, C. Moritz Comparative phylogeography and the history of endemic vertebrates in the Wet Tropics rainforests of Australia 
+    Mol. Ecol., 7 (1998), pp. 487-498 
+Scluter, 2009 
+    D. Scluter Evidence for ecological speciation and its alternative 
+    Science, 323 (2009), pp. 737-741 
+Seehausen et al., 2008 
+    O. Seehausen, Y. Terai, I.S. Magalhaes, K.L. Carleton, H.D.J. Mrosso, R. Miyagi, I. van der Sluijs, M.V. Schneider, M.E. Maan, H. Tachida, H. Imai, N. Okada Speciation through sensory drive in cichlid fish 
+    Nature, 455 (2008), pp. 620-626 
+Sites and Marshall, 2004 
+    W. Sites, J.C. Marshall Delimiting species: a renaissance issue in systematic biology 
+    Trends Ecol. Evol., 18 (2004), pp. 462-470 
+Slatkin and Maddison, 1989 
+    M. Slatkin, W.P. Maddison A cladistic measure of gene flow inferred from the phylogenies of alleles 
+    Genetics, 123 (1989), pp. 603-613 
+Soltis et al., 2006 
+    D.E. Soltis, A. Morris, J.S. McLachlan, P.S. Manos, P.S. Soltis Comparative phylogeography of unglaciated eastern North America 
+    Mol. Ecol., 15 (2006), pp. 4261-4293 
+Sousa et al., 2009 
+    V.C. Sousa, M. Fritz, M.A. Beaumont, L. Chikhi Approximate Bayesian computation without summary statistics: the case of admixture 
+    Genetics, 181 (2009), pp. 1507-1519 
+Spathelf and Waite, 2007 
+    M. Spathelf, T.A. Waite Will hotspots conserve extra primate and carnivore evolutionary history? 
+    Divers. Distrib., 13 (2007), pp. 746-751 
+Spellman and Klicka, 2006 
+    G.M. Spellman, J. Klicka Testing hypotheses of Pleistocene population history using coalescent simulations: phylogeography of the pygmy nuthatch ( Sitta pygmaea ) 
+    Proc. R. Soc. B, 22 (2006), pp. 3057-3063 
+Steele and Storfer, 2006 
+    C.A. Steele, A. Storfer Coalescent-based hypothesis testing supports multiple Pleistocene refugia in the Pacific Northwest for the Pacific giant salamander ( Dicamptodon tenebrosus ) 
+    Mol. Ecol., 15 (2006), pp. 2477-2487 
+Stinchcombe and Hoekstra, 2008 
+    J.R. Stinchcombe, H.E. Hoekstra Combining population genomics and quantitative genetics: finding the genes underlying ecologically important traits 
+    Heredity, 100 (2008), pp. 158-170 
+Stockwell and Peterson, 2002 
+    D.R.B. Stockwell, A.T. Peterson Effects of sample size on accuracy of species distribution models 
+    Ecol. Model., 148 (2002), pp. 1-13 
+Stone et al., 2009 
+    G.N. Stone, A. Hernandez-Lopez, J.A. Nicholls, E. di Pierro, J. Pujade-Villar, G. Melika, J.M. Cook Extreme host plant conservatism during at least 20 million years of host plant pursuit by oak gallwasps 
+    Evolution, 63 (2009), pp. 854-869 
+Swenson and Howard, 2005 
+    N.G. Swenson, D.J. Howard Clustering of contact zones, hybrid zones, and phylogeographic breaks in North America 
+    Am. Nat., 166 (2005), pp. 581-591 
+Taberlet and Cheddadi, 2002 
+    P. Taberlet, R. Cheddadi Quaternary refugia and persistence of biodiversity 
+    Science, 297 (2002), pp. 2009-2010 
+Tajima, 1983 
+    F. Tajima Evolutionary relationship of DNA sequences in finite populations 
+    Genetics, 105 (1983), pp. 437-460 
+Tajima, 1989 
+    F. Tajima Statistical method for testing the neutral mutation hypothesis by DNA polymorphism 
+    Genetics, 123 (1989), pp. 585-595 
+Templeton, 1998 
+    A.R. Templeton Nested clade analyses of phylogeographic data: testing hypotheses about gene flow and population history 
+    Mol. Ecol., 7 (1998), pp. 381-397 
+Templeton, 2001 
+    A.R. Templeton Using phylogeographic analyses of gene trees to test species status and processes 
+    Mol. Ecol., 10 (2001), pp. 779-791 
+Templeton, 2004 
+    A.R. Templeton Statistical phylogeography: methods of evaluating and minimizing inference errors 
+    Mol. Ecol., 13 (2004), pp. 789-810 
+Templeton, 2009a 
+    A.R. Templeton Statistical hypothesis testing in intraspecific phylogeography: nested clade phylogeographical analysis vs. approximate Bayesian computation 
+    Mol. Eovl., 18 (2009), pp. 319-331 
+Templeton, 2009b 
+    A.R. Templeton Why does a method that fails continue to be used? The answer 
+    Evolution, 63 (2009), pp. 807-812 
+Thalmann et al., 2007 
+    O. Thalmann, A. Fischer, F. Lankester, S. Pääbo, L. Vigilant The complex evolutionary history of gorillas: insights from genomic data 
+    Mol. Biol. Evol., 24 (2007), pp. 146-158 
+Tilman, 2004 
+    D. Tilman Niche tradeoffs, neutrality, and community structure: a stochastic theory of resource competition, invasion, and community assembly 
+    Proc. Natl. Acad. Sci. USA, 101 (2004), pp. 10854-10861 
+Topp and Winker, 2008 
+    C.M. Topp, K. Winker Genetic patterns of differentiation among five landbird species on the Queen Charlotte Islands, British Columbia 
+    Auk, 125 (2008), pp. 461-472 
+Townsend et al., 2008 
+    T.M. Townsend, R.E. Alegre, S.T. Kelley, J.J. Wiens, T.W. Reeder Rapid development of multiple nuclear loci for phylogenetic analysis using genomic resources: an example from squamate reptiles 
+    Mol. Phylogen. Evol., 47 (2008), pp. 129-142 
+Tribsch and Schonswetter, 2003 
+    A. Tribsch, P. Schonswetter Patterns of endemism and comparative phylogeography confirm paleoenvironmental evidence for Pleistocene refugia in the Eastern Alps 
+    Taxon, 477 (2003), p. 497 
+Vamosi et al., 2009 
+    S.M. Vamosi, S.B. Heard, J.C. Vamosi, C.O. Webb Emerging patterns in the comparative analysis of phylogenetic community structure 
+    Mol. Ecol., 18 (2009), pp. 572-592 
+Vera et al., 2008 
+    Vera, C., Wheat, C.W., Fescemyer, H.W., Frilander, M.J., Crawford, D.L., Hanski, I., Marden, J.H., 2008. Rapid transcriptome characterization for a non-model organism using massively parallel 454 pyrosequencing. Mol. Ecol. 2371.  
+Verdu et al., 2009 
+    P. Verdu, F. Austerlitz, A. Estoup, R. Vitalis, M. Georges, S. ThÈry, A. Froment, S. Le Bomin, A. Gessain, J. Hombert, L. Van der Veen, L. Quintana-Murci, S. Bahuchet, E. Heyer Origins and genetic diversity of pygmy hunter-gatherers from western central Africa 
+    Curr. Biol., 19 (2009), pp. 312-318 
+Victoriano et al., 2008 
+    P.F. Victoriano, J.C. Ortiz, E. Benavides, B.J. Adams, J.W. Sites Jr. Comparative phylogeography of codistributed species of Chilean Liolaemus (Squamata: Tropiduridae) from the central-southern Andean range 
+    Mol. Ecol., 17 (2008), pp. 2397-2416 
+Vila et al., 2005 
+    M. Vila, J.R. Vidal-Romaní, M. Björklund The importance of time scale and multiple refugia: incipient speciation and admixture of lineages in the butterfly Erebia triaria (Nymphalidae) 
+    Mol. Phylogen. Evol., 36 (2005), pp. 249-260 
+Voje et al., 2009 
+    K.L. Voje, C. Hemp, Y. Flagstad, G.-P. Saetre, N.C. Stenseth Climatic change as an engine for speciation in flightless Orthoptera species inhabiting African mountains 
+    Mol. Ecol., 18 (2009), pp. 93-108 
+Wakeley, 2004 
+    J. Wakeley Recent trends in population genetics: More data! More math! Simple models? 
+    J. Hered., 95 (2004), pp. 397-405 
+Wakeley, 2008 
+    J. Wakeley Coalescent Theory 
+    Roberts and Company Publishers, Greenwood Village, CO (2008) 
+Waltari et al., 2007 
+    Waltari, E., Hijmans, R.J., Peterson, A.T., Nyári, A.S., Perkins, S.L., Guralnick, R.P., 2007. Locating pleistocene refugia: comparing phylogeographic and ecological niche model predictions. PLoS One 2, e563. doi: 10.1371/journal.pone.0000563.  
+Wares and Cunningham, 2001 
+    J.P. Wares, C.W. Cunningham Phylogeography and historical ecology of the North Atlantic intertidal 
+    Evolution, 55 (2001), pp. 2455-2469 
+Warren et al., 2008 
+    D.L. Warren, R.E. Glor, M. Turelli Environmental niche equivalency versus conservatism: quantitative approaches to niche evolution 
+    Evolution, 62 (2008), pp. 2868-2883 
+Webb et al., 2002 
+    C.O. Webb, D.D. Ackerly, M.A. McPeek, M.J. Donoghue Phylogenies and community ecology 
+    Annu. Rev. Ecol. Syst., 33 (2002), pp. 475-505 
+Weiss and Nuno, 2006 
+    S. Weiss, F. Nuno Phylogeography of Southern European Refugia 
+    Springer, Dordrecht, The Netherlands (2006) 
+Wilkinson, 2001 
+    D. Wilkinson Is local provenance important in habitat creation? 
+    J. Appl. Ecol., 38 (2001), pp. 1371-1373 
+Williams et al., 2007 
+    J.W. Williams, S.T. Jackson, J.E. Kutzbach Projected distributions of novel and disappearing climates by 2100 AD 
+    Proc. Natl. Acad. Sci. USA, 104 (2007), pp. 5738-5742 
+Wilson, 2006 
+    A.B. Wilson Genetic signature of recent glaciation on populations of a near-shore marine fish species ( Syngnathus leptorhynchus ) 
+    Mol. Ecol., 15 (2006), pp. 1857-1871 
+Wood et al., 2008 
+    H.M. Wood, J.W. Graham, S. Humphrey, J. Rogers, R.K. Butlin Sequence differentiation in regions identified by a genome scan for local adaptation 
+    Mol. Ecol., 17 (2008), pp. 3123-3135 
+Wright, 1943 
+    S. Wright Isolation by distance 
+    Genetics, 28 (1943), pp. 114-138 
+Wright, 1969 
+    S. Wright Evolution and the genetics of populations, vol. 2 
+    The Theory of Gene Frequencies, University of Chicago Press, Chicago (1969) 
+Wright and Stanton, 2007 
+    J. Wright, M. Stanton Collinsia sparsiflora in serpentine and nonserpentine habitats: using F2 hybrids to detect the potential role of selection in ecotypic differentiation 
+    New Phytol., 173 (2007), pp. 354-366 
+Wu and Davis, 1993 
+    C.-I. Wu, A.W. Davis Evolution of postmating reproductive isolation: the composite nature of Haldane’s rule and its genetic bases 
+    Am. Nat., 142 (1993), pp. 187-212 
+Yoder et al., 2005 
+    A.D. Yoder, L.E. Olson, C. Hanley, K.L. Heckman, R. Rasoloarison, A.L. Russell, J. Ranivo A multidimensional approach for detecting species patterns in Malagasy vertebrates 
+    Proc. Natl. Acad. Sci. USA, 102 (2005), pp. 6581-6586 
+ 
+Glossary 
+ 
+Approximate Bayesian computation 
+    This provides approximations of posterior probability estimates of model parameters and/or models based on the closest between summary statistics of the observed data and data simulated across the prior distribution of model parameter space. 
+Coalescent theory 
+    Probabilistic model underlying gene genealogies within a population or populations. Coalescent theory provides the statistical framework to build virtually any arbitrary complex historical demographic model with parameters such as migration rates, population sizes, divergence times, recombination and selection. 
+Community assembly 
+    The dynamics and processes underlying community composition via invasion, colonization, dispersal, speciation, and extinction. 
+Ecological niche models 
+    Alternatively referred to as bioclimactic modeling or species range distributional modeling, ecological niche models (ENMs) predict the occurrence of species on a landscape from geo-referenced site locality data and sets of spatially-explicit environmental data layers that are assumed to correlate with the species’ range (Peterson et al., 2002). 
+Gene genealogy 
+    Inheritance relationship between sampled homologous gene copies that can be depicted as a branching tree that arises within a population or set of populations of individuals. Instead of using estimates of gene genealogies to directly infer a species phylogeny or species demographic history, coalescent model-based methods use gene genealogies as a transition variable for testing models and making model parameter estimates from data (Hey and Machado, 2003). 
+Hierarchical Bayesian model 
+    A model in which a set of parameters are drawn from a prior distribution that is itself conditional on and drawn from a hyper-prior distribution. 
+Model/hypothesis testing 
+    Decision theoretical approach to evaluate the fit of the data to a model. In Bayesian statistics the fit of the data to a model is evaluated relative to other models. In frequentist statistics, a decision is made about the null hypothesis; that is, if the null hypothesis is true, what is the probability of observing data that is more extreme than the observed data. 
+Parameter estimation 
+    A method for approximating unknowable quantities (i.e., parameters) with data under a probabilistic model. In Bayesian statistics, the probabilistic model describes the prior distribution of the parameters. Bayesian posterior distribution estimates include the most likely values of parameters as well as the level of statistical uncertainty under the model. In population genetics and phylogeography, unobserved parameters often include effective population size, mutation rates, migration, recombination and magnitude of population size change. 
+Phylogeographic model 
+    A probabilistic model that explicitly describes how demographic parameters affect DNA polymorphism data. Models are approximations of actual demographic history, but one must explicitly specify the connection between demography and genetic data through a model or set of models, in order to estimate parameters or statistically test alternative models differing in their parameters (i.e., hypothesis testing). Although any model will never be absolutely “true”, useful models contain the essential features of the demographic histories that are of interest. 
+Summary statistic 
+    A mathematical function that condenses the observed data into a numerical metric. In population genetics and phylogeography, summary statistics quantify patterns in DNA polymorphism within and between populations and are most useful if they convey information about and correlate with unobserved parameters such as effective population size, mutation rates, migration rates, recombination rates and magnitude of population size change. 
+ 
+Copyright © 2009 Elsevier Inc. All rights reserved. 
+Recommended articles 
+ 
+    Integrating phylogenetics, phylogeography and population genetics through genomes and evolutionary theory 
+    Molecular Phylogenetics and Evolution, Volume 69, Issue 3, 2013, pp. 1172-1185 
+    Download PDF View details 
+    Post-molecular systematics and the future of phylogenetics 
+    Trends in Ecology & Evolution, Volume 30, Issue 7, 2015, pp. 384-389 
+    Download PDF View details 
+    The Near East as a cradle of biodiversity: A phylogeography of banded newts (genus Ommatotriton ) reveals extensive inter- and intraspecific genetic differentiation 
+    Molecular Phylogenetics and Evolution, Volume 114, 2017, pp. 73-81 
+    Download PDF View details 
+ 
+1 2 Next 
+Citing articles (297) 
+ 
+    Synchronous diversification of parachuting frogs (Genus Rhacophorus) on Sumatra and Java 
+    2018, Molecular Phylogenetics and Evolution 
+    Download PDF View details 
+    Resolving taxonomic turbulence and uncovering cryptic diversity in the musk turtles (Sternotherus) using robust demographic modeling 
+    2018, Molecular Phylogenetics and Evolution 
+    Download PDF View details 
+    Allopatric divergence, demographic history, and conservation implications of an endangered conifer Cupressus chengiana in the eastern Qinghai-Tibet Plateau 
+    2017, Tree Genetics and Genomes 
+    Download PDF View details 
+ 
+View more articles 
+Article Metrics 
+View article metrics 
+Elsevier 
+ 
+About ScienceDirect Remote access Shopping cart Contact and support Terms and conditions Privacy policy 
+ 
+Cookies are used by this site. For more information, visit the cookies page . 
+ 
+Copyright © 2018 Elsevier B.V. or its licensors or contributors. ScienceDirect ® is a registered trademark of Elsevier B.V. 
+RELX Group 

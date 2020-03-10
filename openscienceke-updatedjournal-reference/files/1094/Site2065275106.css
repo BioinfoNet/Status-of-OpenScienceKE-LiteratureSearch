@@ -1,0 +1,37 @@
+ /*SITE SPECIFIC CSS*/
+
+.featurePanel {
+	background-image: url(//academic.oup.com/data/sitebuilderassetsoriginals/images/bioinformatics/bioinformatics_feature_panel.jpg);
+	background-color: #ffffff;
+}
+.navbar {
+	background-color: #126888;
+}
+.featurePanel h3 {
+	font-family: "Source Sans Pro", Helvetica, Arial, sans-serif !important;
+	font-weight: bold !important;
+}
+.journal-bg {
+	background-color: #167DA4;
+}
+.journal-header .journal-logo {
+	width: 320px;	 
+}
+.journal-header .society-logo {
+	width: 140px;
+}
+.journal-footer.journal-bg {
+	background-color: #126888;
+}
+#cloudCMS .panels .widget-dynamic-title::after, #cloudCMS .panels .widgetHead h3::after, #cloudCMS .rowHead h3::after{
+	background-color: #167DA4;
+}
+#cloudCMS .row:nth-child(4):not(.relatedJournals) {
+	background-color: #167DA4;
+}
+#cloudCMS .row:nth-child(4):not(.relatedJournals) .rowHead h3 {
+	color: #ffffff;
+}
+#cloudCMS .row:nth-child(4):not(.relatedJournals) .rowHead h3::after {
+	background-color: #ffffff;
+}

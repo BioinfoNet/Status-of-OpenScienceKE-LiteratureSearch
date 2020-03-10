@@ -1,0 +1,176 @@
+/* $Id$ */
+/* WurLib overrides */
+
+/*	in wurlib css heeft .no-margin class geen hogere prioriteit bij aanwezigheid van #wl-lo-xxx id 
+	daarom moet in deze css id en class toegevoegd worden om no-margin class te activeren.*/
+#wl-lo-main-c132 .no-margin, #wl-lo-page-c132 .no-margin {
+    margin: 0;
+}
+
+#publ-personal, #publ-overview{
+	margin-bottom: 1em;
+}
+
+.titel_lang {
+	background-color: #fff;
+}
+
+a[class*='wl_full_text'] {
+	font-weight: bold;
+}
+
+aside{
+	background-color: #eeede6;
+    margin-bottom: 20px;
+    min-height: 400px;
+    padding: 1px 10px 10px;
+}
+
+.picture > a {
+	margin: 0 0 1em;
+}
+
+.thumbnail {
+	width: 80px;
+}	
+
+aside h2, aside h4 {
+    margin-top: 10px;
+}
+
+aside h2 {
+line-height: 1.4;
+}
+
+aside h3 {
+    margin-top: 20px;
+}
+
+aside h4 {
+	font-weight: 700;
+}
+
+aside .ym-form {
+    padding: 0px;
+}
+
+#publ-overview ul,
+#publ-personal ul {
+    list-style: none outside none;
+    margin: 0 0 1em;
+    outline: 0 none;
+    padding: 0;
+}
+
+#publ-overview ul li, 
+#publ-personal ul li
+{
+    list-style: none outside none;
+    margin: 0;
+    padding: 0.25em 0;
+}
+
+#publ-overview ul li ul,
+#publ-personal ul li ul {
+	margin-left: 	2em;
+	margin-bottom:	0;
+}
+
+#publ-overview ul li ul li,
+#publ-personal ul li ul li{
+    margin-left: 	1em;
+	display:		block;
+}
+
+ul.links {
+    list-style: none outside none;
+    margin: 0 0 1em;
+    outline: 0 none;
+    padding: 0;
+}
+
+ul.links li 
+{
+    list-style: none outside none;
+    margin: 0;
+    padding: 0.25em 0;
+}
+
+.published-in
+{
+	font-style: italic;
+}
+
+#zoekknop {
+    width:20%;
+}
+
+td.year, th.year {
+    text-align: right;
+    width: 10%;
+}
+td.rckolom, th.rckolom {
+    text-align: right;
+    padding-right: 40px;
+}
+
+/* Zet labels in career policy report, blok report-data */
+.ym-grid label {
+    font-weight: bold;
+}
+
+/* Maak de totalen vet in career policy report, tabel credittable */
+tfoot td {
+    font-weight: bold;
+}
+
+/* Centreer de jaren in career policy report, tabel credittable */
+.text_align_center {
+    text-align: center;
+}
+
+/* Schuif credits (in career policy report, tabel credittable) naar links, zodat duidelijk is waar ze bij horen */
+td.credits {
+	padding-right: 2.5em;
+}
+
+/** organisatie selecteren in advanced */
+.orglist {
+	height: 400px;
+	overflow-y: scroll;
+}
+ul.nobullet {
+	list-style: none;
+}
+ul.nobullet li {
+	margin-left: -10px;
+	line-height: 2em;
+}
+.btnSucc, .btnPred, .btnParent, .btnChildren {
+	cursor: pointer;
+}
+/*fix voor bug in jqplot legend opmaak*/
+table.jqplot-table-legend {
+	width: auto !important;
+}
+
+/* wordt gebruikt om abstract (A400) bij mode 'summary' via scrolling in zijn totaliteit te tonen. Dit ter vervanging van het bruut afbreken van het
+ * abstract en ... (ellipse) er achter te zetten. Fogbugz case 13607
+*/
+.trunc {
+    overflow-y: auto;
+    height: 100px;
+}
+/* advanced search form */
+.queryinputButtons {
+    text-align: right;
+}
+.queryinputButtons .ym-fbox-button input {
+    width:100%;
+}
+.queryinputButtons .ym-fbox-button {
+    padding:0;
+}
+.ym-form .extra-refine-buttons .ym-fbox-button {
+    padding: 0 ;
+}

@@ -1,0 +1,605 @@
+ Skip to Main Content 
+Access By ICIPE LIBRARY 
+Wiley Online Library 
+Wiley Online Library 
+Access Provided by ICIPE LIBRARY 
+This Journal 
+ 
+    This Journal 
+    Anywhere 
+ 
+    Search term 
+    Advanced Search Citation Search 
+    Search 
+    Search term 
+    Advanced Search Citation Search 
+    Search 
+ 
+Login / Register 
+ 
+The full text of this article hosted at iucr.org is unavailable due to technical difficulties. 
+Journal of Biogeography 
+Volume 41, Issue 1 Journal of Biogeography banner 
+Synthesis 
+Free Access 
+Natural experiments and meta‐analyses in comparative phylogeography 
+Michael N Dawson 
+ 
+Corresponding Author 
+ 
+School of Natural Sciences, University of CaliforniaMerced, USA 
+Correspondence: Michael N Dawson, School of Natural Sciences, 5200 North Lake Road, 
+University of California, Merced, CA 95343, USA. 
+E‐mail: E-mail address: mdawson@ucmerced.edu 
+Search for more papers by this author 
+Michael N Dawson 
+ 
+Corresponding Author 
+ 
+School of Natural Sciences, University of CaliforniaMerced, USA 
+Correspondence: Michael N Dawson, School of Natural Sciences, 5200 North Lake Road, 
+University of California, Merced, CA 95343, USA. 
+E‐mail: E-mail address: mdawson@ucmerced.edu 
+Search for more papers by this author 
+First published:  21 August 2013 
+https://doi.org/10.1111/jbi.12190 
+Cited by: 21 
+About 
+ 
+    Figures 
+    References 
+    Related 
+    Information 
+ 
+ePDF PDF 
+PDF PDF 
+Sections 
+ 
+    Abstract 
+    The Challenge and Principles of Comparative Phylogeography in Nature 
+    Designing Comparative Natural Experiments in Phylogeography 
+    Case study: Aggregate and SDC analyses of Dispersal Potential and Gene Flow 
+    Meta‐Analyses of Natural Phylogeographic Experiments 
+    Additional Benefits and Current Limitations of the SDC Framework 
+    Mosaic of Meta‐Analyses 
+    Acknowledgements 
+    Biography 
+    References 
+    Citing Literature 
+ 
+ePDF PDF 
+PDF PDF 
+Tools 
+ 
+    Request permission 
+    Export citation 
+    Add to favorites 
+    Track citation 
+ 
+Share 
+ 
+Give access 
+Share full text access 
+ 
+Share full text access 
+Please review our Terms and Conditions of Use and check box below to share full-text version of article. 
+I have read and accept the Wiley Online Library Terms and Conditions of Use. 
+Shareable Link 
+ 
+Use the link below to share a full-text version of this article with your friends and colleagues. Learn more. 
+Copy URL 
+ 
+Share a link 
+ 
+    Email to a friend 
+    Facebook 
+    Twitter 
+    Linkedin 
+    Google+ 
+    Reddit 
+    CiteULike 
+ 
+Abstract 
+Aim 
+ 
+The challenge for phylogeography, like other observational sciences, is to extract general relationships representing causes and effects from complex natural data. I describe comparisons of synchronously diverging co‐distributed (SDC) taxa, including sympatric sister species, to help meet this challenge. 
+Location 
+ 
+Global. 
+Methods 
+ 
+As an example, using narrative and best evidence synthesis, I re‐evaluate ad hoc aggregate analyses relating population genetic structure ( F ST ) to dispersal potential. I deconstruct an aggregate global analysis to generate a regional subset of data which I compare with datasets describing co‐distributed taxa, SDC species and sympatric sister species. 
+Results 
+ 
+A weak negative relationship between F ST and dispersal potential is implied by aggregate global analysis (0.1 ≤  R 2  ≤ 0.29). In contrast, regional datasets of co‐distributed species show strong correlation between F ST and dispersal potential (0.78 ≤  R 2  ≤ 0.85). Comparisons between SDC and sympatric sister species consistently evince higher gene flow in species with higher dispersal potential. 
+Main conclusions 
+ 
+Ad hoc aggregate analyses can be compromised by multiple sources of error. Comparisons of SDC taxa, including sympatric sister species, adapt the experimental scientific method to natural situations, providing robust and repeatable tests of phylogeographic hypotheses and accurate estimates of effect sizes. To make strong inferences about phylogeography we should seek out the hidden wealth of natural experiments that provide particularly clear opportunities to study the factors that influence patterns of biodiversity. The SDC framework enables independent tests of existing hypotheses, integration of independent studies in meta‐analyses across taxa and regions, and identification of general trends versus location‐ or taxon‐specific phenomena. Coupled with advances in statistical phylogeography, species distribution modelling and palaeoecology, the SDC framework bridges the long‐standing gap between observational and experimental sciences. 
+The Challenge and Principles of Comparative Phylogeography in Nature 
+ 
+The broad adoption of molecular genetic techniques transformed the way questions are addressed in biogeography, and enabled the discipline of phylogeography (Avise et al ., 1987 ) to answer previously intractable problems with increasing clarity and confidence (Riddle et al ., 2008 ). Nonetheless, phylogeographic studies have been criticized for routinely ‘invent[ing] detailed biological stor[ies]’ to explain a particular gene tree or network with little appreciation of the complexity and stochasticity of coalescent processes (Nielsen, 2006 , p. 209). The challenge for phylogeography is to extract from complex natural data the information that accurately describes relationships between processes and patterns. The difficulty of overcoming this challenge in nature is one reason why observational sciences have long been considered secondary to the experimental sciences in terms of their power to establish cause and effect (Freckleton, 2009 ). 
+ 
+In biogeography, complexity is generated by processes influencing the dual histories of lineage and place which may manifest as idiosyncratic, contingent, present‐day distributions of biodiversity (Lomolino et al ., 2006 , p. 327; see also McIntyre, 1997 ). Such singularities have discouraged the search for general principles in ecology and evolutionary biology (Gould, 1970 ; Roughgarden, 2009 ; Kueffer et al ., 2011 ). While it is a truism that each species has a unique history of lineage‐plus‐place, it is essential to challenge the related aphorism that there are no or few shared patterns. By descent or convergence, by chance or by shared cause, some species have similar distributions, similar phenotypes, and may have evolved for similar periods of time (e.g. Riddle & Hafner, 2006 ; Dawson, 2012 ; Hawkins et al ., 2012 ); other attributes and species may differ. Identifying and explaining these shared and unique patterns and their causes is within the purview of comparative phylogeography. 
+ 
+Historically, the observational and experimental sciences have been bridged by the comparative method (Freckleton, 2009 ). Strong inference of the causes and timing of geographic differentiation quickly emerged as a goal for comparative phylogeography (Avise, 1992 ). Many of the principles of the scientific method (e.g. Platt, 1964 ; Vaux, 2012 ) thus also became principles of comparative phylogeography: collection of multiple lines of evidence (e.g. loci within species), replication (e.g. species within regions), and hypothesis testing (e.g. concordance; see Avise et al ., 1987 ; Avise, 1994 , 2000 ; Hickerson et al ., 2010 ; Fig.  1 ). The merit of studying co‐distributed species has been long appreciated (e.g. Wares et al ., 2001 ; Calsbeek et al ., 2003 ; Hickerson & Cunningham, 2005 ; Barber et al ., 2006 ; Blakeslee et al ., 2008 ; Crandall et al ., 2008 ; Hickerson & Meyer, 2008 ; Costedoat & Gilles, 2009 ; Marko & Moran, 2009 ), as more recently has been the importance of multiple loci (e.g. Knowles, 2004 , 2009 ; Heled & Drummond, 2008 ; Bell et al ., 2012 ); hypothesis testing, though, has been less common. A subset of studies – those involving sister species – have embodied the experimental principles that comparators should be contemporaneous and independent, and that confounding variables and noise should be reduced (Lynch, 1989 ; Barraclough et al ., 1998 ). Studies of sympatric sister species may control for effects of both environment and time (Dawson et al ., 2002 ). Among a relatively small number of natural situations, referred to as ‘natural laboratories’, the variety in conditions (aka ‘treatments’) and replication are sufficient that the observational sciences mimic the experimental approach (e.g. MacArthur & Wilson, 1967 ; Hamner, 1982 ; Elmer & Meyer, 2011 ; Kautt et al ., 2012 ). In principle, routinely including the equivalent of an experimental control in phylogeographic analyses also may be possible (Dawson, 2012 ; Dawson et al ., in press). Thus, conceptually, the observational and experimental sciences need not always be distinct, although the natural world generally will be more complex than the laboratory. Here, I outline a framework that complements other ongoing advances in biogeography and integrates many of the long‐recognized benefits of comparative biology and of scientific controlled‐experimental design into phylogeography (Figs  2 , 3 ). The approach employs time‐calibrated contrasts – of factors (e.g. traits that may influence migration) and response variables (e.g. estimates of gene flow) – between pairs of taxa (often species) to quantify effect sizes (e.g. for hypothesis testing, model parameterization) in the absence of a robust phylogeny, and generates results suited to meta‐analyses. The approach complements approaches such as phylogenetic contrasts (e.g. Felsenstein, 1985 ), phylogenetic mixed‐models (e.g. Housworth et al ., 2004 ), and sister‐clade analyses (e.g. Paradis, 2012 ). 
+Figure 1 
+Open in figure viewer PowerPoint 
+Two existing representations of the comparative approach. (a) The comparative biogeographic approach, following Lomolino et al . ( 2006 , p. 456). Relationships among species are reconstructed across multiple clades of co‐distributed species and common patterns attributed to shared events. In some frameworks, time is considered unimportant (Parenti & Ebach, 2009 ) although molecular phylogenetic frameworks aim to estimate both spatial and temporal patterns (e.g. Riddle et al ., 2000 ; Zink et al ., 2000 ; Ilves et al ., 2010 ), in which cases congruence and coincidence provide the strongest evidence of shared evolutionary histories. (b) ‘Comparative phylogeography’ sensu lato as represented in Bloomquist et al . ( 2010 ). The data represent three clades (dashed orange, dotted green and solid blue) sampled across an area (grey polygon). The haplotype tree is displayed above and concentric circles within the study area represent the geographic distributions of the three clades. The figure illustrates well the most common study design in phylogeography: single marker comparisons among lineages that do not overlap spatially and likely vary in age. A more rigorous comparative framework is needed for statistical and comparative ‘experimental’ phylogeography. 
+Caption 
+Two existing representations of the comparative approach. (a) The comparative biogeographic approach, following Lomolino et al. (, p. 456). Relationships among species are reconstructed across multiple clades of co‐distributed species and common patterns attributed to shared events. In some frameworks, time is considered unimportant (Parenti & Ebach, ) although molecular phylogenetic frameworks aim to estimate both spatial and temporal patterns (e.g. Riddle et al., ; Zink et al., ; Ilves et al., ), in which cases congruence and coincidence provide the strongest evidence of shared evolutionary histories. (b) ‘Comparative phylogeography’ sensu lato as represented in Bloomquist et al. (). The data represent three clades (dashed orange, dotted green and solid blue) sampled across an area (grey polygon). The haplotype tree is displayed above and concentric circles within the study area represent the geographic distributions of the three clades. The figure illustrates well the most common study design in phylogeography: single marker comparisons among lineages that do not overlap spatially and likely vary in age. A more rigorous comparative framework is needed for statistical and comparative ‘experimental’ phylogeography. 
+Figure 2 
+Open in figure viewer PowerPoint 
+Diagrammatic representation of the phylogenetic assumptions of (a) traditional statistics and (b) independent contrasts illustrating the improved understanding of appropriate comparisons enabled by a known phylogeny. A third comparative framework (c) which compares the phylogeographic structure of pairs of synchronously diverging co‐distributed (SDC) taxa with respect to shared (homologous or homoplasious) or divergent intrinsic characteristics and extrinsic environmental factors is highlighted in this study. This SDC approach acknowledges the importance of evolutionary history but does not require a robustly estimated and well‐sampled phylogeny; it enables comparative statistical phylogeography to investigate the effects of factors influencing genetic drift, gene flow, selection and their interactions on population genetic structure on a range of scales from regional comparisons to global meta‐analyses within and across realms. Because the focus of analyses is on phylogeographic patterns arising since the coalescent, the dependent variable (any descriptor of genetic variation) is statistically independent. Different markers may allow questions to be asked at different scales. Panels (a) and (b) are modified from Fig.  3 of Garland & Carter ( 1994 ). I note that a hybrid between (b) and (c) may be commonplace if dispersal syndromes are widespread and phylogenetically autocorrelated, requiring also an aspect of what might be termed ‘phylogeographically independent contrasts’ sensu Felsenstein ( 1985 ). 
+Caption 
+Diagrammatic representation of the phylogenetic assumptions of (a) traditional statistics and (b) independent contrasts illustrating the improved understanding of appropriate comparisons enabled by a known phylogeny. A third comparative framework (c) which compares the phylogeographic structure of pairs of synchronously diverging co‐distributed (SDC) taxa with respect to shared (homologous or homoplasious) or divergent intrinsic characteristics and extrinsic environmental factors is highlighted in this study. This SDC approach acknowledges the importance of evolutionary history but does not require a robustly estimated and well‐sampled phylogeny; it enables comparative statistical phylogeography to investigate the effects of factors influencing genetic drift, gene flow, selection and their interactions on population genetic structure on a range of scales from regional comparisons to global meta‐analyses within and across realms. Because the focus of analyses is on phylogeographic patterns arising since the coalescent, the dependent variable (any descriptor of genetic variation) is statistically independent. Different markers may allow questions to be asked at different scales. Panels (a) and (b) are modified from Fig.  of Garland & Carter (). I note that a hybrid between (b) and (c) may be commonplace if dispersal syndromes are widespread and phylogenetically autocorrelated, requiring also an aspect of what might be termed ‘phylogeographically independent contrasts’ sensu Felsenstein (). 
+Figure 3 
+Open in figure viewer PowerPoint 
+Comparative phylogeography, sensu stricto . Schematic of the process for identifying synchronously diverging co‐distributed taxa (a–c), and other considerations (d, e) necessary for interpreting patterns of genetic differentiation (f). These illustrations assume even sampling effort within locations, of sites, and a common suite of molecular markers across taxa. (a) A phylogenetic tree showing evolutionary relationships among species T1–T7; solid shapes and lines represent portions of the tree along which the evolutionary history most directly relevant to this framework can be inferred from genetic analyses of the sampled taxa; dashed lines indicate a backbone phylogeny into which many unsampled taxa would fit (e.g. see Fig.  2 c). (b) The duration of evolutionary history influencing modern patterns of genetic variation may be estimated by a variety of Bayesian and coalescent analyses. If the estimated age of the most recent common ancestor, or coalescent, of two taxa is the same, i.e. the taxa were synchronously diverging, then the genetic diversity that is measurable in the modern day arose during the same period of time. Additional analyses can use these same data to infer whether the historical demography of these species followed the same temporal pattern. Integrating these analyses with phylogenetic relationships in this example, shows there are three suites of synchronously diverging taxa, as estimated by mean or median with 95% confidence intervals: T1–T4, T5–T6, and two cryptic infraspecific clades within T4 plus T7. These synchronously diverging taxa may be phylogenetically distantly related (e.g. T1 and T3), sister species (e.g. T5, T6), or infraspecific clades (T4), and comparisons need not be restricted to a single taxonomic level (e.g. T4i, T7). (c) The geographic distribution of taxa within a region, in this case with coloured lines indicating the latitudinal range of each taxon along a simple coastline. In this example, there are three suites of approximately co‐distributed taxa: T1–T3, T4ii–T5–T6, and T2–T4i–T7. In no case is range overlap exact, and percentage overlap could be calculated as an additional consideration for subsequent analyses. (d) Similarities and differences in the extrinsic environments of each taxon represented by principal components analysis, or analogous techniques, may indicate similar ecologies (and therefore potentially similar responses to different extrinsic conditions) and habitat, such as onshore–offshore location or elevation; additional analyses may consider the extrinsic biotic environment. (e) Similarities and differences in the intrinsic biological characteristics of each taxon represented by non‐metric multidimensional scaling (NMDS), or analogous techniques. Characteristics expected to influence dispersal potential include, for example, pelagic duration (PD), fecundity, and population size. (f) Differences in population genetic structure, calculated as F ST or D EST or similar (mean or median with 95% confidence intervals), between pairs of synchronously diverging co‐distributed (SDC) taxa; non‐SDC taxa are not shown. Pair T5–T6 shows the null expectation for SDC taxa that have similar ecologies and traits influencing dispersal; this is analogous to the ‘control’ in experiments, and provides the rational basis for interpreting differences in genetic structure between members of other pairs as the product of differences in autecology and synecology. The difference in genetic structure between the SDC T1 and T3, thus is identifiably a consequence of differences in organismal traits influencing dispersal ecology. The difference in genetic structure between the SDC T4i and T7, may be attributable to differences in organismal traits and/or extrinsic environmental interactions that influence gene flow. Comparisons among other taxa, for example the non‐SDC T2 and T5, rapidly become more complicated, being affected, for example, by the timing of evolutionary events, spatial variation in environmental and organismal factors and their interactions, and environment and organismal differences generating noise which can mask causal relationships; such fall outside the SDC framework. For the purposes of this schematic, a linear relationship between causal factor and response ratio is assumed across the full range of values, but this may not always be the case. 
+Caption 
+Comparative phylogeography, sensu stricto. Schematic of the process for identifying synchronously diverging co‐distributed taxa (a–c), and other considerations (d, e) necessary for interpreting patterns of genetic differentiation (f). These illustrations assume even sampling effort within locations, of sites, and a common suite of molecular markers across taxa. (a) A phylogenetic tree showing evolutionary relationships among species T1–T7; solid shapes and lines represent portions of the tree along which the evolutionary history most directly relevant to this framework can be inferred from genetic analyses of the sampled taxa; dashed lines indicate a backbone phylogeny into which many unsampled taxa would fit (e.g. see Fig. c). (b) The duration of evolutionary history influencing modern patterns of genetic variation may be estimated by a variety of Bayesian and coalescent analyses. If the estimated age of the most recent common ancestor, or coalescent, of two taxa is the same, i.e. the taxa were synchronously diverging, then the genetic diversity that is measurable in the modern day arose during the same period of time. Additional analyses can use these same data to infer whether the historical demography of these species followed the same temporal pattern. Integrating these analyses with phylogenetic relationships in this example, shows there are three suites of synchronously diverging taxa, as estimated by mean or median with 95% confidence intervals: T1–T4, T5–T6, and two cryptic infraspecific clades within T4 plus T7. These synchronously diverging taxa may be phylogenetically distantly related (e.g. T1 and T3), sister species (e.g. T5, T6), or infraspecific clades (T4), and comparisons need not be restricted to a single taxonomic level (e.g. T4i, T7). (c) The geographic distribution of taxa within a region, in this case with coloured lines indicating the latitudinal range of each taxon along a simple coastline. In this example, there are three suites of approximately co‐distributed taxa: T1–T3, T4ii–T5–T6, and T2–T4i–T7. In no case is range overlap exact, and percentage overlap could be calculated as an additional consideration for subsequent analyses. (d) Similarities and differences in the extrinsic environments of each taxon represented by principal components analysis, or analogous techniques, may indicate similar ecologies (and therefore potentially similar responses to different extrinsic conditions) and habitat, such as onshore–offshore location or elevation; additional analyses may consider the extrinsic biotic environment. (e) Similarities and differences in the intrinsic biological characteristics of each taxon represented by non‐metric multidimensional scaling (NMDS), or analogous techniques. Characteristics expected to influence dispersal potential include, for example, pelagic duration (PD), fecundity, and population size. (f) Differences in population genetic structure, calculated as FST or DEST or similar (mean or median with 95% confidence intervals), between pairs of synchronously diverging co‐distributed (SDC) taxa; non‐SDC taxa are not shown. Pair T5–T6 shows the null expectation for SDC taxa that have similar ecologies and traits influencing dispersal; this is analogous to the ‘control’ in experiments, and provides the rational basis for interpreting differences in genetic structure between members of other pairs as the product of differences in autecology and synecology. The difference in genetic structure between the SDC T1 and T3, thus is identifiably a consequence of differences in organismal traits influencing dispersal ecology. The difference in genetic structure between the SDC T4i and T7, may be attributable to differences in organismal traits and/or extrinsic environmental interactions that influence gene flow. Comparisons among other taxa, for example the non‐SDC T2 and T5, rapidly become more complicated, being affected, for example, by the timing of evolutionary events, spatial variation in environmental and organismal factors and their interactions, and environment and organismal differences generating noise which can mask causal relationships; such fall outside the SDC framework. For the purposes of this schematic, a linear relationship between causal factor and response ratio is assumed across the full range of values, but this may not always be the case. 
+Designing Comparative Natural Experiments in Phylogeography 
+ 
+Each attribute of experimental science can be found in at least one phylogeographic study, but to date, to my knowledge, no single phylogeographic study has all of the attributes of experimental science. Yet it is possible to conceive a natural, statistical, comparative, phylogeographic study, or ‘experiment’, that identifies a clear start time, is conducted in one environment, compares generally similar taxa to measure the effect of their one or few different biological attributes (‘treatments’), and is replicated. Studies of sympatric sister taxa (e.g. Dawson et al ., 2002 ; Bird et al ., 2011a ) come very close to these goals of ‘experimental’ phylogeography, but sister species that arose in sympatry typically are rare and thus replication is difficult (Steele et al ., 2009 ; Dawson, 2012 ). Consequently, sympatric sister species comparisons may be of limited general use. 
+ 
+A more generally applicable approach is to design studies comparing synchronously diverging co‐distributed (SDC) species. SDC species comparisons maintain many of the benefits of studying sympatric sister species while offering a more flexible approach. SDC species are taxa that (1) arose from cladogenetic events or have coalescents that are statistically the same age, and (2) since that time have probably occupied the same geographic region (Dawson, 2012 ). Thus, SDC species, like sympatric sister species, are of comparable age and evolutionarily independent, rather than phylogenetically nested, and confounding variables and noise are reduced (Lynch, 1989 ; Barraclough et al ., 1998 ; Dawson et al ., in press; Figs  2 , 3 ). Comparisons of synchronously diverging species, which include but are not necessarily sister species, should also ameliorate the key drawback of sister‐taxon comparisons – reduced sample size (Rosenzweig, 1996 ) – and acknowledge that sometimes putative sister comparisons may have been compromised by extinction of the most closely related species (Marko, 2002 ). By broadening the criteria for including species in comparisons, the SDC framework also facilitates construction of null hypotheses (experimental controls), more diverse alternative hypotheses of cause and effect, and sophisticated models of interactions. 
+ 
+Phylogeographic analyses incorporating species that are synchronously diverging, in addition to being co‐distributed, are a natural progression that builds on, and can help refine, statistical phylogeography's depth of sampling of single lineages through re‐integration with the taxonomic breadth and study design of comparative biogeography. SDC comparisons require both the accurate statistical estimation of the history of individual species and the contrast of those species with others to resolve the effects of biological and environmental factors on patterns of genetic differentiation. SDC comparisons thus require all taxa be sampled in a comprehensive and balanced manner to exclude artefacts of experimental design. Although the SDC framework emphasizes rigorous application of the scientific method, information necessary for initially designing the experiment often is not available, so exploratory analysis or a stepwise approach is necessary (Fig.  3 ). In practice, comparisons of SDC taxa begin with (1) identifying a hypothesis, and a suite of taxa that present a range of character states sufficient to test the hypothesis. Then, (2) the duration of the evolutionary history that has contributed to the modern pattern of genetic diversity within each species is estimated, and (3) distributional data are gathered describing the extent to which these taxa are co‐distributed (including abundances). Multivariate analyses are then conducted to quantify differences in ‘treatments’, i.e. (4) environmental conditions across their ranges, and (5) biological traits of taxa. (6) Finally, the pairs of SDC taxa identified in steps 1–3 are compared in terms of the effect size of abiotic or biotic differences. SDC taxa that have statistically similar environments and trait values should have statistically similar values of the dependent (response) variable; these similar SDC taxa thus function as experimental controls. If these controls verify that there is no measurable effect of some other variable, then SDC taxa with different traits are compared to estimate effect sizes (e.g. Fig.  3 f). If there are multiple SDC species pairs, with appropriate controls and contrasts, the relationship between treatment strength and effect size can be explored further. 
+Case study: Aggregate and SDC analyses of Dispersal Potential and Gene Flow 
+ 
+To illustrate the possible benefits of SDC analyses, I consider their role in the ‘central challenge … to establish links between the ecology and evolution of species’ using the example of quantifying the relationship between dispersal potential – essentially a function of the number and mobility of propagules – and the magnitude and spatial scale of population genetic structure (Bohonak, 1999 ). Understanding of the role of dispersal is important in part because it influences inferences about interacting mechanisms of evolution such as selection and genetic drift. Studies aiming to infer general patterns on regional or global scales usually have aggregated many existing single species studies (e.g. Avise, 1994 ; Bohonak, 1999 ; Dawson, 2001 ; Vekemans & Hardy, 2004 ; Lester et al ., 2007 ; Pelc et al ., 2009 ; Weersing & Toonen, 2009 ; Kelly & Palumbi, 2010 ; Riginos et al ., 2011 ; Selkoe & Toonen, 2011 ; Poelchau & Hamrick, 2013 ). While such aggregate studies, including many tens or hundreds of species, in principle have the power to resolve even weak patterns, they also may conflate variation attributable to different methods (such as marker type, sample sizes, and sampling focus and extent) and regions (e.g. see Riginos et al ., 2011 ; Scheiner, 2011 ). Aggregate studies also inherit any limitations of the component studies, such as shortcomings in study design or incompletely resolved life‐histories and ambiguity in dispersal routes. Aggregate studies, or ‘treat‐as‐one‐trial’ analyses (Altman & Deeks, 2002 ), therefore are expected to give inconsistent and poor estimates of the effect sizes of individual factors, the strengths of their interactions, and their relationship to phylogeographic structure. Indeed, aggregate global analyses have variously indicated a modest (e.g. Bohonak, 1999 ) or weak (Weersing & Toonen, 2009 ; Selkoe & Toonen, 2011 ) relationship between dispersal ability and population differentiation (Fig.  4 a,b). 
+Figure 4 
+Open in figure viewer PowerPoint 
+An example of how analyses of synchronously diverging co‐distributed (SDC) taxa can yield more precise, consistent and multiple independent estimates of effects on genetic variation. Aggregate global analyses indicate a weak relationship between dispersal ability (in this case, pelagic duration, PD) and population differentiation (e.g. F ST ; a,b). Studies of co‐distributed and synchronously diverging co‐distributed species (including sympatric sister species), consistently indicate a strong relationship between dispersal potential and population differentiation (c–f). (a) Aggregate analyses have sufficient power to reject the null hypothesis of zero relationship between PD and F ST [Power (refined Fisher z )  = 0.99, one‐tailed alpha = 0.05, recalculated for Weersing & Toonen, 2009 (WT09)] but this ‘treat‐as‐one‐trial’ analysis also indicates a weak relationship between PD and F ST ( P  <   0.001) due to very high variance among the 149 component studies. Image redrawn from WT09. (b) Reanalysis of the WT09 dataset by Selkoe & Toonen, [ 2011 (ST11)] – in which mtDNA (open squares), allozyme (diamonds), and microsatellite (triangles) datasets each were transformed to have the same zero intercept ( P  <   0.0001; power = 1.0, one‐tailed alpha = 0.05, n  =   139) – shows increased R 2 and therefore suggests that the high variance in (a) was attributable, at least in part, to the choice of molecular marker. Image redrawn from ST11. (c) Plot showing only the subset of taxa from WT09 that are found in the north‐eastern Pacific: green triangles = microsatellite data, red squares = mtDNA data, no shape = allozyme and AFLP data. The good fit for these regional data ( P  < 0.001; power = 0.99, one‐tailed, alpha = 0.05, n  = 11) suggests that high variance in (a) is in large part due to differences among geographic regions (see also Riginos et al ., 2011 ); based on prior studies, the high variance in such ‘treat‐as‐one‐trial’ analyses likely also is influenced by among studies differences in habitat (Waples, 1987 ), population size, fecundity, pelagic duration (Treml et al ., 2012 ; Dawson et al ., in press), and age of taxa (Marko & Hart, 2011 ). Adjusting for the effect of marker following ST11, i.e. log( ST 11 F ST ) ≈ log( WT 09 F ST ) + 1.1 for microsatellites and log( ST 11 F ST ) ≈ log( WT 09 F ST ) + 0.7 for nuclear DNA, decreases the correlation of log( F ST ) and PD from R 2  = 0.78 to R 2  = 0.43 for this regional subset of data, suggesting post hoc corrections are case‐specific. (d) An experimental phylogeographic study of eight species shows a strong relationship between PD and F ST [ R 2  = 0.98, P  <   0.01, power = 1.00; Dawson et al ., in press (transformed and replotted here for ease of comparison with WT09 and ST11)] thus strongly refuting the null hypothesis that gene flow is unrelated to dispersal potential. This study also showed that F ST is influenced by fecundity ( R 2  = 0.83, P  <   0.01; power = 0.98) and that increasing the sample size to 36 species would provide power (≥ 0.8) to distinguish whether F ST also is affected by census population size. (e) Mitochondrial DNA study of sympatric sister bay gobies of the eastern North Pacific. Global F ST values for Eucyclogobius newberryi (open circle) and Clevelandia ios (dark circle) were re‐calculated using subsets of data from Dawson et al . ( 2002 ) for nine samples per species from the sites that were geographically most similar; re‐calculation completed using Arlequin 3.0 (Excoffier et al ., 2005 ). Circle = mean, bar = median, error bars = ± 1 SD. Log( F ST ) ≈ −0.064PD – 0.055, assuming 5‐day PD for E. newberryi and 28‐day PD for C. ios . (f) Allozyme study of reef fish species co‐distributed along the Great Barrier Reef, but possibly not synchronously diverging; log( F ST ) = −0.043PD – 0.315, R 2  = 0.85. Image redrawn from Doherty et al . ( 1995 ). Both studies, like those of SDC analyses of alga and invertebrates in California [when recalculated on a semi‐log scale, log( F ST ) ≈ −0.050PD – 0.152, R 2  = 0.96 (Dawson et al ., in press)], indicate a significant effect of life history on F ST . Statistics calculated using Statistica 7.1 correlation and power analysis tools (Statsoft Inc., Tulsa, OK, USA). 
+Caption 
+An example of how analyses of synchronously diverging co‐distributed (SDC) taxa can yield more precise, consistent and multiple independent estimates of effects on genetic variation. Aggregate global analyses indicate a weak relationship between dispersal ability (in this case, pelagic duration, PD) and population differentiation (e.g. FST; a,b). Studies of co‐distributed and synchronously diverging co‐distributed species (including sympatric sister species), consistently indicate a strong relationship between dispersal potential and population differentiation (c–f). (a) Aggregate analyses have sufficient power to reject the null hypothesis of zero relationship between PD and FST [Power(refined Fisher z) = 0.99, one‐tailed alpha = 0.05, recalculated for Weersing & Toonen, (WT09)] but this ‘treat‐as‐one‐trial’ analysis also indicates a weak relationship between PD and FST (P < 0.001) due to very high variance among the 149 component studies. Image redrawn from WT09. (b) Reanalysis of the WT09 dataset by Selkoe & Toonen, [ (ST11)] – in which mtDNA (open squares), allozyme (diamonds), and microsatellite (triangles) datasets each were transformed to have the same zero intercept (P < 0.0001; power = 1.0, one‐tailed alpha = 0.05, n = 139) – shows increased R2 and therefore suggests that the high variance in (a) was attributable, at least in part, to the choice of molecular marker. Image redrawn from ST11. (c) Plot showing only the subset of taxa from WT09 that are found in the north‐eastern Pacific: green triangles = microsatellite data, red squares = mtDNA data, no shape = allozyme and AFLP data. The good fit for these regional data (P < 0.001; power = 0.99, one‐tailed, alpha = 0.05, n = 11) suggests that high variance in (a) is in large part due to differences among geographic regions (see also Riginos et al., ); based on prior studies, the high variance in such ‘treat‐as‐one‐trial’ analyses likely also is influenced by among studies differences in habitat (Waples, ), population size, fecundity, pelagic duration (Treml et al., ; Dawson et al., in press), and age of taxa (Marko & Hart, ). Adjusting for the effect of marker following ST11, i.e. log(ST11FST) ≈ log(WT09FST) + 1.1 for microsatellites and log(ST11FST) ≈ log(WT09FST) + 0.7 for nuclear DNA, decreases the correlation of log(FST) and PD from R2 = 0.78 to R2 = 0.43 for this regional subset of data, suggesting post hoc corrections are case‐specific. (d) An experimental phylogeographic study of eight species shows a strong relationship between PD and FST [R2 = 0.98, P < 0.01, power = 1.00; Dawson et al., in press (transformed and replotted here for ease of comparison with WT09 and ST11)] thus strongly refuting the null hypothesis that gene flow is unrelated to dispersal potential. This study also showed that FST is influenced by fecundity (R2 = 0.83, P < 0.01; power = 0.98) and that increasing the sample size to 36 species would provide power (≥ 0.8) to distinguish whether FST also is affected by census population size. (e) Mitochondrial DNA study of sympatric sister bay gobies of the eastern North Pacific. Global FST values for Eucyclogobius newberryi (open circle) and Clevelandia ios (dark circle) were re‐calculated using subsets of data from Dawson et al. () for nine samples per species from the sites that were geographically most similar; re‐calculation completed using Arlequin 3.0 (Excoffier et al., ). Circle = mean, bar = median, error bars = ± 1 SD. Log(FST) ≈ −0.064PD – 0.055, assuming 5‐day PD for E. newberryi and 28‐day PD for C. ios. (f) Allozyme study of reef fish species co‐distributed along the Great Barrier Reef, but possibly not synchronously diverging; log(FST) = −0.043PD – 0.315, R2 = 0.85. Image redrawn from Doherty et al. (). Both studies, like those of SDC analyses of alga and invertebrates in California [when recalculated on a semi‐log scale, log(FST) ≈ −0.050PD – 0.152, R2 = 0.96 (Dawson et al., in press)], indicate a significant effect of life history on FST. Statistics calculated using Statistica 7.1 correlation and power analysis tools (Statsoft Inc., Tulsa, OK, USA). 
+ 
+In contrast, regional studies of co‐distributed and synchronously diverging co‐distributed species, consistently indicate a strong relationship between dispersal potential (e.g. pelagic duration, PD) and population differentiation (e.g. F ST ; Fig.  4 c–f; F ST is used here, but the contrast could equally use analogues such as D EST , R ST , etc.). For example, extracting from Weersing & Toonen ( 2009 ) only the subset of studies conducted in the north‐eastern Pacific region, gene flow is strongly correlated with dispersal potential ( R 2  = 0.78; Fig.  4 c). Independent analysis of eight north‐eastern Pacific marine intertidal invertebrate species corroborate the strong correlation between gene flow and dispersal potential ( R 2  = 0.80; Dawson et al ., in press; Fig.  4 d). Applying the comparative SDC species framework, we find that SDC species with similar dispersal potential have similar gene flow (Dawson et al ., in press) and, in all comparisons of SDC species that differ in dispersal potential, the species with higher dispersal potential has higher gene flow (Fig.  4 d). Sympatric sister species of fishes in the north‐eastern Pacific also show the expected relationship between higher dispersal potential and higher gene flow (Fig.  4 e). 
+ 
+When phylogeographic comparisons have a clear ‘experimental’ design – e.g. spatial overlap of samples, ecologically similar sympatric sister taxa, a consistent set of markers for between‐species comparisons, null hypothesis testing – even species in which the major mode of migration is the statistically rare and stochastic long‐distance dispersal (Thiel & Gutow, 2005 ) show patterns of diversification consistent with theory (Dawson, 2012 ). Despite the perceived importance of stochastic processes in structuring some populations (e.g. Johnson & Black, 1982 ; Hedgecock, 1994 ; Flowers et al ., 2002 ; Hellberg, 2009 ; Toonen & Grosberg, 2011 ), and potential for other factors to influence phylogeographic structure (e.g. Hellberg et al ., 2002 ; Marko & Hart, 2011 ), somewhat stochastic processes may sum into predictable patterns (Rice & Papadopoulos, 2009 ; see also Gillespie et al ., 2012 ) that can be recognized by matching theory and empirical study design. 
+Meta‐Analyses of Natural Phylogeographic Experiments 
+ 
+The strength of SDC comparisons lies in the simple application of the scientific method in natural situations. The greater potential of the SDC framework lies in encouraging (1) independent tests of the conclusions of prior SDC comparisons, and (2) incorporation of multiple SDC comparisons in meta‐analyses. In the first instance, a hypothesis supported by one SDC analysis should be robust to, and refined by, retesting using a different suite of taxa in the same region (Fig.  5 a; e.g. Fig.  4 c–e). Relationships confirmed by regional studies can be translocated as hypotheses to other regions (Fig.  5 b; e.g. Fig.  4 f). In the second instance, SDC analyses conducted in a standard manner in different regions then can be integrated in meta‐analyses of response ratios ( sensu Hedges et al ., 1999 ; Fig.  5 b), providing a global picture of similarities and differences among taxa and regions but avoiding the pitfalls of ‘treat‐as‐one‐trial’ analyses (Altman & Deeks, 2002 ). 
+Figure 5 
+Open in figure viewer PowerPoint 
+Schematic outline of phylogeographic meta‐analyses and contrasts. (a) Meta‐analyses of a given factor, such as difference in pelagic duration (PD) or fecundity or population size, with variable treatment strength and the matching effect size (response ratio sensu Hedges et al ., 1999 ), for example the difference in gene flow or F ST . Solid circles indicate treatment strengths and effect sizes taken from the schematics in Fig.  3 e,f. Similar treatment strengths in the same suite of factors in new studies of additional synchronously diverging co‐distributed (SDC) taxa are expected to produce similar effect sizes (dashed circles); differences in effect sizes would indicate taxon‐specific effects or interactions. (b) Hypotheses proposed and supported in one region can be tested in another. Differences between locations would indicate dissimilar environments and/or different organism–environment interactions. If responses are expected to be nonlinear, then appropriate transformations should be made prior to analyses or be incorporated as an aspect of study design and analysis. Factor size may be a single factor, such as pelagic duration, or a composite, such as a function of population size and pelagic duration and fecundity, that would be expected to have direct and predictable impacts on effect size (e.g. Dawson et al ., in press). If pairs of SDC taxa used in meta‐analyses are different ages, then time may be used as the independent variable, or as a covariate. As with any analysis, artefacts such as pseudoreplication (e.g. due to recent geographically localized hybridization, or multiple SDC pairs that share a species or internal branches in common, or comparisons of many SDC pairs drawn from across just two recent clades) should be avoided because the strongest general inference will come from many independent comparisons in diverse situations. 
+Caption 
+Schematic outline of phylogeographic meta‐analyses and contrasts. (a) Meta‐analyses of a given factor, such as difference in pelagic duration (PD) or fecundity or population size, with variable treatment strength and the matching effect size (response ratio sensu Hedges et al., ), for example the difference in gene flow or FST. Solid circles indicate treatment strengths and effect sizes taken from the schematics in Fig. e,f. Similar treatment strengths in the same suite of factors in new studies of additional synchronously diverging co‐distributed (SDC) taxa are expected to produce similar effect sizes (dashed circles); differences in effect sizes would indicate taxon‐specific effects or interactions. (b) Hypotheses proposed and supported in one region can be tested in another. Differences between locations would indicate dissimilar environments and/or different organism–environment interactions. If responses are expected to be nonlinear, then appropriate transformations should be made prior to analyses or be incorporated as an aspect of study design and analysis. Factor size may be a single factor, such as pelagic duration, or a composite, such as a function of population size and pelagic duration and fecundity, that would be expected to have direct and predictable impacts on effect size (e.g. Dawson et al., in press). If pairs of SDC taxa used in meta‐analyses are different ages, then time may be used as the independent variable, or as a covariate. As with any analysis, artefacts such as pseudoreplication (e.g. due to recent geographically localized hybridization, or multiple SDC pairs that share a species or internal branches in common, or comparisons of many SDC pairs drawn from across just two recent clades) should be avoided because the strongest general inference will come from many independent comparisons in diverse situations. 
+ 
+Meta‐analyses of SDC studies can rigorously integrate measurements of different taxa and places that otherwise have contributed to a gulf between empiricism and theory (e.g. Weersing & Toonen, 2009 ; Selkoe et al ., 2010 ; Riginos et al ., 2011 ; cf. e.g. Wright, 1931 ; Scheltema, 1971 ; Treml et al ., 2012 ). Meta‐analyses of SDC studies build from the perspective that comparative frameworks exist that not only enable, but also are required for, comparisons of empirically or intuitively challenging situations (Dawson & Hamner, 2008 ). Central to these frameworks is the adoption of approaches that standardize measurement, such as using a suite of reference markers with calibrated rates, and statistical designs sensitive to the target processes. In the area of study that precipitated development of the SDC framework, statistical designs already exist to account for genetic patterns that vary with the scales of observation (Doherty et al ., 1995 ; Hellberg et al ., 2002 ; Palumbi, 2003 ) while others need further exploration considering, for example, that isolation by distance estimated on the smallest scales (Selkoe & Toonen, 2011 ) may not be relevant at larger scales (Hellberg et al ., 2002 ) and may be influenced by ghost populations (Slatkin, 2005 ). Evolutionarily significant units or well‐supported intraspecific clades may be the smallest practicable units for which geographic ranges and abundances (since the coalescent) can be estimated, and thus the basic units for assessing associations between possible causes and observed effects. The fundamental requirement for good primary study design cannot be over‐emphasized. Meta‐analyses are synthetic, and themselves difficult; they build on, and cannot substitute for, rigorous original studies. (For discussion of many points from different disciplines but relevant also to meta‐analyses in phylogeography see, e.g. Slavin, 1995 ; Whittaker & Heegaard, 2003 ; Mittelbach et al ., 2003 ; Gillman & Wright, 2010 ; Gurevitch & Mengersen, 2010 ; Whittaker, 2010a , b ; Werenkraut & Ruggiero, 2011 .) 
+ 
+Routinely adopting control comparisons can be helpful for estimating effect sizes, and is essential for calculating metrics such as the standardized mean difference (Schluter & Whitlock, 2009 , p. 603) for meta‐analyses and may be among the most important aspects of experimental phylogeographic study design. Control comparisons that bracket the range of observed characteristics – for example, species with exceptionally low or high dispersal duration, and low versus high fecundity – may open additional opportunities for comparing among studies. Much has been written about mathematical normalization of estimates of population structure (e.g. Hedrick, 2005 ; Jost, 2008 ; Heller & Siegismund, 2009 ; Ryman & Leimar, 2009 ; Meirmans & Hedrick, 2011 ) but less attention has been paid to how apparent geographic bias in population genetic statistics may reflect meaningful geographic variation; simple mathematical normalization could therefore mask important regional effects (e.g. see discussion in Bird et al ., 2011b ). Comparing the ranges of statistics among geographic regions should provide information about location‐specific effects. Normalizing comparative phylogeographic studies by benchmarking statistics at the extremes may permit comparisons at intermediate levels to examine the effects of biological differences independent of the environment. Through null hypothesis testing, exploring standardized comparisons and meta‐analyses, we will continue to learn about individual species and, importantly, to learn more reliably about the effects of biological and environmental differences on patterns of diversity, speciation and interactions among the mechanisms of microevolution. 
+Additional Benefits and Current Limitations of the SDC Framework 
+ 
+The SDC framework moves phylogeography away from a plethora of case studies back towards a rigorous, synthetic, theory‐ and hypothesis‐driven understanding of factors influencing patterns of biodiversity (see also e.g. Hickerson et al ., 2010 ). Rejuvenation of the comparative approach has several additional benefits. 
+ 
+First, the hypothesis‐based framework requires clear exposition of null and alternative models. For example, the hypothesis that gene flow is correlated with pelagic duration has become thought of as the ‘null’ under the assumption of passive larval dispersal (Shanks, 2009 ), yet the hypothesis as originally proposed clearly is one of cause and effect (Gooch, 1975 , p. 390; Crisp, 1978 ). Because the SDC framework focuses on quantifying cause and effect, the approach can provide parameter estimates for, and encourages consideration of, new models that refocus our attention on the possible effects of all factors influencing dispersal, selection and drift, and their interactions. 
+ 
+Second, rigorous experimental design requires that SDC taxa are sampled comparably and sufficiently intensively within and across locations to powerfully refute hypotheses or exclude some proposed models. The approach can realign empiricism and theory relating dispersal potential to population genetic structure when analysed at the species‐level (see the case study, above) and consequently necessitates re‐examination of the ecological and micro‐evolutionary causes. For example, to what extent might differences among populations be merely ecological meandering, microgeographic heterogeneity, or drift that is inconsequential on macro‐evolutionary time‐scales (see Thompson, 1999 ) and to what degree might macro‐evolutionary patterns in marine taxa be explained by dispersal syndromes? Comparisons of SDC species reveal that F ST also is strongly correlated with fecundity, and perhaps influenced by population size, and that these traits covary across taxa (e.g. fecundity versus PD: 0.75 ≤  R  ≤   0.87; effective population size versus PD: 0.83 ≤  R  ≤   0.88; Dawson et al ., in press; see also, e.g. Reaka et al ., 2008 ). This suggests that, as in some terrestrial systems (e.g. Clobert et al ., 2009 ), dispersal syndromes – perhaps also including behavioural and biomechanical abilities – may determine major characteristics of marine population genetic structure. Likewise, ‘environmental syndromes’ of many correlated extrinsic factors may exist – e.g. cooler, nutrient enriched, acidified water flowing offshore in high‐productivity upwelling zones – strengthening multifaceted filters to migration and gene flow. Familiar terrestrial examples include environmental changes associated with mountain ranges. The well‐known ‘island syndromes’ result from interacting effects of population size, dispersal and novel selective environments relative to mainlands. The SDC framework thus challenges us to design studies that can tease apart the effects of components that may be correlated in some places but not in others. 
+ 
+Third, the minimal requirements of hypothesis testing using multiple species and multiple loci will drive refinement of techniques, such as next generation tagged amplicon sequencing of exon‐primed‐intron crossing markers (e.g. Chenuil et al ., 2010 ; Bybee et al ., 2012 ; Puritz et al ., 2012 ). Fourth, adoption of the rigorous, hypothesis‐driven, ‘experimental’ study design will push phylogeography towards datasets comprising hundreds of species and loci, long an important goal for phylogeography (Hare, 2001 ; Riddle, 2010 ; see also Kisel & Barraclough, 2010 ) because only studies of this intensity can tell us about shared and idiosyncratic histories of places as well as of lineages. Fifth, the SDC framework encourages a ‘big data’ perspective which – because genomics and environmental sensing already are largely amenable to informatics approaches – emphasizes the need for rapid accumulation of comprehensive organismal and ecological datasets, the lack of which currently limits causal explanations of patterns revealed by comparative phylogeography. 
+ 
+The SDC framework, while established on the most robust scientific foundations, is thus in practice a work in progress. Key aspects, such as estimating mutation rates, taxon histories and coalescence times, and understanding changes in species' distributions, are themselves areas of active research (e.g. Nogués‐Bravo, 2009 ; Mailund et al ., 2011 ; Araújo & Peterson, 2012 ; Crandall et al ., 2012 ). Initially, modern co‐distribution and approximately ≥ 70% temporal overlap may provide a reasonable first approximation of historical co‐distribution, synchronous divergence, and thus the true relationship between causal and dependent factors (Fig.  4 ; Dawson, 2012 ; Dawson et al ., in press) but refinement has many potential benefits. When palaeontological records are available, coalescence times and palaeodistributions can be verified or improved (e.g. Lorenzen et al ., 2011 ; Kissling et al ., 2012 ) and the sensitivity of SDC analyses to deviations from current assumptions demarcated. When palaeodata are unavailable, as more often will be the case, coupling genetic estimates of historical demography with palaeospecies distribution modelling (Richards et al ., 2007 ), particularly mechanistic models (Buckley et al ., 2010 ; Merow et al ., 2011 ), and process‐based phylogenetic analyses (e.g. Pigot & Tobias, 2012 ), may provide independent corroboration of likely histories (Fig.  6 ), if niches are conserved (Peterson et al ., 1999 ). Although one of the benefits of the SDC framework is that it does not require a robustly estimated and well‐sampled phylogeny, when a broader phylogenetic context is available the probability of niche conservatism and mutational rate homogeneity (or similar patterns of heterochrony) can be estimated for both taxa in SDC pairs. Analytical procedures that can effect such a comprehensive application of the SDC framework are tractable (e.g. Richards et al ., 2007 ; Hickerson & Meyer, 2008 ; Lorenzen et al ., 2011 ; Kissling et al ., 2012 ; Pigot & Tobias, 2012 ) although no software pipeline currently exists. There is good reason, therefore, to view SDC taxon comparisons not as an optimistic and inoperable idea, but rather as a rigorous experimental phylogeographic approach that will support, and be supported by, methodological innovations across the breadth of biogeography and will complement existing techniques (e.g. Felsenstein, 1985 ; Kingsolver et al ., 2012 ; Paradis, 2012 ). 
+Figure 6 
+Open in figure viewer PowerPoint 
+Species' histories are likely to be more complex than indicated by current distributions, and comparisons of synchronously diverging co‐distributed (SDC) taxa will benefit from integration of statistical phylogeography with palaeodistribution modelling and palaeontological collections (e.g. Richards et al ., 2007 ; Nogués‐Bravo, 2009 ; Blois, 2012 ). In this example, (a) two synchronously diverging co‐distributed species A and B have been subject to the same temporal sequence of changes in precipitation (Precip) and temperature (Temp). Their distributions, however, have responded somewhat differently, as indicated by shading which represents abundance of individuals in each species at each location through time. (b) Reconstruction of the climate envelope for each species at several points through time indicates that distributional changes were responses to changes in the environment rather than niche evolution; CF1 = climatic factor 1, CF2 = climatic factor 2, following Nogués‐Bravo ( 2009 ). (c) Multi‐locus genetic analyses (e.g. Heled & Drummond, 2008 ), possibly including ancient DNA, in this simplified case, would be expected to corroborate population fluctuations in both A and B, and a period of sundering and secondary contact only in A. Such differences might be functions of differences in niche breadth (as indicated by spatial mapping of climate envelopes of species and gene distributions in (b)), effects of abundance or dispersal ability on gene flow, or other factors. Hypotheses based on coalescent analyses of genetic data and species distribution models ideally also would be integrated with palaeontological collections to confirm spatial and temporal presences and abundances (Blois, 2012 ) and phylogenetic mapping of physiological measurements as a separate estimate of the probability of niche conservatism or niche evolution (see also Hadly et al ., 2009 ; Angert et al ., 2011 ; Pigot & Tobias, 2012 ) and assessment of plasticity. Such analyses will provide estimates of percentage temporal and spatial overlap of SDC taxa, enriching interpretation and helping to explain the impact of historical dynamics on modern patterns. 
+Caption 
+Species' histories are likely to be more complex than indicated by current distributions, and comparisons of synchronously diverging co‐distributed (SDC) taxa will benefit from integration of statistical phylogeography with palaeodistribution modelling and palaeontological collections (e.g. Richards et al., ; Nogués‐Bravo, ; Blois, ). In this example, (a) two synchronously diverging co‐distributed species A and B have been subject to the same temporal sequence of changes in precipitation (Precip) and temperature (Temp). Their distributions, however, have responded somewhat differently, as indicated by shading which represents abundance of individuals in each species at each location through time. (b) Reconstruction of the climate envelope for each species at several points through time indicates that distributional changes were responses to changes in the environment rather than niche evolution; CF1 = climatic factor 1, CF2 = climatic factor 2, following Nogués‐Bravo (). (c) Multi‐locus genetic analyses (e.g. Heled & Drummond, ), possibly including ancient DNA, in this simplified case, would be expected to corroborate population fluctuations in both A and B, and a period of sundering and secondary contact only in A. Such differences might be functions of differences in niche breadth (as indicated by spatial mapping of climate envelopes of species and gene distributions in (b)), effects of abundance or dispersal ability on gene flow, or other factors. Hypotheses based on coalescent analyses of genetic data and species distribution models ideally also would be integrated with palaeontological collections to confirm spatial and temporal presences and abundances (Blois, ) and phylogenetic mapping of physiological measurements as a separate estimate of the probability of niche conservatism or niche evolution (see also Hadly et al., ; Angert et al., ; Pigot & Tobias, ) and assessment of plasticity. Such analyses will provide estimates of percentage temporal and spatial overlap of SDC taxa, enriching interpretation and helping to explain the impact of historical dynamics on modern patterns. 
+Mosaic of Meta‐Analyses 
+ 
+Nature is different from the laboratory (Ryan, 2011 ) but there is growing acknowledgement that both present opportunities to study life in scientifically rigorous manners. The SDC framework fulfills the need for understandable analysis (Hawkins, 2011 ), repetition and iteration (Ryan, 2011 ), and a comparative mode focused on assessing relative influences (Weiher et al ., 2011 ) that unites experimental ecology and descriptive biogeography with new statistical tools for ‘natural experiments’ in macroecology (Smith & Lyons, 2011 ). The SDC approach is consistent with ‘strong inference plus’ (Jewett, 2005 ) that allows comparisons among few taxa to reveal relationships among factors of strong effect and at the same time provide pilot phases and power analyses for factors of weaker effect. A mosaic of meta‐analyses of natural experiments in phylogeography is rare in meeting the criteria of the experimental scientific method while representing the complexity of the natural world. 
+Acknowledgements 
+ 
+I am grateful to Jeff Yoshimi for guidance to some of the literature on the demarcation problem, and to colleagues, three referees and the editors, who encouraged and enabled refinement of the SDC approach during its development and presentation. 
+ 
+Biography 
+ 
+    Michael N Dawson researches the geographic and temporal distributions of biodiversity from the perspectives of population genetics, systematics, and population and community ecology. This study complements collaborative projects in the north‐eastern and western Pacific Ocean that seek to explain the relationships between ecology, geography and genetic structure. 
+ 
+References 
+ 
+    Altman, D.G. & Deeks, J.J. ( 2002 ) Meta‐analysis, Simpson's paradox, and the number needed to treat . BMC Medical Research Methodology , 2 , 3. 
+    Crossref PubMed Google Scholar 
+    Angert, A.L., Sheth, S.N. & Paul, J.R. ( 2011 ) Incorporating population‐level variation in thermal performance into predictions of geographic range shifts . Integrative and Comparative Biology , 51 , 733–750. 
+    Crossref PubMed Web of Science® Google Scholar 
+    Araújo, M.B. & Peterson, A.T. ( 2012 ) Uses and misuses of bioclimatic envelope modeling . Ecology , 93 , 1527–1539. 
+    Wiley Online Library PubMed Web of Science® Google Scholar 
+    Avise, J.C. ( 1992 ) Molecular population structure and the biogeographic history of a regional fauna: a case history with lessons for conservation biology . Oikos , 63 , 62–76. 
+    Crossref CAS Web of Science® Google Scholar 
+    Avise, J.C. ( 1994 ) Molecular markers, natural history and evolution . Chapman & Hall, New York. 
+    Crossref CAS Web of Science® Google Scholar 
+    Avise, J.C. ( 2000 ) Phylogeography: the history and formation of species . Harvard University Press, Cambridge, MA. 
+    Web of Science® Google Scholar 
+    Avise, J.C., Arnold, J., Ball, R.M., Bermingham, E., Lamb, T., Neigel, J.E., Reeb, C.A. & Saunders, N.C. ( 1987 ) Intraspecific phylogeography: the mitochondrial DNA bridge between population genetics and systematics . Annual Review of Ecology and Systematics , 18 , 489–522. 
+    Crossref Web of Science® Google Scholar 
+    Barber, P.H., Erdmann, M.V. & Palumbi, S.R. ( 2006 ) Comparative phylogeography of three codistributed stomatopods: origins and timing of regional lineage diversification in the Coral Triangle . Evolution , 60 , 1825–1839. 
+    Wiley Online Library PubMed Web of Science® Google Scholar 
+    Barraclough, T.G., Nee, S. & Harvey, P.H. ( 1998 ) Sister‐group analysis in identifying correlates of diversification . Evolutionary Ecology , 12 , 751–754. 
+    Crossref Web of Science® Google Scholar 
+    Bell, R.C., MacKenzie, J.B., Hickerson, M.J., Chavarría, K.L., Cunningham, M., Williams, S. & Moritz, C. ( 2012 ) Comparative multi‐locus phylogeography confirms multiple vicariance events in co‐distributed rainforest frogs . Proceedings of the Royal Society B: Biological Sciences , 279 , 991–999. 
+    Crossref PubMed Web of Science® Google Scholar 
+    Bird, C.E., Holland, B.S., Bowen, B.W. & Toonen, R.J. ( 2011a ) Diversification of sympatric broadcast‐spawning limpets ( Cellana spp.) within the Hawaiian archipelago . Molecular Ecology , 20 , 2128–2141. 
+    Wiley Online Library PubMed Web of Science® Google Scholar 
+    Bird, C.E., Karl, S.A. & Toonen, R.J. ( 2011b ) Detecting and measuring genetic differentiation . Phylogeography and population genetics in Crustacea (ed. by S. Koenemann, C. Held and C. Schubart), pp. 31–56. CRC Press, Boca Raton, FL. 
+    Crossref Web of Science® Google Scholar 
+    Blakeslee, A.M., Byers, J.E. & Lesser, M.P. ( 2008 ) Solving cryptogenic histories using host and parasite molecular genetics: the resolution of Littorina littorea 's North American origin . Molecular Ecology , 17 , 3684–3696. 
+    Wiley Online Library CAS PubMed Web of Science® Google Scholar 
+    Blois, J.L. ( 2012 ) Recent advances in using species distributional models to understand past distributions . Frontiers of Biogeography , 3 , 123–124. 
+    Google Scholar 
+    Bloomquist, E.W., Lemey, P. & Suchard, M.A. ( 2010 ) Three roads diverged? Routes to phylogeographic inference . Trends in Ecology and Evolution , 25 , 626–632. 
+    Crossref PubMed Web of Science® Google Scholar 
+    Bohonak, A.J. ( 1999 ) Dispersal, gene flow, and population structure . Quarterly Review of Biology , 74 , 21–45. 
+    Crossref CAS PubMed Web of Science® Google Scholar 
+    Buckley, L.B., Urban, M.C., Angilletta, M.J., Crozier, L.G., Rissler, L.J. & Sears, M.W. ( 2010 ) Can mechanism inform species' distribution models? Ecology Letters , 13 , 1041–1054. 
+    Wiley Online Library PubMed Web of Science® Google Scholar 
+    Bybee, E.M., Bracken‐Grissom, H., Haynes, B.D., Hermansen, R.A., Byers, R.L., Clement, M.J., Udall, J.A., Wilcox, E.R. & Crandall, K.A. ( 2012 ) Targeted amplicon sequencing (TAS): a scalable next‐gen approach to multi‐locus, multi‐taxa phylogenetics . Genome Biology and Evolution , 3 , 1312–1323. 
+    Crossref Web of Science® Google Scholar 
+    Calsbeek, R., Thompson, J.N. & Richardson, J.E. ( 2003 ) Patterns of molecular evolution and diversification in a biodiversity hotspot: the California Floristic Province . Molecular Ecology , 12 , 1021–1029. 
+    Wiley Online Library CAS PubMed Web of Science® Google Scholar 
+    Chenuil, A., Hoareau, T.B., Egea, E., Penant, G., Rocher, C., Aurelle, D., Mokhtar‐Jamai, K., Bishop, J.D.D., Boissin, E., Diaz, A., Krakau, M., Luttikhuizen, P.C., Patti, F.P., Blavet, N. & Mousset, S. ( 2010 ) An efficient method to find potentially universal population genetic markers, applied to metazoans . BMC Evolutionary Biology , 10 , 276. 
+    Crossref CAS PubMed Web of Science® Google Scholar 
+    Clobert, J., Le Galliard, J.‐F., Cote, J., Meylan, S. & Massot, M. ( 2009 ) Informed dispersal, heterogeneity in animal dispersal syndromes and the dynamics of spatially structured populations . Ecology Letters , 12 , 197–209. 
+    Wiley Online Library PubMed Web of Science® Google Scholar 
+    Costedoat, C. & Gilles, A. ( 2009 ) Quaternary pattern of freshwater fishes in Europe: comparative phylogeography and conservation perspective . Open Conservation Biology Journal , 3 , 36–48. 
+    Crossref CAS Google Scholar 
+    Crandall, E.C., Frey, M.A., Grosberg, R.K. & Barber, P.H. ( 2008 ) Contrasting demographic history and phylogeographical patterns in two Indo‐Pacific gastropods . Molecular Ecology , 17 , 611–626. 
+    Wiley Online Library PubMed Web of Science® Google Scholar 
+    Crandall, E.C., Sbrocco, E.J., DeBoer, T.S., Barber, P.H. & Carpenter, K.E. ( 2012 ) Expansion dating: calibrating molecular clocks in marine species from expansions onto the Sunda Shelf following the Last Glacial Maximum . Molecular Biology and Evolution , 29 , 707–719. 
+    Crossref CAS PubMed Web of Science® Google Scholar 
+    Crisp, D.J. ( 1978 ) Genetic consequences of different reproductive strategies in marine invertebrates . Marine organisms: genetics, ecology, and evolution (ed. by B. Battaglia and J.A. Beardmore), pp. 257–273. Plenum, New York. 
+    Google Scholar 
+    Dawson, M.N ( 2001 ) Phylogeography in coastal marine animals: a solution from California? Journal of Biogeography , 28 , 723–736. 
+    Wiley Online Library Web of Science® Google Scholar 
+    Dawson, M.N ( 2012 ) Parallel phylogeographic structure in ecologically similar sympatric sister taxa . Molecular Ecology , 21 , 987–1004. 
+    Wiley Online Library CAS PubMed Web of Science® Google Scholar 
+    Dawson, M.N & Hamner, W.M ( 2008 ) A biophysical perspective on dispersal and the geography of evolution in marine and terrestrial systems . Journal of the Royal Society Interface , 5 , 135–150. 
+    Crossref PubMed Web of Science® Google Scholar 
+    Dawson, M.N, Louie, K.D., Barlow, M., Jacobs, D.K. & Swift, C.C. ( 2002 ) Comparative phylogeography of sympatric sister species, Clevelandia ios and Eucyclogobius newberryi (Teleostei, Gobiidae), across the California Transition Zone . Molecular Ecology , 11 , 1065–1075. 
+    Wiley Online Library CAS PubMed Web of Science® Google Scholar 
+    Dawson, M.N, Hays, C.G., Grosberg, R.K. & Raimondi, P.T. (in press) Dispersal potential and population genetic structure of synchronously diverging co‐distributed taxa in the marine intertidal of the eastern North Pacific . Ecological Monographs . 
+    PubMed Web of Science® Google Scholar 
+    Doherty, P.J., Planes, S. & Mather, P. ( 1995 ) Gene flow and larval duration in seven species of fish from the Great Barrier Reef . Ecology , 76 , 2373–2391. 
+    Wiley Online Library Web of Science® Google Scholar 
+    Elmer, K.R. & Meyer, A. ( 2011 ) Adaptation in the age of ecological genomics: insights from parallelism and convergence . Trends in Ecology and Evolution , 26 , 298–306. 
+    Crossref PubMed Web of Science® Google Scholar 
+    Excoffier, L., Laval, G. & Schneider, S. ( 2005 ) Arlequin ver. 3.0: an integrated software package for population genetics data analysis . Evolutionary Bioinformatics Online , 1 , 47–50. 
+    Crossref CAS PubMed Web of Science® Google Scholar 
+    Felsenstein, J. ( 1985 ) Phylogenies and the comparative method . The American Naturalist , 125 , 1–15. 
+    Crossref PubMed Web of Science® Google Scholar 
+    Flowers, J.M., Schroeter, S.C. & Burton, R.S. ( 2002 ) The recruitment sweepstakes has many winners: genetic evidence from the sea urchin Strongylocentrotus purpuratus . Evolution , 56 , 1445–1453. 
+    Wiley Online Library CAS PubMed Web of Science® Google Scholar 
+    Freckleton, R.P. ( 2009 ) The seven deadly sins of comparative analysis . Journal of Evolutionary Biology , 22 , 1367–1375. 
+    Wiley Online Library CAS PubMed Web of Science® Google Scholar 
+    Garland, T. Jr & Carter, P.A. ( 1994 ) Evolutionary physiology . Annual Review of Physiology , 56 , 579–621. 
+    Crossref PubMed Web of Science® Google Scholar 
+    Gillespie, R.G., Baldwin, B.G., Waters, J.M., Fraser, C.I., Nikula, R. & Roderick, G.K. ( 2012 ) Long‐distance dispersal: a framework for hypothesis testing . Trends in Ecology and Evolution , 27 , 47–56. 
+    Crossref PubMed Web of Science® Google Scholar 
+    Gillman, L.N. & Wright, S.D. ( 2010 ) Mega mistakes in meta‐analyses: devil in the detail . Ecology , 91 , 2550–2552. 
+    Wiley Online Library PubMed Web of Science® Google Scholar 
+    Gooch, J.L. ( 1975 ) Mechanisms of evolution and population genetics . Marine ecology, Vol. II: Physiological mechanisms (ed. by O. Kinne), pp. 349–409. J. Wiley & Sons, London. 
+    Google Scholar 
+    Gould, S.J. ( 1970 ) Dollo on Dollo's Law: irreversibility and the status of evolutionary laws . Journal of the History of Biology , 3 , 189–212. 
+    Crossref CAS PubMed Google Scholar 
+    Gurevitch, J. & Mengersen, K. ( 2010 ) A statistical view of synthesizing patterns of species richness along productivity gradients: devils, forests, and trees . Ecology , 91 , 2553–2560. 
+    Wiley Online Library CAS PubMed Web of Science® Google Scholar 
+    Hadly, E.A., Spaeth, P.A. & Li, C. ( 2009 ) Niche conservatism above the species level . Proceedings of the National Academy of Sciences USA , 106 , 19707–19714. 
+    Crossref CAS PubMed Web of Science® Google Scholar 
+    Hamner, W.M. ( 1982 ) Strange world of Palau's salt lakes . National Geographic , 161 , 264–282. 
+    Google Scholar 
+    Hare, M.P. ( 2001 ) Prospects for nuclear gene phylogeography . Trends in Ecology and Evolution , 16 , 700–706. 
+    Crossref Web of Science® Google Scholar 
+    Hawkins, B.A. ( 2011 ) Eight (and a half) deadly sins of spatial analysis . Journal of Biogeography , 39 , 1–9. 
+    Wiley Online Library Web of Science® Google Scholar 
+    Hawkins, B.A., McCain, C.M., Davies, T.J., Buckley, L.B., Anacker, B.L., Cornell, H.V., Damschen, E.I., Grytnes, J.‐A., Harrison, S., Holt, R.D., Kraft, N.J.B. & Stephens, P.R. ( 2012 ) Different evolutionary histories underlie congruent species richness gradients of birds and mammals . Journal of Biogeography , 39 , 825–841. 
+    Wiley Online Library Web of Science® Google Scholar 
+    Hedgecock, D. ( 1994 ) Temporal and spatial genetic structure of marine animal populations in the California current . California Cooperative Oceanic Fisheries Investigations Reports , 35 , 73–81. 
+    Web of Science® Google Scholar 
+    Hedges, L.V., Gurevitch, J. & Curtis, P.S. ( 1999 ) The meta‐analysis of response ratios in experimental ecology . Ecology , 80 , 1150–1156. 
+    Wiley Online Library Web of Science® Google Scholar 
+    Hedrick, P.W. ( 2005 ) A standardized genetic differentiation measure . Evolution , 59 , 1633–1638. 
+    Wiley Online Library CAS PubMed Web of Science® Google Scholar 
+    Heled, J. & Drummond, A.J. ( 2008 ) Bayesian inference of population size history from multiple loci . BMC Evolutionary Biology , 8 , 289. 
+    Crossref CAS PubMed Web of Science® Google Scholar 
+    Hellberg, M.E. ( 2009 ) Gene flow and isolation among populations of marine animals . Annual Review of Ecology, Evolution, and Systematics , 40 , 291–310. 
+    Crossref Web of Science® Google Scholar 
+    Hellberg, M.E., Burton, R.S., Neigel, J.E. & Palumbi, S.R. ( 2002 ) Genetic assessment of connectivity among marine populations . Bulletin of Marine Science , 70 , 273–290. 
+    Web of Science® Google Scholar 
+    Heller, R. & Siegismund, H.R. ( 2009 ) Relationship between three measures of genetic differentiation G ST , D EST and G′ ST : how wrong have we been? Molecular Ecology , 18 , 2080–2083. 
+    Wiley Online Library PubMed Web of Science® Google Scholar 
+    Hickerson, M.J. & Cunningham, C.W. ( 2005 ) Contrasting Quaternary histories in an ecologically divergent sister pair of low‐dispersing intertidal fish ( Xiphister ) revealed by multilocus DNA analysis . Evolution , 59 , 344–360. 
+    Wiley Online Library PubMed Web of Science® Google Scholar 
+    Hickerson, M.J. & Meyer, C.P. ( 2008 ) Testing comparative phylogeographic models of marine vicariance and dispersal using a hierarchical Bayesian approach . BMC Evolutionary Biology , 8 , 322. 
+    Crossref PubMed Web of Science® Google Scholar 
+    Hickerson, M.J., Carstens, B.C., Cavender‐Bares, J., Crandall, K.A., Graham, C.H., Johnson, J.B., Rissler, L., Victoriano, P.F. & Yoder, A.D. ( 2010 ) Phylogeography's past, present, and future: 10 years after Avise, 2000 . Molecular Phylogenetics and Evolution , 54 , 291–301. 
+    Crossref CAS PubMed Web of Science® Google Scholar 
+    Housworth, E.A., Martins, E.P. & Lynch, M. ( 2004 ) The phylogenetic mixed model . The American Naturalist , 163 , 84–96. 
+    Crossref PubMed Web of Science® Google Scholar 
+    Ilves, K.L., Huang, W., Wares, J.P. & Hickerson, M.J. ( 2010 ) Colonization and/or mitochondrial selective sweeps across the North Atlantic intertidal assemblage revealed by multi‐taxa approximate Bayesian computation . Molecular Ecology , 19 , 4505–4519. 
+    Wiley Online Library PubMed Web of Science® Google Scholar 
+    Jewett, D.L. ( 2005 ) What's wrong with single hypotheses? Why it is time for Strong‐Inference‐PLUS . Scientist , 19 , 10. 
+    PubMed Web of Science® Google Scholar 
+    Johnson, M.S. & Black, R. ( 1982 ) Chaotic genetic patchiness in an intertidal limpet . Marine Biology , 70 , 157–164. 
+    Crossref Web of Science® Google Scholar 
+    Jost, L. ( 2008 ) G ST and its relatives do not measure differentiation . Molecular Ecology , 17 , 4015–4026. 
+    Wiley Online Library PubMed Web of Science® Google Scholar 
+    Kautt, A.F., Eimer, K.R. & Meyer, A. ( 2012 ) Genomic signatures of divergent selection and speciation patterns in a ‘natural experiment’, the young parallel radiations of Nicaraguan crater lake cichlid fishes . Molecular Ecology , 21 , 4770–4786. 
+    Wiley Online Library PubMed Web of Science® Google Scholar 
+    Kelly, R.P. & Palumbi, S.R. ( 2010 ) Genetic structure among 50 species of the northeastern Pacific rocky intertidal community . PLoS ONE , 5 , e8594. 
+    Crossref CAS PubMed Web of Science® Google Scholar 
+    Kingsolver, J.G., Diamond, S.E., Siepielski, A.M. & Carlson, S.M. ( 2012 ) Synthetic analyses of phenotypic selection in natural populations: lessons, limitations and future directions . Evolutionary Ecology , 26 , 1101–1118. 
+    Crossref Web of Science® Google Scholar 
+    Kisel, Y. & Barraclough, T.G. ( 2010 ) Speciation has a spatial scale that depends on levels of gene flow . The American Naturalist , 175 , 316–334. 
+    Crossref PubMed Web of Science® Google Scholar 
+    Kissling, W.D., Eiserhardt, W.L., Baker, W.J., Borchsenius, F., Couvreur, T.L.P., Balslev, H. & Svenning, J.‐C. ( 2012 ) Cenozoic imprints on the phylogenetic structure of palm species assemblages worldwide . Proceedings of the National Academy of Sciences USA , 109 , 7379–7384. 
+    Crossref CAS PubMed Web of Science® Google Scholar 
+    Knowles, L.L. ( 2004 ) The burgeoning field of statistical phylogeography . Journal of Evolutionary Biology , 17 , 1–10. 
+    Wiley Online Library CAS PubMed Web of Science® Google Scholar 
+    Knowles, L.L. ( 2009 ) Statistical phylogeography . Annual Review of Ecology, Evolution, and Systematics , 40 , 593–612. 
+    Crossref Web of Science® Google Scholar 
+    Kueffer, C., Niinemets, Ü., Drenovsky, R.E., Kattge, J., Milberg, P., Poorter, H., Reich, P.B., Werner, C., Westoby, M. & Wright, I.J. ( 2011 ) Fame, glory and neglect in meta‐analyses . Trends in Ecology and Evolution , 26 , 493–494. 
+    Crossref PubMed Web of Science® Google Scholar 
+    Lester, S.E., Ruttenberg, B.I., Gaines, S.G. & Kinlan, B.P. ( 2007 ) The relationship between dispersal ability and geographic range size . Ecological Letters , 10 , 745–758. 
+    Wiley Online Library PubMed Web of Science® Google Scholar 
+    Lomolino, M.V., Riddle, B.R. & Brown, J.H. ( 2006 ) Biogeography , 3rd edn . Sinauer, Sunderland, MA. 
+    Google Scholar 
+    Lorenzen, E.D., Nogués‐Bravo, D., Orlando, L. et al . ( 2011 ) Species‐specific responses of Late Quaternary megafauna to climate and humans . Nature , 479 , 359–365. 
+    Crossref CAS PubMed Web of Science® Google Scholar 
+    Lynch, J.D. ( 1989 ) The gauge of speciation: on the modes and frequencies of speciation . Speciation and its consequences (ed. by D. Otte and J.A. Endler), pp. 527–553. Sinauer, Sunderland, MA. 
+    Google Scholar 
+    MacArthur, R.H. & Wilson, E.O. ( 1967 ) The theory of island biogeography . Princeton University Press, Princeton, NJ. 
+    Google Scholar 
+    Mailund, T., Dutheil, J.Y., Hobolth, A., Lunter, G. & Schierup, M.H. ( 2011 ) Estimating divergence time and ancestral effective population size of Bornean and Sumatran orangutan subspecies using a coalescent hidden Markov model . PLoS Genetics , 7 , e1001319. 
+    Crossref PubMed Web of Science® Google Scholar 
+    Marko, P.B. ( 2002 ) Fossil calibration of molecular clocks and the divergence times of geminate species pairs separated by the Isthmus of Panama . Molecular Biology and Evolution , 19 , 2005–2021. 
+    Crossref CAS PubMed Web of Science® Google Scholar 
+    Marko, P.B. & Hart, M.W. ( 2011 ) The complex analytical landscape of gene flow inference . Trends in Ecology and Evolution , 26 , 448–456. 
+    Crossref PubMed Web of Science® Google Scholar 
+    Marko, P.B. & Moran, A.L. ( 2009 ) Out of sight, out of mind: high cryptic diversity obscures the identities and histories of geminate species in the marine bivalve subgenus Acar . Journal of Biogeography , 36 , 1861–1880. 
+    Wiley Online Library Web of Science® Google Scholar 
+    McIntyre, L. ( 1997 ) Gould on laws in biological science . Biology and Philosophy , 12 , 357–367. 
+    Crossref Web of Science® Google Scholar 
+    Meirmans, P.G. & Hedrick, P.W. ( 2011 ) Assessing population structure: F ST and related measures . Molecular Ecology Resources , 11 , 5–18. 
+    Wiley Online Library PubMed Web of Science® Google Scholar 
+    Merow, C., LaFleur, N., Silander, J.A., Wilson, A.M. & Rubega, M. ( 2011 ) Developing dynamic mechanistic species distribution models: predicting bird‐mediated spread of invasive plants across northeastern North America . The American Naturalist , 178 , 30–43. 
+    Crossref PubMed Web of Science® Google Scholar 
+    Mittelbach, G.G., Scheiner, S.M. & Steiner, C.F. ( 2003 ) What is the observed relationship between species richness and productivity? Reply . Ecology , 84 , 3390–3395. 
+    Wiley Online Library Web of Science® Google Scholar 
+    Nielsen, R. ( 2006 ) Reducing an intellectual deficit: coalescent theory for (almost) everyone . Evolution , 60 , 208–209. 
+    Wiley Online Library Google Scholar 
+    Nogués‐Bravo, D. ( 2009 ) Predicting the past distribution of species climatic niches . Global Ecology and Biogeography , 18 , 521–531. 
+    Wiley Online Library Web of Science® Google Scholar 
+    Palumbi, S.R. ( 2003 ) Population genetics, demographic connectivity, and the design of marine reserves . Ecological Applications , 13 , S146–S158. 
+    Wiley Online Library Web of Science® Google Scholar 
+    Paradis, E. ( 2012 ) Shift in diversification in sister‐clade comparisons: a more powerful test . Evolution , 66 , 288–295. 
+    Wiley Online Library PubMed Web of Science® Google Scholar 
+    Parenti, L.R. & Ebach, M.C. ( 2009 ) Comparative biogeography . University of California Press, Berkeley, CA. 
+    Google Scholar 
+    Pelc, R.A., Warner, R.R. & Gaines, S.D. ( 2009 ) Geographical patterns of genetic structure in marine species with contrasting life histories . Journal of Biogeography , 36 , 1881–1890. 
+    Wiley Online Library Web of Science® Google Scholar 
+    Peterson, A.T., Soberón, J. & Sánchez‐Cordero, V. ( 1999 ) Conservatism of ecological niches in evolutionary time . Science , 285 , 1265–1267. 
+    Crossref CAS PubMed Web of Science® Google Scholar 
+    Pigot, A.L. & Tobias, J.A. ( 2012 ) Species interactions constrain geographic range expansion over evolutionary time . Ecology Letters , 16 , 330–338. 
+    Wiley Online Library PubMed Web of Science® Google Scholar 
+    Platt, J.R. ( 1964 ) Strong inference . Science , 146 , 347–353. 
+    Crossref CAS PubMed Web of Science® Google Scholar 
+    Poelchau, M.F. & Hamrick, J.L. ( 2013 ) Comparative phylogeography of three common Neotropical tree species . Journal of Biogeography , 40 , 618–631. 
+    Wiley Online Library Web of Science® Google Scholar 
+    Puritz, J.B., Addison, J.A. & Toonen, R.J. ( 2012 ) Next‐generation phylogeography: a targeted approach for multilocus sequencing of non‐model organisms . PLoS ONE , 7 , e34241. 
+    Crossref CAS PubMed Web of Science® Google Scholar 
+    Reaka, M.L., Rodgers, P.J. & Kudla, A.U. ( 2008 ) Patterns of biodiversity and endemism on Indo‐West Pacific coral reefs . Proceedings of the National Academy of Sciences USA , 105 , 11474–11481. 
+    Crossref CAS PubMed Web of Science® Google Scholar 
+    Rice, S.H. & Papadopoulos, A. ( 2009 ) Evolution with stochastic fitness and stochastic migration . PLoS ONE , 4 , e7130. 
+    Crossref CAS PubMed Web of Science® Google Scholar 
+    Richards, C.L., Carstens, B.C. & Knowles, L.L. ( 2007 ) Distribution modelling and statistical phylogeography: an integrative framework for generating and testing alternative biogeographical hypotheses . Journal of Biogeography , 34 , 1833–1845. 
+    Wiley Online Library Web of Science® Google Scholar 
+    Riddle, B.R. ( 2010 ) Interview with John C. Avise, recipient of the 2009 Alfred Russel Wallace Award . Frontiers of Biogeography , 2 , 103–111. 
+    Google Scholar 
+    Riddle, B.R. & Hafner, D.J. ( 2006 ) A step‐wise approach to integrating phylogeographic and phylogenetic biogeographic perspectives on the history of a core North American warm deserts biota . Journal of Arid Environments , 66 , 435–461. 
+    Crossref PubMed Web of Science® Google Scholar 
+    Riddle, B.R., Hafner, D.J., Alexander, L.F. & Jaeger, J.R. ( 2000 ) Cryptic vicariance in the historical assembly of a Baja California Peninsular Desert biota . Proceedings of the National Academy of Sciences USA , 97 , 14438–14443. 
+    Crossref CAS PubMed Web of Science® Google Scholar 
+    Riddle, B.R., Dawson, M.N., Hadly, E.A., Hafner, D.J., Hickerson, M.J., Mantooth, S.J. & Yoder, A.D. ( 2008 ) The role of molecular genetics in sculpting the future of integrative biogeography . Progress in Physical Geography , 32 , 173–202. 
+    Crossref Web of Science® Google Scholar 
+    Riginos, C., Douglas, K.E., Jin, Y., Shanahan, D.F. & Treml, E.A. ( 2011 ) Effects of geography and life history traits on genetic differentiation in benthic marine fishes . Ecography , 34 , 566–575. 
+    Wiley Online Library Web of Science® Google Scholar 
+    Rosenzweig, M. ( 1996 ) Colonial birds probably do speciate faster . Evolutionary Ecology , 10 , 681–683. 
+    Crossref Web of Science® Google Scholar 
+    Roughgarden, J. ( 2009 ) Is there a general theory of community ecology? Biology and Philosophy , 24 , 521–529. 
+    Crossref Web of Science® Google Scholar 
+    Ryan, M.J. ( 2011 ) Replication in field biology: the case of the frog‐eating bat . Science , 334 , 1229–1230. 
+    Crossref CAS PubMed Web of Science® Google Scholar 
+    Ryman, N. & Leimar, O. ( 2009 ) G ST is still a useful measure of genetic differentiation – a comment on Jost's D . Molecular Ecology , 8 , 2084–2087. 
+    Wiley Online Library Web of Science® Google Scholar 
+    Scheiner, S.M. ( 2011 ) Musings on the Acropolis: terminology for biogeography . Frontiers of Biogeography , 3 , 62–70. 
+    Google Scholar 
+    Scheltema, R.S. ( 1971 ) Larval dispersal as a means of genetic exchange between geographically separated populations of shallow‐water benthic marine gastropods . Biological Bulletin , 140 , 284–322. 
+    Crossref Web of Science® Google Scholar 
+    Schluter, D. & Whitlock, M. ( 2009 ) The analysis of biological data . Roberts & Co., Greenwood Village, CO. 
+    Google Scholar 
+    Selkoe, K.A. & Toonen, R.J. ( 2011 ) Marine connectivity: a new look at pelagic larval duration and genetic metrics of dispersal . Marine Ecology Progress Series , 436 , 291–305. 
+    Crossref Web of Science® Google Scholar 
+    Selkoe, K.A., Watson, J.R., White, C., Ben Horin, T., Iacchei, M., Mitarai, S., Siegel, D.A., Gaines, S.D. & Toonen, R.J. ( 2010 ) Taking the chaos out of genetic patchiness: seascape genetics reveals ecological and oceanographic drivers of genetic patterns in three temperate reef species . Molecular Ecology , 19 , 3708–3726. 
+    Wiley Online Library PubMed Web of Science® Google Scholar 
+    Shanks, A.L. ( 2009 ) Pelagic larval duration and dispersal distance revisited . Biological Bulletin , 216 , 373–385. 
+    Crossref PubMed Web of Science® Google Scholar 
+    Slatkin, M. ( 2005 ) Seeing ghosts: the effect of unsampled populations on migration rates estimated for sampled populations . Molecular Ecology , 14 , 67–73. 
+    Wiley Online Library CAS PubMed Web of Science® Google Scholar 
+    Slavin, R.E. ( 1995 ) Best evidence synthesis: an intelligent alternative to meta‐analysis . Journal of Clinical Epidemiology , 48 , 9–18. 
+    Crossref CAS PubMed Web of Science® Google Scholar 
+    Smith, F.A. & Lyons, A.G. ( 2011 ) Losing time? Incorporating a deeper temporal perspective into modern ecology . Frontiers of Biogeography , 4 , 26–39. 
+    PubMed Web of Science® Google Scholar 
+    Steele, C.A., Baumsteiger, J. & Storfer, A. ( 2009 ) Influence of life‐history variation on the genetic structure of two sympatric salamander taxa . Molecular Ecology , 18 , 1629–1639. 
+    Wiley Online Library CAS PubMed Web of Science® Google Scholar 
+    Thiel, M. & Gutow, L. ( 2005 ) The ecology of rafting in the marine environment. II. The rafting organisms and community . Oceanography and Marine Biology: an Annual Review , 43 , 279–418. 
+    Crossref Web of Science® Google Scholar 
+    Thompson, J.N. ( 1999 ) Coevolution and escalation: are ongoing coevolutionary meanderings important? The American Naturalist , 153 , S92–S93. 
+    Crossref Web of Science® Google Scholar 
+    Toonen, R.J. & Grosberg, R.K. ( 2011 ) Causes of chaos: spatial and temporal genetic heterogeneity in the intertidal anomuran crab Petrolisthes cinctipes . Phylogeography and population genetics in Crustacea (ed. by S. Koenemann, C. Held and C. Schubart), pp. 73–106. Crustacean Issues, 19. CRC Press, New York. 
+    Google Scholar 
+    Treml, E.A., Roberts, J.J., Chao, Y., Halpin, P.N., Possingham, H.P. & Riginos, C.A. ( 2012 ) Reproductive output and duration of the pelagic larval stage determine seascape‐wide connectivity of marine populations . Integrative and Comparative Biology , 52 , 525–537. 
+    Crossref PubMed Web of Science® Google Scholar 
+    Vaux, D.L. ( 2012 ) Research methods: know when your numbers are significant . Nature , 492 , 180–181. 
+    CAS PubMed Web of Science® Google Scholar 
+    Vekemans, X. & Hardy, O.J. ( 2004 ) New insights from fine‐scale spatial genetic structure analyses in plant populations . Molecular Ecology , 13 , 921–935. 
+    Wiley Online Library CAS PubMed Web of Science® Google Scholar 
+    Waples, R.S. ( 1987 ) A multispecies approach to the analysis of gene flow in marine shore fishes . Evolution , 41 , 385–400. 
+    Wiley Online Library PubMed Web of Science® Google Scholar 
+    Wares, J.P., Gaines, S.D. & Cunningham, C.W. ( 2001 ) A comparative study of asymmetric migration events across a marine biogeographic boundary . Evolution , 55 , 295–306. 
+    Wiley Online Library CAS PubMed Web of Science® Google Scholar 
+    Weersing, K. & Toonen, R.J. ( 2009 ) Population genetics, larval dispersal, and connectivity in marine systems . Marine Ecology Progress Series , 393 , 1–12. 
+    Crossref Web of Science® Google Scholar 
+    Weiher, E., Freund, D., Bunton, T., Stefanski, A., Lee, T. & Bentivenga, S. ( 2011 ) Advances, challenges and a developing synthesis of ecological community assembly theory . Philosophical Transactions of the Royal Society B: Biological Sciences , 366 , 2403–2413. 
+    Crossref PubMed Web of Science® Google Scholar 
+    Werenkraut, V. & Ruggiero, A. ( 2011 ) Quality of basic data and method to identify shape affect richness–altitude relationships in meta‐analysis . Ecology , 92 , 253–260. 
+    Wiley Online Library PubMed Web of Science® Google Scholar 
+    Whittaker, R.J. ( 2010a ) Meta‐analyses and mega‐mistakes: calling time on meta‐analysis of the species richness–productivity relationship . Ecology , 91 , 2522–2533. 
+    Wiley Online Library PubMed Web of Science® Google Scholar 
+    Whittaker, R.J. ( 2010b ) In the dragon's den: a response to the meta‐analysis forum contributions . Ecology , 91 , 2568–2571. 
+    Wiley Online Library Web of Science® Google Scholar 
+    Whittaker, R.J. & Heegaard, E. ( 2003 ) What is the observed relationship between species richness and productivity? Comment . Ecology , 84 , 3384–3390. 
+    Wiley Online Library Web of Science® Google Scholar 
+    Wright, S. ( 1931 ) Evolution in Mendelian populations . Genetics , 16 , 97–159. 
+    CAS PubMed Web of Science® Google Scholar 
+    Zink, R.M., Blackwell‐Rago, R.C. & Ronquist, F. ( 2000 ) The shifting roles of dispersal and vicariance in biogeography . Proceedings of the Royal Society B: Biological Sciences , 267 , 497–503. 
+    Crossref CAS PubMed Web of Science® Google Scholar 
+ 
+Citing Literature 
+Number of times cited: 21 
+ 
+    Tara A. Pelletier and Bryan C. Carstens , Geographical range size and latitude predict population genetic structure in a global survey , Biology Letters , 14 , 1 , (20170566) , (2018) . 
+    Crossref 
+    Bryan C. Carstens, Ariadna E. Morales, Kathryn Field and Tara A. Pelletier , A global analysis of bats using automated comparative phylogeography uncovers a surprising impact of Pleistocene glaciation , Journal of Biogeography , 45 , 8 , (1795-1805) , (2018) . 
+    Wiley Online Library 
+    Jedediah F. Brodie , Evolutionary cascades induced by large frugivores , Proceedings of the National Academy of Sciences , 114 , 45 , (11998) , (2017) . 
+    Crossref 
+    Adrianne dos Santos Freitas, Raimundo da Silva, Iracilda Sampaio and Horacio Schneider , The mitochondrial control region reveals genetic structure in southern kingcroaker populations on the coast of the Southwestern Atlantic , Fisheries Research , 191 , (87) , (2017) . 
+    Crossref 
+    Lauren M. Schiebelhut, Sarah S. Abboud, Liza E. Gómez Daglio, Holly F. Swift and Michael N Dawson , A comparison of DNA extraction methods for high‐throughput DNA analyses , Molecular Ecology Resources , 17 , 4 , (721-729) , (2016) . 
+    Wiley Online Library 
+    Jonathan B. Puritz, Carson C. Keever, Jason A. Addison, Sergio S. Barbosa, Maria Byrne, Michael W. Hart, Richard K. Grosberg and Robert J. Toonen , Life‐history predicts past and present population connectivity in two sympatric sea stars , Ecology and Evolution , 7 , 11 , (3916-3930) , (2017) . 
+    Wiley Online Library 
+    Paolo Gratton, Silvio Marta, Gaëlle Bocksberger, Marten Winter, Emiliano Trucchi and Hjalmar Kühl , A world of sequences: can we use georeferenced nucleotide databases for a robust automated phylogeography? , Journal of Biogeography , 44 , 2 , (475-486) , (2016) . 
+    Wiley Online Library 
+    Quentin Jossart, Chantal De Ridder, Harilaos A. Lessios, Mathieu Bauwens, Sébastien Motreuil, Thierry Rigaud, Rémi A. Wattier and Bruno David , Highly contrasted population genetic structures in a host–parasite pair in the Caribbean Sea , Ecology and Evolution , 7 , 22 , (9267-9280) , (2017) . 
+    Wiley Online Library 
+    Libby Liggins, Eric A. Treml, Hugh P. Possingham and Cynthia Riginos , Seascape features, rather than dispersal traits, predict spatial genetic patterns in co‐distributed reef fishes , Journal of Biogeography , 43 , 2 , (256-267) , (2015) . 
+    Wiley Online Library 
+    KA Marske , Phylogeography , Encyclopedia of Evolutionary Biology , 10.1016/B978-0-12-800049-6.00109-8 , (291-296) , (2016) . 
+    Crossref 
+    Raimundo da Silva, Iracilda Sampaio, Horacio Schneider, Grazielle Gomes and Michael Knapp , Lack of Spatial Subdivision for the Snapper Lutjanus purpureus (Lutjanidae – Perciformes) from Southwest Atlantic Based on Multi-Locus Analyses , PLOS ONE , 11 , 8 , (e0161617) , (2016) . 
+    Crossref 
+    Brett R. Riddle , Comparative phylogeography clarifies the complexity and problems of continental distribution that drove A. R. Wallace to favor islands , Proceedings of the National Academy of Sciences , 113 , 29 , (7970) , (2016) . 
+    Crossref 
+    Eric Pante, Nicolas Puillandre, Amélia Viricel, Sophie Arnaud‐Haond, Didier Aurelle, Magalie Castelin, Anne Chenuil, Christophe Destombe, Didier Forcioli, Myriam Valero, Frédérique Viard and Sarah Samadi , Species are hypotheses: avoid connectivity assessments based on pillars of sand , Molecular Ecology , 24 , 3 , (525-544) , (2015) . 
+    Wiley Online Library 
+    Brian Gaylord, Kristy J. Kroeker, Jennifer M. Sunday, Kathryn M. Anderson, James P. Barry, Norah E. Brown, Sean D Connell, Sam Dupont, Katharina E. Fabricius, Jason M. Hall-Spencer, Terrie Klinger, Marco Milazzo, Philip L. Munday, Bayden D. Russell, Eric Sanford, Sebastian J. Schreiber, Vengatesen Thiyagarajan, Megan L. H. Vaughan, Steven Widdicombe and Christopher D. G. Harley , Ocean acidification through the lens of ecological theory , Ecology , 96 , 1 , (3-15) , (2015) . 
+    Wiley Online Library 
+    Anna Papadopoulou and L. Lacey Knowles , Species‐specific responses to island connectivity cycles: refined models for testing phylogeographic concordance across a Mediterranean Pleistocene Aggregate Island Complex , Molecular Ecology , 24 , 16 , (4252-4268) , (2015) . 
+    Wiley Online Library 
+    E Boissin, E Egea, JP Féral and A Chenuil , Contrasting population genetic structures in Amphipholis squamata, a complex of brooding, self-reproducing sister species sharing life history traits , Marine Ecology Progress Series , 539 , (165) , (2015) . 
+    Crossref 
+    A. A.‐T. Weber, B. Mérigot, S. Valière and A. Chenuil , Influence of the larval phase on connectivity: strong differences in the genetic structure of brooders and broadcasters in the Ophioderma longicauda species complex , Molecular Ecology , 24 , 24 , (6080-6094) , (2015) . 
+    Wiley Online Library 
+    Michael N. Dawson, Cynthia G. Hays, Richard K. Grosberg and Peter T. Raimondi , Dispersal potential and population genetic structure in the marine intertidal of the eastern North Pacific , Ecological Monographs , 84 , 3 , (435-456) , (2014) . 
+    Wiley Online Library 
+    Timothy J. Page and Jane M. Hughes , Contrasting insights provided by single and multispecies data in a regional comparative phylogeographic study , Biological Journal of the Linnean Society , 111 , 3 , (554) , (2014) . 
+    Crossref 
+    Pilar A. Haye, Nicolás I. Segovia, Natalia C. Muñoz-Herrera, Francisca E. Gálvez, Andrea Martínez, Andrés Meynard, María C. Pardo-Gandarillas, Elie Poulin, Sylvain Faugeron and Brian R. MacKenzie , Phylogeographic Structure in Benthic Marine Invertebrates of the Southeast Pacific Coast of Chile with Differing Dispersal Potential , PLoS ONE , 9 , 2 , (e88613) , (2014) . 
+    Crossref 
+    Kimberly A. Selkoe, Oscar E. Gaggiotti, Brian W. Bowen and Robert J. Toonen , Emergent patterns of population genetic structure for a coral reef community , Molecular Ecology , 23 , 12 , (3064-3079) , (2014) . 
+    Wiley Online Library 
+ 
+Publication cover image 
+ 
+Volume 41 , Issue 1 
+ 
+January 2014 
+ 
+Pages 52-65 
+ 
+    Figures 
+    References 
+    Related 
+    Information 
+ 
+    Metrics 
+    Downloads: 58 
+    Citations: 21 
+    Article has an altmetric score of 1 
+ 
+    Details 
+ 
+    © 2013 John Wiley & Sons Ltd 
+ 
+    Keywords 
+        Comparative biogeography 
+        dispersal syndromes 
+        experimental phylogeography 
+        functional ecology 
+        gene flow 
+        pseudocongruence 
+        statistical phylogeography 
+ 
+    Publication History 
+        Issue Online: 16 December 2013 
+        Version of Record online: 21 August 2013 
+ 
+Caption 
+Additional links 
+About Wiley Online Library 
+ 
+    Privacy Policy 
+    Terms of Use 
+    Cookies 
+    Accessibility 
+ 
+Help & Support 
+ 
+    Contact Us 
+ 
+Opportunities 
+ 
+    Subscription Agents 
+    Advertisers & Corporate Partners 
+ 
+Connect with Wiley 
+ 
+    The Wiley Network 
+    Wiley Press Room 
+ 
+Copyright © 1999-2018 John Wiley & Sons, Inc . All rights reserved 
+Log in to Wiley Online Library 
+Email or Customer ID 
+Password 
+Forgot password? 
+NEW USER > INSTITUTIONAL LOGIN > 
+Change Password 
+Old Password 
+New Password 
+Too Short Weak Medium Strong Very Strong Too Long 
+Congrats! 
+ 
+Your password has been changed 
+Create a new account 
+Email or Customer ID 
+Returning user 
+Forgot your password? 
+ 
+Enter your email address below. If your address has been previously registered, you will receive an email with instructions on how to reset your password. If you don't receive an email, you should register as a new user 
+Email or Customer ID 
+ 
+Please check your email for your password reset instructions. 
+Request Username 
+ 
+Can't sign in? Forgot your username? 
+ 
+Enter your email address below and we will send you your username 
+Email or Customer ID 
+Close 
+ 
+If the address matches an existing account you will receive an email with instructions to retrieve your username 
+back 
+ 
+Tweeted by 1 
+174 readers on Mendeley 
+See more details | Close this 
+× 

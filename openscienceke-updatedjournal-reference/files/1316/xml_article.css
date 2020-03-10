@@ -1,0 +1,1957 @@
+/*
+modified 2.4.15
+modified 12.28.11
+modified 12.22.09
+modified 12.15.09
+modified 11.16.09
+modified 09.22.09
+modified 04.07.09
+###   
+
+
+ ################################################## 
+ PROJECT MUSE style guide  
+ ################################################## 
+ */
+
+/* Colors for dev environment */
+@import url("production.css");
+/*
+ ################################################## 
+ All files in the volume level directories of Project Muse are defined as ARTICLES. 
+ Files are broken down into 3 main sections, FRONT/BODY/BACK  
+ ################################################## 
+*/
+
+
+	div#article
+		{
+		}
+
+
+ 
+/* 
+	div#front, div#back, div.front, div.back
+		{
+		padding: 0 10px 0 10px;
+		}
+ */
+
+/*
+ ################################################## 
+ FRONT section can consist of the following elements 
+ ################################################## 
+*/
+
+	div#front, div.front
+		{
+		}
+
+
+
+
+/* used for reviews */
+	div.product, div.conference
+		{
+		font-size: 13px;
+		margin: 3em 3em 2em 4em;	
+		font-weight: bold;
+		}
+
+/*  use for untitled reviews, surrounding text "Reviewed by" which will appear above contrib   */
+	div.reviewedBy, div.subHead	
+		{
+		font-size: 12px;
+		font-weight: normal;
+		font-style: italic;
+		margin-top: 1.5em;
+		}
+
+
+
+
+
+
+/* used to indicate that an article is part of a special section or forum */
+	h4#sectionHead
+		{
+		}
+
+
+
+
+
+
+
+	div.contrib
+		{
+		font-size: 16px;
+		font-weight: normal;
+/* 		margin: 5px 0 10px 0; */
+		}
+
+	div.aff, .aff-block
+		{
+		font-size: 11px;
+		font-weight: normal;
+		font-style: italic;
+	   	padding: 2px 0px 5px 0px;
+		}
+	
+	.aff-entry
+		{
+		margin-bottom: 0.6em;
+		}
+	
+	.abstract, .kwd-group, .kwd
+		{
+		font-size: 11px;
+ 		margin: 1em 3em 0em 4em;	
+ 		color: gray;
+ 		line-height: 1.5;
+ 		padding:10px;
+ 		border-radius:5px;
+ 		background-color:#f9f9f9;
+		}
+	
+	.abstract ol li, .abstract blockquote {
+		color:gray;
+	}
+
+
+/* the first line of any <p> tag within an abstract will not be indented */
+	#article .abstract p, #article .kwd-group p
+		{	
+		text-indent: 0em;
+		/** Dropped neg. top margin and chnged left from -5 to -2 **/
+		/*margin: 0 0 1em 0;*/
+		margin-left:1em;
+		font-size: 14px;
+		}
+
+	.abstract .title, .kwd-group .kwd-title
+		{
+		font-size: 14px;
+		font-weight: bold;
+		/*margin: 1em 0em -.25em 0em;*/
+		text-indent: 0em;
+		}
+
+
+
+
+
+
+/*
+ ################################################## 
+ BODY section can consist of the following elements 
+ ################################################## 
+*/
+
+
+	div#body, div.body
+		{
+		border-top: #e8e7e4 1px solid;
+		margin-top:10px;
+		}
+
+
+	#article > p, #article p
+		{
+		text-indent: 1em;
+		margin: 1em 0em 0em 1.5em;	
+/*    	clear: both;   */
+		}
+
+	
+/*  The lead off <p> of the article is NOT indented.  */
+	p#lead
+		{
+		text-indent: 0em;
+		}
+
+
+
+/*  Used ONLY for continuing paragraphs broken by blockquotes , lists, equations/formulas, images, etc., The first line of the <p> is NOT indented  */
+	#article p.continued, p.noIndent, p.nomenclature, p.collaborators
+		{
+		text-indent: 0em;
+		clear: left;
+		}
+	
+	math {
+	  display:none;
+	}
+	
+	/*3/29 STA margin*/
+	#article p.indent, #article p.indent2, #article p.indent3, #article p.indent4, #article ol, .article ol, #article ul, .article ul, #article table.indent, .article table.indent, #back table.indent, .back table.indent {
+		margin-left: 40px;
+		text-indent: 0;
+		padding-left:1.65em;
+	}
+	#article #front .card_text ul {
+  	padding-left: 0;
+  	margin-left: 0;
+	}
+	#article p.indent2, #article table.indent2, .article table.indent2, #back table.indent2, .back table.indent2 {
+		padding-left:3.3em;
+	}
+	#article p.indent3, #article table.indent3, .article table.indent3, #back table.indent3, .back table.indent3 {
+		padding-left:4.45em;
+	}
+	#article p.indent4, #article table.indent4, .article table.indent4, #back table.indent4, .back table.indent4 {
+		padding-left:6.6em;
+	}
+	#footdrop p.indent {
+		padding-left:1em
+	}
+	#footdrop p.indent2 {
+		padding-left:1.5em
+	}
+	#footdrop p.indent3 {
+		padding-left:2em;
+	}
+	#footdrop p.indent4 {
+		padding-left:2.5em;
+	}
+	
+	
+	/*3/28 STA*/
+	#article p.noIndent
+		{
+		text-indent: 0em;
+		}
+	
+	p.nomenclature, p.collaborators
+		{
+		text-indent: 0em;
+		margin: 2em 0em 0em 4em;	
+		}
+	
+	#article .sectionBreak p:first-child {
+		text-indent: 0;
+	}
+
+
+	#article #back p.indent	    	
+		{
+		text-indent: 0em;
+		margin: 1em 0em 0em 1.65em;
+		}
+
+	#article p.product
+		{
+		font-weight: bold;
+		text-indent: 0em;
+		margin: 1em 0em 0em 1.5em;	
+		}
+
+	#article p.related-article-box
+		{
+		text-indent: 0em;
+		margin: 5em 4em 5em 4em;	
+		padding:20px;
+		border:1px solid gray;
+		}
+		
+	#article p.postcard
+		{
+		text-indent: 0em;
+		margin: 1em;	
+		padding:20px;
+		border:1px solid gray;
+		}
+		
+	#article p.break {
+		margin-top: 0;
+		}
+		
+	#article p.gray {
+		color: gray;
+		}
+
+
+	p.sig-block, div.aff-block
+		{
+		text-align:right;
+		}
+	
+	div.aff-block
+		{
+		margin-top:1em;
+		margin-left:auto;
+		max-width:55%;
+		}
+
+	#article div.fn p p.suppress-period	/*  remove when xslt is updated ???? */
+		{
+		text-indent: 0em;
+		margin: 0em 0em -1em 0em;	
+		}
+	
+	#article div.ref-list p.indent	/*  remove when xml replaces this tag with <note> tagging???? */
+		{
+		text-indent: 0em;
+		font-size: 11px;
+		margin: 1em 3em 0em .25em;	
+		}
+
+
+	#article p.box, #article p.correction, #article div.box, #article div.boxed-text
+		{
+		text-indent: 0em;
+		padding:20px;
+		border:1px solid gray;
+		/*margin: 5em 4em;*/
+		/*new margin for inline box render*/
+		margin: 5em 0 5em 1.5em;
+ 		}
+ 		
+ 	#article .table-box, .article .table-box {
+ 		margin: 0 0 0 1.5em;
+ 		padding: 20px;
+ 		text-indent: 0em;
+ 		/*5/10 STA removed by request */
+ 		/*background-color: #f6f6f6;
+ 		border-radius: 5px;*/
+ 		overflow-x: auto;
+ 	}
+ 	#article li .table-box, .article li .table-box {
+ 	  padding:0 20px;
+ 	}
+ 		
+ 	#article div.box, #article div.boxed-text {
+ 		overflow-x:auto;
+ 		}
+ 		
+ 	#article div.boxed-text {
+ 		background-color:#f0f0f0;
+ 	}
+	
+	/*3/25 STA*/
+	/*#article .fn-group {
+		margin: 0 0 0 1.2em
+		}
+	*/
+
+	div.disp-formula
+		{
+		font-size: 11px;
+		margin: 1.5em 3em 1.5em 4em;	
+		}
+
+
+
+
+
+
+	/*3/29 STA*/
+	.sec
+		{
+		margin: 0;
+		}
+	
+	.no-title
+	    {
+	    margin: 0 0 2em 0;
+	    }
+    
+    .sec .no-title 
+        {
+        margin: 2em 0 0 0;
+        }
+	.secBreak, .sectionBreak /*  remove .sectionBreak when xslt is updated  */
+		{
+		margin: 3em 0em 2em 0em;	
+		/*clear: left;*/
+		}
+
+
+
+
+
+	h1.sec-headA
+		{
+		font-family: Verdana, Arial, Helvetica, sans-serif;
+		font-size: 20px;		
+		padding: 0;
+		margin: 1em 0em 0em 0em;	
+		line-height: 120%;
+		}
+
+	h2.sec-headB
+		{
+		font-family: Verdana, Arial, Helvetica, sans-serif;
+		font-size: 18px;		
+		margin: 1em 0em 0 1.25em;	
+		padding: 0;
+		}
+
+	h3.sec-headC
+		{
+		font-family: Verdana, Arial, Helvetica, sans-serif;
+		font-size: 16px;		
+		margin: 1em 0em 0 1.25em;	
+		padding: 0;
+		}
+
+	h4.sec-headD
+		{
+		font-family: Verdana, Arial, Helvetica, sans-serif;
+		font-size: 14px;	
+		font-style: italic;
+		margin: 1em 0em 0 1.25em;	
+		padding: 0;
+		}
+
+	h5.sec-headE
+		{
+		font-family: Verdana, Arial, Helvetica, sans-serif;
+		font-weight: normal;
+		font-style: italic;
+		text-transform: none;
+		font-size: 14px;		
+		margin: 1em 0em 0 2.4em;	
+		padding: 0;
+		}
+
+	h6.sec-headF
+		{
+		font-family: Verdana, Arial, Helvetica, sans-serif;
+		font-weight: normal;
+		font-size: 14px;		
+		margin: 1em 0em 0 2.4em;	
+		padding: 0;
+		}
+		
+	/*3/29 STA*/
+	#back h1.sec-headA {
+		font-size:15px;
+	}
+
+/*  DOESN'T WORK ON PCS*/
+/*  The lead <p> following any HEADING (see below), epigraphs or sectionBreaks is NOT indented.*/
+/*3/28 STA added first-of-type for non-headed p*/
+	#article h1 + p, #article h2 + p, #article h3 + p, #article h4 + p, #article h5 + p, #article h6 + p, #article div.sectionBreak + p, #article p:first-of-type
+		{
+		text-indent: 0em;
+		}
+
+		#article .permissions {
+			margin-top: .75em;
+		}
+
+
+/*  ##########  */
+
+	div.sec div.title	/*  A head  */
+		{
+		font-family: Verdana, Arial, Helvetica, sans-serif;
+		font-size: 13px;		
+			font-weight: bold;
+		padding: 0;
+		margin: 1em 0em 0em 0em;	
+		line-height: 120%;
+		}
+
+	div.sec div.sec div.title	/*  B head  */
+		{
+		font-family: Verdana, Arial, Helvetica, sans-serif;
+		font-size: 13px;		
+			font-weight: bold;
+		padding: 0;
+		margin: 1em 0em 0em 0em;	
+		line-height: 120%;
+		}
+
+	div.sec div.sec div.sec div.title	/*  C head  */
+		{
+		font-family: Verdana, Arial, Helvetica, sans-serif;
+		font-weight: bold;
+		font-size: 12px;		
+		font-style: italic;		
+		margin: 1em 0em 0 1.25em;	
+		padding: 0;
+		}
+
+	div.sec div.sec div.sec div.sec div.title	/*  D head  */
+		{
+		font-family: Verdana, Arial, Helvetica, sans-serif;
+		font-weight: bold;
+		text-transform: none;
+		font-size: 11px;		
+		margin: 1em 0em 0 1.25em;	
+		padding: 0;
+		}
+
+	div.sec div.sec div.sec div.sec div.sec div.title	/*  E head  */
+		{
+		font-family: Verdana, Arial, Helvetica, sans-serif;
+		font-weight: normal;
+		font-style: italic;
+		text-transform: none;
+		font-size: 11px;		
+		margin: 1em 0em 0 2.4em;	
+		padding: 0;
+		}
+
+	div.sec div.sec div.sec div.sec div.sec div.sec div.title	/*  F head  */
+		{
+		font-family: Verdana, Arial, Helvetica, sans-serif;
+		font-weight: normal;
+		font-size: 11px;		
+		margin: 1em 0em 0 2.4em;	
+		padding: 0;
+		}
+		
+		/*  DOESN'T WORK ON PCS*/
+/*  The lead <p> following any HEADING (see below), epigraphs or sectionBreaks is NOT indented.*/
+	#article div.title + p, #article div.sectionBreak + p, #article div.secBreak + p
+		{
+		text-indent: 0em;
+		}
+
+		
+/*  ##########  */
+
+
+
+
+
+
+		.disp-quote .sec-headA, ol h1.sec-headA, ul h1.sec-headA  /* remove when xslt is updated to use 'title' */
+		{
+		margin: 1em 0em 0em 0em;	
+		}
+
+		div.verse-group h1.sec-headA  /* remove when xslt is updated to use 'title' */
+			{		
+			margin: 0em 0em 0em 0em;	
+			}
+
+		dl h1.sec-headA /* remove when xslt is updated to use 'title' */
+			{
+			font-weight: bold;
+			margin: 0em 0em 0em 0em;	
+			}
+
+
+
+
+	.disp-quote
+		{
+		font-size: 11px;
+		/*5/10 STA remove if necessary*/
+		margin-top: 1em;
+		margin-bottom: 1em;
+		/*margin: 1em 3em 0em 4em;	*/
+		}
+	.disp-quote table {
+		font-size:16px;
+	}
+
+.verse-group
+		{
+		font-size: 11px;
+		margin: 1em 0;
+		}
+.speech .verse-group
+		{
+		margin:0 0 1em 0;
+		}
+
+	#article .verse-group p
+		{
+		text-indent: 0em;	/*  <p> within blockquotes is not indented  */
+		margin: 0em 0em 0em 2em;	
+		}
+
+
+	#article .disp-quote .verse-group p
+		{
+		text-indent: 0em;	/*  <p> within blockquotes is not indented  */
+		margin: 0em 0em 0.75em 2em;	
+		}
+
+
+	#article .disp-quote p
+		{
+		font-size: 16px;
+		text-indent: 0em;	/*  <p> within blockquotes is not indented  */
+		margin: 0em 0em .75em 2em;	
+		}
+	.disp-quote .disp-quote
+		{
+		margin: 0em 2em 0em 2em;	
+		}
+
+
+
+
+/*  attribution is a child of blockquote elements  */
+	.disp-quote .attrib, .verse-group .attrib
+		{
+		font-size: 14px;
+		text-align: right;
+		margin: 0em 0em 0em 15em;	
+		}
+
+	table .attrib	
+		{
+		margin-left: -30em;
+		text-align: right;
+		}
+	
+
+
+
+	.dedication
+		{
+		margin: 2em 0em 0em 0em;	
+		font-style: italic;
+		text-align: right;
+		}
+
+	.disp-quote .dedication
+		{
+		font-style: italic;
+		margin-left: 25em;
+		}
+
+
+
+
+
+	#article .speech
+		{
+		text-indent: 0em;
+		margin: 1em 0em 0em 0em;	
+		}
+
+	#article .speech p, #article #back .speech p
+		{
+		text-indent: 0em;
+		margin: -.2em 0em 1em 2.5em;	
+		font-size: 16px;
+		}
+
+	#article .speech div.speaker
+		{
+		text-indent: 0em;
+		font-variant: small-caps;
+		font-size: 13px;
+		margin: 0em 0em 0em 1.5em;	
+		}
+
+	#article p.speaker	/* removed when tag is replaced in xml with <speaker> */
+		{
+		text-indent: 0em;
+		font-variant: small-caps;
+		}
+
+
+
+	.notes p.correction
+		{
+		text-indent: 0em;
+		margin: 0em 4em 0em 4em;	
+		padding:20px;
+		border:1px solid gray;
+ 		}
+
+
+	#back .notes p
+		{
+		margin-left: .65em;
+		font-size: 11px;
+		}
+
+
+	.sig-block
+		{
+		text-align:right;
+		}
+	
+	.sig
+		{
+		text-align:right
+		}
+
+
+
+	.address
+		{
+		margin: 0;	
+		font-size: 11px;
+		}
+
+
+
+
+/* ###### Definition Lists #######  */
+
+	.def-list	/* ###### NEW 11.04.09 #######  */
+		{
+		margin-top: 1em;
+		margin-bottom: 1em;
+		margin-left: 2.5em;
+		}
+		
+	/*3/28 STA*/
+	#body .def-list dd {
+		margin-left: 0;
+		margin-bottom: 1.5em;
+		margin-inline-start: 10px;
+	}
+	
+	/*3/29 STA*/
+	#body .def-list dd p {
+    	margin: .2em 0 1em 1em;
+    	text-indent: 0;
+    	line-height:1;
+	}
+	
+	#body .glossary .def-list dd {
+		margin-left: 0;
+		margin-bottom: 0;
+	}
+
+	#mainArticle .def-list .title 
+		{
+		font-size: 12px;		
+		margin: 0em 0em -1em 0em;	
+		border-bottom: none;
+		}
+
+
+	#back .def-list	/* ###### NEW 11.04.09 #######  */
+		{
+		margin-left: 1.5em;
+		}
+	
+	/*3/28 STA*/
+	#back .def-list dd {
+		margin-inline-start: 10px;
+	}
+
+	dd p
+		{
+		margin: 0em 0em 0em -2em;	
+		}
+
+	/*5/10 STA*/
+	#article #back dd p
+		{
+		margin: 0 0 0.5em 1em;
+		}
+
+	#article #back .glossary .def-list dl dd p
+		{
+		margin: 0 0 1em -2.2em;	
+		}
+
+
+
+
+/*  formatting for bios on contributors page   */	
+
+	#body .bio p
+		{
+		margin: 0em 0em 0em 3em;	
+		text-indent: -1.5em;
+		}
+
+
+
+/*  Used on pages like Books Received, Bibliographies, Indices, etc. Places where <p> tags aren't appriopriate  */
+
+	#article #body .ref-list	
+		{
+		font-size: 11px;
+		margin: 1em 0em .5em 0em;	
+		/*text-indent: -1.5em;*/
+		}
+
+
+	#article #body .ref-list .ref
+		{
+		font-size: 13px;
+		}
+
+
+	#body > img, .body > img, .sec > img.inline-graphic {
+		margin: 0 40px;
+		padding:5px 0 5px 20px;
+	}
+
+
+/*
+ ################################################## 
+ BACK section can consist of the following elements 
+ ################################################## 
+*/
+
+
+
+	div#back, div.back
+		{
+		border-top: #e8e7e4 1px solid;	
+		margin-top: 1em;
+		font-size: 12px;
+		}
+		
+/*added to remove doubled hr when back section is empty/nonexistant*/
+	
+	div#back.empty, div.back.empty
+		{
+		border-top:none;
+		}
+
+
+	#article #back p
+		{
+		margin-left: 1.5em;
+		margin-bottom: 1em;
+		}
+
+
+	#back div.bio, .back div.bio
+		{
+		margin-top: 1em;
+		}
+
+	a.bio
+		{
+		margin-bottom: 0em;
+		font-weight: bold;
+		}
+
+	#article #back div.bio p, #article .back div.bio p, #article .ack p
+		{
+		margin-top: 0em;
+		text-indent: 0em;
+		}
+		
+	#article #back .ack p {
+		font-size: 11px;
+	}
+	
+	#article #back .notes p.ed-note {
+		font-size: 11px;
+		text-indent: 0;
+	}
+	
+	#article #back .app-group p {
+		font-size: 11px;
+		/*4/7 STA*/
+		/*color: #ff00aa;*/
+	}
+	
+	#article #back .ref-list > .ref-list h1.ref-head {
+		text-indent: 1em;
+	}
+		
+
+
+	#back .corresp
+		{
+		font-size: 11px;		
+		/*5/10 STA*/
+		/*line-height: 1.5em;*/
+		margin-left: 1.5em;
+		margin-top: 1em;
+		}
+		
+	.history	
+		{
+		font-style: italic;
+		margin-left: 1.5em;
+		margin-top: 1em;
+		}
+
+		
+		/*sta 6/10/15: added h1.def-head, 3/28 font-size*/
+/*headings of wrapper elements  */
+	h1.ack-head, h1.app-label, h1.app-head, h1.fn-head, h1.ref-head, h1.gloss-head, h1.def-head, h1.gen-head
+		{
+		font-family: Verdana, Arial, Helvetica, sans-serif;
+		font-size: 16px;		
+		padding: 0;
+		margin: 1em 0em 0 0em;	
+		line-height: 120%;
+		}
+	
+	/*3/29 STA*/
+	#back h1.ack-head, #back h1.app-label, #back h1.app-head, #back h1.fn-head, #back h1.ref-head, #back h1.gloss-head, #back h1.def-head, #back h1.gen-head {
+		font-size:15px;
+	}
+		
+	#back .ref-list h1.ref-head .ref-list h1.ref-head {
+		font-size: 10px;
+	}
+
+
+	.app-group .sec .sec-headA	/* NEW 10.29.09  */
+		{
+		font-family: Verdana, Arial, Helvetica, sans-serif;
+		font-size: 11px;		
+		margin: 1em 0em 0em 1.5em;	
+		padding: 0;
+		}
+		
+		
+		
+	#article .fn p, #article .glossary p, #article .gloss-group p 	/* remove gloss-group when cleanup is done*/
+		{
+		text-indent: 0em;
+		margin-top: .75em;
+		margin-left: 0em;
+		}
+	
+	#article .fn-group .fn p {
+		margin-left: 1.5em;
+	}
+	#article #back .fn-group p, .article .back .fn-group p {
+		font-size:11px;
+	}
+
+	#article .bio p
+		{
+		font-size: 13px;		
+		}
+
+
+	div.ref
+		{
+		font-size: 11px;		
+		text-indent: -1.5em;
+		margin-top: 1em;
+		margin-left: 3em;
+		}
+		
+	/*3/29 STA*/		
+	div.ref p.display, #article .display, .article .display
+		{
+		font-size:13px;
+		}
+
+	#article .ref .refIndent, #article .ref .note, #article .ref .display, #article #back p.refIndent
+		{
+		text-indent: -1.5em;
+		margin-top: .5em;
+		margin-left: -.1em;
+		}
+
+
+	#article .ref .disp-quote
+		{
+		text-indent: -1.5em;
+		margin-top: 0em;
+		}
+		
+	#article .ref p.note {
+		margin-left: 1.5em;
+		font-size: 11px;
+	}
+	
+	#article #back .ref-list .ref p.refIndent {
+		margin-left: 1.5em;
+		font-size: 11px;
+	}
+	
+	#back > img, .back > img {
+		margin:0 20px;
+		padding:5px 0;
+	}
+
+
+/*
+ ################################################## 
+	permissions block at bottom of articles
+ ################################################## 
+*/
+
+	/*3/29 STA color*/
+	#back div.copyright-statement, #back div.license p, .back div.copyright-statement, .back div.license p		
+		{
+		font-size: 11px;		
+		margin-top: .25em;
+		color: #948671;
+		/*padding: .313em .625em 0 1.5em;*/
+		}
+
+
+	/*STA 7/2/15 added support for .back*/
+	/*3/29 STA padding-top*/
+	#back div.copyright-statement, .back div.copyright-statement
+		{
+       border-top: 1px solid #e8e7e4;
+       padding-top:5px;
+		}
+
+	#back div.license
+		{
+		margin-left: -2.5em;
+		}
+		
+	#article #back div.license p {
+		text-indent: 0;
+		margin-left: 2.5em;
+		margin-top: .75em;
+	}
+
+	#back div.permissions
+		{
+		margin-top: 1em;
+ 		padding-top:5px;
+		padding-bottom:5px;
+		padding-right:5px;
+		padding-left:5px;
+		}
+
+/*
+ ################################################## 
+	Tables, Sub-Articles, Responses, Boxed-Text
+ ################################################## 
+*/
+
+    div.table, div.sub-article, div.response, div.boxed-text
+    	{
+    	/*clear: left;*/
+    	margin: 2em 0em 0em 4em;
+    	width: 75%;
+     	font-size: 11px;
+   		}
+
+
+/*
+ ################################################## 
+	captions and labels
+ ################################################## 
+*/
+
+	#article div.caption p, #article div.caption-full p 
+     	{
+/*      	font-size: 11px; */
+		text-indent: 0em;
+		margin: 0em 0em .5em 0em;	
+		clear: none;
+		}
+
+	#article .app-group div.caption p, div.caption-full p 
+		{
+		text-indent: -1.5em;
+		margin: 0em 0em 0em 0em;	
+		clear: none;
+		}
+
+
+    div.label 
+		{
+    	font-size: 11px;
+		margin: 0; /** Changed -5em left margin to all 0 **/
+    	font: bold 1em Verdana, Arial, Helvetica, sans-serif;
+    	clear: none;
+		}
+
+	a.label 
+		{
+		margin: 0;
+		font: bold 1em Verdana, Arial, Helvetica, sans-serif;
+		clear: none;
+		}
+
+
+
+
+
+/*
+ ################################################## 
+ Figure, Video, Audio thumbnails
+ ################################################## 
+*/
+
+
+	/*3/29 STA margin*/
+	div.figure, div.video, div.audio {
+		min-height: 140px;
+		margin: 4em 0em 4em 6em;
+		width:100%;
+/* 		max-width:450px; */
+		font-size: 13px;
+	}
+	div.audio {
+	    min-height: 140px;
+		margin: 4em 0em 4em 6em;
+		width: 80%;
+		max-width: 450px;
+		font-size: 13px;
+		margin: 4em 0em 4em 2em;
+    }
+	.figure_full {
+		margin: 4em 0;
+		font-size: 13px;
+		min-height: 140px;
+		float: left;
+		clear: both;
+		background-color: white;
+		width: auto !important;
+		padding: 2em 4em 2em 0;
+	}
+
+@media only screen
+  and (max-width:63.9775em) {
+  	div.video, div.audio {
+  		margin-left:2em;
+  	}
+  }
+@media only screen
+  and (max-width:39.9375em) {
+  	div.audio .jwplayer {
+		max-width:240px;
+	}
+	#mainArticle {
+		max-width:99%;
+	}
+  }
+
+	div.thumbnail {
+		float: left;
+		text-align: center;
+	}
+
+	div.figure div.caption, div.video div.caption, div.audio div.caption {
+	position: relative;
+	display: block;
+	margin-left: 15em;
+	}
+
+	/*controls video and audio objects*/
+	div.video object, div.audio object {
+		display: block;
+		width: 480px;
+		margin: 2em auto;
+	}
+
+	div.noFlash {
+		width: 30%;
+		border: 1px solid #ccc;
+		text-align: center;
+		padding: 2em;
+	}
+
+	/*Code to be abandoned. These lines reset their style.*/
+	p.figSpace div.figureEnd, p.figSpace div.videoEnd, p.figSpace div.audioEnd { }
+	div.figureBegin, div.videoBegin, div.audioBegin, div.figureEnd, div.videoEnd, div.audioEnd { }
+
+
+
+
+
+/*
+ ################################################## 
+ full-size pages for Figure, Video, Audio
+ ################################################## 
+*/
+
+
+	div.full-size  		
+		{
+		margin: 0em 0em 2em .5em;	
+		}
+
+
+    div.boxed-text-full, fig-full, tab-full		/* NEW 10-29-09 */
+    	{
+    	font: normal 1em Verdana, Arial, Helvetica, sans-serif;
+		}
+
+    div.caption-full
+    	{
+		margin: 2em 2em 2em 0em;	
+    	font: normal 1em Verdana, Arial, Helvetica, sans-serif;
+		}
+
+    div.notes-full
+    	{
+		margin: 0em 2em 0em 0em;	
+    	font: normal .75em Verdana, Arial, Helvetica, sans-serif;
+		}
+
+	div.full-size table
+		{
+		margin: 0em 0em 1em 0em;	
+		}
+
+
+	div.caption-full .label, div.caption-full .title
+		{
+    	font: normal 1em Verdana, Arial, Helvetica, sans-serif;
+		font-weight: bold;
+		padding: 0;
+		margin: 0em 0em 0em 0em;	
+		line-height: 120%;
+		}
+
+
+    div.caption-full p 
+    	{
+		text-indent: 0em;
+/*     	font: normal .75em Verdana, Arial, Helvetica, sans-serif; */
+		margin: 1em 0em 0em 0em;	
+		}
+
+	div.caption-full div.permissions
+		{
+		text-indent: 0em;
+ 		padding: 10px 5px;
+ 		font-size: .75em;
+		}
+
+
+
+
+
+/*
+ ################################################## 
+  Lists
+ ################################################## 
+*/
+
+
+	li  
+		{
+		padding: 0;
+		}
+
+	#article li p
+		{
+		/* font-size: 11px;	*/
+		text-indent: 0em;
+		padding: 0;
+		/* margin: 0em 0em .5em .5em; */
+		clear: none;
+		}
+
+
+	ul, ol
+		{
+		margin: 1em 0 1em 1em;
+		padding-left: 40px;
+		list-style-position: inside;
+		list-style-type: none;
+		}
+	@media only screen
+  and (max-width:39.9375em) {
+  	ul, ol, #article ul, #article ol {
+  		padding-left:20px;
+  		margin-left:0;
+  	}
+  }
+   	#footer_block ul, #footer_block ol {
+  		padding-left:0;
+  	}
+
+		
+	#missing ul, #missing ol
+		{
+		padding-left:0em;
+		}
+	  
+	ul ul, ul ol, ol ol, ol ul
+		{
+/* 		margin-left: 0em; */
+		margin-top: 1em;
+		margin-bottom: 0em;
+		}
+
+
+	blockquote ul, blockquote ol
+		{
+		margin-left: 0em;	
+		padding-left: 0em;
+		/* font-size: 1em;	*/
+		}
+
+
+	blockquote ul ul, blockquote ul ol, blockquote ol ol, blockquote ol ul
+		{
+		margin-left: 0em;	
+		padding-left: 0;
+		/* font-size: 1em;	*/
+		}
+
+
+
+
+
+
+/*
+ ################################################## 
+  table tagging 
+ ################################################## 
+*/
+
+
+	table
+		{
+/* 		font-size: 11px; */
+		margin: 1em 5em 1em 0;	
+		}
+
+/*   adjusts the left margin when a table is used inside a blockquote or list */
+ 	blockquote table, ol table, ul table, div.disp-quote table
+		{
+		margin: 1em 0em 1em 0em;	
+		}
+
+
+
+	ol table.thumbnail, ul table.thumbnail
+		{
+		margin-left: -1em; 
+		}
+
+	th
+		{
+		padding-right: 1em;
+		}
+
+	td
+		{
+		padding-right: 1em;
+		}
+
+	td.middle
+		{
+		padding-right: 1em;
+		vertical-align: middle
+		}
+
+	td.bottom
+		{
+		padding-right: 1em;
+		vertical-align: bottom
+		}
+
+	td.bottomcenter
+		{
+		padding-right: 1em;
+		text-align: center;
+		vertical-align: bottom
+		}
+
+	td.center
+		{
+		padding-right: 1em;
+		text-align: center;
+		}
+
+	td.right
+		{
+		padding-right: 1em;
+		text-align: right
+		}
+
+	tr
+		{
+		vertical-align: top
+		}
+
+	tr.middle
+		{
+		vertical-align: middle
+		}
+
+	tr.bottom
+		{
+		vertical-align: bottom
+    }
+    
+  #article table td li p:first-child, .article table td li p:first-child, table td li p:first-child, #article table td p:first-child, .article table td p:first-child {
+    margin-top:0;
+    padding-top:0;
+    margin-left:0;
+    padding-left:0;
+  }
+  #article table td ul, #article table td ol, .article table td ul, .article table td ol, table td ul, table td ol {
+    margin-top:0;
+    padding-top:0;
+    margin-left:0;
+    padding-left:0;
+  }
+
+
+
+
+
+
+
+/*
+ ################################################## 
+  ASR FYI tagging 
+ ################################################## 
+*/
+
+
+.fyi
+{	
+	text-indent: 0em;
+	font-family: "Comic Sans MS", Mistral;
+	float: right;
+	background-color: #ffff99;
+	border: black 1px solid;
+	padding: 5px;
+	margin: 25px 10px 10px 10px;
+	width: 150px;
+	font-weight: bold;
+	text-align: left;
+}
+
+.article p.fyi, #article p.fyi {
+	font-size:11px;
+}
+
+
+
+.blueBox
+{	
+	text-indent: 0em;
+	font-family: "Comic Sans MS", Mistral;
+	font-size: 10px;
+	float: right;
+	background-color: #66CCFF;
+	border: black 1px solid;
+	padding: 5px;
+	margin: 25px 10px 10px 10px;
+	width: 150px;
+	font-weight: bold;
+	text-align: left;
+}
+
+
+
+
+
+
+
+
+/*
+ ################################################## 
+ Miscellenous tagging 
+ ################################################## 
+*/
+
+/*  use the following tagging for links to an erratum, response/commentary or other related article  
+*/
+/** text-align: right; aligns the text within the container to the right. Removed response class to its own block without text-align. See section below. **/
+	div.related-article
+		{
+		font-size: 11px;
+		text-align: right;
+		font-weight: normal;
+		margin-top: 1.5em;
+		margin-bottom: 1.5em;
+		}
+
+	div.subarticle-link
+		{
+		font-size: 11px;
+		text-align: right;
+		font-weight: normal;
+		}
+
+	.related-article .return a, .subarticle-link .return a 
+		{
+		border-top: 1px #a4b4c2 solid;
+		border-bottom: 1px #a4b4c2 solid;
+		padding: .313em 1.500em;
+		margin: .625em 0;
+		color: #666666;
+		font-size: 1em;
+		text-align: center;
+		display: block;
+		background-color: #ffffff;
+		}
+	
+	.related-article .return a:hover 
+		{
+		background-color: #f6f8fa;
+		}
+	
+	.related-article return a 
+		{
+		border-top: 1px #a4b4c2 solid;
+		border-bottom: 1px #a4b4c2 solid;
+		padding: .313em 1.500em;
+		margin: .625em 0;
+		color: #666666;
+		font-size: .689em;
+		text-align: center;
+		display: block;
+		background-color: #ffffff;
+		}
+	
+	.related-article .return a:hover 
+		{
+		background-color: #f6f8fa;
+		}
+	
+
+
+
+	p.he		
+		{direction:rtl;}
+	span.he		
+		{direction:rtl;}
+
+	span.reverse-italic		
+		{font-style: normal}
+
+	span.underline
+		{text-decoration: underline}
+	
+	span.doubleUnderline {
+		text-decoration: underline;
+		border-bottom:1px solid #000;
+		}
+	span.verse-line {
+		display:block;
+	}
+		
+	/*added to handle overline*/
+	span.overline, overline
+		{text-decoration: overline}
+
+	span.line-through
+		{text-decoration: line-through}
+
+	.center, .alignCenter
+		{text-align: center}
+
+	#article .right, #article .Right, #article .alignRight, .article .alignRight
+		{text-align: right}
+
+	small
+		{
+/* 		font-size: 95% */
+		}
+
+	small.caps 
+		{
+		font-variant: small-caps;
+/* 		font-size: 130% */
+		}
+
+	div.right
+		{
+		margin-bottom: .75em;	
+		}
+		
+	sub.stack
+		{margin: 0em 0em 0em -.65em;}
+
+	sup.stack
+		{margin: 0em 0em 0em -.65em;}
+
+
+	sup sub
+		{
+		font-size: 100%
+		}
+
+	sub sup
+		{
+		font-size: 100%
+		}
+
+
+
+
+
+/* ###### Images #######  */
+
+  
+  .table-box td img.inline-graphic {max-width: none;}
+
+	img.inline-graphic 
+		{
+		border: none;
+		/*margin-bottom: -.5em;*/
+		margin-bottom: -.25em;
+		/*4/7 STA*/
+		/*padding: 0 0.15em;*/
+		padding: 0 5px 5px 0;
+		/*vertical-align: top;*/
+		}
+	img.inline-graphic.baseline,
+	img.inline-graphic.textBottom {
+		vertical-align: baseline;
+	}
+	
+	#article ol > li > img.inline-graphic,
+	#article ol > li > p > img.inline-graphic 
+		{
+		vertical-align: top;
+		padding-top: .4em;
+		}
+
+
+	img.inline-graphic-floatLeft
+		{
+		border: none;
+		float: left;
+		padding-right: 1em;
+		padding-bottom: .5em;
+		padding-top: 0em
+		}
+
+	img.inline-graphic-floatRight	
+		{
+		border: none;
+		float: right;
+		padding-left: 1em;
+		padding-bottom: .5em;
+		padding-top: .5em
+		}
+	
+	div.figure img {
+		max-height:250px;
+	}
+	
+	#article .zoom_caption p, .article .zoom_caption p {
+		text-indent: 0em;
+		font-size: 13px;
+		margin: 0 0 0.5em 0;
+	}
+	
+	.fig-group-caption {
+		font-size:11px;
+		margin:0 0 0 5.5em;
+	}
+	.fig-group {
+		margin-top:2em;
+	}
+ 
+ /*STA 6/22/15 update for text replacement inline images*/
+	
+	img.baseline
+		{
+		border:none;
+		padding:0 0.15em;
+		vertical-align:baseline;
+		}
+
+	img.textBottom
+		{
+		border:none;
+		padding:0 0.15em;
+		vertical-align:text-bottom;
+		}
+ 
+ 
+ 
+ 
+ 
+ 
+/*
+ ################################################## 
+columns
+ ################################################## 
+*/
+
+
+div.columnContainer
+	{
+	width: 40em;
+	}
+
+
+div.columnHeader {
+  /*clear: both;*/
+    height: 20px;
+    background-color: aqua;
+    padding: 1px;
+}
+
+
+
+div.columnLeft {
+    float: left;
+    width: 19em;
+	padding: 0px;
+  /* 	background-color: red;*/
+   }
+
+div.columnRight {
+    float: right;
+	margin-left: 0;
+    width: 19em;
+/*    background-color: green;*/
+}
+
+
+
+	blockquote.disp-quote-columnContainer
+		{
+		width: 30em;
+		margin-left: 3.5em;
+		}
+
+	blockquote div.columnLeft, div.disp-quote div.columnLeft {
+    	float: left;
+    	width: 14em;
+		padding: 0px;
+  /* 		background-color: red;*/
+   		}
+
+	blockquote div.columnRight, div.disp-quote div.columnRight {
+    	float: right;
+		margin-left: 0;
+    	width: 14em;
+   /* 	background-color: green;*/
+   		}
+
+
+
+
+div.columnMiddle {
+    width: 10px;
+    padding: 0px 0px 0px 0px;
+    margin: 0px;
+    background-color: silver;
+}
+
+div.columnFooter {
+    clear: both;
+    height: 20px;
+    background-color: yellow;
+}
+
+.leftColumn, .leftcolumn {		 
+		padding:5px;
+ 		float:left;
+ 		margin:0 0 5px 0 !important;
+		width:50%;		 
+   /* 	width:65%;*/
+				 
+
+}
+
+.leftColumn p, .leftcolumn p { 
+		padding:0px;
+ 		margin:0px;
+
+}
+.leftColumn img, .leftcolumn img {		 
+		padding:0px;
+ 		margin:0px;
+
+}
+
+* html .leftColumn, * html .leftcolumn{
+		width: 250px;		
+		padding:0px;
+		margin:0px;
+
+}
+.rightColumn, .rightcolumn {		 
+		padding:5px;
+ 		float:right;
+		margin:0 0 5px 0 !important;
+  		width:50%;		 
+   /* 	width:35%;*/
+}
+.rightColumn p, .rightcolumn p {		 
+		padding:0px;
+ 		margin:0px;
+
+}
+.rightColumn img, .rightcolumn img {		 
+		padding:0px;
+ 		margin:0px;
+
+}
+* html .rightColumn, * html .rightcolumn{
+		width: 250px;
+		padding:0px;
+		margin-right:0px;
+}
+
+
+span.all {
+  display: inline-block;
+  width: 100%;
+}
+
+ 
+
+span.left {
+position: relative;
+width: 100px;
+  }
+
+
+
+span.center {
+position: relative;
+ width: 125px;
+
+ }
+ 
+ 
+span.right {
+position: relative;
+left:10px;
+ }
+
+
+
+.clearfloat {
+    clear: both;
+    font-size: 0.063em;
+    height: 0;
+    line-height: 0;
+}
+
+
+
+/* JWPLAYER */
+.video_full_none {
+	position: absolute;
+	top: -9999px;
+	left: -9999px;
+}  
+.media_full_none {
+	position: absolute;
+	top: -9999px;
+	left: -9999px;
+}  
+div.video {
+margin-bottom: 6em;
+}
+div.video div.caption {
+margin: 1em 0 0 1em;
+}
+div.audio div.caption {
+margin: 1em 0 0 1em;
+width: 457px;
+max-width:90%;
+}
+div.video div.caption a.noJS {
+position: absolute;
+left: 0;
+margin-top: 2em;
+} 
+/* removing for jwplayer upgrade */
+/* video { display: none; } */
+
+
+/*  zoom image  */
+.smooth_zoom_preloader {
+  background: transparent url(/images/zoom_preloader.gif) center center no-repeat;
+ }
+
+/*might solve a problem?*/
+.smooth_zoom_icons {
+	background-image: url(/images/zoom_icons.png);
+}
+
+.zoom_full_caption_hide{display:none;}
+
+.zoom_figure_container {
+	padding: 15px 0;
+	clear: left;
+	 margin: 1em 0 0 1.5em;
+}
+
+.zoom_figure_container:after { content: ""; display: block; height: 0; clear: both; }
+
+.zoom_figure {
+	float: left;
+}
+
+.zoom_caption {
+	clear:left;
+	/*width: 35%;*/
+	padding-top: .5em;
+	padding-left: .5em;
+	padding-bottom: 1em;
+}
+
+.zoom_label{
+	font-weight: bold;
+}
+
+div.pre-ui {
+	border: 5px solid gray;
+	border-radius: 8px;
+	padding:10px;
+	overflow-x:scroll;
+}
+
+#mainArticle .front .article-title, #mainArticle #front #article-title {
+	font-size:28px;
+	line-height: 1.1;
+	padding-bottom: 8px;
+}
+
+#mainArticle .front .subtitle, #mainArticle #front #subtitle {
+	display:block;
+	padding-top:0.3em;
+	font-size:18px;
+	/*margin-left:0.3em;*/
+}
+#article_wrap .card_text ul {
+	padding-left:0;
+}
+#article_wrap .card_text .title, .article_wrap .card_text .title {
+	font-weight:500;
+}
+#article_wrap .card_text, #article_wrap .card_text .author {
+	padding:0;
+}
+#article_wrap #article .card.row, #article_wrap .article .card.row {
+	padding-top: 1em;
+	padding-bottom: 1em;
+}
+#article_wrap .cards_wrap .card {
+	padding-bottom:1em;
+}
+#article_wrap .cards_wrap .card_image.article_colophon {
+	float:right;
+}
+#article_wrap .cards_wrap .card_image.article_colophon img {
+	background-color:white;
+}
+#missing {
+	padding-top:1em;
+}
+#missing .missing_wrap li {
+	margin-top:1em;
+}
+#main .reflinks {
+	margin:1em 0 1em 1.5em;
+	font-size:13px;
+}
+.reviewedby {
+	font-weight:700;
+}
+#article .table-box > p {
+	margin-top:0.5em;
+	margin-left:0;
+}
+.top_bio_wrap_link {
+  display: inline-block;
+  position: relative;
+  margin-left: 20px;
+  font-style: normal;
+  font-size: 15px;
+}
+.top_bio_wrap_link:before {
+  display: block;
+  content: '\2014';
+  position: absolute;
+  left: -16px;
+  top: 0;
+}

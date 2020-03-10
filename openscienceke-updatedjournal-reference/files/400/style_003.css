@@ -1,0 +1,384 @@
+body, .bodyLayout { margin: 0; padding: 0; border: 0; border-spacing: 0; }
+.leftRegion, .centerRegion, .rightRegion { margin: 0; padding: 0; border: 0; }
+.listgroup .lilabel, .listgroup p { padding:0; margin: 0; }
+
+.welcome_user_text {
+  font-size: x-small;
+  font-weight: bold;
+  padding: 1em;
+  border-bottom: 1px solid #444;
+  color: #444;
+}
+
+.smallMarginLeft{
+    margin-left:1em;
+}
+
+.pointer{
+    cursor: pointer;
+}
+
+.pub_search_box {
+	font-family: Verdana, Arial, Helvetica, sans-serif;
+	font-size: x-small;
+	font-weight: bold;
+	padding: 1em;
+	margin-bottom: 1em;
+	border-bottom: 1px solid #444;
+	color: #444;
+}
+.pub_search_link {
+	font-size: 10pt;
+	font-weight: bold;
+	margin-bottom: 5px;
+	margin-top: 5px;
+}
+#searchSaved .field label{
+    display: block;
+}
+.menuXsubMenuDivider {
+  text-align: center;
+}
+
+#hide { display:none }
+
+.art_title, .arttitle, .searchResultTitle {
+  font-weight: bold;
+}
+.art_author {
+	color: gray;
+}
+.art_meta {
+	color: gray;
+}
+
+.error    {
+	color: red;
+}
+.citedByEntry {
+    margin-bottom: 0.5em;
+}
+.citedBySection {
+    margin-bottom: 2em;
+}
+.bullet {
+    vertical-align: top;
+}
+.tocHeading .subj-group {
+    display: block;
+    font-size: 90%;
+}
+
+a img {
+    border-width: 0
+}
+
+.currencySymbol {
+  font-weight: bold;
+}
+
+#showMailPage label {
+    font-weight: bold;
+}
+
+#showMailPage label.checkBox {
+    font-weight: normal;
+}
+div.p {
+    margin: 1em 0;
+}
+#CreditCardDialog .required {
+    color: #f00;
+}
+#CreditCardDialog label {
+    margin: 1em 0;
+    text-align: left;
+}
+.formHeading {
+    font-weight: bold;
+}
+
+div.federation {
+    margin-top:15px;
+	font-size:1.1em;
+	font-weight:bold;
+}
+.logoImg{
+    width:165px;
+    height:108px;
+    border:0;
+}
+table.offersOption {
+    width:100%;
+    padding:0 2em;
+}
+.offersOption td{
+    padding-bottom:1em;
+}
+.offersOption li{
+    list-style:none;
+}
+.offersOption tr.buttons{
+    text-align:right;
+}
+.deliveryFormat li{
+    list-style:none;
+    display:inline;
+}
+
+.ecommOffers {
+    font-weight: bold;
+}
+
+.addressLink {
+    cursor: pointer;
+    color: blue;
+}
+.ecommRecommendArticles p{
+    margin-left:10px;
+}
+.ecommConf ul{
+    list-style:none;
+}
+.whatis-rss {
+    font-size:smaller;
+    white-space:nowrap
+}
+.AfterFilter, .BeforeFilter {
+    display: inline;
+}
+.agreement .buttons a{
+    margin-left:1.5em;
+}
+.refineSearch td{
+    background-color:#C7C7C7;
+}
+
+li#discussionsLink {
+    background-image: url("/templates/jsp/images/icon_track.gif")
+}
+
+div.commentQuestion{
+    padding-top:10px;
+}
+
+#noHLines {
+    border-bottom: none;
+}
+
+.alertSection > div {
+    margin-top: 6px;
+}
+
+.alertSection input[type=checkbox] {
+    margin-left: 0;
+}
+
+#bookMetaInNavigator {
+    display: none;
+}
+
+/*tab module styling*/
+.tabs-container .tabs-list li ,.personalizeTabs .tabsList li {
+    background-color: #9DB2BD;
+    padding: 2px 15px;
+    position:relative;
+    left: 4px;
+    color: white;
+    font-weight: bold;
+    font-size: 1.13em;
+    display: inline-block;
+    -webkit-border-top-left-radius: 6px;
+    -webkit-border-top-right-radius: 24px;
+    -moz-border-radius-topleft: 6px;
+    -moz-border-radius-topright: 24px;
+    border-top-left-radius: 6px;
+    border-top-right-radius: 24px;
+}
+
+.tabs-container .tabs-list span, .personalizeTabs .tabsList span{
+    background-color: #9DB2BD;
+    padding: 2px 15px;
+    position:relative;
+    left: 4px;
+    color: white;
+    font-weight: bold;
+    font-size: 1.13em;
+
+}
+
+.tabs-container .tabs-list li a  ,.personalizeTabs .tabsList li a{
+    color: white;
+}
+
+.tabs-container .tabs-list span a  ,.personalizeTabs .tabsList span a{
+    color: white;
+}
+
+.tabs-container .tabs-list li.zerocount:hover ,.personalizeTabs .tabsList li.zerocount:hover {
+    background-color: #9DB2BD;
+    cursor: default !important;
+}
+
+.tabs-container .tabs-list li.zerocount a ,.personalizeTabs .tabsList li.zerocount a{
+    cursor: default !important;
+}
+
+.tabs-container .tabs-list li:hover ,.personalizeTabs .tabsList li:hover{
+    background-color: #8CB6CF;
+}
+
+.tabs-container .tabs-list span:hover,.personalizeTabs .tabsList span:hover {
+    background-color: #8CB6CF;
+}
+
+.tabs-container .tabs-list li.selected,.personalizeTabs .tabsList li.selected {
+    background-color: #8CB6CF;
+}
+
+.tabs-container .tabs-list span.selected,.personalizeTabs .tabsList span.selected{
+    background-color: #8CB6CF;
+}
+.tabsList{
+    margin: 0;
+    padding: 0;
+}
+.tabsList li{
+    display: inline-block;
+    vertical-align: bottom;
+    cursor: pointer;
+    zoom: 1;
+    margin: 0 .5em 0 0;
+    list-style: none;
+    padding: 0;
+}
+
+/* OASIS table model, order of rules is important for correct overriding */
+/* by default table cells will have borders, to disable border colsep/rowsep should be set to "0" */
+.NLM_table-wrap td, .NLM_table-wrap th {
+    border-right: 1px solid black;
+    border-bottom: 1px solid black;
+}
+.NLM_table-wrap-foot p {
+    margin: 0;
+}
+.NLM_table-wrap table {
+    border: 1px solid black;
+    border-spacing: 0px;
+    border-collapse: collapse;
+    width: 95%;
+}
+.NLM_table-wrap table.frame_none {
+    border: none;
+}
+.NLM_table-wrap table.frame_left {
+    border: none;
+    border-left: 1px solid black;
+}
+.NLM_table-wrap table.frame_right {
+    border: none;
+    border-right: 1px solid black;
+}
+.NLM_table-wrap table.frame_top {
+    border: none;
+    border-top: 1px solid black;
+}
+.NLM_table-wrap table.frame_bottom {
+    border: none;
+    border-bottom: 1px solid black;
+}
+.NLM_table-wrap table.frame_sides {
+    border: none;
+    border-left: 1px solid black;
+    border-right: 1px solid black;
+}
+.NLM_table-wrap table.frame_topbot {
+    border: none;
+    border-top: 1px solid black;
+    border-bottom: 1px solid black;
+}
+table.rowsep0 td, table.rowsep0 th {
+    border-bottom: none;
+}
+table.rowsep1 td, table.rowsep1 th {
+    border-bottom: 1px solid black;
+}
+table.rowsep2 td, table.rowsep2 th {
+    border-bottom: 3px double black;
+}
+col.rowsep0, tr.rowsep0 td, tr.rowsep0 th {
+    border-bottom: none;
+}
+col.rowsep1, tr.rowsep1 td, tr.rowsep1 th {
+    border-bottom: 1px solid black;
+}
+col.rowsep2, tr.rowsep2 td, tr.rowsep2 th {
+    border-bottom: 3px double black;
+}
+tr th.rowsep0, tr td.rowsep0 {
+    border-bottom: none;
+}
+tr th.rowsep1, tr td.rowsep1 {
+    border-bottom: 1px solid black;
+}
+tr th.rowsep2, tr td.rowsep2 {
+    border-bottom: 3px double black;
+}
+table.colsep0 td, table.colsep0 th {
+    border-right: none;
+}
+table.colsep1 td, table.colsep1 th {
+    border-right: 1px solid black;
+}
+table.colsep2 td, table.colsep2 th {
+    border-right: 3px double black;
+}
+col.colsep0, tr.colsep0 td, tr.colsep0 th {
+    border-right: none;
+}
+col.colsep1, tr.colsep1 td, tr.colsep1 th {
+    border-right: 1px solid black;
+}
+col.colsep2, tr.colsep2 td, tr.colsep2 th {
+    border-right: 3px double black;
+}
+tr th.colsep0, tr td.colsep0 {
+    border-right: none;
+}
+tr th.colsep1, tr td.colsep1 {
+    border-right: 1px solid black;
+}
+tr th.colsep2, tr td.colsep2 {
+    border-right: 3px double black;
+}
+/* last element takes border from the table, have none on its own */
+.NLM_table-wrap table tr.last td {
+    border-bottom: none;
+}
+.NLM_table-wrap table tr td.last, .NLM_table-wrap table tr th.last {
+    border-right: none;
+}
+.NLM_table-wrap .align_right {
+    text-align: right;
+}
+.NLM_table-wrap .align_left {
+    text-align: left;
+}
+
+.NLM_def-list {
+    margin: 1em 0;
+}
+.NLM_def-list .NLM_title, .NLM_def-list .NLM_term-head, .NLM_def-list .NLM_def-head, .NLM_def-list .NLM_term {
+    font-weight: bold;
+    vertical-align: top;
+}
+.NLM_def-list .NLM_def {
+    vertical-align: top;
+}
+
+/* "list tables" in context of real tables */
+.NLM_table-wrap table tr td table.listgroup, .NLM_table-wrap table tr td table.listgroup td {
+    border: none;
+    width: auto;
+    text-align: left;
+}

@@ -1,0 +1,716 @@
+
+Skip to main content
+
+    Facebook
+    Twitter
+    YouTube
+    LinkedIn
+    Google Plus
+
+    Other GSA Resources
+        Genetics Society of America
+        G3: Genes | Genomes | Genetics
+        Genes to Genomes: The GSA Blog
+        GSA Conferences
+        GeneticsCareers.org
+
+    Log in
+
+Genetics
+
+    Main menu
+    User menu
+    Search
+
+Main menu
+
+    HOME
+    ISSUES
+        Current Issue
+        Early Online
+        Archive
+    ABOUT
+        About the journal
+        Why publish with us?
+        Editorial board
+        Early Career Reviewers
+        Contact us
+    SERIES
+        All Series
+        Genomic Prediction
+        Multiparental Populations
+        FlyBook
+        WormBook
+        YeastBook
+    ARTICLE TYPES
+        About Article Types
+        Commentaries
+        Editorials
+        GSA Honors and Awards
+        Methods, Technology & Resources
+        Perspectives
+        Primers
+        Reviews
+        Toolbox Reviews
+    PUBLISH & REVIEW
+        Scope & publication policies
+        Submission & review process
+        Article types
+        Prepare your manuscript
+        Submit your manuscript
+        After acceptance
+        Guidelines for reviewers
+    SUBSCRIBE
+        Why subscribe?
+        For institutions
+        For individuals
+        Email alerts
+        RSS feeds
+
+    Other GSA Resources
+        Genetics Society of America
+        G3: Genes | Genomes | Genetics
+        Genes to Genomes: The GSA Blog
+        GSA Conferences
+        GeneticsCareers.org
+
+User menu
+Search
+Search for this keyword
+
+    Advanced search
+
+Genetics
+Search for this keyword
+
+Advanced Search
+
+    HOME
+    ISSUES
+        Current Issue
+        Early Online
+        Archive
+    ABOUT
+        About the journal
+        Why publish with us?
+        Editorial board
+        Early Career Reviewers
+        Contact us
+    SERIES
+        All Series
+        Genomic Prediction
+        Multiparental Populations
+        FlyBook
+        WormBook
+        YeastBook
+    ARTICLE TYPES
+        About Article Types
+        Commentaries
+        Editorials
+        GSA Honors and Awards
+        Methods, Technology & Resources
+        Perspectives
+        Primers
+        Reviews
+        Toolbox Reviews
+    PUBLISH & REVIEW
+        Scope & publication policies
+        Submission & review process
+        Article types
+        Prepare your manuscript
+        Submit your manuscript
+        After acceptance
+        Guidelines for reviewers
+    SUBSCRIBE
+        Why subscribe?
+        For institutions
+        For individuals
+        Email alerts
+        RSS feeds
+
+Previous Article Next Article
+Empirical Bayes Inference of Pairwise F ST and Its Distribution in the Genome
+Shuichi Kitada , Toshihide Kitakado and Hirohisa Kishino
+Genetics October 1, 2007 vol. 177 no. 2 861-873; https://doi.org/10.1534/genetics.107.077263
+Shuichi Kitada
+
+    Find this author on Google Scholar
+    Find this author on PubMed
+    Search for this author on this site
+
+Toshihide Kitakado
+
+    Find this author on Google Scholar
+    Find this author on PubMed
+    Search for this author on this site
+
+Hirohisa Kishino
+
+    Find this author on Google Scholar
+    Find this author on PubMed
+    Search for this author on this site
+
+    Article
+    Figures & Data
+    Supplemental
+    Info & Metrics
+
+Loading
+Abstract
+
+Populations often have very complex hierarchical structure. Therefore, it is crucial in genetic monitoring and conservation biology to have a reliable estimate of the pattern of population subdivision. F ST 's for pairs of sampled localities or subpopulations are crucial statistics for the exploratory analysis of population structures, such as cluster analysis and multidimensional scaling. However, the estimation of F ST is not precise enough to reliably estimate the population structure and the extent of heterogeneity. This article proposes an empirical Bayes procedure to estimate locus-specific pairwise F ST 's. The posterior mean of the pairwise F ST can be interpreted as a shrinkage estimator, which reduces the variance of conventional estimators largely at the expense of a small bias. The global F ST of a population generally varies among loci in the genome. Our maximum-likelihood estimates of global F ST 's can be used as sufficient statistics to estimate the distribution of F ST in the genome. We demonstrate the efficacy and robustness of our model by simulation and by an analysis of the microsatellite allele frequencies of the Pacific herring. The heterogeneity of the global F ST in the genome is discussed on the basis of the estimated distribution of the global F ST for the herring and examples of human single nucleotide polymorphisms (SNPs).
+
+INFERRING genetic population structure has been a major theme in population biology, ecology, and human genetics. The fixation index F ST , introduced by W right (1951) , is a key parameter for such studies and is most commonly used to measure genetic divergence among subpopulations ( P alsbøll et al . 2007 ). It is defined as the correlation between random gametes drawn from the same subpopulation relative to the total population. Another measure used frequently is C ockerham 's (1969 , 1973 ) coancestry coefficient, which is the probability that two random genes from different individuals are identical by descent, and the average overall pairs of individuals within the same subpopulation equal Wright's F ST ( E xcoffier 2003 ). We use the notation θ WC for the average coancestry coefficient and θ WC = F ST as shown by W eir and C ockerham (1984) . N ei 's (1973) G ST is analogous to F ST and identical to F ST for diploid random-mating populations ( E xcoffier 2003 ).
+
+N ei and C hesser (1983) proposed an estimator for F ST and G ST . The estimation of these parameters accounts only for the sampling error within subpopulations and therefore assumes that all subpopulations have been sampled ( C ockerham and W eir 1986 ; E xcoffier 2003 ). W eir and C ockerham (1984) developed the moment estimator Math Math for the coancestry coefficient θ WC , which takes the sampling error for the subpopulations into account. Several moment estimators with different weighting schemes have also been derived ( R obertson and H ill 1984 ; W eir and C ockerham 1984 ). An alternative estimation has been discussed using the method of ordinary least squares ( R eynolds et al . 1983 ). W eir and H ill (2002) extended θ WC to a population-specific parameter to allow different levels of coancestry for different populations. They also derived an estimator for θ WC with confidence intervals using a normal theory approach.
+
+Despite the development of methods for assigning individuals to populations ( P aetkau et al . 1995 ; P ritchard et al . 2000 ; H uelsenbeck and A ndolfatto 2007 ), the differentiation estimators remain the most commonly used tools for describing population structure ( B alloux and L ugon -M oulin 2002 ). W eir and C ockerham (1984) showed that their estimator Math Math provides the smallest bias among the moment estimators. G oudet et al . (1996) confirmed this using simulations and showed that Math Math generates the least-biased estimate of F ST but has the largest variance when F ST is small. R aufaste and B onhomme (2000) showed that Math Math is nearly unbiased, with minimal variance for large F ST , and that the estimator of R obertson and H ill (1984) Math Math is negatively biased, with minimal variance for small F ST . They proposed a correction for the bias of Math Math but this cannot be corrected properly in the range of [0.05, 0.1]. Therefore, a precise estimate of F ST is crucial, especially for small and moderate levels of genetic differentiation.
+
+In addition to the estimation of F ST over all subpopulations in a metapopulation (hereafter, we call this global F ST ), F ST 's for pairs of sampled localities or subpopulations (pairwise F ST ) are usually estimated in conservation biology and ecology. In fact, the computer programs Arlequin ( E xcoffier et al . 2005 ), FSTAT ( G oudet 1995 ), and Genepop ( R aymond and R ousset 1995 ) estimate these parameters and are used widely in ecological studies. These three software packages produce the same or similar values for pairwise F ST estimates and provide the basic statistics for exploratory analyses of population structure, such as cluster analysis and multidimensional scaling. They are also used as a criterion for population differentiation ( W aples and G aggiotti 2006 ; P alsbøll et al . 2007 ). However, the estimation of F ST 's is not precise enough to reliably estimate the population structure and the extent of heterogeneity, especially for large gene flow species.
+
+Small numbers of individuals taken from each locality should also affect the precision of Math Math Populations often have very complex hierarchical structures, and geographical samples are usually taken from many localities to include a wide area. Therefore, the numbers of individuals from each locality are frequently limited by the large number of sampling points. Small sample sizes can result in biased estimates of the allele frequencies of each subpopulation. This bias may be larger for cases with larger numbers of alleles, such as microsatellite DNA. Uncertainty in the estimates of allele frequencies should affect the estimation of F ST 's. The Bayesian approach provides better estimates of allele frequencies by taking uncertainty into account ( L ange 1995 ; L ockwood et al . 2001 ). Posterior distributions of global F ST were simulated from posterior distributions of allele frequencies, assuming common hyperparameters across all loci ( H olsinger 1999 ; H olsinger et al . 2002 ; C orander et al . 2003 ). However, accurate estimation of pairwise F ST , the essential parameter in ecological studies, has not been fully investigated.
+
+In this article, we propose an empirical Bayes procedure to estimate locus-specific pairwise F ST 's, taking into account the uncertainty of the allele frequencies of subpopulations. The estimation procedure has two stages. First, the hyperparameters of Dirichlet prior distributions for allele frequencies at each locus are estimated from observed allele counts by a maximum-likelihood method. The global F ST is then estimated at each locus. Second, on the basis of the estimates of the hyperparameters, and given the allele counts, posterior distributions of the allele frequencies are generated for each locus, from which the posterior distributions of locus-specific pairwise F ST 's are simulated. The posterior mean of our empirical Bayes pairwise F ST estimates can be interpreted as a shrinkage estimator ( S tein 1956 ; M aritz and L ewin 1989 ) anchored to the average of the true values among pairs. It performs better than conventional differentiation estimators and robustly estimates the population structure, even for non-Dirichlet cases, as stepping-stone models. The posterior distribution of pairwise F ST 's can be used to calculate a criterion of population differentiation. Our maximum-likelihood estimates of the global F ST 's can also be used as sufficient statistics to estimate the distribution of F ST among loci in the genome. Our model assumes random mating or random sampling of alleles at each locality and that linkage equilibrium holds between loci. It also assumes that allele counts at each locus, given the true allele frequencies, are independent among populations. Our method can be applied to frequency data for common genetic markers, including isozymes, mitochondrial DNA, microsatellites, and single nucleotide polymorphisms (SNPs). We show the efficacy of our model by simulation and by an analysis of microsatellite allele frequencies of the Pacific herring. The heterogeneity of F ST in the genome is discussed on the basis of the estimated distribution of global F ST for the herring and examples of human SNPs.
+MODELS AND METHODS
+The model:
+
+Consider a simple random sampling from multiple localities in a metapopulation. Suppose that K random-mating demes or subpopulations are drawn from the metapopulation. Let Math Math be a vector of the true allele frequencies at locus l in subpopulation k , where J l is the number of different alleles at the locus, and Math Math We assume a Dirichlet distribution as the prior distribution of p kl . The probability density function is Math Math where Math Math are the hyperparameters and Math Math is a scale parameter that is specific for the locus. This model describes well a metapopulation that has a continuous structure and consists of an infinite number of subpopulations or demes ( P annell and C harlesworth 2000 ; R ousset 2003 ; H anski and G aggiotti 2004 ). Let Math Math be the mean allele frequency for the metapopulation at the locus satisfying Math Math Hence, we have the relation β lj = α lj /θ l .
+
+Under this model, the global F ST (hereafter denoted as Math Math ) at each locus is expressed simply by the scale parameter, as Math Math (1) as given by W right (1969) , R annala and H artigan (1996) , B alding and N ichols (1997) , L ockwood et al . (2001) , B alding (2003) , and K itada and K ishino (2004) . In this model, the variance of the j th allele frequency for the locus, p klj , is expressed by Math Math as given by W eir (1996) , H olsinger et al . (2002) , B alding (2003) , and K itakado et al . (2006) . The Dirichlet distribution assumes an evolutionary equilibrium and an equal mutation rate for all alleles ( W eir and H ill 2002 ; E wens 2004 ). Under this assumption, the scale parameter θ l refers to the rate of gene flow, as given by R annala and H artigan (1996) . We use the symbol θ for the scale parameter, following R annala and H artigan (1996) and B alding and N ichols (1997) . W eir and C ockerham (1984) also used the same symbol θ for the coancestry coefficient (= F ST ), so we use θ WC for their θ. Our Math Math is equivalent to θ WC ( W eir 1996 , pp. 47–48) and Holsinger's θ B ( H olsinger 1999 ; H olsinger et al . 2002 ).
+Maximum-likelihood estimation of hyperparameters and global F ST :
+
+The maximum-likelihood estimation of the hyperparameters has been discussed by L ange (1995) , K itada et al . (2000) , and B alding (2003) . A pseudo-likelihood approach was also taken by R annala and H artigan (1996) . In the maximum-likelihood framework, a method for the simultaneous estimation of Math Math and the linkage disequilibrium coefficient between two SNPs has been proposed ( K itada and K ishino 2004 ). K itakado et al . (2006) proposed an integrated-likelihood approach to reduce the negative bias of Math Math particularly for cases with few sampling points.
+
+Suppose that Math Math alleles of diploid organisms ( N k /2 individuals) are counted at locus l and Math Math denotes a vector of observed allele counts at the locus in subpopulation k . We assume that all individuals are successfully genotyped at all loci, so Math Math The marginal likelihood of the observed allele counts at a locus n kl has a Dirichlet-multinomial distribution ( L ange 1995 ; R annala and H artigan 1996 ; W eir 1996 ; B alding and N ichols 1997 ; K itada et al . 2000 ; B alding 2003 ; R ousset 2003 ). The parameters to be estimated are Math Math Because we assume the independence of subpopulations, the overall likelihood for these parameters is given by the product of the likelihood functions for K samples, as Math Math (2) The hyperparameters α l are estimated by maximizing this marginal likelihood ( L ange 1995 ; K itada et al . 2000 ). Our method can be used for both allele and haplotype counts without modification, but some notations differ slightly. For haploid organisms, N k refers to the individuals genotyped; and n kl should be n k and α lj should be α j . Henceforth, for simplicity, we focus on diploid organisms.
+
+The locus-specific Math Math can be estimated by substituting Math Math for θ l in Equation 1 . The variance estimator for Math Math is calculated from the Fisher information matrix for α l , as Math Math The asymptotic variance for Math Math is estimated using the Delta method ( S eber 1982 ) as Math Math (3) In our metapopulation model or infinite-island model, the sampled localities are regarded as a sample from all possible demes or subpopulations, including those not sampled. Hence, Equation 2 estimates the locus-specific genetic differentiation under the random-effect model of population sampling ( W eir 1996 ). The average estimate of Math Math for all loci is calculated as an arithmetic mean across the loci.
+Empirical Bayes estimation of pairwise F ST :
+
+The posterior distribution of allele frequencies p kl at locus l in subpopulation k is again a Dirichlet distribution, with parameters modified by the sample allele counts Math Math (4) ( L ange 1995 ; W eir 1996 ). Given the estimates of the hyperparameters and the sampled allele counts, random numbers of p kl can be generated through this posterior distribution. The posterior distributions for any parametric functions of p kl can then be simulated by the empirical Bayes procedure ( K itada et al . 2000 ).
+
+When population differentiation between or among specific subpopulations is of interest, the selected populations can be regarded as the entire set of populations. Hence, applying the fixed-effect model of population sampling ( W eir 1996 ) is appropriate. Therefore, we use Nei's G ST formula ( N ei and C hesser 1983 ), which defines quantities with respect to fixed extant populations ( C ockerham and W eir 1986 ), to estimate the posterior distributions of pairwise F ST 's (hereafter denoted as Math Math ), as did H olsinger (1999) and C orander et al . (2003) in estimating global F ST . Nei's gene diversity analysis compares expected heterozygosities under Hardy–Weinberg equilibrium (HWE), and the G ST estimator is expressed as a function of allele frequencies. Therefore the posterior distribution of Math Math at each locus can easily be generated on the basis of the G ST estimator, without using genotype frequencies. We set the number of each simulation to 10,000, so 10,000 Math Math 's are calculated at each locus from the 10,000 sets of allele frequencies p kl between a set of two populations. From the posterior distribution of Math Math the posterior mean and 95% credible interval are calculated. We use the posterior mean as the empirical Bayes estimator of locus-specific Math Math We can also calculate the probability that Math Math is smaller than an arbitrary value [ e.g ., P ( Math Math )], which can be used as the criterion for population differentiation ( W aples and G aggiotti 2006 ; P alsbøll et al . 2007 ). The average estimate of Math Math for overall loci is calculated as an arithmetic mean across the loci.
+
+R osenberg et al . (2003) proposed a general measure for determining the amount of information on individual ancestry on the basis of the Kullback–Leibler information. The informativeness for assignment I n is defined as Math Math (5) where Math Math The authors showed that I n and F ST are very closely correlated but that I n is more informative than the standard SNP-specific pairwise F ST . In an additional analysis, we examine how our empirical Bayes method works to measure this under the same simulation protocol.
+Inferring heterogeneity of global F ST among loci:
+
+We estimate locus-specific Math Math 's on the basis of Math Math estimated at each locus. Evolutionary forces may differ among sites in the genome. Therefore, it is important to investigate the heterogeneity of F ST among loci. One practical analysis is to test the null hypothesis H 0 , the homogeneity of Math Math among L loci, Math Math ) against the alternative hypothesis H 1 , the heterogeneity of Math Math among loci, on the basis of estimates of Math Math When a large number of subpopulations are sampled, the maximum-likelihood estimate Math Math follows a normal distribution of Math Math The maximum likelihood under H 0 is then given as Math Math where Math Math Math Math and Math Math The maximum likelihood under H 1 is Math Math maximizing Math Math by Math Math The negative twice-log-likelihood ratio is then Math Math which follows the χ 2 -distribution with ( L − 1) d.f. under the null hypothesis. We can test the heterogeneity of Math Math on the basis of the test statistics.
+
+The other approach to investigate the heterogeneity of Math Math is to estimate the distribution of Math Math in the genome. In recent years, the number of loci analyzed has been increasing in ecological studies, but is still smaller than those used for human SNPs. For such cases, it would be difficult to directly estimate the specific distribution of Math Math from the data. Here, we estimate the distribution of Math Math in the genome from estimates of randomly selected loci, Math Math When the distribution is expressed by the parametric model Math Math the unknown parameter Math Math which defines the distribution of Math Math is estimated by maximizing the log marginal likelihood Math Math where Math Math is the distribution of Math Math Here, we assume the independence of loci Math Math Because the maximum-likelihood estimator Math Math is a sufficient statistic, it is possible to estimate the distribution of Math Math in the genome on the basis of the estimates Math Math for randomly sampled loci, instead of using a direct estimation from the data.
+
+For the preliminary discussion here, we assume that Math Math is normally distributed in the genome. When the distribution of Math Math is expected to be different from 0, a simple approximation may be a normal distribution. We then assume Math Math follows N (μ, σ 2 ) as a first step in estimating the distribution of Math Math in the genome under the limited number of loci analyzed. In this case, the parameter vector ρ refers to μ and σ 2 . The general form of the log marginal likelihood given above becomes Math Math (6) Here, Math Math is the variance of the estimates, Math Math We estimate μ and σ 2 numerically, regarding Math Math as Math Math The distribution of Math Math 's can also be calculated with slight modifications to the above procedure.
+RESULTS
+Improved precision of our empirical Bayes estimator for pairwise F ST :
+
+We investigated the performance of our method of estimating pairwise Math Math using numerical simulations. Random vectors of allele frequencies at locus l in subpopulation k , p kl 's, were generated independently from the Dirichlet distribution with the parameter α l (= θ l  β l ). Here, the number of sampling localities ( K ) was set at 5, 10, and 50, and the mean allele frequencies at a locus were assumed Math Math with J l = 50. As the true values of the global F ST, l 's (= 1/(1 + θ l )), we chose four different levels: Math Math = 0.01, 0.05, 0.1, and 0.2. The sample size ( N k /2) was deemed to be common to all the localities and was set at 20, 30, and 50 individuals. Then, allele counts n kl 's were drawn independently from the multinomial distribution Multi( N k , p kl ) for K localities. The pairwise Math Math values between the first and second localities were evaluated by the conventional Nei's G ST estimator and the empirical Bayes method. In the latter procedure, 500 Math Math 's were simulated on the basis of Nei's G ST formula to save computation time, and the posterior mean was calculated as the estimator of the pairwise F ST . The point estimate for the conventional G ST estimator and the posterior mean of the empirical Bayes estimates were compared with the true Math Math These procedures were iterated R = 1000 times.
+
+Figure 1 and supplemental Figure S1 at http://www.genetics.org/supplemental/ show the general features of the empirical Bayes estimator compared with those of the conventional G ST estimator. The former examines the case of a relatively large number of sampling points and a limited sample size from each sampling point ( K = 50, N k /2 = 20). The latter investigates the case of moderately large samples from a small number of sampling points ( K = 10, N k /2 = 50), which is common in ecological studies. It is clearly apparent that the conventional G ST estimator greatly overestimates the true values and has a large variance, especially for small Math Math In contrast, the empirical Bayes estimates of Math Math 's shrink toward the average of the true Math Math and reduce the positive bias of the conventional estimator. This is reasonable because our empirical Bayes estimator can be interpreted as a shrinkage estimator ( S tein 1956 ; M aritz and L ewin 1989 ).
+Figure 1.— Figure 1.—
+
+    Download figure
+    Open in new tab
+    Download powerpoint
+
+F igure 1.—
+
+The conventional G ST (A) and empirical Bayes (B) estimates of pairwise Embedded Image Embedded Image from 1000 simulations under the infinite-island model at various levels of Embedded Image Embedded Image (0.01, 0.05, 0.1, 0.2) over subpopulations. The mean allele frequencies assumed were Embedded Image Embedded Image with J = 50. The number of sampling localities ( K ) was set at 50. The sample size N k /2 (individuals) was common to all localities and was set at 20 individuals.
+
+The effects of the number of sampling points K and sampled individuals N k /2 are also shown in the supplemental material at http://www.genetics.org/supplemental/ . The numbers of sampling points did not affect the positive bias of the conventional G ST estimator because K was fixed at 2. The empirical Bayes procedure provided larger variation for smaller numbers of subpopulations, especially for small Math Math values, and vice versa (supplemental Figure S2 at http://www.genetics.org/supplemental/ ). Conversely, larger numbers of sampled individuals reduced the positive bias of the conventional G ST estimator and the variation of the empirical Bayes estimator (supplemental Figure S3 at http://www.genetics.org/supplemental/ ).
+
+For a quantitative comparison of the two estimators, we used the following two measures: Math Math (relative mean bias) and Math Math (root relative mean squared error), where Math Math and Math Math are an estimate and the true value, respectively, for pairwise Math Math in the r  th iteration. As shown in Table 1 , smaller K and sample sizes ( N k /2) resulted in larger positive biases for the conventional estimator for various levels of true Math Math values. The bias and variation became smaller as Math Math became larger. In contrast, the empirical Bayes estimator provided smaller biases and variations for all cases of Math Math although smaller K and sample sizes resulted in a slight negative bias.
+View this table:
+
+    View inline
+    View popup
+
+TABLE 1
+
+Relative mean bias and root relative mean squared error (in parentheses) of the conventional G ST and empirical Bayes estimators of pairwise F ST from 1000 simulations at various levels of global F ST (see text)
+
+The negative bias of the empirical Bayes estimator of pairwise F ST is large, especially when gene flow is large and the estimation is based on a sample from a few sampling points. Underestimation of population differences should lead to optimistic management strategies. Therefore, it is recommended in the conservation genetics of birds and fish that samples be collected from as many sampling points as possible. It is noted that the bias of the empirical Bayes estimator is reduced by increasing the number of sampling points, whereas the bias of the conventional G ST estimator is not.
+
+We estimated Rosenberg et al .'s informativeness of assignment I n between the first and second localities using Equation 5 ( K = 2) and the empirical Bayes method based on the I n estimator for the case of Math Math The mean allele frequencies were assumed to be Math Math with J = 50. The number of sampling localities ( K ) was set at 50 and the sample size ( N k /2 individuals) was set at 20 individuals for each sampling point. Figure 2 shows that the conventional estimator for I n was positively biased, whereas the empirical Bayes estimator of I n performed much better, consistent with the fact that I n produces upwardly biased estimates in small samples ( R osenberg et al . 2003 ).
+Figure 2.— Figure 2.—
+
+    Download figure
+    Open in new tab
+    Download powerpoint
+
+F igure 2.—
+
+The conventional informativeness of assignment I n ( R osenberg et al . 2003 ) (A) and empirical Bayes (B) estimates of I n from 1000 simulations for the case of Embedded Image Embedded Image The mean allele frequencies assumed were Embedded Image Embedded Image with J = 50. The number of sampling localities ( K ) was set at 50 and the sample size N k /2 (individuals) was common to all localities and was set at 20 individuals.
+Robustness of our shrinkage estimator for pairwise F ST :
+
+The robustness of our Math Math estimator was explored using numerical simulations for non-Dirichlet distributions of the allele frequencies. We considered cases in which genetic differentiation becomes larger with geographic distance. Such a stepping-stone model is biologically realistic and may be common ( P alsbøll et al . 2007 ). We set the number of sampled subpopulations ( K ) to 15 and the Math Math between two adjacent populations to 0.001 (case 1) or 0.0005 (case 2). We considered biallelic cases and set the allele frequencies to (0.5, 0.5) at a locus for the middle population. We then calculated the allele frequencies p kl 's at the locus for another 14 subpopulations by numerical optimization. The sample size ( N k /2) was deemed to be common to all localities and was set at 20 individuals. Then, allele counts n k 's were drawn independently from the multinomial distribution Multi( N k , p kl ) for 15 localities. A total of 105 pairwise F ST values between all sets of the two localities were evaluated by the conventional G ST and the empirical Bayes estimator following the simulation protocol described above.
+
+As shown in Figure 3 (case 1) and supplemental Figure S4 at http://www.genetics.org/supplemental/ (case 2, top left), our empirical Bayes procedure provided better estimates than those of the conventional G ST estimator for smaller Math Math 's (∼ <0.06 for case 1 and 0.04 for case 2). In conservation, management units should be defined among subpopulations with little genetic differentiation. P alsbøll et al . (2007) concluded that Math Math could be used as the criterion for deciding the separate management units of sockeye salmon spawning sites. For such cases with very small genetic differentiation, our method performs more efficiently, even for stepping-stone models. On the contrary, the conventional G ST estimator displayed a positive bias for the whole range of Math Math 's in both cases. Our method reduced the positive bias for small Math Math 's and the bias became negative for larger Math Math 's. Reflecting the characteristics of the shrinkage estimator, the relative mean bias of the empirical Bayes estimator, which was the average of the 105 pairwise F ST estimates, was slightly (1.06 times) larger than that of the conventional estimator for case 1 ( Table 2 ). The precision of our estimates was much better for the whole range of Math Math [ Figure 3 , top right (case 1) and supplemental Figure S4 (case 2)].
+Figure 3.— Figure 3.—
+
+    Download figure
+    Open in new tab
+    Download powerpoint
+
+F igure 3.—
+
+Mean (top left) and root relative mean squared error (top right) of the conventional G ST (red circle) and empirical Bayes estimators (blue circle) of pairwise Embedded Image Embedded Image from 1000 simulations under the stepping-stone models. Means and root MSEs were plotted on the true Embedded Image Embedded Image 's which fluctuated very slightly when small uniform random variables were added to prevent the points overlapping heavily. The number of subpopulations ( K ) was set at 15 and the pairwise Embedded Image Embedded Image between two adjacent populations was set at 0.001 (case 1) and 0.0005 (case 2). The sample size N k /2 (individuals) was common to all localities and set at 20 individuals. Only the results for case 1 are shown. The results of the MDS analysis of two data sets are given in the bottom section; black circles show the true population structure, and the estimated population structure based on the conventional (red “*”) and empirical Bayes estimates (blue “+”) of Embedded Image Embedded Image is shown.
+View this table:
+
+    View inline
+    View popup
+
+TABLE 2
+
+Relative mean bias and root relative mean squared error of the conventional G ST and empirical Bayes estimators of pairwise F ST from 1000 simulations under the stepping-stone models (see text)
+
+We also investigated the robustness of estimating population structure on the basis of estimated Math Math 's. The results of the multidimensional scaling (MDS) ( T orgerson 1952 ; Y oung and H amer 1987 ) analysis of two data sets in the simulation showed that our method describes the true population structure well. The conventional G ST estimator also worked, despite the larger positive bias and variance ( Figure 3 , bottom).
+The case of Pacific herring:
+
+We analyzed six geographical samples of the Pacific herring Clupea pallasii from spawning areas in Lake Akkeshi (AK), Yudonuma Lake (YD), and Funka Bay (FK), which are located off the east coast of Hokkaido in Japan, and Obuchinuma Lake (OB), Miyako Bay (MY), and Matsushima Bay (MT), located off the northern Pacific coast of Honshu. Hatchery fish, released and recaptured in Lake Akkeshi (AKH) and Miyako Bay (MYH), were also distinguished from wild fish on the basis of otoliths stained with alizarin complexon. A total of 2055 mature individuals were genotyped at five microsatellite loci. Allele frequencies are given in supplemental Tables S1–S5 at http://www.genetics.org/supplemental/ . HWE was satisfied in each sample except at four localities for three loci, and the assumption of our metapopulation model was considered to be satisfied (supplemental Figure S5). On the basis of the estimates of the hyperparameters (supplemental Figure S6), the scale parameter θ l and Math Math were estimated over all subpopulations ( Table 3 ).
+View this table:
+
+    View inline
+    View popup
+
+TABLE 3
+
+Estimated locus-specific scale parameters θ and Embedded Image Embedded Image over subpopulations of the Pacific herring, with standard errors in parentheses
+
+We estimated the posterior distributions of Math Math for all sets of subpopulations at all loci. As an example, the posterior distributions between FK and MY at the five loci are shown in Figure 4 . The posterior means of Math Math varied from 0.0064 to 0.0245, with the 95% credible intervals in parentheses ( Table 4 ). The P -values in Figures 4 and 5 are for the homogeneity contingency test performed with Genepop ( R aymond and R ousset 1995 ). At all loci, the allelic differences between FK and MY were highly significant ( P < 0.0000). We used Math Math of 0.01 as a population criterion and defined the probability of Math Math ≤ 0.01 as P *. Here, Math Math = 0.01 refers to Math Math which means that the effective number of migrants is 25 individuals per generation ( W aples and G aggiotti 2006 ), where N e is the effective population size and m is the migration rate. The P *-value was near 1.0 for Cha 63, indicating that the genetic differentiation at the locus was small. In contrast, P *-values were 0 or near 0 for Cha 17, Cha 113, and Cha 123 and 0.5318 for Cha 20 ( Figure 4 ). The posterior distribution of the average Math Math over all the loci was calculated as the mean of the posterior distributions at five loci ( Figure 4 , bottom right). Both the P- and P *-values coincided at 0, showing significant genetic differentiation between Funka Bay and Miyako Bay.
+Figure 4.— Figure 4.—
+
+    Download figure
+    Open in new tab
+    Download powerpoint
+
+F igure 4.—
+
+Posterior distributions of Embedded Image Embedded Image for the Pacific herring between Funka Bay and Miyako Bay at each locus, and over all loci, which were averaged over Embedded Image Embedded Image at five loci.
+Figure 5.— Figure 5.—
+
+    Download figure
+    Open in new tab
+    Download powerpoint
+
+F igure 5.—
+
+Posterior distributions of Embedded Image Embedded Image for the Pacific herring over all loci, which were averaged over Embedded Image Embedded Image for five loci: AK, Lake Akkeshi; YD, Yudonuma Lake; FK, Funka Bay; OB, Obuchinuma Lake; MY, Miyako Bay; and MT, Matsushima Bay.
+View this table:
+
+    View inline
+    View popup
+
+TABLE 4
+
+Posterior means and 95% credible and confidence intervals for pairwise F ST of the Pacific herring between Funka Bay and Miyako Bay at each locus
+
+The posterior distributions of average Math Math over all loci for all pairs of wild subpopulations were also simulated as simple means of the posterior distributions at five loci ( Figure 5 ). The allelic differences were highly significant with P = 0.0000, except between MY and MT. The criterion P * resulted in a very different evaluation of population differentiation, even for the same P -value of 0.0000. This result clearly shows the difficulty in the hypothesis-testing framework in evaluating the genetic differentiation between subpopulations ( e.g ., D izon et al . 1995 ; R yman and J orde 2001 ; R yman et al . 2006 ). The P *-based criterion works well in this case and is recommended for use in hypothesis testing.
+
+The variation in Math Math over five loci was not trivial, with a coefficient of variation (CV) of 23% ( Table 3 ). However, the negative twice log-likelihood ratio λ was calculated to be 6.9264 and the hypothesis of constant Math Math for all loci was not rejected ( P = 0.8602, d.f. = 4). We estimated the distribution of Math Math in the genome, assuming normality based on Equation 6 . The maximum-likelihood estimates (MLEs) for μ and σ were obtained with 90, 95, and 99% confidence intervals, which define the distribution of Math Math in the genome via the likelihood profile ( Figure 6A ). The MLE for μ, with the 95% confidence interval, was 0.0160 (0.0128, 0.0206) [ Figure 6A (a, e)] and for σ was 0 (0, 0.00716) [ Figure 6A (0, c)]. The weighted mean Math Math coincided with the MLE of μ ( Table 3 ) and the distribution of the weighted mean Math Math shown as the blue line in Figure 6B , described well the 95% confidence interval of μ [ Figure 6A (a, e)]. Here, Math Math and Math Math were estimated with Equation 3 . The log-likelihood profile for σ was monotonic and decreasing, indicating that the point estimate of σ was 0 (supplemental Figure S7 at http://www.genetics.org/supplemental/ ). Hence, the point estimate of the distribution of Math Math for the Pacific herring is constant, supporting the hypothesis of constant Math Math throughout the genome. However, the distribution of Math Math has uncertainty, which accounts for the confidence regions of μ and σ ( Figure 6B ).
+
+    Download figure
+    Open in new tab
+    Download powerpoint
+
+    Download figure
+    Open in new tab
+    Download powerpoint
+
+F igure 6.—
+
+Confidence regions of the distribution of Embedded Image Embedded Image in the genome of the Pacific herring, assuming a normal distribution (see the text). (A) The confidence regions of μ and σ 2 , which specify the distribution. (B) The MLE distribution (red line, the delta distribution) and the representative distributions on the boundary of the confidence regions (a–e), which correspond to the points in A. The distribution of the weighted mean of Embedded Image Embedded Image is superimposed (blue line).
+DISCUSSION
+
+Our empirical Bayes estimator of Math Math performed better than the conventional G ST estimator for various levels of Math Math and various sampling conditions under the infinite-island model. Even for non-Dirichlet distributions of allele frequencies, such as stepping-stone models, our method provided better estimates of Math Math than did the conventional G ST , especially for cases with large gene flow.
+Integrated likelihood method:
+
+The empirical Bayes estimator of Math Math 's is negatively biased, especially when the population has large gene flow and the estimation is based on a sample from only a few sampling points ( Table 1 , supplemental Figure S2 at http://www.genetics.org/supplemental/ ). With a small number of sampling points, the MLE of θ is not precise. Therefore, it is recommended in the conservation genetic analysis of such a population that the samples be collected from as many sampling points as possible. When sampling from many localities is not feasible, the integrated-likelihood method ( K itakado et al . 2006 ) can reduce the negative bias of Math Math We estimated pairwise Math Math 's by the empirical Bayes method based on integrated-likelihood estimates (ILEs) of θ for cases with Math Math = 0.01, K = 5, and N k /2 = 20, 30, or 50 with the same simulation protocol used for Table 1 (supplemental Figure S8 at http://www.genetics.org/supplemental/ ). The relative mean biases of the Math Math estimates, with root relative mean squared errors in parentheses, were −0.238 (0.506), −0.132 (0.365), and −0.060 (0.272), respectively. These values were much smaller than those estimated on the basis of the MLE of θ, given in Table 1 (top three rows). The negative bias of Math Math 's based on the MLE was reduced to 32.8, 24.4, and 18.2% for N k /2 = 20, 30, and 50, respectively. The integrated-likelihood method uses a uniform prior for the mean allele frequency β l and eliminates β l by integration regarding it as a nuisance parameter. By using the ILE of θ instead of the MLE, the empirical Bayes method proposed here provides nearly unbiased estimates of Math Math 's when the sample sizes ( N k /2 individuals) are large and works more efficiently, even for cases with a small number of sampling points (supplemental Figure S8).
+Weir and Cockerham's θ̂ WC :
+
+When we estimate genetic differentiation between two specific subpopulations, selected subpopulations can be regarded as the entire set of populations. Nei's G ST formula defines quantities with respect to fixed extant populations ( C ockerham and W eir 1986 ). In addition, G ST is a function of allele frequencies under HWE, and the posterior distribution can easily be simulated from only allele frequencies. Therefore, we used the G ST estimator to estimate the posterior distribution of pairwise F ST .
+
+The citation record suggests that the most widely used estimator for Wright's F ST is Weir and Cockerham's Math Math ( W eir and H ill 2002 ). This moment estimator takes the sampling error for subpopulations into account and essentially estimates the global F ST , Math Math The estimator is also widely used to estimate pairwise F ST 's among fixed pairs of populations. With the assumption of no local inbreeding, θ WC is estimated only from sample allele frequencies, but these need to be inferred from sample genotype frequencies ( W eir and H ill 2002 ). With J alleles at a locus, the number of possible genotypes is J ( J + 1)/2. In microsatellite DNA analyses, J is generally large. If J = 50, the number of genotypes is 1225. Such a situation makes our simulation more complicated and the uncertainty of the genotype counts becomes large under small or moderate sample sizes.
+
+Here, we investigated the properties of Math Math on estimating pairwise F ST on the basis of the relationship between G ST and θ WC . Weir and Cockerham's estimates Math Math can be approximated as a function of G ST by Equation 2 in W eicker et al . (2001) : Math Math Using this equation, we calculated the conventional estimates of pairwise Weir and Cockerham's θ WC from G ST estimates with the simulation protocol described in results . We examined cases with a global F ST of Math Math = 0.01, 0.05, 0.1, and 0.2. The mean allele frequencies were assumed Math Math with J = 50. The number of sampling localities K was set at 10 and the sample size N k /2 (individuals) was deemed to be common to all the localities and was set at 50 individuals. As shown in supplemental Figure S9 at http://www.genetics.org/supplemental/ , the two estimators have linear relationships. Hence, our simulation results on the conventional G ST estimator can be extended straightforwardly to pairwise θ WC . In fact, the pairwise Math Math -values calculated for the Pacific herring with Genepop ( R aymond and R ousset 1995 ) were 1.93 ± 0.47 times larger than the posterior means of Math Math (supplemental Figure S10 at http://www.genetics.org/supplemental/ ), which coincides with our simulations for small Math Math 's ( Figure 1 , supplemental Figures S1 and S11).
+
+Weir and Cockerham's estimator Math Math is nearly unbiased ( R aufaste and B onhomme 2000 ), although it has a negative bias for the two-allele case ( W eir and H ill 2002 ). Nevertheless, when estimating the pairwise F ST , Math Math is considered to have a large positive bias, especially for species with large gene flows. Nei's G ST and Rosenberg et al .'s informativeness of assignment I n also showed the same phenomenon, suggesting the positive bias is irrelevant to the estimators. This positive bias of the conventional estimators was larger for smaller genetic differentiation. This might be caused by the large variation in the sample allele frequencies, which is larger for smaller sample sizes (individuals) and largely exceeded the real variation between subpopulations. The shrinkage estimator stabilizes such variation and provides better estimates.
+Weir and Hill's normal theory:
+
+W eir and H ill' s (2002) normal theory approach has the same variance as a Dirichlet distribution when i ≠ i ′ in their notation. Hence, their estimator Math Math is equivalent to our Math Math Math Math is the variance of the allele frequencies among subpopulations relative to the total population. Hence, Math Math refers to a sample variance of allele frequencies, and therefore Math Math follows a χ 2 -distribution when the number of sampling points K is sufficiently large, as shown by W eir and H ill (2002) . The shape of the posterior distribution of Math Math at each locus was unimodal and slightly right tailed, which reminded us of χ 2 -distributions ( Figure 4 ). We estimated Weir and Hill's confidence intervals by substituting the posterior mean of Math Math with Math Math as Math Math where d.f. = ( K − 1)( J − 1) is the degrees of freedom. The confidence intervals of Math Math obtained with the χ 2 -approximation coincided well with the credible intervals calculated from the posterior distributions, although our credible intervals were narrower than the confidence intervals of the χ 2 -approximation, which were slightly right tailed ( Table 4 ). The slight difference in the intervals might have been the effect of the small K (= 8) on the χ 2 -approximation, although it was not substantial. On the contrary, the confidence interval for the sample mean over all loci was narrower than our credible interval ( Table 4 ). The distribution of a sample mean is normal when the sample size is large with the variance reduced by the central limit theorem. A χ 2 -distribution approaches a normal distribution as the degrees of freedom become larger. For our case of 1309 d.f. [ Math Math as given in W eir and H ill 2002 ], the two distributions are equal. The property of the sample mean should cause the narrower confidence interval of the normal theory approach. The result shows that the posterior distribution of Math Math describes the distribution of Math Math well, both for each locus and for the average over all loci.
+LD among loci:
+
+The case study of the Pacific herring, based on a few microsatellite markers, did not detect significant variation in Math Math among loci in the genome ( Figure 6 ). The assumption of normality for the MLE of Math Math is valid when more than a few sampling points are surveyed. This assumption might be violated when the data are collected from only a few sampling points or Math Math is close to 0 or 1.0. We also assumed the independence of loci Math Math However, it is necessary to take into account the linkage disequilibrium (LD) among loci, when the molecular markers are tightly linked.
+
+Recent progress in whole-genome analysis of human populations provides a new perspective on the inference of F ST and its distribution in genomes ( G arte 2003 ; H inds et al . 2005 ; W eir et al . 2005 ; W alsh et al . 2006 ). In their Figure 1 , W eir et al . (2005) showed that values for the single-locus marker Math Math over the whole human genome for three (Perlegen) or four (HapMap) populations had a distribution very much like the χ 2 -distributions with 2 or 3 d.f. and suggested that values of Math Math are genome-region specific. However, Math Math follows a χ 2 -distribution under constant Math Math as reported by W eir and H ill (2002) and as demonstrated in our analysis of the Pacific herring. Therefore, the distributions of the values for the single-locus marker Math Math in W eir et al . (2005) do not necessarily support the genome-region-specific F ST hypothesis in the human genome.
+
+Weir et al .'s 5-Mb window average values for Math Math were close to normal because of the property of the sample mean. The standard deviations (SDs) of the 5-Mb window average values of Math Math decreased substantially from single-locus estimates of 0.12 to 0.02 for HapMap and from 0.11 to 0.02 for Perlegen ( Tables 2 and 3 in W eir et al . 2005 ). The average number of markers in a 5-Mb window was 1114 for HapMap and 1834 for Perlegen (calculated from Table 1 in W eir et al . 2005 ). Hence, these SDs are expected to be Math Math and Math Math if all SNPs are independent and distributed identically in the genome. The effective sample size ( K ish 1965 , p. 259) could be much smaller than the real number of SNPs in the 5-Mb windows if the Math Math 's are correlated, because of LD between the SNPs. A coalescent simulation of human population history implies that linkage equilibrium holds for SNPs separated by >10–100 kb ( Figure 1 in K ruglyak 1999 ). Therefore, we can estimate the effective number of human SNPs per 100-kb window to be ∼1–20. If we assumed it to be ∼10, the effective number of SNPs per 5-Mb window becomes 500. Therefore, the SDs of the 5-Mb window Math Math are expected to be Math Math for HapMap and Math Math for Perlegen. The actual value (0.02) is much larger than these, even when the LD among the SNPs is taken into account. This discrepancy can be explained by the large-scale heterogeneity of F ST between the 5-Mb windows. New data show that LD is highly structured into discrete blocks of sequences separated by hot spots of recombination ( G oldstein 2001 ; M c V ean et al . 2004 ) and differs among species ( H ernandez et al . 2007 ). The simultaneous estimation of F ST 's of SNPs and the LD between the SNPs should give us an accurate picture of the distribution of F ST in genomes.
+Acknowledgments
+
+We are grateful to Bruce Weir for valuable comments on the manuscript and encouragement with this work. We also thank the anonymous reviewers for their constructive comments, which improved the earlier version of the manuscript. This work was supported by grants from the Japan Society for the Promotion of Science.
+Footnotes
+
+    Communicating editor: R. W. D oerge
+
+    Received June 11, 2007.
+    Accepted July 17, 2007.
+
+    Copyright © 2007 by the Genetics Society of America
+
+References
+
+    ↵
+    B alding , D. J., 2003 Likelihood-based inference for genetic correlation coefficients. Theor. Popul. Biol. 63 : 221 –230.
+    OpenUrl CrossRef PubMed Web of Science Google Scholar
+    ↵
+    B alding , D. J., and R. A. N ichols , 1997 Significant genetic correlations among Caucasians at forensic DNA loci. Heredity 78 : 583 –589.
+    OpenUrl CrossRef PubMed Web of Science Google Scholar
+    ↵
+    B alloux , F., and N. L ugon -M oulin , 2002 The estimation of population differentiation with microsatellite markers. Mol. Ecol. 11 : 155 –165.
+    OpenUrl CrossRef PubMed Google Scholar
+    ↵
+    C ockerham , C. C., 1969 Variance of gene frequencies. Evolution 23 : 72 –83.
+    OpenUrl CrossRef Web of Science Google Scholar
+    ↵
+    C ockerham , C. C., 1973 Analysis of gene frequencies. Genetics 74 : 679 –700.
+    OpenUrl Abstract / FREE Full Text Google Scholar
+    ↵
+    C ockerham , C. C., and B. S. W eir , 1986 Estimation of inbreeding parameters in stratified populations. Ann. Hum. Genet. 50 : 271 –281.
+    OpenUrl PubMed Web of Science Google Scholar
+    ↵
+    C orander , J., P. W aldmann and M. J. S illanpää , 2003 Bayesian analysis of genetic differentiation between populations. Genetics 163 : 367 –374.
+    OpenUrl Abstract / FREE Full Text Google Scholar
+    ↵
+    D izon , A. E., B. L. T aylor and G. M. O'C orry -C rowe , 1995 Why statistical power is necessary to link analyses of molecular variation to decisions about population structure, pp. 288–294 in Evolution and the Aquatic Ecosystem , edited by J. L. N ielsen and D. A. P owers . American Fisheries Society Symposium 17, Bethesda, MD.
+    Google Scholar
+    ↵
+    E wens , W. J., 2004 Mathematical Population Genetics, I. Theoretical Introduction , Ed. 2. Springer, Berlin/Heidelberg, Germany/New York.
+    Google Scholar
+    ↵
+    E xcoffier , L., 2003 Analysis of population subdivision, pp. 713–750 in Handbook of Statistical Genetics , Ed. 2, edited by D. J. B alding , M. B ishop and C. C annings . Wiley, Chichester, UK.
+    Google Scholar
+    ↵
+    E xcoffier , L., G. L aval and S. S chneider , 2005 Arlequin ver. 3.0: an integrated software package for population genetics data analysis. Evol. Bioinform. Online 1 : 47 –50.
+    OpenUrl PubMed Google Scholar
+    ↵
+    G arte , S., 2003 Locus-specific genetic diversity between human populations: an analysis of the literature. Am. J. Hum. Biol. 15 : 814 –823.
+    OpenUrl CrossRef PubMed Web of Science Google Scholar
+    ↵
+    G oldstein , D. B., 2001 Islands of linkage disequilibrium. Nat. Genet. 29 : 109 –111.
+    OpenUrl CrossRef PubMed Web of Science Google Scholar
+    ↵
+    G oudet , J., 1995 FSTAT (version 1.2): a computer program to calculate F-statistics. J. Hered. 86 : 485 –486.
+    OpenUrl FREE Full Text Google Scholar
+    ↵
+    G oudet , J., M. R aymond , T. de M eeüs and F. R ousset , 1996 Testing differentiation in diploid populations. Genetics 144 : 1933 –1940.
+    OpenUrl Abstract / FREE Full Text Google Scholar
+    ↵
+    H anski , I., and O. E. G aggiotti , 2004 Ecology, Genetics, and Evolution of Metapopulations . Academic Press, San Diego.
+    Google Scholar
+    ↵
+    H ernandez , R. D., M. J. H ubisz , D. A. W heeler , D. G. S mith , B. F erguson et al ., 2007 Demographic histories and patterns of linkage disequilibrium in Chinese and Indian rhesus macaques. Science 316 : 240 –243.
+    OpenUrl Abstract / FREE Full Text Google Scholar
+    ↵
+    H inds , D. A., L. L. S tuve , G. B. N elsen , E. H alperin , E. E skin et al ., 2005 Whole-genome patterns of common DNA variation in three human populations. Science 307 : 1072 –1079.
+    OpenUrl Abstract / FREE Full Text Google Scholar
+    ↵
+    H olsinger , K. E., 1999 Analysis of genetic diversity in geographically structured populations: a Bayesian perspective. Hereditas 130 : 245 –255.
+    OpenUrl CrossRef Web of Science Google Scholar
+    ↵
+    H olsinger , K. E., P. O. L ewis and D. K. D ey , 2002 A Bayesian approach to inferring population structure from dominant markers. Mol. Ecol. 11 : 1157 –1164.
+    OpenUrl CrossRef PubMed Web of Science Google Scholar
+    ↵
+    H uelsenbeck , J. P., and P. A ndolfatto , 2007 Inference of population structure under a Dirichlet process model. Genetics 175 : 1787 –1802.
+    OpenUrl Abstract / FREE Full Text Google Scholar
+    ↵
+    K ish , L., 1965 Survey Sampling . Wiley, New York.
+    Google Scholar
+    ↵
+    K itada , S., and H. K ishino , 2004 Simultaneous detection of linkage disequilibrium and genetic differentiation of subdivided populations. Genetics 167 : 2003 –2013.
+    OpenUrl Abstract / FREE Full Text Google Scholar
+    ↵
+    K itada , S., T. H ayashi and H. K ishino , 2000 Empirical Bayes procedure for estimating genetic distance between populations and effective population size. Genetics 156 : 2063 –2079.
+    OpenUrl Abstract / FREE Full Text Google Scholar
+    ↵
+    K itakado , T., S. K itada , H. K ishino and H. J. S kaug , 2006 An integrated-likelihood method for estimating genetic differentiation between populations. Genetics 173 : 2073 –2082.
+    OpenUrl Abstract / FREE Full Text Google Scholar
+    ↵
+    K ruglyak , L., 1999 Prospects for whole-genome linkage disequilibrium mapping of common disease genes. Nat. Genet. 22 : 139 –144.
+    OpenUrl CrossRef PubMed Web of Science Google Scholar
+    ↵
+    L ange , K., 1995 Application of the Dirichlet distribution to forensic match probabilities. Genetica 96 : 107 –117.
+    OpenUrl CrossRef PubMed Google Scholar
+    ↵
+    L ockwood , J. R., K. R oeder and B. D evlin , 2001 A Bayesian hierarchical model for allele frequencies. Genet. Epidemiol. 20 : 17 –33.
+    OpenUrl CrossRef PubMed Web of Science Google Scholar
+    ↵
+    M aritz , J. S., and T. L. L ewin , 1989 Empirical Bayes Methods , Ed. 2. Chapman & Hall, London.
+    Google Scholar
+    ↵
+    M c V ean , G. A. T., S. R. M yers , S. H unt , P. D eloukas , D. R. B entley et al ., 2004 The fine-scale structure of recombination rate variation in the human genome. Science 304 : 581 –584.
+    OpenUrl Abstract / FREE Full Text Google Scholar
+    ↵
+    N ei , M., 1973 Analysis of gene diversity in subdivided populations. Proc. Natl. Acad. Sci. USA 70 : 3321 –3323.
+    OpenUrl Abstract / FREE Full Text Google Scholar
+    ↵
+    N ei , M., and R. K. C hesser , 1983 Estimation of fixation indices and gene diversities. Ann. Hum. Genet. 47 : 253 –259.
+    OpenUrl CrossRef PubMed Web of Science Google Scholar
+    ↵
+    P aetkau , D., W. C alvert , I. S tirling and C. S trobeck , 1995 Microsatellite analysis of population structure in Canadian polar bears. Mol. Ecol. 4 : 347 –354.
+    OpenUrl CrossRef PubMed Web of Science Google Scholar
+    ↵
+    P alsbøll , P. J., M. B érubé and F. W. A llendorf , 2007 Identification of management units using population genetic data. Trends Ecol. Evol. 22 : 11 –16.
+    OpenUrl CrossRef PubMed Google Scholar
+    ↵
+    P annell , J. R., and B. C harlesworth , 2000 Effects of metapopulation processes on measures of genetic diversity. Philos. Trans. R. Soc. Lond. B 355 : 1851 –1864.
+    OpenUrl Abstract / FREE Full Text Google Scholar
+    ↵
+    P ritchard , J. K., M. S tephens and P. D onnelly , 2000 Inference of population structure using multilocus genotype data. Genetics 156 : 945 –959.
+    OpenUrl Google Scholar
+    ↵
+    R annala , B., and J. A. H artigan , 1996 Estimating gene flow in island populations. Genet. Res. 67 : 147 –158.
+    OpenUrl PubMed Web of Science Google Scholar
+    ↵
+    R aufaste , N., and F. B onhomme , 2000 Properties of bias and variance of two multiallelic estimators of F ST . Theor. Popul. Biol. 57 : 285 –296.
+    OpenUrl CrossRef PubMed Web of Science Google Scholar
+    ↵
+    R aymond , M., and F. R ousset , 1995 GENEPOP (version 3.4): population genetics software for exact tests and ecumenicism. J. Hered. 86 : 248 –249.
+    OpenUrl FREE Full Text Google Scholar
+    ↵
+    R eynolds , J., B. S. W eirs and C. C. C ockerham , 1983 Estimation of the coancestry coefficient: basis for a short-term genetic distance. Genetics 105 : 767 –779.
+    OpenUrl Abstract / FREE Full Text Google Scholar
+    ↵
+    R obertson , A., and W. G. H ill , 1984 Deviation from Hardy–Weinberg proportions: sample variances and use in estimation of inbreeding coefficients. Genetics 107 : 703 –718.
+    OpenUrl Abstract / FREE Full Text Google Scholar
+    ↵
+    R osenberg , N. A., L. M. L i , R. W ard and J. K. P ritchard , 2003 Informativeness of genetic markers for inference of ancestry. Am. J. Hum. Genet. 73 : 1402 –1422.
+    OpenUrl CrossRef PubMed Web of Science Google Scholar
+    ↵
+    R ousset , F., 2003 Inferences from spatial population genetics, pp. 681–712 in Handbook of Statistical Genetics , Ed. 2, edited by D. J. B alding , M. B ishop and C. C annings . John Wiley & Sons, Chichester, UK.
+    Google Scholar
+    ↵
+    R yman , N., and P. E. J orde , 2001 Statistical power when testing for genetic differentiation. Mol. Ecol. 10 : 2361 –2373.
+    OpenUrl CrossRef PubMed Web of Science Google Scholar
+    ↵
+    R yman , N., S. P alm , C. A ndré , G. R. C arvalho , T. G. D ahlgren et al ., 2006 Power for detecting genetic divergence: differences between statistical methods and marker loci. Mol. Ecol. 15 : 2031 –2045.
+    OpenUrl CrossRef PubMed Google Scholar
+    ↵
+    S eber , G. A. F., 1982 The Estimation of Animal Abundance and Related Parameters , Ed. 2. Griffin, London.
+    Google Scholar
+    ↵
+    S tein , C., 1956 Inadmissibility of the usual estimator for the mean of a multivariate distribution. Proceedings of the Third Berkeley Symposium on Mathematical Statistics and Probability, Berkeley, California, Vol. 1, pp. 197–206. University of California Press, Berkeley, CA.
+    Google Scholar
+    ↵
+    T orgerson , W. S., 1952 Multidimensional scaling: 1. theory and methods. Psychometrika 17 : 401 –419.
+    OpenUrl CrossRef Web of Science Google Scholar
+    ↵
+    W alsh , R. D., P. S abeti , H. B. H utcheson , B. F ry , S. F. S chaffner et al ., 2006 Searching for signals of evolutionary selection in 168 genes related to immune function. Hum. Genet. 119 : 92 –102.
+    OpenUrl CrossRef PubMed Web of Science Google Scholar
+    ↵
+    W aples , R. S., and O. G aggiotti , 2006 What is a population? An empirical evaluation of some genetic methods for identifying the number of gene pools and their degree of connectivity. Mol. Ecol. 15 : 1419 –1439.
+    OpenUrl CrossRef PubMed Web of Science Google Scholar
+    ↵
+    W eicker , J. J., R. T. B rumfield and K. W inker , 2001 Estimating the unbiased estimator θ for population genetic survey data. Evolution 55 : 2601 –2605.
+    OpenUrl PubMed Google Scholar
+    ↵
+    W eir , B. S., 1996 Genetic Data Analysis II . Sinauer Associates, Sunderland, MA.
+    Google Scholar
+    ↵
+    W eir , B. S., and C. C. C ockerham , 1984 Estimating F-statistics for the analysis of population structure. Evolution 38 : 1358 –1370.
+    OpenUrl CrossRef Web of Science Google Scholar
+    ↵
+    W eir , B. S., and W. G. H ill , 2002 Estimating F-statistics. Annu. Rev. Genet. 36 : 721 –750.
+    OpenUrl CrossRef PubMed Web of Science Google Scholar
+    ↵
+    W eir , B. S., L. R. C ardon , A. D. A nderson , D. M. N ielsen and W. G. H ill , 2005 Measures of human population structure show heterogeneity among genomic regions. Genome Res. 15 : 1468 –1476.
+    OpenUrl Abstract / FREE Full Text Google Scholar
+    ↵
+    W right , S., 1951 The general structure of populations. Ann. Eugen. 15 : 323 –354.
+    OpenUrl PubMed Web of Science Google Scholar
+    ↵
+    W right , S., 1969 Evolution and the Genetics of Populations: The Theory of Gene Frequencies , Vol. 2. University of Chicago Press, Chicago.
+    Google Scholar
+    ↵
+    Y oung , F. W., and R. M. H amer , 1987 Multidimensional Scaling: History, Theory and Applications . Erlbaum, New York.
+    Google Scholar
+
+View Abstract
+HIGHLIGHT
+NOTE
+COMMENT
+DISCUSS
+Previous Article Next Article
+Back to top
+PUBLICATION INFORMATION
+
+Volume 177 Issue 2, October 2007
+Genetics: 177 (2)
+Search for this keyword
+ARTICLE CLASSIFICATION
+INVESTIGATIONS
+Population and evolutionary genetics
+View this article with LENS
+Email
+Print
+Alerts
+View PDF
+Share
+Empirical Bayes Inference of Pairwise F ST and Its Distribution in the Genome
+Shuichi Kitada , Toshihide Kitakado and Hirohisa Kishino
+Genetics October 1, 2007 vol. 177 no. 2 861-873; https://doi.org/10.1534/genetics.107.077263
+Shuichi Kitada
+
+    Find this author on Google Scholar
+    Find this author on PubMed
+    Search for this author on this site
+
+Toshihide Kitakado
+
+    Find this author on Google Scholar
+    Find this author on PubMed
+    Search for this author on this site
+
+Hirohisa Kishino
+
+    Find this author on Google Scholar
+    Find this author on PubMed
+    Search for this author on this site
+
+Share This Article: Copy
+del.icio.us logo Digg logo Reddit logo Twitter logo CiteULike logo Facebook logo Google logo Mendeley logo
+Citation
+Request Permissions
+Related Articles
+
+    Scopus
+    PubMed
+    Google Scholar
+
+Cited By
+
+    FST and kinship for arbitrary population structures I: Generalized definitions
+        Abstract
+        Fulltext
+        PDF
+    A New Method to Uncover Signatures of Divergent and Stabilizing Selection in Quantitative Traits
+        Abstract
+        Fulltext
+        PDF
+
+    Scopus (24)
+    Google Scholar
+
+More in this TOC Section
+
+    Comparative Genomics and Transcriptomics To Analyze Fruiting Body Development in Filamentous Ascomycetes
+    The Fate of Deleterious Variants in a Barley Genomic Prediction Population
+    Comprehensive Scanning Mutagenesis of Human Retrotransposon LINE-1 Identifies Motifs Essential for Function
+
+Show more Investigations
+
+    Top
+    Article
+        Abstract
+        MODELS AND METHODS
+        RESULTS
+        DISCUSSION
+        Acknowledgments
+        Footnotes
+        References
+    Figures & Data
+    Supplemental
+    Info & Metrics
+
+GSA
+
+The Genetics Society of America (GSA), founded in 1931, is the professional membership organization for scientific researchers and educators in the field of genetics. Our members work to advance knowledge in the basic mechanisms of inheritance, from the molecular to the population level.
+
+Online ISSN: 1943-2631
+
+    For Authors
+    For Reviewers
+    For Subscribers
+
+    Submit a Manuscript
+    Editorial Board
+    Press Releases
+
+SPPA Logo
+
+GET CONNECTED
+
+RSS   Subscribe with RSS.
+
+email   Subscribe via email. Sign up to receive alert notifications of new articles.
+
+    Facebook
+    Twitter
+    YouTube
+    LinkedIn
+    Google Plus
+
+Copyright © 2020 by the Genetics Society of America
+
+    About GENETICS
+    Terms of use
+    Advertising
+    Permissions
+    Contact us
+    International access
+
+  close
+
+Thank you for sharing this Genetics article.
+
+NOTE: We request your email address only to inform the recipient that it was you who recommended this article, and that it is not junk mail. We do not retain these email addresses.
+Your Email *
+Your Name *
+Send To *
+Enter multiple addresses on separate lines or separate them with commas.
+You are going to email the following Empirical Bayes Inference of Pairwise FST and Its Distribution in the Genome
+Message Subject (Your Name) has forwarded a page to you from Genetics
+Message Body (Your Name) thought you would be interested in this article in Genetics.
+Your Personal Message
+  close
+User Name *
+Password *
+Enter your email below to set up alert notifications for new article, or to manage your existing alerts.
+Email *
+SIGN UP OR SIGN IN WITH YOUR EMAIL
+  close
+Empirical Bayes Inference of Pairwise F ST and Its Distribution in the Genome
+Shuichi Kitada , Toshihide Kitakado and Hirohisa Kishino
+Genetics October 1, 2007 vol. 177 no. 2 861-873; https://doi.org/10.1534/genetics.107.077263
+Shuichi Kitada
+
+    Find this author on Google Scholar
+    Find this author on PubMed
+    Search for this author on this site
+
+Toshihide Kitakado
+
+    Find this author on Google Scholar
+    Find this author on PubMed
+    Search for this author on this site
+
+Hirohisa Kishino
+
+    Find this author on Google Scholar
+    Find this author on PubMed
+    Search for this author on this site
+
+Citation Manager Formats
+
+    BibTeX
+    Bookends
+    EasyBib
+    EndNote (tagged)
+    EndNote 8 (xml)
+    Medlars
+    Mendeley
+    Papers
+    RefWorks Tagged
+    Ref Manager
+    RIS
+    Zotero
+
+Select REMARQ PDF to open the article including all annotations and conversations.
+REMARQ PDF
+PDF

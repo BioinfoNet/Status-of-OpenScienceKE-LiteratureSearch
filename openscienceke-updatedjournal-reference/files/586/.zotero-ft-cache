@@ -1,0 +1,345 @@
+ Skip to Main Content 
+Access by ICIPE LIBRARY 
+Wiley Online Library 
+Wiley Online Library 
+Access by ICIPE LIBRARY 
+This Journal 
+ 
+    This Journal 
+    Anywhere 
+ 
+    Search term 
+    Advanced Search Citation Search 
+    Search 
+    Search term 
+    Advanced Search Citation Search 
+    Search 
+ 
+Login / Register 
+ 
+The full text of this article hosted at iucr.org is unavailable due to technical difficulties. 
+Evolution 
+Volume 60, Issue 12 Evolution banner 
+Free Access 
+TEST FOR SIMULTANEOUS DIVERGENCE USING APPROXIMATE BAYESIAN COMPUTATION 
+Michael J. Hickerson 
+ 
+Museum of Vertebrate Zoology, University of California, 3101 Valley Life Sciences Building, Berkeley, California 94720‐3160 
+Section of Evolution and Ecology, One Shields Avenue, University of California, Davis, California 95616; E‐mail: mhickerson@ucdavis.edu. Search for more papers by this author 
+Eli A. Stahl 
+ 
+Department of Biology, University of Massachusetts–Dartmouth, 285 Old Westport Road, North Dartmouth, Massachusetts 02747 
+E‐mail: estahl@umassd.edu Search for more papers by this author 
+H. A. Lessios 
+ 
+Smithsonian Tropical Research Institute, Box 0843‐03092, Balboa, Republic of Panama 
+E‐mail: Lessiosh@stri.org Search for more papers by this author 
+Michael J. Hickerson 
+ 
+Museum of Vertebrate Zoology, University of California, 3101 Valley Life Sciences Building, Berkeley, California 94720‐3160 
+Section of Evolution and Ecology, One Shields Avenue, University of California, Davis, California 95616; E‐mail: mhickerson@ucdavis.edu. Search for more papers by this author 
+Eli A. Stahl 
+ 
+Department of Biology, University of Massachusetts–Dartmouth, 285 Old Westport Road, North Dartmouth, Massachusetts 02747 
+E‐mail: estahl@umassd.edu Search for more papers by this author 
+H. A. Lessios 
+ 
+Smithsonian Tropical Research Institute, Box 0843‐03092, Balboa, Republic of Panama 
+E‐mail: Lessiosh@stri.org Search for more papers by this author 
+First published:  08 May 2007 
+https://doi.org/10.1111/j.0014-3820.2006.tb01880.x 
+Cited by: 78 
+About 
+ 
+    Figures 
+    References 
+    Related 
+    Information 
+ 
+ePDF PDF 
+PDF PDF 
+ 
+ePDF PDF 
+PDF PDF 
+Tools 
+ 
+    Request permission 
+    Export citation 
+    Add to favorites 
+    Track citation 
+ 
+Share 
+ 
+Give access 
+Share full text access 
+ 
+Share full text access 
+Please review our Terms and Conditions of Use and check box below to share full-text version of article. 
+I have read and accept the Wiley Online Library Terms and Conditions of Use. 
+Shareable Link 
+ 
+Use the link below to share a full-text version of this article with your friends and colleagues. Learn more. 
+Copy URL 
+ 
+Share a link 
+ 
+    Email to a friend 
+    Facebook 
+    Twitter 
+    Linkedin 
+    Google+ 
+    Reddit 
+    CiteULike 
+ 
+Abstract 
+ 
+Abstract Comparative phylogeographic studies often reveal disparate levels of sequence divergence between lineages spanning a common geographic barrier, leading to the conclusion that isolation was nonsynchronous. However, only rarely do researchers account for the expected variance associated with ancestral coalescence and among‐taxon variation in demographic history. We introduce a flexible approximate Bayesian computational (ABC) framework that can test for simultaneous divergence (TSD) using a hierarchical model that incorporates idiosyncratic differences in demographic history across taxon pairs. The method is tested across a range of conditions and is shown to be accurate even with single‐locus mitochondrial DNA (mtDNA) data. We apply this method to a landmark dataset of putative simultaneous vicariance, eight geminate echinoid taxon pairs thought to have been split by the Isthmus of Panama 3.1 million years ago. The ABC posterior estimates are not consistent with a history of simultaneous vicariance given these data. Subsequent ABC estimates under a constrained model that assumes two divergence times across the eight taxon pairs suggests simultaneous divergence 3.1 million years ago in seven of the taxon pairs and a more recent divergence in the remaining taxon pair. These ABC estimates on the simultaneous divergence of the seven taxon pairs correspond to a DNA substitution rate of approximately 1.59% per lineage per million years at the mtDNA cytochrome oxidase I gene. This ABC framework can easily be modified to analyze single taxon‐pair datasets and/or be expanded to include multiple loci, migration, recombination, and other idiosyncratic demographic histories. The flexible aspect of ABC and its built‐in evaluation of estimator bias and statistical power has the potential to greatly enhance statistical rigor in phylogeographic studies. 
+Citing Literature 
+Number of times cited: 78 
+ 
+    Sally Potter, Alexander T. Xue, Jason G. Bragg, Dan F. Rosauer, Emily J. Roycroft and Craig Moritz , Pleistocene climatic changes drive diversification across a tropical savanna , Molecular Ecology , 27 , 2 , (520-532) , (2017) . 
+    Wiley Online Library 
+    Ashley B. Morris and Joey Shaw , Markers in time and space: A review of the last decade of plant phylogeographic approaches , Molecular Ecology , 27 , 10 , (2317-2333) , (2018) . 
+    Wiley Online Library 
+    Madlen Stange, Marcelo R Sánchez-Villagra, Walter Salzburger and Michael Matschiner , Bayesian Divergence-Time Estimation with Genome-Wide Single-Nucleotide Polymorphism Data of Sea Catfishes (Ariidae) Supports Miocene Closure of the Panamanian Isthmus , Systematic Biology , (2018) . 
+    Crossref 
+    Lisa N Barrow, Alan R Lemmon, Emily Moriarty Lemmon and Adam Leache , Targeted Sampling and Target Capture: Assessing Phylogeographic Concordance with Genome-wide Data , Systematic Biology , 10.1093/sysbio/syy021 , 67 , 6 , (979-996) , (2018) . 
+    Crossref 
+    Chih‐Ming Hung, Sergei V. Drovetski and Robert M. Zink , The roles of ecology, behaviour and effective population size in the evolution of a community , Molecular Ecology , 26 , 14 , (3775-3784) , (2017) . 
+    Wiley Online Library 
+    Paul M. Oliver and Andrew F. Hugall , Phylogenetic evidence for mid-Cenozoic turnover of a diverse continental biota , Nature Ecology & Evolution , 1 , 12 , (1896) , (2017) . 
+    Crossref 
+    Rayna C. Bell, Juan L. Parra, Gabriel Badjedjea, Michael F. Barej, David C. Blackburn, Marius Burger, Alan Channing, Jonas Maximilian Dehling, Eli Greenbaum, Václav Gvoždík, Jos Kielgast, Chifundera Kusamba, Stefan Lötters, Patrick J. McLaughlin, Zoltán T. Nagy, Mark‐Oliver Rödel, Daniel M. Portik, Bryan L. Stuart, Jeremy VanDerWal, Ange Ghislain Zassi‐Boulou and Kelly R. Zamudio , Idiosyncratic responses to climate‐driven forest fragmentation and marine incursions in reed frogs from Central Africa and the Gulf of Guinea Islands , Molecular Ecology , 26 , 19 , (5223-5244) , (2017) . 
+    Wiley Online Library 
+    Sara E. Lipshutz, Isaac A. Overcast, Michael J. Hickerson, Robb T. Brumfield and Elizabeth P. Derryberry , Behavioural response to song and genetic divergence in two subspecies of white‐crowned sparrows (Zonotrichia leucophrys) , Molecular Ecology , 26 , 11 , (3011-3027) , (2017) . 
+    Wiley Online Library 
+    Jordan D. Satler and Bryan C. Carstens , Do ecological communities disperse across biogeographic barriers as a unit? , Molecular Ecology , 26 , 13 , (3533-3545) , (2017) . 
+    Wiley Online Library 
+    Paul M. Oliver, Rebecca J. Laver, Felipe De Mello Martins, Renae C. Pratt, Sumitha Hunjan, Craig C. Moritz and Jeremy Austin , A novel hotspot of vertebrate endemism and an evolutionary refugium in tropical Australia , Diversity and Distributions , 23 , 1 , (53-66) , (2016) . 
+    Wiley Online Library 
+    Simon E. Coppard and H. A. Lessios , Phylogeography of the sand dollar genus Encope: implications regarding the Central American Isthmus and rates of molecular evolution , Scientific Reports , 7 , 1 , (2017) . 
+    Crossref 
+    Marcelo Gehara, Adrian A. Garda, Fernanda P. Werneck, Eliana F. Oliveira, Emanuel M. Fonseca, Felipe Camurugi, Felipe de M. Magalhães, Flávia M. Lanna, Jack W. Sites, Ricardo Marques, Ricardo Silveira‐Filho, Vinícius A. São Pedro, Guarino R. Colli, Gabriel C. Costa and Frank T. Burbrink , Estimating synchronous demographic changes across populations using hABC and its application for a herpetological community from northeastern Brazil , Molecular Ecology , 26 , 18 , (4756-4771) , (2017) . 
+    Wiley Online Library 
+    Isaac Overcast, Justin C. Bagley and Michael J. Hickerson , Strategies for improving approximate Bayesian computation tests for synchronous diversification , BMC Evolutionary Biology , 17 , 1 , (2017) . 
+    Crossref 
+    Jessica A. Oswald, Isaac Overcast, William M. Mauck, Michael J. Andersen and Brian Tilston Smith , Isolation with asymmetric gene flow during the nonsynchronous divergence of dry forest birds , Molecular Ecology , 26 , 5 , (1386-1400) , (2017) . 
+    Wiley Online Library 
+    Jonathan B. Puritz, Carson C. Keever, Jason A. Addison, Sergio S. Barbosa, Maria Byrne, Michael W. Hart, Richard K. Grosberg and Robert J. Toonen , Life‐history predicts past and present population connectivity in two sympatric sea stars , Ecology and Evolution , 7 , 11 , (3916-3930) , (2017) . 
+    Wiley Online Library 
+    Carmelo Fruciano, Paolo Franchini, Francesca Raffini, Shaohua Fan and Axel Meyer , Are sympatrically speciating Midas cichlid fish special? Patterns of morphological and genetic variation in the closely related species Archocentrus centrarchus , Ecology and Evolution , 6 , 12 , (4102-4114) , (2016) . 
+    Wiley Online Library 
+    M.J. Hickerson , Biogeography, Evolutionary Theories in , Encyclopedia of Evolutionary Biology , 10.1016/B978-0-12-800049-6.00105-0 , (149-154) , (2016) . 
+    Crossref 
+    Bryan C. Carstens, Michael Gruenstaeudl and Noah M. Reid , Community trees: Identifying codiversification in the Páramo dipteran community , Evolution , 70 , 5 , (1080-1093) , (2016) . 
+    Wiley Online Library 
+    Jordan D. Satler and Bryan C. Carstens , Phylogeographic concordance factors quantify phylogeographic congruence among co‐distributed species in the Sarracenia alata pitcher plant system , Evolution , 70 , 5 , (1105-1119) , (2016) . 
+    Wiley Online Library 
+    Andrea Paz, Roberto Ibáñez, Karen R. Lips and Andrew J. Crawford , Testing the role of ecology and life history in structuring genetic variation across a landscape: a trait‐based phylogeographic approach , Molecular Ecology , 24 , 14 , (3723-3737) , (2015) . 
+    Wiley Online Library 
+    Anna Papadopoulou and L. Lacey Knowles , Species‐specific responses to island connectivity cycles: refined models for testing phylogeographic concordance across a Mediterranean Pleistocene Aggregate Island Complex , Molecular Ecology , 24 , 16 , (4252-4268) , (2015) . 
+    Wiley Online Library 
+    Nic Dussex, James Sainsbury, Ron Moorhouse, Ian G. Jamieson and Bruce C. Robertson , Evidence for Bergmann’s Rule and Not Allopatric Subspeciation in the Threatened Kaka ( Nestor meridionalis ) , Journal of Heredity , 106 , 6 , (679) , (2015) . 
+    Crossref 
+    Philip O. Yund, Catherine Collins and Sheri L. Johnson , Evidence of a Native Northwest Atlantic COI Haplotype Clade in the Cryptogenic Colonial Ascidian Botryllus schlosseri , The Biological Bulletin , 228 , 3 , (201) , (2015) . 
+    Crossref 
+    DJ Steel, BG Stewart, SA Trewick and GP Wallis , Fiord populations ofAstrobrachion constrictum(Ophiuroidea: Asteroschematidae) show little genetic differentiation for mitochondrial DNA , New Zealand Journal of Zoology , 42 , 3 , (165) , (2015) . 
+    Crossref 
+    Michael W. Hart, Jennifer M. Sunday, Iva Popovic, Kevin J. Learning and Christine M. Konrad , INCIPIENT SPECIATION OF SEA STAR POPULATIONS BY ADAPTIVE GAMETE RECOGNITION COEVOLUTION , Evolution , 68 , 5 , (1294-1305) , (2014) . 
+    Wiley Online Library 
+    Justin C. Bagley and Jerald B. Johnson , Phylogeography and biogeography of the lower Central American Neotropics: diversification between two continents and between two seas , Biological Reviews , 89 , 4 , (767-790) , (2014) . 
+    Wiley Online Library 
+    Iva Popovic, Peter B. Marko, John P. Wares and Michael W. Hart , Selection and demographic history shape the molecular evolution of the gamete compatibility protein bindin in isaster sea stars , Ecology and Evolution , 4 , 9 , (1567-1588) , (2014) . 
+    Wiley Online Library 
+    Jamie R. Oaks, Charles W. Linkem and Jeet Sukumaran , Implications of uniformly distributed, empirically informed priors for phylogeographical model selection: A reply to Hickerson et al. , Evolution , 68 , 12 , (3607-3617) , (2014) . 
+    Wiley Online Library 
+    Michael J. Hickerson, Graham N. Stone, Konrad Lohse, Terrence C. Demos, Xiaoou Xie, Cedric Landerer and Naoki Takebayashi , RECOMMENDATIONS FOR USING MSBAYES TO INCORPORATE UNCERTAINTY IN SELECTING AN ABC MODEL PRIOR: A RESPONSE TO OAKS ET AL. , Evolution , 68 , 1 , (284-294) , (2013) . 
+    Wiley Online Library 
+    John D. Robinson, Lynsey Bunnefeld, Jack Hearn, Graham N. Stone and Michael J. Hickerson , ABC inference of multi‐population divergence with admixture from unphased population genomic data , Molecular Ecology , 23 , 18 , (4458-4471) , (2014) . 
+    Wiley Online Library 
+    Timothy J. Page and Jane M. Hughes , Contrasting insights provided by single and multispecies data in a regional comparative phylogeographic study , Biological Journal of the Linnean Society , 111 , 3 , (554-569) , (2014) . 
+    Wiley Online Library 
+    Roberta Damasceno, Maria L. Strangas, Ana C. Carnaval, Miguel T. Rodrigues and Craig Moritz , Revisiting the vanishing refuge model of diversification , Frontiers in Genetics , 5 , (2014) . 
+    Crossref 
+    Myriam Heuertz, Jérôme Duminil, Gilles Dauby, Vincent Savolainen, Olivier J. Hardy and Paul V. A. Fine , Comparative Phylogeography in Rainforest Trees from Lower Guinea, Africa , PLoS ONE , 9 , 1 , (e84307) , (2014) . 
+    Crossref 
+    Yvonne L. Chan, David Schanzenbach and Michael J. Hickerson , Detecting Concerted Demographic Response across Community Assemblages Using Hierarchical Approximate Bayesian Computation , Molecular Biology and Evolution , 31 , 9 , (2501) , (2014) . 
+    Crossref 
+    Kathryn R. Elmer, Topi K. Lehtonen, Shaohua Fan and Axel Meyer , CRATER LAKE COLONIZATION BY NEOTROPICAL CICHLID FISHES , Evolution , 67 , 1 , (281-288) , (2012) . 
+    Wiley Online Library 
+    Juan Francisco Ornelas, Victoria Sosa, Douglas E. Soltis, Juan M. Daza, Clementina González, Pamela S. Soltis, Carla Gutiérrez-Rodríguez, Alejandro Espinosa de los Monteros, Todd A. Castoe, Charles Bell, Eduardo Ruiz-Sanchez and Michael Hofreiter , Comparative Phylogeographic Analyses Illustrate the Complex Evolutionary History of Threatened Cloud Forests of Northern Mesoamerica , PLoS ONE , 8 , 2 , (e56283) , (2013) . 
+    Crossref 
+    G. Voelker, B. D. Marks, C. Kahindo, U. A'genonga, F. Bapeamoni, L. E. Duffie, J. W. Huntley, E. Mulotwa, S. A. Rosenbaum and J. E. Light , River barriers and cryptic biodiversity in an evolutionary museum , Ecology and Evolution , 3 , 3 , (536-545) , (2013) . 
+    Wiley Online Library 
+    H. A. Lessios, D. R. Robertson and Luiz Rocha , Speciation on a round planet: phylogeography of the goatfish genus ulloidichthys , Journal of Biogeography , 40 , 12 , (2373-2384) , (2013) . 
+    Wiley Online Library 
+    Jamie R. Oaks, Jeet Sukumaran, Jacob A. Esselstyn, Charles W. Linkem, Cameron D. Siler, Mark T. Holder and Rafe M. Brown , EVIDENCE FOR CLIMATE‐DRIVEN DIVERSIFICATION? A CAUTION FOR INTERPRETING ABC INFERENCES OF SIMULTANEOUS HISTORICAL EVENTS , Evolution , 67 , 4 , (991-1010) , (2012) . 
+    Wiley Online Library 
+    Matthew Iacchei, Tal Ben‐Horin, Kimberly A. Selkoe, Christopher E. Bird, Francisco J. García‐Rodríguez and Robert J. Toonen , Combined analyses of kinship and FST suggest potential drivers of chaotic genetic patchiness in high gene‐flow populations , Molecular Ecology , 22 , 13 , (3476-3494) , (2013) . 
+    Wiley Online Library 
+    J. T. Boehm, Lucy Woodall, Peter R. Teske, Sara A. Lourie, Carole Baldwin, John Waldman, Mike Hickerson and Luiz Rocha , Marine dispersal and barriers drive Atlantic seahorse diversification , Journal of Biogeography , 40 , 10 , (1839-1849) , (2013) . 
+    Wiley Online Library 
+    Andrew G. Hope, Naoki Takebayashi, Kurt E. Galbreath, Sandra L. Talbot, Joseph A. Cook and Brett Riddle , Temporal, spatial and ecological dynamics of speciation among amphi‐Beringian small mammals , Journal of Biogeography , 40 , 3 , (415-429) , (2012) . 
+    Wiley Online Library 
+    Fábio Raposo do Amaral, Patrick K. Albers, Scott V. Edwards and Cristina Y. Miyaki , Multilocus tests of Pleistocene refugia and ancient divergence in a pair of Atlantic Forest antbirds (yrmeciza) , Molecular Ecology , 22 , 15 , (3996-4013) , (2013) . 
+    Wiley Online Library 
+    Bailey D. McKay , A new timeframe for the diversification of Japan’s mammals , Journal of Biogeography , 39 , 6 , (1134-1143) , (2011) . 
+    Wiley Online Library 
+    Gaynor Dolman and Leo Joseph , A species assemblage approach to comparative phylogeography of birds in southern Australia , Ecology and Evolution , 2 , 2 , (354-369) , (2012) . 
+    Wiley Online Library 
+    Ryan C. Garrick, David M. Rowell and Paul Sunnucks , Phylogeography of Saproxylic and Forest Floor Invertebrates from Tallaganda, South-eastern Australia , Insects , 3 , 4 , (270) , (2012) . 
+    Crossref 
+    H. A. LESSIOS, S. LOCKHART, R. COLLIN, G. SOTIL, P. SANCHEZ‐JEREZ, K. S. ZIGLER, A. F. PEREZ, M. J. GARRIDO, L. B. GEYER, G. BERNARDI, V. D. VACQUIER, R. HAROUN and B. D. KESSING , Phylogeography and bindin evolution in Arbacia, a sea urchin genus with an unusual distribution , Molecular Ecology , 21 , 1 , (130-144) , (2011) . 
+    Wiley Online Library 
+    Stephen R. Keller, Kimberly J. Gilbert, Peter D. Fields and Douglas R. Taylor , Bayesian inference of a complex invasion history revealed by nuclear and chloroplast genetic diversity in the colonizing plant, ilene latifolia , Molecular Ecology , 21 , 19 , (4721-4734) , (2012) . 
+    Wiley Online Library 
+    FELIPE DE MELLO MARTINS , Historical biogeography of the Brazilian Atlantic forest and the Carnaval–Moritz model of Pleistocene refugia: what do phylogeographical studies tell us? , Biological Journal of the Linnean Society , 104 , 3 , (499-509) , (2011) . 
+    Wiley Online Library 
+    Tania A. Gutiérrez-García and Ella Vázquez-Domínguez , Comparative Phylogeography: Designing Studies while Surviving the Process , BioScience , 61 , 11 , (857) , (2011) . 
+    Crossref 
+    J.‐M. Pons, G. Olioso, C. Cruaud and J. Fuchs , Phylogeography of the Eurasian green woodpecker (Picus viridis) , Journal of Biogeography , 38 , 2 , (311-325) , (2010) . 
+    Wiley Online Library 
+    ELIZABETH M. HUMPHRIES and KEVIN WINKER , Discord reigns among nuclear, mitochondrial and phenotypic estimates of divergence in nine lineages of trans‐Beringian birds , Molecular Ecology , 20 , 3 , (573-583) , (2010) . 
+    Wiley Online Library 
+    Jane M. Hughes, Joel A. Huey, Alison J. McLean and Olivier Baggiano , Aquatic Insects in Eastern Australia: A Window on Ecology and Evolution of Dispersal in Streams , Insects , 2 , 4 , (447) , (2011) . 
+    Crossref 
+    John P. Wares , NATURAL DISTRIBUTIONS OF MITOCHONDRIAL SEQUENCE DIVERSITY SUPPORT NEW NULL HYPOTHESES , Evolution , 64 , 4 , (1136-1142) , (2009) . 
+    Wiley Online Library 
+    Juan M. Daza, Todd A. Castoe and Christopher L. Parkinson , Using regional comparative phylogeographic data from snake lineages to infer historical processes in Middle America , Ecography , 33 , 2 , (343-354) , (2010) . 
+    Wiley Online Library 
+    Ryan C. Garrick, Adalgisa Caccone and Paul Sunnucks , Inference of Population History by Coupling Exploratory and Model-Driven Phylogeographic Analyses , International Journal of Molecular Sciences , 11 , 12 , (1190) , (2010) . 
+    Crossref 
+    Ron I. Eytan and Michael E. Hellberg , NUCLEAR AND MITOCHONDRIAL SEQUENCE DATA REVEAL AND CONCEAL DIFFERENT DEMOGRAPHIC HISTORIES AND POPULATION GENETIC PROCESSES IN CARIBBEAN REEF FISHES , Evolution , 64 , 12 , (3380-3397) , (2010) . 
+    Wiley Online Library 
+    AARON B. A. SHAFER, CATHERINE I. CULLINGHAM, STEEVE D. CÔTÉ and DAVID W. COLTMAN , Of glaciers and refugia: a decade of study sheds new light on the phylogeography of northwestern North America , Molecular Ecology , 19 , 21 , (4589-4621) , (2010) . 
+    Wiley Online Library 
+    LESLIE J. RISSLER and WALTER H. SMITH , Mapping amphibian contact zones and phylogeographical break hotspots across the United States , Molecular Ecology , 19 , 24 , (5404-5416) , (2010) . 
+    Wiley Online Library 
+    ARLEY CAMARGO, BARRY SINERVO and JACK W. SITES , Lizards as model organisms for linking phylogeographic and speciation studies , Molecular Ecology , 19 , 16 , (3250-3270) , (2010) . 
+    Wiley Online Library 
+    KATRIINA L. ILVES, WEN HUANG, JOHN P. WARES and MICHAEL J. HICKERSON , Colonization and/or mitochondrial selective sweeps across the North Atlantic intertidal assemblage revealed by multi‐taxa approximate Bayesian computation , Molecular Ecology , 19 , 20 , (4505-4519) , (2010) . 
+    Wiley Online Library 
+    TAMARA M. McGOVERN, CARSON C. KEEVER, CHRISTOPHER A. SASKI, MICHAEL W. HART and PETER B. MARKO , Divergence genetics analysis reveals historical population genetic processes leading to contrasting phylogeographic patterns in co‐distributed species , Molecular Ecology , 19 , 22 , (5043-5060) , (2010) . 
+    Wiley Online Library 
+    KANCHON K. DASMAHAPATRA, GERARDO LAMAS, FRASER SIMPSON and JAMES MALLET , The anatomy of a ‘suture zone’ in Amazonian butterflies: a coalescent‐based test for vicariant geographic divergence and speciation , Molecular Ecology , 19 , 19 , (4283-4301) , (2010) . 
+    Wiley Online Library 
+    G. BERTORELLE, A. BENAZZO and S. MONA , ABC as a flexible framework to estimate demography over space and time: some cons, many pros , Molecular Ecology , 19 , 13 , (2609-2625) , (2010) . 
+    Wiley Online Library 
+    Elodie Vercken, Michael C. Fontaine, Pierre Gladieux, Michael E. Hood, Odile Jonot, Tatiana Giraud and Barbara Jane Howlett , Glacial Refugia in Pathogens: European Genetic Structure of Anther Smut Pathogens on Silene latifolia and Silene dioica , PLoS Pathogens , 6 , 12 , (e1001229) , (2010) . 
+    Crossref 
+    S. PLOUVIEZ, T. M. SHANK, B. FAURE, C. DAGUIN‐THIEBAUT, F. VIARD, F. H. LALLIER and D. JOLLIVET , Comparative phylogeography among hydrothermal vent species along the East Pacific Rise reveals vicariant processes and population expansion in the South , Molecular Ecology , 18 , 18 , (3903-3917) , (2009) . 
+    Wiley Online Library 
+    KJETIL LYSNE VOJE, CLAUDIA HEMP, ØYSTEIN FLAGSTAD, GLENN‐PETER SÆTRE and NILS CHR. STENSETH , Climatic change as an engine for speciation in flightless Orthoptera species inhabiting African mountains , Molecular Ecology , 18 , 1 , (93-108) , (2008) . 
+    Wiley Online Library 
+    Carla Hurt, Arthur Anker and Nancy Knowlton , A MULTILOCUS TEST OF SIMULTANEOUS DIVERGENCE ACROSS THE ISTHMUS OF PANAMA USING SNAPPING SHRIMP IN THE GENUS ALPHEUS , Evolution , 63 , 2 , (514-530) , (2008) . 
+    Wiley Online Library 
+    P. B. Marko and A. L. Moran , Out of sight, out of mind: high cryptic diversity obscures the identities and histories of geminate species in the marine bivalve subgenus Acar , Journal of Biogeography , 36 , 10 , (1861-1880) , (2009) . 
+    Wiley Online Library 
+    Curtis W. Burney and Robb T. Brumfield , Ecology Predicts Levels of Genetic Differentiation in Neotropical Birds , The American Naturalist , 174 , 3 , (358) , (2009) . 
+    Crossref 
+    Joao S. Lopes, David Balding and Mark A. Beaumont , PopABC: a program to infer historical demographic parameters , Bioinformatics , 25 , 20 , (2747) , (2009) . 
+    Crossref 
+    ERIC D. CRANDALL, M. ELIZABETH JONES, MARTHA M. MUÑOZ, BOLANLE AKINRONBI, MARK V. ERDMANN and PAUL H. BARBER , Comparative phylogeography of two seastars and their ectosymbionts within the Coral Triangle , Molecular Ecology , 17 , 24 , (5276-5290) , (2008) . 
+    Wiley Online Library 
+    Brett R. Riddle, Michael N. Dawson, Elizabeth A. Hadly, David J. Hafner, Michael J. Hickerson, Stacy J. Mantooth and Anne D. Yoder , The role of molecular genetics in sculpting the future of integrative biogeography , Progress in Physical Geography , 32 , 2 , (173) , (2008) . 
+    Crossref 
+    Alan R. Lemmon, Emily Moriarty Lemmon and Elizabeth Jockusch , A Likelihood Framework for Estimating Phylogeographic History on a Continuous Landscape , Systematic Biology , 57 , 4 , (544) , (2008) . 
+    Crossref 
+    ERIC D. CRANDALL, MELISSA A. FREY, RICHARD K. GROSBERG and PAUL H. BARBER , Contrasting demographic history and phylogeographical patterns in two Indo‐Pacific gastropods , Molecular Ecology , 17 , 2 , (611-626) , (2007) . 
+    Wiley Online Library 
+    Erica Bree Rosenblum, Michael J. Hickerson and Craig Moritz , A MULTILOCUS PERSPECTIVE ON COLONIZATION ACCOMPANIED BY SELECTION AND GENE FLOW , Evolution , 61 , 12 , (2971-2985) , (2007) . 
+    Wiley Online Library 
+    E. G. LEIGH , Neutral theory: a historical perspective , Journal of Evolutionary Biology , 20 , 6 , (2075-2091) , (2007) . 
+    Wiley Online Library 
+    Jamie R Oaks and Laura Kubatko , Full Bayesian Comparative Phylogeography from Genomic Data , Systematic Biology , 10.1093/sysbio/syy063 , (2018) . 
+    Crossref 
+ 
+Publication cover image 
+ 
+Volume 60 , Issue 12 
+ 
+December 2006 
+ 
+Pages 2435-2453 
+ 
+    Figures 
+    References 
+    Related 
+    Information 
+ 
+    Metrics 
+    Downloads: 41 
+    Citations: 77 
+ 
+    Details 
+ 
+    Keywords 
+        Approximate Bayesian computation 
+        coalescent 
+        comparative phylogeography 
+        echinoid 
+        hierarchical model 
+        meta‐analysis 
+        vicariance 
+ 
+    Publication History 
+        Issue Online: 08 May 2007 
+        Version of Record online: 08 May 2007 
+        Editorial history: Received October 13, 2005. Accepted September 12, 2006. 
+ 
+Caption 
+Additional links 
+About Wiley Online Library 
+ 
+    Privacy Policy 
+    Terms of Use 
+    Cookies 
+    Accessibility 
+ 
+Help & Support 
+ 
+    Contact Us 
+ 
+Opportunities 
+ 
+    Subscription Agents 
+    Advertisers & Corporate Partners 
+ 
+Connect with Wiley 
+ 
+    The Wiley Network 
+    Wiley Press Room 
+ 
+Copyright © 1999-2018 John Wiley & Sons, Inc . All rights reserved 
+Log in to Wiley Online Library 
+Email or Customer ID 
+Password 
+Forgot password? 
+NEW USER > INSTITUTIONAL LOGIN > 
+Change Password 
+Old Password 
+New Password 
+Too Short Weak Medium Strong Very Strong Too Long 
+Congrats! 
+ 
+Your password has been changed 
+Create a new account 
+Email or Customer ID 
+Returning user 
+Forgot your password? 
+ 
+Enter your email address below. If your address has been previously registered, you will receive an email with instructions on how to reset your password. If you don't receive an email, you should register as a new user 
+Email or Customer ID 
+ 
+Please check your email for your password reset instructions. 
+Request Username 
+ 
+Can't sign in? Forgot your username? 
+ 
+Enter your email address below and we will send you your username 
+Email or Customer ID 
+Close 
+ 
+If the address matches an existing account you will receive an email with instructions to retrieve your username 
+back 
+ 

@@ -1,0 +1,564 @@
+, Jost's D, and FST are similarly constrained by allele frequencies: A mathematical, simulation, and empirical study - Alcala - 2019 - Molecular Ecology - Wiley Online Library
+
+    Skip to Article Content
+    Skip to Article Information
+
+Access By ICIPE LIBRARY
+Wiley Online Library
+Wiley Online Library
+Access by ICIPE LIBRARY
+Search within
+
+    Search term
+    Advanced Search Citation Search
+    Search term
+    Advanced Search Citation Search
+
+Login / Register
+Molecular Ecology
+Volume 28, Issue 7 Molecular Ecology banner
+ORIGINAL ARTICLE
+Full Access
+urn:x-wiley:09621083:media:mec15000:mec15000-math-0002 , Jost's D , and F ST are similarly constrained by allele frequencies: A mathematical, simulation, and empirical study
+Nicolas Alcala
+
+Corresponding Author
+
+E-mail address: nalcala@stanford.edu
+
+https://orcid.org/0000-0002-5961-5064
+
+Department of Biology, Stanford University, Stanford, California
+
+Correspondence
+
+Nicolas Alcala, Department of Biology, Stanford University, Stanford, CA.
+
+Email: alcalan@fellows.iarc.fr
+Search for more papers by this author
+Noah A. Rosenberg
+
+Department of Biology, Stanford University, Stanford, California
+Search for more papers by this author
+Nicolas Alcala
+
+Corresponding Author
+
+E-mail address: nalcala@stanford.edu
+
+https://orcid.org/0000-0002-5961-5064
+
+Department of Biology, Stanford University, Stanford, California
+
+Correspondence
+
+Nicolas Alcala, Department of Biology, Stanford University, Stanford, CA.
+
+Email: alcalan@fellows.iarc.fr
+Search for more papers by this author
+Noah A. Rosenberg
+
+Department of Biology, Stanford University, Stanford, California
+Search for more papers by this author
+First published:  27 December 2018
+https://doi.org/10.1111/mec.15000
+Citations: 1
+About
+
+        Figures
+        References
+        Related
+        Information
+    ePDF PDF
+    PDF PDF
+
+Sections
+
+    Abstract
+    1 INTRODUCTION
+    2 MATERIALS AND METHODS
+    3 RESULTS
+    4 DISCUSSION
+    ACKNOWLEDGEMENTS
+    AUTHOR CONTRIBUTION
+    DATA ACCESSIBILITY
+    APPENDIX A
+    APPENDIX B
+    APPENDIX C
+    APPENDIX D
+    Supporting Information
+    REFERENCES
+    Citing Literature
+
+ePDF PDF
+PDF PDF
+Tools
+
+    Request permission
+    Export citation
+    Add to favorites
+    Track citation
+
+Share
+
+Give access
+Share full text access
+Close modal
+
+Share full text access
+Please review our Terms and Conditions of Use and check box below to share full-text version of article.
+I have read and accept the Wiley Online Library Terms and Conditions of Use.
+Shareable Link
+
+Use the link below to share a full-text version of this article with your friends and colleagues. Learn more.
+Copy URL
+
+Share a link
+Share on
+
+    Email
+    Facebook
+    Twitter
+    LinkedIn
+    Reddit
+
+Abstract
+
+Statistics urn:x-wiley:09621083:media:mec15000:mec15000-math-0003 and Jost's D have been proposed for replacing F ST as measures of genetic differentiation. A principal argument in favour of these statistics is the independence of their maximal values with respect to the subpopulation heterozygosity H S , a property not shared by F ST . Nevertheless, it has been unclear if these alternative differentiation measures are constrained by other aspects of the allele frequencies. Here, for biallelic markers, we study the mathematical properties of the maximal values of urn:x-wiley:09621083:media:mec15000:mec15000-math-0004 and D , comparing them to those of F ST . We show that urn:x-wiley:09621083:media:mec15000:mec15000-math-0005 and D exhibit the same peculiar frequency‐dependence phenomena as F ST , including a maximal value as a function of the frequency of the most frequent allele that lies well below one. Although the functions describing urn:x-wiley:09621083:media:mec15000:mec15000-math-0006 , D , and F ST in terms of the frequency of the most frequent allele are different, the allele frequencies that maximize them are identical. Moreover, we show using coalescent simulations that when taking into account the specific maximal values of the three statistics, their behaviours become similar across a large range of migration rates. We use our results to explain two empirical patterns: the similar values of the three statistics among North American wolves, and the low D values compared to urn:x-wiley:09621083:media:mec15000:mec15000-math-0007 and F ST in Atlantic salmon. The results suggest that the three statistics are often predictably similar, so that they can make quite similar contributions to data analysis. When they are not similar, the difference can be understood in relation to features of genetic diversity.
+1 INTRODUCTION
+
+Assessing the level of genetic differentiation among subpopulations is a fundamental topic in population genetics, molecular ecology, and conservation genetics. Genetic differentiation is used, for example, to detect genes under natural selection in different subpopulations (Lewontin & Krakauer, 1973 ), to quantify effects of gene flow and hybridization (Slatkin, 1993 ), and to detect effects of population fragmentation and to provide conservation recommendations (Frankham, Ballou, & Briscoe, 2002 ).
+
+For decades, genetic differentiation has been measured most often using Wright's fixation index F ST (Wright, 1951 ). In an informative framework provided by Nei ( 1973 ), an additive partition divides the total heterozygosity H T into a within‐subpopulation component, H S , and an among‐subpopulation component, D ST :
+urn:x-wiley:09621083:media:mec15000:mec15000-math-0008
+
+From D ST , Nei derived the measure of differentiation
+urn:x-wiley:09621083:media:mec15000:mec15000-math-0009 (1)
+
+Because the Wahlund effect (Wahlund, 1928 ) mathematically ensures that H T  ≥  H S (as a consequence of the Cauchy–Schwarz inequality, Rosenberg & Calabrese, 2004 ), F ST is restricted to lie in the unit interval from 0 to 1. Consequently, F ST values are often interpreted using a scale from 0 to 1; for example, Wright ( 1978 , p. 85) described the range 0.15–0.25 as indicating “moderately great differentiation,” and the range 0.25–1 as indicating “very great differentiation.”
+
+Many studies, however, challenge this common interpretation of F ST . It has been shown that the maximal F ST for a specific locus is not always one, but a smaller value that varies with aspects of the genetic diversity at a locus, as measured by H S (Balloux, Brünner, Lugon‐Moulin, Hausser, & Goudet, 2000 ; Hedrick, 1999 , 2005 ; Hedrick & Kalinowski, 2000 ; Jost, 2008 ; Long & Kittles, 2003 ; Maruki, Kumar, & Kim, 2012 ), H T (Edge & Rosenberg, 2014 ; Jakobsson, Edge, & Rosenberg, 2013 ), or other allele frequency statistics (Alcala & Rosenberg, 2017 ; Rosenberg, Li, Ward, & Pritchard, 2003 ). Consequently, interpreting F ST values requires consideration of the value of H S or other summary statistics rather than a fixed scale.
+
+Some have proposed ways of addressing this perceived flaw of F ST . Wang ( 2015 ) suggested assessing if F ST values at a set of loci are influenced by H S by testing for a significant correlation between the two statistics. A significant correlation is interpreted as indicating that F ST is constrained by H S values rather than reflecting the level of genetic differentiation among populations. Although this test is promising for avoiding misinterpretations of F ST (Whitlock, 2015 ), frameworks are still needed for interpretation of F ST in cases with a significant correlation between F ST and H S .
+
+Others have proposed replacing F ST by an alternative genetic differentiation measure whose maximal value does not depend on H S . Hedrick ( 2005 ) proposed standardizing F ST by its maximum value given the observed value of H S and the number of subpopulations F ST, max  = [( K  − 1)(1 −  H S )]/( K  − 1 +  H S ). The resulting measure, denoted urn:x-wiley:09621083:media:mec15000:mec15000-math-0010 , is defined as:
+urn:x-wiley:09621083:media:mec15000:mec15000-math-0011 (2)
+
+In a provocative and influential paper, Jost ( 2008 ) proposed another measure of genetic differentiation, relying on alternative measures of genetic diversity, the “effective numbers of alleles” within and among populations, denoted respectively by Δ S  = 1/(1 −  H S ) and Δ T  = 1/(1 −  H T ), rather than within‐ and among‐population heterozygosities H S and H T . He also advocated the use of a multiplicative partition of genetic diversity,
+urn:x-wiley:09621083:media:mec15000:mec15000-math-0012
+rather than the additive partitioning used in the derivation of F ST . Considering a context applicable for any value for the number of distinct alleles, though proposed primarily for multiallelic markers, Jost then derived a new differentiation measure, denoted D , by normalizing 1/Δ ST to lie between 0 and 1:
+urn:x-wiley:09621083:media:mec15000:mec15000-math-0013
+
+Jost's D can also be expressed using heterozygosities:
+urn:x-wiley:09621083:media:mec15000:mec15000-math-0014 (3)
+
+For convenience, we henceforth use D to indicate Jost's D as in Equation  3 .
+
+urn:x-wiley:09621083:media:mec15000:mec15000-math-0015 and D are statistics whose maxima are not constrained by H S in the sense that irrespective of the value of H S , they can range from 0 to 1. This property, however, does not ensure that they are unconstrained by other aspects of allele frequencies. In particular, recent studies have highlighted a dependence of the maximal F ST on the frequency M of the most frequent allele in the total population at a locus.
+
+Rosenberg et al. ( 2003 , Equation  8 ) showed that for biallelic markers and two subpopulations, the maximum F ST decreases monotonically from 1 to 0 as a function of M (see also Maruki et al., 2012 ). Jakobsson et al. ( 2013 ) showed that for a value of M chosen uniformly between 0 and 1, the mean maximum F ST is approximately 0.3585; this maximum can be even lower if the number of alleles at the locus is specified (Edge & Rosenberg, 2014 ). For biallelic loci, Alcala and Rosenberg ( 2017 ) generalized these results to the case of an arbitrary number of subpopulations K . We showed that F ST continues to have a maximum less than 1 irrespective of the value of M , with exceptions only at finitely many choices for M .
+
+Here, we show that despite the emphasis of the derivations of urn:x-wiley:09621083:media:mec15000:mec15000-math-0016 and D on eliminating the dependence of maximal values on H S , both quantities, like F ST , have maxima less than 1 when considered as functions of M . We derive the maximum and minimum values of urn:x-wiley:09621083:media:mec15000:mec15000-math-0017 and D in terms of M , for a biallelic marker and an arbitrary number of subpopulations K . We then compare the mathematical constraints on urn:x-wiley:09621083:media:mec15000:mec15000-math-0018 and D with analogous constraints on F ST from Alcala and Rosenberg ( 2017 ), as functions of the number of subpopulations K . We simulate the joint distributions of M and urn:x-wiley:09621083:media:mec15000:mec15000-math-0019 and of M and D , describing how urn:x-wiley:09621083:media:mec15000:mec15000-math-0020 and D values are distributed between their minimum and maximum values as functions of the migration rate and the number of subpopulations in an island migration model. We apply our results to show how they explain discrepancies among F ST , urn:x-wiley:09621083:media:mec15000:mec15000-math-0021 , and D in two empirical examples: the population structure of wild North American wolves and that of Atlantic salmon. We use our results to provide recommendations on the use of the three statistics.
+2 MATERIALS AND METHODS
+
+Our goal is to derive the minimum and maximum values urn:x-wiley:09621083:media:mec15000:mec15000-math-0022 and D can take as functions of the frequency M of the most frequent allele for a biallelic marker, when the number of subpopulations K is a fixed finite value greater than or equal to 2. Following similar derivations for F ST (Alcala & Rosenberg, 2017 ), we consider a polymorphic locus with two alleles, A and a, segregating in a total population subdivided into K subpopulations that all contribute equally to the total. We denote the frequency of allele A in subpopulation k by p k . The frequency of allele a in subpopulation k is 1 −  p k . Each allele frequency p k lies in the interval [0,1].
+
+The mean frequency of allele A across the subpopulations is urn:x-wiley:09621083:media:mec15000:mec15000-math-0023 , and the mean frequency of allele a is 1 −  M . We assume that allele A is the more frequent allele in the total population, so that M  ≥   1/2 ≥ 1 −  M . Because by assumption the locus is polymorphic, M  ≠ 1. We denote the mean squared frequency of allele A across the subpopulations by urn:x-wiley:09621083:media:mec15000:mec15000-math-0024 .
+
+We assume that the allele frequencies M and p k are parametric allele frequencies of the total population and subpopulations, and not estimated values computed from data. In addition, we adopt an interpretation of F ST , urn:x-wiley:09621083:media:mec15000:mec15000-math-0025 , and D as “statistics” that provide mathematical descriptions of the apportionment of alleles among subpopulations, rather than as “parameters” of an implicit or explicit population‐genetic model (Nei, 1986 ). For this study, the “statistic” interpretation of differentiation measures is favored because it enables descriptions of the relationships of F ST , urn:x-wiley:09621083:media:mec15000:mec15000-math-0026 , and D with other “statistics” such as the frequency M of the most frequent allele. It also permits evaluation of the relative impact on resulting values of F ST , urn:x-wiley:09621083:media:mec15000:mec15000-math-0027 , and D of mathematical relationships between statistics—which we interpret as mathematical “constraints”—separately from the impact of population‐genetic models.
+3 RESULTS
+3.1 Mathematical constraints on F ST , urn:x-wiley:09621083:media:mec15000:mec15000-math-0028 , and D
+3.1.1 F ST , urn:x-wiley:09621083:media:mec15000:mec15000-math-0029 , and D as functions of M
+
+Equations  2 and 3 express urn:x-wiley:09621083:media:mec15000:mec15000-math-0030 and D as functions of the within‐ and among‐subpopulation heterozygosities H S and H T . We express urn:x-wiley:09621083:media:mec15000:mec15000-math-0031 and D as functions of allele frequencies by substituting into Equations  2 and 3 the expressions for H S and H T (Nei, 1973 ):
+urn:x-wiley:09621083:media:mec15000:mec15000-math-0032 (4)
+urn:x-wiley:09621083:media:mec15000:mec15000-math-0033 (5)
+
+H S simplifies to H S  = 2( M  −  S ), and H T to H T  = 2 M (1 −  M ). Because we assume a polymorphic locus, 0 ≤  H S  < 1 and 0 <  H T  < 1. We obtain:
+urn:x-wiley:09621083:media:mec15000:mec15000-math-0034 (6)
+urn:x-wiley:09621083:media:mec15000:mec15000-math-0035 (7)
+urn:x-wiley:09621083:media:mec15000:mec15000-math-0036 (8)
+
+For a given value of M , we search for the values of p 1 , p 2 , …, p K that minimize and maximize urn:x-wiley:09621083:media:mec15000:mec15000-math-0037 and D across all possible sets of allele frequencies that produce mean frequency M for its most frequent allele. The minimal and maximal F ST as functions of M are known from Alcala and Rosenberg ( 2017 ). We show in APPENDIX  A that the minimal values of F ST , urn:x-wiley:09621083:media:mec15000:mec15000-math-0038 , and D all equal 0 irrespective of M , for any value of the number of subpopulations K , and that this minimum is reached when alleles have the same frequency in all subpopulations: p 1  =  p 2 = … =  p K   =  M .
+3.1.2 Maximal values of F ST , urn:x-wiley:09621083:media:mec15000:mec15000-math-0039 , and D
+
+From Alcala and Rosenberg ( 2017 , Equation  5 ), letting urn:x-wiley:09621083:media:mec15000:mec15000-math-0040 denote the greatest integer less than or equal to x and writing urn:x-wiley:09621083:media:mec15000:mec15000-math-0041 , the maximum of F ST in terms of M is:
+urn:x-wiley:09621083:media:mec15000:mec15000-math-0042 (9)
+
+The derivations of the maxima of urn:x-wiley:09621083:media:mec15000:mec15000-math-0043 and D in terms of M proceed in three steps. (a) We show in APPENDIX  B that urn:x-wiley:09621083:media:mec15000:mec15000-math-0044 and D are increasing functions of S . (b) We employ Theorem 1 from Alcala and Rosenberg ( 2017 ), which provided the maximal S in terms of M used to obtain the maximal F ST in terms of M (Alcala & Rosenberg, 2017 , Equation  6 ). This theorem shows that urn:x-wiley:09621083:media:mec15000:mec15000-math-0045 , with equality requiring the most frequent allele to have frequency 1 or 0 in all subpopulations except at most one. (c) From (a) and (b), the maximal urn:x-wiley:09621083:media:mec15000:mec15000-math-0046 and D in terms of M are obtained by substituting the maximal S into Equations  7 and 8 :
+urn:x-wiley:09621083:media:mec15000:mec15000-math-0047 (10)
+urn:x-wiley:09621083:media:mec15000:mec15000-math-0048 (11)
+
+Interestingly, this derivation implies that for fixed M , F ST , urn:x-wiley:09621083:media:mec15000:mec15000-math-0049 , and D are maximal under the same conditions: when the most frequent allele has frequency 1 or 0 in all except possibly one subpopulation, so that the locus is polymorphic in at most a single subpopulation. Thus, F ST , urn:x-wiley:09621083:media:mec15000:mec15000-math-0050 , and D are all maximal when fixation is achieved in as many subpopulations as possible.
+3.1.3 Comparison of the maximal values of F ST , urn:x-wiley:09621083:media:mec15000:mec15000-math-0051 , and D
+
+Figure  1 shows the maximal values of F ST , urn:x-wiley:09621083:media:mec15000:mec15000-math-0052 , and D in terms of M for various values of K . These maximal values have shared properties. F ST (Alcala & Rosenberg, 2017 , p. 1583), urn:x-wiley:09621083:media:mec15000:mec15000-math-0053 (Supporting Information File S1.1 ), and D (Supporting Information File S1.2–S1.4 ) all have peaks at values i / K , where i is an integer ranging in urn:x-wiley:09621083:media:mec15000:mec15000-math-0054 , where it is possible for the allele to be fixed in all K subpopulations. The maximum, treated as a function of M , is not a differentiable function at the peaks i / K (Supporting Information File S1.5 ); it is smooth and strictly below one between them (Supporting Information File S1.1 and S1.2 ). If K is even, then the maximal value has a local maximum at M  =   1/2, whereas if K is odd, then M  =   1/2 is a local minimum (Supporting Information File S1.3 ).
+image
+Figure 1
+Open in figure viewer PowerPoint
+Range of possible values of F ST , urn:x-wiley:09621083:media:mec15000:mec15000-math-0055 , and D as functions of the frequency M of the most frequent allele, for different numbers of subpopulations K . The shaded region represents the space between the minimal and maximal values. The maximal F ST , urn:x-wiley:09621083:media:mec15000:mec15000-math-0056 , and D are computed from Equations  9–11-9–11 , respectively. The dashed line represents 1 for F ST and urn:x-wiley:09621083:media:mec15000:mec15000-math-0057 , and 2 KM (1 −  M )/( K  − 1) for D (Equation S1.4 in Supporting Information File S1 ); the maximum value touches the dashed line when M  =  i / K for integers i in urn:x-wiley:09621083:media:mec15000:mec15000-math-0058 . For F ST , urn:x-wiley:09621083:media:mec15000:mec15000-math-0059 , and D , for each K , the minimum value is 0 for all values of M
+
+The maximal values for the three statistics also have distinct properties. From Alcala and Rosenberg ( 2017 , p. 1583), the peaks of the maximal F ST reach one; the peaks of the maximal urn:x-wiley:09621083:media:mec15000:mec15000-math-0060 also reach one (Supporting Information File S1.1 ), whereas the peaks of the maximal D are lower than 1, except if K  =   2 (Supporting Information File S1.2 ). These peaks reach KH T /( K  − 1) = 2 KM (1 −  M )/( K  − 1) (Supporting Information File S1.4 ). Consequently, F ST and urn:x-wiley:09621083:media:mec15000:mec15000-math-0061 are only unconstrained within the unit interval for finitely many values of the frequency M of the most frequent allele, and D is only unconstrained for a single combination of values of K and M , namely ( K , M ) = (2, 1/2).
+
+For K  =   2, the maximal F ST , urn:x-wiley:09621083:media:mec15000:mec15000-math-0062 , and D values are similar (Figure  1 a–c): the maximum is 1 at M  =   1/2, decreasing monotonically to 0 at M  =   1. The maximal urn:x-wiley:09621083:media:mec15000:mec15000-math-0063 is the highest of the statistics for all M (APPENDIX  C ); as a result, urn:x-wiley:09621083:media:mec15000:mec15000-math-0064 is the least constrained measure. The maximal D exceeds the maximal F ST for M  <   3/4 and is lower for M  >   3/4 (Appendix  C ). Hence, D is less constrained than F ST for lower M but more constrained for higher M .
+
+The number of subpopulations K has different effects on the maximum values of F ST , urn:x-wiley:09621083:media:mec15000:mec15000-math-0065 , and D . The maximum of urn:x-wiley:09621083:media:mec15000:mec15000-math-0066  tends to 1 when K  → ∞ (Figure  1 b,e,h,k,n and Supporting Information File S1.2 ), similarly to that of F ST (Figure  1 a,d,g,j,m; Alcala & Rosenberg, 2017 ); thus, constraints of M on the values of urn:x-wiley:09621083:media:mec15000:mec15000-math-0067 disappear as K increases. By contrast, the maximal value of D tends to 2 M (1 −  M ) =  H T when K  → ∞ (Figure  1 c,f,i,l,o, and Supporting Information File S1.7 ): thus, constraints imposed by M on the values of D remain strong for all K .
+3.1.4 Comparison of the range of possible values of F ST , urn:x-wiley:09621083:media:mec15000:mec15000-math-0068 , and D
+
+We can summarize how much M constrains the range of urn:x-wiley:09621083:media:mec15000:mec15000-math-0069 and D compared to F ST by computing as functions of the number of subpopulations A G ( K ) and A D ( K ), the mean maximal urn:x-wiley:09621083:media:mec15000:mec15000-math-0070 and D across all possible values of M . A G ( K ) gives the area between the minimal and maximal values of urn:x-wiley:09621083:media:mec15000:mec15000-math-0071 as a function of M divided by the length of the domain of possible M values, 1/2. This quantity is useful for comparing results with previous work on the constraints of F ST (Alcala & Rosenberg, 2017 ; Edge & Rosenberg, 2014 ; Jakobsson et al., 2013 ). Values of A G ( K ) near one indicate that urn:x-wiley:09621083:media:mec15000:mec15000-math-0072 can range between 0 and 1 for most values of M , whereas small values indicate that urn:x-wiley:09621083:media:mec15000:mec15000-math-0073 values are constrained to a small interval. A D ( K ) and A F ( K ) describe corresponding computations for D and F ST .
+
+From Alcala and Rosenberg ( 2017 , Equation  8 ), A F is:
+urn:x-wiley:09621083:media:mec15000:mec15000-math-0074 (12)
+
+We compute A G ( K ) and A D ( K ) from the upper bounds derived in the previous sections. Because the lower bound on urn:x-wiley:09621083:media:mec15000:mec15000-math-0075 and D is 0 for all M between 1/2 and 1, A G ( K ) and A D ( K ) correspond to the areas under their respective maximal values divided by 1/2, or twice the integrals of Equations  10 and 11 over M . We compute A G ( K ) in Supporting Information File S2.1 and A D ( K ) in Supporting Information File S2.3 :
+urn:x-wiley:09621083:media:mec15000:mec15000-math-0076 (13)
+urn:x-wiley:09621083:media:mec15000:mec15000-math-0077 (14)
+where functions h 1 and h 2 follow Equations S2.6 and S2.7 in Supporting Information File S2 .
+
+In Figure  2 , we compare A G ( K ) and A D ( K ) to the area between the minimal and maximal F ST as functions of M (Alcala & Rosenberg, 2017 , Equation  9 ), denoted A F . We can see in the figure that A G is greater than A F for all K , particularly when K is small, whereas A F and A G are similar for large K . Thus, urn:x-wiley:09621083:media:mec15000:mec15000-math-0078 is less constrained than F ST by M when the number of subpopulations is small, and urn:x-wiley:09621083:media:mec15000:mec15000-math-0079 and F ST are comparably constrained when it is large. A D is seen to be lower than both A F (except at K  =   2) and A G , and thus, D is more constrained than the other two measures.
+image
+Figure 2
+Open in figure viewer PowerPoint
+The means A F , A G , and A D of the maximal values of F ST , urn:x-wiley:09621083:media:mec15000:mec15000-math-0080 , and D , respectively, over the interval M ∊ [1/2, 1), as functions of the number of subpopulations K . A F ( K ) is computed from Equation  12 , A G ( K ) from Equation  13 , and A D ( K ) from Equation  14 . The x ‐axis is plotted on a logarithmic scale
+
+The pattern of change in A D ( K ) as a function of K is distinct from those of A F ( K ) and A G ( K ). A D ( K ) decreases with K (Supporting Information File S2.4 ), whereas A F ( K ) increases with K for all K  ≥ 2 (Alcala & Rosenberg, 2017 , Theorem 3), and A G ( K ) increases with K at least for K ranging from 2 to 10,000 (Supporting Information File S2.2 ). As K becomes large, A D  tends to 1/3, whereas A F approaches 1 (Alcala & Rosenberg, 2017 , Equation  9 ), as does A G (Supporting Information File S2.2 ). Thus, unlike F ST and urn:x-wiley:09621083:media:mec15000:mec15000-math-0081 , D does not have a mean range extending over the whole unit interval when K is large. On the other hand, of the three statistics, A D ( K ) has the least change as a function of K , decreasing from urn:x-wiley:09621083:media:mec15000:mec15000-math-0082 to 1/3 (Figure  2 ), whereas A F ( K ) increases from 2 log 2 − 1 ≈ 0.38629 to 1 and A G ( K ) increases from (3−2 log 2)/3 ≈ 0.53790 to 1. Thus, the constraint imposed by M on D is more consistent across values of K than are the constraints on the other two measures.
+3.2 Simulation‐based distributions of F ST , urn:x-wiley:09621083:media:mec15000:mec15000-math-0083 , and D
+
+To illustrate the mathematical properties of differentiation measures F ST , urn:x-wiley:09621083:media:mec15000:mec15000-math-0084 , and D in the context of evolutionary models, we simulated the joint distribution of each quantity with M under an island migration model, and we compared the distribution to the mathematical minima and maxima of the statistics. This analysis considers allele frequency distributions generated by evolutionary models, rather than treating M as uniformly distributed in [1/2,1).
+
+We simulated independent single‐nucleotide polymorphisms (SNPs) under the coalescent using the protocol of Alcala and Rosenberg ( 2017 ). Using the software ms (Hudson, 2002 ), we simulated a population of total size KN diploid individuals subdivided into K subpopulations of equal size N , with migration following the finite island model (Maruyama, 1970 ; Wakeley, 1998 ) with migration rate m in each direction between each pair of subpopulations. We examined three K values (2, 7, 40) and three 4 Nm values (0.1, 1, 10). We simulated conditional on producing one segregating site in each simulation. For each parameter pair ( K ,4 Nm ), we performed 100,000 replicate simulations, sampling 100 lineages per subpopulation (corresponding to 50 diploid individuals) in each replicate. ms commands appear in Supporting Information File S3 . Because we do not investigate estimation of allele frequencies from data, F ST , urn:x-wiley:09621083:media:mec15000:mec15000-math-0085 , and D values were computed assuming that the empirical allele frequencies were parametric allele frequencies.
+3.2.1 Weak migration for K  =   2
+
+As shown by Alcala and Rosenberg ( 2017 ), and seen here in Figure  3 a, for K  =   2, under weak migration (4 Nm  = 0.1), the joint density of M and F ST is greatest near the maximum of F ST as a function of M . We can see in Figure  3 b,c that the joint densities of M and urn:x-wiley:09621083:media:mec15000:mec15000-math-0086 and of M and D are also highest near their respective maxima as functions of M . For the three statistics, most loci have M near 1/2, indicating that one allele is fixed in one subpopulation and the other is fixed in the second subpopulation, and F ST , urn:x-wiley:09621083:media:mec15000:mec15000-math-0087 , and D are near 1 (orange areas in Figure  3 a–c). The mean F ST , urn:x-wiley:09621083:media:mec15000:mec15000-math-0088 , and D values in sliding windows for M (red dashed lines in Figure  3 a–c) closely follow their respective maxima. Because the maximal values of the three statistics are similar for K  =   2, the joint densities are also similar.
+image
+Figure 3
+Open in figure viewer PowerPoint
+Joint density of the frequency M of the most frequent allele and statistics F ST , urn:x-wiley:09621083:media:mec15000:mec15000-math-0089 , and D , for different scaled migration rates 4 Nm , considering K  =   2 subpopulations. The black solid line represents the maximum value of F ST , urn:x-wiley:09621083:media:mec15000:mec15000-math-0090 , or D in terms of M (Equations  9–11-9–11 ); the red dashed line represents the mean F ST , urn:x-wiley:09621083:media:mec15000:mec15000-math-0091 , and D in sliding windows of M of size 0.02 (plotted from 0.51 to 0.99). Colours represent the density of loci, estimated using a Gaussian kernel density estimate with a bandwidth of 0.007, with density set to 0 outside the minimum and maximum values. Loci are simulated using coalescent software ms , assuming an island model of migration and conditioning on one segregating site. Each panel considers 100,000 replicate simulations, with 100 lineages sampled per subpopulation
+
+The conditions under which the maximal values of F ST , urn:x-wiley:09621083:media:mec15000:mec15000-math-0092 , and D are reached provide an explanation of these observations. We showed that the maximal values of the three statistics are reached under the same condition—when alleles are fixed in one or sometimes both subpopulations. Under weak migration, we expect the derived allele to be trapped in its subpopulation of origin, and the ancestral allele to be fixed in the other subpopulation. This situation matches the conditions under which F ST , urn:x-wiley:09621083:media:mec15000:mec15000-math-0093 , and D reach their maximal values as functions of M .
+3.2.2 Intermediate migration for K  =   2
+
+For K  =   2, under intermediate migration (4 Nm  = 1), the joint densities of M and F ST , M and urn:x-wiley:09621083:media:mec15000:mec15000-math-0094 , and M and D are the highest between their respective minimum and maximum values as functions of M (Figure  3 d–f). The mean F ST , urn:x-wiley:09621083:media:mec15000:mec15000-math-0095 , and D values in sliding windows for M are almost equidistant from the minimal and maximal values, approaching closer to the maximum when M nears 1 (red dashed line in Figure  3 d–f).
+
+Under intermediate migration, we expect the derived allele to segregate into the two subpopulations, but to still be at higher frequency in its subpopulation of origin. Consequently, the condition under which F ST , urn:x-wiley:09621083:media:mec15000:mec15000-math-0096 , and D reach their maximum as a function of M is not attained. The condition under which the statistics reach their minimum—equal allele frequencies in all subpopulations—is not expected to be attained either, resulting in F ST , urn:x-wiley:09621083:media:mec15000:mec15000-math-0097 , and D between their minimum and maximum values.
+3.2.3 Strong migration for K  =   2
+
+Continuing with K  =   2, under strong migration (4 Nm  = 10), the three joint densities are the highest near their respective minima as functions of M (Figure  3 g–i). The mean F ST , urn:x-wiley:09621083:media:mec15000:mec15000-math-0098 , and D in sliding windows for M are near their minimal values (red dashed line in Figure  3 g–i).
+
+Under strong migration, we expect the derived allele to segregate into the two subpopulations approximately at the same frequency. Consequently, the condition under which F ST , urn:x-wiley:09621083:media:mec15000:mec15000-math-0099 , and D reach their minima as functions of M —equal allele frequencies in all subpopulations—is attained.
+3.2.4 Weak, intermediate, and strong migration for K  >   2
+
+For K  =   7, the joint densities of M and F ST , M and urn:x-wiley:09621083:media:mec15000:mec15000-math-0100 , and M and D follow a similar pattern to that seen for K  =   2: the densities lie near the maximal value of their statistics under weak migration, between the minimum and maximum under intermediate migration, and near the minimum under strong migration (Figure  4 ). Under weak migration, most loci have M near 4/7, 5/7, or 6/7, indicating allele fixation in all subpopulations. Nevertheless, because the maximal values of the three statistics differ greatly, their values under weak migration are quite different: most loci have F ST  ≈ 1 and urn:x-wiley:09621083:media:mec15000:mec15000-math-0101 , but D  <   0.5.
+image
+Figure 4
+Open in figure viewer PowerPoint
+Joint density of the frequency M of the most frequent allele and statistics F ST , urn:x-wiley:09621083:media:mec15000:mec15000-math-0102 , and D , for different scaled migration rates 4 Nm , considering K  =   7 subpopulations. The simulation procedure and figure design follow Figure  3
+
+For K  =   40, the joint densities also lie near the maximum under weak migration, between the minimum and maximum under intermediate migration, and near the minimum under strong migration (Supporting Information Figure S1 ). Under weak migration, loci have M values that range from 1/2 to 1. Because the maxima of F ST and urn:x-wiley:09621083:media:mec15000:mec15000-math-0103 are similar, their values under weak migration are also similar: most loci have F ST  ≈ 1 and urn:x-wiley:09621083:media:mec15000:mec15000-math-0104 . By contrast, D  <   0.5.
+
+Interestingly, comparing the densities of M and D under weak migration as a function of K we can see that the values of D are more weakly influenced by K (Figures 3 c, 4 c, and Supporting Information Figure S1 C). By contrast, the values of F ST and urn:x-wiley:09621083:media:mec15000:mec15000-math-0105 are more strongly influenced by K (Figures  3 a, 4 a, and Supporting Information Figure S1a and Figures  3 b, 4 b, and Supporting Information Figure S1b ).
+3.2.5 Proximity of F ST , urn:x-wiley:09621083:media:mec15000:mec15000-math-0106 , and D to their maximum values
+
+To measure the impact of evolutionary processes on F ST , urn:x-wiley:09621083:media:mec15000:mec15000-math-0107 , and D values and to summarize Figures  3 and 4 and Supporting Information Figure S1 , we quantified the proximity of the joint densities of M and F ST , M and urn:x-wiley:09621083:media:mec15000:mec15000-math-0108 , and M and D to their maximum value as a function of M across a range of migration rates and numbers of subpopulations.
+
+We denote by urn:x-wiley:09621083:media:mec15000:mec15000-math-0109 , urn:x-wiley:09621083:media:mec15000:mec15000-math-0110 , and urn:x-wiley:09621083:media:mec15000:mec15000-math-0111 the mean values of F ST , urn:x-wiley:09621083:media:mec15000:mec15000-math-0112 , and D across a set of Z loci, respectively. To be precise, these means are obtained by computing F z , urn:x-wiley:09621083:media:mec15000:mec15000-math-0113 , and D z —the values of F ST , urn:x-wiley:09621083:media:mec15000:mec15000-math-0114 , and D for biallelic loci z —for each z from 1 to Z , and averaging F z , urn:x-wiley:09621083:media:mec15000:mec15000-math-0115 , and D z across the Z loci (Equations  D1 and D2 in Appendix  D ). The corresponding mean maximal F ST , urn:x-wiley:09621083:media:mec15000:mec15000-math-0116 , and D across the Z loci are denoted urn:x-wiley:09621083:media:mec15000:mec15000-math-0117 . They are computed by substituting the observed frequency M z of the most frequent allele at loci z  = 1, 2, …, Z into the expression for the maximal F ST (Equation  9 ), urn:x-wiley:09621083:media:mec15000:mec15000-math-0118 (Equation  10 ), and D (Equation  11 ), and averaging the values over the Z loci (Equations  D3 and D4 in Appendix  D ). We computed urn:x-wiley:09621083:media:mec15000:mec15000-math-0119 , urn:x-wiley:09621083:media:mec15000:mec15000-math-0120 , and urn:x-wiley:09621083:media:mec15000:mec15000-math-0121 , which we describe as normalized statistics, across a range of values of K (2, 10, and 100) and scaled migration rates (0.01–100; Figure  5 ).
+image
+Figure 5
+Open in figure viewer PowerPoint
+Mean urn:x-wiley:09621083:media:mec15000:mec15000-math-0122 , urn:x-wiley:09621083:media:mec15000:mec15000-math-0123 , and urn:x-wiley:09621083:media:mec15000:mec15000-math-0124 across biallelic loci. (a) Unnormalized means urn:x-wiley:09621083:media:mec15000:mec15000-math-0125 , urn:x-wiley:09621083:media:mec15000:mec15000-math-0126 , and urn:x-wiley:09621083:media:mec15000:mec15000-math-0127 . (b) Normalized means urn:x-wiley:09621083:media:mec15000:mec15000-math-0128 , urn:x-wiley:09621083:media:mec15000:mec15000-math-0129 , and urn:x-wiley:09621083:media:mec15000:mec15000-math-0130 , the ratio of the mean value to the mean maximal value given the observed frequency M of the most frequent allele. Both plots show quantities as functions of the number of subpopulations K and the scaled migration rate 4 Nm . Colours represent the different statistics. Line types represent values of K : 2 (solid), 7 (dashed), and 40 (dotted). Values are computed from coalescent simulations using software ms as in Figure  3 , with 1,000 replicate biallelic loci and 100 lineages per subpopulation. urn:x-wiley:09621083:media:mec15000:mec15000-math-0131 , urn:x-wiley:09621083:media:mec15000:mec15000-math-0132 , and urn:x-wiley:09621083:media:mec15000:mec15000-math-0133 are respectively computed from equation 11 of Alcala and Rosenberg ( 2017 ) and Equations  D3 and D4 in Appendix  D
+
+Interestingly, for a fixed 4 Nm , ratios are similar for the three measures across all values of K (Figure  5 b). The largest difference between F ST and urn:x-wiley:09621083:media:mec15000:mec15000-math-0134 values is 0.07 and is reached when 4 Nm  = 1; the largest difference between D and urn:x-wiley:09621083:media:mec15000:mec15000-math-0135 is 0.06, also when 4 Nm  = 1. Thus, all three measures provide similar information once their mathematical constraints are taken into account.
+3.3 Application to data
+
+We now use two SNP data sets to illustrate how our findings can explain patterns in genomic data.
+3.3.1 K  =   2: wolf and dog
+
+The first data set (Cronin, Cánovas, Bannasch, Oberbauer, & Medrano, 2015 ) consists of samples from 305 North American wild wolves ( Canis lupus ) and 91 dogs ( Canis familiaris ; 36 mixed‐breed dogs, 53 poodles, one Australian shepherd, and one Border collie). The wolves and dogs are typed at 123,801 biallelic loci. This example illustrates the dependence of the constraints of the differentiation measures on M when performing pairwise comparisons.
+
+The joint densities of M and F ST , M and urn:x-wiley:09621083:media:mec15000:mec15000-math-0136 , and M and D appear in Figure  6 a–c. Most loci have relatively large values of M , for which the differentiation statistics are tightly constrained. As we saw using coalescent simulations (Figure  3 ), values of F ST , urn:x-wiley:09621083:media:mec15000:mec15000-math-0137 , and D are globally close; urn:x-wiley:09621083:media:mec15000:mec15000-math-0138 values are the largest of the three measures for all M , D exceeds F ST for intermediate M , and F ST exceeds D for high M .
+image
+Figure 6
+Open in figure viewer PowerPoint
+Joint density of the frequency M of the most frequent allele and three differentiation measures ( F ST , urn:x-wiley:09621083:media:mec15000:mec15000-math-0139 , and D ), and unnormalized and normalized mean values of the differentiation measures across loci, for 305 wolves and 91 dogs from North America, using 123,801 SNPs. (a) M and F ST . (b) M and urn:x-wiley:09621083:media:mec15000:mec15000-math-0140 . (c) M and D . (d) Unnormalized mean values of F ST , urn:x-wiley:09621083:media:mec15000:mec15000-math-0141 , and D across SNPs, and the mean values of F ST , urn:x-wiley:09621083:media:mec15000:mec15000-math-0142 , and D across SNPs normalized by the mean of their maximal values. In (a–c), the figure design follows Figure  3 . In (d), urn:x-wiley:09621083:media:mec15000:mec15000-math-0143 , urn:x-wiley:09621083:media:mec15000:mec15000-math-0144 , and urn:x-wiley:09621083:media:mec15000:mec15000-math-0145 are respectively computed from equation 11 of Alcala and Rosenberg ( 2017 ) and Equations  D3 and D4 in Appendix  D
+
+In addition, we can see in Figure  6 D that normalizing the mean F ST , urn:x-wiley:09621083:media:mec15000:mec15000-math-0146 , and D increases their values considerably. As we observed in the simulations (Figure  5 ), urn:x-wiley:09621083:media:mec15000:mec15000-math-0147 values are slightly closer to their maxima than are F ST and D values.
+3.3.2 K  >   2: Atlantic salmon
+
+The second data set consists of 900 Atlantic salmon ( Salmo salar ) sampled from 26 populations (Bourret et al., 2013 ) and typed at 1,335 biallelic loci. This example illustrates the constraints of the measures when many subpopulations are considered.
+
+The joint densities of M with F ST , urn:x-wiley:09621083:media:mec15000:mec15000-math-0148 , and D appear in Figure  7 a–c. As was seen in coalescent simulations (Figure  4 ), values of F ST and urn:x-wiley:09621083:media:mec15000:mec15000-math-0149 are close, with larger urn:x-wiley:09621083:media:mec15000:mec15000-math-0150 ; D values are lower than both F ST and urn:x-wiley:09621083:media:mec15000:mec15000-math-0151 for all M .
+image
+Figure 7
+Open in figure viewer PowerPoint
+Joint density of the frequency M of the most frequent allele and three differentiation measures ( F ST , urn:x-wiley:09621083:media:mec15000:mec15000-math-0152 , and D ), and unnormalized and normalized mean values of the differentiation measures across loci, for 900 Atlantic salmon from 26 populations, using 1,335 SNPs. Sample sizes range from 25 to 40 per population. (a) M and F ST . (b) M and urn:x-wiley:09621083:media:mec15000:mec15000-math-0153 . (c) M and D . (d) Mean values of F ST , urn:x-wiley:09621083:media:mec15000:mec15000-math-0154 , and D across SNPs, for sets of geographic regions as a function of K , the number of regions considered. (e) Ratio of mean values of F ST , urn:x-wiley:09621083:media:mec15000:mec15000-math-0155 , and D across SNPs to their maximal mean values as functions of K . In (a–c), the figure design follows Figure  3 . Coloured bars in (d) and (e) represent 2.5 and 97.5 quantiles of distributions of values across sets of size K . In (e), urn:x-wiley:09621083:media:mec15000:mec15000-math-0156 , urn:x-wiley:09621083:media:mec15000:mec15000-math-0157 , and urn:x-wiley:09621083:media:mec15000:mec15000-math-0158 are respectively computed from equation 11 of Alcala and Rosenberg ( 2017 ) and Equations  D3 and D4 in Appendix  D
+
+Figure  7 d,e illustrate the impact of the number of subpopulations on values of F ST , urn:x-wiley:09621083:media:mec15000:mec15000-math-0159 , and D . The figure represents the mean F ST , urn:x-wiley:09621083:media:mec15000:mec15000-math-0160 , and D values across loci for sets of K salmon subpopulations among the 26 subpopulations, for K ranging from 2 to 26. For computational simplicity, when the number of possible sets exceeded 10,000, we randomly chose without replacement 10,000 sets to compute the three measures. We can see in Figure  7 d that the values of F ST and urn:x-wiley:09621083:media:mec15000:mec15000-math-0161 depend more strongly on the value of K , whereas the values of D are weakly affected by K . In addition, we can see in Figure  7 e that even though the mean values of D are smaller than those of F ST and urn:x-wiley:09621083:media:mec15000:mec15000-math-0162 , they are comparably close to the maximum value as the means of F ST and urn:x-wiley:09621083:media:mec15000:mec15000-math-0163 . Also, as we showed with coalescent simulations (Figure  5 ), urn:x-wiley:09621083:media:mec15000:mec15000-math-0164 values are slightly closer to their associated maximal values than are D and F ST .
+4 DISCUSSION
+
+We have shown that for biallelic markers and arbitrary numbers of subpopulations K , the maximal values of urn:x-wiley:09621083:media:mec15000:mec15000-math-0165 and D are both lower than 1 for most frequencies M of the most frequent allele. We have described the properties of the maximal values of urn:x-wiley:09621083:media:mec15000:mec15000-math-0166 and D as functions of M , and compared them with that of F ST . We have shown that urn:x-wiley:09621083:media:mec15000:mec15000-math-0167 is the least constrained by M , and that D is the most constrained. Despite these differences, the allele frequencies that minimize and maximize urn:x-wiley:09621083:media:mec15000:mec15000-math-0168 and D are the same. Using coalescent simulations and two data examples, we have shown that values of F ST , urn:x-wiley:09621083:media:mec15000:mec15000-math-0169 , and D normalized by their respective maxima given M are more similar to each other than are their unnormalized counterparts.
+
+Contrary to the claim of Jost ( 2008 ), D does not eliminate all counterintuitive phenomena observed with F ST : we exhibit domains of M under which the maximal D is well below 1. One possible explanation of this discrepancy is that examples in Jost ( 2008 ) focused on cases with either many alleles or K  =   2 subpopulations, whereas we find strong constraints on D in the case of a biallelic marker and K  >   2. Moreover, despite the strong arguments of Jost ( 2008 ) about the importance of “mathematical misconceptions” underlying the construction of F ST , we find that F ST , urn:x-wiley:09621083:media:mec15000:mec15000-math-0170 , and D have similar behaviour once we account for their respective maximal values as functions of M . Note that because H T  = 2 M (1 −  M ) for biallelic markers, M uniquely specifies H T and H T uniquely specifies M ; thus, our results describing constraints on F ST , urn:x-wiley:09621083:media:mec15000:mec15000-math-0171 , and D as functions of M can also be viewed as constraints as functions of H T .
+
+Although urn:x-wiley:09621083:media:mec15000:mec15000-math-0172 and D are not constrained by the value of the within‐subpopulation heterozygosity H S , we have shown that both statistics are constrained by allele frequencies in other ways. It does not follow that a measure that has no constraints in terms of H S has no constraints at all; the differentiation measures that have been proposed to supplant F ST present some degree of constraint in terms of M or H T and are thus subject to analogous criticism. Possibly, any differentiation measure would possess some constraint. This result accords with the conclusion of Meirmans and Hedrick ( 2011 ) that a summary statistic unconstrained in relation to all aspects of allele frequencies probably does not exist.
+
+Focusing on the frequency M of the most frequent allele enables a coalescent interpretation of constraints on differentiation statistics. In a coalescent framework, for a locus at which alleles arise as unique mutations, fixing M corresponds to fixing the number of sampled lineages containing an allele, inducing a distribution of the time depth at which a mutation arose. Genetic differentiation statistics conditional on different values of M can then be viewed as examining constraints on differentiation for loci whose alleles have originated at different times. In this coalescent interpretation, normalization by the maximum value given M enables comparisons of the values of the statistics irrespective of the depth at which a mutation appeared in the gene tree. Thus, both the values of differentiation statistics conditionally on M and the values of those statistics normalized by their maxima given M are potentially useful in disentangling the relative impacts of ancient and recent evolutionary events on patterns of polymorphism. Note that this perspective is distinct from the usual coalescent‐based interpretation of Slatkin ( 1991 ), in which F ST statistics are computed in sequence regions rather than pointwise and have a more direct interpretation in relation to coalescence times.
+
+We found that the three differentiation measures have similar values when comparing pairs of subpopulations ( K  =   2) using biallelic loci. Indeed, both the mathematical constraints and the distributions generated by common biological processes produce similar values of F ST , urn:x-wiley:09621083:media:mec15000:mec15000-math-0173 , and D . Consequently, it appears that choosing one measure among the three is not very important when considering biallelic loci and performing pairwise population comparisons. This result contrasts with that of Table 1 of Jost ( 2008 ), which showed that F ST and D can give very different results when K  =   2, but considering multiallelic loci. Extending our results to the case of K  =   2 and multiallelic loci using the framework laid out in Jakobsson et al. ( 2013 ) and Edge & Rosenberg ( 2014 ) could potentially solve this apparent discrepancy that the statistics are similar when considering a biallelic locus and K  =   2 but different when considering a multiallelic locus and K  =   2.
+
+We highlight a trade‐off in the properties of differentiation statistics based on biallelic loci: D values are the least sensitive to the effect of the number of subpopulations K , but the most strongly constrained. Knowing this trade‐off can potentially help users choose among statistics. For example, if the goal is to compare differentiation among species with various distinct numbers of subpopulations, then D could be the most useful, whereas F ST and urn:x-wiley:09621083:media:mec15000:mec15000-math-0174 could be more suitable for providing a wider range of values in comparisons with the same value of K .
+
+Modified F ST statistics that incorporate the number of subpopulations have previously been suggested. In Supporting Information File S4 , we examine two alternative statistics, urn:x-wiley:09621083:media:mec15000:mec15000-math-0175 due to Nei ( 1987 ) and urn:x-wiley:09621083:media:mec15000:mec15000-math-0176 due to Meirmans and Hedrick ( 2011 ), designed as modified versions of F ST and urn:x-wiley:09621083:media:mec15000:mec15000-math-0177 , respectively, and both incorporating a factor dependent on the number of subpopulations. We show that urn:x-wiley:09621083:media:mec15000:mec15000-math-0178 and urn:x-wiley:09621083:media:mec15000:mec15000-math-0179 are constrained by the value of M similarly to F ST and urn:x-wiley:09621083:media:mec15000:mec15000-math-0180 , respectively, but to a slightly lesser degree (Supporting Information Figures S3–S5 ). These constraints are stronger if K  =   2, decreasing as K increases (Supporting Information Figure S2 ). Along with computations by Alcala and Rosenberg ( 2017 ) showing constraints on the Weir–Cockerham estimator θ (Weir & Cockerham, 1984 ) as a function of M , these results suggest that mathematical constraints on F ST ‐related statistics are pervasive, rather than features of particular formulations of the measure.
+
+As a first step in analyzing a dataset, similarly to the proposal from Wang ( 2015 ), we suggest evaluating F ST , urn:x-wiley:09621083:media:mec15000:mec15000-math-0181 , and D in relation to another statistic dependent on allele frequencies. This exploratory step ensures that dependencies among statistics are identified. In addition, we suggest displaying the maximal values of the statistics (Equations  9–11-9–11 ). Indeed, we showed that when correcting for the mathematical maximum in terms of M , all measures provide similar information. This result accords with that of Heller and Siegismund ( 2009 ), who found a strong correlation among empirically reported F ST , urn:x-wiley:09621083:media:mec15000:mec15000-math-0182 , and D values. Meirmans and Hedrick ( 2011 ) further highlighted theoretical connections among them, showing that urn:x-wiley:09621083:media:mec15000:mec15000-math-0183 . In agreement with their result, we found that maximal F ST and urn:x-wiley:09621083:media:mec15000:mec15000-math-0184 values are particularly close when K is large and when an allele is fixed in each subpopulation—producing H S  = 0. Meirmans and Hedrick ( 2011 ) also showed that urn:x-wiley:09621083:media:mec15000:mec15000-math-0185 , which accords with our result that the maximal D approaches H T when K is large, and the maximal urn:x-wiley:09621083:media:mec15000:mec15000-math-0186 approaches 1.
+
+F ST and other genetic differentiation statistics are often used to search for loci responsible for local adaptation. Following from the initial approach of Lewontin and Krakauer ( 1973 ), many tests compute the distribution of F ST in a set of genotyped loci and consider loci with F ST values above a threshold as candidates for local adaptation (see e.g., OutFLANK, Whitlock & Lotterhos, 2015 for a modern implementation). F ST bounds in terms of M demonstrate that if such methods do not account for the frequency of the most frequent allele, certain loci will be undetectable even if they contribute to local adaptation: irrespective of the threshold chosen, there exist large M values for which the upper bound on F ST lies below the threshold.
+
+Some outlier studies of adaptation eliminate loci from consideration based on a cutoff such as M  =   0.95 (Whitlock & Lotterhos, 2015 ). Because the value of M above which associated F ST values necessarily lie below a threshold F threshold depends on F threshold , depending on the threshold and the cutoff for M , filtering loci according to a cutoff for M could either eliminate loci for which F ST outliers could potentially be detected or retain loci for which F ST outliers could never be detected. Importantly, because of their similar behavior in relation to M , urn:x-wiley:09621083:media:mec15000:mec15000-math-0187 and D would have the same limitation.
+
+In this context, normalizing the differentiation statistic of interest by its maximum given M could produce a measure that does not have the limitation that some loci would be undetectable by outlier tests. However, because the variability of the statistic across loci depends on M , such a normalization would inflate the variance of the statistic, potentially interfering with the ability of outlier tests to identify the loci of greatest interest. By contrast, methods that consider the joint distribution of differentiation statistics such as F ST and other variables, such as heterozygosity statistics (Beaumont & Nichols, 1996 ), potentially avoid this concern.
+
+The process by which we assess the position of F ST , urn:x-wiley:09621083:media:mec15000:mec15000-math-0188 , and D values between their minimal and maximal values—computing the ratio of the values of each differentiation measure to a maximum value given a variable (here M )—is similar to the derivation of standardized differentiation statistics (Hedrick, 1999 , 2005 ; Meirmans, 2006 ). This result shows that we can perform other kinds of standardizations, by the maximum value of the statistics given M rather than by the maximum given H S . Our work refines the classification of differentiation statistics from Meirmans and Hedrick ( 2011 ), which included three classes— F statistics, standardized statistics such as urn:x-wiley:09621083:media:mec15000:mec15000-math-0189 , and D ‐like statistics—making standardized statistics based on H S a subclass among a plethora of other possible standardizations, each of which would lead to specific behaviours. Because summary statistics unconstrained in relation to all potentially interesting aspects of allele frequencies probably do not exist, however, we caution that sequentially multiplying normalizations might not be the best approach to understand genetic differentiation. Rather, plotting observations of a genetic differentiation statistic as a function of a variable of interest such as M , as in Figures  3–7 - 3–7 , while highlighting the maximal values of the statistic, enables an enlightened interpretation. If a normalization is desired, performing a normalization of F ST by its maximum value given M provides results similar to those obtained by normalizing urn:x-wiley:09621083:media:mec15000:mec15000-math-0190 , which is already normalized by its maximum value given H S .
+
+We used normalization to show that taking into account the maximal values of the three statistics, they are similarly affected by migration. Under the island model of migration and considering a multiallelic locus with an infinite alleles mutation model, Whitlock ( 2011 ) and Alcala, Goudet, and Vuilleumier ( 2014 ) found that for a fixed value of the migration rate, unnormalized values of F ST , urn:x-wiley:09621083:media:mec15000:mec15000-math-0191 , and D can be very different. We confirmed these results under the same migration model but using a biallelic infinite sites mutation model. Nevertheless, we showed that normalized statistics are strikingly similarly affected by migration. Finding such strong similarities rather than differences among the three statistics is a first step to reconcile their results, emphasizing that the different measures have more features in common than might be apparent from the existence of strong arguments in favour of one or another among them.
+ACKNOWLEDGEMENTS
+
+We thank the editor Nick Barton and two anonymous reviewers for their comments. We acknowledge NIH grant HG005855 and Swiss National Science Foundation Early postdoc.mobility grant P2LAP3_161869 for support.
+
+AUTHOR CONTRIBUTION
+
+NA and NAR jointly designed and performed the research and wrote the paper. NA performed the simulations and the data analysis.
+DATA ACCESSIBILITY
+
+The two datasets used in the paper are publicly available; see the original publications of those data (Bourret et al., 2013 ; Cronin et al., 2015 ). The MS commands used for the simulations appear in Supporting Information File S3 .
+APPENDIX A
+The minimal values of urn:x-wiley:09621083:media:mec15000:mec15000-math-0192 and D
+
+In this appendix, we show that the only allelic configuration for which urn:x-wiley:09621083:media:mec15000:mec15000-math-0193 is p 1  =  p 2  = … =  p K  =  M . This configuration is also the only configuration for which D  =   0.
+
+From Equation  7 , urn:x-wiley:09621083:media:mec15000:mec15000-math-0194 if and only if either K  − 1 +  H S  =  K  − 1   − 2 S  + 2 M  = 0 or K ( S  −  M 2 ) = 0. Because H S  ≥ 0 and K  >   1, K  − 1 +  H S  ≥  K  − 1 > 0. From Alcala and Rosenberg ( 2017 , “Lower bound’’ subsection), K ( S  −  M 2 ) = 0 if and only if p k   =  M in all subpopulations k . Similarly, from Equation  8 , D  =   0 if and only if K ( S  − M 2 ) = 0.
+
+Consequently, p 1  =  p 2  = … =  p K  =  M is the only allele frequency vector that yields urn:x-wiley:09621083:media:mec15000:mec15000-math-0195 and the only vector that yields D  =   0; this configuration can be reached for all M ∊ [1/2, 1). Because from Alcala and Rosenberg ( 2017 , “Lower bound’’ subsection), p 1  =  p 2  = … =  p K  =  M is also the only configuration that yields F ST  = 0, we can conclude that the minimal values of F ST , urn:x-wiley:09621083:media:mec15000:mec15000-math-0196 , and D are the same and equal to 0 irrespective of M , for any value of the number of subpopulations K .
+APPENDIX B
+urn:x-wiley:09621083:media:mec15000:mec15000-math-0197 and D as functions of S
+
+In this appendix, we show that both urn:x-wiley:09621083:media:mec15000:mec15000-math-0198 (Equation  2 ) and D (Equation  3 ) are increasing functions of urn:x-wiley:09621083:media:mec15000:mec15000-math-0199 , with p k  ∊ [0, 1] for all k .
+
+We take the derivatives of Equations  7 and 8 with respect to S :
+urn:x-wiley:09621083:media:mec15000:mec15000-math-0200 (B1)
+urn:x-wiley:09621083:media:mec15000:mec15000-math-0201 (B2)
+
+The denominator in Equation  B1 is positive because 1 + 2 S  − 2 M  = 1   −  H S  > 0 (using Equation  4 ). The sign of urn:x-wiley:09621083:media:mec15000:mec15000-math-0202 is therefore determined by the sign of its numerator. Because from Equation  5 , H T  = 2 M (1   −  M ), the numerator of Equation  B1 is
+urn:x-wiley:09621083:media:mec15000:mec15000-math-0203 (B3)
+
+From Hedrick ( 2005 , p. 1634), H T  ≤ ( H S  +  K  − 1)/ K and hence 1   −  H T  ≥ (1   −  H S )/ K , equality requiring that each allele be present only in a single subpopulation. Thus, K (1   −  H T ) ≥ 1   −  H S . Because 0 ≤  H S  < 1, we also have H S (1   −  H S ) ≥ 0, equality requiring H S  = 0. Consequently, Equation  B3 is nonnegative, as is the numerator of urn:x-wiley:09621083:media:mec15000:mec15000-math-0204 . We conclude that urn:x-wiley:09621083:media:mec15000:mec15000-math-0205 is nonnegative, with equality possible only at the point S  =  M , and that urn:x-wiley:09621083:media:mec15000:mec15000-math-0206 is an increasing function of S .
+
+The denominator in Equation  B2 is also positive, so the sign of dD / dS is determined by the sign of its numerator. The numerator equals 2 K (1   −  H T ) and hence is positive, as 0 <  H T  < 1 for polymorphic loci. Consequently, dD / dS is positive, and we conclude that D is an increasing function of S .
+APPENDIX C
+Upper bounds for the case of K  =   2
+
+In the case of K  =   2, because 1/2 ≤  M  < 1, urn:x-wiley:09621083:media:mec15000:mec15000-math-0207 , and urn:x-wiley:09621083:media:mec15000:mec15000-math-0208 . Equations  9–11-9–11 then simplify:
+urn:x-wiley:09621083:media:mec15000:mec15000-math-0209 (C1)
+urn:x-wiley:09621083:media:mec15000:mec15000-math-0210 (C2)
+urn:x-wiley:09621083:media:mec15000:mec15000-math-0211 (C3)
+
+Denoting the upper bounds in Equations  9–11-9–11 by F *( M ), G *( M ), and D *( M ), respectively, for the case of K  =   2, Equations  C1–C3-C1–C3 give
+urn:x-wiley:09621083:media:mec15000:mec15000-math-0212 (C4)
+urn:x-wiley:09621083:media:mec15000:mec15000-math-0213 (C5)
+urn:x-wiley:09621083:media:mec15000:mec15000-math-0214 (C6)
+
+The denominator in Equations  C4–C6-C4–C6 is positive in the permissible range for M , as 4 M 2   − 6 M  + 3 has no real roots. We can then observe that G *( M ) ≥  F *( M ) and G *( M ) ≥  D *( M ), with equality in both cases if and only if M  =   1/2. We also have F *( M ) <  D *( M ) for 1/2 <  M  <   3/4, F *( M ) >  D *( M ) for 3/4 <  M  <   1, and F *( M ) =  D *( M ) for M  =   1/2 and M  =   3/4.
+APPENDIX D
+Normalized mean urn:x-wiley:09621083:media:mec15000:mec15000-math-0215 and D
+
+This appendix provides the formulas to compute the normalized means, urn:x-wiley:09621083:media:mec15000:mec15000-math-0216 and urn:x-wiley:09621083:media:mec15000:mec15000-math-0217 , used in Figures  5–7 - 5–7 .
+
+Given a set of Z loci, we denote by urn:x-wiley:09621083:media:mec15000:mec15000-math-0218 , D z , and M z the values of urn:x-wiley:09621083:media:mec15000:mec15000-math-0219 , D , and M at locus z . The mean urn:x-wiley:09621083:media:mec15000:mec15000-math-0220 and D for the set, denoted by urn:x-wiley:09621083:media:mec15000:mec15000-math-0221 and urn:x-wiley:09621083:media:mec15000:mec15000-math-0222 , are
+urn:x-wiley:09621083:media:mec15000:mec15000-math-0223 (D1)
+urn:x-wiley:09621083:media:mec15000:mec15000-math-0224 (D2)
+
+From Equations  10 and 11 , the corresponding mean maximal values given the observed M z at the Z loci are denoted by urn:x-wiley:09621083:media:mec15000:mec15000-math-0225 and urn:x-wiley:09621083:media:mec15000:mec15000-math-0226 :
+urn:x-wiley:09621083:media:mec15000:mec15000-math-0227 (D3)
+urn:x-wiley:09621083:media:mec15000:mec15000-math-0228 (D4)
+
+Supporting Information
+Filename 	Description
+mec15000-sup-0001-Supinfo.pdf PDF document, 980.9 KB 	 
+
+Please note: The publisher is not responsible for the content or functionality of any supporting information supplied by the authors. Any queries (other than missing content) should be directed to the corresponding author for the article.
+REFERENCES
+
+    Alcala, N. , Goudet, J. , & Vuilleumier, S. ( 2014 ). On the transition of genetic differentiation from isolation to panmixia: What we can learn from G ST and D . Theoretical Population Biology , 93 , 75 – 84 . https://doi.org/10.1016/j.tpb.2014.02.003
+    Crossref PubMed Web of Science® Google Scholar
+    Alcala, N. , & Rosenberg, N. A. ( 2017 ). Mathematical constraints on F ST : Biallelic markers in arbitrarily many populations . Genetics , 206 , 1581 – 1600 . https://doi.org/10.1534/genetics.116.199141
+    Crossref PubMed Web of Science® Google Scholar
+    Balloux, F. , Brünner, H. , Lugon‐Moulin, N. , Hausser, J. , & Goudet, J. ( 2000 ). Microsatellites can be misleading: An empirical and simulation study . Evolution , 54 , 1414 – 1422 . https://doi.org/10.1111/j.0014-3820.2000.tb00573.x
+    Wiley Online Library CAS PubMed Web of Science® Google Scholar
+    Beaumont, M. A. , & Nichols, R. A. ( 1996 ). Evaluating loci for use in the genetic analysis of population structure . Proceedings of the Royal Society of London. Series B: Biological Sciences , 263 , 1619 – 1626 .
+    Crossref CAS Web of Science® Google Scholar
+    Bourret, V. , Kent, M. P. , Primmer, C. R. , Vasemägi, A. , Karlsson, S. , Hindar, K. , … Lien, S. ( 2013 ). SNP‐array reveals genome‐wide patterns of geographical and potential adaptive divergence across the natural range of Atlantic salmon ( Salmo salar ) . Molecular Ecology , 22 , 532 – 551 . https://doi.org/10.1111/mec.12003
+    Wiley Online Library CAS PubMed Web of Science® Google Scholar
+    Cronin, M. A. , Cánovas, A. , Bannasch, D. L. , Oberbauer, A. M. , & Medrano, J. F. ( 2015 ). Single nucleotide polymorphism (SNP) variation of wolves ( Canis lupus ) in southeast Alaska and comparison with wolves, dogs, and coyotes in North America . Journal of Heredity , 106 , 26 – 36 . https://doi.org/10.1093/jhered/esu075
+    Crossref CAS PubMed Web of Science® Google Scholar
+    Edge, M. D. , & Rosenberg, N. A. ( 2014 ). Upper bounds on F ST in terms of the frequency of the most frequent allele and total homozygosity: The case of a specified number of alleles . Theoretical Population Biology , 97 , 20 – 34 . https://doi.org/10.1016/j.tpb.2014.08.001
+    Crossref PubMed Web of Science® Google Scholar
+    Frankham, R. , Ballou, J. D. , & Briscoe, D. A. ( 2002 ). Introduction to conservation genetics . Cambridge, UK : Cambridge University Press. https://doi.org/10.1017/CBO9780511808999
+    Wiley Online Library Google Scholar
+    Hedrick, P. W. ( 1999 ). Highly variable loci and their interpretation in evolution and conservation . Evolution , 53 , 313 – 318 . https://doi.org/10.1111/j.1558-5646.1999.tb03767.x
+    Wiley Online Library PubMed Web of Science® Google Scholar
+    Hedrick, P. W. ( 2005 ). A standardized genetic differentiation measure . Evolution , 59 , 1633 – 1638 . https://doi.org/10.1111/j.0014-3820.2005.tb01814.x
+    Wiley Online Library CAS PubMed Web of Science® Google Scholar
+    Hedrick, P. W. , & Kalinowski, S. T. ( 2000 ). Inbreeding depression in conservation biology . Annual Review of Ecology and Systematics , 31 , 139 – 162 . https://doi.org/10.1146/annurev.ecolsys.31.1.139
+    Crossref PubMed Web of Science® Google Scholar
+    Heller, R. , & Siegismund, H. R. ( 2009 ). Relationship between three measures of genetic differentiation G ST , D EST and G’ ST : How wrong have we been? Molecular Ecology , 18 , 2080 – 2083 . https://doi.org/10.1111/j.1365-294X.2009.04185.x
+    Wiley Online Library CAS PubMed Web of Science® Google Scholar
+    Hudson, R. R. ( 2002 ). Generating samples under a Wright‐Fisher neutral model of genetic variation . Bioinformatics , 18 , 337 – 338 . https://doi.org/10.1093/bioinformatics/18.2.337
+    Crossref CAS PubMed Web of Science® Google Scholar
+    Jakobsson, M. , Edge, M. D. , & Rosenberg, N. A. ( 2013 ). The relationship between F ST and the frequency of the most frequent allele . Genetics , 193 , 515 – 528 . https://doi.org/10.1534/genetics.112.144758
+    Crossref PubMed Web of Science® Google Scholar
+    Jost, L. ( 2008 ). G ST and its relatives do not measure differentiation . Molecular Ecology , 17 , 4015 – 4026 . https://doi.org/10.1111/j.1365-294X.2008.03887.x
+    Wiley Online Library PubMed Web of Science® Google Scholar
+    Lewontin, R. , & Krakauer, J. ( 1973 ). Distribution of gene frequency as a test of the theory of the selective neutrality of polymorphisms . Genetics , 74 , 175 – 195 .
+    Wiley Online Library CAS PubMed Web of Science® Google Scholar
+    Long, J. C. , & Kittles, R. A. ( 2003 ). Human genetic diversity and the nonexistence of biological races . Human Biology , 75 , 449 – 471 . https://doi.org/10.1353/hub.2003.0058
+    Crossref PubMed Web of Science® Google Scholar
+    Maruki, T. , Kumar, S. , & Kim, Y. ( 2012 ). Purifying selection modulates the estimates of population differentiation and confounds genome‐wide comparisons across single‐nucleotide polymorphisms . Molecular Biology and Evolution , 29 , 3617 – 3623 . https://doi.org/10.1093/molbev/mss187
+    Crossref CAS PubMed Web of Science® Google Scholar
+    Maruyama, T. ( 1970 ). Effective number of alleles in a subdivided population . Theoretical Population Biology , 1 , 273 – 306 . https://doi.org/10.1016/0040-5809(70)90047-X
+    Crossref CAS PubMed Google Scholar
+    Meirmans, P. G. ( 2006 ). Using the AMOVA framework to estimate a standardized genetic differentiation measure . Evolution , 60 , 2399 – 2402 . https://doi.org/10.1554/05-631.1
+    Wiley Online Library PubMed Web of Science® Google Scholar
+    Meirmans, P. G. , & Hedrick, P. W. ( 2011 ). Assessing population structure: F ST and related measures . Molecular Ecology Resources , 11 , 5 – 18 . https://doi.org/10.1111/j.1755-0998.2010.02927.x
+    Wiley Online Library PubMed Web of Science® Google Scholar
+    Nei, M. ( 1973 ). Analysis of gene diversity in subdivided populations . Proceedings of the National Academy of Sciences of the United States of America , 70 , 3321 – 3323 . https://doi.org/10.1073/pnas.70.12.3321
+    Crossref CAS PubMed Web of Science® Google Scholar
+    Nei, M. ( 1986 ). Definition and estimation of fixation indices . Evolution , 40 , 643 – 645 . https://doi.org/10.1111/j.1558-5646.1986.tb00516.x
+    Wiley Online Library PubMed Web of Science® Google Scholar
+    Nei, M. ( 1987 ). Molecular evolutionary genetics . New York, NY : Columbia University Press.
+    Wiley Online Library Google Scholar
+    Rosenberg, N. A. , & Calabrese, P. P. ( 2004 ). Polyploid and multilocus extensions of the Wahlund inequality . Theoretical Population Biology , 66 , 381 – 391 . https://doi.org/10.1016/j.tpb.2004.07.001
+    Crossref PubMed Web of Science® Google Scholar
+    Rosenberg, N. A. , Li, L. M. , Ward, R. , & Pritchard, J. K. ( 2003 ). Informativeness of genetic markers for inference of ancestry . American Journal of Human Genetics , 73 , 1402 – 1422 . https://doi.org/10.1086/380416
+    Wiley Online Library CAS PubMed Web of Science® Google Scholar
+    Slatkin, M. ( 1991 ). Inbreeding coefficients and coalescence times . Genetical Research , 58 , 167 – 175 . https://doi.org/10.1017/S0016672300029827
+    Crossref CAS PubMed Web of Science® Google Scholar
+    Slatkin, M. ( 1993 ). Isolation by distance in equilibrium and non‐equilibrium populations . Evolution , 47 , 264 – 279 . https://doi.org/10.1111/j.1558-5646.1993.tb01215.x
+    Wiley Online Library PubMed Web of Science® Google Scholar
+    Wahlund, S. ( 1928 ). Zusammensetzung von populationen und korrelationserscheinungen vom standpunkt der vererbungslehre aus betrachtet . Hereditas , 11 , 65 – 106 .
+    Wiley Online Library Web of Science® Google Scholar
+    Wakeley, J. ( 1998 ). Segregating sites in Wright's island model . Theoretical Population Biology , 53 , 166 – 174 . https://doi.org/10.1006/tpbi.1997.1355
+    Crossref CAS PubMed Web of Science® Google Scholar
+    Wang, J. ( 2015 ). Does G ST underestimate genetic differentiation from marker data? Molecular Ecology , 24 , 3546 – 3558 . https://doi.org/10.1111/mec.13204
+    Wiley Online Library CAS PubMed Web of Science® Google Scholar
+    Weir, B. S. , & Cockerham, C. C. ( 1984 ). Estimating F‐statistics for the analysis of population structure . Evolution , 38 , 1358 – 1370 .
+    Wiley Online Library CAS PubMed Web of Science® Google Scholar
+    Whitlock, M. C. ( 2011 ). G ’ ST and D do not replace F ST . Molecular Ecology , 20 , 1083 – 1091 . https://doi.org/10.1111/j.1365-294X.2010.04996.x
+    Wiley Online Library PubMed Web of Science® Google Scholar
+    Whitlock, M. C. ( 2015 ). A clever solution to a vexing problem . Molecular Ecology , 24 , 3513 – 3514 . https://doi.org/10.1111/mec.13280
+    Wiley Online Library PubMed Web of Science® Google Scholar
+    Whitlock, M. C. , & Lotterhos, K. E. ( 2015 ). Reliable detection of loci responsible for local adaptation: Inference of a null model through trimming the distribution of F * ST . American Naturalist , 186 , S24 – S36 . https://doi.org/10.1086/682949
+    Crossref PubMed Web of Science® Google Scholar
+    Wright, S. ( 1951 ). The genetical structure of populations . Annals of Eugenics , 15 , 323 – 354 .
+    Wiley Online Library CAS PubMed Google Scholar
+    Wright, S., ( 1978 ). Evolution and the genetics of populations, volume 4: Variability within and among natural populations . Chicago, IL : University of Chicago Press.
+    Google Scholar
+
+Citing Literature
+Publication cover image
+
+Volume 28 , Issue 7
+
+April 2019
+
+Pages 1624-1636
+
+    Figures
+    References
+    Related
+    Information
+
+    Metrics
+    Citations: 1
+    Details
+
+    © 2019 John Wiley & Sons Ltd
+
+    Keywords
+        allele frequency
+        gene flow
+        genetic differentiation
+        migration
+        population structure
+    Funding Information
+        Swiss National Science Foundation. Grant Number: P2LAP3_161869
+        National Institutes of Health. Grant Number: HG005855
+    Publication History
+        Issue Online: 29 April 2019
+        Version of Record online: 29 April 2019
+        Accepted manuscript online: 27 December 2018
+        Manuscript accepted: 17 December 2018
+        Manuscript revised: 11 December 2018
+        Manuscript received: 07 May 2018
+
+Close Figure Viewer
+Browse All Figures Return to Figure
+Previous Figure Next Figure
+Caption
+back
+Additional links
+About Wiley Online Library
+
+    Privacy Policy
+    Terms of Use
+    Cookies
+    Accessibility
+
+Help & Support
+
+    Contact Us
+
+Opportunities
+
+    Subscription Agents
+    Advertisers & Corporate Partners
+
+Connect with Wiley
+
+    The Wiley Network
+    Wiley Press Room
+
+Copyright © 1999-2020 John Wiley & Sons, Inc . All rights reserved
+Wiley Home Page
+
+The full text of this article hosted at iucr.org is unavailable due to technical difficulties.
+Log in to Wiley Online Library
+Email or Customer ID
+Password
+Forgot password?
+NEW USER > INSTITUTIONAL LOGIN >
+Change Password
+Old Password
+New Password
+Too Short Weak Medium Strong Very Strong Too Long
+Password Changed Successfully
+
+Your password has been changed
+Create a new account
+Email or Customer ID
+Returning user
+Forgot your password?
+
+Enter your email address below.
+Email or Customer ID
+
+"Please check your email for instructions on resetting your password. If you do not receive an email within 10 minutes, your email address may not be registered, and you may need to create a new Wiley Online Library account.
+Request Username
+
+Can't sign in? Forgot your username?
+
+Enter your email address below and we will send you your username
+Email or Customer ID
+Close
+
+If the address matches an existing account you will receive an email with instructions to retrieve your username
+Close crossmark popup
+

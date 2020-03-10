@@ -1,0 +1,62 @@
+Skip to main content Skip to article
+Elsevier logo ScienceDirect
+
+    Journals & Books
+
+Create account Sign in
+
+Sign in Create account
+
+    Journals & Books
+
+    Help
+
+ 
+Download PDF Download
+Share
+Export
+Advanced
+JavaScript is disabled on your browser. Please enable JavaScript to use all the features on this page.
+Elsevier
+Forensic Science International: Genetics Supplement Series
+Volume 6 , December 2017, Pages e407-e409
+Forensic Science International: Genetics Supplement Series
+Kpop: A Python package for population genetics analysis
+Author links open overlay panel F.M. Mendes a C.C. Gontijo b
+Show more
+https://doi.org/10.1016/j.fsigss.2017.09.159 Get rights and content
+Abstract
+
+Kpop is an open source Python package that detects population structure from biallelic data. It implements its own maximum-likelihood routine to estimate admixture coefficients and provides interfaces to run analysis from Structure [1] , ADMIXTURE [2] and Plink. Kpop also simulates population dynamics, including a few different models for hybridization and genetic drift. This unified framework makes it convenient to assess how different histories of hybridization and isolation can produce certain patterns of population structure. Kpop integrates Scikit-Learn [3] , and Tensorflow [4] packages that provide state-of-the-art implementations of machine learning (ML) algorithms in Python. While some techniques are widely used by the forensic genetics community (e.g., PCA, for dimensionality reduction), other techniques with similar objectives are not so common (e.g., t-distributed Stochastic Neighbor Embedding [5] ).
+
+    Previous article in issue
+    Next article in issue
+
+Keywords
+Population genetics
+Bioinformatics
+Machine learning
+Python
+Forensic genetics
+Loading...
+Recommended articles Citing articles (0)
+© 2017 Elsevier B.V. All rights reserved.
+Recommended articles
+Loading...
+Citing articles
+Loading…
+Article Metrics
+View article metrics
+Elsevier
+
+    About ScienceDirect
+    Remote access
+    Shopping cart
+    Advertise
+    Contact and support
+    Terms and conditions
+    Privacy policy
+
+We use cookies to help provide and enhance our service and tailor content and ads. By continuing you agree to the use of cookies .
+
+Copyright © 2019 Elsevier B.V. or its licensors or contributors. ScienceDirect ® is a registered trademark of Elsevier B.V.

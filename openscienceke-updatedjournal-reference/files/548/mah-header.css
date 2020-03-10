@@ -1,0 +1,147 @@
+/* body {
+    margin: 0 0 1px;
+    text-align: center;
+} */
+img {
+    border: 0 none;
+}
+#content {
+    text-align: left;
+    width: 950px;
+}
+#quicklinks {
+    height: 70px;
+    padding-top: 6px;
+    text-align: right;
+    width: 950px;
+}
+#quicklinks ul {
+    display: inline;
+    font-size: 12px;
+    height: 85px;
+    list-style: none outside none;
+    margin: 0;
+    padding: 0 10px 0 0;
+    text-align: right;
+    text-transform: uppercase;
+}
+#quicklinks li {
+    display: inline;
+    margin: 10px;
+    padding: 0;
+}
+#quicklinks a {
+    color: #6E6E6E;
+    font-family: 'FuturaBT-Medium',Arial,Helvetica,Tahoma,sans-serif;
+    line-height: 2em;
+    text-decoration: underline;
+}
+#quicklinks a:hover {
+    border-color: #6E6E6E;
+    color: #333333;
+}
+#quicklinks .press {
+    border-right: 1px solid #6D6D6D;
+    padding-right: 21px;
+}
+#header {
+/*    background: none repeat scroll 0 0 #4B4B4B; */
+    background: none repeat scroll 0 0 #000;
+    height: 54px;
+    font-size: 12px;
+    margin-top: -16px; /* HACK */
+}
+#header_links {
+    display: inline;
+    float: left;
+    height: 54px;
+    padding: 0 0 0 142px;
+    /* width: 595px; */
+}
+#header_links a {
+    color: #FFFFFF;
+}
+#header_links ul {
+    list-style: none outside none;
+    margin: 0 0 0 10px;
+    padding: 0;
+}
+#header_links ul li {
+    display: inline;
+    float: left;
+    margin: 0;
+    padding: 0;
+}
+#header_links a {
+    display: block;
+    float: left;
+    font-size: 13px;
+    letter-spacing: -0.55px;
+    line-height: 50px;
+    padding: 0.35em 0.8em 0;
+    text-decoration: none;
+    text-transform: uppercase;
+}
+#intro {
+    background: none repeat scroll 0 0 #FFFFFF;
+    clear: both;
+    margin: 0;
+    min-height: 60px;
+    position: relative;
+}
+#ornament{
+    float: right;
+    margin-top: -98px;
+    margin-right: 30px;
+}
+#intro_logo {
+    box-shadow: 0px 2px 5px #ccc;
+    left: 10px;
+    position: absolute;
+    top: -140px;
+    z-index: 999;
+}
+#intro_image {
+    float: right;
+    height: 150px;
+    width: 780px;
+}
+#header_print {
+    display: none;
+}
+#dropdown .first a {
+    font-family: 'FuturaBT-Medium', Arial, Helvetica, Tahoma, sans-serif;
+    padding-top: 0.2em;
+    font-size: 22px;
+}
+#bread-crumbs {
+    font-family: Arial, Helvetica, Tahoma, sans-serif;
+    font-size: 13px;
+    margin: 10px 10px 0 150px;
+    padding: 5px;
+    /* float: left; HACK bort */
+    color: black;
+}
+#bread-crumbs em {
+    font-style: normal;
+    font-size: 15px;
+}
+.root #bread-crumbs {
+    display: none;
+}
+#bread-crumbs a,
+#bread-crumbs a:link,
+#bread-crumbs a:visited {
+    color: #ae0817;
+    text-decoration: none;
+}
+#bread-crumbs a:hover {
+    color: #ae0817;
+    text-decoration: underline;
+}
+#bread-crumbs span,
+#bread-crumbs a {
+    /*font-weight: bold;*/
+    background-color: #f8f8f8;
+    padding: 3px;
+}

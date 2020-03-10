@@ -1,0 +1,371 @@
+@charset "utf-8";
+/*
+-----------------------------------------------
+ir-print.css  : bepress IR print stylesheet
+Author:   Zane Mattingly
+Version:  30 June 2010
+PLEASE DO NOT CHANGE THIS FILE 
+----------------------------------------------- 
+This is the set of print rules needed for bepress IR sites.
+----------------------------------------------- */
+
+body {
+	background: white;
+	font:12px/16px Arial, Verdana, Helvetica, sans-serif;
+	margin:0 3%;
+	text-align:left;
+	width: auto !important;
+	color:#000;
+	padding:0;}
+
+#printlogo { 
+	margin:0;
+	padding:0; }
+
+#pagetitle {
+	padding-bottom:25px; }
+
+table { 
+	width:100%; 
+	margin:0 auto 15px; }
+
+/* =SPECIAL DISPLAY/UTILITY RULES
+---------------------------------*/
+
+.skiplink, .divider,
+#logo, #tabs, #sidebar, #news, #footer,
+#breadcrumb,
+#pager,
+  .crumbs,
+  .crumbs p a,
+#beta,
+#info-box,
+  p.pdf,
+  p.pdf a,
+  .more,
+  .top,
+  table.form-table,
+  a#download,
+  a#send,
+  a#print,
+  p.external
+p.bookmark,
+  p.bookmark a,
+.pagination,
+.ignore {
+	display: none !important; }
+
+.ignore.visible {
+	display:inline !important;}
+
+.clear { 
+	height:2px;
+	width:auto !important;
+	clear:both; }
+
+#printWarning {
+	font-size:20px;
+	line-height:24px;
+	font-weight:bold; }
+
+/* =TYPOGRAPHY
+---------------------------------*/
+
+h1 { 
+	font:20px/24px Georgia, "Times New Roman", Times, serif;
+	color:#000;
+	text-align:left;
+	font-weight:normal;
+	border-bottom:1px solid #000; }
+
+#pagetitle h1,
+#pagetitle h1 a,
+#header h6,
+#header h6 a {  
+	font:28px/28px Georgia, "Times New Roman", Times, serif;
+	color:#000;
+	text-decoration:none;
+	text-align:left;
+	font-weight:normal;
+	border:0;
+	padding:0;
+	margin:0; }
+
+h2,
+#series-home h4,
+#alpha h4,
+.related strong { 
+	font:16px/22px Georgia, "Times New Roman", Times, serif;
+	color:#000;
+	text-align:left;
+	font-weight:bold;
+	border:0; }
+
+#series-home h4,
+#alpha h4,
+.related strong  {
+	margin:10px 0 0; }
+
+h2#series-title {
+	text-transform:uppercase;
+	margin:20px 0; }
+
+h3,
+#pagetitle h4  { 
+	font:14px/14px Georgia, "Times New Roman", Times, serif;
+	padding:0;
+	color:#000;
+	font-weight:bold; }
+
+#pagetitle h4 { 
+	font-style:italic;}
+
+h3 { 
+	padding-top:10px;
+	text-transform:uppercase; }
+
+h4 {
+	font:12px/16px Georgia, "Times New Roman", Times, serif;
+	color:#000; 
+	font-weight:normal;
+	padding:0; }
+
+p, 
+pre, 
+td { 
+	padding:5px 0; 
+	text-align:left;
+	width: auto !important;
+	page-break-inside: avoid !important; }
+
+p { 
+	font:14px/16px Arial, Verdana, Helvetica, sans-serif; }
+
+/* =LINKS
+---------------------------------*/
+
+a { 
+	font-weight:normal;
+	text-decoration:underline; 
+	color:#000;
+	margin-right:5px;}
+
+/* footnoteLinks.js Rules */
+
+html.noted a:link:after,
+html.noted a:visited:after {
+	content: ''; }
+
+	a:link:after,
+	a:visited:after {
+		content: " (" attr(href) ") ";
+		font-size: 90%; }
+
+	html.noted a:link:after,
+	html.noted a:visited:after {
+		wrapper: ''; }
+
+/* Avoid Disciplines and Author Browse Generated HREF Content */
+
+.discobrowser a:link:after,
+.discobrowser a:visited:after,
+.authorbrowser a:link:after,
+.authorbrowser a:visited:after {
+	content: '';}
+
+/* =LAYOUT
+---------------------------------*/
+
+div  {
+	margin: 0;
+	text-align:left; 
+	width: auto !important; }
+
+#printfooter {
+	margin:20px auto;
+	border-top:1px dotted gray;
+	border-bottom:1px dotted gray; }
+
+#printfooter p {
+	line-height:18px;
+	text-align:left;
+	padding:10px;}
+
+#printfooter p strong {
+	font-variant:small-caps;
+	letter-spacing:2px;
+	margin-right:20px; }
+
+/* =REPOSITORY INDEX
+---------------------------------*/
+
+.box p a, .box p a span { 
+	display:block; }
+
+#stats span { 
+	display:block;
+	margin:5px 0; }
+
+/* =DISCIPLINES
+---------------------------------*/
+
+.disc1,.disc2,.disc3 {
+	display:block;
+	margin:0;
+	padding:0; }
+	
+.disc1 {
+	margin:8px 0 4px;
+	padding:5px 0; }
+	
+.disc2 {
+	line-height:1.3em;
+	margin:8px 0 8px 16px;
+	padding:0; }
+	
+.disc3 {
+	margin-left:32px; }
+
+/* =SW GALLERY
+---------------------------------*/
+
+#sw-gallery .profile {
+        margin: 10px;
+        padding:4px;
+        text-align:left; 
+        clear:both;}
+
+#sw-gallery .profile-top {
+        padding: 8px;  }
+
+#sw-gallery .thumb	{
+        margin:0 8px 0 0;
+        float:left;
+        padding:5px 2px;
+        width: 72px;
+        height: 118px;
+        text-align: center;  }
+
+#sw-gallery .thumb .visit-site,
+#sw-gallery .thumb sup.printOnly { display:none !important; }
+
+#sw-gallery img.photo {
+        height:96px;
+        width:72px; 
+        margin: 0px auto;
+        padding:0; }
+
+#sw-gallery .inst,
+#sw-gallery .expert {
+        padding-left:80px;
+        padding:8px 0;
+        font-weight:normal; 
+        font-size:11px;
+        line-height:12px; }
+
+/* =ARTICLE INDEX
+---------------------------------*/
+
+#alpha #abstract_format,
+#alpha #wf_areyouuploadingaf1,
+  #alpha #geolocate,
+  #latitude-h,
+  #longitude-h {
+  	display:none; }
+
+#alpha .element { 
+	page-break-inside:avoid !important; }
+
+#alpha #title p {
+	font:16px/18px Arial, Verdana, Helvetica, sans-serif;
+	font-weight:bold; }
+
+#alpha #authors a { 
+	text-decoration:none; }
+
+p.comments {
+	font-size:11px;
+	line-height:14px;
+	color:#808080;
+	margin-top:20px;}
+
+.authors {
+	padding:20px 0;
+	text-align:left; }
+        
+/* =IR GALLERY
+---------------------------------*/
+
+#gallery .thumb {
+	display:block;
+	margin:20px 0px;
+	clear:left;}
+
+/* Links */
+#gallery .thumbnails,
+#gallery a:link:after,
+#gallery a:visited:after {
+	display:none !important;}
+
+/* =IR EVENT COMMUNITY
+---------------------------------*/
+
+table.vcalendar  {
+	border-collapse:collapse;
+	width:100%;
+	margin-top:20px; }
+
+.vcalendar thead,
+.vcalendar tfoot {
+	display: table-header-group; }
+
+.vcalendar th,
+.vcalendar td {
+	border-bottom:1px solid #CEDAEB;
+	padding:5px; }
+
+.vcalendar thead,
+.vcalendar .year {
+	font-size:20px; }
+
+.vcalendar .day {
+	font-size:13px; }
+
+.vcalendar .year {
+	text-align:center; }
+
+.vcalendar tr.vevent {
+	page-break-inside: avoid !important; }
+
+.vcalendar td.event-date {
+	width:140px !important; }
+
+.vcalendar td.event {
+	width:500px !important; }
+
+/* =QUERY
+---------------------------------*/
+
+#query-wrapper #advanced-search,
+#query-wrapper #basic-search,
+#query-wrapper #sort-results,
+#query-wrapper .paginate a,
+#query-wrapper .result_controls {
+	display: none !important; }
+
+#query-wrapper p#pub-context {
+	margin:0;
+	text-indent:0;}
+
+#query-wrapper #searched-for,
+#query-wrapper #query-results {
+	width:100%;
+	float:none;}
+
+#query-wrapper #searched-for {
+	margin-top:0;}
+
+#query-wrapper .results-header,
+#query-wrapper .paginate {
+	float:none;
+	clear:both;}

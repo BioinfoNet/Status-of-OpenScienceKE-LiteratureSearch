@@ -1,0 +1,244 @@
+
+Login to your account
+Email
+Password
+Forgot password?
+Keep me logged in
+New User
+Institutional Login
+Change Password
+Old Password
+New Password
+Too Short Weak Medium Strong Very Strong Too Long
+Password Changed Successfully
+
+Your password has been changed
+Create a new account
+Email
+Returning user
+
+Can't sign in? Forgot your password?
+
+Enter your email address below and we will send you the reset instructions
+Email
+Cancel
+
+If the address matches an existing account you will receive an email with instructions to reset your password
+Close
+Request Username
+
+Can't sign in? Forgot your username?
+
+Enter your email address below and we will send you your username
+Email
+Close
+
+If the address matches an existing account you will receive an email with instructions to retrieve your username
+World Scientific
+
+    Search
+    This Book
+        This Book
+        Anywhere
+        Citation
+        Quick Search in Books
+        Enter words / phrases / DOI / ISBN / keywords / authors / etc
+        Search
+        Quick Search anywhere
+        Enter words / phrases / DOI / ISBN / keywords / authors / etc
+        Search
+        Quick search in Citations
+        Journal Year Volume Issue Page
+        Search
+    Advanced Search
+    0 My Cart
+    Sign in
+
+Skip main navigation
+Close Drawer Menu Open Drawer Menu
+Home
+
+    Subject
+        All Subjects  
+        Asian Studies
+        Business & Management
+        Chemistry
+        Computer Science
+        Economics & Finance
+        Engineering / Acoustics
+        Environmental Science
+        Life Sciences / Biology
+        Materials Science
+        Mathematics
+        Medicine
+        Nanotechnology & Nanoscience
+        Nonlinear Science, Chaos & Dynamical Systems
+        Physics & Astronomy
+        Popular & General Science
+        Social Sciences
+        华文书籍 (Chinese Titles)
+    Journals
+    Books
+    e-Products
+    Partner with us
+        Publish with us
+        Authors
+        Booksellers
+        Librarians
+        Individual Customers
+        Copyright & Permissions
+        Translation Rights
+    Open Access
+    About Us
+        About Us
+        News
+        Help
+        How to Order
+        Contact Us
+        Privacy Policy
+        Sitemap
+
+Our website is made possible by displaying certain online content using javascript.
+In order to view the full content, please disable your ad blocker or whitelist our website www.worldscientific.com.
+System Upgrade on Feb 12th
+During this period, E-commerce and registration of new users may not be available for up to 12 hours.
+For online purchase, please visit us again. Contact us at sales@wspc.com.sg for any enquiries.
+Biocomputing 2012, pp. 247-258 (2011)
+Open Access
+SEPP: SATé-Enabled Phylogenetic Placement
+
+    S. MIRARAB
+    ,
+    N. NGUYEN
+    and
+    T. WARNOW
+
+S. MIRARAB
+
+www.cs.utexas.edu Department of Computer Science University of Texas at Austin Austin, TX 78712, USA
+
+Search for more papers by this author
+,
+N. NGUYEN
+
+www.cs.utexas.edu Department of Computer Science University of Texas at Austin Austin, TX 78712, USA
+
+Search for more papers by this author
+and
+T. WARNOW
+
+www.cs.utexas.edu Department of Computer Science University of Texas at Austin Austin, TX 78712, USA
+
+Search for more papers by this author
+https://doi.org/10.1142/9789814366496_0024 Cited by: 0
+Previous
+Next
+About
+
+    Figures
+    References
+    Related
+    Details
+
+    View PDF
+
+    View chapter
+        View PDF
+
+    Tools
+        Add to favorites
+        Download Citations
+        Track Citations
+        Recommend to Library
+    Share
+    Share on
+        Facebook
+        Twitter
+        Linked In
+        Reddit
+        Email
+
+Abstract:
+
+We address the problem of Phylogenetic Placement, in which the objective is to insert short molecular sequences (called query sequences) into an existing phylogenetic tree and alignment on full-length sequences for the same gene. Phylogenetic placement has the potential to provide information beyond pure “species identification” (i.e., the association of metagenomic reads to existing species), because it can also give information about the evolutionary relationships between these query sequences and to known species. Approaches for phylogenetic placement have been developed that operate in two steps: first, an alignment is estimated for each query sequence to the alignment of the full-length sequences, and then that alignment is used to find the optimal location in the phylogenetic tree for the query sequence. Recent methods of this type include HMMALIGN+EPA, HMMALIGN+pplacer, and PaPaRa+EPA.We report on a study evaluating phylogenetic placement methods on biological and simulated data. This study shows that these methods have extremely good accuracy and computational tractability under conditions where the input contains a highly accurate alignment and tree for the full-length sequences, and the set of full-length sequences is sufficiently small and not too evolutionarily diverse; however, we also show that under other conditions accuracy declines and the computational requirements for memory and time exceed acceptable limits. We present SEPP, a general “boosting” technique to improve the accuracy and/or speed of phylogenetic placement techniques. The key algorithmic aspect of this booster is a dataset decomposition technique in SATé, a method that utilizes an iterative divide-and-conquer technique to co-estimate alignments and trees on large molecular sequence datasets. We show that SATé-boosting improves HMMALIGN+pplacer, placing short sequences more accurately when the set of input sequences has a large evolutionary diameter and produces placements of comparable accuracy in a fraction of the time for easier cases. SEPP software and the datasets used in this study are all available for free at http://www.cs.utexas.edu/users/phylo/software/sepp/submission .
+Keywords:
+
+    Phylogenetic placement
+    metagenomic analysis
+
+    Figures
+    References
+    Related
+    Details
+
+    None
+    None
+        Recommended
+        Recommended
+            Groups and Transformations
+            Theory of Groups and Symmetries
+            FRONT MATTER
+                Andrew T. S. Wee
+            Selected Topics in Nanoscience and Nanotechnology
+            A Computational Study of the Electronic and Magnetic Properties of Rare Earth (Er)-Doped InGaN
+                S. Belhachi
+                ,
+                A. Lazreg
+                and
+                B. Bouhafs
+            SPIN Vol. 08, No. 03
+            Curves, Surfaces and Manifolds
+            Problems and Solutions in Differential Geometry, Lie Series, Differential Forms, Relativity and Applications
+    Biocomputing 2012
+    Metrics
+
+    Downloaded 513 times
+
+    History
+
+    Keywords
+        Phylogenetic placement
+        metagenomic analysis
+
+    Loading ...Loading
+
+back
+Close Figure Viewer
+Browse All Figures Return to Figure Change zoom level Zoom in Zoom out
+Previous Figure Next Figure
+Caption
+World Sientific Logo
+
+Resources
+
+    For Authors
+    For Booksellers
+    For Librarians
+    Copyright & Permissions
+    Translation Rights
+    How to Order
+    Contact Us
+    Sitemap
+
+
+ 
+About Us & Help
+
+    About Us
+    News
+    Help
+
+Links
+
+    World Scientific Europe
+    World Scientific China 世界科技
+    Global Publishing 八方文化
+    Asia-Pacific Biotech News
+    World Century
+
+    Privacy policy
+
+© 2019 World Scientific Publishing Co Pte Ltd
+Powered by Atypon® Literatum
+Close crossmark popup
+

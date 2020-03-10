@@ -1,0 +1,207 @@
+body {
+    margin:0;
+    padding:0;
+    height:100%;
+    font-size: 0.8em;
+    background-color: #C7C6CC;
+    font-family:Arial,Helvetica,Verdana,sans-serif;
+    line-height: normal;
+}
+
+a:link, a:active, a:visited {
+    color: #000099;
+}
+
+a:hover {
+    color: #5c9639;
+}
+
+
+/*** layout_main.jsp ***/
+
+div#container, div#mainFooter,div#content {
+    clear:both;
+    margin: 0 auto;
+    max-width:1280px;
+    min-width:955px;
+}
+
+div#container {
+    padding-top:10px;
+    /*height: 100%;*/
+    /*min-height:100%;*/ /*removed because of Bug#24447, creates problems in print preview*/
+    background: white;
+}
+
+div#content {
+    /*min-height: 450px;*/
+    padding: 1em;
+}
+div#content.flat {
+    /*min-height: 450px;*/
+    padding: 0em 0em 0em;
+}
+
+
+div.panelContent {
+    margin: 0em 0 0 0em;
+}
+
+
+/*** home.jsp, layout_toc.jsp, etc. ***/
+
+div#leftColumn {
+    float: left;
+}
+
+div#rightColumn {
+    float: left;
+    width: 680px;
+}
+
+
+/*** ads ***/
+
+div.ad_180x150 {
+    height: 180px;
+    width: 150px;
+    float:left;
+    clear:left;
+    margin-bottom: 1em;
+}
+#tokenRegistration {
+    margin-bottom: 2em;
+}
+#tokenRegistration th {
+    text-align: left;
+}
+#tokenRegistration #tokenAccess, #tokenRegistration #tokenKey {
+    width: 150px;
+}
+#registrationLogin {
+    font-size: 11pt;
+    margin-bottom: 1em;
+}
+#migrationToken {
+    margin: 2em 0;
+}
+
+
+/*** moved from journal.css ***/
+
+div.loiIssuePages {
+    float: left;
+}
+
+span.keywordsLabel {
+    font-weight: bold;
+}
+
+ol.simple {
+    list-style-type: none;
+}
+
+ol.romanLower {
+    list-style-type: lower-roman;
+}
+
+ol.romanUpper {
+    list-style-type: upper-roman;
+}
+
+ol.alphaUpper {
+    list-style-type: upper-latin;
+}
+
+ol.alphaLower {
+    list-style-type: lower-alpha;
+}
+
+#domestic .explanation {
+    color: #555;
+    margin-bottom: 1.5em;
+    font-style: italic
+}
+
+#domestic fieldset, #domestic ul, #domestic li {
+    list-style: none;
+    display: block;
+    clear: both;
+    padding: 0;
+    border: none;
+    margin: 0;
+}
+
+#domestic fieldset {
+    margin: 1em 0;
+}
+
+#domestic label.heading {
+    font-weight: bold;
+    display: block;
+    margin: 1em 0;
+}
+
+#domestic .leftLabelShort label {
+    float: left;
+    display: block;
+    width: 9.5em;
+}
+
+#domestic .instruction, #domestic .leftLabelLong label {
+    display: block;
+    margin: 1em 0 0 0;
+    font-weight: bold;
+}
+
+form#downloadCitation h2 {
+    margin-bottom: 0.5em;
+}
+
+form#downloadCitation label {
+    display: block;
+    margin: 0 0 0.5em 2em;
+}
+
+form#downloadCitation #submit {
+    margin: 0.5em 0
+}
+
+#downloadCitList h4 {
+    margin-bottom: 0;
+}
+.ecommSubTitle{
+    font-weight:bold;
+    background-color:#FFFF66;
+}
+.deniedAccess .leftContent{
+    float:left;
+    width:50%;
+    padding-right:5px;
+}
+.deniedAccess .rightContent{
+    float:right;
+    width:49%;
+    display:inline;
+}
+.deniedAccess #tokenRegistration{
+    margin:15px 0px 0px 40px;
+}
+.deniedAccess .accessLinks{
+    margin:0px 0px 20px 50px;
+    font-weight:bold;
+}
+.headerAd a{
+    top:1px;
+    position:absolute;
+    background:orange;
+    padding:0.4em 2em;
+    -webkit-border-radius:0.4em;
+    color:white;
+    font-weight:bold;
+    left:40%;
+}
+.homePageBannerAd{
+    width:580px;
+    float:right;
+}

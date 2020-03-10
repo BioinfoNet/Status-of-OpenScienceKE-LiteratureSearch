@@ -1,0 +1,70 @@
+
+Toggle navigation
+
+    Login
+
+Toggle navigation
+View Item 
+
+      UoN Digital Repository Home
+    Theses and Dissertations
+    -College of Architecture and Engineering (CAE)
+    View Item
+
+      UoN Digital Repository Home
+    Theses and Dissertations
+    -College of Architecture and Engineering (CAE)
+    View Item
+
+JavaScript is disabled for your browser. Some features of this site may not work without it.
+Open source web based spatial information system for monitoring and evaluating of development projects case study: North Maragoli ward, Vihiga county, Kenya
+Thumbnail
+View/ Open
+Full-text (3.569Mb)
+Date
+2018
+Author
+Lusala, Logedi Victor
+Type
+Thesis
+Language
+en
+Metadata
+Show full item record
+
+Abstract
+Web based Geographic Information System has added a new dimension on how spatial information is shared, displayed, processed and disseminated in an easy and quick way which in turn assists different decision makers and stakeholders interested in spatial related development projects. On the other hand, the use of Open Source Geographic Information System (GIS) software presents a cost-effective means of implementing, operating and maintaining spatial information over the web with the similar capabilities and features of commercial GIS software. The County Government of Vihiga has embarked on a governance transformation aimed at having development activities (from design, planning, implementation to monitoring and evaluation) undertaken on a GIS platform. Until recently, no effort had been made to spatially make available, on a web platform, development projects to different stakeholders to enable monitoring and evaluation. As part of ensuring different users are able to appreciate the appropriateness of GIS in enhancing Monitoring and evaluation of projects, there is need to develop a user-friendly system for thin clients1 to enable them be part of the daily running of County Government projects as well as ensure accountability by the relevant departments. The main objective of this study is to develop an Open Source Web-based Spatial Information System aimed at providing collection, storage and dissemination of development projects to enable monitoring and evaluation. The methodology adopted in developing the system included User needs assessment and data collection of development projects from the County Government of Vihiga, data analysis and development of a database management system using QGIS and PostgreSQL /PostGIS as the Spatial Database Management System, System used GeoServer as the Map Server, publishing of digital layers as dynamic maps using Open Layers, OpenStreetMap and Google earth and development of an interactive Graphic User Interface framework which is interactive and can perform queries using Node.js. This GUI integrated all the components of the Spatial Information System in one platform easily accessed on a web browser. Scripts and codes were generated using the freely available Javascript Libraries (Open Layers and Node.js). The installation of these libraries involved a HTML (North_Maragoli.html) document which was a reference to library location in the server system hosted locally. The resultant OpenStreetMap can be embedded into the county website for visualization and thin client spatial analysis. The results of the study was a n working Spatial Information System with capabilities spatial analysis and querying of projects. This system is envisioned to assist the county governments with similar projects in enhancing monitoring and evaluation as well as promote transparency and accountability as they seeks to improve service delivery at the county level. The system has the potential to be scaled up to the World Wide Web level. The availability of this system on the World Wide Web is envisioned encourage multi-stakeholder interaction aimed at facilitating data exchange, stakeholder participation in monitoring and evaluation of projects and improve decision making
+URI
+http://hdl.handle.net/11295/104114
+Citation
+Master of Science in Geographic Information System
+Publisher
+University of Nairobi
+Rights
+Attribution-NonCommercial-NoDerivs 3.0 United States
+Usage Rights
+http://creativecommons.org/licenses/by-nc-nd/3.0/us/
+Collections
+
+    -College of Architecture and Engineering (CAE) [1199]
+
+The following license files are associated with this item:
+
+    Creative Commons
+
+Attribution-NonCommercial-NoDerivs 3.0 United States
+Except where otherwise noted, this item's license is described as Attribution-NonCommercial-NoDerivs 3.0 United States
+Copyright © 2019 
+University of Nairobi Library
+| UoN Quality Policy | Send Feedback
+ 
+Search UoN Digital Repository
+This Collection
+Browse
+All of UoN Digital Repository Communities & Collections By Issue Date Authors Titles Subjects This Collection By Issue Date Authors Titles Subjects
+My Account
+Login Register
+Copyright © 2019 
+University of Nairobi Library
+| UoN Quality Policy | Send Feedback
+ 

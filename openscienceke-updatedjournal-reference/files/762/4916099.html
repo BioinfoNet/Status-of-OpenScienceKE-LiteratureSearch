@@ -1,0 +1,1978 @@
+<!DOCTYPE html>
+<html lang="en"><head><script type="text/javascript" async="" src="recaptcha__en.js"></script><script type="text/javascript" src="300lo.js"></script><script type="text/javascript" src="_ate.js"></script><meta class="foundation-mq-small"><meta class="foundation-mq-small-only"><meta class="foundation-mq-medium"><meta class="foundation-mq-medium-only"><meta class="foundation-mq-large"><meta class="foundation-mq-large-only"><meta class="foundation-mq-xlarge"><meta class="foundation-mq-xlarge-only"><meta class="foundation-mq-xxlarge"><meta class="foundation-data-attribute-namespace">
+    
+    <!-- Responsive View Port -->
+    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+
+    <!-- Meta -->
+    <meta charset="utf-8"><meta http-equiv="Content-Type" content="text/html; charset=UTF-8"><meta http-equiv="X-UA-Compatible" content="IE=Edge">
+    <!-- Bookmark Icons -->
+    <link rel="apple-touch-icon" sizes="180x180" href="https://academic.oup.com/UI/app/img/apple-touch-icon.png"><link rel="icon" type="image/png" href="https://academic.oup.com/UI/app/img/favicon-32x32.png" sizes="32x32"><link rel="icon" type="image/png" href="https://academic.oup.com/UI/app/img/favicon-16x16.png" sizes="16x16"><link rel="manifest" href="https://academic.oup.com/UI/app/img/manifest.json"><link rel="mask-icon" href="https://academic.oup.com/UI/app/img/safari-pinned-tab.svg" color="#5bbad5"><link rel="shortcut icon" href="https://academic.oup.com/UI/app/img/favicon.ico"><meta name="msapplication-config" content="/UI/app/img/browserconfig.xml"><meta name="theme-color" content="#002f65">
+
+    <!-- Stylesheets -->
+    
+<link href="css.css" type="text/css" rel="stylesheet">
+<link href="globalCSS.css" type="text/css" rel="stylesheet">
+<link href="cookiePolicyCSS.css" type="text/css" rel="stylesheet">
+<link href="chartist.css" type="text/css" rel="stylesheet">
+
+        <link href="global.css" rel="stylesheet" type="text/css">
+    
+        <link href="Site1023285266.css" rel="stylesheet" type="text/css">
+    
+
+    <!-- Scripts -->    
+    
+<script async="" src="gtm.js"></script><script src="jquery-2.js" type="text/javascript"></script>
+
+<!--     
+
+ -->    
+
+    
+            <!-- Google Tag Manager -->
+         <script>(function(w,d,s,l,i){w[l]=w[l]||[];w[l].push({'gtm.start':new Date().getTime(),event:'gtm.js'});var f=d.getElementsByTagName(s)[0],j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src='https://www.googletagmanager.com/gtm.js?id='+i+dl;f.parentNode.insertBefore(j,f);})(window,document,'script','dataLayer','GTM-W6DD7HV');</script>
+            <!-- End Google Tag Manager -->
+    
+
+    <script type="text/javascript">
+        var App = App || {};
+        App.LoginUserInfo = { 
+            isInstLoggedIn: [1] 
+        };
+
+        App.CurrentSubdomain = 'bioinformatics';
+    </script>
+
+    <!-- Extra Head Content -->
+    
+    
+        <script type="application/ld+json">
+        {"@context":"http://schema.org","@id":"https://academic.oup.com/bioinformatics/article/34/14/2490/4916099","@type":"ScholarlyArticle","name":"Parallelization of MAFFT for large-scale multiple sequence alignments","datePublished":"2018-03-01","isPartOf":{"@id":"https://academic.oup.com/bioinformatics/issue/34/14","@type":"PublicationIssue","issueNumber":"14","datePublished":"2018-07-15","isPartOf":{"@id":"https://academic.oup.com/bioinformatics","@type":"Periodical","name":"Bioinformatics","issn":["1460-2059"]}},"url":"http://dx.doi.org/10.1093/bioinformatics/bty121","inLanguage":"en","copyrightHolder":"Oxford University Press","copyrightYear":"2019","publisher":"Oxford University Press","sameAs":"https://academic.oup.com/bioinformatics/article/34/14/2490/4916099","author":[{"name":"Nakamura, Tsukasa","affiliation":"Department of Computational Biology and Medical Sciences, Graduate School of Frontier Sciences, University of Tokyo, Chiba, Japan  Artificial Intelligence Research Center (AIRC), National Institute of Advanced Industrial Science and Technology (AIST), Tokyo, Japan","@type":"Person"},{"name":"Yamada, Kazunori D","affiliation":"Artificial Intelligence Research Center (AIRC), National Institute of Advanced Industrial Science and Technology (AIST), Tokyo, Japan  Graduate School of Information Sciences, Tohoku University, Sendai, Japan","@type":"Person"},{"name":"Tomii, Kentaro","affiliation":"Department of Computational Biology and Medical Sciences, Graduate School of Frontier Sciences, University of Tokyo, Chiba, Japan  Artificial Intelligence Research Center (AIRC), National Institute of Advanced Industrial Science and Technology (AIST), Tokyo, Japan  Biotechnology Research Institute for Drug Discovery (BRD), AIST, Tokyo, Japan  AIST-Tokyo Tech Real World Big-Data Computation Open Innovation Laboratory (RWBC-OIL), Tokyo, Japan","@type":"Person"},{"name":"Katoh, Kazutaka","affiliation":"Artificial Intelligence Research Center (AIRC), National Institute of Advanced Industrial Science and Technology (AIST), Tokyo, Japan  Research Institute for Microbial Diseases, Osaka University, Suita, Japan","@type":"Person","sameAs":"http://orcid.org/0000-0003-4133-8393"}],"description":"AbstractSummary.  We report an update for the MAFFT multiple sequence alignment program to enable parallel calculation of large numbers of sequences. The G-INS-","pageStart":"2490","pageEnd":"2492","thumbnailURL":"https://oup.silverchair-cdn.com/oup/backfile/Content_public/Journal/bioinformatics/Issue/34/14/1/m_bioinfo_34_14cover.png?Expires=1611975516&Signature=T4AGKyljFiSoDImZUpdPeiH4SePPJXC2iKhWyApP7ynvjkuciWeAWLNnYwhG8lCk8iRt5mEVLWT-BeZWSrryZM5B3z2UB7w0WsuaIMYKVnrIqAURH0wV4L1-i-6FmK8FfR5RnvJ~Huf89TF9Y4paqy-Y7HQQlbq32jk03oSNpZzFey0eio5fOl~YlT5iFJp3HtwnWYNFqzEE6nK~nNq2SMoZLs1gi8FAMDA5neS6RGeTy0RGPskeMbOfn0CzBm3LnYlYcKHQ67kkcgCsK-kjfm9mBYVbgQho4X4x0OaiO1vlfK~rG1JXDYY73gmqGorzCCPmasEO0k0rKSO92S4qhA__&Key-Pair-Id=APKAIE5G5CRDK6RD3PGA","headline":"Parallelization of MAFFT for large-scale multiple sequence alignments","image":"https://oup.silverchair-cdn.com/oup/backfile/Content_public/Journal/bioinformatics/Issue/34/14/1/m_bioinfo_34_14cover.png?Expires=1611975516&Signature=T4AGKyljFiSoDImZUpdPeiH4SePPJXC2iKhWyApP7ynvjkuciWeAWLNnYwhG8lCk8iRt5mEVLWT-BeZWSrryZM5B3z2UB7w0WsuaIMYKVnrIqAURH0wV4L1-i-6FmK8FfR5RnvJ~Huf89TF9Y4paqy-Y7HQQlbq32jk03oSNpZzFey0eio5fOl~YlT5iFJp3HtwnWYNFqzEE6nK~nNq2SMoZLs1gi8FAMDA5neS6RGeTy0RGPskeMbOfn0CzBm3LnYlYcKHQ67kkcgCsK-kjfm9mBYVbgQho4X4x0OaiO1vlfK~rG1JXDYY73gmqGorzCCPmasEO0k0rKSO92S4qhA__&Key-Pair-Id=APKAIE5G5CRDK6RD3PGA"}
+    </script>
+    <meta property="og:type" content="article">
+    <meta property="og:title" content="Parallelization of MAFFT for large-scale multiple sequence alignments">
+    <meta property="og:description" content="AbstractSummary.  We report an update for the MAFFT multiple sequence alignment program to enable parallel calculation of large numbers of sequences. The G-INS-">
+    <meta property="og:url" content="https://academic.oup.com/bioinformatics/article/34/14/2490/4916099">
+    <meta property="og:image" content="https://oup.silverchair-cdn.com/oup/backfile/Content_public/Journal/bioinformatics/Issue/35/2/1/m_bioinfo_35_2cover.png?Expires=1611975516&amp;Signature=lyhU0HwKR5yWV~Mjfxf~DuQXI62SE5r29Sp0mBLkbyM9FB-FN2kYM4fQxv1neWOLqFJHHHDMIJ1gti4f8FHAyF-x-iujan-zIT~~Fo59ef9H-wtY-s6IRPIekisx~~606~-DgRKBnedpaatnKNeygF4qzf4UYpt1s8hgqCf7GXOpLmZyJi5BSyx1qvwX9syeXV~3wliroWX~RX5k9fgEVOLg~5imnxg3KuFeCLgNO9Mb7cDP5ogK7iAN9Vf89i-3kWJeluXRlmcvnSi0i9MPRH~Zhw3F2lOubBf~Gs2j52WdmOAufsdyjsxRg1wvGDlBqjFNZYu2Wtentd3JCQiOUw__&amp;Key-Pair-Id=APKAIE5G5CRDK6RD3PGA">
+    <meta property="og:updated_time" content="2018-03-01">
+    <meta property="og:site_name" content="OUP Academic">
+<meta name="citation_author" content="Nakamura, Tsukasa"><meta name="citation_author_institution" content="Department of Computational Biology and Medical Sciences, Graduate School of Frontier Sciences, University of Tokyo, Chiba, Japan"><meta name="citation_author_institution" content="Artificial Intelligence Research Center (AIRC), National Institute of Advanced Industrial Science and Technology (AIST), Tokyo, Japan"><meta name="citation_author" content="Yamada, Kazunori D"><meta name="citation_author_institution" content="Artificial Intelligence Research Center (AIRC), National Institute of Advanced Industrial Science and Technology (AIST), Tokyo, Japan"><meta name="citation_author_institution" content="Graduate School of Information Sciences, Tohoku University, Sendai, Japan"><meta name="citation_author" content="Tomii, Kentaro"><meta name="citation_author_institution" content="Department of Computational Biology and Medical Sciences, Graduate School of Frontier Sciences, University of Tokyo, Chiba, Japan"><meta name="citation_author_institution" content="Artificial Intelligence Research Center (AIRC), National Institute of Advanced Industrial Science and Technology (AIST), Tokyo, Japan"><meta name="citation_author_institution" content="Biotechnology Research Institute for Drug Discovery (BRD), AIST, Tokyo, Japan"><meta name="citation_author_institution" content="AIST-Tokyo Tech Real World Big-Data Computation Open Innovation Laboratory (RWBC-OIL), Tokyo, Japan"><meta name="citation_author" content="Katoh, Kazutaka"><meta name="citation_author_institution" content="Artificial Intelligence Research Center (AIRC), National Institute of Advanced Industrial Science and Technology (AIST), Tokyo, Japan"><meta name="citation_author_institution" content="Research Institute for Microbial Diseases, Osaka University, Suita, Japan"><meta name="citation_title" content="Parallelization of MAFFT for large-scale multiple sequence alignments"><meta name="citation_firstpage" content="2490"><meta name="citation_lastpage" content="2492"><meta name="citation_doi" content="10.1093/bioinformatics/bty121"><meta name="citation_journal_title" content="Bioinformatics"><meta name="citation_journal_abbrev" content="Bioinformatics"><meta name="citation_volume" content="34"><meta name="citation_issue" content="14"><meta name="citation_publication_date" content="2018/07/15"><meta name="citation_issn" content="1367-4803"><meta name="citation_publisher" content="Oxford University Press"><meta name="citation_reference" content="citation_title=Instability in progressive multiple sequence alignment algorithms;  citation_journal_title=Algorithms Mol Biol;  citation_year=2015;  citation_volume=10;  citation_pages=26."><meta name="citation_reference" content="citation_title=JPred4: a protein secondary structure prediction server;  citation_journal_title=Nucleic Acids Res;  citation_year=2015;  citation_volume=43;  citation_pages=W389-W394; "><meta name="citation_reference" content="citation_title=Using de novo protein structure predictions to measure the quality of very large multiple sequence alignments;  citation_journal_title=Bioinformatics;  citation_year=2016;  citation_volume=32;  citation_pages=814-820; "><meta name="citation_reference" content="citation_title=25 years of serving the community with ribosomal RNA gene reference databases and tools;  citation_journal_title=J. Biotechnol;  citation_year=2017;  citation_volume=261;  citation_pages=169-176; "><meta name="citation_reference" content="citation_title=MSAProbs-MPI: parallel multiple sequence aligner for distributed-memory systems;  citation_journal_title=Bioinformatics;  citation_year=2016;  citation_volume=32;  citation_pages=3826-3828; "><meta name="citation_reference" content="citation_title=QuickProbs 2: towards rapid construction of high-quality alignments of large protein families;  citation_journal_title=Sci. Rep;  citation_year=2017;  citation_volume=7;  citation_pages=41553."><meta name="citation_reference" content="citation_title=MAFFT online service: multiple sequence alignment, interactive sequence choice and visualization;  citation_journal_title=Brief Bioinformatics;  citation_year=2017; "><meta name="citation_reference" content="citation_title=Protein multiple sequence alignment benchmarking through secondary structure prediction;  citation_journal_title=Bioinformatics;  citation_year=2017;  citation_volume=33;  citation_pages=1331-1337; "><meta name="citation_reference" content="citation_title=A general method applicable to the search for similarities in the amino acid sequence of two proteins;  citation_journal_title=J. Mol. Biol;  citation_year=1970;  citation_volume=48;  citation_pages=443-453; "><meta name="citation_reference" content="citation_title=COFFEE: an objective function for multiple sequence alignments;  citation_journal_title=Bioinformatics;  citation_year=1998;  citation_volume=14;  citation_pages=407-422; "><meta name="citation_reference" content="citation_title=OXBench: a benchmark for evaluation of protein multiple sequence alignment accuracy;  citation_journal_title=BMC Bioinformatics;  citation_year=2003;  citation_volume=4;  citation_pages=47."><meta name="citation_reference" content="citation_title=Fast, scalable generation of high-quality protein multiple sequence alignments using Clustal Omega;  citation_journal_title=Mol. Syst. Biol;  citation_year=2011;  citation_volume=7;  citation_pages=539"><meta name="citation_reference" content="citation_title=Making automated multiple alignments of very large numbers of protein sequences;  citation_journal_title=Bioinformatics;  citation_year=2013;  citation_volume=29;  citation_pages=989-995; "><meta name="citation_reference" content="citation_title=Application of the MAFFT sequence alignment program to large data—reexamination of the usefulness of chained guide trees;  citation_journal_title=Bioinformatics;  citation_year=2016;  citation_volume=32;  citation_pages=3246-3251; "><meta name="citation_fulltext_world_readable" content=""><meta name="citation_pdf_url" content="https://academic.oup.com/bioinformatics/article-pdf/34/14/2490/25138265/bty121.pdf"><meta name="description" content="AbstractSummary.  We report an update for the MAFFT multiple sequence alignment program to enable parallel calculation of large numbers of sequences. The G-INS-">
+        <meta name="citation_xml_url" content="https://academic.oup.com/bioinformatics/article-xml/34/14/2490/4916099">
+
+
+
+    <link rel="canonical" href="https://academic.oup.com/bioinformatics/article/34/14/2490/4916099">
+
+
+        <!-- Start: GPT Async -->
+
+<script async="async" src="gpt.js"></script>
+<script>
+  var googletag = googletag || {};
+  googletag.cmd = googletag.cmd || [];
+</script>
+
+
+
+<script type="text/javascript">
+  var gptAdSlots = [];
+  googletag.cmd.push(function() {
+    var pathChar = '/';
+    
+    var mapping_ad1 = googletag.sizeMapping().
+    addSize([1024, 0], [[970, 90], [728, 90]]).
+    addSize([768, 0], [728, 90]).
+    addSize([0, 0], [320, 50]).build();
+    gptAdSlots["ad1"] = googletag.defineSlot(pathChar+'116097782'+pathChar+'bioinformatics_Supplement_Ad1', [[970, 90], [728, 90], [320, 50]], 'adBlockHeader').
+    defineSizeMapping(mapping_ad1).
+    addService(googletag.pubads());
+    
+    var mapping_ad2 = googletag.sizeMapping().
+	addSize([0, 0], []).
+    addSize([768, 0], [[300, 250], [300, 600], [160, 600]]).build();
+    gptAdSlots["ad2"] = googletag.defineSlot(pathChar+'116097782'+pathChar+'bioinformatics_Supplement_Ad2', [[300, 250], [160, 600], [300, 600]], 'adBlockMainBodyTop').
+    defineSizeMapping(mapping_ad2).
+    addService(googletag.pubads());
+    
+    var mapping_ad3 = googletag.sizeMapping().
+	addSize([0, 0], []).
+    addSize([768, 0], [[300, 250], [300, 600], [160, 600]]).build();
+    gptAdSlots["ad3"] = googletag.defineSlot(pathChar+'116097782'+pathChar+'bioinformatics_Supplement_Ad3', [[300, 250], [160, 600], [300, 600]], 'adBlockMainBodyBottom').
+    defineSizeMapping(mapping_ad3).
+    addService(googletag.pubads());
+    
+    var mapping_ad4 = googletag.sizeMapping().
+	addSize([0, 0], []).
+    addSize([768, 0], [728, 90]).build();
+    gptAdSlots["ad4"] = googletag.defineSlot(pathChar+'116097782'+pathChar+'bioinformatics_Supplement_Ad4', [728, 90], 'adBlockFooter').
+    defineSizeMapping(mapping_ad4).
+    addService(googletag.pubads());
+    
+    googletag.pubads().setTargeting("jnlspage", "article");
+    googletag.pubads().setTargeting("jnlsurl", "bioinformatics/article/34/14/2490/4916099");
+    googletag.pubads().enableSingleRequest();
+    googletag.pubads().collapseEmptyDivs();
+    
+  });
+</script>
+
+
+    <script>
+        var oupcookiepolicy_siteid = "journals";;	  	// the website id	
+        var oupcookiepolicy_messagetype = 'implied';			            // type of alert message e.g, implied / explicit
+        var oupcookiepolicy_preferredlanguage = "en";		// preferred language of the website
+        var oupcookiepolicy_impliedmessageclass = 'cookiepolicyimplied';	// the css class for implied alert message
+        var oupcookiepolicy_documentroot = '/';	  			                // the document root the cookie is set to
+    </script>
+    <noscript>We use cookies to enhance your experience on our website. By continuing to use our website, you are agreeing to our use of cookies. You can change your cookie settings at any time. <a href="https://global.oup.com/cookiepolicy/">Find out more</a></noscript>
+
+    <script type="text/javascript">
+        var NTPT_PGEXTRA='event_type=full-text&supplier_tag=SC_Journals&siteid=bioinformatics&authentication_method=IP&authzrequired=false&account_id=2783535&account_list=2783535,2785688&authnips=197.248.44.39&doi=10.1093/bioinformatics/bty121';
+    </script>
+<title>
+	Parallelization of MAFFT for large-scale multiple sequence alignments | Bioinformatics | Oxford Academic
+</title><script id="altmetric-embed-js" src="altmetric_badges-6b74dfff5c7f701b334f3e44e411f88f.js"></script><style></style><style type="text/css">.at-icon{fill:#fff;border:0}.at-icon-wrapper{display:inline-block;overflow:hidden}a .at-icon-wrapper{cursor:pointer}.at-rounded,.at-rounded-element .at-icon-wrapper{border-radius:12%}.at-circular,.at-circular-element .at-icon-wrapper{border-radius:50%}.addthis_32x32_style .at-icon{width:2pc;height:2pc}.addthis_24x24_style .at-icon{width:24px;height:24px}.addthis_20x20_style .at-icon{width:20px;height:20px}.addthis_16x16_style .at-icon{width:1pc;height:1pc}#at16lb{display:none;position:absolute;top:0;left:0;width:100%;height:100%;z-index:1001;background-color:#000;opacity:.001}#at_complete,#at_error,#at_share,#at_success{position:static!important}.at15dn{display:none}#at15s,#at16p,#at16p form input,#at16p label,#at16p textarea,#at_share .at_item{font-family:arial,helvetica,tahoma,verdana,sans-serif!important;font-size:9pt!important;outline-style:none;outline-width:0;line-height:1em}* html #at15s.mmborder{position:absolute!important}#at15s.mmborder{position:fixed!important;width:250px!important}#at15s{background:url(data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAoAAAAKCAYAAACNMs+9AAAAGXRFWHRTb2Z0d2FyZQBBZG9iZSBJbWFnZVJlYWR5ccllPAAAABtJREFUeNpiZGBgaGAgAjAxEAlGFVJHIUCAAQDcngCUgqGMqwAAAABJRU5ErkJggg==);float:none;line-height:1em;margin:0;overflow:visible;padding:5px;text-align:left;position:absolute}#at15s a,#at15s span{outline:0;direction:ltr;text-transform:none}#at15s .at-label{margin-left:5px}#at15s .at-icon-wrapper{width:1pc;height:1pc;vertical-align:middle}#at15s .at-icon{width:1pc;height:1pc}.at4-icon{display:inline-block;background-repeat:no-repeat;background-position:top left;margin:0;overflow:hidden;cursor:pointer}.addthis_16x16_style .at4-icon,.addthis_default_style .at4-icon,.at4-icon,.at-16x16{width:1pc;height:1pc;line-height:1pc;background-size:1pc!important}.addthis_32x32_style .at4-icon,.at-32x32{width:2pc;height:2pc;line-height:2pc;background-size:2pc!important}.addthis_24x24_style .at4-icon,.at-24x24{width:24px;height:24px;line-height:24px;background-size:24px!important}.addthis_20x20_style .at4-icon,.at-20x20{width:20px;height:20px;line-height:20px;background-size:20px!important}.at4-icon.circular,.circular .at4-icon,.circular.aticon{border-radius:50%}.at4-icon.rounded,.rounded .at4-icon{border-radius:4px}.at4-icon-left{float:left}#at15s .at4-icon{text-indent:20px;padding:0;overflow:visible;white-space:nowrap;background-size:1pc;width:1pc;height:1pc;background-position:top left;display:inline-block;line-height:1pc}.addthis_vertical_style .at4-icon,.at4-follow-container .at4-icon{margin-right:5px}html>body #at15s{width:250px!important}#at15s.atm{background:none!important;padding:0!important;width:10pc!important}#at15s_inner{background:#fff;border:1px solid #fff;margin:0}#at15s_head{position:relative;background:#f2f2f2;padding:4px;cursor:default;border-bottom:1px solid #e5e5e5}.at15s_head_success{background:#cafd99!important;border-bottom:1px solid #a9d582!important}.at15s_head_success a,.at15s_head_success span{color:#000!important;text-decoration:none}#at15s_brand,#at15sptx,#at16_brand{position:absolute}#at15s_brand{top:4px;right:4px}.at15s_brandx{right:20px!important}a#at15sptx{top:4px;right:4px;text-decoration:none;color:#4c4c4c;font-weight:700}#at15sptx:hover{text-decoration:underline}#at16_brand{top:5px;right:30px;cursor:default}#at_hover{padding:4px}#at_hover .at_item,#at_share .at_item{background:#fff!important;float:left!important;color:#4c4c4c!important}#at_share .at_item .at-icon-wrapper{margin-right:5px}#at_hover .at_bold{font-weight:700;color:#000!important}#at_hover .at_item{width:7pc!important;padding:2px 3px!important;margin:1px;text-decoration:none!important}#at_hover .at_item.athov,#at_hover .at_item:focus,#at_hover .at_item:hover{margin:0!important}#at_hover .at_item.athov,#at_hover .at_item:focus,#at_hover .at_item:hover,#at_share .at_item.athov,#at_share .at_item:hover{background:#f2f2f2!important;border:1px solid #e5e5e5;color:#000!important;text-decoration:none}.ipad #at_hover .at_item:focus{background:#fff!important;border:1px solid #fff}.at15t{display:block!important;height:1pc!important;line-height:1pc!important;padding-left:20px!important;background-position:0 0;text-align:left}.addthis_button,.at15t{cursor:pointer}.addthis_toolbox a.at300b,.addthis_toolbox a.at300m{width:auto}.addthis_toolbox a{margin-bottom:5px;line-height:initial}.addthis_toolbox.addthis_vertical_style{width:200px}.addthis_button_facebook_like .fb_iframe_widget{line-height:100%}.addthis_button_facebook_like iframe.fb_iframe_widget_lift{max-width:none}.addthis_toolbox a.addthis_button_counter,.addthis_toolbox a.addthis_button_facebook_like,.addthis_toolbox a.addthis_button_facebook_send,.addthis_toolbox a.addthis_button_facebook_share,.addthis_toolbox a.addthis_button_foursquare,.addthis_toolbox a.addthis_button_google_plusone,.addthis_toolbox a.addthis_button_linkedin_counter,.addthis_toolbox a.addthis_button_pinterest_pinit,.addthis_toolbox a.addthis_button_tweet{display:inline-block}.at-share-tbx-element .google_plusone_iframe_widget>span>div{vertical-align:top!important}.addthis_toolbox span.addthis_follow_label{display:none}.addthis_toolbox.addthis_vertical_style span.addthis_follow_label{display:block;white-space:nowrap}.addthis_toolbox.addthis_vertical_style a{display:block}.addthis_toolbox.addthis_vertical_style.addthis_32x32_style a{line-height:2pc;height:2pc}.addthis_toolbox.addthis_vertical_style .at300bs{margin-right:4px;float:left}.addthis_toolbox.addthis_20x20_style span{line-height:20px}.addthis_toolbox.addthis_32x32_style span{line-height:2pc}.addthis_toolbox.addthis_pill_combo_style .addthis_button_compact .at15t_compact,.addthis_toolbox.addthis_pill_combo_style a{float:left}.addthis_toolbox.addthis_pill_combo_style a.addthis_button_tweet{margin-top:-2px}.addthis_toolbox.addthis_pill_combo_style .addthis_button_compact .at15t_compact{margin-right:4px}.addthis_default_style .addthis_separator{margin:0 5px;display:inline}div.atclear{clear:both}.addthis_default_style .addthis_separator,.addthis_default_style .at4-icon,.addthis_default_style .at300b,.addthis_default_style .at300bo,.addthis_default_style .at300bs,.addthis_default_style .at300m{float:left}.at300b img,.at300bo img{border:0}a.at300b .at4-icon,a.at300m .at4-icon{display:block}.addthis_default_style .at300b,.addthis_default_style .at300bo,.addthis_default_style .at300m{padding:0 2px}.at300b,.at300bo,.at300bs,.at300m{cursor:pointer}.addthis_button_facebook_like.at300b:hover,.addthis_button_facebook_like.at300bs:hover,.addthis_button_facebook_send.at300b:hover,.addthis_button_facebook_send.at300bs:hover{opacity:1}.addthis_20x20_style .at15t,.addthis_20x20_style .at300bs{overflow:hidden;display:block;height:20px!important;width:20px!important;line-height:20px!important}.addthis_32x32_style .at15t,.addthis_32x32_style .at300bs{overflow:hidden;display:block;height:2pc!important;width:2pc!important;line-height:2pc!important}.at300bs{overflow:hidden;display:block;background-position:0 0;height:1pc;width:1pc;line-height:1pc!important}.addthis_default_style .at15t_compact,.addthis_default_style .at15t_expanded{margin-right:4px}#at_share .at_item{width:123px!important;padding:4px;margin-right:2px;border:1px solid #fff}#at16p{background:url(data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAoAAAAKCAYAAACNMs+9AAAAGXRFWHRTb2Z0d2FyZQBBZG9iZSBJbWFnZVJlYWR5ccllPAAAABtJREFUeNpiZGBgaGAgAjAxEAlGFVJHIUCAAQDcngCUgqGMqwAAAABJRU5ErkJggg==);z-index:10000001;position:absolute;top:50%;left:50%;width:300px;padding:10px;margin:0 auto;margin-top:-185px;margin-left:-155px;font-family:arial,helvetica,tahoma,verdana,sans-serif;font-size:9pt;color:#5e5e5e}#at_share{margin:0;padding:0}#at16pt{position:relative;background:#f2f2f2;height:13px;padding:5px 10px}#at16pt a,#at16pt h4{font-weight:700}#at16pt h4{display:inline;margin:0;padding:0;font-size:9pt;color:#4c4c4c;cursor:default}#at16pt a{position:absolute;top:5px;right:10px;color:#4c4c4c;text-decoration:none;padding:2px}#at15sptx:focus,#at16pt a:focus{outline:thin dotted}#at15s #at16pf a{top:1px}#_atssh{width:1px!important;height:1px!important;border:0!important}.atm{width:10pc!important;padding:0;margin:0;line-height:9pt;letter-spacing:normal;font-family:arial,helvetica,tahoma,verdana,sans-serif;font-size:9pt;color:#444;background:url(data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAoAAAAKCAYAAACNMs+9AAAAGXRFWHRTb2Z0d2FyZQBBZG9iZSBJbWFnZVJlYWR5ccllPAAAABtJREFUeNpiZGBgaGAgAjAxEAlGFVJHIUCAAQDcngCUgqGMqwAAAABJRU5ErkJggg==);padding:4px}.atm-f{text-align:right;border-top:1px solid #ddd;padding:5px 8px}.atm-i{background:#fff;border:1px solid #d5d6d6;padding:0;margin:0;box-shadow:1px 1px 5px rgba(0,0,0,.15)}.atm-s{margin:0!important;padding:0!important}.atm-s a:focus{border:transparent;outline:0;transition:none}#at_hover.atm-s a,.atm-s a{display:block;text-decoration:none;padding:4px 10px;color:#235dab!important;font-weight:400;font-style:normal;transition:none}#at_hover.atm-s .at_bold{color:#235dab!important}#at_hover.atm-s a:hover,.atm-s a:hover{background:#2095f0;text-decoration:none;color:#fff!important}#at_hover.atm-s .at_bold{font-weight:700}#at_hover.atm-s a:hover .at_bold{color:#fff!important}.atm-s a .at-label{vertical-align:middle;margin-left:5px;direction:ltr}.at_PinItButton{display:block;width:40px;height:20px;padding:0;margin:0;background-image:url(//s7.addthis.com/static/t00/pinit00.png);background-repeat:no-repeat}.at_PinItButton:hover{background-position:0 -20px}.addthis_toolbox .addthis_button_pinterest_pinit{position:relative}.at-share-tbx-element .fb_iframe_widget span{vertical-align:baseline!important}#at16pf{height:auto;text-align:right;padding:4px 8px}.at-privacy-info{position:absolute;left:7px;bottom:7px;cursor:pointer;text-decoration:none;font-family:helvetica,arial,sans-serif;font-size:10px;line-height:9pt;letter-spacing:.2px;color:#666}.at-privacy-info:hover{color:#000}.body .wsb-social-share .wsb-social-share-button-vert{padding-top:0;padding-bottom:0}.body .wsb-social-share.addthis_counter_style .addthis_button_tweet.wsb-social-share-button{padding-top:40px}.body .wsb-social-share.addthis_counter_style .addthis_button_google_plusone.wsb-social-share-button{padding-top:0}.body .wsb-social-share.addthis_counter_style .addthis_button_facebook_like.wsb-social-share-button{padding-top:21px}@media print{#at4-follow,#at4-share,#at4-thankyou,#at4-whatsnext,#at4m-mobile,#at15s,.at4,.at4-recommended{display:none!important}}@media screen and (max-width:400px){.at4win{width:100%}}@media screen and (max-height:700px) and (max-width:400px){.at4-thankyou-inner .at4-recommended-container{height:122px;overflow:hidden}.at4-thankyou-inner .at4-recommended .at4-recommended-item:first-child{border-bottom:1px solid #c5c5c5}}</style><style type="text/css">.at-branding-logo{font-family:helvetica,arial,sans-serif;text-decoration:none;font-size:10px;display:inline-block;margin:2px 0;letter-spacing:.2px}.at-branding-logo .at-branding-icon{background-image:url("data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAoAAAAKCAMAAAC67D+PAAAAGXRFWHRTb2Z0d2FyZQBBZG9iZSBJbWFnZVJlYWR5ccllPAAAAAZQTFRF////+GlNUkcc1QAAAB1JREFUeNpiYIQDBjQmAwMmkwEM0JnY1WIxFyDAABGeAFEudiZsAAAAAElFTkSuQmCC")}.at-branding-logo .at-branding-icon,.at-branding-logo .at-privacy-icon{display:inline-block;height:10px;width:10px;margin-left:4px;margin-right:3px;margin-bottom:-1px;background-repeat:no-repeat}.at-branding-logo .at-privacy-icon{background-image:url("data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAkAAAAKCAMAAABR24SMAAAAGXRFWHRTb2Z0d2FyZQBBZG9iZSBJbWFnZVJlYWR5ccllPAAAABhQTFRF8fr9ot/xXcfn2/P5AKva////////AKTWodjhjAAAAAd0Uk5T////////ABpLA0YAAAA6SURBVHjaJMzBDQAwCAJAQaj7b9xifV0kUKJ9ciWxlzWEWI5gMF65KUTv0VKkjVeTerqE/x7+9BVgAEXbAWI8QDcfAAAAAElFTkSuQmCC")}.at-branding-logo span{text-decoration:none}.at-branding-logo .at-branding-addthis,.at-branding-logo .at-branding-powered-by{color:#666}.at-branding-logo .at-branding-addthis:hover{color:#333}.at-cv-with-image .at-branding-addthis,.at-cv-with-image .at-branding-addthis:hover{color:#fff}a.at-branding-logo:visited{color:initial}.at-branding-info{display:inline-block;padding:0 5px;color:#666;border:1px solid #666;border-radius:50%;font-size:10px;line-height:9pt;opacity:.7;transition:all .3s ease;text-decoration:none}.at-branding-info span{border:0;clip:rect(0 0 0 0);height:1px;margin:-1px;overflow:hidden;padding:0;position:absolute;width:1px}.at-branding-info:before{content:'i';font-family:Times New Roman}.at-branding-info:hover{color:#0780df;border-color:#0780df}</style><link rel="preload" href="integrator.js"><script type="text/javascript" src="integrator.js"></script><script src="pubads_impl_297.js" async=""></script><style type="text/css">.MathJax_Hover_Frame {border-radius: .25em; -webkit-border-radius: .25em; -moz-border-radius: .25em; -khtml-border-radius: .25em; box-shadow: 0px 0px 15px #83A; -webkit-box-shadow: 0px 0px 15px #83A; -moz-box-shadow: 0px 0px 15px #83A; -khtml-box-shadow: 0px 0px 15px #83A; border: 1px solid #A6D ! important; display: inline-block; position: absolute}
+.MathJax_Menu_Button .MathJax_Hover_Arrow {position: absolute; cursor: pointer; display: inline-block; border: 2px solid #AAA; border-radius: 4px; -webkit-border-radius: 4px; -moz-border-radius: 4px; -khtml-border-radius: 4px; font-family: 'Courier New',Courier; font-size: 9px; color: #F0F0F0}
+.MathJax_Menu_Button .MathJax_Hover_Arrow span {display: block; background-color: #AAA; border: 1px solid; border-radius: 3px; line-height: 0; padding: 4px}
+.MathJax_Hover_Arrow:hover {color: white!important; border: 2px solid #CCC!important}
+.MathJax_Hover_Arrow:hover span {background-color: #CCC!important}
+</style><style type="text/css">#MathJax_About {position: fixed; left: 50%; width: auto; text-align: center; border: 3px outset; padding: 1em 2em; background-color: #DDDDDD; color: black; cursor: default; font-family: message-box; font-size: 120%; font-style: normal; text-indent: 0; text-transform: none; line-height: normal; letter-spacing: normal; word-spacing: normal; word-wrap: normal; white-space: nowrap; float: none; z-index: 201; border-radius: 15px; -webkit-border-radius: 15px; -moz-border-radius: 15px; -khtml-border-radius: 15px; box-shadow: 0px 10px 20px #808080; -webkit-box-shadow: 0px 10px 20px #808080; -moz-box-shadow: 0px 10px 20px #808080; -khtml-box-shadow: 0px 10px 20px #808080; filter: progid:DXImageTransform.Microsoft.dropshadow(OffX=2, OffY=2, Color='gray', Positive='true')}
+#MathJax_About.MathJax_MousePost {outline: none}
+.MathJax_Menu {position: absolute; background-color: white; color: black; width: auto; padding: 5px 0px; border: 1px solid #CCCCCC; margin: 0; cursor: default; font: menu; text-align: left; text-indent: 0; text-transform: none; line-height: normal; letter-spacing: normal; word-spacing: normal; word-wrap: normal; white-space: nowrap; float: none; z-index: 201; border-radius: 5px; -webkit-border-radius: 5px; -moz-border-radius: 5px; -khtml-border-radius: 5px; box-shadow: 0px 10px 20px #808080; -webkit-box-shadow: 0px 10px 20px #808080; -moz-box-shadow: 0px 10px 20px #808080; -khtml-box-shadow: 0px 10px 20px #808080; filter: progid:DXImageTransform.Microsoft.dropshadow(OffX=2, OffY=2, Color='gray', Positive='true')}
+.MathJax_MenuItem {padding: 1px 2em; background: transparent}
+.MathJax_MenuArrow {position: absolute; right: .5em; padding-top: .25em; color: #666666; font-size: .75em}
+.MathJax_MenuActive .MathJax_MenuArrow {color: white}
+.MathJax_MenuArrow.RTL {left: .5em; right: auto}
+.MathJax_MenuCheck {position: absolute; left: .7em}
+.MathJax_MenuCheck.RTL {right: .7em; left: auto}
+.MathJax_MenuRadioCheck {position: absolute; left: .7em}
+.MathJax_MenuRadioCheck.RTL {right: .7em; left: auto}
+.MathJax_MenuLabel {padding: 1px 2em 3px 1.33em; font-style: italic}
+.MathJax_MenuRule {border-top: 1px solid #DDDDDD; margin: 4px 3px}
+.MathJax_MenuDisabled {color: GrayText}
+.MathJax_MenuActive {background-color: #606872; color: white}
+.MathJax_MenuDisabled:focus, .MathJax_MenuLabel:focus {background-color: #E8E8E8}
+.MathJax_ContextMenu:focus {outline: none}
+.MathJax_ContextMenu .MathJax_MenuItem:focus {outline: none}
+#MathJax_AboutClose {top: .2em; right: .2em}
+.MathJax_Menu .MathJax_MenuClose {top: -10px; left: -10px}
+.MathJax_MenuClose {position: absolute; cursor: pointer; display: inline-block; border: 2px solid #AAA; border-radius: 18px; -webkit-border-radius: 18px; -moz-border-radius: 18px; -khtml-border-radius: 18px; font-family: 'Courier New',Courier; font-size: 24px; color: #F0F0F0}
+.MathJax_MenuClose span {display: block; background-color: #AAA; border: 1.5px solid; border-radius: 18px; -webkit-border-radius: 18px; -moz-border-radius: 18px; -khtml-border-radius: 18px; line-height: 0; padding: 8px 0 6px}
+.MathJax_MenuClose:hover {color: white!important; border: 2px solid #CCC!important}
+.MathJax_MenuClose:hover span {background-color: #CCC!important}
+.MathJax_MenuClose:hover:focus {outline: none}
+</style><style type="text/css">.MathJax_Preview .MJXf-math {color: inherit!important}
+</style><style type="text/css">.MJX_Assistive_MathML {position: absolute!important; top: 0; left: 0; clip: rect(1px, 1px, 1px, 1px); padding: 1px 0 0 0!important; border: 0!important; height: 1px!important; width: 1px!important; overflow: hidden!important; display: block!important; -webkit-touch-callout: none; -webkit-user-select: none; -khtml-user-select: none; -moz-user-select: none; -ms-user-select: none; user-select: none}
+.MJX_Assistive_MathML.MJX_Assistive_MathML_Block {width: 100%!important}
+</style><style type="text/css">#MathJax_Zoom {position: absolute; background-color: #F0F0F0; overflow: auto; display: block; z-index: 301; padding: .5em; border: 1px solid black; margin: 0; font-weight: normal; font-style: normal; text-align: left; text-indent: 0; text-transform: none; line-height: normal; letter-spacing: normal; word-spacing: normal; word-wrap: normal; white-space: nowrap; float: none; -webkit-box-sizing: content-box; -moz-box-sizing: content-box; box-sizing: content-box; box-shadow: 5px 5px 15px #AAAAAA; -webkit-box-shadow: 5px 5px 15px #AAAAAA; -moz-box-shadow: 5px 5px 15px #AAAAAA; -khtml-box-shadow: 5px 5px 15px #AAAAAA; filter: progid:DXImageTransform.Microsoft.dropshadow(OffX=2, OffY=2, Color='gray', Positive='true')}
+#MathJax_ZoomOverlay {position: absolute; left: 0; top: 0; z-index: 300; display: inline-block; width: 100%; height: 100%; border: 0; padding: 0; margin: 0; background-color: white; opacity: 0; filter: alpha(opacity=0)}
+#MathJax_ZoomFrame {position: relative; display: inline-block; height: 0; width: 0}
+#MathJax_ZoomEventTrap {position: absolute; left: 0; top: 0; z-index: 302; display: inline-block; border: 0; padding: 0; margin: 0; background-color: white; opacity: 0; filter: alpha(opacity=0)}
+</style><style type="text/css">.MathJax_Preview {color: #888}
+#MathJax_Message {position: fixed; left: 1px; bottom: 2px; background-color: #E6E6E6; border: 1px solid #959595; margin: 0px; padding: 2px 8px; z-index: 102; color: black; font-size: 80%; width: auto; white-space: nowrap}
+#MathJax_MSIE_Frame {position: absolute; top: 0; left: 0; width: 0px; z-index: 101; border: 0px; margin: 0px; padding: 0px}
+.MathJax_Error {color: #CC0000; font-style: italic}
+</style><link id="altmetric-embed-css" rel="stylesheet" type="text/css" href="https://d1bxh8uas1mnw7.cloudfront.net/assets/embed-2c47105b6381604898bbf8ae8a680350.css"></head>
+
+<body data-sitename="bioinformatics" class="off-canvas pg_article" theme-bioinformatics="" style="cursor: default;">
+    
+            <!-- Google Tag Manager (noscript) -->
+            <noscript><iframe src="https://www.googletagmanager.com/ns.html?id=GTM-W6DD7HV"height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
+            <!-- End Google Tag Manager (noscript) -->
+    
+    
+    <a href="#main" class="skipnav">Skip to Main Content</a>
+    <form method="post" action="./4916099" id="webform">
+<div class="aspNetHidden">
+<input name="__VIEWSTATE" id="__VIEWSTATE" value="/wEPDwUKMTAxNjEyOTA4OQ9kFgJmD2QWAmYPZBYEZg9kFgICDg9kFgICAQ9kFgJmDxYCHgRUZXh0BcEyPG1ldGEgbmFtZT0iY2l0YXRpb25fYXV0aG9yIiBjb250ZW50PSJOYWthbXVyYSwgVHN1a2FzYSIgLz48bWV0YSBuYW1lPSJjaXRhdGlvbl9hdXRob3JfaW5zdGl0dXRpb24iIGNvbnRlbnQ9IkRlcGFydG1lbnQgb2YgQ29tcHV0YXRpb25hbCBCaW9sb2d5IGFuZCBNZWRpY2FsIFNjaWVuY2VzLCBHcmFkdWF0ZSBTY2hvb2wgb2YgRnJvbnRpZXIgU2NpZW5jZXMsIFVuaXZlcnNpdHkgb2YgVG9reW8sIENoaWJhLCBKYXBhbiIgLz48bWV0YSBuYW1lPSJjaXRhdGlvbl9hdXRob3JfaW5zdGl0dXRpb24iIGNvbnRlbnQ9IkFydGlmaWNpYWwgSW50ZWxsaWdlbmNlIFJlc2VhcmNoIENlbnRlciAoQUlSQyksIE5hdGlvbmFsIEluc3RpdHV0ZSBvZiBBZHZhbmNlZCBJbmR1c3RyaWFsIFNjaWVuY2UgYW5kIFRlY2hub2xvZ3kgKEFJU1QpLCBUb2t5bywgSmFwYW4iIC8+PG1ldGEgbmFtZT0iY2l0YXRpb25fYXV0aG9yIiBjb250ZW50PSJZYW1hZGEsIEthenVub3JpIEQiIC8+PG1ldGEgbmFtZT0iY2l0YXRpb25fYXV0aG9yX2luc3RpdHV0aW9uIiBjb250ZW50PSJBcnRpZmljaWFsIEludGVsbGlnZW5jZSBSZXNlYXJjaCBDZW50ZXIgKEFJUkMpLCBOYXRpb25hbCBJbnN0aXR1dGUgb2YgQWR2YW5jZWQgSW5kdXN0cmlhbCBTY2llbmNlIGFuZCBUZWNobm9sb2d5IChBSVNUKSwgVG9reW8sIEphcGFuIiAvPjxtZXRhIG5hbWU9ImNpdGF0aW9uX2F1dGhvcl9pbnN0aXR1dGlvbiIgY29udGVudD0iR3JhZHVhdGUgU2Nob29sIG9mIEluZm9ybWF0aW9uIFNjaWVuY2VzLCBUb2hva3UgVW5pdmVyc2l0eSwgU2VuZGFpLCBKYXBhbiIgLz48bWV0YSBuYW1lPSJjaXRhdGlvbl9hdXRob3IiIGNvbnRlbnQ9IlRvbWlpLCBLZW50YXJvIiAvPjxtZXRhIG5hbWU9ImNpdGF0aW9uX2F1dGhvcl9pbnN0aXR1dGlvbiIgY29udGVudD0iRGVwYXJ0bWVudCBvZiBDb21wdXRhdGlvbmFsIEJpb2xvZ3kgYW5kIE1lZGljYWwgU2NpZW5jZXMsIEdyYWR1YXRlIFNjaG9vbCBvZiBGcm9udGllciBTY2llbmNlcywgVW5pdmVyc2l0eSBvZiBUb2t5bywgQ2hpYmEsIEphcGFuIiAvPjxtZXRhIG5hbWU9ImNpdGF0aW9uX2F1dGhvcl9pbnN0aXR1dGlvbiIgY29udGVudD0iQXJ0aWZpY2lhbCBJbnRlbGxpZ2VuY2UgUmVzZWFyY2ggQ2VudGVyIChBSVJDKSwgTmF0aW9uYWwgSW5zdGl0dXRlIG9mIEFkdmFuY2VkIEluZHVzdHJpYWwgU2NpZW5jZSBhbmQgVGVjaG5vbG9neSAoQUlTVCksIFRva3lvLCBKYXBhbiIgLz48bWV0YSBuYW1lPSJjaXRhdGlvbl9hdXRob3JfaW5zdGl0dXRpb24iIGNvbnRlbnQ9IkJpb3RlY2hub2xvZ3kgUmVzZWFyY2ggSW5zdGl0dXRlIGZvciBEcnVnIERpc2NvdmVyeSAoQlJEKSwgQUlTVCwgVG9reW8sIEphcGFuIiAvPjxtZXRhIG5hbWU9ImNpdGF0aW9uX2F1dGhvcl9pbnN0aXR1dGlvbiIgY29udGVudD0iQUlTVC1Ub2t5byBUZWNoIFJlYWwgV29ybGQgQmlnLURhdGEgQ29tcHV0YXRpb24gT3BlbiBJbm5vdmF0aW9uIExhYm9yYXRvcnkgKFJXQkMtT0lMKSwgVG9reW8sIEphcGFuIiAvPjxtZXRhIG5hbWU9ImNpdGF0aW9uX2F1dGhvciIgY29udGVudD0iS2F0b2gsIEthenV0YWthIiAvPjxtZXRhIG5hbWU9ImNpdGF0aW9uX2F1dGhvcl9pbnN0aXR1dGlvbiIgY29udGVudD0iQXJ0aWZpY2lhbCBJbnRlbGxpZ2VuY2UgUmVzZWFyY2ggQ2VudGVyIChBSVJDKSwgTmF0aW9uYWwgSW5zdGl0dXRlIG9mIEFkdmFuY2VkIEluZHVzdHJpYWwgU2NpZW5jZSBhbmQgVGVjaG5vbG9neSAoQUlTVCksIFRva3lvLCBKYXBhbiIgLz48bWV0YSBuYW1lPSJjaXRhdGlvbl9hdXRob3JfaW5zdGl0dXRpb24iIGNvbnRlbnQ9IlJlc2VhcmNoIEluc3RpdHV0ZSBmb3IgTWljcm9iaWFsIERpc2Vhc2VzLCBPc2FrYSBVbml2ZXJzaXR5LCBTdWl0YSwgSmFwYW4iIC8+PG1ldGEgbmFtZT0iY2l0YXRpb25fdGl0bGUiIGNvbnRlbnQ9IlBhcmFsbGVsaXphdGlvbiBvZiBNQUZGVCBmb3IgbGFyZ2Utc2NhbGUgbXVsdGlwbGUgc2VxdWVuY2UgYWxpZ25tZW50cyIgLz48bWV0YSBuYW1lPSJjaXRhdGlvbl9maXJzdHBhZ2UiIGNvbnRlbnQ9IjI0OTAiIC8+PG1ldGEgbmFtZT0iY2l0YXRpb25fbGFzdHBhZ2UiIGNvbnRlbnQ9IjI0OTIiIC8+PG1ldGEgbmFtZT0iY2l0YXRpb25fZG9pIiBjb250ZW50PSIxMC4xMDkzL2Jpb2luZm9ybWF0aWNzL2J0eTEyMSIgLz48bWV0YSBuYW1lPSJjaXRhdGlvbl9qb3VybmFsX3RpdGxlIiBjb250ZW50PSJCaW9pbmZvcm1hdGljcyIgLz48bWV0YSBuYW1lPSJjaXRhdGlvbl9qb3VybmFsX2FiYnJldiIgY29udGVudD0iQmlvaW5mb3JtYXRpY3MiIC8+PG1ldGEgbmFtZT0iY2l0YXRpb25fdm9sdW1lIiBjb250ZW50PSIzNCIgLz48bWV0YSBuYW1lPSJjaXRhdGlvbl9pc3N1ZSIgY29udGVudD0iMTQiIC8+PG1ldGEgbmFtZT0iY2l0YXRpb25fcHVibGljYXRpb25fZGF0ZSIgY29udGVudD0iMjAxOC8wNy8xNSIgLz48bWV0YSBuYW1lPSJjaXRhdGlvbl9pc3NuIiBjb250ZW50PSIxMzY3LTQ4MDMiIC8+PG1ldGEgbmFtZT0iY2l0YXRpb25fcHVibGlzaGVyIiBjb250ZW50PSJPeGZvcmQgVW5pdmVyc2l0eSBQcmVzcyIgLz48bWV0YSBuYW1lPSJjaXRhdGlvbl9yZWZlcmVuY2UiIGNvbnRlbnQ9ImNpdGF0aW9uX3RpdGxlPUluc3RhYmlsaXR5IGluIHByb2dyZXNzaXZlIG11bHRpcGxlIHNlcXVlbmNlIGFsaWdubWVudCBhbGdvcml0aG1zOyAgY2l0YXRpb25fam91cm5hbF90aXRsZT1BbGdvcml0aG1zIE1vbCBCaW9sOyAgY2l0YXRpb25feWVhcj0yMDE1OyAgY2l0YXRpb25fdm9sdW1lPTEwOyAgY2l0YXRpb25fcGFnZXM9MjYuIiAvPjxtZXRhIG5hbWU9ImNpdGF0aW9uX3JlZmVyZW5jZSIgY29udGVudD0iY2l0YXRpb25fdGl0bGU9SlByZWQ0OiBhIHByb3RlaW4gc2Vjb25kYXJ5IHN0cnVjdHVyZSBwcmVkaWN0aW9uIHNlcnZlcjsgIGNpdGF0aW9uX2pvdXJuYWxfdGl0bGU9TnVjbGVpYyBBY2lkcyBSZXM7ICBjaXRhdGlvbl95ZWFyPTIwMTU7ICBjaXRhdGlvbl92b2x1bWU9NDM7ICBjaXRhdGlvbl9wYWdlcz1XMzg5LVczOTQ7ICIgLz48bWV0YSBuYW1lPSJjaXRhdGlvbl9yZWZlcmVuY2UiIGNvbnRlbnQ9ImNpdGF0aW9uX3RpdGxlPVVzaW5nIGRlIG5vdm8gcHJvdGVpbiBzdHJ1Y3R1cmUgcHJlZGljdGlvbnMgdG8gbWVhc3VyZSB0aGUgcXVhbGl0eSBvZiB2ZXJ5IGxhcmdlIG11bHRpcGxlIHNlcXVlbmNlIGFsaWdubWVudHM7ICBjaXRhdGlvbl9qb3VybmFsX3RpdGxlPUJpb2luZm9ybWF0aWNzOyAgY2l0YXRpb25feWVhcj0yMDE2OyAgY2l0YXRpb25fdm9sdW1lPTMyOyAgY2l0YXRpb25fcGFnZXM9ODE0LTgyMDsgIiAvPjxtZXRhIG5hbWU9ImNpdGF0aW9uX3JlZmVyZW5jZSIgY29udGVudD0iY2l0YXRpb25fdGl0bGU9MjUgeWVhcnMgb2Ygc2VydmluZyB0aGUgY29tbXVuaXR5IHdpdGggcmlib3NvbWFsIFJOQSBnZW5lIHJlZmVyZW5jZSBkYXRhYmFzZXMgYW5kIHRvb2xzOyAgY2l0YXRpb25fam91cm5hbF90aXRsZT1KLiBCaW90ZWNobm9sOyAgY2l0YXRpb25feWVhcj0yMDE3OyAgY2l0YXRpb25fdm9sdW1lPTI2MTsgIGNpdGF0aW9uX3BhZ2VzPTE2OS0xNzY7ICIgLz48bWV0YSBuYW1lPSJjaXRhdGlvbl9yZWZlcmVuY2UiIGNvbnRlbnQ9ImNpdGF0aW9uX3RpdGxlPU1TQVByb2JzLU1QSTogcGFyYWxsZWwgbXVsdGlwbGUgc2VxdWVuY2UgYWxpZ25lciBmb3IgZGlzdHJpYnV0ZWQtbWVtb3J5IHN5c3RlbXM7ICBjaXRhdGlvbl9qb3VybmFsX3RpdGxlPUJpb2luZm9ybWF0aWNzOyAgY2l0YXRpb25feWVhcj0yMDE2OyAgY2l0YXRpb25fdm9sdW1lPTMyOyAgY2l0YXRpb25fcGFnZXM9MzgyNi0zODI4OyAiIC8+PG1ldGEgbmFtZT0iY2l0YXRpb25fcmVmZXJlbmNlIiBjb250ZW50PSJjaXRhdGlvbl90aXRsZT1RdWlja1Byb2JzIDI6IHRvd2FyZHMgcmFwaWQgY29uc3RydWN0aW9uIG9mIGhpZ2gtcXVhbGl0eSBhbGlnbm1lbnRzIG9mIGxhcmdlIHByb3RlaW4gZmFtaWxpZXM7ICBjaXRhdGlvbl9qb3VybmFsX3RpdGxlPVNjaS4gUmVwOyAgY2l0YXRpb25feWVhcj0yMDE3OyAgY2l0YXRpb25fdm9sdW1lPTc7ICBjaXRhdGlvbl9wYWdlcz00MTU1My4iIC8+PG1ldGEgbmFtZT0iY2l0YXRpb25fcmVmZXJlbmNlIiBjb250ZW50PSJjaXRhdGlvbl90aXRsZT1NQUZGVCBvbmxpbmUgc2VydmljZTogbXVsdGlwbGUgc2VxdWVuY2UgYWxpZ25tZW50LCBpbnRlcmFjdGl2ZSBzZXF1ZW5jZSBjaG9pY2UgYW5kIHZpc3VhbGl6YXRpb247ICBjaXRhdGlvbl9qb3VybmFsX3RpdGxlPUJyaWVmIEJpb2luZm9ybWF0aWNzOyAgY2l0YXRpb25feWVhcj0yMDE3OyAiIC8+PG1ldGEgbmFtZT0iY2l0YXRpb25fcmVmZXJlbmNlIiBjb250ZW50PSJjaXRhdGlvbl90aXRsZT1Qcm90ZWluIG11bHRpcGxlIHNlcXVlbmNlIGFsaWdubWVudCBiZW5jaG1hcmtpbmcgdGhyb3VnaCBzZWNvbmRhcnkgc3RydWN0dXJlIHByZWRpY3Rpb247ICBjaXRhdGlvbl9qb3VybmFsX3RpdGxlPUJpb2luZm9ybWF0aWNzOyAgY2l0YXRpb25feWVhcj0yMDE3OyAgY2l0YXRpb25fdm9sdW1lPTMzOyAgY2l0YXRpb25fcGFnZXM9MTMzMS0xMzM3OyAiIC8+PG1ldGEgbmFtZT0iY2l0YXRpb25fcmVmZXJlbmNlIiBjb250ZW50PSJjaXRhdGlvbl90aXRsZT1BIGdlbmVyYWwgbWV0aG9kIGFwcGxpY2FibGUgdG8gdGhlIHNlYXJjaCBmb3Igc2ltaWxhcml0aWVzIGluIHRoZSBhbWlubyBhY2lkIHNlcXVlbmNlIG9mIHR3byBwcm90ZWluczsgIGNpdGF0aW9uX2pvdXJuYWxfdGl0bGU9Si4gTW9sLiBCaW9sOyAgY2l0YXRpb25feWVhcj0xOTcwOyAgY2l0YXRpb25fdm9sdW1lPTQ4OyAgY2l0YXRpb25fcGFnZXM9NDQzLTQ1MzsgIiAvPjxtZXRhIG5hbWU9ImNpdGF0aW9uX3JlZmVyZW5jZSIgY29udGVudD0iY2l0YXRpb25fdGl0bGU9Q09GRkVFOiBhbiBvYmplY3RpdmUgZnVuY3Rpb24gZm9yIG11bHRpcGxlIHNlcXVlbmNlIGFsaWdubWVudHM7ICBjaXRhdGlvbl9qb3VybmFsX3RpdGxlPUJpb2luZm9ybWF0aWNzOyAgY2l0YXRpb25feWVhcj0xOTk4OyAgY2l0YXRpb25fdm9sdW1lPTE0OyAgY2l0YXRpb25fcGFnZXM9NDA3LTQyMjsgIiAvPjxtZXRhIG5hbWU9ImNpdGF0aW9uX3JlZmVyZW5jZSIgY29udGVudD0iY2l0YXRpb25fdGl0bGU9T1hCZW5jaDogYSBiZW5jaG1hcmsgZm9yIGV2YWx1YXRpb24gb2YgcHJvdGVpbiBtdWx0aXBsZSBzZXF1ZW5jZSBhbGlnbm1lbnQgYWNjdXJhY3k7ICBjaXRhdGlvbl9qb3VybmFsX3RpdGxlPUJNQyBCaW9pbmZvcm1hdGljczsgIGNpdGF0aW9uX3llYXI9MjAwMzsgIGNpdGF0aW9uX3ZvbHVtZT00OyAgY2l0YXRpb25fcGFnZXM9NDcuIiAvPjxtZXRhIG5hbWU9ImNpdGF0aW9uX3JlZmVyZW5jZSIgY29udGVudD0iY2l0YXRpb25fdGl0bGU9RmFzdCwgc2NhbGFibGUgZ2VuZXJhdGlvbiBvZiBoaWdoLXF1YWxpdHkgcHJvdGVpbiBtdWx0aXBsZSBzZXF1ZW5jZSBhbGlnbm1lbnRzIHVzaW5nIENsdXN0YWwgT21lZ2E7ICBjaXRhdGlvbl9qb3VybmFsX3RpdGxlPU1vbC4gU3lzdC4gQmlvbDsgIGNpdGF0aW9uX3llYXI9MjAxMTsgIGNpdGF0aW9uX3ZvbHVtZT03OyAgY2l0YXRpb25fcGFnZXM9NTM5IiAvPjxtZXRhIG5hbWU9ImNpdGF0aW9uX3JlZmVyZW5jZSIgY29udGVudD0iY2l0YXRpb25fdGl0bGU9TWFraW5nIGF1dG9tYXRlZCBtdWx0aXBsZSBhbGlnbm1lbnRzIG9mIHZlcnkgbGFyZ2UgbnVtYmVycyBvZiBwcm90ZWluIHNlcXVlbmNlczsgIGNpdGF0aW9uX2pvdXJuYWxfdGl0bGU9QmlvaW5mb3JtYXRpY3M7ICBjaXRhdGlvbl95ZWFyPTIwMTM7ICBjaXRhdGlvbl92b2x1bWU9Mjk7ICBjaXRhdGlvbl9wYWdlcz05ODktOTk1OyAiIC8+PG1ldGEgbmFtZT0iY2l0YXRpb25fcmVmZXJlbmNlIiBjb250ZW50PSJjaXRhdGlvbl90aXRsZT1BcHBsaWNhdGlvbiBvZiB0aGUgTUFGRlQgc2VxdWVuY2UgYWxpZ25tZW50IHByb2dyYW0gdG8gbGFyZ2UgZGF0YeKAlHJlZXhhbWluYXRpb24gb2YgdGhlIHVzZWZ1bG5lc3Mgb2YgY2hhaW5lZCBndWlkZSB0cmVlczsgIGNpdGF0aW9uX2pvdXJuYWxfdGl0bGU9QmlvaW5mb3JtYXRpY3M7ICBjaXRhdGlvbl95ZWFyPTIwMTY7ICBjaXRhdGlvbl92b2x1bWU9MzI7ICBjaXRhdGlvbl9wYWdlcz0zMjQ2LTMyNTE7ICIgLz48bWV0YSBuYW1lPSJjaXRhdGlvbl9mdWxsdGV4dF93b3JsZF9yZWFkYWJsZSIgY29udGVudD0iIiAvPjxtZXRhIG5hbWU9ImNpdGF0aW9uX3BkZl91cmwiIGNvbnRlbnQ9Imh0dHBzOi8vYWNhZGVtaWMub3VwLmNvbS9iaW9pbmZvcm1hdGljcy9hcnRpY2xlLXBkZi8zNC8xNC8yNDkwLzI1MTM4MjY1L2J0eTEyMS5wZGYiIC8+PG1ldGEgbmFtZT0iZGVzY3JpcHRpb24iIGNvbnRlbnQ9IkFic3RyYWN0U3VtbWFyeS4gIFdlIHJlcG9ydCBhbiB1cGRhdGUgZm9yIHRoZSBNQUZGVCBtdWx0aXBsZSBzZXF1ZW5jZSBhbGlnbm1lbnQgcHJvZ3JhbSB0byBlbmFibGUgcGFyYWxsZWwgY2FsY3VsYXRpb24gb2YgbGFyZ2UgbnVtYmVycyBvZiBzZXF1ZW5jZXMuIFRoZSBHLUlOUy0iIC8+ZAIED2QWAmYPZBYCZg8WBB4EaHJlZgVzLy9vdXAuc2lsdmVyY2hhaXItY2RuLmNvbS9Eb3dubG9hZEZpbGUvRG93bmxvYWRJbWFnZS5hc3B4P2ltYWdlPSZQUFR0eXBlPVNsaWRlU2V0JmFyPTQ5MTYwOTkmeHNsdFBhdGg9fi9VSS9hcHAvWFNMVB4JaW5uZXJodG1sBRREb3dubG9hZCBhbGwgZmlndXJlc2RkiWYmBWqkRxhrLYT6bq3p6+rzP9s=" type="hidden">
+</div>
+
+<div class="aspNetHidden">
+
+	<input name="__VIEWSTATEGENERATOR" id="__VIEWSTATEGENERATOR" value="2173C2F0" type="hidden">
+</div>
+        </form>
+        
+        <input id="hdnSiteID" value="5139" type="hidden">
+        <input id="hdnAdDelaySeconds" value="5000" type="hidden">
+        <input id="hdnAdConfigurationTop" value="default" type="hidden">
+        <input id="hdnAdConfigurationRightRail" value="sticky" type="hidden">
+
+        
+
+        
+    <div class="master-container">
+        <section class="master-header row">
+                <div class="widget widget-SitePageHeader widget-instance-SitePageHeader">
+        
+    <div class="ad-banner js-ad-banner-header">
+    <div class="widget widget-AdBlock widget-instance-HeaderAd">
+        
+
+<div id="adBlockHeader" style=" ">
+    <script>
+        googletag.cmd.push(function () { googletag.display('adBlockHeader'); });
+    </script>
+<div id="google_ads_iframe_/116097782/bioinformatics_Supplement_Ad1_0__container__" style="border: 0pt none;"><iframe id="google_ads_iframe_/116097782/bioinformatics_Supplement_Ad1_0" title="3rd party ad content" name="google_ads_iframe_/116097782/bioinformatics_Supplement_Ad1_0" scrolling="no" marginwidth="0" marginheight="0" style="border: 0px none; vertical-align: bottom;" srcdoc="" width="970" frameborder="0" height="90"></iframe></div></div>
+
+    </div>
+
+    </div>
+
+    <div class="oup-header">
+        <div class="center-inner-row">
+
+            <div class="oup-header-logo">
+                <a href="https://academic.oup.com/"><img src="oxford-academic-logo.svg" alt="Oxford University Press" class="oup-header-image"></a>
+            </div><!-- /.oup-header-logo -->
+
+            <ul class="oup-header-menu account-menu">
+
+                <!-- MOBILE SEARCH  -->
+                <li class="oup-header-menu-item mobile">
+                    <button href="" class="btn btn-as-icon mobile-dropdown-toggle mobile-search-toggle">
+                        <i class="icon-menu_search"><span class="screenreader-text">Search</span></i>
+                    </button>
+                </li>
+
+                <!-- MOBILE MENU -->
+                <li class="oup-header-menu-item mobile">
+                    <button href="" class="btn btn-as-icon mobile-dropdown-toggle mobile-account-toggle">
+                        <i class="icon-menu_account"><span class="screenreader-text">Account Menu</span></i>
+                    </button>
+                </li>
+
+                <!-- MOBILE NAV -->
+                <li class="oup-header-menu-item mobile">
+                    <button href="" class="btn btn-as-icon mobile-dropdown-toggle mobile-nav-toggle">
+                        <i class="icon-menu_hamburger"><span class="screenreader-text">Menu</span></i>
+                    </button>
+                </li>
+
+                <!-- DESKTOP INSTITUTIONS -->
+                    <li class="oup-header-menu-item desktop">
+                        
+                            <a href="" class="dropdown-toggle institution">International Institue of Tropical Agriculture (IITA) <i class="icon-general-arrow-filled-down arrow-icon"></i></a>
+                        <div class="dropdown-panel dropdown-panel-institution">
+                            
+                            <div class="dropdown-menu">
+                                <ul>
+
+                                        <li class="dropdown-institution-item">
+
+International Institue of Tropical Agriculture (IITA)
+                                        </li>
+
+                                </ul>
+
+                            </div><!-- /.dropdown-menu -->
+                        </div><!-- /.dropdown-panel .dropdown-panel-institution -->
+                    </li><!-- /.oup-header-menu-item .desktop -->
+
+                <!-- DESKTOP SIGN IN -->
+                <li class="oup-header-menu-item desktop">
+                    <a href="" class="dropdown-toggle signin" id="header-account-info-user-fullname">
+                        
+Sign In                        <i class="icon-general-arrow-filled-down arrow-icon"></i>
+                    </a>
+                    <div class="dropdown-panel dropdown-panel-signin dropdown-panel-form">
+                        <div class="spinner"></div>
+                    </div><!-- /.dropdown-panel -->
+                </li>
+
+                <!-- DESKTOP REGISTRATION -->
+                    <li class="oup-header-menu-item desktop"><a href="https://academic.oup.com/my-account/register?siteId=5139&amp;returnUrl=%2fbioinformatics%2farticle%2f34%2f14%2f2490%2f4916099" class="register">Register</a></li>
+
+                <!-- LANGUAGE -->
+                    <!-- <li class="oup-header-menu-item desktop">
+                        <a href="" class="dropdown-toggle language">Language</a>
+                        <div class="dropdown-panel">
+                            <div class="dropdown-menu">
+                                <ul>
+                                    foreach (var lang in Model.LanguageOptions)
+                                    {
+                                        string selectedClass = (lang.SiteId == Model.SiteId ? " selected" : "");
+                                        Html.Raw(String.Format("<li class=\"header-language-item{0}\"><a href=\"//{1}\">{2}</a></li>", selectedClass, lang.SiteUrl, lang.LanguageText))
+                                        ;
+                                    }
+                                </ul>
+                            </div>
+                        </div>
+                    </li> -->
+
+            </ul><!-- /.oup-header-menu .account-menu -->
+        </div><!-- /.center-inner-row -->
+    </div><!-- /.oup-header -->
+
+<div class="dropdown-panel-wrap">
+
+    
+    <div class="dropdown-panel mobile-search-dropdown">
+        <div class="mobile-search-inner-wrap">
+            <div class="navbar-search">
+                <div id="MobileMicrositeSearch" class="mobile-microsite-search">
+                    <label for="mobile-navbar-search-filter" class="screenreader-text">Navbar Search Filter</label>
+                    <select class="navbar-search-filter" id="mobile-navbar-search-filter">
+                                                    <optgroup label="Search within this journal">
+<option class="header-search-bar-filters-item" value="Issue" selected="selected">This issue</option><option class="header-search-bar-filters-item" value="">All  Bioinformatics</option>
+                            </optgroup>
+                            <optgroup label="Search beyond this journal">
+<option class="header-search-bar-filters-item" value="Journals">All  Journals</option>                            </optgroup>
+                    </select>
+
+
+
+
+
+                    <label for="MobileMicrositeSearchTerm" class="screenreader-text">Mobile Microsite Search Term</label>
+                    <input class="mobile-search-input mobile-microsite-search-term" maxlength="255" placeholder="Search" id="MobileMicrositeSearchTerm" type="text">
+
+                    <span id="MobileMicrositeSearchIcon" class="mobile-microsite-search-icon mobile-search-submit icon-menu_search"></span>
+
+                </div><!-- /#MobileMicrositeSearch -->
+            </div><!-- /.navbar-search -->
+        </div><!-- /.mobile-search-inner-wrap -->
+    </div><!-- /.dropdown-panel .dropdown-panel-search -->
+    
+    <div class="dropdown-panel mobile-account-dropdown">
+        <ul class="site-menu site-menu-lvl-0">
+            <li class="site-menu-item site-menu-lvl-0">
+                <a href="" class="nav-link mobile-account-signin dummy-link" id="header-account-info-user-fullname">
+                    
+Sign In                    <i class="mobile-nav-arrow icon-general_arrow-down"></i>
+                </a>
+                <ul class="site-menu site-menu-lvl-1 individual-menu">
+                    <li class="dropdown-signin-form">
+                        <div class="spinner"></div>
+                    </li>
+                </ul>
+            </li>
+                <li class="site-menu-item site-menu-lvl-0">
+                        <a class="nav-link mobile-account-institution dummy-link">
+                            International Institue of Tropical Agriculture (IITA)
+                        </a>
+
+                    <i class="mobile-nav-arrow icon-general_arrow-down"></i>
+                    <ul class="site-menu site-menu-lvl-1">
+                            <li class="dropdown-institution-item">
+
+International Institue of Tropical Agriculture (IITA)
+                            </li>
+
+                        <li class="dropdown-institution-signout">
+                        </li>
+                    </ul>
+                </li>
+                            <li class="site-menu-item">
+                    <a href="https://academic.oup.com/my-account/register?siteId=5139&amp;returnUrl=%2fbioinformatics%2farticle%2f34%2f14%2f2490%2f4916099" class="register nav-link">Register</a>
+                </li>
+        </ul>
+    </div><!-- /.dropdown-panel .dropdown-panel-account -->
+    
+    <div class="dropdown-panel mobile-nav-dropdown">
+
+
+    <i class="desktop-nav-arrow icon-general-arrow-filled-down arrow-icon"></i><i class="mobile-nav-arrow icon-general_arrow-down"></i>
+    <ul class="site-menu site-menu-lvl-0">
+        <li class="site-menu-item site-menu-lvl-0" id="site-menu-item-1165207">
+            <a href="https://academic.oup.com/bioinformatics/issue" class="nav-link ">Issues</a>
+            
+        </li>
+        <li class="site-menu-item site-menu-lvl-0" id="site-menu-item-1165208">
+            <a href="https://academic.oup.com/bioinformatics/advance-articles" class="nav-link ">Advance articles</a>
+            
+        </li>
+        <li class="site-menu-item site-menu-lvl-0" id="site-menu-item-1165205">
+            <a href="https://academic.oup.com/bioinformatics/#" class="nav-link dummy-link">Submit</a>
+                <i class="desktop-nav-arrow icon-general-arrow-filled-down arrow-icon"></i><i class="mobile-nav-arrow icon-general_arrow-down"></i>
+    <ul class="site-menu site-menu-lvl-1">
+        <li class="site-menu-item site-menu-lvl-1" id="site-menu-item-1165209">
+            <a href="https://academic.oup.com/bioinformatics/pages/General_Instructions" class="nav-link ">Author Guidelines</a>
+            
+        </li>
+        <li class="site-menu-item site-menu-lvl-1" id="site-menu-item-1165210">
+            <a href="http://mc.manuscriptcentral.com/bioinformatics" class="nav-link ">Submission Site</a>
+            
+        </li>
+        <li class="site-menu-item site-menu-lvl-1" id="site-menu-item-1165211">
+            <a href="http://www.oxfordjournals.org/en/authors/offprints.html" class="nav-link ">Order Offprints</a>
+            
+        </li>
+        <li class="site-menu-item site-menu-lvl-1" id="site-menu-item-1165212">
+            <a href="http://www.oxfordjournals.org/en/oxford-open/index.html" class="nav-link ">Open Access Options</a>
+            
+        </li>
+    </ul>
+
+        </li>
+        <li class="site-menu-item site-menu-lvl-0" id="site-menu-item-1165213">
+            <a href="https://academic.oup.com/bioinformatics/subscribe" class="nav-link ">Purchase</a>
+            
+        </li>
+        <li class="site-menu-item site-menu-lvl-0" id="site-menu-item-1165214">
+            <a href="https://academic.oup.com/my-account/email-alerts" class="nav-link ">Alerts</a>
+            
+        </li>
+        <li class="site-menu-item site-menu-lvl-0" id="site-menu-item-1165206">
+            <a href="https://academic.oup.com/bioinformatics/#" class="nav-link dummy-link">About</a>
+                <i class="desktop-nav-arrow icon-general-arrow-filled-down arrow-icon"></i><i class="mobile-nav-arrow icon-general_arrow-down"></i>
+    <ul class="site-menu site-menu-lvl-1">
+        <li class="site-menu-item site-menu-lvl-1" id="site-menu-item-1165215">
+            <a href="https://academic.oup.com/bioinformatics/pages/About" class="nav-link ">About Bioinformatics</a>
+            
+        </li>
+        <li class="site-menu-item site-menu-lvl-1" id="site-menu-item-1165216">
+            <a href="http://science-and-mathematics-careernetwork.oxfordjournals.org/jobseeker/search/results/?t730=&amp;t732=470053&amp;t731=&amp;t733=&amp;t735=&amp;t737=&amp;max=25&amp;site_id=20106&amp;search=" class="nav-link ">Journals Career Network</a>
+            
+        </li>
+        <li class="site-menu-item site-menu-lvl-1" id="site-menu-item-1165217">
+            <a href="https://academic.oup.com/bioinformatics/pages/Editorial_Board" class="nav-link ">Editorial Board</a>
+            
+        </li>
+        <li class="site-menu-item site-menu-lvl-1" id="site-menu-item-1165218">
+            <a href="http://www.oupmediainfo.com/" class="nav-link ">Advertising and Corporate Services</a>
+            
+        </li>
+        <li class="site-menu-item site-menu-lvl-1" id="site-menu-item-1165219">
+            <a href="https://academic.oup.com/journals/pages/access_purchase/rights_and_permissions/self_archiving_policy_b" class="nav-link ">Self-Archiving Policy</a>
+            
+        </li>
+        <li class="site-menu-item site-menu-lvl-1" id="site-menu-item-1165220">
+            <a href="http://www.oxfordjournals.org/en/access-purchase/dispatch-dates.html" class="nav-link ">Dispatch Dates</a>
+            
+        </li>
+    </ul>
+
+        </li>
+    </ul>
+    </div><!-- /.dropdown-panel .dropdown-panel-nav -->
+
+</div><!-- /.dropdown-panel-wrap -->
+
+
+    <div class="journal-header journal-bg">
+        <div class="center-inner-row">
+                <a href="https://academic.oup.com/bioinformatics" class=" journal-logo-container">
+
+            <img id="logo-Bioinformatics" class="journal-logo" src="bioinformatics_title-205396838.svg" alt="Bioinformatics">
+
+                </a>
+            <div class="society-logo-block">
+                    <div class="society-block-inner-wrap">
+                            <a href="http://www.iscb.org/" target="" class="society-logo-container">
+                                <img id="logo-InternationalSocietyforComputationalBiology" class="society-logo" src="bioinformatics_h11820233911.svg" alt="International Society for Computational Biology">
+                            </a>
+                                            </div><!-- /.society-block-inner-wrap - NOTE: used to vertically center one or more society logos -->
+            </div> <!-- /.society-logo-block - NOTE: We want this element on the page, even if there are no society logos -->
+        </div><!-- /.center-inner-row -->
+    </div><!-- /.journal-header -->
+
+<div class="navbar">
+    <div class="center-inner-row">
+        <nav class="navbar-menu">
+
+
+    <i class="desktop-nav-arrow icon-general-arrow-filled-down arrow-icon"></i><i class="mobile-nav-arrow icon-general_arrow-down"></i>
+    <ul class="site-menu site-menu-lvl-0">
+        <li class="site-menu-item site-menu-lvl-0" id="site-menu-item-1165207">
+            <a href="https://academic.oup.com/bioinformatics/issue" class="nav-link ">Issues</a>
+            
+        </li>
+        <li class="site-menu-item site-menu-lvl-0" id="site-menu-item-1165208">
+            <a href="https://academic.oup.com/bioinformatics/advance-articles" class="nav-link ">Advance articles</a>
+            
+        </li>
+        <li class="site-menu-item site-menu-lvl-0" id="site-menu-item-1165205">
+            <a href="https://academic.oup.com/bioinformatics/#" class="nav-link dummy-link">Submit</a>
+                <i class="desktop-nav-arrow icon-general-arrow-filled-down arrow-icon"></i><i class="mobile-nav-arrow icon-general_arrow-down"></i>
+    <ul class="site-menu site-menu-lvl-1">
+        <li class="site-menu-item site-menu-lvl-1" id="site-menu-item-1165209">
+            <a href="https://academic.oup.com/bioinformatics/pages/General_Instructions" class="nav-link ">Author Guidelines</a>
+            
+        </li>
+        <li class="site-menu-item site-menu-lvl-1" id="site-menu-item-1165210">
+            <a href="http://mc.manuscriptcentral.com/bioinformatics" class="nav-link ">Submission Site</a>
+            
+        </li>
+        <li class="site-menu-item site-menu-lvl-1" id="site-menu-item-1165211">
+            <a href="http://www.oxfordjournals.org/en/authors/offprints.html" class="nav-link ">Order Offprints</a>
+            
+        </li>
+        <li class="site-menu-item site-menu-lvl-1" id="site-menu-item-1165212">
+            <a href="http://www.oxfordjournals.org/en/oxford-open/index.html" class="nav-link ">Open Access Options</a>
+            
+        </li>
+    </ul>
+
+        </li>
+        <li class="site-menu-item site-menu-lvl-0" id="site-menu-item-1165213">
+            <a href="https://academic.oup.com/bioinformatics/subscribe" class="nav-link ">Purchase</a>
+            
+        </li>
+        <li class="site-menu-item site-menu-lvl-0" id="site-menu-item-1165214">
+            <a href="https://academic.oup.com/my-account/email-alerts" class="nav-link ">Alerts</a>
+            
+        </li>
+        <li class="site-menu-item site-menu-lvl-0" id="site-menu-item-1165206">
+            <a href="https://academic.oup.com/bioinformatics/#" class="nav-link dummy-link">About</a>
+                <i class="desktop-nav-arrow icon-general-arrow-filled-down arrow-icon"></i><i class="mobile-nav-arrow icon-general_arrow-down"></i>
+    <ul class="site-menu site-menu-lvl-1">
+        <li class="site-menu-item site-menu-lvl-1" id="site-menu-item-1165215">
+            <a href="https://academic.oup.com/bioinformatics/pages/About" class="nav-link ">About Bioinformatics</a>
+            
+        </li>
+        <li class="site-menu-item site-menu-lvl-1" id="site-menu-item-1165216">
+            <a href="http://science-and-mathematics-careernetwork.oxfordjournals.org/jobseeker/search/results/?t730=&amp;t732=470053&amp;t731=&amp;t733=&amp;t735=&amp;t737=&amp;max=25&amp;site_id=20106&amp;search=" class="nav-link ">Journals Career Network</a>
+            
+        </li>
+        <li class="site-menu-item site-menu-lvl-1" id="site-menu-item-1165217">
+            <a href="https://academic.oup.com/bioinformatics/pages/Editorial_Board" class="nav-link ">Editorial Board</a>
+            
+        </li>
+        <li class="site-menu-item site-menu-lvl-1" id="site-menu-item-1165218">
+            <a href="http://www.oupmediainfo.com/" class="nav-link ">Advertising and Corporate Services</a>
+            
+        </li>
+        <li class="site-menu-item site-menu-lvl-1" id="site-menu-item-1165219">
+            <a href="https://academic.oup.com/journals/pages/access_purchase/rights_and_permissions/self_archiving_policy_b" class="nav-link ">Self-Archiving Policy</a>
+            
+        </li>
+        <li class="site-menu-item site-menu-lvl-1" id="site-menu-item-1165220">
+            <a href="http://www.oxfordjournals.org/en/access-purchase/dispatch-dates.html" class="nav-link ">Dispatch Dates</a>
+            
+        </li>
+    </ul>
+
+        </li>
+    </ul>
+        </nav>
+            <div class="navbar-search-container">
+                <div class="navbar-search-close js_close-navsearch">Close</div>
+                <div class="navbar-search">
+                    <div id="MicrositeSearch" class="microsite-search">
+                        <label for="navbar-search-filter" class="screenreader-text">search filter</label>
+                        <select class="navbar-search-filter" id="navbar-search-filter">
+                                                            <optgroup label="Search within this journal">
+<option class="header-search-bar-filters-item" value="Issue">This issue</option><option class="header-search-bar-filters-item" value="" selected="selected">All  Bioinformatics</option>
+                                </optgroup>
+                                <optgroup label="Search beyond this journal">
+<option class="header-search-bar-filters-item" value="Journals">All  Journals</option>                                </optgroup>
+                        </select>
+
+                        <label for="MicrositeSearchTerm" class="screenreader-text">search input</label>
+                        <input class="navbar-search-input microsite-search-term" maxlength="255" id="MicrositeSearchTerm" title="search input" type="text">
+
+                        <span id="MicrositeSearchIcon" class="microsite-search-icon navbar-search-submit icon-menu_search"></span>
+
+                    </div><!-- /#MicrositeSearch -->
+                </div><!-- /.navbar-search -->
+                <div class="navbar-search-advanced"><a href="https://academic.oup.com/bioinformatics/advanced-search?page=1&amp;fl_SiteID=5139&amp;SearchSourceType=1" class="advanced-search js-advanced-search">Advanced Search</a></div>
+            </div><!-- /.navbar-search-container -->
+            <div class="navbar-search-collapsed"><i class="icon-menu_search js_expand-navsearch"></i></div>
+    </div><!-- /.center-inner-row -->
+</div><!-- /.navbar -->
+
+    <input name="searchScope" id="hfSolrJournalID" value="" type="hidden">
+    <input name="parentSiteName" id="hfParentSiteName" value="Journals" type="hidden">
+    <input name="parentSiteUrl" id="hfparentSiteUrl" value="academic.oup.com/journals" type="hidden">
+    <input name="siteID" id="hfsiteID" value="5139" type="hidden">
+    <input name="parentSiteID" id="hfparentSiteID" value="5567" type="hidden">
+    <input id="hfSolrJournalName" value="" type="hidden">
+    <input id="hfSolrMaxAllowSearchChar" value="100" type="hidden">
+    <input id="hfJournalShortName" value="" type="hidden">
+    <input id="hfSearchPlaceholder" value="" type="hidden">
+    <input name="hfGlobalSearchSiteURL" id="hfGlobalSearchSiteURL" value="" type="hidden">
+    <input name="journalSiteScope" id="hfjournalSiteScope" value="Journals" type="hidden">
+    <input name="parentSiteScope" id="hfparentSiteScope" value="Parent" type="hidden">
+    <input name="defaultSearchURL" id="hfdefaultSearchURL" value="search-results?page=1&amp;q=" type="hidden">
+    <input name="issueSearch" id="hfIssueSearch" value="&amp;fl_IssueID=109273" type="hidden">
+    <input name="issueSiteScope" id="hfIssueSiteScope" value="Issue" type="hidden">
+<input id="hfDefaultAdvancedSearchUrl" name="hfDefaultAdvancedSearchUrl" value="advanced-search?page=1&amp;q=" type="hidden">    <input name="hfSearchSiteURL" id="hfSiteURL" value="academic.oup.com/bioinformatics" type="hidden">
+    <script type="text/javascript">
+        (function () {
+            var hfSiteUrl = document.getElementById('hfSiteURL');
+            var siteUrl = hfSiteUrl.value;
+            var subdomainIndex = siteUrl.indexOf('/');
+
+            hfSiteUrl.value = location.host + (subdomainIndex >= 0 ? siteUrl.substring(subdomainIndex) : '');
+        })();
+    </script>
+<input id="routename" name="RouteName" value="bioinformatics" type="hidden">
+    </div>
+
+        </section>
+        <main id="main" tabindex="-1">
+            <section class="master-main row">
+                <div class="center-inner-row no-overflow">
+                    
+    <div class="page-column-wrap">
+        <div id="InfoColumn" class="page-column page-column--left">
+            <div class="mobile-content-topbar hide">
+                <button class="toggle-left-col toggle-left-col__article">Article Navigation</button>
+            </div>
+            <div class="info-inner-wrap">
+                
+                <button class="toggle-left-col__close btn-as-icon icon-general-close">
+                    <span class="screenreader-text">Close mobile search navigation</span>
+                </button>
+                <div class="responsive-nav-title">Article navigation</div>
+
+                    <div class="info-widget-wrap">
+                        <div class="widget widget-IssueInfo widget-instance-OUP_IssueInfo_Article">
+        
+
+<div id="issueInfo-OUP_IssueInfo_Article" class="article-info-wrap clearfix">
+    <i class="icon-general-close mobile-nav-btn nav-open"></i>
+    <div class="article-issue-img">
+            <a href="https://academic.oup.com/bioinformatics/issue/34/14"><img id="issueImage" class="fb-featured-image" src="m_bioinfo_34_14cover.png" alt="Issue Cover"></a>
+    </div>
+    <div class="article-issue-info">
+        <div class="volume-issue__wrap">
+
+            <a href="https://academic.oup.com/bioinformatics/issue/34/14">
+                        <div class="volume trailing-comma">Volume 34</div>
+                        <div class="issue">Issue 14</div>
+
+            </a>
+
+        </div>
+        <div class="ii-pub-date">
+15 July 2018        </div>
+        
+    </div>
+
+</div>
+    </div>
+
+
+                    <div class="content-nav">
+                            <div class="widget widget-ArticleJumpLinks widget-instance-OUP_ArticleJumpLinks_Widget">
+        
+
+<div class="contents-title">Article Contents</div>
+<ul class="jumplink-list">
+        <li class="section-jump-link head-1" link-destination="118609082">
+            <div class="section-jump-link__link-wrap">
+
+                <a class="js-jumplink scrollTo" href="#118609082">Abstract</a>
+            </div>
+        </li>
+        <li class="section-jump-link head-1" link-destination="118609091">
+            <div class="section-jump-link__link-wrap">
+
+                <a class="js-jumplink scrollTo" href="#118609091">Acknowledgements</a>
+            </div>
+        </li>
+        <li class="section-jump-link head-1" link-destination="118609096">
+            <div class="section-jump-link__link-wrap">
+
+                <a class="js-jumplink scrollTo" href="#118609096">References</a>
+            </div>
+        </li>
+<li class="section-jump-link head-1 dataSupplements-jumplink">
+            <div class="section-jump-link__link-wrap">
+                <a class="jumplink js-jumplink scrollTo" href="#supplementary-data">Supplementary data</a>
+            </div>
+        </li></ul>
+
+    </div>
+
+	                </div>
+            
+                        <div class="widget widget-ArticleNavLinks widget-instance-OUP_ArticleNavLinks_Article">
+        <ul class="inline-list">
+        <li class="prev arrow">
+            <a href="https://academic.oup.com/bioinformatics/article/34/14/2487/4911884">&lt; Previous</a>
+        </li>        
+            <li class="next arrow">
+            <a href="https://academic.oup.com/bioinformatics/article/34/14/2493/4921175">Next &gt;</a>
+        </li>
+</ul>
+    </div>
+
+                </div>
+            </div>
+        </div> 
+    
+        <div id="ContentColumn" class="page-column page-column--center">
+            
+             <div class="article-browse-top article-browse-mobile-nav">
+                <div class="article-browse-mobile-nav-inner">
+                    <button class="toggle-left-col toggle-left-col__article btn-as-link">
+                        Article Navigation
+                    </button>
+                </div>
+            </div>
+
+            <div class="content-inner-wrap">
+                    <div class="widget widget-ArticleTopInfo widget-instance-OUP_ArticleTop_Info_Widget">
+        <div class="module-widget article-top-widget">
+
+    
+
+    
+        <div class="access-state-logos all-viewports">
+    
+            </div>
+
+
+    <div class="widget-items">
+                <h1 class="wi-article-title article-title-main">Parallelization of MAFFT for large-scale multiple sequence alignments
+<i class="icon-availability_open" title="Open Access"></i>                </h1>
+                <div class="wi-authors">
+                    <div class="al-authors-list">
+                                <span class="al-author-name-more">
+
+                                    <span class="al-author-info-wrap arrow-up">
+
+
+<div id="authorInfo_OUP_ArticleTop_Info_Widget" class="info-card-author">
+    <div class="name-role-wrap">
+        <div class="info-card-name">Tsukasa Nakamura</div>
+    </div>
+
+        <div class="info-card-affilitation">
+            Department of Computational Biology and Medical Sciences, 
+Graduate School of Frontier Sciences, University of Tokyo, Chiba, 
+JapanArtificial Intelligence Research Center (AIRC), National Institute 
+of Advanced Industrial Science and Technology (AIST), Tokyo, Japan
+        </div>
+
+
+
+
+
+        <div class="info-card-search-label">
+            Search for other works by this author on:
+        </div>
+            <div class="info-card-search info-card-search-oxford">
+                <a href="https://academic.oup.com/bioinformatics/search-results?f_Authors=Tsukasa+Nakamura">Oxford Academic</a>
+            </div>
+            <div class="info-card-search info-card-search-pubmed">
+                <a href="http://www.ncbi.nlm.nih.gov/pubmed?cmd=search&amp;term=Nakamura%20T">PubMed</a>
+            </div>
+            <div class="info-card-search info-card-search-google">
+                <a href="http://scholar.google.com/scholar?q=author:%22Nakamura%20T%22">Google Scholar</a>
+            </div>
+
+</div>
+                                    </span>
+                                    <a class="linked-name" href="javascript:;">Tsukasa Nakamura</a>
+                                </span>
+                                <span class="al-author-name-more">
+
+                                    <span class="al-author-info-wrap arrow-up">
+
+
+<div id="authorInfo_OUP_ArticleTop_Info_Widget" class="info-card-author">
+    <div class="name-role-wrap">
+        <div class="info-card-name">Kazunori D Yamada</div>
+    </div>
+
+        <div class="info-card-affilitation">
+            Artificial Intelligence Research Center (AIRC), National 
+Institute of Advanced Industrial Science and Technology (AIST), Tokyo, 
+JapanGraduate School of Information Sciences, Tohoku University, Sendai,
+ Japan
+        </div>
+
+
+
+
+
+        <div class="info-card-search-label">
+            Search for other works by this author on:
+        </div>
+            <div class="info-card-search info-card-search-oxford">
+                <a href="https://academic.oup.com/bioinformatics/search-results?f_Authors=Kazunori+D+Yamada">Oxford Academic</a>
+            </div>
+            <div class="info-card-search info-card-search-pubmed">
+                <a href="http://www.ncbi.nlm.nih.gov/pubmed?cmd=search&amp;term=Yamada%20K">PubMed</a>
+            </div>
+            <div class="info-card-search info-card-search-google">
+                <a href="http://scholar.google.com/scholar?q=author:%22Yamada%20K%22">Google Scholar</a>
+            </div>
+
+</div>
+                                    </span>
+                                    <a class="linked-name" href="javascript:;">Kazunori D Yamada</a>
+                                </span>
+                                <span class="al-author-name-more">
+
+                                    <span class="al-author-info-wrap arrow-up">
+
+
+<div id="authorInfo_OUP_ArticleTop_Info_Widget" class="info-card-author">
+    <div class="name-role-wrap">
+        <div class="info-card-name">Kentaro Tomii</div>
+    </div>
+
+        <div class="info-card-affilitation">
+            Department of Computational Biology and Medical Sciences, 
+Graduate School of Frontier Sciences, University of Tokyo, Chiba, 
+JapanArtificial Intelligence Research Center (AIRC), National Institute 
+of Advanced Industrial Science and Technology (AIST), Tokyo, 
+JapanBiotechnology Research Institute for Drug Discovery (BRD), AIST, 
+Tokyo, JapanAIST-Tokyo Tech Real World Big-Data Computation Open 
+Innovation Laboratory (RWBC-OIL), Tokyo, Japan
+        </div>
+
+
+
+
+
+        <div class="info-card-search-label">
+            Search for other works by this author on:
+        </div>
+            <div class="info-card-search info-card-search-oxford">
+                <a href="https://academic.oup.com/bioinformatics/search-results?f_Authors=Kentaro+Tomii">Oxford Academic</a>
+            </div>
+            <div class="info-card-search info-card-search-pubmed">
+                <a href="http://www.ncbi.nlm.nih.gov/pubmed?cmd=search&amp;term=Tomii%20K">PubMed</a>
+            </div>
+            <div class="info-card-search info-card-search-google">
+                <a href="http://scholar.google.com/scholar?q=author:%22Tomii%20K%22">Google Scholar</a>
+            </div>
+
+</div>
+                                    </span>
+                                    <a class="linked-name" href="javascript:;">Kentaro Tomii</a>
+                                </span>
+                                <span class="al-author-name-more">
+
+                                    <span class="al-author-info-wrap arrow-up">
+
+
+<div id="authorInfo_OUP_ArticleTop_Info_Widget" class="info-card-author">
+    <div class="name-role-wrap">
+        <div class="info-card-name">Kazutaka Katoh</div>
+    </div>
+
+        <div class="info-card-affilitation">
+            Artificial Intelligence Research Center (AIRC), National 
+Institute of Advanced Industrial Science and Technology (AIST), Tokyo, 
+JapanResearch Institute for Microbial Diseases, Osaka University, Suita,
+ Japan
+        </div>
+
+                <div class="info-card-note">
+                    <a reveal-id="bty121-cor1" data-open="bty121-cor1" class="link link-ref link-reveal xref-default"><!----></a>
+                </div>
+
+        <div class="info-author-correspondence">
+            To whom correspondence should be addressed. <a href="mailto:katoh@ifrec.osaka-u.ac.jp" target="">katoh@ifrec.osaka-u.ac.jp</a>
+        </div>
+
+
+        <div class="info-card-location">
+            <a href="http://orcid.org/0000-0003-4133-8393">
+                <img class="orchid-icon" alt="orchid id" src="mini-icon.png">&nbsp;&nbsp;http://orcid.org/0000-0003-4133-8393
+           </a>
+        </div>
+
+        <div class="info-card-search-label">
+            Search for other works by this author on:
+        </div>
+            <div class="info-card-search info-card-search-oxford">
+                <a href="https://academic.oup.com/bioinformatics/search-results?f_Authors=Kazutaka+Katoh">Oxford Academic</a>
+            </div>
+            <div class="info-card-search info-card-search-pubmed">
+                <a href="http://www.ncbi.nlm.nih.gov/pubmed?cmd=search&amp;term=Katoh%20K">PubMed</a>
+            </div>
+            <div class="info-card-search info-card-search-google">
+                <a href="http://scholar.google.com/scholar?q=author:%22Katoh%20K%22">Google Scholar</a>
+            </div>
+
+</div>
+                                    </span>
+                                    <a class="linked-name" href="javascript:;">Kazutaka Katoh<i class="icon-general-mail"></i></a>
+                                </span>
+
+                    </div>
+                </div>
+            <div class="pub-history-wrap clearfix">
+
+                    <div class="pub-history-row clearfix">
+                        <div class="ww-citation-primary"><em>Bioinformatics</em>, Volume 34, Issue 14, 15 July 2018, Pages 2490–2492, <a href="https://doi.org/10.1093/bioinformatics/bty121">https://doi.org/10.1093/bioinformatics/bty121</a></div>
+                    </div>
+                    <div class="pub-history-row clearfix">
+                        <div class="ww-citation-date-wrap">
+                            <div class="citation-label">Published:</div>
+                            <div class="citation-date">01 March 2018</div>
+                        </div>
+                            <div class="ww-citation-history-wrap">
+                                <div class="citation-label">
+                                    Article history<i class="icon-general-arrow-filled-down arrow-icon"></i>
+                                </div>
+                            </div>
+                    </div>
+                                    <div class="ww-history">
+                            <div class="history-entry">
+                                <div class="wi-state">Received:</div>
+                                <div class="wi-date">19 October 2017</div>
+                            </div>
+                            <div class="history-entry">
+                                <div class="wi-state">Revision Received:</div>
+                                <div class="wi-date">07 February 2018</div>
+                            </div>
+                            <div class="history-entry">
+                                <div class="wi-state">Accepted:</div>
+                                <div class="wi-date">28 February 2018</div>
+                            </div>
+
+                        <div class="ww-history-close"><a>Close</a></div>
+                    </div><!-- /.ww-history -->
+            </div><!-- /.pub-history-wrap -->
+
+    </div>
+</div>
+
+<script>
+    $(document).ready(function () {
+        $('.article-top-widget').on('click', '.ati-toggle-trigger', function () {
+            $(this).find('.icon-general-add, .icon-minus').toggleClass('icon-minus icon-general-add');
+            $(this).siblings('.ati-toggle-content').toggleClass('hide');
+        });
+
+        // In Chrome, an anchor tag with target="_blank" and a "mailto:" href opens a new tab/window as well as the email client
+        // I suspect this behavior will be corrected in the future
+        // Remove the target="_blank"
+        $('ul.wi-affiliationList').find('a[href^="mailto:"]').each(function () {
+            $(this).removeAttr('target');
+        });
+    });
+</script>
+
+
+    </div>
+    <div class="widget widget-ArticleLinks widget-instance-OUP_Article_Links_Widget">
+        
+
+
+    </div>
+
+        
+                <div class="article-body">
+                                    <div class="toolbar-wrap">
+                    <div class="toolbar-inner-wrap"><!-- for mobile -->
+                        <ul id="Toolbar" role="navigation">
+                            
+                            <li class="toolbar-item item-link">
+                                <a class="split-view">
+                                    <i class="icon-menu_split"></i>
+                                    Split View
+                                </a>
+                            </li>
+                            
+                            <li class="toolbar-item item-with-dropdown item-views" style="display: none;">
+                                <a class="drop-trigger" href="javascript:;" data-dropdown="FilterDrop" aria-haspopup="true">
+                                    <i class="icon-menu_views"></i>
+                                    <div class="toolbar-label">
+                                        <div class="toolbar-text">Views</div>
+                                        <i class="icon-general-arrow-filled-down arrow-icon"></i>
+                                    </div>
+                                </a>
+                                <ul id="ViewsDrop" class="f-dropdown" data-dropdown-content="" aria-label="submenu">
+                                    <div class="arrow-up" style="display: block;"></div>
+                                    <li class="article-content-filter" data-content-filter="article-content" style="display: none;"><a href="javascript:;"><span>Article contents</span></a></li>
+                                    <li class="article-content-filter" data-content-filter="figures-tables"><a href="javascript:;"><span>Figures &amp; tables</span></a></li>
+                                    
+                                    
+                                    <li class="article-content-filter" data-content-filter="supplementary-data"><a href="javascript:;"><span>Supplementary Data</span></a></li>
+                                </ul>
+                            </li>
+                                <li class="toolbar-item item-pdf">
+        <a class="al-link pdf article-pdfLink" data-article-id="4916099" href="https://academic.oup.com/bioinformatics/article-pdf/34/14/2490/25138265/bty121.pdf">
+            <i class="icon-menu_pdf"></i><span>PDF</span>
+        </a>
+    </li>
+
+                            <li class="toolbar-item">
+                                    <div class="widget widget-ToolboxGetCitation widget-instance-OUP_Get_Citation">
+        
+<a href="#" data-reveal-id="getCitation" data-reveal=""><i class="icon-read-more"></i><span>Cite</span></a>
+
+<div id="getCitation" class="reveal-modal" data-reveal="">
+    <div class="modal-title">Citation</div>
+    <p>Tsukasa Nakamura, Kazunori D Yamada, Kentaro Tomii, Kazutaka 
+Katoh;  Parallelization of MAFFT for large-scale multiple sequence 
+alignments, <em>Bioinformatics</em>, Volume 34, Issue 14, 15 July 2018, Pages 2490–2492, <a href="https://doi.org/10.1093/bioinformatics/bty121">https://doi.org/10.1093/bioinformatics/bty121</a></p>
+    <p class="citation-label">Download citation file:</p>  
+    <ul>
+        <li><a href="https://academic.oup.com/Citation/Download?resourceId=4916099&amp;resourceType=3&amp;citationFormat=0">Ris (Zotero)</a></li>
+        <li><a href="https://academic.oup.com/Citation/Download?resourceId=4916099&amp;resourceType=3&amp;citationFormat=1">EndNote</a></li>
+        <li><a href="https://academic.oup.com/Citation/Download?resourceId=4916099&amp;resourceType=3&amp;citationFormat=2">BibTex</a></li>
+        <li><a href="https://academic.oup.com/Citation/Download?resourceId=4916099&amp;resourceType=3&amp;citationFormat=3">Medlars</a></li>
+        <li><a href="https://academic.oup.com/Citation/Download?resourceId=4916099&amp;resourceType=3&amp;citationFormat=0">ProCite</a></li>
+        <li><a href="https://academic.oup.com/Citation/Download?resourceId=4916099&amp;resourceType=3&amp;citationFormat=3">RefWorks</a></li>
+        <li><a href="https://academic.oup.com/Citation/Download?resourceId=4916099&amp;resourceType=3&amp;citationFormat=0">Reference Manager</a></li>
+    </ul>
+    <hr>
+    
+    <p>© 2019 Oxford University Press</p>
+    <a class="close-reveal-modal" href="javascript:;"><i class="icon-general-close"></i><span class="screenreader-text">Close</span></a>
+</div>
+    </div>
+ 
+                            </li>
+                            <li class="toolbar-item item-tools">
+                                <i class="icon-menu_permissions"></i>
+                                    <div class="widget widget-ToolboxPermissions widget-instance-">
+            <div class="module-widget">
+            <a href="https://s100.copyright.com/AppDispatchServlet?publisherName=OUP&amp;publication=1460-2059&amp;title=Parallelization%20of%20MAFFT%20for%20large-scale%20multiple%20sequence%20alignments&amp;publicationDate=2018-03-01&amp;volumeNum=34&amp;issueNum=14&amp;author=Nakamura%2C%20Tsukasa%3B%20Yamada%2C%20Kazunori%20D&amp;startPage=2490&amp;endPage=2492&amp;contentId=10.1093%2Fbioinformatics%2Fbty121&amp;oa=CC%20BY-NC&amp;copyright=Oxford%20University%20Press&amp;orderBeanReset=True" id="PermissionsLink" class="" target="">Permissions</a>
+    </div>
+
+    </div>
+
+                            </li>
+                            <li class="toolbar-item item-with-dropdown item-share last">
+                                <a class="drop-trigger" href="javascript:;" data-dropdown="ShareDrop" aria-haspopup="true">
+                                    <i class="icon-menu_share"></i>
+                                    <div class="toolbar-label">
+                                        <div class="toolbar-text">Share</div>
+                                        <i class="icon-general-arrow-filled-down arrow-icon"></i>
+                                    </div>
+                                </a>
+                                <ul id="ShareDrop" class="addthis_toolbox addthis_default_style addthis_20x20_style f-dropdown" data-dropdown-content="" aria-label="submenu">
+                                    <div class="arrow-up"></div>
+                                    <li><a class="addthis_button_email at300b" target="" title="Email" href="#"><span>Email</span></a></li>
+                                    <li><a class="addthis_button_twitter at300b" title="Twitter" href="#"><span>Twitter</span></a></li>
+                                    <li><a class="addthis_button_facebook at300b" title="Facebook" href="#"><span>Facebook</span></a></li>
+                                <div class="atclear"></div></ul>
+                            </li>
+                        </ul>
+                    
+                        <div class="toolbar-search">
+                                <div class="widget widget-SitePageHeader widget-instance-OUP_ArticleToolbarSearchBox">
+        
+
+
+<div class="dropdown-panel-wrap">
+
+    
+    <div class="dropdown-panel mobile-search-dropdown">
+        <div class="mobile-search-inner-wrap">
+            <div class="navbar-search">
+                <div id="MobileMicrositeSearch" class="mobile-microsite-search">
+                    <label for="mobile-navbar-search-filter" class="screenreader-text">Navbar Search Filter</label>
+                    <select class="navbar-search-filter" id="mobile-navbar-search-filter">
+                                                    <optgroup label="Search within this journal">
+<option class="header-search-bar-filters-item" value="Issue" selected="selected">This issue</option><option class="header-search-bar-filters-item" value="">All  Bioinformatics</option>
+                            </optgroup>
+                            <optgroup label="Search beyond this journal">
+<option class="header-search-bar-filters-item" value="Journals">All  Journals</option>                            </optgroup>
+                    </select>
+
+
+
+
+
+                    <label for="MobileMicrositeSearchTerm" class="screenreader-text">Mobile Microsite Search Term</label>
+                    <input class="mobile-search-input mobile-microsite-search-term" maxlength="255" placeholder="Search" id="MobileMicrositeSearchTerm" type="text">
+
+                    <span id="MobileMicrositeSearchIcon" class="mobile-microsite-search-icon mobile-search-submit icon-menu_search"></span>
+
+                </div><!-- /#MobileMicrositeSearch -->
+            </div><!-- /.navbar-search -->
+        </div><!-- /.mobile-search-inner-wrap -->
+    </div><!-- /.dropdown-panel .dropdown-panel-search -->
+    
+    <div class="dropdown-panel mobile-account-dropdown">
+        <ul class="site-menu site-menu-lvl-0">
+            <li class="site-menu-item site-menu-lvl-0">
+                <a href="" class="nav-link mobile-account-signin dummy-link" id="header-account-info-user-fullname">
+                    
+Sign In                    <i class="mobile-nav-arrow icon-general_arrow-down"></i>
+                </a>
+                <ul class="site-menu site-menu-lvl-1 individual-menu">
+                    <li class="dropdown-signin-form">
+                        <div class="spinner"></div>
+                    </li>
+                </ul>
+            </li>
+                <li class="site-menu-item site-menu-lvl-0">
+                        <a class="nav-link mobile-account-institution dummy-link">
+                            International Institue of Tropical Agriculture (IITA)
+                        </a>
+
+                    <i class="mobile-nav-arrow icon-general_arrow-down"></i>
+                    <ul class="site-menu site-menu-lvl-1">
+                            <li class="dropdown-institution-item">
+
+International Institue of Tropical Agriculture (IITA)
+                            </li>
+
+                        <li class="dropdown-institution-signout">
+                        </li>
+                    </ul>
+                </li>
+                            <li class="site-menu-item">
+                    <a href="https://academic.oup.com/my-account/register?siteId=5139&amp;returnUrl=%2fbioinformatics%2farticle%2f34%2f14%2f2490%2f4916099" class="register nav-link">Register</a>
+                </li>
+        </ul>
+    </div><!-- /.dropdown-panel .dropdown-panel-account -->
+    
+    <div class="dropdown-panel mobile-nav-dropdown">
+
+    </div><!-- /.dropdown-panel .dropdown-panel-nav -->
+
+</div><!-- /.dropdown-panel-wrap -->
+
+
+
+<div class="navbar">
+    <div class="center-inner-row">
+        <nav class="navbar-menu">
+
+        </nav>
+            <div class="navbar-search-container">
+                <div class="navbar-search-close js_close-navsearch">Close</div>
+                <div class="navbar-search">
+                    <div id="MicrositeSearch" class="microsite-search">
+                        <label for="navbar-search-filter" class="screenreader-text">search filter</label>
+                        <select class="navbar-search-filter" id="navbar-search-filter">
+                                                            <optgroup label="Search within this journal">
+<option class="header-search-bar-filters-item" value="Issue">This issue</option><option class="header-search-bar-filters-item" value="" selected="selected">All  Bioinformatics</option>
+                                </optgroup>
+                                <optgroup label="Search beyond this journal">
+<option class="header-search-bar-filters-item" value="Journals">All  Journals</option>                                </optgroup>
+                        </select>
+
+                        <label for="MicrositeSearchTerm" class="screenreader-text">search input</label>
+                        <input class="navbar-search-input microsite-search-term" maxlength="255" id="MicrositeSearchTerm" title="search input" type="text">
+
+                        <span id="MicrositeSearchIcon" class="microsite-search-icon navbar-search-submit icon-menu_search"></span>
+
+                    </div><!-- /#MicrositeSearch -->
+                </div><!-- /.navbar-search -->
+                <div class="navbar-search-advanced"><a href="https://academic.oup.com/bioinformatics/advanced-search?page=1&amp;fl_SiteID=5139&amp;SearchSourceType=1" class="advanced-search js-advanced-search">Advanced Search</a></div>
+            </div><!-- /.navbar-search-container -->
+            <div class="navbar-search-collapsed"><i class="icon-menu_search js_expand-navsearch"></i></div>
+    </div><!-- /.center-inner-row -->
+</div><!-- /.navbar -->
+
+<input id="routename" name="RouteName" value="bioinformatics" type="hidden">
+    </div>
+
+                        </div>
+                    </div><!-- /.toolbar-inner-wrap -->                    
+                </div>
+                    <div id="ContentTab" class="content active">
+                            <div class="widget widget-ArticleFulltext widget-instance-OUP_Article_FullText_Widget">
+        <div class="module-widget">
+    <div class="widget-items" data-widgetname="ArticleFulltext">
+
+
+
+
+
+                            <h2 scrollto-destination="118609082" id="118609082" class="abstract-title">Abstract</h2>
+<section class="abstract"><section class="sec"><div class="title -title">Summary</div><p>We
+ report an update for the MAFFT multiple sequence alignment program to 
+enable parallel calculation of large numbers of sequences. The G-INS-1 
+option of MAFFT was recently reported to have higher accuracy than other
+ methods for large data, but this method has been impractical for most 
+large-scale analyses, due to the requirement of large computational 
+resources. We introduce a scalable variant, G-large-INS-1, which has 
+equivalent accuracy to G-INS-1 and is applicable to 50&nbsp;000 or more 
+sequences.</p></section><section class="sec"><div class="title -title">Availability and implementation</div><p>This feature is available in MAFFT versions 7.355 or later at <a class="link link-uri" href="https://mafft.cbrc.jp/alignment/software/mpi.html" target="">https://mafft.cbrc.jp/alignment/software/mpi.html</a>.</p></section><section class="sec"><div class="title -title">Supplementary information</div><p><span class="content-section supplementary-material"><a path-from-xml="sup1" href="https://oup.silverchair-cdn.com/oup/backfile/Content_public/Journal/bioinformatics/34/14/10.1093_bioinformatics_bty121/1/bty121_suppl.pdf?Expires=1549000409&amp;Signature=l0vHapo-N7azPytGanXN9qF37jFBVFGFIA-wwTrityELbPYqApc5Bt6YaYpNRFKqieDjMtl52%7EjysJHoSVgkfMP5%7EjF7XdWCVnD4Ba6pyhyvYECWhy94KosKGqulUlqQlncqXIKH0IHin55FQ-x2WPAjjRc%7EoiB2TVCjwYv3rWPMcRMV6RCNpp7hX069UAyURl0qYkQlvIY6ke5Ftldb51rM4IsI9nEKyqXXy2wqcWcxRWIk3-djF1oR6RzKosbetgr4nVED9v4ApajXQRGrERvrXORGFuJ8WOeb5XyjuQPjoBfv6SUNar6wopG6ym5Fz6s1yGYDc2eoolU7qFuC%7Eg__&amp;Key-Pair-Id=APKAIE5G5CRDK6RD3PGA">Supplementary data</a></span> are available at <em>Bioinformatics</em> online.</p></section></section>                        <div class="article-metadata-panel clearfix"></div>
+<p>A large number of biological sequences from widely divergent 
+organisms are becoming available. Accordingly, the need for multiple 
+alignments of large numbers of sequences is increasing for various kinds
+ of sequence analysis. The G-INS-1 option of MAFFT was recently reported
+ to have higher accuracy than other methods for large multiple sequence 
+alignments (MSAs) in independent benchmarks (<a reveal-id="bty121-B8" data-open="bty121-B8" class="link link-ref link-reveal xref-bibr">Le <em>et al.</em>, 2017</a>; <a reveal-id="bty121-B14" data-open="bty121-B14" class="link link-ref link-reveal xref-bibr">Yamada <em>et al.</em>, 2016</a>).
+ However, this method was impractical for actual analyses, requiring 
+large computational resources in both space and time to perform 
+all-to-all pairwise alignments by dynamic programming (DP) (<a reveal-id="bty121-B9" data-open="bty121-B9" class="link link-ref link-reveal xref-bibr">Needleman and Wunsch, 1970</a>), which are used for a guide tree and a scoring function similar to COFFEE (<a reveal-id="bty121-B10" data-open="bty121-B10" class="link link-ref link-reveal xref-bibr">Notredame <em>et al.</em>, 1998</a>).
+ Here, we introduce a scalable variant, G-large-INS-1, which has 
+equivalent accuracy to G-INS-1 and is applicable to 50&nbsp;000 or more 
+sequences. Our strategies to reduce computational costs are (i) 
+parallelization across multiple machines and/or processor cores using 
+MPI and Pthreads to increase speed and (ii) the use of a high-speed 
+shared filesystem, which is becoming common for processing big data. An 
+MPI-based parallelization of another high-accuracy MSA method, MSAProbs,
+ was recently released (<a reveal-id="bty121-B5" data-open="bty121-B5" class="link link-ref link-reveal xref-bibr">González-Domínguez <em>et al.</em>, 2016</a>),
+ but it cannot be applied to thousands of sequences. The present update 
+of MAFFT is designed to satisfy the need for accurately aligning large 
+numbers of sequences but is not applicable to long genomic sequences 
+since the length dependence of the computational cost is unchanged. The 
+G-large-INS-1 option is available in MAFFT versions 7.355 or later and 
+the online service (<a reveal-id="bty121-B7" data-open="bty121-B7" class="link link-ref link-reveal xref-bibr">Katoh <em>et al.</em>, 2017</a>).</p><p>Accuracy of G-large-INS-1 was compared with that of conventional G-INS-1 using different benchmarks, QuanTest (<a reveal-id="bty121-B8" data-open="bty121-B8" class="link link-ref link-reveal xref-bibr">Le <em>et al.</em>, 2017</a>) (<a reveal-id="bty121-F1" data-open="bty121-F1" class="link link-reveal link-table xref-fig">Fig.&nbsp;1a</a>), HomFam (<a reveal-id="bty121-B12" data-open="bty121-B12" class="link link-ref link-reveal xref-bibr">Sievers <em>et al.</em>, 2011</a>), OXFam (<a reveal-id="bty121-B11" data-open="bty121-B11" class="link link-ref link-reveal xref-bibr">Raghava <em>et al.</em>, 2003</a>; <a reveal-id="bty121-B14" data-open="bty121-B14" class="link link-ref link-reveal xref-bibr">Yamada <em>et al.</em>, 2016</a>) and ContTest (<a reveal-id="bty121-B3" data-open="bty121-B3" class="link link-ref link-reveal xref-bibr">Fox <em>et al.</em>, 2016</a>) (<span class="content-section supplementary-material"><a path-from-xml="sup1" href="https://oup.silverchair-cdn.com/oup/backfile/Content_public/Journal/bioinformatics/34/14/10.1093_bioinformatics_bty121/1/bty121_suppl.pdf?Expires=1549000409&amp;Signature=l0vHapo-N7azPytGanXN9qF37jFBVFGFIA-wwTrityELbPYqApc5Bt6YaYpNRFKqieDjMtl52%7EjysJHoSVgkfMP5%7EjF7XdWCVnD4Ba6pyhyvYECWhy94KosKGqulUlqQlncqXIKH0IHin55FQ-x2WPAjjRc%7EoiB2TVCjwYv3rWPMcRMV6RCNpp7hX069UAyURl0qYkQlvIY6ke5Ftldb51rM4IsI9nEKyqXXy2wqcWcxRWIk3-djF1oR6RzKosbetgr4nVED9v4ApajXQRGrERvrXORGFuJ8WOeb5XyjuQPjoBfv6SUNar6wopG6ym5Fz6s1yGYDc2eoolU7qFuC%7Eg__&amp;Key-Pair-Id=APKAIE5G5CRDK6RD3PGA">Supplementary Table S1</a></span>). Both methods ran with different input orders and/or minor variations in pairwise alignment and guide tree (see <span class="content-section supplementary-material"><a path-from-xml="sup1" href="https://oup.silverchair-cdn.com/oup/backfile/Content_public/Journal/bioinformatics/34/14/10.1093_bioinformatics_bty121/1/bty121_suppl.pdf?Expires=1549000409&amp;Signature=l0vHapo-N7azPytGanXN9qF37jFBVFGFIA-wwTrityELbPYqApc5Bt6YaYpNRFKqieDjMtl52%7EjysJHoSVgkfMP5%7EjF7XdWCVnD4Ba6pyhyvYECWhy94KosKGqulUlqQlncqXIKH0IHin55FQ-x2WPAjjRc%7EoiB2TVCjwYv3rWPMcRMV6RCNpp7hX069UAyURl0qYkQlvIY6ke5Ftldb51rM4IsI9nEKyqXXy2wqcWcxRWIk3-djF1oR6RzKosbetgr4nVED9v4ApajXQRGrERvrXORGFuJ8WOeb5XyjuQPjoBfv6SUNar6wopG6ym5Fz6s1yGYDc2eoolU7qFuC%7Eg__&amp;Key-Pair-Id=APKAIE5G5CRDK6RD3PGA">Supplementary Data</a></span>) in order to assess instability of accuracy scores (<a reveal-id="bty121-B1" data-open="bty121-B1" class="link link-ref link-reveal xref-bibr">Boyce <em>et al.</em>, 2015</a>). In all cases, the difference between G-INS-1 (blue lines in <a reveal-id="bty121-F1" data-open="bty121-F1" class="link link-reveal link-table xref-fig">Fig.&nbsp;1a</a>) and G-large-INS-1 (red lines) was small. </p>                        <a id="118609085" scrollto-destination="118609085"></a>
+<div id="bty121-F1" data-id="bty121-F1" class="fig fig-section"><div class="label fig-label">Fig. 1.</div><div class="graphic-wrap"><img class="content-image" src="m_bty121f1.png" alt="(a) QuanTest. Accuracy of protein secondary structure prediction based on various sizes of MSAs by G-large-INS-1 (red bold lines), G-INS-1 (version 7.245; blue bold lines) and other popular methods. We used 1940 (out of 2265) entries so that JPred (Drozdetskiy et al., 2015) can be consistently applied to the MSAs by all methods. (b)–(g), Parallelization efficiency of all-to-all alignment stage (b, d and f) and progressive stage (c, e and g) when applying G-large-INS-1 to LSU rRNA (b, c) sdr (d, e) and zf-CCHH (f, g). Green squares and magenta triangles are the computational time on NFS and Lustre filesystem, respectively. Lines are the expected time based on the cases using seven cores [NFS; green solid lines in (b), (d) and (f)], 35 cores [Lustre; magenta dotted lines in (b), (d) and (f)] and single core (c, e and g), assuming a perfect efficiency. The calculations with NFS (green) were performed on a heterogeneous cluster system (each node has 16–20 cores of Intel Xeon E5-2660 v3 2.6 GHz, E5-2680 2.7 GHz and E5-2670 v2 2.50 GHz with 64–128GB RAM). The calculations with the Lustre filesystem (magenta) were performed on Intel Xeon E5-2695 v4 2.10 GHz 36 cores with 256GB RAM per node using Lustre version 2.5.42" path-from-xml="bty121f1.tif"><div class="fig-orig original-slide"><a class="fig-view-orig js-view-large openInAnotherWindow" href="https://academic.oup.com/view-large/figure/118609085/bty121f1.tif" path-from-xml="bty121f1.tif" target="_blank">View large</a><a section="118609085" href="https://oup.silverchair-cdn.com/DownloadFile/DownloadImage.aspx?image=https://oup.silverchair-cdn.com/oup/backfile/Content_public/Journal/bioinformatics/34/14/10.1093_bioinformatics_bty121/1/bty121f1.png?Expires=1549000409&amp;Signature=fz1UUpYxAmAmfXM6brQ0sinix5JhgBZBwu%7ExNcr127xGCEDAZHOBsqFHNOebJhm3Fo8W0w6uItLyZbwQ47-lDMR0ECUdpjGCDUc-w-AFNNwr3oV8GmsnR2npDlypcD69z5W2hbDMM0KeqIwNl45TQULhZ%7E9-cyJHhjOnHuZJ38Jtl2nz1s21-7hBJQmg3xv1Y8c1WIoTlv8H%7EfI3CRLBdTAYz6tmBMDY%7Ee-LUWk3csu%7EsSPF0ep8lMea%7E2b9bKdbrmuojaIV-hJhYitW5YVRgbfzC%7ESB6rhoOkKPH6JqAouzE9Jclir1wsEtW529As1xmWQPKiohpuDdgbEesXXO9g__&amp;Key-Pair-Id=APKAIE5G5CRDK6RD3PGA&amp;sec=118609085&amp;ar=4916099&amp;xsltPath=%7E/UI/app/XSLT&amp;imagename=" class="download-slide" path-from-xml="bty121f1.tif" target="">Download slide</a></div></div><div class="caption fig-caption"><p>(<strong>a</strong>)
+ QuanTest. Accuracy of protein secondary structure prediction based on 
+various sizes of MSAs by G-large-INS-1 (red bold lines), G-INS-1 
+(version 7.245; blue bold lines) and other popular methods. We used 1940
+ (out of 2265) entries so that JPred (<a reveal-id="bty121-B2" data-open="bty121-B2" class="link link-ref link-reveal xref-bibr">Drozdetskiy <em>et al.</em>, 2015</a>) can be consistently applied to the MSAs by all methods. (<strong>b</strong>)–(<strong>g</strong>), Parallelization efficiency of all-to-all alignment stage (<strong>b</strong>, <strong>d</strong> and <strong>f</strong>) and progressive stage (<strong>c</strong>, <strong>e</strong> and <strong>g</strong>) when applying G-large-INS-1 to LSU rRNA (<strong>b</strong>, <strong>c</strong>) sdr (<strong>d</strong>, <strong>e</strong>) and zf-CCHH (<strong>f</strong>, <strong>g</strong>).
+ Green squares and magenta triangles are the computational time on NFS 
+and Lustre filesystem, respectively. Lines are the expected time based 
+on the cases using seven cores [NFS; green solid lines in (<strong>b</strong>), (<strong>d</strong>) and (<strong>f</strong>)], 35 cores [Lustre; magenta dotted lines in (<strong>b</strong>), (<strong>d</strong>) and (<strong>f</strong>)] and single core (<strong>c</strong>, <strong>e</strong> and <strong>g</strong>),
+ assuming a perfect efficiency. The calculations with NFS (green) were 
+performed on a heterogeneous cluster system (each node has 16–20 cores 
+of Intel Xeon E5-2660 v3 2.6 GHz, E5-2680 2.7 GHz and E5-2670 v2 
+2.50 GHz with 64<strong>–</strong>128GB RAM). The calculations with the 
+Lustre filesystem (magenta) were performed on Intel Xeon E5-2695 v4 
+2.10 GHz 36 cores with 256GB RAM per node using Lustre version 2.5.42</p></div></div><div content-id="bty121-F1" class="fig fig-modal reveal-modal" style="display: block;"><div class="label fig-label">Fig. 1.</div><div class="graphic-wrap"><img class="content-image" src="m_bty121f1.png" alt="(a) QuanTest. Accuracy of protein secondary structure prediction based on various sizes of MSAs by G-large-INS-1 (red bold lines), G-INS-1 (version 7.245; blue bold lines) and other popular methods. We used 1940 (out of 2265) entries so that JPred (Drozdetskiy et al., 2015) can be consistently applied to the MSAs by all methods. (b)–(g), Parallelization efficiency of all-to-all alignment stage (b, d and f) and progressive stage (c, e and g) when applying G-large-INS-1 to LSU rRNA (b, c) sdr (d, e) and zf-CCHH (f, g). Green squares and magenta triangles are the computational time on NFS and Lustre filesystem, respectively. Lines are the expected time based on the cases using seven cores [NFS; green solid lines in (b), (d) and (f)], 35 cores [Lustre; magenta dotted lines in (b), (d) and (f)] and single core (c, e and g), assuming a perfect efficiency. The calculations with NFS (green) were performed on a heterogeneous cluster system (each node has 16–20 cores of Intel Xeon E5-2660 v3 2.6 GHz, E5-2680 2.7 GHz and E5-2670 v2 2.50 GHz with 64–128GB RAM). The calculations with the Lustre filesystem (magenta) were performed on Intel Xeon E5-2695 v4 2.10 GHz 36 cores with 256GB RAM per node using Lustre version 2.5.42" path-from-xml="bty121f1.tif"><div class="fig-orig original-slide"><a class="fig-view-orig js-view-large openInAnotherWindow" href="https://academic.oup.com/view-large/figure/118609085/bty121f1.tif" path-from-xml="bty121f1.tif" target="_blank">View large</a><a section="118609085" href="https://oup.silverchair-cdn.com/DownloadFile/DownloadImage.aspx?image=https://oup.silverchair-cdn.com/oup/backfile/Content_public/Journal/bioinformatics/34/14/10.1093_bioinformatics_bty121/1/bty121f1.png?Expires=1549000409&amp;Signature=fz1UUpYxAmAmfXM6brQ0sinix5JhgBZBwu%7ExNcr127xGCEDAZHOBsqFHNOebJhm3Fo8W0w6uItLyZbwQ47-lDMR0ECUdpjGCDUc-w-AFNNwr3oV8GmsnR2npDlypcD69z5W2hbDMM0KeqIwNl45TQULhZ%7E9-cyJHhjOnHuZJ38Jtl2nz1s21-7hBJQmg3xv1Y8c1WIoTlv8H%7EfI3CRLBdTAYz6tmBMDY%7Ee-LUWk3csu%7EsSPF0ep8lMea%7E2b9bKdbrmuojaIV-hJhYitW5YVRgbfzC%7ESB6rhoOkKPH6JqAouzE9Jclir1wsEtW529As1xmWQPKiohpuDdgbEesXXO9g__&amp;Key-Pair-Id=APKAIE5G5CRDK6RD3PGA&amp;sec=118609085&amp;ar=4916099&amp;xsltPath=%7E/UI/app/XSLT&amp;imagename=" class="download-slide" path-from-xml="bty121f1.tif" target="">Download slide</a></div></div><div class="caption fig-caption"><p>(<strong>a</strong>)
+ QuanTest. Accuracy of protein secondary structure prediction based on 
+various sizes of MSAs by G-large-INS-1 (red bold lines), G-INS-1 
+(version 7.245; blue bold lines) and other popular methods. We used 1940
+ (out of 2265) entries so that JPred (<a reveal-id="bty121-B2" data-open="bty121-B2" class="link link-ref link-reveal xref-bibr">Drozdetskiy <em>et al.</em>, 2015</a>) can be consistently applied to the MSAs by all methods. (<strong>b</strong>)–(<strong>g</strong>), Parallelization efficiency of all-to-all alignment stage (<strong>b</strong>, <strong>d</strong> and <strong>f</strong>) and progressive stage (<strong>c</strong>, <strong>e</strong> and <strong>g</strong>) when applying G-large-INS-1 to LSU rRNA (<strong>b</strong>, <strong>c</strong>) sdr (<strong>d</strong>, <strong>e</strong>) and zf-CCHH (<strong>f</strong>, <strong>g</strong>).
+ Green squares and magenta triangles are the computational time on NFS 
+and Lustre filesystem, respectively. Lines are the expected time based 
+on the cases using seven cores [NFS; green solid lines in (<strong>b</strong>), (<strong>d</strong>) and (<strong>f</strong>)], 35 cores [Lustre; magenta dotted lines in (<strong>b</strong>), (<strong>d</strong>) and (<strong>f</strong>)] and single core (<strong>c</strong>, <strong>e</strong> and <strong>g</strong>),
+ assuming a perfect efficiency. The calculations with NFS (green) were 
+performed on a heterogeneous cluster system (each node has 16–20 cores 
+of Intel Xeon E5-2660 v3 2.6 GHz, E5-2680 2.7 GHz and E5-2670 v2 
+2.50 GHz with 64<strong>–</strong>128GB RAM). The calculations with the 
+Lustre filesystem (magenta) were performed on Intel Xeon E5-2695 v4 
+2.10 GHz 36 cores with 256GB RAM per node using Lustre version 2.5.42</p></div></div><p>Large
+ amounts of RAM are required if conventional tools for high-quality MSAs
+ are applied to a large number of sequences. For example, MAFFT-L-INS-i 
+and MSAProbs-MPI used at most 9.23GB and 74.8GB for a subset of 1000 
+sequences in QuanTest. For a larger subset (4000 sequences), 
+MAFFT-G-INS-1 and QuickProbs2 (<a reveal-id="bty121-B6" data-open="bty121-B6" class="link link-ref link-reveal xref-bibr">Gudyś and Deorowicz, 2017</a>)
+ used at most 26.0 GB and 411 GB RAM, respectively. In contrast, 
+G-large-INS-1 used only 5.72GB at most, for the subset of 4000 
+sequences. Memory usage for larger problems (up to ∼90&nbsp;000 
+sequences) is shown in <span class="content-section supplementary-material"><a path-from-xml="sup1" href="https://oup.silverchair-cdn.com/oup/backfile/Content_public/Journal/bioinformatics/34/14/10.1093_bioinformatics_bty121/1/bty121_suppl.pdf?Expires=1549000409&amp;Signature=l0vHapo-N7azPytGanXN9qF37jFBVFGFIA-wwTrityELbPYqApc5Bt6YaYpNRFKqieDjMtl52%7EjysJHoSVgkfMP5%7EjF7XdWCVnD4Ba6pyhyvYECWhy94KosKGqulUlqQlncqXIKH0IHin55FQ-x2WPAjjRc%7EoiB2TVCjwYv3rWPMcRMV6RCNpp7hX069UAyURl0qYkQlvIY6ke5Ftldb51rM4IsI9nEKyqXXy2wqcWcxRWIk3-djF1oR6RzKosbetgr4nVED9v4ApajXQRGrERvrXORGFuJ8WOeb5XyjuQPjoBfv6SUNar6wopG6ym5Fz6s1yGYDc2eoolU7qFuC%7Eg__&amp;Key-Pair-Id=APKAIE5G5CRDK6RD3PGA">Supplementary Table S1</a></span>,
+ which suggests that this advantage increases with the number of 
+sequences. Note that G-large-INS-1 uses files to save temporary data and
+ thus requires a high-speed filesystem when the input sequences are very
+ short, as discussed below.</p><p>Parallelization efficiency in three examples is shown in <a reveal-id="bty121-F1" data-open="bty121-F1" class="link link-reveal link-table xref-fig">Figure&nbsp;1(b–g</a><strong>)</strong>,
+ separately for two stages: (i) the all-to-all alignment stage (b, d and
+ f) and (ii) the progressive alignment stage (c, e and g).</p><p>For LSU rRNA sequences (b, 1521–4102 bases, 1000 sequences randomly selected from the SEED alignment in Silva (<a reveal-id="bty121-B4" data-open="bty121-B4" class="link link-ref link-reveal xref-bibr">Glöckner <em>et al.</em>, 2017</a>)
+ and protein sequences with usual lengths (d, 21–297 amino acids, 50 157
+ sequences, the ‘sdr’ family taken from HomFam), the wall-clock time for
+ the all-to-all alignment stage decreased almost linearly with the 
+number of cores used for the calculation. However, for a dataset with 
+very short sequences (f, 12–35 amino acids, 88 345 sequences, the 
+‘zf-CCHH’ family taken from HomFam), the efficiency differs depending on
+ filesystem: high in Lustre (shown with magenta triangles) but low in 
+NFS (shown with green squares). This difference is due to the balance 
+between calculation and disk operations. As noted earlier, a 
+considerable amount of temporary data is written in parallel into the 
+filesystem: approximately 218 MB, 100 GB and 142 GB for LSU rRNA, ‘sdr’ 
+and ‘zf-CCHH’, respectively, in the examples shown here. Overhead due to
+ these disk operations is almost negligible in the former two cases but 
+not in the latter case, where alignment of ∼23 amino acids takes only a 
+short time in comparison with the time to write the temporary data to 
+disk using NFS.</p><p><a reveal-id="bty121-F1" data-open="bty121-F1" class="link link-reveal link-table xref-fig">Figure&nbsp;1c, e and g</a>
+ suggest that the wall-clock time of the progressive stage varies for 
+each run and does not linearly decrease, but usually this is not a 
+speed-limiting step. CPU time and wall-clock time for various problems 
+are shown in <span class="content-section supplementary-material"><a path-from-xml="sup1" href="https://oup.silverchair-cdn.com/oup/backfile/Content_public/Journal/bioinformatics/34/14/10.1093_bioinformatics_bty121/1/bty121_suppl.pdf?Expires=1549000409&amp;Signature=l0vHapo-N7azPytGanXN9qF37jFBVFGFIA-wwTrityELbPYqApc5Bt6YaYpNRFKqieDjMtl52%7EjysJHoSVgkfMP5%7EjF7XdWCVnD4Ba6pyhyvYECWhy94KosKGqulUlqQlncqXIKH0IHin55FQ-x2WPAjjRc%7EoiB2TVCjwYv3rWPMcRMV6RCNpp7hX069UAyURl0qYkQlvIY6ke5Ftldb51rM4IsI9nEKyqXXy2wqcWcxRWIk3-djF1oR6RzKosbetgr4nVED9v4ApajXQRGrERvrXORGFuJ8WOeb5XyjuQPjoBfv6SUNar6wopG6ym5Fz6s1yGYDc2eoolU7qFuC%7Eg__&amp;Key-Pair-Id=APKAIE5G5CRDK6RD3PGA">Supplementary Table S1</a></span>.</p><p>Until
+ now, it was necessary to use highly approximate methods, such as the 
+FFT-NS-2 option of MAFFT or the progressive option of Clustal Omega, in 
+order to construct large MSAs. In terms of the MSA itself, the accuracy 
+of these methods tends to decrease along with the increase in the number
+ of sequences. This was first pointed out by <a reveal-id="bty121-B13" data-open="bty121-B13" class="link link-ref link-reveal xref-bibr">Sievers <em>et al.</em> (2013)</a> and confirmed by <a reveal-id="bty121-B8" data-open="bty121-B8" class="link link-ref link-reveal xref-bibr">Le <em>et al.</em> (2017)</a>. The increase in accuracy observed in <a reveal-id="bty121-F1" data-open="bty121-F1" class="link link-reveal link-table xref-fig">Figure&nbsp;1a</a> for more than 200 sequences is due to the prediction phase not due to the alignment phase (see the last section in <span class="content-section supplementary-material"><a path-from-xml="sup1" href="https://oup.silverchair-cdn.com/oup/backfile/Content_public/Journal/bioinformatics/34/14/10.1093_bioinformatics_bty121/1/bty121_suppl.pdf?Expires=1549000409&amp;Signature=l0vHapo-N7azPytGanXN9qF37jFBVFGFIA-wwTrityELbPYqApc5Bt6YaYpNRFKqieDjMtl52%7EjysJHoSVgkfMP5%7EjF7XdWCVnD4Ba6pyhyvYECWhy94KosKGqulUlqQlncqXIKH0IHin55FQ-x2WPAjjRc%7EoiB2TVCjwYv3rWPMcRMV6RCNpp7hX069UAyURl0qYkQlvIY6ke5Ftldb51rM4IsI9nEKyqXXy2wqcWcxRWIk3-djF1oR6RzKosbetgr4nVED9v4ApajXQRGrERvrXORGFuJ8WOeb5XyjuQPjoBfv6SUNar6wopG6ym5Fz6s1yGYDc2eoolU7qFuC%7Eg__&amp;Key-Pair-Id=APKAIE5G5CRDK6RD3PGA">Supplementary Data</a></span> and black dashed lines in <span class="content-section supplementary-material"><a path-from-xml="sup1" href="https://oup.silverchair-cdn.com/oup/backfile/Content_public/Journal/bioinformatics/34/14/10.1093_bioinformatics_bty121/1/bty121_suppl.pdf?Expires=1549000409&amp;Signature=l0vHapo-N7azPytGanXN9qF37jFBVFGFIA-wwTrityELbPYqApc5Bt6YaYpNRFKqieDjMtl52%7EjysJHoSVgkfMP5%7EjF7XdWCVnD4Ba6pyhyvYECWhy94KosKGqulUlqQlncqXIKH0IHin55FQ-x2WPAjjRc%7EoiB2TVCjwYv3rWPMcRMV6RCNpp7hX069UAyURl0qYkQlvIY6ke5Ftldb51rM4IsI9nEKyqXXy2wqcWcxRWIk3-djF1oR6RzKosbetgr4nVED9v4ApajXQRGrERvrXORGFuJ8WOeb5XyjuQPjoBfv6SUNar6wopG6ym5Fz6s1yGYDc2eoolU7qFuC%7Eg__&amp;Key-Pair-Id=APKAIE5G5CRDK6RD3PGA">Supplementary Fig. S1</a></span>).
+ As a result, it was difficult to know how many sequences should be 
+included in an MSA. With more sequences, the MSA has richer comparative 
+information, but the alignment quality is expected to decrease. The 
+optimal balance between these two factors may differ by case. In 
+contrast, the accuracy of G-large-INS-1 and G-INS-1 (red and blue dashed
+ lines in <span class="content-section supplementary-material"><a path-from-xml="sup1" href="https://oup.silverchair-cdn.com/oup/backfile/Content_public/Journal/bioinformatics/34/14/10.1093_bioinformatics_bty121/1/bty121_suppl.pdf?Expires=1549000409&amp;Signature=l0vHapo-N7azPytGanXN9qF37jFBVFGFIA-wwTrityELbPYqApc5Bt6YaYpNRFKqieDjMtl52%7EjysJHoSVgkfMP5%7EjF7XdWCVnD4Ba6pyhyvYECWhy94KosKGqulUlqQlncqXIKH0IHin55FQ-x2WPAjjRc%7EoiB2TVCjwYv3rWPMcRMV6RCNpp7hX069UAyURl0qYkQlvIY6ke5Ftldb51rM4IsI9nEKyqXXy2wqcWcxRWIk3-djF1oR6RzKosbetgr4nVED9v4ApajXQRGrERvrXORGFuJ8WOeb5XyjuQPjoBfv6SUNar6wopG6ym5Fz6s1yGYDc2eoolU7qFuC%7Eg__&amp;Key-Pair-Id=APKAIE5G5CRDK6RD3PGA">Supplementary Fig. S1</a></span>)
+ was robust to data size in this test. The number of sequences to 
+include in the MSA can now be determined simply based on the 
+computational resources available and the requirements for the 
+downstream analysis.</p>                            <h2 scrollto-destination="118609091" id="118609091" class="backacknowledgements-title">Acknowledgements</h2>
+<p>The authors thank Daron M. Standley and John Rozewicki, Osaka 
+University, and Shun Sakuraba, the University of Tokyo, for discussion 
+and computational support. The NIG supercomputer at ROIS National 
+Institute of Genetics and the Reedbush System in the Information 
+Technology Center, the University of Tokyo, were used.</p>                            <h3 scrollto-destination="118609093" id="118609093" class="section-title">Funding</h3>
+<p>This work was supported by JSPS KAKENHI [grant numbers JP16K07464 (to
+ K.D.Y., K.T. and K.K.) and JP17J06457 (to T.N.)] and Platform Project 
+for Supporting Drug Discovery and Life Science Research [grant numbers 
+JP17am0101110 (to T.N., K.D.Y. and K.T.) and JP17am0101108 (to K.K.)] 
+from AMED, Japan.</p><p><em>Conflict of Interest</em>: none declared.</p>                            <h2 scrollto-destination="118609096" id="118609096" class="backreferences-title">References</h2>
+<div class="ref-list"><div content-id="bty121-B1" xmlns:helper="urn:XsltStringHelper"><div class="ref false"><div role="bty121-B1" class="ref-content "><div class="citation mixed-citation"><div class="person-group"><div class="name string-name"><div class="surname">Boyce</div> <div class="given-names">K.</div></div></div> et al.&nbsp; (<div class="year">2015</div>) 
+<div class="article-title">Instability in progressive multiple sequence alignment algorithms</div>. <div class="source">Algorithms Mol Biol</div>&nbsp;, <div class="volume">10</div>, <div class="fpage">26.</div><div class="citation-links"><div class="google-scholar-ref-link"><a href="https://scholar.google.com/scholar_lookup?title=Instability%20in%20progressive%20multiple%20sequence%20alignment%20algorithms&amp;author=K.%20Boyce&amp;publication_year=2015&amp;journal=Algorithms%20Mol%20Biol&amp;volume=10&amp;pages=26." target="">Google Scholar</a></div><div class="crossref-doi"><a href="http://dx.doi.org/10.1186/s13015-015-0057-1" target="">Crossref</a></div><div class="adsDoiReference hide"><a href="http://adsabs.harvard.edu/cgi-bin/basic_connect?qsearch=10.1186%2Fs13015-015-0057-1" target="">Search ADS</a></div><div class="xslopenurl" style="display:none"><span class="inst-open-url-holders" data-targetid="10.1186%2Fs13015-015-0057-1"> </span></div><div class="pub-id"><a href="http://www.ncbi.nlm.nih.gov/pubmed/26457114" class="link link-pub-id" target="">PubMed</a></div>&nbsp;</div></div></div></div></div><div content-id="bty121-B2" xmlns:helper="urn:XsltStringHelper"><div class="ref false"><div role="bty121-B2" class="ref-content "><div class="citation mixed-citation"><div class="person-group"><div class="name string-name"><div class="surname">Drozdetskiy</div> <div class="given-names">A.</div></div></div> et al.&nbsp; (<div class="year">2015</div>) 
+<div class="article-title">JPred4: a protein secondary structure prediction server</div>. <div class="source">Nucleic Acids Res</div>&nbsp;., <div class="volume">43</div>, <div class="fpage">W389</div>–<div class="lpage">W394</div>.<div class="citation-links"><div class="google-scholar-ref-link"><a href="https://scholar.google.com/scholar_lookup?title=JPred4%3A%20a%20protein%20secondary%20structure%20prediction%20server&amp;author=A.%20Drozdetskiy&amp;publication_year=2015&amp;journal=Nucleic%20Acids%20Res&amp;volume=43&amp;pages=W389-W394" target="">Google Scholar</a></div><div class="crossref-doi"><a href="http://dx.doi.org/10.1093/nar/gkv332" target="">Crossref</a></div><div class="adsDoiReference hide"><a href="http://adsabs.harvard.edu/cgi-bin/basic_connect?qsearch=10.1093%2Fnar%2Fgkv332" target="">Search ADS</a></div><div class="xslopenurl" style="display:none"><span class="inst-open-url-holders" data-targetid="10.1093%2Fnar%2Fgkv332"> </span></div><div class="pub-id"><a href="http://www.ncbi.nlm.nih.gov/pubmed/25883141" class="link link-pub-id" target="">PubMed</a></div>&nbsp;</div></div></div></div></div><div content-id="bty121-B3" xmlns:helper="urn:XsltStringHelper"><div class="ref false"><div role="bty121-B3" class="ref-content "><div class="citation mixed-citation"><div class="person-group"><div class="name string-name"><div class="surname">Fox</div> <div class="given-names">G.</div></div></div> et al.&nbsp; (<div class="year">2016</div>) 
+<div class="article-title">Using de novo protein structure predictions to measure the quality of very large multiple sequence alignments</div>. <div class="source">Bioinformatics</div>&nbsp;, <div class="volume">32</div>, <div class="fpage">814</div>–<div class="lpage">820</div>.<div class="citation-links"><div class="google-scholar-ref-link"><a href="https://scholar.google.com/scholar_lookup?title=Using%20de%20novo%20protein%20structure%20predictions%20to%20measure%20the%20quality%20of%20very%20large%20multiple%20sequence%20alignments&amp;author=G.%20Fox&amp;publication_year=2016&amp;journal=Bioinformatics&amp;volume=32&amp;pages=814-820" target="">Google Scholar</a></div><div class="crossref-doi"><a href="http://dx.doi.org/10.1093/bioinformatics/btv592" target="">Crossref</a></div><div class="adsDoiReference hide"><a href="http://adsabs.harvard.edu/cgi-bin/basic_connect?qsearch=10.1093%2Fbioinformatics%2Fbtv592" target="">Search ADS</a></div><div class="xslopenurl" style="display:none"><span class="inst-open-url-holders" data-targetid="10.1093%2Fbioinformatics%2Fbtv592"> </span></div><div class="pub-id"><a href="http://www.ncbi.nlm.nih.gov/pubmed/26568625" class="link link-pub-id" target="">PubMed</a></div>&nbsp;</div></div></div></div></div><div content-id="bty121-B4" xmlns:helper="urn:XsltStringHelper"><div class="ref false"><div role="bty121-B4" class="ref-content "><div class="citation mixed-citation"><div class="person-group"><div class="name string-name"><div class="surname">Glöckner</div> <div class="given-names">F.O.</div></div></div> et al.&nbsp; (<div class="year">2017</div>) 
+<div class="article-title">25 years of serving the community with ribosomal RNA gene reference databases and tools</div>. <div class="source">J. Biotechnol</div>&nbsp;., <div class="volume">261</div>, <div class="fpage">169</div>–<div class="lpage">176</div>.<div class="citation-links"><div class="google-scholar-ref-link"><a href="https://scholar.google.com/scholar_lookup?title=25%20years%20of%20serving%20the%20community%20with%20ribosomal%20RNA%20gene%20reference%20databases%20and%20tools&amp;author=F.O.%20Gl%C3%B6ckner&amp;publication_year=2017&amp;journal=J.%20Biotechnol&amp;volume=261&amp;pages=169-176" target="">Google Scholar</a></div><div class="crossref-doi"><a href="http://dx.doi.org/10.1016/j.jbiotec.2017.06.1198" target="">Crossref</a></div><div class="adsDoiReference hide"><a href="http://adsabs.harvard.edu/cgi-bin/basic_connect?qsearch=10.1016%2Fj.jbiotec.2017.06.1198" target="">Search ADS</a></div><div class="xslopenurl" style="display:none"><span class="inst-open-url-holders" data-targetid="10.1016%2Fj.jbiotec.2017.06.1198"> </span></div><div class="pub-id"><a href="http://www.ncbi.nlm.nih.gov/pubmed/28648396" class="link link-pub-id" target="">PubMed</a></div>&nbsp;</div></div></div></div></div><div content-id="bty121-B5" xmlns:helper="urn:XsltStringHelper"><div class="ref false"><div role="bty121-B5" class="ref-content "><div class="citation mixed-citation"><div class="person-group"><div class="name string-name"><div class="surname">González-Domínguez</div> <div class="given-names">J.</div></div></div> et al.&nbsp; (<div class="year">2016</div>) 
+<div class="article-title">MSAProbs-MPI: parallel multiple sequence aligner for distributed-memory systems</div>. <div class="source">Bioinformatics</div>&nbsp;, <div class="volume">32</div>, <div class="fpage">3826</div>–<div class="lpage">3828</div>.<div class="citation-links"><div class="google-scholar-ref-link"><a href="https://scholar.google.com/scholar_lookup?title=MSAProbs-MPI%3A%20parallel%20multiple%20sequence%20aligner%20for%20distributed-memory%20systems&amp;author=J.%20Gonz%C3%A1lez-Dom%C3%ADnguez&amp;publication_year=2016&amp;journal=Bioinformatics&amp;volume=32&amp;pages=3826-3828" target="">Google Scholar</a></div><div class="crossref-doi"><a href="http://dx.doi.org/10.1093/bioinformatics/btw558" target="">Crossref</a></div><div class="adsDoiReference hide"><a href="http://adsabs.harvard.edu/cgi-bin/basic_connect?qsearch=10.1093%2Fbioinformatics%2Fbtw558" target="">Search ADS</a></div><div class="xslopenurl" style="display:none"><span class="inst-open-url-holders" data-targetid="10.1093%2Fbioinformatics%2Fbtw558"> </span></div><div class="pub-id"><a href="http://www.ncbi.nlm.nih.gov/pubmed/27638400" class="link link-pub-id" target="">PubMed</a></div>&nbsp;</div></div></div></div></div><div content-id="bty121-B6" xmlns:helper="urn:XsltStringHelper"><div class="ref false"><div role="bty121-B6" class="ref-content "><div class="citation mixed-citation"><div class="person-group"><div class="name string-name"><div class="surname">Gudyś</div> <div class="given-names">A.</div></div>, <div class="name string-name"><div class="surname">Deorowicz</div> <div class="given-names">S.</div></div></div> (<div class="year">2017</div>) 
+<div class="article-title">QuickProbs 2: towards rapid construction of high-quality alignments of large protein families</div>. <div class="source">Sci. Rep</div>&nbsp;., <div class="volume">7</div>, <div class="fpage">41553.</div><div class="citation-links"><div class="google-scholar-ref-link"><a href="https://scholar.google.com/scholar_lookup?title=QuickProbs%202%3A%20towards%20rapid%20construction%20of%20high-quality%20alignments%20of%20large%20protein%20families&amp;author=A.%20Gudy%C5%9B&amp;author=S.%20Deorowicz&amp;publication_year=2017&amp;journal=Sci.%20Rep&amp;volume=7&amp;pages=41553." target="">Google Scholar</a></div><div class="crossref-doi"><a href="http://dx.doi.org/10.1038/srep41553" target="">Crossref</a></div><div class="adsDoiReference hide"><a href="http://adsabs.harvard.edu/cgi-bin/basic_connect?qsearch=10.1038%2Fsrep41553" target="">Search ADS</a></div><div class="xslopenurl" style="display:none"><span class="inst-open-url-holders" data-targetid="10.1038%2Fsrep41553"> </span></div><div class="pub-id"><a href="http://www.ncbi.nlm.nih.gov/pubmed/28139687" class="link link-pub-id" target="">PubMed</a></div>&nbsp;</div></div></div></div></div><div content-id="bty121-B7" xmlns:helper="urn:XsltStringHelper"><div class="ref false"><div role="bty121-B7" class="ref-content "><div class="citation mixed-citation"><div class="person-group"><div class="name string-name"><div class="surname">Katoh</div> <div class="given-names">K.</div></div></div> et al.&nbsp; (<div class="year">2017</div>) 
+<div class="article-title">MAFFT online service: multiple sequence alignment, interactive sequence choice and visualization</div>. <div class="source">Brief Bioinformatics</div>&nbsp;, in press.</div></div></div></div><div content-id="bty121-B8" xmlns:helper="urn:XsltStringHelper"><div class="ref false"><div role="bty121-B8" class="ref-content "><div class="citation mixed-citation"><div class="person-group"><div class="name string-name"><div class="surname">Le</div> <div class="given-names">Q.</div></div></div> et al.&nbsp; (<div class="year">2017</div>) 
+<div class="article-title">Protein multiple sequence alignment benchmarking through secondary structure prediction</div>. <div class="source">Bioinformatics</div>&nbsp;, <div class="volume">33</div>, <div class="fpage">1331</div>–<div class="lpage">1337</div>.<div class="citation-links"><div class="google-scholar-ref-link"><a href="https://scholar.google.com/scholar_lookup?title=Protein%20multiple%20sequence%20alignment%20benchmarking%20through%20secondary%20structure%20prediction&amp;author=Q.%20Le&amp;publication_year=2017&amp;journal=Bioinformatics&amp;volume=33&amp;pages=1331-1337" target="">Google Scholar</a></div><div class="crossref-doi"><a href="http://dx.doi.org/10.1093/bioinformatics/btx298" target="">Crossref</a></div><div class="adsDoiReference hide"><a href="http://adsabs.harvard.edu/cgi-bin/basic_connect?qsearch=10.1093%2Fbioinformatics%2Fbtx298" target="">Search ADS</a></div><div class="xslopenurl" style="display:none"><span class="inst-open-url-holders" data-targetid="10.1093%2Fbioinformatics%2Fbtx298"> </span></div><div class="pub-id"><a href="http://www.ncbi.nlm.nih.gov/pubmed/28093407" class="link link-pub-id" target="">PubMed</a></div>&nbsp;</div></div></div></div></div><div content-id="bty121-B9" xmlns:helper="urn:XsltStringHelper"><div class="ref false"><div role="bty121-B9" class="ref-content "><div class="citation mixed-citation"><div class="person-group"><div class="name string-name"><div class="surname">Needleman</div> <div class="given-names">S.B.</div></div>, <div class="name string-name"><div class="surname">Wunsch</div> <div class="given-names">C.D.</div></div></div> (<div class="year">1970</div>) 
+<div class="article-title">A general method applicable to the search for similarities in the amino acid sequence of two proteins</div>. <div class="source">J. Mol. Biol</div>&nbsp;., <div class="volume">48</div>, <div class="fpage">443</div>–<div class="lpage">453</div>.<div class="citation-links"><div class="google-scholar-ref-link"><a href="https://scholar.google.com/scholar_lookup?title=A%20general%20method%20applicable%20to%20the%20search%20for%20similarities%20in%20the%20amino%20acid%20sequence%20of%20two%20proteins&amp;author=S.B.%20Needleman&amp;author=C.D.%20Wunsch&amp;publication_year=1970&amp;journal=J.%20Mol.%20Biol&amp;volume=48&amp;pages=443-453" target="">Google Scholar</a></div><div class="crossref-doi"><a href="http://dx.doi.org/10.1016/0022-2836%2870%2990057-4" target="">Crossref</a></div><div class="adsDoiReference hide"><a href="http://adsabs.harvard.edu/cgi-bin/basic_connect?qsearch=10.1016%2F0022-2836%2870%2990057-4" target="">Search ADS</a></div><div class="xslopenurl" style="display:none"><span class="inst-open-url-holders" data-targetid="10.1016%2F0022-2836(70)90057-4"> </span></div><div class="pub-id"><a href="http://www.ncbi.nlm.nih.gov/pubmed/5420325" class="link link-pub-id" target="">PubMed</a></div>&nbsp;</div></div></div></div></div><div content-id="bty121-B10" xmlns:helper="urn:XsltStringHelper"><div class="ref false"><div role="bty121-B10" class="ref-content "><div class="citation mixed-citation"><div class="person-group"><div class="name string-name"><div class="surname">Notredame</div> <div class="given-names">C.</div></div></div> et al.&nbsp; (<div class="year">1998</div>) 
+<div class="article-title">COFFEE: an objective function for multiple sequence alignments</div>. <div class="source">Bioinformatics</div>&nbsp;, <div class="volume">14</div>, <div class="fpage">407</div>–<div class="lpage">422</div>.<div class="citation-links"><div class="google-scholar-ref-link"><a href="https://scholar.google.com/scholar_lookup?title=COFFEE%3A%20an%20objective%20function%20for%20multiple%20sequence%20alignments&amp;author=C.%20Notredame&amp;publication_year=1998&amp;journal=Bioinformatics&amp;volume=14&amp;pages=407-422" target="">Google Scholar</a></div><div class="crossref-doi"><a href="http://dx.doi.org/10.1093/bioinformatics/14.5.407" target="">Crossref</a></div><div class="adsDoiReference hide"><a href="http://adsabs.harvard.edu/cgi-bin/basic_connect?qsearch=10.1093%2Fbioinformatics%2F14.5.407" target="">Search ADS</a></div><div class="xslopenurl" style="display:none"><span class="inst-open-url-holders" data-targetid="10.1093%2Fbioinformatics%2F14.5.407"> </span></div><div class="pub-id"><a href="http://www.ncbi.nlm.nih.gov/pubmed/9682054" class="link link-pub-id" target="">PubMed</a></div>&nbsp;</div></div></div></div></div><div content-id="bty121-B11" xmlns:helper="urn:XsltStringHelper"><div class="ref false"><div role="bty121-B11" class="ref-content "><div class="citation mixed-citation"><div class="person-group"><div class="name string-name"><div class="surname">Raghava</div> <div class="given-names">G.P.S.</div></div></div> et al.&nbsp; (<div class="year">2003</div>) 
+<div class="article-title">OXBench: a benchmark for evaluation of protein multiple sequence alignment accuracy</div>. <div class="source">BMC Bioinformatics</div>&nbsp;, <div class="volume">4</div>, <div class="fpage">47.</div><div class="citation-links"><div class="google-scholar-ref-link"><a href="https://scholar.google.com/scholar_lookup?title=OXBench%3A%20a%20benchmark%20for%20evaluation%20of%20protein%20multiple%20sequence%20alignment%20accuracy&amp;author=G.P.S.%20Raghava&amp;publication_year=2003&amp;journal=BMC%20Bioinformatics&amp;volume=4&amp;pages=47." target="">Google Scholar</a></div><div class="crossref-doi"><a href="http://dx.doi.org/10.1186/1471-2105-4-47" target="">Crossref</a></div><div class="adsDoiReference hide"><a href="http://adsabs.harvard.edu/cgi-bin/basic_connect?qsearch=10.1186%2F1471-2105-4-47" target="">Search ADS</a></div><div class="xslopenurl" style="display:none"><span class="inst-open-url-holders" data-targetid="10.1186%2F1471-2105-4-47"> </span></div><div class="pub-id"><a href="http://www.ncbi.nlm.nih.gov/pubmed/14552658" class="link link-pub-id" target="">PubMed</a></div>&nbsp;</div></div></div></div></div><div content-id="bty121-B12" xmlns:helper="urn:XsltStringHelper"><div class="ref false"><div role="bty121-B12" class="ref-content "><div class="citation mixed-citation"><div class="person-group"><div class="name string-name"><div class="surname">Sievers</div> <div class="given-names">F.</div></div></div> et al.&nbsp; (<div class="year">2011</div>) 
+<div class="article-title">Fast, scalable generation of high-quality protein multiple sequence alignments using Clustal Omega</div>. <div class="source">Mol. Syst. Biol</div>&nbsp;., <div class="volume">7</div>, <div class="fpage">539</div>.<div class="citation-links"><div class="google-scholar-ref-link"><a href="https://scholar.google.com/scholar_lookup?title=Fast%2C%20scalable%20generation%20of%20high-quality%20protein%20multiple%20sequence%20alignments%20using%20Clustal%20Omega&amp;author=F.%20Sievers&amp;publication_year=2011&amp;journal=Mol.%20Syst.%20Biol&amp;volume=7&amp;pages=539" target="">Google Scholar</a></div><div class="crossref-doi"><a href="http://dx.doi.org/10.1038/msb.2011.75" target="">Crossref</a></div><div class="adsDoiReference hide"><a href="http://adsabs.harvard.edu/cgi-bin/basic_connect?qsearch=10.1038%2Fmsb.2011.75" target="">Search ADS</a></div><div class="xslopenurl" style="display:none"><span class="inst-open-url-holders" data-targetid="10.1038%2Fmsb.2011.75"> </span></div><div class="pub-id"><a href="http://www.ncbi.nlm.nih.gov/pubmed/21988835" class="link link-pub-id" target="">PubMed</a></div>&nbsp;</div></div></div></div></div><div content-id="bty121-B13" xmlns:helper="urn:XsltStringHelper"><div class="ref false"><div role="bty121-B13" class="ref-content "><div class="citation mixed-citation"><div class="person-group"><div class="name string-name"><div class="surname">Sievers</div> <div class="given-names">F.</div></div></div> et al.&nbsp; (<div class="year">2013</div>) 
+<div class="article-title">Making automated multiple alignments of very large numbers of protein sequences</div>. <div class="source">Bioinformatics</div>&nbsp;, <div class="volume">29</div>, <div class="fpage">989</div>–<div class="lpage">995</div>.<div class="citation-links"><div class="google-scholar-ref-link"><a href="https://scholar.google.com/scholar_lookup?title=Making%20automated%20multiple%20alignments%20of%20very%20large%20numbers%20of%20protein%20sequences&amp;author=F.%20Sievers&amp;publication_year=2013&amp;journal=Bioinformatics&amp;volume=29&amp;pages=989-995" target="">Google Scholar</a></div><div class="crossref-doi"><a href="http://dx.doi.org/10.1093/bioinformatics/btt093" target="">Crossref</a></div><div class="adsDoiReference hide"><a href="http://adsabs.harvard.edu/cgi-bin/basic_connect?qsearch=10.1093%2Fbioinformatics%2Fbtt093" target="">Search ADS</a></div><div class="xslopenurl" style="display:none"><span class="inst-open-url-holders" data-targetid="10.1093%2Fbioinformatics%2Fbtt093"> </span></div><div class="pub-id"><a href="http://www.ncbi.nlm.nih.gov/pubmed/23428640" class="link link-pub-id" target="">PubMed</a></div>&nbsp;</div></div></div></div></div><div content-id="bty121-B14" xmlns:helper="urn:XsltStringHelper"><div class="ref false"><div role="bty121-B14" class="ref-content "><div class="citation mixed-citation"><div class="person-group"><div class="name string-name"><div class="surname">Yamada</div> <div class="given-names">K.D.</div></div></div> et al.&nbsp; (<div class="year">2016</div>) 
+<div class="article-title">Application of the MAFFT sequence alignment program to large data—reexamination of the usefulness of chained guide trees</div>. <div class="source">Bioinformatics</div>&nbsp;, <div class="volume">32</div>, <div class="fpage">3246</div>–<div class="lpage">3251</div>.<div class="citation-links"><div class="google-scholar-ref-link"><a href="https://scholar.google.com/scholar_lookup?title=Application%20of%20the%20MAFFT%20sequence%20alignment%20program%20to%20large%20data%E2%80%94reexamination%20of%20the%20usefulness%20of%20chained%20guide%20trees&amp;author=K.D.%20Yamada&amp;publication_year=2016&amp;journal=Bioinformatics&amp;volume=32&amp;pages=3246-3251" target="">Google Scholar</a></div><div class="crossref-doi"><a href="http://dx.doi.org/10.1093/bioinformatics/btw412" target="">Crossref</a></div><div class="adsDoiReference hide"><a href="http://adsabs.harvard.edu/cgi-bin/basic_connect?qsearch=10.1093%2Fbioinformatics%2Fbtw412" target="">Search ADS</a></div><div class="xslopenurl" style="display:none"><span class="inst-open-url-holders" data-targetid="10.1093%2Fbioinformatics%2Fbtw412"> </span></div><div class="pub-id"><a href="http://www.ncbi.nlm.nih.gov/pubmed/27378296" class="link link-pub-id" target="">PubMed</a></div>&nbsp;</div></div></div></div></div></div>        <!-- /foreach -->
+
+
+
+        <div class="article-metadata-standalone-panel clearfix" style="display: none;"></div>
+
+        
+<div class="copyright copyright-statement">© The Author(s) 2018. Published by Oxford University Press.</div><div class="license"><div class="license-p">This is an Open Access article distributed under the terms of the Creative Commons Attribution Non-Commercial License (<a class="link link-uri" href="http://creativecommons.org/licenses/by-nc/4.0/" target="">http://creativecommons.org/licenses/by-nc/4.0/</a>),
+ which permits non-commercial re-use, distribution, and reproduction in 
+any medium, provided the original work is properly cited. For commercial
+ re-use, please contact journals.permissions@oup.com</div></div><!-- /foreach -->
+
+        <span id="UserHasAccess" data-userhasaccess="True"></span>
+
+    </div><!-- /.widget-items -->
+</div><!-- /.module-widget -->
+    </div>
+    <div class="widget widget-SolrResourceMetadata widget-instance-OUP_Article_ResourceMetadata_Widget">
+        
+        <div class="article-metadata-tocSections">
+            <div class="article-metadata-tocSections-title">Issue Section:</div>
+                <a href="https://academic.oup.com/bioinformatics/search-results?f_TocHeadingTitle=SEQUENCE%20ANALYSIS">SEQUENCE ANALYSIS</a>
+        </div>
+
+
+    </div>
+    <div class="widget widget-EditorInformation widget-instance-OUP_Article_EditorInformation_Widget">
+        
+        <div class="wi-editors">
+            <div class="al-authors-list">
+
+                    <div class="editor-tag-label">
+Associate Editor:
+                            <span class="al-author-name">
+                                <span id="info-18222186" class="al-author-info-wrap arrow-up">
+
+
+<div id="authorInfo_OUP_Article_EditorInformation_Widget" class="info-card-author">
+    <div class="name-role-wrap">
+        <div class="info-card-name">John Hancock</div>
+            <div class="info-card-role">
+                Associate Editor
+            </div>
+    </div>
+
+
+
+
+
+
+        <div class="info-card-search-label">
+            Search for other works by this author on:
+        </div>
+            <div class="info-card-search info-card-search-oxford">
+                <a href="https://academic.oup.com/bioinformatics/search-results?f_Authors=John+Hancock">Oxford Academic</a>
+            </div>
+            <div class="info-card-search info-card-search-pubmed">
+                <a href="http://www.ncbi.nlm.nih.gov/pubmed?cmd=search&amp;term=Hancock%20J">PubMed</a>
+            </div>
+            <div class="info-card-search info-card-search-google">
+                <a href="http://scholar.google.com/scholar?q=author:%22Hancock%20J%22">Google Scholar</a>
+            </div>
+
+</div>
+
+                                </span>
+                                <a class="linked-name" href="javascript:;">John Hancock</a>
+                            </span>
+                        <br>
+                    </div>
+            </div>
+        </div>
+
+    </div>
+
+
+                        <div id="ContentTabFilteredView"></div>
+                        <div class="downloadImagesppt" style="display: none;">
+                            <a href="https://oup.silverchair-cdn.com/DownloadFile/DownloadImage.aspx?image=&amp;PPTtype=SlideSet&amp;ar=4916099&amp;xsltPath=%7E/UI/app/XSLT" id="BodyContent_PageContent_lnkDownloadAllImages">Download all figures</a>
+                        </div>
+                        <div></div>
+                            <div class="widget widget-ArticleDataSupplements widget-instance-OUP_Data_Supplements_Tab">
+            <a name="SupplementalTab" id="SupplementalTab"></a>
+        
+        <h2 scrollto-destination="supplementary-data" id="supplementary-data" class="section-title">Supplementary data</h2>
+        <div class="dataSuppLink"><a href="https://oup.silverchair-cdn.com/oup/backfile/Content_public/Journal/bioinformatics/34/14/10.1093_bioinformatics_bty121/1/bty121_suppl.pdf?Expires=1549000409&amp;Signature=l0vHapo-N7azPytGanXN9qF37jFBVFGFIA-wwTrityELbPYqApc5Bt6YaYpNRFKqieDjMtl52%7EjysJHoSVgkfMP5%7EjF7XdWCVnD4Ba6pyhyvYECWhy94KosKGqulUlqQlncqXIKH0IHin55FQ-x2WPAjjRc%7EoiB2TVCjwYv3rWPMcRMV6RCNpp7hX069UAyURl0qYkQlvIY6ke5Ftldb51rM4IsI9nEKyqXXy2wqcWcxRWIk3-djF1oR6RzKosbetgr4nVED9v4ApajXQRGrERvrXORGFuJ8WOeb5XyjuQPjoBfv6SUNar6wopG6ym5Fz6s1yGYDc2eoolU7qFuC%7Eg__&amp;Key-Pair-Id=APKAIE5G5CRDK6RD3PGA"><div class="label -label">Supplementary Data</div></a> - pdf file</div>
+
+    </div>
+    <div class="widget widget-ArticleDataRepositories widget-instance-Article_DryadLink">
+        
+    </div>
+
+                         <div class="comments">
+                                <div class="widget widget-UserCommentBody widget-instance-UserCommentBody_Article">
+        
+
+
+    </div>
+    <div class="widget widget-UserComment widget-instance-OUP_UserComment_Article">
+        
+    </div>
+
+                        </div>
+                    </div>
+                   
+                </div> 
+
+                     
+
+
+            </div><!-- /.content-inner-wrap -->
+        </div> 
+
+        <div id="Sidebar" class="page-column page-column--right">
+                <div class="widget widget-AdBlock widget-instance-ArticlePageTopSidebar">
+        
+
+<div id="adBlockMainBodyTop" style=" ">
+    <script>
+        googletag.cmd.push(function () { googletag.display('adBlockMainBodyTop'); });
+    </script>
+<div id="google_ads_iframe_/116097782/bioinformatics_Supplement_Ad2_0__container__" style="border: 0pt none;"><iframe id="google_ads_iframe_/116097782/bioinformatics_Supplement_Ad2_0" title="3rd party ad content" name="google_ads_iframe_/116097782/bioinformatics_Supplement_Ad2_0" scrolling="no" marginwidth="0" marginheight="0" style="border: 0px none; vertical-align: bottom;" srcdoc="" width="300" frameborder="0" height="250"></iframe></div></div>
+
+    </div>
+<div class="widget widget-dynamic " data-count="1"> 
+
+    <div class="widget-dynamic-inner-wrap">
+
+<div class="widget widget-dynamic " data-count="10"> 
+
+    <div class="widget-dynamic-inner-wrap">
+
+    <div class="widget widget-ArticleLevelMetrics widget-instance-Article_RightRailB0Article_RightRail_ArticleLevelMetrics">
+        
+
+
+
+
+
+    <div class="artmet-condensed-wrap clearfix">
+        <div class="artmet-condensed-stats clearfix">
+            <div class="artmet-item artmet-views">
+                <span class="artmet-number">2,479</span>
+                <span class="artmet-text">Views</span>
+            </div>
+
+            <div class="artmet-item artmet-citations">
+                <span class="artmet-number">
+                     <a href="http://gateway.webofknowledge.com/gateway/Gateway.cgi?GWVersion=2&amp;SrcApp=PARTNER_APP&amp;SrcAuth=LinksAMR&amp;KeyUT=WOS:000438248700022&amp;DestLinkType=CitingArticles&amp;DestApp=ALL_WOS&amp;UsrCustomerID=61f30d8ae69c46f86624c5f98a3bc13a" target="">6</a>
+                </span>
+                <span class="artmet-text">Citations</span>
+            </div>
+    
+            <div class="artmet-item artmet-altmetric">
+    <div class="widget widget-AltmetricLink widget-instance-ArticleLevelMetrics_AltmetricLinkSummary">
+            <!-- Altmetrics -->
+    <div id="altmetricEmbedId" runat="server" class="altmetric-embed" data-badge-type="donut" data-hide-no-mentions="false" data-doi="10.1093/bioinformatics/bty121" data-uuid="184320f6-7343-1820-ef2f-d3d8716bd27e"><a target="_self" href="https://www.altmetric.com/details.php?domain=academic.oup.com&amp;citation_id=33921660" style="display:inline-block;">
+        <img alt="Article has an altmetric score of 6" src="https://badges.altmetric.com/?size=128&amp;score=6&amp;types=tttttttt" style="border:0; margin:0; max-width: none;" width="64px" height="64px">
+</a></div>
+         <script type="text/javascript" src="embed.js"></script>
+
+    </div>
+
+            </div>
+        </div>
+
+            <div class="artmet-modal-trigger-wrap clearfix">
+                <a class="artmet-modal-trigger" data-article-id="4916099"><i class="icon-metrics"></i><span>View Metrics</span></a>
+            </div>
+    </div>
+        <div class="artmet-modal" id="MetricsModal">
+            <div class="artmet-modal-contents">
+                <a class="artmet-close-modal">×</a>
+            </div>
+        </div>
+
+
+    </div>
+    <div class="widget widget-Alerts widget-instance-Article_RightRailB0Article_RightRail_Alerts">
+        
+    <div class="alertsWidget">
+        <h3>Email alerts</h3>
+                <div class="userAlert alertType-5">
+                    <a role="link" aria-label="New issue alert" data-userloggedin="False" data-alerttype="5">New issue alert</a>
+                </div>
+                <div class="userAlert alertType-3">
+                    <a role="link" aria-label="Advance article alerts" data-userloggedin="False" data-alerttype="3">Advance article alerts</a>
+                </div>
+                <div class="userAlert alertType-1">
+                    <a role="link" aria-label="Article activity alert" data-userloggedin="False" data-alerttype="1">Article activity alert</a>
+                </div>
+                    <div class="userAlert alertType-MarketingLink">
+                <a role="link" aria-label="Receive exclusive offers and updates from Oxford Academic" data-userloggedin="False" data-additionalurl="/my-account/communication-preferences">Receive exclusive offers and updates from Oxford Academic</a>
+            </div>
+        <div class="userAlertSignUpModal reveal-modal small" data-reveal="">
+            <div class="userAlertSignUp"></div>
+            <label for="alert-signup-modal-close" class="screenreader-text">Close</label>
+            <a role="button" id="alert-signup-modal-close" class="close-reveal-modal" href="javascript:;">
+                <i class="icon-general-close"></i>
+            </a>
+        </div>
+    </div>
+
+    </div>
+    <div class="widget widget-ArticleLinks widget-instance-Article_RightRailB0Article_RightRail_ArticleLinks">
+        
+
+
+    </div>
+    <div class="widget widget-RelatedContent widget-instance-Article_RightRailB0Article_RightRail_RelatedContent">
+        
+    </div>
+    <div class="widget widget-RelatedArticleIn widget-instance-Article_RightRailB0Article_RightRail_RelatedArticleIn">
+            <h3 class="relatedArticleIn-title">Related articles in</h3>
+    <div class="relatedArticleIn-content">
+        <ul>
+                <li>
+                    <a href="http://gateway.webofknowledge.com/gateway/Gateway.cgi?GWVersion=2&amp;SrcApp=PARTNER_APP&amp;SrcAuth=LinksAMR&amp;KeyUT=WOS:000438248700022&amp;DestLinkType=RelatedRecords&amp;DestApp=ALL_WOS&amp;UsrCustomerID=61f30d8ae69c46f86624c5f98a3bc13a">Web of Science</a>
+                </li>
+                <li>
+                    <a href="https://scholar.google.com/scholar?q=related:https%3a%2f%2facademic.oup.com%2fbioinformatics%2farticle%2f34%2f14%2f2490%2f4916099">Google Scholar</a>
+                </li>
+        </ul>
+    </div>
+
+    </div>
+    <div class="widget widget-ArticleCitedBy widget-instance-Article_RightRailB0Article_RightRail_ArticleCitedBy">
+        <h3 class="article-cited-title">Citing articles via</h3>
+<div class="widget-links_wrap">
+        <div class="article-cited-link-wrap web-of-science">
+            <a href="http://gateway.webofknowledge.com/gateway/Gateway.cgi?GWVersion=2&amp;SrcApp=PARTNER_APP&amp;SrcAuth=LinksAMR&amp;KeyUT=WOS:000438248700022&amp;DestLinkType=CitingArticles&amp;DestApp=ALL_WOS&amp;UsrCustomerID=61f30d8ae69c46f86624c5f98a3bc13a" target="">Web of Science (6)</a>
+        </div>
+            <div class="article-cited-link-wrap google-scholar-url">
+            <a href="http://scholar.google.com/scholar?q=link:https%3A%2F%2Facademic.oup.com%2Fbioinformatics%2Farticle%2F34%2F14%2F2490%2F4916099" target="">Google Scholar</a>
+        </div>
+            <div class="article-cited-link-wrap crossref-citedby">
+            <a href="https://academic.oup.com/bioinformatics/CrossRef-CitedBy/4916099">CrossRef</a>
+        </div>
+</div>
+    </div>
+    <div class="widget widget-ArticleListNewAndPopular widget-instance-Article_RightRailB0Article_RightRail_ArticleNewPopularCombined">
+            <ul class="articleListNewAndPopularCombinedView">
+            <li>
+                <a href="javascript:;" class="articleListNewAndPopular-mode active" data-mode="MostRecent">Latest</a>
+            </li>
+            <li>
+                <a href="javascript:;" class="articleListNewAndPopular-mode " data-mode="MostRead">Most Read</a>
+            </li>
+            <li>
+                <a href="javascript:;" class="articleListNewAndPopular-mode " data-mode="MostCited">Most Cited</a>
+            </li>
+    </ul>
+        <section class="articleListNewPopContent articleListNewAndPopular-ContentView-MostRecent hasContent">
+
+
+
+
+<div id="newPopularList-Article_RightRailB0Article_RightRail_ArticleNewPopularCombined" class="fb">
+
+    
+
+
+
+
+
+
+
+<div class="widget-layout widget-layout--vert">
+
+
+
+
+
+
+        <div class="widget-columns widget-col-1">
+            <div class="col">
+
+                       <div class="widget-dynamic-entry">
+                        
+
+
+
+                        
+                           <a href="https://academic.oup.com/bioinformatics/advance-article/doi/10.1093/bioinformatics/btz069/5304362?searchresult=1">
+                                                              <div class="widget-dynamic-journal-title">
+                                   Aligning Optical Maps to De Bruijn Graphs
+                               </div>
+                                                                                             <div class="widget-dynamic-journal-image-synopsis">
+                                       <div class="widget-dynamic-journal-synopsis">                                           
+                                            
+                                       </div> <!-- /.widget-dynamic-journal-synopsis -->
+                               </div>
+
+
+                           </a>
+
+                    </div>
+                       <div class="widget-dynamic-entry">
+                        
+
+
+
+                        
+                           <a href="https://academic.oup.com/bioinformatics/advance-article/doi/10.1093/bioinformatics/btz071/5304360?searchresult=1">
+                                                              <div class="widget-dynamic-journal-title">
+                                   Reviewer-coerced citation: Case 
+report, update on journal policy, and suggestions for future prevention
+                               </div>
+                                                                                             <div class="widget-dynamic-journal-image-synopsis">
+                                       <div class="widget-dynamic-journal-synopsis">
+                                       </div>
+                               </div>
+
+
+                           </a>
+
+                    </div>
+                       <div class="widget-dynamic-entry">
+                        
+
+
+
+                        
+                           <a href="https://academic.oup.com/bioinformatics/advance-article/doi/10.1093/bioinformatics/btz054/5304359?searchresult=1">
+                                                              <div class="widget-dynamic-journal-title">
+                                   Predicting runtimes of bioinformatics
+ tools based on historical data: Five years of Galaxy usage
+                               </div>
+                                                                                             <div class="widget-dynamic-journal-image-synopsis">
+                                       <div class="widget-dynamic-journal-synopsis">                                           
+                                            
+                                       </div> <!-- /.widget-dynamic-journal-synopsis -->
+                               </div>
+
+
+                           </a>
+
+                    </div>
+                       <div class="widget-dynamic-entry">
+                        
+
+
+
+                        
+                           <a href="https://academic.oup.com/bioinformatics/advance-article/doi/10.1093/bioinformatics/btz062/5304363?searchresult=1">
+                                                              <div class="widget-dynamic-journal-title">
+                                   Calculation of accurate interatomic 
+contact surface areas for the quantitative analysis of non-bonded 
+molecular interactions
+                               </div>
+                                                                                             <div class="widget-dynamic-journal-image-synopsis">
+                                       <div class="widget-dynamic-journal-synopsis">                                           
+                                            
+                                       </div> <!-- /.widget-dynamic-journal-synopsis -->
+                               </div>
+
+
+                           </a>
+
+                    </div>
+                       <div class="widget-dynamic-entry">
+                        
+
+
+
+                        
+                           <a href="https://academic.oup.com/bioinformatics/advance-article/doi/10.1093/bioinformatics/btz058/5304361?searchresult=1">
+                                                              <div class="widget-dynamic-journal-title">
+                                   NEMO: Cancer subtyping by integration of partial multi-omic data
+                               </div>
+                                                                                             <div class="widget-dynamic-journal-image-synopsis">
+                                       <div class="widget-dynamic-journal-synopsis">                                           
+                                            
+                                       </div> <!-- /.widget-dynamic-journal-synopsis -->
+                               </div>
+
+
+                           </a>
+
+                    </div>
+            </div>
+        </div>
+</div><!-- /.widget-layout-[orientation] --></div>
+        </section>
+        <section class="articleListNewPopContent articleListNewAndPopular-ContentView-MostRead hide">
+        </section>
+        <section class="articleListNewPopContent articleListNewAndPopular-ContentView-MostCited hide">
+        </section>
+
+    </div>
+
+    </div>
+
+</div>
+    </div>
+
+</div>    <div class="widget widget-AdBlock widget-instance-ArticlePageTopMainBodyBottom">
+        
+
+<div id="adBlockMainBodyBottom" style=" ">
+    <script>
+        googletag.cmd.push(function () { googletag.display('adBlockMainBodyBottom'); });
+    </script>
+<div id="google_ads_iframe_/116097782/bioinformatics_Supplement_Ad3_0__container__" style="border: 0pt none;"><iframe id="google_ads_iframe_/116097782/bioinformatics_Supplement_Ad3_0" title="3rd party ad content" name="google_ads_iframe_/116097782/bioinformatics_Supplement_Ad3_0" scrolling="no" marginwidth="0" marginheight="0" style="border: 0px none; vertical-align: bottom;" srcdoc="" width="300" frameborder="0" height="250"></iframe></div></div>
+
+    </div>
+
+        </div> 
+    </div><!-- /.page-column-wrap -->
+    <input name="ctl00$ctl00$BodyContent$PageContent$hfArticleTitle" id="hfArticleTitle" value="Parallelization of MAFFT for large-scale multiple sequence alignments" type="hidden">
+
+                </div><!-- /.center-inner-row -->
+            </section>
+        </main>
+    </div>
+    
+
+        
+    
+    <script type="text/javascript">
+        $(document).ready(function () {
+            SCM.ScholarlyiQ.trackArticlePageEvents();
+        });
+        googletag.cmd.push(function () {
+            ////////////////////////////////////// IMPORTANT: //////////////////////////////////////
+            // Article DOIs are passed to GPT to target specific articles. Because the DOI cannot //
+            // be accessed from Site.Master, put off calling enableServices() until the targeting //
+            // for DOI is set. Only call enableServices() if it is not going to be called later   //
+            // in Article.aspx. See Site.Master                                                   //
+            ////////////////////////////////////////////////////////////////////////////////////////
+            googletag.pubads().setTargeting("jnlsdoi", "10.1093/bioinformatics/bty121");
+            googletag.enableServices();
+        });
+    </script>
+
+        <div class="widget widget-SitePageFooter widget-instance-SitePageFooter">
+        <div class="ad-banner ad-banner-footer">
+    <div class="widget widget-AdBlock widget-instance-FooterAd">
+        
+
+<div id="adBlockFooter" style=" ">
+    <script>
+        googletag.cmd.push(function () { googletag.display('adBlockFooter'); });
+    </script>
+<div id="google_ads_iframe_/116097782/bioinformatics_Supplement_Ad4_0__container__" style="border: 0pt none;"><iframe id="google_ads_iframe_/116097782/bioinformatics_Supplement_Ad4_0" title="3rd party ad content" name="google_ads_iframe_/116097782/bioinformatics_Supplement_Ad4_0" scrolling="no" marginwidth="0" marginheight="0" style="border: 0px none; vertical-align: bottom;" srcdoc="" width="728" frameborder="0" height="90"></iframe></div></div>
+
+    </div>
+
+</div>
+
+    <div class="journal-footer journal-bg">
+        <div class="center-inner-row">
+
+                <div class="journal-footer-menu">
+
+                    <ul>
+                            <li class="link-1">
+                                <a href="https://academic.oup.com/bioinformatics/pages/About">About Bioinformatics</a>
+                            </li>
+                            <li class="link-2">
+                                <a href="https://academic.oup.com/bioinformatics/pages/Editorial_Board">Editorial Board</a>
+                            </li>
+                            <li class="link-3">
+                                <a href="https://academic.oup.com/bioinformatics/pages/General_Instructions">Author Guidelines</a>
+                            </li>
+                            <li class="link-4">
+                                <a href="https://www.facebook.com/OUPAcademic">Facebook</a>
+                            </li>
+                            <li class="link-5">
+                                <a href="https://twitter.com/oxfordjournals">Twitter</a>
+                            </li>
+</ul><ul>                            <li class="link-1">
+                                <a href="https://academic.oup.com/bioinformatics/subscribe">Purchase</a>
+                            </li>
+                            <li class="link-2">
+                                <a href="http://www.oxfordjournals.org/en/library-recommendation-form.html">Recommend to your Library</a>
+                            </li>
+                            <li class="link-3">
+                                <a href="http://www.oupmediainfo.com/">Advertising and Corporate Services</a>
+                            </li>
+                            <li class="link-4">
+                                <a href="http://science-and-mathematics-careernetwork.oxfordjournals.org/jobseeker/search/results/?t730=&amp;t732=470053&amp;t731=&amp;t733=&amp;t735=&amp;t737=&amp;max=25&amp;site_id=20106&amp;search=">Journals Career Network</a>
+                            </li>
+
+                    </ul>
+
+
+                </div><!-- /.journal-footer-menu -->
+
+            <div class="journal-footer-affiliations">
+                <!-- <h3>Affiliations</h3> -->
+            <a href="https://academic.oup.com/bioinformatics" target="">
+                <img id="footer-logo-Bioinformatics" class="journal-footer-affiliations-logo" src="bioinformatics_f1-205396838.svg" alt="Bioinformatics">
+            </a>
+            </div><!-- /.journal-footer-affiliations -->
+
+            <div class="journal-footer-colophon">
+                <ul>
+                        <li>Online ISSN 1460-2059</li>
+                                            <li>Print ISSN 1367-4803</li>
+                    <li>Copyright © 2019 Oxford University Press</li>
+                </ul>
+            </div><!-- /.journal-footer-colophon -->
+
+
+        </div><!-- /.center-inner-row -->
+    </div><!-- /.journal-footer -->
+
+    </div>
+
+    <div class="oup-footer">
+        <div class="center-inner-row">
+                <div class="widget widget-SelfServeContent widget-instance-OupUmbrellaFooterSelfServe">
+        
+<div class="oup-footer-row journal-links">
+<div class="global-footer selfservelinks">
+<ul>
+    <li>
+    <a href="https://academic.oup.com/journals/pages/about_us">About Us</a>
+    </li>
+    <li>
+    <a href="https://academic.oup.com/journals/pages/contact_us">Contact Us</a>
+    </li>
+    <li>
+    <a href="http://global.oup.com/jobs">Careers</a>
+    </li>
+    <li>
+    <a href="https://academic.oup.com/journals/pages/help">Help</a>
+    </li>
+    <li>
+    <a href="https://academic.oup.com/journals/pages/access_purchase">Access &amp; Purchase</a></li>
+    <li>
+    <a href="https://academic.oup.com/journals/pages/access_purchase/rights_and_permissions">Rights &amp; Permissions</a>
+    </li>
+    <li>
+    <a href="https://academic.oup.com/journals/pages/open_access">Open Access</a>
+    </li>
+</ul>
+</div>
+<div class="global-footer selfservelinks">
+<h4 id="global-footer-customer services" class="title footerheader">Connect</h4>
+<ul>
+    <li>
+    <a href="https://academic.oup.com/my-account/communication-preferences">Join Our Mailing List</a>
+    </li>
+    <li>
+    <a href="http://blog.oup.com/">OUPblog</a>
+    </li>
+    <li>
+    <a href="http://twitter.com/oupacademic">Twitter</a>
+    </li>
+    <li>
+    <a href="https://www.facebook.com/OUPAcademic">Facebook</a>
+    </li>
+    <li>
+    <a href="http://www.youtube.com/playlist?list=PL3MAPgqN8JWioLLTkU4mlFM4-SNt-f1Xs">YouTube</a>
+    </li>
+    <li>
+    <a href="http://oupacademic.tumblr.com/">Tumblr</a>
+    </li>
+</ul>
+</div>
+<div class="global-footer selfservelinks">
+<h4>Resources</h4>
+<ul>
+    <li><a href="https://academic.oup.com/journals/pages/authors">Authors</a></li>
+    <li><a href="https://academic.oup.com/journals/pages/librarians">Librarians</a></li>
+    <li><a href="https://academic.oup.com/journals/pages/societies">Societies</a></li>
+    <li><a href="https://academic.oup.com/journals/pages/sponsorship_and_advertising">Sponsors &amp; Advertisers</a></li>
+    <li><a href="https://academic.oup.com/journals/pages/press">Press &amp; Media</a></li>
+    <li><a href="https://academic.oup.com/journals/pages/agents">Agents</a></li>
+</ul>
+</div>
+<div class="global-footer selfservelinks">
+<h4>Explore</h4>
+<ul>
+    <li><a href="http://global.oup.com/academic">Shop OUP Academic</a></li>
+    <li><a href="http://www.oxforddictionaries.com/">Oxford Dictionaries</a></li>
+    <li><a href="http://oxfordindex.oup.com/">Oxford Index</a></li>
+    <li><a href="https://www.epigeum.com/">Epigeum</a></li>
+    <li><a href="http://global.oup.com/">OUP Worldwide</a></li>
+    <li><a href="http://www.ox.ac.uk/">University of Oxford</a></li>
+</ul>
+</div>
+<div class="OUP-mission">
+<p>Oxford University Press is a department of the University of Oxford. 
+It furthers the University's objective of excellence in research, 
+scholarship, and education by publishing worldwide</p>
+<img class="journal-footer-logo" src="oup-logo.svg" alt="Oxford University Press" width="150" height="42">
+</div>
+</div>
+<div class="oup-footer-row">
+<div class="oup-footer-row-links">
+<ul>
+    <li>Copyright © 2019 Oxford University Press</li>
+    <li><a href="https://global.oup.com/cookiepolicy/">Cookie Policy</a></li>
+    <li><a href="https://global.oup.com/privacy">Privacy Policy</a></li>
+    <li><a href="https://academic.oup.com/journals/pages/about_us/legal/notices">Legal Notice</a></li>
+    <li><a href="https://academic.oup.com/journals/pages/sitemap">Site Map</a></li>
+    <li><a href="https://academic.oup.com/journals/pages/about_us/legal/accessibility">Accessibility</a></li>
+    <li><a href="https://get.adobe.com/reader/">Get Adobe Reader</a></li>
+</ul>
+</div>
+</div>
+<style type="text/css">
+    /* Issue right column fix for tablet/mobile */
+    @media (max-width: 1200px) {
+    .pg_issue .widget-instance-OUP_Issue {
+    width: 100%;
+    }
+    }
+</style>
+    
+    
+    
+    </div>
+
+        </div><!-- /.center-inner-row -->
+    </div><!-- /.oup-footer -->
+    <div class="ss-ui-only">
+        
+    </div>
+
+
+        
+        <div id="revealModal" class="reveal-modal" data-reveal="">
+            <div id="revealContent"></div>
+            <a class="close-reveal-modal" href="javascript:;"><i class="icon-general-close"></i><span class="screenreader-text">Close</span></a>
+        </div>
+        <div id="NeedSubscription" class="reveal-modal small" data-reveal="">
+            <div class="subscription-needed">
+                <h5>This Feature Is Available To Subscribers Only</h5>
+                <p><a href="https://academic.oup.com/sign-in">Sign In</a> or <a href="https://academic.oup.com/my-account/register?siteId=5139&amp;returnUrl=%2fbioinformatics%2farticle%2f34%2f14%2f2490%2f4916099">Create an Account</a></p>
+            </div>
+            <a class="close-reveal-modal" href="javascript:;"><i class="icon-general-close"></i><span class="screenreader-text">Close</span></a>
+        </div>
+        
+
+        <div id="noAccessReveal" class="reveal-modal tiny" data-reveal="">
+            <p>This PDF is available to Subscribers Only</p>
+            <a class="hide-for-article-page" id="articleLinkToPurchase" data-reveal=""><span>View Article Abstract &amp; Purchase Options</span></a>
+            <div class="issue-purchase-modal">
+                <p>For full access to this pdf, sign in to an existing account, or purchase an annual subscription.</p>
+            </div>
+            <a class="close-reveal-modal" href="javascript:;"><i class="icon-general-close"></i><span class="screenreader-text">Close</span></a>
+        </div>
+        
+        
+ 
+    
+<script src="footerJS" type="text/javascript"></script>
+<script src="OupCookiePolicyJS" type="text/javascript"></script>
+<script src="MathJax.js" type="text/javascript"></script>
+<script src="chartist.js" type="text/javascript"></script>
+<script src="ArticlePageJS" type="text/javascript"></script>
+<script src="addthis_widget.js" type="text/javascript"></script><div style="visibility: hidden; height: 1px; width: 1px; position: absolute; top: -9999px; z-index: 100000;" id="_atssh"><iframe id="_atssh403" title="AddThis utility frame" style="height: 1px; width: 1px; position: absolute; top: 0px; z-index: 100000; border: 0px none; left: 0px;" src="https://s7.addthis.com/static/sh.e4e8af4de595fdb10ec1459d.html#rand=0.6072316804029534&amp;iit=1548945557408&amp;tmr=load%3D1548945557266%26core%3D1548945557370%26main%3D1548945557372%26ifr%3D1548945557454&amp;cb=0&amp;cdn=0&amp;md=0&amp;kw=&amp;ab=-&amp;dh=academic.oup.com&amp;dr=&amp;du=https%3A%2F%2Facademic.oup.com%2Fbioinformatics%2Farticle%2F34%2F14%2F2490%2F4916099&amp;href=https%3A%2F%2Facademic.oup.com%2Fbioinformatics%2Farticle%2F34%2F14%2F2490%2F4916099&amp;dt=Parallelization%20of%20MAFFT%20for%20large-scale%20multiple%20sequence%20alignments&amp;dbg=0&amp;cap=tc%3D0%26ab%3D0&amp;inst=1&amp;jsl=1&amp;prod=undefined&amp;lng=en&amp;ogt=site_name%2Cupdated_time%2Cimage%2Curl%2Cdescription%2Ctitle%2Ctype%3Darticle&amp;pc=men&amp;pub=xa-5265518246c10183&amp;ssl=1&amp;sid=5c53089582e73e01&amp;srf=0.01&amp;ver=300&amp;xck=0&amp;xtr=0&amp;og=type%3Darticle%26title%3DParallelization%2520of%2520MAFFT%2520for%2520large-scale%2520multiple%2520sequence%2520alignments%26description%3DAbstractSummary.%2520%2520We%2520report%2520an%2520update%2520for%2520the%2520MAFFT%2520multiple%2520sequence%2520alignment%2520program%2520to%2520enable%2520parallel%2520calculation%2520of%2520large%2520numbers%2520of%2520sequences.%2520The%2520G-INS-%26url%3Dhttps%253A%252F%252Facademic.oup.com%252Fbioinformatics%252Farticle%252F34%252F14%252F2490%252F4916099%26image%3Dhttps%253A%252F%252Foup.silverchair-cdn.com%252Foup%252Fbackfile%252FContent_public%252FJournal%252Fbioinformatics%252FIssue%252F35%252F2%252F1%252Fm_bioinfo_35_2cover.png%253FExpires%253D1611975516%2526Signature%253DlyhU0HwKR5yWV%7EMjfxf%7EDuQXI62SE5r29Sp0mBLkbyM9FB-FN2kYM4fQxv1neWOLqFJHHHDMIJ1gti4f8FHAyF-x-iujan-zIT%7E%7EFo59ef9H-wtY-s6IRPIekisx%7E%7E606%7E-DgRKBnedpaatnKNeygF4qzf4UYpt1s8hgqCf7GXOpLmZyJi5BSyx1qvwX9syeXV%7E3wliroWX%7ERX5k9fgEVOLg%7E5imnxg3KuFeCLgNO9Mb7cDP5ogK7iAN9Vf89i-3kWJeluXRlmcvnSi0i9MPRH%7EZhw3F2lOubBf%7EGs2j52WdmOAufsdyjsxRg1wvGDlBqjFNZYu2Wtentd3JCQiOUw__%2526Key-Pair-Id%253DAPKAIE5G5CRDK6RD3PGA%26updated_time%3D2018-03-01%26site_name%3DOUP%2520Academic&amp;csi=undefined&amp;rev=v8.3.38-wp&amp;ct=1&amp;xld=1&amp;xd=1"></iframe></div><style id="service-icons-0"></style>
+<script src="api.js" type="text/javascript"></script>
+
+    
+    <!-- Enter Google Analytics or Tag Manager here -->
+    
+     
+ 
+
+    <!-- BEGIN: Scholarly iQ Page Tag -->
+    <!-- Copyright 2001-2010, IBM Corporation All rights reserved. -->
+    <script language="JavaScript" src="ntpagetag.js"></script>
+    <noscript>
+       <img src="//ouptag.scholarlyiq.com/ntpagetag.gif?js=0" height="1" width="1" border="0" hspace="0" vspace="0" alt="Scholarly IQ">
+    </noscript>
+    <!-- END: Scholarly iQ Page Tag -->
+
+
+
+<div data-reveal="math-jax-load" id="math-jax-modal" class="reveal-modal" style="display: none;"></div><script type="text/javascript" src="bty121.js"></script></body></html>

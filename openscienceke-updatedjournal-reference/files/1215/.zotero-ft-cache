@@ -1,0 +1,847 @@
+
+Advertisement
+
+    plos.org
+    create account
+    sign in
+
+PLOS ONE
+
+    Publish
+        Submissions
+            Getting Started
+            Submission Guidelines
+            Figures
+            Tables
+            Supporting Information
+            LaTeX
+            Other Article Types
+            Preprints
+            Revising Your Manuscript
+            Submit Now
+            Calls for Papers
+        Policies
+            Best Practices in Research Reporting
+            Human Subjects Research
+            Animal Research
+            Competing Interests
+            Disclosure of Funding Sources
+            Licenses and Copyright
+            Data Availability
+            Materials and Software Sharing
+            Ethical Publishing Practice
+            Authorship
+            Downloads and Translations
+        Manuscript Review and Publication
+            Criteria for Publication
+            Editorial and Peer Review Process
+            Editor Center
+            Guidelines for Reviewers
+            Accepted Manuscripts
+            Corrections and Retractions
+            Comments
+            Article-Level Metrics
+    Submit Your Manuscript
+
+    Discover a faster, simpler path to publishing in a high-quality journal. PLOS ONE promises fair, rigorous peer review, broad scope, and wide readership – a perfect fit for your research every time.
+
+    Learn More Submit Now
+    About
+        Why Publish with PLOS ONE
+        Journal Information
+        Staff Editors
+        Editorial Board
+        Section Editors
+        Advisory Groups
+        Find and Read Articles
+        Publishing Information
+        Publication Fees
+        Press and Media
+        Contact
+    Browse
+    Search Search
+    advanced search
+
+Browse Subject Areas
+?
+
+Click through the PLOS taxonomy to find articles in your field.
+
+For more information about PLOS Subject Areas, click here .
+All Subject Areas
+View All Articles (229045)
+
+    Biology and life sciences
+    Computer and information sciences
+    Earth sciences
+    Ecology and environmental sciences
+    Engineering and technology
+    Medicine and health sciences
+    People and places
+    Physical sciences
+    Research and analysis methods
+    Science policy
+    Social sciences
+
+    74
+    Save
+
+    Total Mendeley bookmarks.
+    9
+    Citation
+
+    Paper's citation count computed by Crossref.
+    4,196
+    View
+
+    Sum of PLOS and PubMed Central page views and downloads.
+    87
+    Share
+
+    Sum of Facebook and Twitter activity.
+
+Open Access
+
+Peer-reviewed
+
+Research Article
+From GenBank to GBIF: Phylogeny-Based Predictive Niche Modeling Tests Accuracy of Taxonomic Identifications in Large Occurrence Data Repositories
+
+    B. Eugene Smith,
+
+    Affiliation Integrative Research Center & Gantz Family Collections Center, Science & Education, The Field Museum, 1400 South Lake Shore Drive, Chicago, Illinois, 60605–2496, United States of America
+    ⨯
+    Mark K. Johnston,
+
+    Affiliation Science Action Center, Science & Education, The Field Museum, 1400 South Lake Shore Drive, Chicago, Illinois, 60605–2496, United States of America
+    ⨯
+    Robert Lücking
+
+    * E-mail: rlucking@fieldmuseum.org ; r.luecking@bgbm.org
+
+    Affiliations Integrative Research Center & Gantz Family Collections Center, Science & Education, The Field Museum, 1400 South Lake Shore Drive, Chicago, Illinois, 60605–2496, United States of America, Botanical Garden and Botanical Museum, Königin-Luise-Str. 6–8, 14195, Berlin, Germany
+    ⨯
+
+From GenBank to GBIF: Phylogeny-Based Predictive Niche Modeling Tests Accuracy of Taxonomic Identifications in Large Occurrence Data Repositories
+
+    B. Eugene Smith, 
+    Mark K. Johnston, 
+    Robert Lücking
+
+PLOS
+x
+
+    Published: March 11, 2016
+    https://doi.org/10.1371/journal.pone.0151232
+
+    Article
+    Authors
+    Metrics
+    Comments
+    Media Coverage
+
+    Abstract
+    Introduction
+    Results
+    Discussion
+    Material and Methods
+    Supporting Information
+    Acknowledgments
+    Author Contributions
+    References
+
+    Reader Comments (0)
+    Media Coverage (0)
+    Figures
+
+Abstract
+
+Accuracy of taxonomic identifications is crucial to data quality in online repositories of species occurrence data, such as the Global Biodiversity Information Facility (GBIF), which have accumulated several hundred million records over the past 15 years. These data serve as basis for large scale analyses of macroecological and biogeographic patterns and to document environmental changes over time. However, taxonomic identifications are often unreliable, especially for non-vascular plants and fungi including lichens, which may lack critical revisions of voucher specimens. Due to the scale of the problem, restudy of millions of collections is unrealistic and other strategies are needed. Here we propose to use verified, georeferenced occurrence data of a given species to apply predictive niche modeling that can then be used to evaluate unverified occurrences of that species. Selecting the charismatic lichen fungus, Usnea longissima , as a case study, we used georeferenced occurrence records based on sequenced specimens to model its predicted niche. Our results suggest that the target species is largely restricted to a narrow range of boreal and temperate forest in the Northern Hemisphere and that occurrence records in GBIF from tropical regions and the Southern Hemisphere do not represent this taxon, a prediction tested by comparison with taxonomic revisions of Usnea for these regions. As a novel approach, we employed Principal Component Analysis on the environmental grid data used for predictive modeling to visualize potential ecogeographical barriers for the target species; we found that tropical regions conform a strong barrier, explaining why potential niches in the Southern Hemisphere were not colonized by Usnea longissima and instead by morphologically similar species. This approach is an example of how data from two of the most important biodiversity repositories, GenBank and GBIF, can be effectively combined to remotely address the problem of inaccuracy of taxonomic identifications in occurrence data repositories and to provide a filtering mechanism which can considerably reduce the number of voucher specimens that need critical revision, in this case from 4,672 to about 100.
+Figures
+Table 1
+Table 2
+Fig 1
+Fig 2
+Fig 3
+Table 1
+Table 2
+Fig 1
+Fig 2
+Fig 3
+   
+
+Citation: Smith BE, Johnston MK, Lücking R (2016) From GenBank to GBIF: Phylogeny-Based Predictive Niche Modeling Tests Accuracy of Taxonomic Identifications in Large Occurrence Data Repositories. PLoS ONE 11(3): e0151232. https://doi.org/10.1371/journal.pone.0151232
+
+Editor: Stefan Lötters, Trier University, GERMANY
+
+Received: April 12, 2015; Accepted: February 25, 2016; Published: March 11, 2016
+
+Copyright: © 2016 Smith et al. This is an open access article distributed under the terms of the Creative Commons Attribution License , which permits unrestricted use, distribution, and reproduction in any medium, provided the original author and source are credited.
+
+Data Availability: All relevant data are within the paper and its Supporting Information files or can be downloaded from GenBank ( http://www.ncbi.nlm.nih.gov/genbank ) using the accession numbers in Table 1 provided or from WorldClim ( http://www.worldclim.org ).
+
+Funding: This study was conceived as part of a large digitization project of North American lichen and bryophyte collections funded by the National Science Foundation: Digitization TCN Collaborative Research: North American Lichens and Bryophytes: Sensitive Indicators of Environmental Quality and Change (NSF-EF 1115002 to The Field Museum; PI Robert Lücking, co-PI Matt von Konrat; coordinated by NSF-EF 1115116 to the University of Wisconsin-Madison; PI Corinna Gries, co-PI Thomas Nash) and Digitization HUB: A Collections Digitization Framework for the 21st Century (NSF-EF 1115210 to the University of Florida; PI Lawrence Page, co-PIs Bruce MacFadden, Jose Fortes, Pamela Soltis, Gregory Riccardi). The funders had no role in study design, data collection and analysis, decision to publish, or preparation of the manuscript.
+
+Competing interests: The authors have declared that no competing interests exist.
+Introduction
+
+Accuracy of taxonomic identifications of vouchers is a critical element of data quality in biodiversity repositories. While users tend to assume that the underlying taxonomy is correct, specialists are aware that a substantial proportion of vouchers might be wrongly identified, caused by lack of expertise of the identifier or by inappropriate species concepts [ 1 – 13 ]. The charismatic lichen fungus, Usnea longissima Ach., Methuselah's Beard Lichen, a member of the megadiverse macrolichen family Parmeliaceae, with its showy, long-pendulous thalli covering tree branches like garlands, is well-known even to amateurs and frequently collected or reported. Misidentifications with other long-pendulous species of Usnea are common, although the obvious differences have been worked out in taxonomic treatments [ 14 – 25 ]. In addition, lichens of other genera, such as Ramalina usnea , and even non-lichens such as the common, pendulous bromeliad Tillandsia usneoides , are not rarely mistaken for U . longissima . Such misidentifications are not trivial, since accurate taxonomy is crucial for studies on the ecological importance of species and their potential uses: in the case of U . longissima , this species is used as an indicator of well-conserved, northern-temperate and boreal forest ecosystems [ 25 – 36 ].
+
+The potential magnitude of the problem becomes obvious when looking at the most important public biodiversity repositories. Over the past 25 years, nearly 180 million sequences were deposited in GenBank and over 200 million in the Whole Genome Shotgun (WGS) database, as well as 1.7 quadrillion (1.7 × 10 15 ) open access bases, corresponding to roughly 3.5 trillion (3.5 × 10 12 ) sequence reads, in The NCBI Sequence Read Archive (SRA) [ 37 – 40 ]. GenBank sequences are directly linked to taxonomic identifications and, through barcoding initiatives, serve as direct reference for identification purposes [ 41 – 47 ]. However, especially for fungi, including lichens, the accuracy of sequence identifications has been questioned, and about 20% of sequence entries, including approximately 700,000 ITS barcoding sequences, have been estimated to be incorrectly labeled [ 1 , 4 , 8 , 12 – 13 ]. A solution to this are curated ITS databases [ 1 , 48 – 49 ].
+
+About 15 years ago, efforts began to make specimen occurrence data from natural history collections broadly available through online data repositories [ 50 – 53 ]. By far the largest is the Global Biodiversity Information Facility (GBIF), set up by the Organization for Economic Cooperation and Development (OECD), which currently includes 526 million occurrence records, more than DNA sequences available through GenBank and the WGS together, and including nearly 10 million fungal and lichen occurrences [ 54 ]. The widely used Consortium of North American Lichen Herbaria and Bryophyte Herbaria (CNALH, CNABH), based on the Symbiota platform, currently host over 4 million records [ 55 – 56 ]. A massive effort to digitize North American natural history collections is being funneled through the iDigBio specimen portal, which has accumulated more than 25 million records, including over 2.5 million fungi and lichens [ 57 ]. However, even more so than DNA sequence data, occurrence records are often unreliable, due to incorrect specimen identifications and lack of taxonomic revision especially of historical collections [ 5 – 6 , 7 , 10 – 12 ]. Among fungi and lichens, depending on the group under study, up to 50% of occurrence data may have incorrect taxonomic labels [ 8 ].
+
+As important biodiversity resources, both sequence and occurrence data rely on voucher specimens and are affected by potentially inaccurate identifications [ 49 , 58 ]. However, while DNA sequence data provide intrinsic information as to their correct placement and wrongly identified entries are readily detected [ 8 , 48 ], this is not possible for occurrence data, unless accompanied by high quality specimen images, which allow for remote taxonomic assessment, such as type specimens digitized through the Global Plants Initiative [ 59 ]. Unfortunately, taxonomic revision of millions of specimens is virtually impossible, not just due to the taxonomic impediment, the dwindling support for taxonomic studies and the resulting loss of expertise [ 60 – 67 ], but simply because of the magnitude of the problem. Even if taxonomy were alive and well, thousands of experts would be needed full-time to provide correct identifications for millions of specimens within a reasonable time frame. One way to address this problem is a scoring system that attaches quality scores to occurrence data based on label information, including the taxonomic expertise of the annotator or published citations of the specimen and links to DNA sequences [ 12 , 68 ]. Unfortunately, such information is usually not available.
+
+Here, we present a different strategy, which combines DNA sequence data and specimen occurrence data to potentially identify incorrectly identified specimens in large repositories such as GBIF. The method applies predictive niche modeling [ 69 – 70 ] to georeferenced specimen data that at the same time have been confirmed to represent a single species by DNA sequence data. As case study, we use Usnea longissima , not only because of its enigmatic status, but because it is one of the few species for which georeferenced sequence data are currently available [ 17 ]. Indeed, only few fungi and lichens have been studied using predictive niche modeling [ 71 – 72 ]. We tested our method by comparing GBIF occurrence records falling outside the predicted niche with monographic treatments of the genus Usnea in the regions in question. To that end, we developed a novel PCA ordination approach to delimit the predicted realized niche within the theoretical niche. This method is a promising tool to address data quality in specimen occurrence data repositories by filtering and returning a small set of specimens that should be focused upon for critical taxonomic revision. The approach can be used for any taxon, as long as sequence data are available to allow for establishment of a statistically supported species concept and the underlying vouchers are (or can be) georeferenced.
+Results
+Phylogenetic Analysis
+
+In accordance with previous studies [ 23 , 24 ], based on maximum likelihood analysis of 46 ITS barcode sequences, including all individual haplotypes corresponding to 1,477 sequenced samples from 160 georeferenced localities [ 17 ], Usnea longissima forms a monophyletic clade sister to U . trichodeoides , with two sequences from Canada and South Corea being supported sister to all other haplotypes ( Fig 1 ). There was no distinct geographic signal in the main clade, with haplotypes from North America, Europe, and Asia mixed in several subclades.
+thumbnail
+Download:
+
+    PPT
+    PowerPoint slide
+    PNG
+    larger image
+    TIFF
+    original image
+
+Fig 1. Maximum likelihood tree of Usnea longissima haplotypes using the fungal ITS barcoding marker.
+
+Bootstrap values are given for supported branches (> 70). Black dots indicate Asian voucher samples (all others North America and one from Europe). Scale bar indicates rate of changes per site. The ingroup sequences of the JX978-series are individual haplotypes representing a total of 1477 sequenced specimens, with each sequence representing a selected specimen corresponding to that particular haplotype.
+
+https://doi.org/10.1371/journal.pone.0151232.g001
+Predictive Niche Modeling
+
+The best fitting MaxEnt model was based on 160 georeferenced localities, which represent a total of 1,477 sequenced specimens of Usnea longissima [ 17 ]. After correction for sampling bias (see Methods ), it predicts the potential niche for Usnea longissima along the coast in the Pacific Northwest of North America (California to Alaska), along the eastern US-Canadian border (Great Lakes area) and the eastern Canadian border, Iceland, the British Isles, eastern Scandinavia, and the Alps, a small area in China south of Mongolia, and the Asian east coast (including South and North Corea and Russia) and Japan, as well as southern Patagonia ( Fig 2 ).
+thumbnail
+Download:
+
+    PPT
+    PowerPoint slide
+    PNG
+    larger image
+    TIFF
+    original image
+
+Fig 2. Best fitting MexEnt model for Usnea longissima based on 1477 sequenced samples corresponding to 160 localities from Rolstad et al. (2013), indicated by shaded areas ranging from pale blue-green to red.
+
+Bright blue areas indicate range of predicted absence. Map is overlayed by occurrence records from GBIF (white dots), and those falling outside the predicted range are marked with red circles. One dot may include more than one GBIF record ( S1 Table ).
+
+https://doi.org/10.1371/journal.pone.0151232.g002
+
+Of 3,950 georeferenced GBIF occurrence records of Usnea longissima analyzed, 291 fit the predicted range at an AUC (Area Under Curve; see Methods ) score of 0.90 or higher (with the highest value = 0.97931 found for 143 occurrence records, corresponding to 131 unique georeferenced localities), 895 at a score of 0.70 or higher, 2,076 at a score of 0.50 or higher, 2,169 at a score of 0.30 or higher, and 2,349 at a score of 0.10 or higher ( S1 Table ). Depending on whether the limit is set at 0.30 or 0.10, this means that between 541 and 2,153 occurrence records are outside the predicted range, including from northeastern Canada, New Mexico, Mexico, Costa Rica, Colombia, the eastern Black Sea area, the northwestern border of Siberia, southwestern and central China northeast of Nepal (wider Himalaya region), Papua New Guinea, and eastern Australia (Queensland to Victoria). Thus, the model would specifically identify the latter records for taxonomic scrutiny and revision, and particularly those reported from the tropics and the Southern Hemisphere (Mexico, Costa Rica, Colombia, Papua New Guinea, Australia).
+
+Principal Component Analysis of the bioclim variables and other environmental grid parameters (see Methods ) explained a cumulative variance of 71% on the first two axes, with most variables having high loadings on the first axis ( Table 1 ), which was positively correlated with strong seasonality and negatively with high mean and maximum temperature, whereas the second axis was positively correlated with diurnal temperature range and negatively with high precipitation ( Table 1 ). While these correlations do not reflect the ecological niche of Usnea longissima , they determine the internal correlation structure of the underlying bioclim variables. When setting the point on the first axis that reflects the highest AUC score for the occurrence of Usnea longissima to zero and transforming the factor scores into absolute distances from that point (see Methods ), the tropics are highlighted as a strong ecogeographical barrier for the north-south distribution of the species ( Fig 3 ; S2 Table ). This finding indicates that tropical and Southern Hemisphere reports of this species are incorrect, which was subsequently tested by analyzing monographic revisions (including unpublished data) of the genus Usnea in the areas where the outliers occurred, in particular Mexico, Costa Rica, Colombia, and Australia (see Discussion ). All revisions confirm the absence of Usnea longissima in these regions, highlighting common misidentifications with similarly long, pendulous species which, however, differ in branching pattern, surface morphology, internal anatomy, and secondary chemistry [ 15 , 19 – 21 ; M. Herrera-Campos, P. Clerc, pers. comm. 2014].
+thumbnail
+Download:
+
+    PPT
+    PowerPoint slide
+    PNG
+    larger image
+    TIFF
+    original image
+
+Fig 3. Global mapping of absolute distance scores derived from the first axis of a PCA ordination of environmental grid parameters used for the predictive niche modeling.
+
+Distances were computed from an optimal environmental parameter set defined by the highest AUC values for grids with predicted distribution of Usnea longissima . Blue areas indicate zero or short ecological distances from the optimal grid whereas red areas indicate far distances (ecogeographical barriers). The tropics emerge as a strong barrier for the north-south distribution of the species.
+
+https://doi.org/10.1371/journal.pone.0151232.g003
+thumbnail
+Download:
+
+    PPT
+    PowerPoint slide
+    PNG
+    larger image
+    TIFF
+    original image
+
+Table 1. Factor loadings of the environmental variables used in the PCA and total variance explained.
+
+High loadings of >0.70 are highlighted in boldface and marked with an asterisk.
+
+https://doi.org/10.1371/journal.pone.0151232.t001
+Discussion
+
+Usnea longissima is an excellent case study to analyze the causes and consequences of incorrect taxonomic identifications in species occurrence data. The species is generally characterized by its long-pendulous thalli, covering tree branches like garlands, forming cylindrical main branches with vertical, short branchlets resembling fish vertebrae [ 14 , 17 , 18 , 22 ]. Many other species resemble U . longissima in the long-pendulous thalli (see below) and hence have been mistaken for that species; however, morphological, anatomical and chemical details clearly set them apart and make the species readily identifiable by trained lichenologists [ 14 – 22 ].
+
+Usnea longissima is very sensitive to environmental changes and is considered an indicator species of well-conserved, humid temperate forest ecosystems, being on the decline or having become extinct from many areas [ 25 – 36 ]. As a consequence, when using historical and modern occurrence data to analyze past and present distributions patterns of such a species, the correct identification of voucher specimens is of critical importance. In the present case, georeferenced GBIF occurrence data would place the species virtually all over the global map and define it as a cosmopolitan taxon. Yet, based on ITS barcoding sequences [ 17 , 24 ] and regional taxonomic revisions (see below), the species is restricted to the Northern Hemisphere north of the Tropic of Cancer. This is likely a common scenario for other species, particularly among fungi and lichens, where the true ecogeographical distribution of a taxon is often obscured by incorrectly identified collections, either through lack of experience with a group or changing species concept. Similar cases have been reported for other charismatic and presumably widespread macrolichens, such as Letharia vulpina in the Parmeliaceae, Sticta fuliginosa in the Lobariaceae and Cora glabrata in the Hygrophoraceae [ 43 – 44 , 73 – 74 ].
+
+In the case of Usnea longissima , existing taxonomic revisions helped to clarify most of the far outliers identified by our predictive niche modeling. Revision of the pendulous species of Usnea from Mexico showed that U . longissima is not present in the area and common misidentifications are based on other long-pendulous species, especially U . angulata Ach. and U . mexicana Vain., but also U . ceratina Ach., U . subgracilis Vain., and U . transitoria Motyka [ 15 ]. Pendulous species of Usnea from Costa Rica were also revised by M. Herrera-Campos (unpubl. data) and the presence of U . longissima was not confirmed, whereas the report from Colombia represents a previously unrecognized taxon, U . crenulata Truong & P. Clerc [ 21 ]. Other lichens often mistaken for U . longissima are found in the Ramalina usnea complex [ 75 ], especially when based on voucherless occurrence data. Molecular phylogenetic revision of pendulous species of Usnea from South America further confirmed the absence of U . longissima from the continent [ 21 ]. Taxonomic revision of Usnea in Australasia [ 19 – 20 ] also demonstrated the absence of U . longissima ; common misidentifications in the Southern Hemisphere, particularly in the Old World tropics and in Oceania, include U . himantodes Stirt., U . hossei Vain., U . misaminensis (Vain.) Motyka, and U . trichoideoides Vain. [ 19 – 20 ; P. Clerc, pers. comm. 2014], as well as U . mekista (Stirt.) D. D. Awasthi. Many of these species were originally described as infraspecific taxa of U . longissima , emphasizing the likelihood of potential confusion; according to Index Fungorum [ 76 ], U . longissima has over 20 listed infraspecific synonyms.
+
+Thus, among the outliers identified by the predictive model, those from the Neotropics (Mexico to Colombia) and from Australasia (Papua New Guinea, Australia) were confirmed by independent studies to not represent Usnea longissima . This leaves occurrence data from New Mexico, the eastern Black Sea area, the northwestern border of Siberia, and the wider Himalaya region for scrutiny. Asian records are in need to be compared to names such as U . hossei , U . mekista , U . misaminensis , and U . trichoideoides . Since the number of these records is reasonably small (less than 100 compared to a total of 4,672 GBIF records originally analyzed), detailed and targeted taxonomic revision of the vouchers within a short time frame would be feasible. Critical revision of these records would be recommended to assess uncertainties of the model prediction, with the inclusion of subsequently confirmed records representing the species but falling outside the boundaries of the current model. In contrast, revision of the well over 4,000 remaining GBIF records that fall within the narrow model boundaries is not a priority, since even wrongly identified specimens would not affect the model in principle, as they correspond to data points in which Usnea longissima occurs or is likely to occur.
+
+Our study thus supports the notion that predictive niche mapping based on confirmed, georeferenced occurrence records is a suitable tool to identify outliers and to considerably narrow down the number of voucher specimens that would require critical revision in order to obtain accurate occurrence data. Obviously, setting up such a study is not trivial, as it requires a large number of confirmed and georeferenced records to be available for a group in question. Ideally, as in the present case [ 17 ], such data are directly linked to GenBank sequences, which allows for phylogenetic testing of species concepts. However, modern taxonomic revisions also serve as source for such data, as long as specimen records are georeferenced or can be georeferenced a posteriori. The proposed protocol should work for any organism, as long as its ecological niche can be reasonably well predicted; however, it cannot take into account factors such as human-induced distributions or invasive species, which often occupy different ecological niches in alien ecosystems.
+
+To make best use of strategies to increase the quality of occurrence data, we propose to generate curated specimen data, as already done for fungal ITS barcoding sequence data [ 1 , 48 – 49 ]. Since the separate maintenance of such curated databases provides a logistic challenge, a feasible solution would be to annotate occurrence data in existing repositories with a quality score, which indicates whether a particular record has been scrutinized and what the underlying methods were. The type and specimens with sequence data would receive high scores, followed by specimens cited in modern revisions or with annotation labels by a known expert in the field. Additionally, one could implement automated scoring, using high-scored records as templates to highlight unrevised records as likely correct or questionable based on geographic and ecological proximity or distance to high-scored records, including automated background niche modeling [ 7 ].
+
+While predictive niche mapping is a useful tool in this context, it also has its limitations. Spatial bias within the sampling area (sampling bias) might lead to false negatives, i.e. sampling points in which the species occurs but has not been sampled, which makes the model boundaries more diffuse. This problem is being addressed by background manipulation and spatial filtering [ 85 – 89 ] and, while sampling bias introduces uncertainties to the boundaries of the model, it will not affect the identification of far outliers, as long as the sampling size is large enough. Spatial bias neglecting areas outside the sampling area (geographical bias) might also generate problems: in the present case, Usnea longissima occurs across northern-temperate and boreal forests but only samples from North America and Europe went into the model, disregarding Asia in lieu of georeferenced samples with molecular sequence data. However, the model and the PCA ordination still predicted Asia as part of the theoretical and realized niche. One of the strengths and aims of niche modeling is indeed geographical extrapolation [ 69 – 70 , 90 ]; therefore, geographical sampling bias is not necessarily a limitation, as long as the niche is properly represented by sampling size.
+
+The main challenge of niche modeling is the distinction of the potential and the realized niche for the identification of outliers among occurrence data. Since niche mapping is based on environmental parameters, other factors that delimit the realized range of a species, such as ecogeographical barriers, are not taken into consideration. Without these factors, it is impossible to determine whether an occurrence record far outside the known range of a species, but fitting its predicted niche, is a potential misidentification or a range extension. For instance, our model predicts a suitable niche for Usnea longissima in Patagonia, and yet the species is absent from South America [ 21 ]. Here, we employed PCA ordination of environmental grid parameters and computed the absolute distance to the score representing the optimal set of variables defined by the AUC values to visualize potential barriers. While niche mapping applies a uniformly low score to the area outside the best-fitting grids (blue areas on the heat map), PCA allows to further differentiate the blue area, highlighting areas that are far outside the ecological range of a species. This approach appears promising and could be further enhanced by including estimates of species age and speed of population expansion to compute probability values for potential dispersal over ecogeographical barriers.
+Material and Methods
+Data Sets
+
+We obtained several datasets for this study. First, we downloaded all available ITS barcoding sequences from GenBank labeled Usnea ( Dolichousnea ) longissima , including as outgroup U . trichodeoides ( Table 2 ). This included a set of unique haplotypes corresponding to a total of 1,477 samples from 160 locations in North America and Europe [ 17 ]. Second, we obtained the corresponding list of the 160 georeferenced locality data for sequenced Usnea longissima specimens from the supplemental material of the study by Rolstad et al. [ 17 ]. Finally, we downloaded 4,672 georeferenced occurrence records labeled as U . longissima from GBIF present at the time of accessing the repository. Of these, only 3,950 had valid coordinates ( S1 Table ), whereas the remaining samples had no values or double zero values in the decimallatitude and decimallongitude fields and were removed from the data set.
+thumbnail
+Download:
+
+    PPT
+    PowerPoint slide
+    PNG
+    larger image
+    TIFF
+    original image
+
+Table 2. GenBank Accession numbers and voucher information for specimens of Usnea longissima used in the phylogenetic and predictice modeling analysis.
+
+https://doi.org/10.1371/journal.pone.0151232.t002
+Phylogenetic Analysis
+
+ITS barcoding sequences of 46 specimens and unique haplotypes of U . longissima and one specimen of the outgroup, U . trichodeoides , were assembled in BioEdit 7.09 [ 77 ] and automatically aligned with MAFFT using the—auto option [ 78 ]. Unaligned sequences were also subjected to analysis of ambiguously aligned regions using the GUIDANCE webserver [ 79 , 80 ] and all columns were found to be aligned with high confidence (> 0.95). This resulted in an alignment length of 498 bases. The alignment was subjected to maximum likelihood (ML) search using RAxML 8.0.4 [ 81 ], with non-parametric bootstrapping using 1,000 replicates under the universal GTRGAMMA model.
+Predictive Niche Modeling
+
+For the predictive modeling, we used the 160 georeferenced data points [ 17 ] corresponding to sequenced specimens of Usnea longissima in North America (Alaska: 43; Pacific Northwest: 62; California: 9; Minnesota: 4; Newfoundland and Nova Scotia: 17) and Scandinavia (Norway: 21; Sweden: 4). We employed the bioclim and altitude layers from WorldClim [ 82 ] in 2.5 arc minutes ( Table 1 ). Usnea longissima in the strict sense as defined here has been reported mainly from old northern-temperate and boreal forest stands [ 25 – 36 ], prompting the inclusion of Global Land Cover Facility land and Landsat Vegetation Continuous Fields (VCF) tree cover layers from GLCF for modeling [ 83 ]. To account for spatial sampling bias (false negatives), we applied background manipulation via a bias layer as well as spatial filtering [ 84 – 89 ]. Layers were edited using ArcGIS 10.3 (ERSI). To build ENMs, we used MaxEnt 3.3.3k [ 90 ]. For background manipulation of data [ 84 ], we ran 100 replicates and withheld 25% of the presence data for testing. To generate 100 spatially filtered datasets, we created a 2x2 degree grid and randomly selected one occurrence from each square in the grid. MaxEnt was then run on each of these datasets and with the same testing parameters. The resulting spatially filtered models were combined to create a composite model. All models were evaluated using the AUC and the Kappa coefficient [ 91 ]. While the AUC has been discussed controversely [ 91 ], it proved useful for the purpose of the present study.
+
+We used the grids corresponding to the georeferenced occurrence data with the highest AUC values (0.97931) to derive an "optimal" set of bioclim, altitude and land and tree cover layer variables for Usnea longissima by computing the median for each parameter from these grids ( S1 Table : original grids with AUC values, S2 Table : hypothetical GR_OPTIM with medians). The entire dataset of analyzed grid parameters for the total of 43,967 global grids, including the hypothetical grid, was then subjected to Principal Component Analysis (PCA), extracting two main axes. For both axes, the "optimal" hypothetical grid was used as midpoint and the distance was computed between the midpoint and all other axis scores and then converted into the absolute distance for each grid ( S2 Table ). The distance values were transformed into color-coded scores and visualized on a global map. While the predictive modeling heatmap only highlights grids based on threshold values, leaving the remainder of the map uniformely blue, PCA ordination visualizes relative "ecological" distances from the optimal niche, thus aiding in detecting potential ecogeographical barriers that would explain differences between the predicted theoretical and and the predicted realized niche.
+Supporting Information
+Showing 1/2: S1 Table.XLS
+	A 	B 	C 	D 	E 	F 	G 	H 	I 	J 	K 	L 	M 	N 	O 	P 	Q 	R 	S 	T 	U 	V 	W 	X 	Y 	Z
+1 																										
+2 		S1 Table. List of 3,950 georeferenced GBIF occurrence records labeled Usnea longissima. Georeferenced occurrence records contain associated environmental grid data and were 																								
+3 		used for comparison with the niche model obtained from 160 georeferenced locations in North America and Europe [17], with AUC values indicated. 																								
+4 																										
+5 		# 	longitude 	latitude 	AUC 	tree_cover 	alta 	bio_1a 	bio_2a 	bio_3a 	bio_4a 	bio_5a 	bio_6a 	bio_7a 	bio_8a 	bio_9a 	bio_10a 	bio_11a 	bio_12a 	bio_13a 	bio_14a 	bio_15a 	bio_16a 	bio_17a 	bio_18a 	bio_19a
+6 		1 	-146.185067 	61.0821667 	0 	15 	457 	2 	88 	29 	7676 	161 	-141 	302 	56 	46 	102 	-93 	1211 	156 	63 	29 	420 	200 	277 	313
+7 		2 	-122.00194 	47.30889 	0 	5 	182 	99 	104 	43 	4915 	241 	0 	241 	42 	163 	163 	39 	1430 	202 	38 	45 	585 	163 	163 	536
+8 		3 	-121.083333 	48.833333 	0 	1 	1205 	40 	100 	34 	6724 	206 	-86 	292 	-37 	127 	127 	-43 	1225 	197 	37 	55 	568 	127 	127 	515
+9 		4 	-91.7183 	16.1183 	0 	2 	1513 	192 	135 	75 	1016 	283 	104 	179 	197 	193 	204 	177 	2066 	337 	31 	67 	957 	138 	475 	240
+10 		5 	-91.7183 	16.1183 	0 	2 	1513 	192 	135 	75 	1016 	283 	104 	179 	197 	193 	204 	177 	2066 	337 	31 	67 	957 	138 	475 	240
+11 		6 	-83.691667 	9.56667 	0 	2 	2695 	112 	81 	79 	551 	163 	61 	102 	115 	106 	117 	104 	2587 	411 	38 	61 	1110 	132 	759 	206
+12 		7 	-74.3 	4.9 	0 	2 	2718 	127 	98 	81 	206 	186 	66 	120 	126 	126 	130 	125 	943 	135 	37 	40 	332 	142 	298 	210
+13 		8 	5.03928 	61.61999 	0 	1 	13 	75 	43 	27 	4040 	162 	4 	158 	86 	83 	127 	26 	2153 	284 	98 	33 	771 	342 	531 	514
+14 		9 	5.614941 	61.610881 	0 	10 	305 	58 	46 	27 	4290 	149 	-16 	165 	40 	70 	114 	7 	2372 	306 	106 	33 	847 	375 	439 	582
+15 		10 	5.615931 	61.610457 	0 	10 	305 	58 	46 	27 	4290 	149 	-16 	165 	40 	70 	114 	7 	2372 	306 	106 	33 	847 	375 	439 	582
+16 		11 	5.615931 	61.610457 	0 	10 	305 	58 	46 	27 	4290 	149 	-16 	165 	40 	70 	114 	7 	2372 	306 	106 	33 	847 	375 	439 	582
+17 		12 	5.6159951 	61.6110877 	0 	10 	305 	58 	46 	27 	4290 	149 	-16 	165 	40 	70 	114 	7 	2372 	306 	106 	33 	847 	375 	439 	582
+18 		13 	5.616302 	61.611701 	0 	10 	305 	58 	46 	27 	4290 	149 	-16 	165 	40 	70 	114 	7 	2372 	306 	106 	33 	847 	375 	439 	582
+19 		14 	5.61752 	61.613192 	0 	10 	305 	58 	46 	27 	4290 	149 	-16 	165 	40 	70 	114 	7 	2372 	306 	106 	33 	847 	375 	439 	582
+20 		15 	5.61752 	61.613192 	0 	10 	305 	58 	46 	27 	4290 	149 	-16 	165 	40 	70 	114 	7 	2372 	306 	106 	33 	847 	375 	439 	582
+21 		16 	5.617618 	61.612296 	0 	10 	305 	58 	46 	27 	4290 	149 	-16 	165 	40 	70 	114 	7 	2372 	306 	106 	33 	847 	375 	439 	582
+22 		17 	5.617618 	61.612296 	0 	10 	305 	58 	46 	27 	4290 	149 	-16 	165 	40 	70 	114 	7 	2372 	306 	106 	33 	847 	375 	439 	582
+23 		18 	5.647964 	61.628319 	0 	10 	483 	48 	46 	27 	4274 	139 	-26 	165 	30 	59 	104 	-2 	2438 	309 	110 	32 	866 	387 	452 	605
+24 		19 	5.647964 	61.628319 	0 	10 	483 	48 	46 	27 	4274 	139 	-26 	165 	30 	59 	104 	-2 	2438 	309 	110 	32 	866 	387 	452 	605
+25 		20 	5.7333 	45.3333 	0 	5 	1403 	54 	88 	33 	6094 	197 	-66 	263 	-12 	129 	132 	-25 	1245 	119 	81 	10 	338 	275 	286 	328
+26 		21 	5.845511 	60.830318 	0 	10 	462 	48 	53 	28 	4882 	152 	-35 	187 	25 	66 	113 	-10 	2762 	343 	121 	33 	987 	428 	535 	804
+27 		22 	8.02832 	46.72598 	0 	10 	960 	68 	75 	30 	6103 	202 	-46 	248 	146 	-1 	146 	-10 	1245 	143 	82 	20 	403 	252 	403 	258
+28 		23 	8.42242 	46.81323 	0 	10 	1435 	43 	65 	28 	5778 	166 	-64 	230 	117 	-24 	117 	-30 	1540 	172 	99 	19 	495 	310 	495 	317
+29 		24 	8.42242 	46.81323 	0 	10 	1435 	43 	65 	28 	5778 	166 	-64 	230 	117 	-24 	117 	-30 	1540 	172 	99 	19 	495 	310 	495 	317
+30 		25 	8.747989 	59.067989 	0 	1 	503 	38 	62 	25 	6396 	170 	-75 	245 	89 	-19 	122 	-40 	967 	112 	48 	26 	322 	162 	271 	209
+31 		26 	9.350895 	60.258859 	0 	10 	828 	6 	81 	27 	7632 	169 	-129 	298 	94 	-49 	106 	-91 	795 	101 	40 	30 	276 	124 	270 	148
+32 		27 	9.355075 	60.259369 	0 	10 	828 	6 	81 	27 	7632 	169 	-129 	298 	94 	-49 	106 	-91 	795 	101 	40 	30 	276 	124 	270 	148
+33 		28 	9.392913 	60.250283 	0 	10 	885 	3 	81 	27 	7591 	166 	-131 	297 	91 	-52 	103 	-94 	810 	103 	41 	30 	281 	127 	275 	152
+34 		29 	9.3961919 	60.2509564 	0 	10 	885 	3 	81 	27 	7591 	166 	-131 	297 	91 	-52 	103 	-94 	810 	103 	41 	30 	281 	127 	275 	152
+35 		30 	9.879867 	59.088978 	0 	5 	127 	64 	55 	22 	6622 	194 	-48 	242 	116 	7 	151 	-17 	760 	90 	39 	26 	256 	134 	214 	152
+36 		31 	9.881328 	59.090836 	0 	5 	127 	64 	55 	22 	6622 	194 	-48 	242 	116 	7 	151 	-17 	760 	90 	39 	26 	256 	134 	214 	152
+37 		32 	9.885702 	59.091255 	0 	5 	127 	64 	55 	22 	6622 	194 	-48 	242 	116 	7 	151 	-17 	760 	90 	39 	26 	256 	134 	214 	152
+38 		33 	9.916706 	59.108553 	0 	5 	84 	67 	54 	22 	6648 	196 	-45 	241 	119 	9 	154 	-14 	749 	89 	38 	26 	252 	133 	210 	149
+39 		34 	9.964848 	59.050725 	0 	5 	116 	66 	53 	22 	6593 	193 	-45 	238 	118 	8 	152 	-14 	757 	90 	39 	26 	254 	135 	211 	152
+40 		35 	10.01615 	59.08795 	0 	5 	96 	67 	53 	22 	6625 	195 	-44 	239 	119 	9 	154 	-14 	749 	89 	38 	26 	251 	134 	210 	149
+41 		36 	10.032349 	59.081567 	0 	1 	44 	70 	53 	22 	6583 	197 	-40 	237 	123 	12 	157 	-10 	738 	89 	38 	26 	249 	133 	204 	147
+42 		37 	10.060532 	59.242174 	0 	5 	119 	64 	55 	22 	6729 	196 	-49 	245 	117 	7 	153 	-18 	750 	88 	38 	26 	252 	133 	213 	148
+43 		38 	10.218123 	63.801792 	0 	8 	192 	44 	66 	30 	5468 	161 	-57 	218 	49 	32 	116 	-23 	1053 	123 	55 	24 	339 	191 	249 	274
+44 		39 	10.698394 	64.2216362 	0 	8 	185 	44 	64 	29 	5470 	162 	-55 	217 	50 	66 	116 	-23 	1208 	141 	62 	23 	385 	220 	277 	320
+45 		40 	11.226938 	64.236735 	0 	8 	75 	49 	66 	28 	5818 	172 	-57 	229 	56 	73 	126 	-23 	1220 	143 	61 	24 	389 	219 	278 	325
+46 		41 	12.7167 	47.4333 	0 	5 	1058 	56 	100 	33 	6836 	208 	-87 	295 	141 	-22 	141 	-35 	1169 	154 	61 	33 	445 	190 	445 	203
+47 		42 	13.3775 	46.5991667 	0 	5 	838 	73 	99 	33 	6882 	227 	-68 	295 	159 	-4 	159 	-18 	1285 	139 	65 	24 	406 	210 	406 	224
+48 		43 	13.3775 	46.5991667 	0 	5 	838 	73 	99 	33 	6882 	227 	-68 	295 	159 	-4 	159 	-18 	1285 	139 	65 	24 	406 	210 	406 	224
+49 		44 	14.3333 	46.5167 	0 	5 	563 	77 	98 	31 	7554 	241 	-73 	314 	171 	-7 	171 	-25 	1087 	124 	50 	28 	362 	165 	362 	169
+50 		45 	14.3333 	46.5167 	0 	5 	563 	77 	98 	31 	7554 	241 	-73 	314 	171 	-7 	171 	-25 	1087 	124 	50 	28 	362 	165 	362 	169
+Supplemental Table S1
+.style0 {fill: #566471;} .style1 {fill: #A2CD3C;} .style2 {fill: #C54C59;} .style3 {fill: #5BC4BD;}
+fig share
+ 
+1 / 2
+ 
+Download
+
+Georeferenced occurrence records contain associated environmental grid data and were used for comparison with the niche model obtained from 160 georeferenced locations in North America and Europe [ 17 ], with AUC values indicated.
+
+(XLS)
+S1 Table. List of 3,950 georeferenced GBIF occurrence records labeled Usnea longissima .
+
+Georeferenced occurrence records contain associated environmental grid data and were used for comparison with the niche model obtained from 160 georeferenced locations in North America and Europe [ 17 ], with AUC values indicated.
+
+https://doi.org/10.1371/journal.pone.0151232.s001
+
+(XLS)
+S2 Table. Environmental grid data for the total of 43,967 global grids.
+
+Environmental grid data and corresponding raw factor scores derived from PCA analysis for the first and second axis, converted into absolute distance values for each axis (last four columns), together with the hypothecial 'optimal' grid parameters (first row 'GR_OPTIM) derived as medians from all grids with maximum AUC values (0.97931).
+
+https://doi.org/10.1371/journal.pone.0151232.s002
+
+(ZIP)
+Acknowledgments
+
+We thank Jørund Rolstad and Stefan Ekman for placing unpublished locality information on the published ITS sequences of Usnea longissima from their study at our disposal. Paul Morris, Edward Gilbert and Nico Franz are thanked for fruitful discussions on the issue of inaccurate identifications in occurrence data repositories.
+Author Contributions
+
+Conceived and designed the experiments: RL. Performed the experiments: BES MKJ RL. Analyzed the data: BES RL. Contributed reagents/materials/analysis tools: BES MKJ RL. Wrote the paper: BES MKJ RL.
+References
+
+    1. Begerow D, Nilsson H, Unterseher M, Maier W. Current state and perspectives of fungal DNA barcoding and rapid identification procedures. Appl Microbiol Biotechnol. 2010;87: 99–108. pmid:20405123
+        View Article
+        PubMed/NCBI
+        Google Scholar
+    2. Bidartondo MI, Bruns TD, Blackwell M, Edwards I, Taylor AFS, Horton T, et al. Preserving accuracy in GenBank. Science. 2008;319: 1616.
+        View Article
+        Google Scholar
+    3. Bortolus A. Error cascades in the biological sciences: the unwanted consequences of using bad taxonomy in ecology. Ambio. 2008;37: 114–118. pmid:18488554
+        View Article
+        PubMed/NCBI
+        Google Scholar
+    4. Bridge PD, Roberts PJ, Spooner BM, Panchal G. On the unreliability of published DNA sequences. New Phytol. 2003;160: 43–48.
+        View Article
+        Google Scholar
+    5. Costello M, Michener W, Gahegan M, Zhang Z, Bourne P. Biodiversity data should be published, cited, and peer reviewed. Trends in Ecology & Evolution. 2013;28: 454–461.
+        View Article
+        Google Scholar
+    6. García-Roselló E, Guisande C, Manjarrés-Hernández A, González-Dacosta J, Heine J, et al. Can we derive macroecological patterns from primary Global Biodiversity Information Facility data? Global Ecology and Biogeography. 2014;24: 335–347.
+        View Article
+        Google Scholar
+    7. Jetz W, McPherson JM, Guralnick RP. Integrating biodiversity distribution knowledge: toward a global map of life. Trends Ecol Evol. 2012;27, 151‐159. pmid:22019413
+        View Article
+        PubMed/NCBI
+        Google Scholar
+    8. Lücking R, Kalb K, Essene A. The power of ITS: using megaphylogenies of barcoding genes to reveal inconsistencies in taxonomic identifications of genbank submissions. The 7th IAL Symposium "Lichens: From Genome to Ecosystems in a Changing World", January 2012, Bangkok (Thailand). Book of Abstracts. 2012: 3B-1-O2.
+    9. Nilsson RH, Ryberg M, Kristiansson E, Abarenkov K, Larsson K-H, et al. Taxonomic Reliability of DNA Sequences in Public Sequence Databases: A Fungal Perspective. PLoS ONE. 2006;1(1): e59.
+        View Article
+        Google Scholar
+    10. Rocchini D, Hortal J, Lengyel S, Lobo JM, Jiménez‐Valverde A, et al. Accounting for uncertainty when mapping species distributions: The need for maps of ignorance. Progr. Phys. Geogr. 2011;35: 211‐226.
+        View Article
+        Google Scholar
+    11. Samy G, Chavan V, Ariño AH, Otegui J, Hobern D, Sood R, et al. Content assessment of the primary biodiversity data published through GBIF network: Status, challenges and potentials. Biodiv Inform. 2013;8: 94–172.
+        View Article
+        Google Scholar
+    12. Santos AMC, Jones OR, Quicke DLJ & Hortal J. Assessing the reliability of biodiversity databases: identifying evenly inventoried island parasitoid faunas (Hymenoptera: Ichneumonoidea) worldwide. Insect Cons Divers. 2010;3: 72–82.
+        View Article
+        Google Scholar
+    13. Vilgalys R. Taxonomic misidentification in public DNA databases. New Phytol. 2003;160: 4–5.
+        View Article
+        Google Scholar
+    14. Brodo IM, Sharnoff SD, Sharnoff S. Lichens of North America. New Haven & London: Yale University Press; 2001.
+    15. Herrera-Campos MA, Clerc P, Nash TH III. Pendulous species of Usnea from the temperate forests in Mexico. Bryologist. 1998;101: 303–329.
+        View Article
+        Google Scholar
+    16. Ohmura Y. Taxonomic study of the genus Usnea (lichenized Ascomycetes) in Japan and Taiwan. J Hatt Bot Lab. 2001;90: 1–96.
+        View Article
+        Google Scholar
+    17. Rolstad J, Ekman S, Andersen HL, Rolstad E. Genetic variation and reproductive mode in two epiphytic lichens of conservation concern: A transatlantic study of Evernia divaricata and Usnea longissima . Botany 2013;91: 69–81.
+        View Article
+        Google Scholar
+    18. Smith CW, Aptroot A, Coppins BJ, Fletcher A, Gilbert OL, James PW, et al. (ed.). The Lichens of Great Britain and Ireland. London: The British Lichen Society; 2009.
+    19. Stevens GN. A Revision of the Lichen Family Usneaceae in Australia. Bibl Lichenol. 1999;72: 1–128.
+        View Article
+        Google Scholar
+    20. Stevens GN. Usneaceae. In: McCarthy PM, Mallett K (eds) Flora of Australia. Volume 56A, Lichens 4. Melbourne: ABRS/CSIRO Australia; 2004, pp. 78–98, 107–115.
+    21. Truong C, Rodridguez JM, Clerc P. Pendulous Usnea species (Parmeliaceae, lichenized Ascomycota) in tropical South America and the Galapagos. Lichenologist 2012;45: 505–542.
+        View Article
+        Google Scholar
+    22. Wirth V, Hauck M, Schulz M. Die Flechten Deutschlands, Band 1 and 2 (in German). Stuttgart, Eugen Ulmer; 2013.
+    23. Articus K. Neuropogon and the phylogeny of Usnea s.l. (Parmeliaceae, lichenized Ascomycetes). Taxon. 2004;53: 925–934.
+        View Article
+        Google Scholar
+    24. Ohmura Y. Phylogenetic evaluation of infrageneric groups of the genus Usnea based on ITS regions in rDNA. J Hatt Bot Lab. 2002;92: 231–243.
+        View Article
+        Google Scholar
+    25. Derr C, Helliwell R, Ruchty A, Hoover L, Geiser L, Lebo D, et al. Survey Protocols for Survey & Manage Category A & C Lichens in the Northwest Forest Plan Area. U.S. Forest Service, U.S. Fish & Wildlife Service: Bureau of Land Management; 2003.
+    26. Doell J. The saga of Usnea longissima in California. Bull Calif Lich Soc. 2004;11: 37–44.
+        View Article
+        Google Scholar
+    27. Esseen PA, Ericson L, Lindström H, Zackrisson O. Occurrence and ecology of Usnea longissima in central Sweden. Lichenologist. 1981;13: 177–190.
+        View Article
+        Google Scholar
+    28. Gams H. Usnea longissima Ach. als kontinentale Nebelflechte. Ber Geobot Inst Eidg Techn Hochschule Stiftung Rubel [Zürich]. 1961;32: 167–176.
+        View Article
+        Google Scholar
+    29. Halonen P. The lichen genus Usnea in eastern Fennoscandia. II. Usnea longissima . Graphis Scripta. 1997;8: 51–56.
+        View Article
+        Google Scholar
+    30. Jansson U. Utkast til handlingsplan for huldrestry ( Usnea longissima ). Biofokus Rapport. 2010,36: 1–44.
+        View Article
+        Google Scholar
+    31. Josefsson T, Hellberg E, Östlund L. Influence of habitat history on the distribution of Usnea longissima in boreal Scandinavia: a methodological case study. Lichenologist. 2005;37: 555–567.
+        View Article
+        Google Scholar
+    32. Keon DB, Muir PS. Growth of Usnea longissima across a variety of habitats in the Oregon Coast Range. Bryologist. 2002;105: 233–242.
+        View Article
+        Google Scholar
+    33. Nascimbene J, Tretiach M. A critical evaluation of the Italian distribution of the rare macrolichen Usnea longissima Ach. Plant Biosyst 2002;143: 14–19.
+        View Article
+        Google Scholar
+    34. Rolstad J, Rolstad E. Huldrestry Usnea longissima i Nordmarka, Oslo—markert nedgang selv i områder uten hogst. Blyttia 2008;66: 208–214.
+        View Article
+        Google Scholar
+    35. Storaunet KO, Rolstad J, Rolstad E. Effects of logging on the threatened epiphytic lichen Usnea longissima : An experimental approach. Silva Fennica 2014;48: article id 949.
+        View Article
+        Google Scholar
+    36. Walker ER. Conditions influencing the growth of Usnea longissima . The Plant World 1910; 13: 173–174.
+        View Article
+        Google Scholar
+    37. Benson DA, Clark K, Karsch-Mizrachi I, Lipman DJ, Ostell J, Sayers EW. GenBank. Nucleic Acids Res. 2014;42(Database issue): D32–37. pmid:24217914
+        View Article
+        PubMed/NCBI
+        Google Scholar
+    38. GenBank. 2015. Available: http://www.ncbi.nlm.nih.gov/genbank . Accessed 15 March 2015.
+    39. The NCBI Sequence Read Archive (SRA). 2015. Available: http://www.ncbi.nlm.nih.gov/Traces/sra . Accessed 15 March 2015.
+    40. Wheeler DL, Barrett T, Benson DA, Bryant SH, Canese K, Chetvernin V, et al. Database resources of the National Center for Biotechnology Information. Nucleic Acids Res. 2008;36(Database issue): D13–21. pmid:18045790
+        View Article
+        PubMed/NCBI
+        Google Scholar
+    41. Hebert PDN, Cywinska A, Ball SL, deWaard JR. Biological identifications through DNA barcodes. Proc Biol Sci. 2003;270:313–321. pmid:12614582
+        View Article
+        PubMed/NCBI
+        Google Scholar
+    42. Hollingsworth PM, et al.; CBOL Plant Working Group. A DNA barcode for land plants. Proc Natl Acad Sci USA. 2009;106: 12794–12797. pmid:19666622
+        View Article
+        PubMed/NCBI
+        Google Scholar
+    43. Lücking R, Dal-Forno M, Sikaroodi M, Gillevet PM, Bungartz F, Moncada B, et al. A single macrolichen constitutes hundreds of unrecognized species. Proc Natl Acad Sci USA. 2014;111: 11091–11096. pmid:24982168
+        View Article
+        PubMed/NCBI
+        Google Scholar
+    44. Moncada B, Lücking R, Suárez A. Molecular phylogeny of the genus Sticta (lichenized Ascomycota: Lobariaceae) in Colombia. Fung Divers. 2014;64: 205–231.
+        View Article
+        Google Scholar
+    45. Schindel DE, Miller SE. DNA barcoding a useful tool for taxonomists. Nature. 2005;435: 17.
+        View Article
+        Google Scholar
+    46. Schoch CL, Seifert KA, Huhndorf S, Robert V, Spouge JL, Levesque CA, et al. Nuclear ribosomal internal transcribed spacer (ITS) region as a universal DNA barcode marker for Fungi. Proc. Natl. Acad. Sci. USA. 2012;109: 6241–6246. pmid:22454494
+        View Article
+        PubMed/NCBI
+        Google Scholar
+    47. Kress WJ, Erickson DL, Jones FA, Swenson NG, Perez R, Sanjur O, Bermingham E. Plant DNA barcodes and a community phylogeny of a tropical forest dynamics plot in Panama. Proc Natl Acad Sci USA. 2009;106: 18621–18626. pmid:19841276
+        View Article
+        PubMed/NCBI
+        Google Scholar
+    48. Kõljalg U, Nilsson RH, Abarenkov K, Tedersoo L, Taylor AFS, Bahram M, et al. Towards a unified paradigm for sequence-based identification of fungi. Mol Ecol. 2013;22: 5271–5277. pmid:24112409
+        View Article
+        PubMed/NCBI
+        Google Scholar
+    49. Schoch CL, Robbertse B, Robert V, Vu D, Cardinali G, Irinyi L, et al. Finding needles in haystacks: linking scientific names, reference specimens and molecular data for Fungi. Database. 2014; bau061. 21 p. pmid:24980130
+        View Article
+        PubMed/NCBI
+        Google Scholar
+    50. Beaman R, Cellinese N. Mass digitization of scientific collections: New opportunities to transform the use of biological specimens and underwrite biodiversity science. ZooKeys. 2012;209: 7–17. pmid:22859875
+        View Article
+        PubMed/NCBI
+        Google Scholar
+    51. Berendsohn WG, Chavan V, Macklin JA. Recommendations of the GBIF Task Group on the Global Strategy and Action Plan for the Mobilisation of Natural History Collections Data. J. Biodiv Inform. 2010;7: 1–5.
+        View Article
+        Google Scholar
+    52. Blagoderov V, Smith VS (eds). No specimen left behind: mass digitization of natural history collections. ZooKeys. 2012;209: 1–268.
+        View Article
+        Google Scholar
+    53. Vollmar A, Macklin JA, Ford LS. Natural history specimen digitization: challenges and concerns. Biodiv Inform. 2010;7: 93–112.
+        View Article
+        Google Scholar
+    54. GBIF. 2015. Available: http://www.gbif.org . Accessed 15 March 2015.
+    55. Gilbert EE, Gries C, Nash TH III, Brandt B. Symbiota–promoting bio-collaboration. Project website 1: 1. Available: http://symbiota.org . Accessed 2014.
+    56. Gries C, Gilbert EE, Franz NM. Symbiota–a virtual platform for creating voucher-based biodiversity information communities. Biodiv Data J. 2014;2: e1114.
+        View Article
+        Google Scholar
+    57. iDidBio. 2015. Available: https://www.idigbio.org/portal . Accessed 15 March 2015.
+    58. McNeill J, Barrie FR, Buck WR, Demoulin V, Greuter W, Hawksworth DL, et al. International Code of Nomenclature for algae, fungi, and plants (Melbourne Code) adopted by the Eighteenth International Botanical Congress Melbourne, Australia, July 2011. Regnum Vegetabile 154. Lichtenstein, A.R.G. Gantner; 2012.
+    59. Global Plants Initiative. 2015. Available: http://gpi.myspecies.info/content/all-vascular-types-line-global-plants-initiative . Accessed 15 March 2015.
+    60. Lipscomb D, Platnick N, Wheeler Q. The intellectual content of taxonomy: a comment on DNA taxonomy. Trends Ecol Evol. 2003;18: 65–66.
+        View Article
+        Google Scholar
+    61. Carvalho MR, Bockmann FA, Amorim DS, de Vivo M, de Toledo-Piza M, Menezes NA, et al. Revisiting the taxonomic impediment. Science. 2005;307: 353.
+        View Article
+        Google Scholar
+    62. Carvalho MR, Bockmann FA, Amorim DS, Brandao CRF, de Vivo M, de Figueiredo JL, et al. Taxonomic impediment or impediment to taxonomy? A commentary on systematics and the cybertaxonomic-automation paradigm. Evol Biol. 2007;34: 140–143.
+        View Article
+        Google Scholar
+    63. Crisci JV. One-dimensional systematists: perils in a time of steady progress. Syst Bot. 2006;31: 217–221.
+        View Article
+        Google Scholar
+    64. Lücking R. Taxonomy: a discipline on the brink of extinction. Are DNA barcode scanners the future of biodiversity research? Arch Sci. 2008;61(2): 75–87.
+        View Article
+        Google Scholar
+    65. Scotland R, Hughes C, Bailey D, Wortley A. The Big Machine and the much-maligned taxonomist. Syst Biodiver. 2003;1: 139–143.
+        View Article
+        Google Scholar
+    66. Wheeler QD. Taxonomic triage and the poverty of phylogeny. Phil Trans Royal Soc London B 2004;359: 571–583.
+        View Article
+        Google Scholar
+    67. Wheeler QD. Taxonomic shock and awe. In: Wheeler QD (ed) The New Taxonomy 76. Boca Raton: CRC Press; 2008: 211–226.
+    68. Lücking R. After digitization…taxonomy? iDigBio Summit III, 18–21 November 2013, Talahassee, Florida; 2013. Available: https://www.idigbio.org/sites/default/files/workshop-presentations/summit3/summit_taxonomy.pdf .
+    69. Phillips SJ, Dudík M. Modeling of species distributions with Maxent: new extensions and a comprehensive evaluation. Ecography. 2008;31: 161–175.
+        View Article
+        Google Scholar
+    70. Warren DL, Seifert SN. Ecological niche modeling in Maxent: the importance of model complexity and the performance of model selection criteria. Ecol Appl. 2011;21: 335–342. pmid:21563566
+        View Article
+        PubMed/NCBI
+        Google Scholar
+    71. Braidwood D, Ellis CJ. Bioclimatic equilibrium for lichen distributions on disjunct continental landmasses. Botany. 2012;90: 1316–1325.
+        View Article
+        Google Scholar
+    72. Ellis CJ, Eaton S, Theodoropoulos M, Coppins BJ, Seaward MRD, Simkin J. Response of epiphytic lichens to 21st Century climate change and tree disease scenarios. Biol Cons. 2014;180: 153–164.
+        View Article
+        Google Scholar
+    73. Altermann S, Leavitt SD, Goward T, Nelsen MP, Lumbsch HT. How do you solve a problem like Letharia ? A new look at cryptic species in lichen-forming fungi using Bayesian clustering and SNPs from multilocus sequence data. PLoS ONE. 2014; 9(5): e97556. pmid:24831224
+        View Article
+        PubMed/NCBI
+        Google Scholar
+    74. Kroken S, Taylor JW. A gene genealogical approach to recognize phylogentic species boundaries in the lichenized fungus Letharia . Mycologia. 2001;93: 38–53.
+        View Article
+        Google Scholar
+    75. Rundel PW. Evolutionary relationships in the Ramalina usnea complex. Lichenologist. 1978;10: 141–156.
+        View Article
+        Google Scholar
+    76. Index Fungorum. 2015. Available: http://www.indexfungorum.org . Accessed 15 March 2015.
+    77. Hall TA. BioEdit: a user-friendly biological sequence alignment editor and analysis program for Windows 95/98/NT. Nucleic Acids Symp Ser. 1999;41: 95–98.
+        View Article
+        Google Scholar
+    78. Katoh K, Asimenos G, Toh H. Multiple alignment of DNA sequences with MAFFT. Meth Mol Biol. 2009;537: 39–64.
+        View Article
+        Google Scholar
+    79. Penn O, Privman E, Ashkenazy H, Landan G, Graur D, Pupko T. GUIDANCE: a web server for assessing alignment confidence scores. Nucleic Acids Res. 2010;38: W23–W28. pmid:20497997
+        View Article
+        PubMed/NCBI
+        Google Scholar
+    80. Penn O, Privman E, Landan G, Graur D, Pupko T. An alignment confidence score capturing robustness to guide-tree uncertainty. Mol Biol Evol. 2010;27: 1759–1767. pmid:20207713
+        View Article
+        PubMed/NCBI
+        Google Scholar
+    81. Stamatakis A. RAxML version 8: a tool for phylogenetic analysis and post-analysis of large phylogenies. Bioinformatics. 2014;30: 1312–1313. pmid:24451623
+        View Article
+        PubMed/NCBI
+        Google Scholar
+    82. Hijmans RJ, Cameron SE, Parra JL, Jones PG, Jarvis A. Very high resolution interpolated climate surfaces for global land areas. Int J Climatol. 2005;25: 1965–1978.
+        View Article
+        Google Scholar
+    83. Sexton JO, Song XP, Feng M, Noojipady P, Anand A, Huang C, et al. Global, 30-m resolution continuous fields of tree cover: Landsat-based rescaling of MODIS Vegetation Continuous Fields with lidar-based estimates of error. Int J Digital Earth. 2013;6: 427–448.
+        View Article
+        Google Scholar
+    84. Phillips SJ, Dudík M, Elith J, Graham CH, Lehmann A, Leathwick J, et al. Sample selection bias and presence-only distribution models: implications for background and pseudo-absence data. Ecol Appl. 2009;19: 181–197. pmid:19323182
+        View Article
+        PubMed/NCBI
+        Google Scholar
+    85. Olson DM, Dinerstein E, Wikramanayake ED, Burgess ND, Powell GVN, Underwood EC, et al. Terrestrial ecoregions of the world: a new map of life on Earth. A new global map of terrestrial ecoregions provides an innovative tool for conserving biodiversity. BioScience 2011;51: 933–938.
+        View Article
+        Google Scholar
+    86. Syfert MM, Smith MJ, Coomes DA. The effects of sampling bias and model complexity on the predictive performance of MaxEnt species distribution models. PloSONE. 2013;8:e55158.
+        View Article
+        Google Scholar
+    87. Kramer-Schadt S, Niedballa J, Pilgrim JD, Schröder B, Lindenborn J, Reinfelder V, Stillfried M, et al. The importance of correcting for sampling bias in MaxEnt species distribution models. Divers Distr. 2013;19: 1366–1379.
+        View Article
+        Google Scholar
+    88. Boria RA, Olson LE, Goodman SM, Anderson RP. Spatial filtering to reduce sampling bias can improve the performance of ecological niche models. Ecol Modelling. 2014;275: 73–77.
+        View Article
+        Google Scholar
+    89. Fourcade Y, Engler JO, Rödder D, Secondi J. Mapping species distributions with MAXENT using a geographically biased sample of presence data: a performance assessment of methods for correcting sampling bias. PLoS ONE. 2014;9(5): e97122. pmid:24818607
+        View Article
+        PubMed/NCBI
+        Google Scholar
+    90. Elith J, Phillips SJ, Hastie T, Dudík M, Chee YE, Yates CJ. A statistical explanation of MaxEnt for ecologists. Divers Distrib. 2010;17: 43–57.
+        View Article
+        Google Scholar
+    91. Lobo JM, Jiménez-Valverde A, Real R. AUC: a misleading measure of the performance of predictive distribution models. Glob Ecol Biogeogr 2008;17: 145–151.
+        View Article
+        Google Scholar
+
+Download PDF
+ 
+
+    Citation
+    XML
+
+Print
+
+    Print article
+    EzReprint
+
+Share
+
+    Reddit Reddit
+    Facebook Facebook
+    LinkedIn LinkedIn
+    Mendeley Mendeley
+    PubChase PubChase
+    Twitter Twitter
+    Email Email
+
+ 
+Advertisement
+Subject Areas
+?
+
+For more information about PLOS Subject Areas, click here .
+We want your feedback. Do these Subject Areas make sense for this article? Click the target next to the incorrect Subject Area and let us know. Thanks for your help!
+
+    Ecological niches  
+
+    Is the Subject Area "Ecological niches" applicable to this article? Yes No
+
+    Thanks for your feedback.
+    Taxonomy  
+
+    Is the Subject Area "Taxonomy" applicable to this article? Yes No
+
+    Thanks for your feedback.
+    Lichenology  
+
+    Is the Subject Area "Lichenology" applicable to this article? Yes No
+
+    Thanks for your feedback.
+    Sequence databases  
+
+    Is the Subject Area "Sequence databases" applicable to this article? Yes No
+
+    Thanks for your feedback.
+    Chemical precipitation  
+
+    Is the Subject Area "Chemical precipitation" applicable to this article? Yes No
+
+    Thanks for your feedback.
+    Forecasting  
+
+    Is the Subject Area "Forecasting" applicable to this article? Yes No
+
+    Thanks for your feedback.
+    Fungi  
+
+    Is the Subject Area "Fungi" applicable to this article? Yes No
+
+    Thanks for your feedback.
+    Haplotypes  
+
+    Is the Subject Area "Haplotypes" applicable to this article? Yes No
+
+    Thanks for your feedback.
+
+Archived Tweets
+
+    6 Apr 2016
+    Milton Tan @mt_ur_mind
+    RT @rdmpage : From GenBank to @GBIF : Phylogeny-Based … Niche Modeling Tests Accuracy of Taxonomic Identifications… https://t.co/YeipQ5HwZK v…
+     
+    Reply
+     
+    Retweet
+     
+    Favorite
+    6 Apr 2016
+    Ron Avery @ron_avery
+    RT @rdmpage : From GenBank to @GBIF : Phylogeny-Based … Niche Modeling Tests Accuracy of Taxonomic Identifications… https://t.co/YeipQ5HwZK v…
+     
+    Reply
+     
+    Retweet
+     
+    Favorite
+    6 Apr 2016
+    NFBR @_NFBR
+    RT @rdmpage : From GenBank to @GBIF : Phylogeny-Based … Niche Modeling Tests Accuracy of Taxonomic Identifications… https://t.co/YeipQ5HwZK v…
+     
+    Reply
+     
+    Retweet
+     
+    Favorite
+    6 Apr 2016
+    Alan Prather @prather_alan
+    RT @rdmpage : From GenBank to @GBIF : Phylogeny-Based … Niche Modeling Tests Accuracy of Taxonomic Identifications… https://t.co/YeipQ5HwZK v…
+     
+    Reply
+     
+    Retweet
+     
+    Favorite
+    6 Apr 2016
+    Jessica Light @je_light
+    RT @rdmpage : From GenBank to @GBIF : Phylogeny-Based … Niche Modeling Tests Accuracy of Taxonomic Identifications… https://t.co/YeipQ5HwZK v…
+     
+    Reply
+     
+    Retweet
+     
+    Favorite
+    6 Apr 2016
+    ASIH @ASIHCopeia
+    RT @rdmpage : From GenBank to @GBIF : Phylogeny-Based … Niche Modeling Tests Accuracy of Taxonomic Identifications… https://t.co/YeipQ5HwZK v…
+     
+    Reply
+     
+    Retweet
+     
+    Favorite
+    6 Apr 2016
+    Roderic Page @rdmpage
+    From GenBank to @GBIF : Phylogeny-Based … Niche Modeling Tests Accuracy of Taxonomic Identifications… https://t.co/YeipQ5HwZK via @dschigel
+     
+    Reply
+     
+    Retweet
+     
+    Favorite
+    15 Mar 2016
+    taxonbytes @taxonbytes
+    RT @BEugeneSmith : published. https://t.co/575nXTYMWA
+     
+    Reply
+     
+    Retweet
+     
+    Favorite
+    14 Mar 2016
+    PLOS ONE @PLOSONE
+    RT @BEugeneSmith : published. https://t.co/575nXTYMWA
+     
+    Reply
+     
+    Retweet
+     
+    Favorite
+    14 Mar 2016
+    B. Eugene Smith @BEugeneSmith
+    published. https://t.co/575nXTYMWA
+     
+    Reply
+     
+    Retweet
+     
+    Favorite
+
+Load more
+View all tweets
+
+    Publications
+    PLOS Biology
+    PLOS Medicine
+    PLOS Computational Biology
+    PLOS Genetics
+    PLOS Pathogens
+    PLOS ONE
+    PLOS Neglected Tropical Diseases
+
+    Home
+    Blogs
+    Collections
+    Give feedback
+    LOCKSS
+
+    Privacy Policy
+    Terms of Use
+    Advertise
+    Media Inquiries
+    Contact
+
+PLOS is a nonprofit 501(c)(3) corporation, #C2354500, based in San Francisco, California, US
+PLOS
+ 

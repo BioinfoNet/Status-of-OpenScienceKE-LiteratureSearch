@@ -1,0 +1,514 @@
+<!DOCTYPE html>
+<!--[if lt IE 7]> <html class="no-js lt-ie9 lt-ie8 lt-ie7" lang="en"> <![endif]-->
+<!--[if IE 7]>    <html class="no-js lt-ie9 lt-ie8" lang="en"> <![endif]-->
+<!--[if IE 8]>    <html class="no-js lt-ie9" lang="en"> <![endif]-->
+<!--[if gt IE 8]><!-->
+<html class=" js flexbox flexboxlegacy canvas canvastext webgl no-touch geolocation postmessage no-websqldatabase indexeddb hashchange history draganddrop websockets rgba hsla multiplebgs backgroundsize borderimage borderradius boxshadow textshadow opacity cssanimations csscolumns cssgradients no-cssreflections csstransforms csstransforms3d csstransitions fontface generatedcontent video audio localstorage sessionstorage webworkers applicationcache svg inlinesvg smil svgclippaths no-firefox" style="" lang="en"><!--<![endif]--><head><meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+<meta content="text/html; charset=UTF-8" http-equiv="Content-Type">
+<meta content="IE=edge,chrome=1" http-equiv="X-UA-Compatible">
+<meta content="width=device-width; initial-scale=1.0; maximum-scale=1.0;" name="viewport">
+<link rel="shortcut icon" href="https://ore.exeter.ac.uk/repository/themes/Mirage2/images/favicon.ico?v=2">
+<link rel="apple-touch-icon" href="https://ore.exeter.ac.uk/repository/themes/Mirage2/images/apple-touch-icon.png">
+<meta name="Generator" content="DSpace 5.8">
+<link type="text/css" rel="stylesheet" media="screen" href="statistics-style.css">
+<link href="main.css" rel="stylesheet">
+<link type="application/opensearchdescription+xml" rel="search" href="https://ore.exeter.ac.uk/repository/open-search/description.xml" title="DSpace">
+<script async="" src="analytics.js"></script><script>
+                //Clear default text of emty text areas on focus
+                function tFocus(element)
+                {
+                if (element.value == ' '){element.value='';}
+                }
+                //Clear default text of emty text areas on submit
+                function tSubmit(form)
+                {
+                var defaultedElements = document.getElementsByTagName("textarea");
+                for (var i=0; i != defaultedElements.length; i++){
+                if (defaultedElements[i].value == ' '){
+                defaultedElements[i].value='';}}
+                }
+                //Disable pressing 'enter' key to submit a form (otherwise pressing 'enter' causes a submission to start over)
+                function disableEnterKey(e)
+                {
+                var key;
+
+                if(window.event)
+                key = window.event.keyCode; //Internet Explorer
+                else
+                key = e.which; //Firefox and Netscape
+
+                if(key == 13) //if "Enter" pressed, then disable!
+                return false;
+                else
+                return true;
+                }
+            </script><!--[if lt IE 9]>
+                <script src="/repository/themes/Mirage2/vendor/html5shiv/dist/html5shiv.js"> </script>
+                <script src="/repository/themes/Mirage2/vendor/respond/dest/respond.min.js"> </script>
+                <![endif]--><script src="modernizr.js"> </script>
+<title>Introduction: Open data and Africa</title>
+<link rel="schema.DCTERMS" href="http://purl.org/dc/terms/">
+<link rel="schema.DC" href="http://purl.org/dc/elements/1.1/">
+<meta name="DC.creator" content="Leonelli, S">
+<meta name="DC.creator" content="Rappert, B">
+<meta name="DC.creator" content="Bezuidenhout, L">
+<meta name="DCTERMS.dateAccepted" content="2018-03-12T11:21:05Z" scheme="DCTERMS.W3CDTF">
+<meta name="DCTERMS.issued" content="2018-02-19" scheme="DCTERMS.W3CDTF">
+<meta name="DCTERMS.abstract" content="This introduction outlines the contents of the special collection “Open Data and Africa”, which documents the goals and aspirations associated with Open Data means in Africa today: what opportunities they offer, what challenges they pose and what the implications follow from the increasing political and institutional support for this concept." xml:lang="en_GB">
+<meta name="DC.description" content="This	work	was	 funded	by	 the	Leverhulme Trust	Research	
+Grant	 “Beyond	 the	 Digital	 Divide”	 (award	 number	 RPG-2013-153)	 and	 the	
+European	Research	Council	Starting	Grant	 “The	Epistemology	of	Data-Intensive	
+Science”	(award	number	335925)." xml:lang="en_GB">
+<meta name="DCTERMS.bibliographicCitation" content="Vol. 17, p.5" xml:lang="en_GB">
+<meta name="DC.identifier" content="10.5334/dsj-2018-005">
+<meta name="DC.identifier" content="http://hdl.handle.net/10871/32042" scheme="DCTERMS.URI">
+<meta name="DC.language" content="en" xml:lang="en_GB" scheme="DCTERMS.RFC1766">
+<meta name="DC.publisher" content="Ubiquity Press" xml:lang="en_GB">
+<meta name="DC.relation" content="This is an open access articles distributed under the terms of the Creative Commons Attribution 4.0 license (unless stated otherwise) which permits unrestricted use, distribution, and reproduction in any medium, provided the original work is properly cited. Copyright is retained by the author(s)" xml:lang="en_GB">
+<meta name="DC.title" content="Introduction: Open data and Africa" xml:lang="en_GB">
+<meta name="DC.type" content="Article" xml:lang="en_GB">
+<meta name="DCTERMS.available" content="2018-03-12T11:21:05Z" scheme="DCTERMS.W3CDTF">
+<meta name="DC.identifier" content="1683-1470">
+<meta name="DC.description" content="This is the author accepted manuscript. The final version is available from the publisher via the DOI in this record." xml:lang="en_GB">
+<meta name="DC.identifier" content="Data Science Journal" xml:lang="en_GB">
+<meta content="Article" name="citation_keywords">
+<meta content="Introduction: Open data and Africa" name="citation_title">
+<meta content="1683-1470" name="citation_issn">
+<meta content="Ubiquity Press" name="citation_publisher">
+<meta content="en" name="citation_language">
+<meta content="Leonelli, S" name="citation_author">
+<meta content="Rappert, B" name="citation_author">
+<meta content="Bezuidenhout, L" name="citation_author">
+<meta content="https://ore.exeter.ac.uk/repository/bitstream/10871/32042/1/Editorial_OD%26Africa_2018.pdf" name="citation_pdf_url">
+<meta content="2018-02-19" name="citation_date">
+<meta content="https://ore.exeter.ac.uk/repository/handle/10871/32042" name="citation_abstract_html_url">
+<style type="text/css"></style><script id="altmetric-embed-js" src="altmetric_badges-75bc9437b4bcd96622a3f013e4e9519d1b65ea847ab6.js"></script><link id="altmetric-embed-css" rel="stylesheet" type="text/css" href="embed-a458e1093bac38cf5adc51eff02159de22f9e260b3636d0ecefba2.css"></head><body>
+<header id="header-area">
+<div class="container">
+<div class="header-top">
+<div class="header-links">
+<div class="navbar-header">
+<button data-target=".header-links-collapse" data-toggle="collapse" class="btn btn-navbar navbar-toggle" type="button"><span class="sr-only">Global links</span><i class="fa fa-bars"></i></button>
+</div>
+<div class="collapse navbar-collapse header-links-collapse">
+<ul class="nav navbar-nav">
+<li>
+<a href="https://www.exeter.ac.uk/">University home</a>
+</li>
+<li>
+<a href="https://www.exeter.ac.uk/studying/">Studying</a>
+</li>
+<li>
+<a href="https://www.exeter.ac.uk/research/">Research</a>
+</li>
+<li>
+<a href="https://www.exeter.ac.uk/business/">Business</a>
+</li>
+<li>
+<a href="https://www.exeter.ac.uk/working/">Working here</a>
+</li>
+<li>
+<a href="https://www.exeter.ac.uk/alumnisupporters/">Alumni and supporters</a>
+</li>
+<li>
+<a href="https://www.exeter.ac.uk/departments/">Our departments</a>
+</li>
+<li>
+<a href="https://www.exeter.ac.uk/visit/">Visiting us</a>
+</li>
+<li>
+<a href="https://www.exeter.ac.uk/about/">About us</a>
+</li>
+</ul>
+</div>
+</div>
+</div>
+<div class="main-header">
+<div class="row">
+<div class="col-xs-12 col-sm-6">
+<a href="http://www.exeter.ac.uk/"><img class="hidden-print" id="logo" alt="University of Exeter" src="EXETER-mono_logo_vector.svg"></a><a href="https://ore.exeter.ac.uk/repository">
+<div id="logo-text">
+<span class="ORE-text">ORE</span>
+                                    Open Research Exeter
+                                </div>
+</a>
+</div>
+<div id="right-contents" class="col-xs-12 col-sm-6">
+<div class="ds-option-set" id="ds-search-option">
+<form method="post" class="" id="ds-search-form" action="/repository/discover">
+<fieldset>
+<div class="input-group">
+<input class="ds-text-field form-control input-lg" placeholder="Search ORE..." name="query" type="text"><span class="input-group-btn"><button title="Go" class="ds-button-field btn-lg btn btn-primary" type="submit"><span aria-hidden="true" class="glyphicon glyphicon-search"></span></button></span>
+</div>
+</fieldset>
+</form>
+<a class="pull-right advanced-link hidden-xs" href="https://ore.exeter.ac.uk/repository/discover?advanced=true">Advanced Search&nbsp;&nbsp;<i class="fa fa-angle-right"></i></a>
+</div>
+</div>
+</div>
+</div>
+</div>
+</header>
+<nav class="word-break hidden-print" id="ds-navigation">
+<div class="container navbar navbar-inverse">
+<div class="navbar-header pull-right">
+<button aria-expanded="false" data-target="#header-navbar-collapse" data-toggle="collapse" type="button" class="navbar-toggle collapsed"><span class="sr-only">Toggle navigation</span><span class="icon-bar"></span><span class="icon-bar"></span><span class="icon-bar"></span></button>
+</div>
+<ul id="header-navbar" class="nav navbar-nav hidden-xs">
+<li>
+<a href="https://ore.exeter.ac.uk/repository/">Home</a>
+</li>
+<li class="dropdown">
+<a data-toggle="dropdown" type="button" class="dropdown-toggle" href="#"><span class="menu-item-text">Browse</span></a>
+<ul class="dropdown-menu">
+<li class="navigation-sub-header">This Collection</li>
+<li>
+<a href="https://ore.exeter.ac.uk/repository/handle/10036/10885/browse?type=title">Titles</a>
+</li>
+<li>
+<a href="https://ore.exeter.ac.uk/repository/handle/10036/10885/browse?type=author">Authors</a>
+</li>
+<li>
+<a href="https://ore.exeter.ac.uk/repository/handle/10036/10885/browse?type=type">Type</a>
+</li>
+<li>
+<a href="https://ore.exeter.ac.uk/repository/recent-submissions">Recent submissions in ORE</a>
+</li>
+</ul>
+</li>
+<li class="dropdown">
+<a aria-expanded="false" aria-haspopup="true" role="button" data-toggle="dropdown" class="dropdown-toggle" href="#">Information</a>
+<ul class="dropdown-menu">
+<li>
+<a href="http://www.exeter.ac.uk/research/openresearch/openresearchexplained/openresearchexeter/">About ORE</a>
+</li>
+<li>
+<a href="http://www.exeter.ac.uk/research/openresearch/selfarchiving/">Uploading to ORE</a>
+</li>
+<li>
+<a href="http://www.exeter.ac.uk/research/openresearch/selfarchiving/policies/">ORE Policies</a>
+</li>
+<li>
+<a href="https://ore.exeter.ac.uk/repository/contact">Contact Us</a>
+</li>
+</ul>
+</li>
+<li class="dropdown">
+<a data-toggle="dropdown" type="button" class="dropdown-toggle" href="#"><span class="menu-item-text">Statistics</span></a>
+<ul class="dropdown-menu">
+<li>
+<a href="https://ore.exeter.ac.uk/repository/most-popular/item">Most Popular Items</a>
+</li>
+<li>
+<a href="https://ore.exeter.ac.uk/repository/most-popular/country">Statistics by Country</a>
+</li>
+<li>
+<a href="https://ore.exeter.ac.uk/repository/most-popular/author">Most Popular Authors</a>
+</li>
+</ul>
+</li>
+</ul>
+<div id="header-navbar-collapse" class="collapse navbar-collapse">
+<ul class="nav navbar-nav">
+<li>
+<a href="https://ore.exeter.ac.uk/repository/">Home</a>
+</li>
+<li class="dropdown">
+<a data-toggle="dropdown" type="button" class="dropdown-toggle" href="#"><span class="menu-item-text">Browse</span></a>
+<ul class="dropdown-menu">
+<li class="navigation-sub-header">This Collection</li>
+<li>
+<a href="https://ore.exeter.ac.uk/repository/handle/10036/10885/browse?type=title">Titles</a>
+</li>
+<li>
+<a href="https://ore.exeter.ac.uk/repository/handle/10036/10885/browse?type=author">Authors</a>
+</li>
+<li>
+<a href="https://ore.exeter.ac.uk/repository/handle/10036/10885/browse?type=type">Type</a>
+</li>
+<li>
+<a href="https://ore.exeter.ac.uk/repository/recent-submissions">Recent submissions in ORE</a>
+</li>
+</ul>
+</li>
+<li class="dropdown">
+<a aria-expanded="false" aria-haspopup="true" role="button" data-toggle="dropdown" class="dropdown-toggle" href="#">Information</a>
+<ul class="dropdown-menu">
+<li>
+<a href="http://www.exeter.ac.uk/research/openresearch/openresearchexplained/openresearchexeter/">About ORE</a>
+</li>
+<li>
+<a href="http://www.exeter.ac.uk/research/openresearch/selfarchiving/">Uploading to ORE</a>
+</li>
+<li>
+<a href="http://www.exeter.ac.uk/research/openresearch/selfarchiving/policies/">ORE Policies</a>
+</li>
+<li>
+<a href="https://ore.exeter.ac.uk/repository/contact">Contact Us</a>
+</li>
+</ul>
+</li>
+<li class="dropdown">
+<a data-toggle="dropdown" type="button" class="dropdown-toggle" href="#"><span class="menu-item-text">Statistics</span></a>
+<ul class="dropdown-menu">
+<li>
+<a href="https://ore.exeter.ac.uk/repository/most-popular/item">Most Popular Items</a>
+</li>
+<li>
+<a href="https://ore.exeter.ac.uk/repository/most-popular/country">Statistics by Country</a>
+</li>
+<li>
+<a href="https://ore.exeter.ac.uk/repository/most-popular/author">Most Popular Authors</a>
+</li>
+</ul>
+</li>
+</ul>
+</div>
+</div>
+</nav>
+<div class="trail-wrapper hidden-print">
+<div class="container">
+<div class="breadcrumb dropdown visible-xs">
+<a data-toggle="dropdown" class="dropdown-toggle" role="button" href="#" id="trail-dropdown-toggle">View Item&nbsp;<b class="caret"></b></a>
+<ul aria-labelledby="trail-dropdown-toggle" role="menu" class="dropdown-menu">
+<li role="presentation">
+<a role="menuitem" href="https://ore.exeter.ac.uk/repository/" class="home-breadcrumb">ORE Home</a>
+</li>
+<li role="presentation">
+<a role="menuitem" href="https://ore.exeter.ac.uk/repository/handle/10036/108">College of Social Sciences and International Studies</a>
+</li>
+<li role="presentation">
+<a role="menuitem" href="https://ore.exeter.ac.uk/repository/handle/10036/10885">Sociology, Philosophy &amp; Anthropology</a>
+</li>
+<li role="presentation" class="disabled">
+<a href="#" role="menuitem">View Item</a>
+</li>
+</ul>
+</div>
+<ul class="breadcrumb hidden-xs">
+<li class="home-breadcrumb">
+<a href="https://ore.exeter.ac.uk/repository/">ORE Home</a>
+</li>
+<li>
+<a href="https://ore.exeter.ac.uk/repository/handle/10036/108">College of Social Sciences and International Studies</a>
+</li>
+<li>
+<a href="https://ore.exeter.ac.uk/repository/handle/10036/10885">Sociology, Philosophy &amp; Anthropology</a>
+</li>
+<li class="active">View Item</li>
+</ul>
+</div>
+</div>
+<div class="hidden" id="no-js-warning-wrapper">
+<div id="no-js-warning">
+<div class="notice failure">JavaScript is disabled for your browser. Some features of this site may not work without it.</div>
+</div>
+</div>
+<div class="container" id="main-container">
+<div class="row row-offcanvas row-offcanvas-right">
+<div class="horizontal-slider clearfix">
+<div class="col-xs-12 main-content">
+<div>
+<div id="aspect_artifactbrowser_ItemViewer_div_item-view" class="ds-static-div primary">
+<!-- External Metadata URL: cocoon://metadata/handle/10871/32042/mets.xml?rightsMDTypes=METSRIGHTS-->
+<div class="row">
+<div class="col-xs-12 col-md-7 col-lg-8 item-summary-view-metadata">
+<div>
+<h2 class="page-header first-page-header">Introduction: Open data and Africa</h2>
+<div class="simple-item-view-authors item-page-field-wrapper table">
+<span>Leonelli, S</span>; <span>Rappert, B</span>; <span>Bezuidenhout, L</span>
+</div>
+<div class="simple-item-view-date word-break item-page-field-wrapper table">Date: 19 February 2018</div>
+</div>
+<div>
+<div class="simple-item-view-uri item-page-field-wrapper table">
+<span><a href="http://hdl.handle.net/10871/32042"><i class="fa fa-2x fa-link"></i>http://hdl.handle.net/10871/32042</a></span>
+</div>
+<div class="item-page-field-wrapper table word-break">
+<div>
+<a href="https://ore.exeter.ac.uk/repository/bitstream/handle/10871/32042/Editorial_OD%26Africa_2018.pdf?sequence=1&amp;isAllowed=y"><i class="fa fa-2x fa-download"></i>Editorial_OD&amp;Africa_2018.pdf (PDF, 61.05Kb)</a>
+</div>
+</div>
+<div class="simple-item-view-type item-page-field-wrapper table">
+<i class="fa fa-2x  fa-tag"></i>Article</div>
+</div>
+<div>
+<div class="row item-page-field-wrapper ">
+<div class="col-xs-12 col-sm-3">Journal</div>
+<div class="col-xs-12 col-sm-9">Data Science Journal</div>
+</div>
+<div class="row item-page-field-wrapper ">
+<div class="col-xs-12 col-sm-3">Publisher</div>
+<div class="col-xs-12 col-sm-9">Ubiquity Press</div>
+</div>
+<div class="row item-page-field-wrapper ">
+<div class="col-xs-12 col-sm-3">Publisher DOI</div>
+<div class="col-xs-12 col-sm-9">
+<a rel="noopener noreferrer" target="_blank" href="https://doi.org/10.5334/dsj-2018-005">https://doi.org/10.5334/dsj-2018-005</a>
+</div>
+</div>
+<div class="row item-page-field-wrapper abstract">
+<div class="col-xs-12 col-sm-3">Abstract</div>
+<div class="col-xs-12 col-sm-9">
+<div id="abstract-text">
+<span>This introduction outlines the contents of the special collection 
+“Open Data and Africa”, which documents the goals and aspirations 
+associated with Open Data means in Africa today: what opportunities they
+ offer, what challenges they pose and what the implications follow from 
+the increasing political and institutional support for this concept.</span>
+<div>
+<a data-subject="#abstract-text" class="toggler">Read more</a>
+</div>
+<div class="hidden-overflow">This introduction outlines the contents of 
+the special collection “Open Data and Africa”, which documents the goals
+ and aspirations associated with Open Data means in Africa today: what 
+opportunities they offer, what challenges they pose and what the 
+implications follow from the increasing political and institutional 
+support for this concept.</div>
+</div>
+</div>
+</div>
+<div class="simple-item-view-show-full item-page-field-wrapper table">
+<a href="https://ore.exeter.ac.uk/repository/handle/10871/32042?show=full">View full metadata</a>
+</div>
+</div>
+</div>
+<div class="col-xs-12 col-md-5 col-lg-4 item-summary-view-sunburst">
+<div class="row upper-block">
+<div data-size="175" data-select="3-85" data-sunburst-handle="10871/0" data-tree-handle="10871/32042" data-depth="2" class="sunchart small hidden-print hidden-xs"><svg width="350" height="350"><g transform="translate(175,175)"><path d="M6.878432855210967e-15,-112.33333333333333A112.33333333333333,112.33333333333333 0 0,1 44.802964239119085,-103.012000141566L22.600901841692117,-51.964510457169794A56.666666666666664,56.666666666666664 0 0,0 3.4698325975841673e-15,-56.666666666666664Z" id="path-sunburst-4-2" data-parent-id="5-0" style="fill: rgb(29, 65, 123); opacity: 0.3;"></path><path d="M1.0348265452795134e-14,-169A169,169 0 0,1 11.418221203113857,-168.6138316525568L7.6571897614570235,-113.07436442183295A113.33333333333333,113.33333333333333 0 0,0 6.9396651951683345e-15,-113.33333333333333Z" id="path-sunburst-3-2" data-parent-id="4-2" style="fill: rgb(29, 65, 123); opacity: 0.3;"></path><path d="M12.092583385530157,-168.56680998068393A169,169 0 0,1 28.177144307795594,-166.63447584055848L18.89591531489251,-111.74698577078871A113.33333333333333,113.33333333333333 0 0,0 8.109424755582353,-113.04283115075451Z" id="path-sunburst-3-4" data-parent-id="4-2" style="fill: rgb(29, 65, 123); opacity: 0.3;"></path><path d="M28.84345501687094,-166.52043448985395A169,169 0 0,1 51.38045860044599,-161.00015054032667L34.456323321798095,-107.96854276866088A113.33333333333333,113.33333333333333 0 0,0 19.342750898887807,-111.67050833639121Z" id="path-sunburst-3-5" data-parent-id="4-2" style="fill: rgb(29, 65, 123); opacity: 0.3;"></path><path d="M52.02404644215299,-160.7933412544957A169,169 0 0,1 55.54867815801874,-159.60997573741076L37.251579040880415,-107.03627564244508A113.33333333333333,113.33333333333333 0 0,0 34.887920690990164,-107.82985409571704Z" id="path-sunburst-3-304" data-parent-id="4-2" style="fill: rgb(29, 65, 123); opacity: 0.3;"></path><path d="M56.186671969630595,-159.38650473919404A169,169 0 0,1 67.81689662789053,-154.79621614161636L45.47878669325992,-103.80811338885515A113.33333333333333,113.33333333333333 0 0,0 37.679424989495864,-106.886413434568Z" id="path-sunburst-3-723" data-parent-id="4-2" style="fill: rgb(29, 65, 123); opacity: 0.3;"></path><path d="M45.48871020198841,-102.711026778712A112.33333333333333,112.33333333333333 0 0,1 109.72049644036379,24.08714260052221L55.348618382379364,12.150784101153638A56.666666666666664,56.666666666666664 0 0,0 22.94682710486062,-51.812684131694475Z" id="path-sunburst-4-3" data-parent-id="5-0" style="fill: rgb(67, 95, 184); opacity: 0.3;"></path><path d="M68.43553730684903,-154.5237109104065A169,169 0 0,1 81.87337753433795,-147.84366760575094L54.90522359304714,-99.14565480464559A113.33333333333333,113.33333333333333 0 0,0 45.89365420972124,-103.62536826338895Z" id="path-sunburst-3-7" data-parent-id="4-3" style="fill: rgb(67, 95, 184); opacity: 0.3;"></path><path d="M82.46409564161614,-147.51499222116504A169,169 0 0,1 97.47317232934101,-138.0578888584589L65.36662444176714,-92.5831996289468A113.33333333333333,113.33333333333333 0 0,0 55.301365913509834,-98.92524133174776Z" id="path-sunburst-3-8" data-parent-id="4-3" style="fill: rgb(67, 95, 184); opacity: 0.3;"></path><path d="M98.02462262781962,-137.66689274721628A169,169 0 0,1 145.6978986433929,-85.63365186011637L97.70667759122995,-57.42690657285911A113.33333333333333,113.33333333333333 0 0,0 65.7364333204313,-92.32099316381368Z" id="path-sunburst-3-9" data-parent-id="4-3" style="fill: rgb(67, 95, 184); opacity: 0.3;"></path><path d="M146.0392667557734,-85.05017675135102A169,169 0 0,1 165.8801699363412,-32.32289006092385L111.24113960228007,-21.67609984361757A113.33333333333333,113.33333333333333 0 0,0 97.93560295258968,-57.035621490057885Z" id="path-sunburst-3-10" data-parent-id="4-3" style="fill: rgb(67, 95, 184); opacity: 0.3;"></path><path d="M166.00813411221756,-31.659112567789837A169,169 0 0,1 164.97189355400795,36.677981640284834L110.63203906974891,24.59667407829752A113.33333333333333,113.33333333333333 0 0,0 111.32695384251275,-21.23096306321212Z" id="path-sunburst-3-11" data-parent-id="4-3" style="fill: rgb(67, 95, 184); opacity: 0.3;"></path><path d="M109.55747845495578,24.818071890654124A112.33333333333333,112.33333333333333 0 0,1 94.43059269102724,60.841112266288235L47.63561055630454,30.69136227082789A56.666666666666664,56.666666666666664 0 0,0 55.26638379033378,12.519502140686058Z" id="path-sunburst-4-21" data-parent-id="5-0" style="fill: rgb(82, 125, 255); opacity: 0.3;"></path><path d="M164.82386224528958,37.33757403134018A169,169 0 0,1 162.91443608443078,44.94314758994881L109.25228455366165,30.139388916336475A113.33333333333333,113.33333333333333 0 0,0 110.53276758066755,25.039004281372115Z" id="path-sunburst-3-41" data-parent-id="4-21" style="fill: rgb(82, 125, 255); opacity: 0.3;"></path><path d="M162.73336065971324,45.59444405183261A169,169 0 0,1 162.65553118478306,45.87132192335494L109.07865996612671,30.76183324248655A113.33333333333333,113.33333333333333 0 0,0 109.13085330237179,30.57615577440451Z" id="path-sunburst-3-521" data-parent-id="4-21" style="fill: rgb(82, 125, 255); opacity: 0.3;"></path><path d="M162.47074514386887,46.52157534301704A169,169 0 0,1 160.85005916878174,51.84841815715704L107.86788977788125,34.77014235391202A113.33333333333333,113.33333333333333 0 0,0 108.9547403331665,31.197900624508467Z" id="path-sunburst-3-42" data-parent-id="4-21" style="fill: rgb(82, 125, 255); opacity: 0.3;"></path><path d="M160.64137925044486,52.49140189130737A169,169 0 0,1 159.70160889266046,55.28468248163965L107.09772588462437,37.074540520231714A113.33333333333333,113.33333333333333 0 0,0 107.72794663737918,35.20133460166569Z" id="path-sunburst-3-43" data-parent-id="4-21" style="fill: rgb(82, 125, 255); opacity: 0.3;"></path><path d="M159.47919314126904,55.92304493685767A169,169 0 0,1 155.69848689678577,65.71895600244595L104.41318647910683,44.07188370972707A113.33333333333333,113.33333333333333 0 0,0 106.94857133734018,37.502633685466684Z" id="path-sunburst-3-44" data-parent-id="4-21" style="fill: rgb(82, 125, 255); opacity: 0.3;"></path><path d="M155.43436618754325,66.34122253830355A169,169 0 0,1 154.50479146156874,68.4782404521112L103.61268066456286,45.92229142745129A113.33333333333333,113.33333333333333 0 0,0 104.23606410998956,44.48918276730416Z" id="path-sunburst-3-57" data-parent-id="4-21" style="fill: rgb(82, 125, 255); opacity: 0.3;"></path><path d="M154.22964319351064,69.0957101447145A169,169 0 0,0 154.25387459823804,69.04159739918433L103.44441294556397,46.300085040873114A113.33333333333333,113.33333333333333 0 0,1 103.42816308835032,46.336373667066916Z" id="path-sunburst-3-58" data-parent-id="4-21" style="fill: rgb(82, 125, 255); opacity: 0.3;"></path><path d="M153.976474915733,69.65805892016118A169,169 0 0,1 153.8895837630636,69.84981037362256L103.20011534406632,46.8420819073603A113.33333333333333,113.33333333333333 0 0,0 103.25838554506748,46.71349118906272Z" id="path-sunburst-3-59" data-parent-id="4-21" style="fill: rgb(82, 125, 255); opacity: 0.3;"></path><path d="M153.60895415160456,70.46480826944932A169,169 0 0,1 146.65682921345933,83.98079807345378L98.34974740153092,56.31848391513665A113.33333333333333,113.33333333333333 0 0,0 103.0119219162634,47.254506531780606Z" id="path-sunburst-3-45" data-parent-id="4-21" style="fill: rgb(82, 125, 255); opacity: 0.3;"></path><path d="M146.31973366389062,84.56675198048057A169,169 0 0,1 145.82617808993362,85.41502083171886L97.79270325557678,57.280290104111266A113.33333333333333,113.33333333333333 0 0,0 98.12368726967023,56.71143130840906Z" id="path-sunburst-3-60" data-parent-id="4-21" style="fill: rgb(82, 125, 255); opacity: 0.3;"></path><path d="M145.4833523098303,85.99764066934505A169,169 0 0,0 145.63099031495744,85.74738864761288L97.66180810076041,57.50317976368517A113.33333333333333,113.33333333333333 0 0,1 97.56280036556669,57.67100163230239Z" id="path-sunburst-3-661" data-parent-id="4-21" style="fill: rgb(82, 125, 255); opacity: 0.3;"></path><path d="M145.28683662863594,86.32922507728219A169,169 0 0,1 145.23834318464932,86.41078444834316L97.39849444335458,57.94806057679818A113.33333333333333,113.33333333333333 0 0,0 97.43101470164935,57.89336592953835Z" id="path-sunburst-3-61" data-parent-id="4-21" style="fill: rgb(82, 125, 255); opacity: 0.3;"></path><path d="M144.89153906337398,86.99104498652015A169,169 0 0,1 141.82161181387497,91.91099184817101L95.10719529924553,61.636562580627505A113.33333333333333,113.33333333333333 0 0,0 97.1659236322429,58.33718993178866Z" id="path-sunburst-3-46" data-parent-id="4-21" style="fill: rgb(82, 125, 255); opacity: 0.3;"></path><path d="M94.02288983056803,61.46929286795678A112.33333333333333,112.33333333333333 0 0,1 -20.993788945032087,110.35415082138607L-10.590338636959805,55.668265992984075A56.666666666666664,56.666666666666664 0 0,0 47.429944424915625,31.00824862775268Z" id="path-sunburst-4-24" data-parent-id="5-0" style="fill: rgb(84, 125, 219); opacity: 0.3;"></path><path d="M141.45283425548368,92.47754149570946A169,169 0 0,1 76.34167457321331,150.77449626298738L51.195600305507945,101.11110203040573A113.33333333333333,113.33333333333333 0 0,0 94.85988884983125,62.01649725550536Z" id="path-sunburst-3-62" data-parent-id="4-24" style="fill: rgb(84, 125, 219); opacity: 0.3;"></path><path d="M75.7379674638391,151.07865595260785A169,169 0 0,1 28.275057999374674,166.61788948108784L18.961577356582623,111.73586276838236A113.33333333333333,113.33333333333333 0 0,0 50.79074741164752,101.31507499780407Z" id="path-sunburst-3-63" data-parent-id="4-24" style="fill: rgb(84, 125, 219); opacity: 0.3;"></path><path d="M27.608362018543993,166.72965647014635A169,169 0 0,1 -10.514339039345657,168.67260795566568L-7.05103604216474,113.1137804830894A113.33333333333333,113.33333333333333 0 0,0 18.514483404940744,111.81081498984173Z" id="path-sunburst-3-64" data-parent-id="4-24" style="fill: rgb(84, 125, 219); opacity: 0.3;"></path><path d="M-11.188943557395115,168.6292013325967A169,169 0 0,1 -32.026741203063935,165.93760227239625L-21.477499031640505,111.27965438385547A113.33333333333333,113.33333333333333 0 0,0 -7.503433549337946,113.08467150509442Z" id="path-sunburst-3-65" data-parent-id="4-24" style="fill: rgb(84, 125, 219); opacity: 0.3;"></path><path d="M-21.729011307350415,110.21174095976714A112.33333333333333,112.33333333333333 0 0,1 -87.40401509389824,70.56426803449027L-44.091046189800295,35.5962182963304A56.666666666666664,56.666666666666664 0 0,0 -10.961222321215343,55.59642719038698Z" id="path-sunburst-4-44" data-parent-id="5-0" style="fill: rgb(152, 189, 255); opacity: 0.3;"></path><path d="M-32.690233628565764,165.80816815015413A169,169 0 0,0 -32.63206102148114,165.8196266836056L-21.883433426634294,111.20053860439035A113.33333333333333,113.33333333333333 0 0,1 -21.922444642430687,111.19285438077397Z" id="path-sunburst-3-334" data-parent-id="4-44" style="fill: rgb(152, 189, 255); opacity: 0.3;"></path><path d="M-33.2950767033342,165.68777223235A169,169 0 0,1 -66.63221621694599,155.30984438218383L-44.68432645712354,104.15255836280572A113.33333333333333,113.33333333333333 0 0,0 -22.32805932767974,111.11211550098422Z" id="path-sunburst-3-335" data-parent-id="4-44" style="fill: rgb(152, 189, 255); opacity: 0.3;"></path><path d="M-67.25292088081872,155.0420737509607A169,169 0 0,1 -124.4702205709221,114.31607144678304L-83.47115383454341,76.66166527003202A113.33333333333333,113.33333333333333 0 0,0 -45.100578105480004,103.97298831425373Z" id="path-sunburst-3-337" data-parent-id="4-44" style="fill: rgb(152, 189, 255); opacity: 0.3;"></path><path d="M-124.92648787690189,113.81727736482843A169,169 0 0,1 -128.78291916328774,109.43472817977892L-86.3632988471752,73.3881806333823A113.33333333333333,113.33333333333333 0 0,0 -83.77713190955944,76.32716825254766Z" id="path-sunburst-3-336" data-parent-id="4-44" style="fill: rgb(152, 189, 255); opacity: 0.3;"></path><path d="M-129.21962664672435,108.91872240015107A169,169 0 0,1 -131.77768804067608,105.80945579036998L-88.37162511603523,70.95703149650058A113.33333333333333,113.33333333333333 0 0,0 -86.6561598814325,73.04214125453917Z" id="path-sunburst-3-306" data-parent-id="4-44" style="fill: rgb(152, 189, 255); opacity: 0.3;"></path><path d="M-87.87249775856125,69.98001082773153A112.33333333333333,112.33333333333333 0 0,1 -111.80110334696786,10.922045054768201L-56.398182697283495,5.509636971248054A56.666666666666664,56.666666666666664 0 0,0 -44.32737275654426,35.30148914158564Z" id="path-sunburst-4-41" data-parent-id="5-0" style="fill: rgb(29, 65, 123); opacity: 1;"></path><path d="M-132.19987051510552,105.28149996931718A169,169 0 0,1 -135.36588338535068,101.17844442025999L-90.77790996256259,67.85142229366548A113.33333333333333,113.33333333333333 0 0,0 -88.65474551308851,70.60297828317128Z" id="path-sunburst-3-82" data-parent-id="4-41" style="fill: rgb(67, 95, 184); opacity: 0.3;"></path><path d="M-135.76951315817263,100.63617290414412A169,169 0 0,1 -147.2265573176886,82.97795382136964L-98.73181358582667,55.64596508730902A113.33333333333333,113.33333333333333 0 0,0 -91.04858870567789,67.48776881145758Z" id="path-sunburst-3-81" data-parent-id="4-41" style="fill: rgb(67, 95, 184); opacity: 0.3;"></path><path d="M-147.55729043698847,82.38838533976883A169,169 0 0,1 -154.6282890435365,68.1989166150645L-103.6954995558233,45.734973666907166A113.33333333333333,113.33333333333333 0 0,0 -98.95360699916385,55.25059371897712Z" id="path-sunburst-3-83" data-parent-id="4-41" style="fill: rgb(67, 95, 184); opacity: 0.3;"></path><path d="M-154.89984695787925,67.57985951765205A169,169 0 0,1 -164.036345255858,40.658054984233374L-110.00464967848467,27.265756794160446A113.33333333333333,113.33333333333333 0 0,0 -103.87760939976123,45.31982689546686Z" id="path-sunburst-3-84" data-parent-id="4-41" style="fill: rgb(67, 95, 184); opacity: 0.3;"></path><path d="M-164.19766475309706,40.001586088923446A169,169 0 0,1 -168.24250576950368,15.983092704433743L-112.82534903674802,10.71844481165182A113.33333333333333,113.33333333333333 0 0,0 -110.11283237880275,26.82552124306503Z" id="path-sunburst-3-85" data-parent-id="4-41" style="fill: rgb(29, 65, 123); opacity: 1;"></path><path d="M-111.87143198154573,10.176467175604875A112.33333333333333,112.33333333333333 0 0,1 -83.9247076362552,-74.66874329963551L-42.33590592926821,-37.66672510664106A56.666666666666664,56.666666666666664 0 0,0 -56.43366005003791,5.1335294357650705Z" id="path-sunburst-4-252" data-parent-id="5-0" style="fill: rgb(82, 125, 255); opacity: 0.3;"></path><path d="M-168.30509203158365,15.309996611369947A169,169 0 0,1 -132.77508402189153,-104.55513886452279L-89.04049027109096,-70.11587221683975A113.33333333333333,113.33333333333333 0 0,0 -112.86732010007582,10.267058871530141Z" id="path-sunburst-3-348" data-parent-id="4-252" style="fill: rgb(82, 125, 255); opacity: 0.3;"></path><path d="M-132.3558023824315,-105.08540134434821A169,169 0 0,1 -131.1376388137064,-106.60168707091783L-87.94240078236719,-71.48831085623681A113.33333333333333,113.33333333333333 0 0,0 -88.75931520715326,-70.47147230192977Z" id="path-sunburst-3-350" data-parent-id="4-252" style="fill: rgb(82, 125, 255); opacity: 0.3;"></path><path d="M-130.7101841027948,-107.12538341501276A169,169 0 0,1 -125.9606037451154,-112.67176356197687L-84.47062184090579,-75.55897359185825A113.33333333333333,113.33333333333333 0 0,0 -87.65574476321544,-71.8395076155904Z" id="path-sunburst-3-349" data-parent-id="4-252" style="fill: rgb(82, 125, 255); opacity: 0.3;"></path><path d="M-83.42505471499913,-75.226577906862A112.33333333333333,112.33333333333333 0 0,1 -75.34029696174379,-83.32237053453315L-38.00549104895087,-42.03205635273186A56.666666666666664,56.666666666666664 0 0,0 -42.08385549421321,-37.94812535360992Z" id="path-sunburst-4-421" data-parent-id="5-0" style="fill: rgb(84, 125, 219); opacity: 0.3;"></path><path d="M-125.50891020921235,-113.17470326047193A169,169 0 0,0 -125.83203489003324,-112.81533138467242L-84.38440209588028,-75.65525181615112A113.33333333333333,113.33333333333333 0 0,1 -84.16771098842642,-75.89625070721983Z" id="path-sunburst-4-123" data-parent-id="4-421" style="fill: rgb(84, 125, 219); opacity: 0.3;"></path><path d="M-125.37976811292027,-113.3177556605775A169,169 0 0,1 -124.01496558379583,-114.80979187878506L-83.16585463213131,-76.9927598398164A113.33333333333333,113.33333333333333 0 0,0 -84.08110682128775,-75.9921832832275Z" id="path-sunburst-4-222" data-parent-id="4-421" style="fill: rgb(84, 125, 219); opacity: 0.3;"></path><path d="M-123.55473552251568,-115.30493194118455A169,169 0 0,0 -123.64774369496418,-115.20518859471757L-82.91959143252035,-77.25791740079679A113.33333333333333,113.33333333333333 0 0,1 -82.85721908807757,-77.3248064299857Z" id="path-sunburst-4-241" data-parent-id="4-421" style="fill: rgb(84, 125, 219); opacity: 0.3;"></path><path d="M-123.18593498880908,-115.69885661030928A169,169 0 0,1 -121.92633111992295,-117.02550909795225L-81.76519246700947,-78.4786451544453A113.33333333333333,113.33333333333333 0 0,0 -82.60989723115401,-77.58897681953678Z" id="path-sunburst-4-81" data-parent-id="4-421" style="fill: rgb(84, 125, 219); opacity: 0.3;"></path><path d="M-121.4572549224539,-117.5122769190609A169,169 0 0,1 -120.9344579430632,-118.05023033445329L-81.10003096773468,-79.16583493829215A113.33333333333333,113.33333333333333 0 0,0 -81.45062460282904,-78.80507722382781Z" id="path-sunburst-4-101" data-parent-id="4-421" style="fill: rgb(84, 125, 219); opacity: 0.3;"></path><path d="M-120.46129080655331,-118.53302247567551A169,169 0 0,0 -120.77280028268439,-118.21561111747818L-80.99162149134654,-79.27674118331869A113.33333333333333,113.33333333333333 0 0,1 -80.78271967303377,-79.48960087126167Z" id="path-sunburst-4-87" data-parent-id="4-421" style="fill: rgb(84, 125, 219); opacity: 0.3;"></path><path d="M-120.29897291806603,-118.69775530673873A169,169 0 0,1 -118.01785809745874,-120.96604965893569L-79.14412574583032,-81.12121673380302A113.33333333333333,113.33333333333333 0 0,0 -80.67386744012316,-79.60007259229026Z" id="path-sunburst-4-242" data-parent-id="4-421" style="fill: rgb(84, 125, 219); opacity: 0.3;"></path><path d="M-117.53305104752063,-121.43715210536234A169,169 0 0,1 -115.51015152119527,-123.36289918589992L-77.4624290280205,-82.72857144616563A113.33333333333333,113.33333333333333 0 0,0 -78.81900859202567,-81.43714342371439Z" id="path-sunburst-4-1" data-parent-id="4-421" style="fill: rgb(84, 125, 219); opacity: 0.3;"></path><path d="M-115.01577716034154,-123.82395165799976A169,169 0 0,0 -115.42571721992064,-123.4419045716118L-77.40580641967064,-82.78155336163316A113.33333333333333,113.33333333333333 0 0,1 -77.1308959260673,-83.03775850832331Z" id="path-sunburst-4-301" data-parent-id="4-421" style="fill: rgb(84, 125, 219); opacity: 0.3;"></path><path d="M-114.9310275138403,-123.90261867536489A169,169 0 0,1 -113.01110692816941,-125.656236259367L-75.78654113526153,-84.2665095230469A113.33333333333333,113.33333333333333 0 0,0 -77.07406184360099,-83.09051351010663Z" id="path-sunburst-4-243" data-parent-id="4-421" style="fill: rgb(84, 125, 219); opacity: 0.3;"></path><path d="M-74.78314438356884,-83.82278385906825A112.33333333333333,112.33333333333333 0 0,1 -0.748883341576251,-112.33083704628255L-0.3777749794301563,-56.66540741207132A56.666666666666664,56.666666666666664 0 0,0 -37.72443485224541,-42.28449037401069Z" id="path-sunburst-4-103" data-parent-id="5-0" style="fill: rgb(152, 189, 255); opacity: 0.3;"></path><path d="M-112.50757923581425,-126.10727423307894A169,169 0 0,1 -112.20636146557322,-126.37536328991155L-75.24686962188342,-84.74876433642983A113.33333333333333,113.33333333333333 0 0,0 -75.44886970449082,-84.56898074802137Z" id="path-sunburst-4-104" data-parent-id="4-103" style="fill: rgb(152, 189, 255); opacity: 0.3;"></path><path d="M-111.69996371072158,-126.82317653734859A169,169 0 0,1 -14.649192048468795,-168.36389509727755L-9.823915772148698,-112.90675410862794A113.33333333333333,113.33333333333333 0 0,0 -74.9072734943695,-85.049073023074Z" id="path-sunburst-4-105" data-parent-id="4-103" style="fill: rgb(152, 189, 255); opacity: 0.3;"></path><path d="M-13.97562107057974,-168.4211447998486A169,169 0 0,1 -0.6759981973350323,-168.99864800180268L-0.4533321244455838,-113.33242666787555A113.33333333333333,113.33333333333333 0 0,0 -9.372211368830595,-112.94514641409964Z" id="path-sunburst-4-121" data-parent-id="4-103" style="fill: rgb(152, 189, 255); opacity: 0.3;"></path></g></svg></div>
+<div class="col-xs-12 extra-gutter">
+<h3 class="collection-name">Sociology, Philosophy &amp; Anthropology</h3>
+<h3 class="community-name">College of Social Sciences and International Studies</h3>
+</div>
+</div>
+<div class="row">
+<div class="col-xs-12 extra-gutter">
+<div class="sunburst-statistics">
+<div class="statistics-views">
+<span class="statistics-label">Item views</span> <span id="StatletPageViews">0</span>
+</div>
+<div class="statistics-downloads">
+<span class="statistics-label">Full item downloads</span> <span id="StatletDownloads">0</span>
+</div>
+</div>
+<div class="altmetric-wrapper">
+<div data-hide-no-mentions="true" data-doi="10.5334/dsj-2018-005" data-badge-type="medium-donut" data-badge-details="right" class="altmetric-embed" data-uuid="5c97c16b-e108-b5da-f883-55e3bcc4cff1"><div style="overflow:hidden;">
+    <div class="altmetric-normal-legend">
+        <a target="_self" href="https://www.altmetric.com/details.php?domain=ore.exeter.ac.uk&amp;citation_id=33403338" style="display:inline-block;">
+                <img alt="Article has an altmetric score of 21" src="a.png" style="border:0; margin:0; max-width: none;" width="120px" height="120px">
+        </a>
+        <p class="altmetric-see-more-details" style="padding-top: 10px; text-align: center;"><a target="_self" href="https://www.altmetric.com/details.php?domain=ore.exeter.ac.uk&amp;citation_id=33403338">See more details</a></p>
+    </div>
+    <div id="_altmetric_popover_el_5c97c16b-e108-b5da-f883-55e3bcc4cff1" class="altmetric-embed right" style="margin:0; padding:0; display:inline-block; float:left; position:relative;">
+        <div class="altmetric_container" id="_altmetric_container">
+            <div class="altmetric-embed altmetric-popover-inner right" id="_altmetric_popover_inner">
+                <div style="padding:0; margin: 0;" class="altmetric-embed altmetric-popover-content">
+                        <div style="padding-left: 10px; line-height:18px; border-left: 16px solid #74CFED;">
+      <a class="link-to-altmetric-details-tab" target="_self" href="https://www.altmetric.com/details.php?domain=ore.exeter.ac.uk&amp;citation_id=33403338&amp;tab=twitter">
+          Tweeted by <b>30</b>
+      </a>
+    </div>
+    <div style="padding-left: 10px; line-height:18px; border-left: 16px solid #E065BB;">
+      <a class="link-to-altmetric-details-tab" target="_self" href="https://www.altmetric.com/details.php?domain=ore.exeter.ac.uk&amp;citation_id=33403338&amp;tab=google">
+          Mentioned in <b>1</b> Google+ posts
+      </a>
+    </div>
+
+    <div class="altmetric-embed readers" style="margin-top: 10px;">
+          <div class="altmetric-embed tip_mendeley" style="padding-left: 10px; line-height:18px; border-left: 16px solid #A60000;">
+              <b>13</b> readers on Mendeley
+          </div>
+    </div>
+
+                </div>
+            </div>
+        </div>
+    </div>
+</div></div>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+<div id="aspect_statistics_StatletTransformer_div_showStats" class="ds-static-div">
+<p class="ds-paragraph">
+<a href="#" class="btn btn-default">Show Statistical Information</a>
+</p>
+<p class="ds-paragraph">
+<input id="aspect_statistics_StatletTransformer_field_contextpath" class="ds-hidden-field form-control" name="contextpath" value="/repository" type="hidden">
+</p>
+<p class="ds-paragraph">
+<input id="aspect_statistics_StatletTransformer_field_statlet-ms-hide" class="ds-hidden-field form-control" name="statlet-ms-hide" value="Hide Statistical Information" type="hidden">
+</p>
+<p class="ds-paragraph">
+<input id="aspect_statistics_StatletTransformer_field_statlet-ms-ajax-timeout" class="ds-hidden-field form-control" name="statlet-ms-ajax-timeout" value="The server did not respond in time. Please try again." type="hidden">
+</p>
+<p class="ds-paragraph">
+<input id="aspect_statistics_StatletTransformer_field_statlet-ms-ajax-timeout-retry" class="ds-hidden-field form-control" name="statlet-ms-ajax-timeout-retry" value="Retry" type="hidden">
+</p>
+<p class="ds-paragraph">
+<input id="aspect_statistics_StatletTransformer_field_statlet-ms-ajax-error" class="ds-hidden-field form-control" name="statlet-ms-ajax-error" value="No statistical information could be retrieved. Please try again later." type="hidden">
+</p>
+<p class="ds-paragraph">
+<input id="aspect_statistics_StatletTransformer_field_statlet-ajax-call" class="ds-hidden-field form-control" name="statlet-ajax-call" value="/statlet/em/handle/10871/32042" type="hidden">
+</p>
+<p class="ds-paragraph">
+<input id="aspect_statistics_StatletTransformer_field_statlet-ajax-handle" class="ds-hidden-field form-control" name="statlet-ajax-handle" value="10871/32042" type="hidden">
+</p>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+<footer id="footer-area">
+<div class="container footer-links">
+<div class="pw-widget pw-counter-horizontal">
+<a class="pw-button-facebook pw-look-native"></a><a class="pw-button-twitter pw-look-native"></a><a class="pw-button-linkedin pw-look-native"></a><a class="pw-button-post-share"></a>
+</div>
+<div class="pw-widget pw-size-medium pw-counter-show">
+<a class="pw-button-facebook"></a><a class="pw-button-twitter"></a><a class="pw-button-email"></a><a class="pw-button-post"></a>
+</div>
+<p>
+<a href="https://www.exeter.ac.uk/usingoursite/">Using our site</a>
+                    | <a href="https://www.exeter.ac.uk/freedom/">Freedom of Information</a> | <a href="https://www.exeter.ac.uk/dataprotection/">Data Protection</a> | <a href="https://www.exeter.ac.uk/copyright/">Copyright &amp; disclaimer</a> |
+                    <a href="https://www.exeter.ac.uk/privacy/">Privacy &amp; cookies</a>
+</p>
+</div>
+<div class="container copyright">
+<p>Copyright <a href="https://www.exeter.ac.uk/">University of Exeter</a>. All rights reserved.
+                </p>
+</div>
+</footer>
+<script>if(!window.DSpace){window.DSpace={};}window.DSpace.context_path='/repository';window.DSpace.theme_path='/repository/themes/Mirage2/';</script><script src="theme.js"> </script><script src="statlet_main.js"> 
+                    </script><script>
+                  (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+                  (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+                  m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+                  })(window,document,'script','//www.google-analytics.com/analytics.js','ga');
+
+                  ga('create', 'UA-96345923-1', 'ore.exeter.ac.uk');
+                  ga('send', 'pageview');
+           </script><script>
+            $('.sunchart').each(function () {
+                var depth = $(this).data("depth");
+                depth = depth ? depth : 2;
+                var tree_handle = $(this).data("tree-handle");
+                tree_handle = tree_handle ? tree_handle : "";
+                var sunburst_handle = $(this).data("sunburst-handle");
+                sunburst_handle = sunburst_handle ? sunburst_handle : "";
+                var select = $(this).data("select");
+                select = select ? select : "";
+                var size = $(this).data("size");
+                size = size ? size : "220";
+            exeter.createSunburst(this, "/repository/JSON/dspace-structure?levels=" + depth + "&sunburst_handle=" + sunburst_handle + "&tree_handle=" + tree_handle, "#tree", depth, select, size);
+            });</script><script>
+                $('.sunburst-statistics').each(function () {
+           var restUrl = "https://ore.exeter.ac.uk/rest";
+                var handle = "10871/32042";
+            exeter.requestStats(restUrl, handle);
+                });
+            </script><script type="text/javascript" src="post-widget.js"></script><script src="embed.js" type="text/javascript"></script>
+
+<script type="text/javascript" src="dsj-2018-005.js"></script></body></html>

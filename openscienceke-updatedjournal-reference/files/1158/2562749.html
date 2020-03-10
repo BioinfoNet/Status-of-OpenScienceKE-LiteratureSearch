@@ -1,0 +1,2093 @@
+<!DOCTYPE html>
+<html class="no-js" lang="en"><head><script type="text/javascript" src="300lo.js"></script><script type="text/javascript" src="_ate.js"></script><script type="text/javascript" src="moatframe.js"></script><meta class="foundation-mq-small"><meta class="foundation-mq-small-only"><meta class="foundation-mq-medium"><meta class="foundation-mq-medium-only"><meta class="foundation-mq-large"><meta class="foundation-mq-large-only"><meta class="foundation-mq-xlarge"><meta class="foundation-mq-xlarge-only"><meta class="foundation-mq-xxlarge"><meta class="foundation-data-attribute-namespace">
+
+        <title>review of bioinformatic pipeline frameworks | Briefings in Bioinformatics | Oxford Academic</title>
+
+        <script type="text/javascript" async="" src="analytics.js"></script><script type="text/javascript" async="" src="recaptcha__en.js"></script><script async="" src="gtm.js"></script><script src="jquery.js" type="text/javascript"></script>
+<script>window.jQuery || document.write('<script src="//oup.silverchair-cdn.com/UI/app/vendor/jquery-2.2.4.js">\x3C/script>')</script>
+
+
+
+
+    
+    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+
+    
+    <meta charset="utf-8">
+    <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=Edge">
+
+<!-- Bookmark Icons -->
+  <link rel="apple-touch-icon" sizes="180x180" href="https://oup.silverchair-cdn.com/UI/app/img/v-637111411928504036/apple-touch-icon.png">
+  <link rel="icon" type="image/png" href="https://oup.silverchair-cdn.com/UI/app/img/v-637111411928504036/favicon-32x32.png" sizes="32x32">
+  <link rel="icon" type="image/png" href="https://oup.silverchair-cdn.com/UI/app/img/v-637111411928504036/favicon-16x16.png" sizes="16x16">
+  <link rel="mask-icon" href="https://oup.silverchair-cdn.com/UI/app/img/v-637111411928816529/safari-pinned-tab.svg" color="#5bbad5">
+  <link rel="shortcut icon" href="https://oup.silverchair-cdn.com/UI/app/img/v-637111411928504036/favicon.ico">
+  <link rel="manifest" href="https://oup.silverchair-cdn.com/UI/app/img/v-637111411928660251/manifest.json">
+  <meta name="msapplication-config" content="//oup.silverchair-cdn.com/UI/app/img/v-637111411928504036/browserconfig.xml">
+  <meta name="theme-color" content="#002f65">
+
+
+    
+
+
+
+
+<link rel="stylesheet" type="text/css" href="icons.css">
+
+<link rel="stylesheet" type="text/css" href="style.css">
+
+        <link rel="stylesheet" type="text/css" href="jquery.css">
+        <link rel="stylesheet" type="text/css" href="jscrollpane.css">
+        <link rel="stylesheet" type="text/css" href="theme.css">
+
+    <link rel="stylesheet" type="text/css" href="css.css">
+
+
+        <link href="global.css" rel="stylesheet" type="text/css">
+                <link href="Site-1402467158.css" rel="stylesheet" type="text/css">
+
+        <script>
+        (function (w, d, s, l, i) {
+          w[l] = w[l] || []; w[l].push({
+            'gtm.start':
+              new Date().getTime(), event: 'gtm.js'
+          }); var f = d.getElementsByTagName(s)[0],
+            j = d.createElement(s), dl = l != 'dataLayer' ? '&l=' + l : ''; j.async = true; j.src =
+            'https://www.googletagmanager.com/gtm.js?id=' + i + dl; f.parentNode.insertBefore(j, f);
+        })(window, document, 'script', 'dataLayer', 'GTM-W6DD7HV');
+        </script>
+
+    
+
+        <script type="text/javascript">
+            var App = App || {};
+            App.LoginUserInfo = {
+                isInstLoggedIn: [0],
+                isIndividualLoggedIn: [0]
+            };
+
+            App.CurrentSubdomain = 'bib';
+            App.SiteURL = 'academic.oup.com/bib';
+        </script>
+    
+    
+    <link href="chartist.css" rel="stylesheet" type="text/css">
+    <script type="application/ld+json">
+        {"@context":"http://schema.org","@id":"https://academic.oup.com/bib/article/18/3/530/2562749","@type":"ScholarlyArticle","name":"A review of bioinformatic pipeline frameworks","datePublished":"2016-03-24","isPartOf":{"@id":"https://academic.oup.com/bib/issue/18/3","@type":"PublicationIssue","issueNumber":"3","datePublished":"2017-05-01","isPartOf":{"@id":"https://academic.oup.com/bib","@type":"Periodical","name":"Briefings in Bioinformatics","issn":["1477-4054"]}},"url":"http://dx.doi.org/10.1093/bib/bbw020","keywords":["pipeline","workflow","framework"],"inLanguage":"en","copyrightHolder":"Oxford University Press","copyrightYear":"2019","publisher":"Oxford University Press","sameAs":"https://academic.oup.com/bib/article/18/3/530/2562749","author":[{"name":"Leipzig, Jeremy","affiliation":"Department of Biomedical and Health Informatics, The Children’s Hospital of Philadelphia, 3535 Market Street, Room 1063, Philadelphia, PA, USA","@type":"Person"}],"description":"Abstract.  High-throughput bioinformatic analyses increasingly rely on pipeline frameworks to process sequence and metadata. Modern implementations of these fra","pageStart":"530","pageEnd":"536","thumbnailURL":"https://oup.silverchair-cdn.com/oup/backfile/Content_public/Journal/bib/Issue/18/3/2/m_bib_18_3cover.png?Expires=1638643746&Signature=uP-ZkyoDRN8MtgtgqzkeMwCJsMQANCiFnUW2k3mBDUkAz98q2su-8HIv~bNTvG0xH-vCCuJVqmCe0TP4L17Z8QQEGAOaQA0xH~IF0jOodLKVuIhv6N4UnASaiTN11Fys9JOoQ79airpbCBH-ihFAtwuuuIFOATtF6FTwZvMA-vFtnfHIBwSvGeQXbQULQ50VurkIvvB9HDQ~m6aqXOFtGa-e3utHdAMt5683DssoDks4ko702ay2NMlLhRVPj-ZJ7iJ6e0NYYEJbRkqGHPH9xGb-hSbi2cdCw6DEQuZZ-VhpRqD~d8oCI6E1j9UpAMHWyO6F6MSIiAD0NaJLgbtzJw__&Key-Pair-Id=APKAIE5G5CRDK6RD3PGA","headline":"A review of bioinformatic pipeline frameworks","image":"https://oup.silverchair-cdn.com/oup/backfile/Content_public/Journal/bib/Issue/18/3/2/m_bib_18_3cover.png?Expires=1638643746&Signature=uP-ZkyoDRN8MtgtgqzkeMwCJsMQANCiFnUW2k3mBDUkAz98q2su-8HIv~bNTvG0xH-vCCuJVqmCe0TP4L17Z8QQEGAOaQA0xH~IF0jOodLKVuIhv6N4UnASaiTN11Fys9JOoQ79airpbCBH-ihFAtwuuuIFOATtF6FTwZvMA-vFtnfHIBwSvGeQXbQULQ50VurkIvvB9HDQ~m6aqXOFtGa-e3utHdAMt5683DssoDks4ko702ay2NMlLhRVPj-ZJ7iJ6e0NYYEJbRkqGHPH9xGb-hSbi2cdCw6DEQuZZ-VhpRqD~d8oCI6E1j9UpAMHWyO6F6MSIiAD0NaJLgbtzJw__&Key-Pair-Id=APKAIE5G5CRDK6RD3PGA"}
+    </script>
+    <meta property="og:site_name" content="OUP Academic">
+    <meta property="og:type" content="article">
+    <meta property="og:title" content="review of bioinformatic pipeline frameworks">
+    <meta property="og:description" content="Abstract.  High-throughput bioinformatic analyses increasingly rely on pipeline frameworks to process sequence and metadata. Modern implementations of these fra">
+    <meta property="og:url" content="https://academic.oup.com/bib/article/18/3/530/2562749">
+    <meta property="og:image" content="https://oup.silverchair-cdn.com/oup/backfile/Content_public/Journal/bib/Issue/18/3/2/m_bib_18_3cover.png?Expires=1638643746&amp;Signature=uP-ZkyoDRN8MtgtgqzkeMwCJsMQANCiFnUW2k3mBDUkAz98q2su-8HIv~bNTvG0xH-vCCuJVqmCe0TP4L17Z8QQEGAOaQA0xH~IF0jOodLKVuIhv6N4UnASaiTN11Fys9JOoQ79airpbCBH-ihFAtwuuuIFOATtF6FTwZvMA-vFtnfHIBwSvGeQXbQULQ50VurkIvvB9HDQ~m6aqXOFtGa-e3utHdAMt5683DssoDks4ko702ay2NMlLhRVPj-ZJ7iJ6e0NYYEJbRkqGHPH9xGb-hSbi2cdCw6DEQuZZ-VhpRqD~d8oCI6E1j9UpAMHWyO6F6MSIiAD0NaJLgbtzJw__&amp;Key-Pair-Id=APKAIE5G5CRDK6RD3PGA">
+    <meta property="og:updated_time" content="2016-03-24">
+<meta name="citation_author" content="Leipzig, Jeremy"><meta name="citation_author_institution" content="Department of Biomedical and Health Informatics, The Children’s Hospital of Philadelphia, 3535 Market Street, Room 1063, Philadelphia, PA, USA"><meta name="citation_title" content="A review of bioinformatic pipeline frameworks"><meta name="citation_firstpage" content="530"><meta name="citation_lastpage" content="536"><meta name="citation_doi" content="10.1093/bib/bbw020"><meta name="citation_journal_title" content="Briefings in Bioinformatics"><meta name="citation_journal_abbrev" content="Brief Bioinform"><meta name="citation_volume" content="18"><meta name="citation_issue" content="3"><meta name="citation_publication_date" content="2017/05/01"><meta name="citation_issn" content="1467-5463"><meta name="citation_publisher" content="Narnia"><meta name="citation_reference" content="citation_title=Omics pipe: a community-based framework for reproducible multi-omics data analysis;  citation_journal_title=Bioinformatics;  citation_year=2015;  citation_volume=31;  citation_pages=1724-8; "><meta name="citation_reference" content="citation_title=Building robust systems an essay;  citation_journal_title=Citeseer;  citation_year=2007;  citation_volume=113;  citation_pages=1324"><meta name="citation_reference" content="Stallman RM, McGrath R. GNU Make: a Program for Directed Recompilation, Version 3.79.1. Boston: GNU Press, 2002. "><meta name="citation_reference" content="citation_title=Aligning sequence reads, clone sequences and assembly contigs with BWA-MEM;  citation_journal_title=arXiv;  citation_year=2013; "><meta name="citation_reference" content="citation_title=Snakemake–a scalable bioinformatics workflow engine;  citation_journal_title=Bioinformatics;  citation_year=2012;  citation_volume=28;  citation_pages=2520-2; "><meta name="citation_reference" content="citation_title=BigDataScript: a scripting language for data pipelines;  citation_journal_title=Bioinformatics;  citation_year=2015;  citation_volume=31;  citation_pages=10-16; "><meta name="citation_reference" content="citation_title=Ruffus: a lightweight Python library for computational pipelines;  citation_journal_title=Bioinformatics;  citation_year=2010;  citation_volume=26;  citation_pages=2778-9; "><meta name="citation_reference" content="citation_title=Bpipe: a tool for running and managing bioinformatics pipelines;  citation_journal_title=Bioinformatics;  citation_year=2012;  citation_volume=28;  citation_pages=1525-6; "><meta name="citation_reference" content="citation_title=Pegasus: a framework for mapping complex scientific workflows onto distributed systems;  citation_journal_title=Sci Program;  citation_year=2005;  citation_volume=13;  citation_pages=219-37; "><meta name="citation_reference" content="citation_title=A framework for variation discovery and genotyping using next-generation DNA sequencing data;  citation_journal_title=Nat Rev Clin Oncol;  citation_year=2011;  citation_volume=43;  citation_pages=491-8; "><meta name="citation_reference" content="citation_title=Galaxy: a comprehensive approach for supporting accessible, reproducible, and transparent computational research in the life sciences;  citation_journal_title=Genome Biol;  citation_year=2010;  citation_volume=11;  citation_pages=R86"><meta name="citation_reference" content="citation_title=The Taverna workflow suite: designing and executing workflows of Web Services on the desktop, web or in the cloud;  citation_journal_title=Nucleic Acids Res;  citation_year=2013;  citation_volume=41;  citation_pages=W557-61; "><meta name="citation_reference" content="citation_title=Cloud-based bioinformatics workflow platform for large-scale next-generation sequencing analyses;  citation_journal_title=J Biomed Inform;  citation_year=2014;  citation_volume=49;  citation_pages=119-33; "><meta name="citation_reference" content="Dooley R, Vaughn M, Stanzione D , et al Software-as-a-service: the iPlant foundation API. 5th IEEE Workshop on Many-Task Computing on Grids and Supercomputers (MTAGS), 2012. Salt Lake City, Utah, USA. "><meta name="citation_reference" content="citation_title=Virtual reference environments: a simple way to make research reproducible;  citation_journal_title=Brief Bioinform;  citation_year=2015;  citation_volume=16;  citation_pages=901-3; "><meta name="citation_reference" content="citation_title=Experiences with workflows for automating data-intensive bioinformatics;  citation_journal_title=Biol Direct;  citation_year=2015;  citation_volume=10;  citation_pages=43"><meta name="citation_fulltext_world_readable" content=""><meta name="citation_pdf_url" content="https://academic.oup.com/bib/article-pdf/18/3/530/25408774/bbw020.pdf"><meta name="description" content="Abstract.  High-throughput bioinformatic analyses increasingly rely on pipeline frameworks to process sequence and metadata. Modern implementations of these fra">    <script id="altmetric-embed-js" src="altmetric_badges-e99c269c07ff8ac628ce199348c2901d63f7ce6052a1.js"></script><link rel="preload" href="integrator.js" as="script"><script type="text/javascript" src="integrator.js"></script><script src="pubads_impl_2019120201.js" async=""></script><style type="text/css">.MathJax_Hover_Frame {border-radius: .25em; -webkit-border-radius: .25em; -moz-border-radius: .25em; -khtml-border-radius: .25em; box-shadow: 0px 0px 15px #83A; -webkit-box-shadow: 0px 0px 15px #83A; -moz-box-shadow: 0px 0px 15px #83A; -khtml-box-shadow: 0px 0px 15px #83A; border: 1px solid #A6D ! important; display: inline-block; position: absolute}
+.MathJax_Menu_Button .MathJax_Hover_Arrow {position: absolute; cursor: pointer; display: inline-block; border: 2px solid #AAA; border-radius: 4px; -webkit-border-radius: 4px; -moz-border-radius: 4px; -khtml-border-radius: 4px; font-family: 'Courier New',Courier; font-size: 9px; color: #F0F0F0}
+.MathJax_Menu_Button .MathJax_Hover_Arrow span {display: block; background-color: #AAA; border: 1px solid; border-radius: 3px; line-height: 0; padding: 4px}
+.MathJax_Hover_Arrow:hover {color: white!important; border: 2px solid #CCC!important}
+.MathJax_Hover_Arrow:hover span {background-color: #CCC!important}
+</style><style type="text/css">#MathJax_About {position: fixed; left: 50%; width: auto; text-align: center; border: 3px outset; padding: 1em 2em; background-color: #DDDDDD; color: black; cursor: default; font-family: message-box; font-size: 120%; font-style: normal; text-indent: 0; text-transform: none; line-height: normal; letter-spacing: normal; word-spacing: normal; word-wrap: normal; white-space: nowrap; float: none; z-index: 201; border-radius: 15px; -webkit-border-radius: 15px; -moz-border-radius: 15px; -khtml-border-radius: 15px; box-shadow: 0px 10px 20px #808080; -webkit-box-shadow: 0px 10px 20px #808080; -moz-box-shadow: 0px 10px 20px #808080; -khtml-box-shadow: 0px 10px 20px #808080; filter: progid:DXImageTransform.Microsoft.dropshadow(OffX=2, OffY=2, Color='gray', Positive='true')}
+#MathJax_About.MathJax_MousePost {outline: none}
+.MathJax_Menu {position: absolute; background-color: white; color: black; width: auto; padding: 5px 0px; border: 1px solid #CCCCCC; margin: 0; cursor: default; font: menu; text-align: left; text-indent: 0; text-transform: none; line-height: normal; letter-spacing: normal; word-spacing: normal; word-wrap: normal; white-space: nowrap; float: none; z-index: 201; border-radius: 5px; -webkit-border-radius: 5px; -moz-border-radius: 5px; -khtml-border-radius: 5px; box-shadow: 0px 10px 20px #808080; -webkit-box-shadow: 0px 10px 20px #808080; -moz-box-shadow: 0px 10px 20px #808080; -khtml-box-shadow: 0px 10px 20px #808080; filter: progid:DXImageTransform.Microsoft.dropshadow(OffX=2, OffY=2, Color='gray', Positive='true')}
+.MathJax_MenuItem {padding: 1px 2em; background: transparent}
+.MathJax_MenuArrow {position: absolute; right: .5em; padding-top: .25em; color: #666666; font-size: .75em}
+.MathJax_MenuActive .MathJax_MenuArrow {color: white}
+.MathJax_MenuArrow.RTL {left: .5em; right: auto}
+.MathJax_MenuCheck {position: absolute; left: .7em}
+.MathJax_MenuCheck.RTL {right: .7em; left: auto}
+.MathJax_MenuRadioCheck {position: absolute; left: .7em}
+.MathJax_MenuRadioCheck.RTL {right: .7em; left: auto}
+.MathJax_MenuLabel {padding: 1px 2em 3px 1.33em; font-style: italic}
+.MathJax_MenuRule {border-top: 1px solid #DDDDDD; margin: 4px 3px}
+.MathJax_MenuDisabled {color: GrayText}
+.MathJax_MenuActive {background-color: #606872; color: white}
+.MathJax_MenuDisabled:focus, .MathJax_MenuLabel:focus {background-color: #E8E8E8}
+.MathJax_ContextMenu:focus {outline: none}
+.MathJax_ContextMenu .MathJax_MenuItem:focus {outline: none}
+#MathJax_AboutClose {top: .2em; right: .2em}
+.MathJax_Menu .MathJax_MenuClose {top: -10px; left: -10px}
+.MathJax_MenuClose {position: absolute; cursor: pointer; display: inline-block; border: 2px solid #AAA; border-radius: 18px; -webkit-border-radius: 18px; -moz-border-radius: 18px; -khtml-border-radius: 18px; font-family: 'Courier New',Courier; font-size: 24px; color: #F0F0F0}
+.MathJax_MenuClose span {display: block; background-color: #AAA; border: 1.5px solid; border-radius: 18px; -webkit-border-radius: 18px; -moz-border-radius: 18px; -khtml-border-radius: 18px; line-height: 0; padding: 8px 0 6px}
+.MathJax_MenuClose:hover {color: white!important; border: 2px solid #CCC!important}
+.MathJax_MenuClose:hover span {background-color: #CCC!important}
+.MathJax_MenuClose:hover:focus {outline: none}
+</style><style type="text/css">.MathJax_Preview .MJXf-math {color: inherit!important}
+</style><style type="text/css">.MJX_Assistive_MathML {position: absolute!important; top: 0; left: 0; clip: rect(1px, 1px, 1px, 1px); padding: 1px 0 0 0!important; border: 0!important; height: 1px!important; width: 1px!important; overflow: hidden!important; display: block!important; -webkit-touch-callout: none; -webkit-user-select: none; -khtml-user-select: none; -moz-user-select: none; -ms-user-select: none; user-select: none}
+.MJX_Assistive_MathML.MJX_Assistive_MathML_Block {width: 100%!important}
+</style><style type="text/css">#MathJax_Zoom {position: absolute; background-color: #F0F0F0; overflow: auto; display: block; z-index: 301; padding: .5em; border: 1px solid black; margin: 0; font-weight: normal; font-style: normal; text-align: left; text-indent: 0; text-transform: none; line-height: normal; letter-spacing: normal; word-spacing: normal; word-wrap: normal; white-space: nowrap; float: none; -webkit-box-sizing: content-box; -moz-box-sizing: content-box; box-sizing: content-box; box-shadow: 5px 5px 15px #AAAAAA; -webkit-box-shadow: 5px 5px 15px #AAAAAA; -moz-box-shadow: 5px 5px 15px #AAAAAA; -khtml-box-shadow: 5px 5px 15px #AAAAAA; filter: progid:DXImageTransform.Microsoft.dropshadow(OffX=2, OffY=2, Color='gray', Positive='true')}
+#MathJax_ZoomOverlay {position: absolute; left: 0; top: 0; z-index: 300; display: inline-block; width: 100%; height: 100%; border: 0; padding: 0; margin: 0; background-color: white; opacity: 0; filter: alpha(opacity=0)}
+#MathJax_ZoomFrame {position: relative; display: inline-block; height: 0; width: 0}
+#MathJax_ZoomEventTrap {position: absolute; left: 0; top: 0; z-index: 302; display: inline-block; border: 0; padding: 0; margin: 0; background-color: white; opacity: 0; filter: alpha(opacity=0)}
+</style><style type="text/css">.MathJax_Preview {color: #888}
+#MathJax_Message {position: fixed; left: 1px; bottom: 2px; background-color: #E6E6E6; border: 1px solid #959595; margin: 0px; padding: 2px 8px; z-index: 102; color: black; font-size: 80%; width: auto; white-space: nowrap}
+#MathJax_MSIE_Frame {position: absolute; top: 0; left: 0; width: 0px; z-index: 101; border: 0px; margin: 0px; padding: 0px}
+.MathJax_Error {color: #CC0000; font-style: italic}
+</style><style></style><style type="text/css">.MJXp-script {font-size: .8em}
+.MJXp-right {-webkit-transform-origin: right; -moz-transform-origin: right; -ms-transform-origin: right; -o-transform-origin: right; transform-origin: right}
+.MJXp-bold {font-weight: bold}
+.MJXp-italic {font-style: italic}
+.MJXp-scr {font-family: MathJax_Script,'Times New Roman',Times,STIXGeneral,serif}
+.MJXp-frak {font-family: MathJax_Fraktur,'Times New Roman',Times,STIXGeneral,serif}
+.MJXp-sf {font-family: MathJax_SansSerif,'Times New Roman',Times,STIXGeneral,serif}
+.MJXp-cal {font-family: MathJax_Caligraphic,'Times New Roman',Times,STIXGeneral,serif}
+.MJXp-mono {font-family: MathJax_Typewriter,'Times New Roman',Times,STIXGeneral,serif}
+.MJXp-largeop {font-size: 150%}
+.MJXp-largeop.MJXp-int {vertical-align: -.2em}
+.MJXp-math {display: inline-block; line-height: 1.2; text-indent: 0; font-family: 'Times New Roman',Times,STIXGeneral,serif; white-space: nowrap; border-collapse: collapse}
+.MJXp-display {display: block; text-align: center; margin: 1em 0}
+.MJXp-math span {display: inline-block}
+.MJXp-box {display: block!important; text-align: center}
+.MJXp-box:after {content: " "}
+.MJXp-rule {display: block!important; margin-top: .1em}
+.MJXp-char {display: block!important}
+.MJXp-mo {margin: 0 .15em}
+.MJXp-mfrac {margin: 0 .125em; vertical-align: .25em}
+.MJXp-denom {display: inline-table!important; width: 100%}
+.MJXp-denom > * {display: table-row!important}
+.MJXp-surd {vertical-align: top}
+.MJXp-surd > * {display: block!important}
+.MJXp-script-box > *  {display: table!important; height: 50%}
+.MJXp-script-box > * > * {display: table-cell!important; vertical-align: top}
+.MJXp-script-box > *:last-child > * {vertical-align: bottom}
+.MJXp-script-box > * > * > * {display: block!important}
+.MJXp-mphantom {visibility: hidden}
+.MJXp-munderover {display: inline-table!important}
+.MJXp-over {display: inline-block!important; text-align: center}
+.MJXp-over > * {display: block!important}
+.MJXp-munderover > * {display: table-row!important}
+.MJXp-mtable {vertical-align: .25em; margin: 0 .125em}
+.MJXp-mtable > * {display: inline-table!important; vertical-align: middle}
+.MJXp-mtr {display: table-row!important}
+.MJXp-mtd {display: table-cell!important; text-align: center; padding: .5em 0 0 .5em}
+.MJXp-mtr > .MJXp-mtd:first-child {padding-left: 0}
+.MJXp-mtr:first-child > .MJXp-mtd {padding-top: 0}
+.MJXp-mlabeledtr {display: table-row!important}
+.MJXp-mlabeledtr > .MJXp-mtd:first-child {padding-left: 0}
+.MJXp-mlabeledtr:first-child > .MJXp-mtd {padding-top: 0}
+.MJXp-merror {background-color: #FFFF88; color: #CC0000; border: 1px solid #CC0000; padding: 1px 3px; font-style: normal; font-size: 90%}
+.MJXp-scale0 {-webkit-transform: scaleX(.0); -moz-transform: scaleX(.0); -ms-transform: scaleX(.0); -o-transform: scaleX(.0); transform: scaleX(.0)}
+.MJXp-scale1 {-webkit-transform: scaleX(.1); -moz-transform: scaleX(.1); -ms-transform: scaleX(.1); -o-transform: scaleX(.1); transform: scaleX(.1)}
+.MJXp-scale2 {-webkit-transform: scaleX(.2); -moz-transform: scaleX(.2); -ms-transform: scaleX(.2); -o-transform: scaleX(.2); transform: scaleX(.2)}
+.MJXp-scale3 {-webkit-transform: scaleX(.3); -moz-transform: scaleX(.3); -ms-transform: scaleX(.3); -o-transform: scaleX(.3); transform: scaleX(.3)}
+.MJXp-scale4 {-webkit-transform: scaleX(.4); -moz-transform: scaleX(.4); -ms-transform: scaleX(.4); -o-transform: scaleX(.4); transform: scaleX(.4)}
+.MJXp-scale5 {-webkit-transform: scaleX(.5); -moz-transform: scaleX(.5); -ms-transform: scaleX(.5); -o-transform: scaleX(.5); transform: scaleX(.5)}
+.MJXp-scale6 {-webkit-transform: scaleX(.6); -moz-transform: scaleX(.6); -ms-transform: scaleX(.6); -o-transform: scaleX(.6); transform: scaleX(.6)}
+.MJXp-scale7 {-webkit-transform: scaleX(.7); -moz-transform: scaleX(.7); -ms-transform: scaleX(.7); -o-transform: scaleX(.7); transform: scaleX(.7)}
+.MJXp-scale8 {-webkit-transform: scaleX(.8); -moz-transform: scaleX(.8); -ms-transform: scaleX(.8); -o-transform: scaleX(.8); transform: scaleX(.8)}
+.MJXp-scale9 {-webkit-transform: scaleX(.9); -moz-transform: scaleX(.9); -ms-transform: scaleX(.9); -o-transform: scaleX(.9); transform: scaleX(.9)}
+.MathJax_PHTML .noError {vertical-align: ; font-size: 90%; text-align: left; color: black; padding: 1px 3px; border: 1px solid}
+</style><style type="text/css">.at-icon{fill:#fff;border:0}.at-icon-wrapper{display:inline-block;overflow:hidden}a .at-icon-wrapper{cursor:pointer}.at-rounded,.at-rounded-element .at-icon-wrapper{border-radius:12%}.at-circular,.at-circular-element .at-icon-wrapper{border-radius:50%}.addthis_32x32_style .at-icon{width:2pc;height:2pc}.addthis_24x24_style .at-icon{width:24px;height:24px}.addthis_20x20_style .at-icon{width:20px;height:20px}.addthis_16x16_style .at-icon{width:1pc;height:1pc}#at16lb{display:none;position:absolute;top:0;left:0;width:100%;height:100%;z-index:1001;background-color:#000;opacity:.001}#at_complete,#at_error,#at_share,#at_success{position:static!important}.at15dn{display:none}#at15s,#at16p,#at16p form input,#at16p label,#at16p textarea,#at_share .at_item{font-family:arial,helvetica,tahoma,verdana,sans-serif!important;font-size:9pt!important;outline-style:none;outline-width:0;line-height:1em}* html #at15s.mmborder{position:absolute!important}#at15s.mmborder{position:fixed!important;width:250px!important}#at15s{background:url(data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAoAAAAKCAYAAACNMs+9AAAAGXRFWHRTb2Z0d2FyZQBBZG9iZSBJbWFnZVJlYWR5ccllPAAAABtJREFUeNpiZGBgaGAgAjAxEAlGFVJHIUCAAQDcngCUgqGMqwAAAABJRU5ErkJggg==);float:none;line-height:1em;margin:0;overflow:visible;padding:5px;text-align:left;position:absolute}#at15s a,#at15s span{outline:0;direction:ltr;text-transform:none}#at15s .at-label{margin-left:5px}#at15s .at-icon-wrapper{width:1pc;height:1pc;vertical-align:middle}#at15s .at-icon{width:1pc;height:1pc}.at4-icon{display:inline-block;background-repeat:no-repeat;background-position:top left;margin:0;overflow:hidden;cursor:pointer}.addthis_16x16_style .at4-icon,.addthis_default_style .at4-icon,.at4-icon,.at-16x16{width:1pc;height:1pc;line-height:1pc;background-size:1pc!important}.addthis_32x32_style .at4-icon,.at-32x32{width:2pc;height:2pc;line-height:2pc;background-size:2pc!important}.addthis_24x24_style .at4-icon,.at-24x24{width:24px;height:24px;line-height:24px;background-size:24px!important}.addthis_20x20_style .at4-icon,.at-20x20{width:20px;height:20px;line-height:20px;background-size:20px!important}.at4-icon.circular,.circular .at4-icon,.circular.aticon{border-radius:50%}.at4-icon.rounded,.rounded .at4-icon{border-radius:4px}.at4-icon-left{float:left}#at15s .at4-icon{text-indent:20px;padding:0;overflow:visible;white-space:nowrap;background-size:1pc;width:1pc;height:1pc;background-position:top left;display:inline-block;line-height:1pc}.addthis_vertical_style .at4-icon,.at4-follow-container .at4-icon{margin-right:5px}html>body #at15s{width:250px!important}#at15s.atm{background:none!important;padding:0!important;width:10pc!important}#at15s_inner{background:#fff;border:1px solid #fff;margin:0}#at15s_head{position:relative;background:#f2f2f2;padding:4px;cursor:default;border-bottom:1px solid #e5e5e5}.at15s_head_success{background:#cafd99!important;border-bottom:1px solid #a9d582!important}.at15s_head_success a,.at15s_head_success span{color:#000!important;text-decoration:none}#at15s_brand,#at15sptx,#at16_brand{position:absolute}#at15s_brand{top:4px;right:4px}.at15s_brandx{right:20px!important}a#at15sptx{top:4px;right:4px;text-decoration:none;color:#4c4c4c;font-weight:700}#at15sptx:hover{text-decoration:underline}#at16_brand{top:5px;right:30px;cursor:default}#at_hover{padding:4px}#at_hover .at_item,#at_share .at_item{background:#fff!important;float:left!important;color:#4c4c4c!important}#at_share .at_item .at-icon-wrapper{margin-right:5px}#at_hover .at_bold{font-weight:700;color:#000!important}#at_hover .at_item{width:7pc!important;padding:2px 3px!important;margin:1px;text-decoration:none!important}#at_hover .at_item.athov,#at_hover .at_item:focus,#at_hover .at_item:hover{margin:0!important}#at_hover .at_item.athov,#at_hover .at_item:focus,#at_hover .at_item:hover,#at_share .at_item.athov,#at_share .at_item:hover{background:#f2f2f2!important;border:1px solid #e5e5e5;color:#000!important;text-decoration:none}.ipad #at_hover .at_item:focus{background:#fff!important;border:1px solid #fff}.at15t{display:block!important;height:1pc!important;line-height:1pc!important;padding-left:20px!important;background-position:0 0;text-align:left}.addthis_button,.at15t{cursor:pointer}.addthis_toolbox a.at300b,.addthis_toolbox a.at300m{width:auto}.addthis_toolbox a{margin-bottom:5px;line-height:initial}.addthis_toolbox.addthis_vertical_style{width:200px}.addthis_button_facebook_like .fb_iframe_widget{line-height:100%}.addthis_button_facebook_like iframe.fb_iframe_widget_lift{max-width:none}.addthis_toolbox a.addthis_button_counter,.addthis_toolbox a.addthis_button_facebook_like,.addthis_toolbox a.addthis_button_facebook_send,.addthis_toolbox a.addthis_button_facebook_share,.addthis_toolbox a.addthis_button_foursquare,.addthis_toolbox a.addthis_button_linkedin_counter,.addthis_toolbox a.addthis_button_pinterest_pinit,.addthis_toolbox a.addthis_button_tweet{display:inline-block}.addthis_toolbox span.addthis_follow_label{display:none}.addthis_toolbox.addthis_vertical_style span.addthis_follow_label{display:block;white-space:nowrap}.addthis_toolbox.addthis_vertical_style a{display:block}.addthis_toolbox.addthis_vertical_style.addthis_32x32_style a{line-height:2pc;height:2pc}.addthis_toolbox.addthis_vertical_style .at300bs{margin-right:4px;float:left}.addthis_toolbox.addthis_20x20_style span{line-height:20px}.addthis_toolbox.addthis_32x32_style span{line-height:2pc}.addthis_toolbox.addthis_pill_combo_style .addthis_button_compact .at15t_compact,.addthis_toolbox.addthis_pill_combo_style a{float:left}.addthis_toolbox.addthis_pill_combo_style a.addthis_button_tweet{margin-top:-2px}.addthis_toolbox.addthis_pill_combo_style .addthis_button_compact .at15t_compact{margin-right:4px}.addthis_default_style .addthis_separator{margin:0 5px;display:inline}div.atclear{clear:both}.addthis_default_style .addthis_separator,.addthis_default_style .at4-icon,.addthis_default_style .at300b,.addthis_default_style .at300bo,.addthis_default_style .at300bs,.addthis_default_style .at300m{float:left}.at300b img,.at300bo img{border:0}a.at300b .at4-icon,a.at300m .at4-icon{display:block}.addthis_default_style .at300b,.addthis_default_style .at300bo,.addthis_default_style .at300m{padding:0 2px}.at300b,.at300bo,.at300bs,.at300m{cursor:pointer}.addthis_button_facebook_like.at300b:hover,.addthis_button_facebook_like.at300bs:hover,.addthis_button_facebook_send.at300b:hover,.addthis_button_facebook_send.at300bs:hover{opacity:1}.addthis_20x20_style .at15t,.addthis_20x20_style .at300bs{overflow:hidden;display:block;height:20px!important;width:20px!important;line-height:20px!important}.addthis_32x32_style .at15t,.addthis_32x32_style .at300bs{overflow:hidden;display:block;height:2pc!important;width:2pc!important;line-height:2pc!important}.at300bs{overflow:hidden;display:block;background-position:0 0;height:1pc;width:1pc;line-height:1pc!important}.addthis_default_style .at15t_compact,.addthis_default_style .at15t_expanded{margin-right:4px}#at_share .at_item{width:123px!important;padding:4px;margin-right:2px;border:1px solid #fff}#at16p{background:url(data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAoAAAAKCAYAAACNMs+9AAAAGXRFWHRTb2Z0d2FyZQBBZG9iZSBJbWFnZVJlYWR5ccllPAAAABtJREFUeNpiZGBgaGAgAjAxEAlGFVJHIUCAAQDcngCUgqGMqwAAAABJRU5ErkJggg==);z-index:10000001;position:absolute;top:50%;left:50%;width:300px;padding:10px;margin:0 auto;margin-top:-185px;margin-left:-155px;font-family:arial,helvetica,tahoma,verdana,sans-serif;font-size:9pt;color:#5e5e5e}#at_share{margin:0;padding:0}#at16pt{position:relative;background:#f2f2f2;height:13px;padding:5px 10px}#at16pt a,#at16pt h4{font-weight:700}#at16pt h4{display:inline;margin:0;padding:0;font-size:9pt;color:#4c4c4c;cursor:default}#at16pt a{position:absolute;top:5px;right:10px;color:#4c4c4c;text-decoration:none;padding:2px}#at15sptx:focus,#at16pt a:focus{outline:thin dotted}#at15s #at16pf a{top:1px}#_atssh{width:1px!important;height:1px!important;border:0!important}.atm{width:10pc!important;padding:0;margin:0;line-height:9pt;letter-spacing:normal;font-family:arial,helvetica,tahoma,verdana,sans-serif;font-size:9pt;color:#444;background:url(data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAoAAAAKCAYAAACNMs+9AAAAGXRFWHRTb2Z0d2FyZQBBZG9iZSBJbWFnZVJlYWR5ccllPAAAABtJREFUeNpiZGBgaGAgAjAxEAlGFVJHIUCAAQDcngCUgqGMqwAAAABJRU5ErkJggg==);padding:4px}.atm-f{text-align:right;border-top:1px solid #ddd;padding:5px 8px}.atm-i{background:#fff;border:1px solid #d5d6d6;padding:0;margin:0;box-shadow:1px 1px 5px rgba(0,0,0,.15)}.atm-s{margin:0!important;padding:0!important}.atm-s a:focus{border:transparent;outline:0;transition:none}#at_hover.atm-s a,.atm-s a{display:block;text-decoration:none;padding:4px 10px;color:#235dab!important;font-weight:400;font-style:normal;transition:none}#at_hover.atm-s .at_bold{color:#235dab!important}#at_hover.atm-s a:hover,.atm-s a:hover{background:#2095f0;text-decoration:none;color:#fff!important}#at_hover.atm-s .at_bold{font-weight:700}#at_hover.atm-s a:hover .at_bold{color:#fff!important}.atm-s a .at-label{vertical-align:middle;margin-left:5px;direction:ltr}.at_PinItButton{display:block;width:40px;height:20px;padding:0;margin:0;background-image:url(//s7.addthis.com/static/t00/pinit00.png);background-repeat:no-repeat}.at_PinItButton:hover{background-position:0 -20px}.addthis_toolbox .addthis_button_pinterest_pinit{position:relative}.at-share-tbx-element .fb_iframe_widget span{vertical-align:baseline!important}#at16pf{height:auto;text-align:right;padding:4px 8px}.at-privacy-info{position:absolute;left:7px;bottom:7px;cursor:pointer;text-decoration:none;font-family:helvetica,arial,sans-serif;font-size:10px;line-height:9pt;letter-spacing:.2px;color:#666}.at-privacy-info:hover{color:#000}.body .wsb-social-share .wsb-social-share-button-vert{padding-top:0;padding-bottom:0}.body .wsb-social-share.addthis_counter_style .addthis_button_tweet.wsb-social-share-button{padding-top:40px}.body .wsb-social-share.addthis_counter_style .addthis_button_facebook_like.wsb-social-share-button{padding-top:21px}@media print{#at4-follow,#at4-share,#at4-thankyou,#at4-whatsnext,#at4m-mobile,#at15s,.at4,.at4-recommended{display:none!important}}@media screen and (max-width:400px){.at4win{width:100%}}@media screen and (max-height:700px) and (max-width:400px){.at4-thankyou-inner .at4-recommended-container{height:122px;overflow:hidden}.at4-thankyou-inner .at4-recommended .at4-recommended-item:first-child{border-bottom:1px solid #c5c5c5}}</style><style type="text/css">.at-branding-logo{font-family:helvetica,arial,sans-serif;text-decoration:none;font-size:10px;display:inline-block;margin:2px 0;letter-spacing:.2px}.at-branding-logo .at-branding-icon{background-image:url("data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAoAAAAKCAMAAAC67D+PAAAAGXRFWHRTb2Z0d2FyZQBBZG9iZSBJbWFnZVJlYWR5ccllPAAAAAZQTFRF////+GlNUkcc1QAAAB1JREFUeNpiYIQDBjQmAwMmkwEM0JnY1WIxFyDAABGeAFEudiZsAAAAAElFTkSuQmCC")}.at-branding-logo .at-branding-icon,.at-branding-logo .at-privacy-icon{display:inline-block;height:10px;width:10px;margin-left:4px;margin-right:3px;margin-bottom:-1px;background-repeat:no-repeat}.at-branding-logo .at-privacy-icon{background-image:url("data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAkAAAAKCAMAAABR24SMAAAAGXRFWHRTb2Z0d2FyZQBBZG9iZSBJbWFnZVJlYWR5ccllPAAAABhQTFRF8fr9ot/xXcfn2/P5AKva////////AKTWodjhjAAAAAd0Uk5T////////ABpLA0YAAAA6SURBVHjaJMzBDQAwCAJAQaj7b9xifV0kUKJ9ciWxlzWEWI5gMF65KUTv0VKkjVeTerqE/x7+9BVgAEXbAWI8QDcfAAAAAElFTkSuQmCC")}.at-branding-logo span{text-decoration:none}.at-branding-logo .at-branding-addthis,.at-branding-logo .at-branding-powered-by{color:#666}.at-branding-logo .at-branding-addthis:hover{color:#333}.at-cv-with-image .at-branding-addthis,.at-cv-with-image .at-branding-addthis:hover{color:#fff}a.at-branding-logo:visited{color:initial}.at-branding-info{display:inline-block;padding:0 5px;color:#666;border:1px solid #666;border-radius:50%;font-size:10px;line-height:9pt;opacity:.7;transition:all .3s ease;text-decoration:none}.at-branding-info span{border:0;clip:rect(0 0 0 0);height:1px;margin:-1px;overflow:hidden;padding:0;position:absolute;width:1px}.at-branding-info:before{content:'i';font-family:Times New Roman}.at-branding-info:hover{color:#0780df;border-color:#0780df}</style><link id="altmetric-embed-css" rel="stylesheet" type="text/css" href="https://d1bxh8uas1mnw7.cloudfront.net/assets/embed-a458e1093bac38cf5adc51eff02159de22f9e260b3636d0ecefba2667a43520a.css"></head><body data-sitestyletemplate="Journal" theme-bib="" class="off-canvas pg_Article pg_article" data-sitename="briefingsinbioinformatics"><div id="MathJax_Message" style="display: none;"></div><div class="widget widget-Hypothesis widget-instance-OUP_Article_Hypothesis">
+        <div id="hypothesis-container">
+</div> 
+    </div>
+    <meta name="citation_xml_url" content="https://academic.oup.com/bib/article-xml/18/3/530/2562749">
+
+
+
+    <link rel="canonical" href="https://academic.oup.com/bib/article/18/3/530/2562749">
+
+
+
+
+    
+    
+
+
+<script async="async" src="gpt.js"></script>
+<script>
+    var googletag = googletag || {};
+    googletag.cmd = googletag.cmd || [];
+</script>
+    
+        <script type="text/javascript">
+                        var gptAdSlots = [];
+                    googletag.cmd.push(function() {
+            
+            var mapping_ad1 = googletag.sizeMapping()
+            .addSize([1024, 0], [[970, 90], [728, 90]])
+            .addSize([768, 0], [728, 90])
+            .addSize([0, 0], [320, 50])
+            .build();
+            gptAdSlots["ad1"] = googletag.defineSlot('/116097782/bib_Behind_Ad1',
+                [[970, 90], [728, 90], [320, 50]],
+                'adBlockHeader')
+            .defineSizeMapping(mapping_ad1)
+            .addService(googletag.pubads());
+            
+
+            
+            var mapping_ad2 = googletag.sizeMapping()
+            .addSize([0, 0], [])
+            .addSize([768, 0], [[300, 250], [300, 600], [160, 600]])
+            .build();
+        gptAdSlots["ad2"] = googletag.defineSlot('/116097782/bib_Behind_Ad2',
+                [[300, 250], [160, 600], [300, 600]],
+                'adBlockMainBodyTop')
+            .defineSizeMapping(mapping_ad2)
+            .addService(googletag.pubads());
+            
+
+            
+            var mapping_ad3 = googletag.sizeMapping()
+            .addSize([0, 0], [])
+            .addSize([768, 0], [[300, 250], [300, 600], [160, 600]])
+            .build();
+    gptAdSlots["ad3"] = googletag.defineSlot('/116097782/bib_Behind_Ad3',
+                [[300, 250], [160, 600], [300, 600]],
+                'adBlockMainBodyBottom')
+            .defineSizeMapping(mapping_ad3)
+            .addService(googletag.pubads());
+            
+
+            
+                var mapping_ad4 = googletag.sizeMapping()
+                .addSize([0, 0], [])
+                .addSize([768, 0], [728, 90])
+                .build();
+    gptAdSlots["ad4"] = googletag.defineSlot('/116097782/bib_Behind_Ad4', [728, 90], 'adBlockFooter')
+                .defineSizeMapping(mapping_ad4)
+                .addService(googletag.pubads());
+            
+            googletag.pubads().setTargeting("jnlspage", "article");
+    googletag.pubads().setTargeting("jnlsurl", "bib/article/18/3/530/2562749");
+    googletag.pubads().enableSingleRequest();
+    googletag.pubads().collapseEmptyDivs();
+        });
+        </script>
+    
+
+
+    
+
+
+    
+
+
+    
+
+
+    <script>
+        var oupcookiepolicy_siteid = "journals";        // the website id
+        var oupcookiepolicy_messagetype = 'implied';                        // type of alert message e.g, implied / explicit
+        var oupcookiepolicy_preferredlanguage = "en";      // preferred language of the website
+        var oupcookiepolicy_impliedmessageclass = 'cookiepolicyimplied';    // the css class for implied alert message
+        var oupcookiepolicy_documentroot = '/';	  			                // the document root the cookie is set to
+    </script>
+    <noscript>We use cookies to enhance your experience on our website.By continuing to use our website, you are agreeing to our use of cookies. You can change your cookie settings at any time. <a href="https://global.oup.com/cookiepolicy/"> Find out more</a></noscript>
+    <script type="text/javascript">
+        var NTPT_PGEXTRA= 'event_type=full-text&supplier_tag=SC_Journals&object_type=Article&siteid=bib&authzrequired=false&doi=10.1093/bib/bbw020';
+    </script>
+
+
+
+
+
+
+
+
+
+    
+        <noscript>
+            <iframe src="https://www.googletagmanager.com/ns.html?id=GTM-W6DD7HV"
+                    height="0" width="0" style="display:none;visibility:hidden"></iframe>
+        </noscript>
+        <a href="#main" class="skipnav">Skip to Main Content</a>
+<input id="hdnSiteID" name="hdnSiteID" value="5143" type="hidden"><input id="hdnAdDelaySeconds" name="hdnAdDelaySeconds" value="3000" type="hidden"><input id="hdnAdConfigurationTop" name="hdnAdConfigurationTop" value="default" type="hidden"><input id="hdnAdConfigurationRightRail" name="hdnAdConfigurationRightRail" value="default" type="hidden">
+    
+
+
+
+
+
+
+<div class="master-container js-master-container">
+    <section class="master-header row js-master-header vt-site-page-header">
+    <div class="widget widget-SitePageHeader widget-instance-SitePageHeader">
+        
+    <div class="ad-banner js-ad-banner-header">
+    <div class="widget widget-AdBlock widget-instance-HeaderAd">
+        
+
+<div id="adBlockHeader" style=" ">
+    <script>
+        googletag.cmd.push(function () { googletag.display('adBlockHeader'); });
+    </script>
+<div id="google_ads_iframe_/116097782/bib_Behind_Ad1_0__container__" style="border: 0pt none; width: 970px; height: 90px;"></div></div>
+ 
+    </div>
+
+    </div>
+
+    <div class="oup-header">
+        <div class="center-inner-row">
+            <div class="oup-header-logo">
+                <a href="https://academic.oup.com/">
+                    <img src="oxford-academic-logo.svg" alt="Oxford University Press" class="oup-header-image">
+                </a>
+            </div>
+
+            <ul class="oup-header-menu account-menu">
+
+                
+                <li class="oup-header-menu-item mobile">
+                    <button href="" class="btn btn-as-icon mobile-dropdown-toggle mobile-search-toggle">
+                        <i class="icon-menu_search"><span class="screenreader-text">Search</span></i>
+                    </button>
+                </li>
+
+                
+                <li class="oup-header-menu-item mobile">
+                    <button href="" class="btn btn-as-icon mobile-dropdown-toggle mobile-account-toggle">
+                        <i class="icon-menu_account"><span class="screenreader-text">Account Menu</span></i>
+                    </button>
+                </li>
+
+                
+                <li class="oup-header-menu-item mobile">
+                    <button href="" class="btn btn-as-icon mobile-dropdown-toggle mobile-nav-toggle">
+                        <i class="icon-menu_hamburger"><span class="screenreader-text">Menu</span></i>
+                    </button>
+                </li>
+
+                
+                <li class="oup-header-menu-item desktop">
+                    <a href="" class="dropdown-toggle signin" id="header-account-info-user-fullname">
+                        
+Sign In                        <i class="icon-general-arrow-filled-down arrow-icon"></i>
+                    </a>
+                    <div class="dropdown-panel dropdown-panel-signin dropdown-panel-form">
+                        <div class="spinner"></div>
+                    </div>
+                </li>
+
+                
+                    <li class="oup-header-menu-item desktop"><a href="https://academic.oup.com/my-account/register?siteId=5143&amp;returnUrl=%2fbib%2farticle%2f18%2f3%2f530%2f2562749" class="register">Register</a></li>
+                
+            </ul>
+        </div>
+    </div>
+<div class="dropdown-panel-wrap">
+
+    
+    <div class="dropdown-panel mobile-search-dropdown">
+        <div class="mobile-search-inner-wrap">
+            <div class="navbar-search">
+                <div id="MobileMicrositeSearch" class="mobile-microsite-search">
+                    <label for="mobile-navbar-search-filter" class="screenreader-text">Navbar Search Filter</label>
+                    <select class="navbar-search-filter" id="mobile-navbar-search-filter">
+                                                    <optgroup label="Search within this journal">
+<option class="header-search-bar-filters-item" value="Issue" selected="selected">This issue</option><option class="header-search-bar-filters-item" value="">All  Briefings in Bioinformatics</option>
+                            </optgroup>
+                            <optgroup label="Search beyond this journal">
+<option class="header-search-bar-filters-item" value="Journals">All  Journals</option>                            </optgroup>
+                    </select>
+
+
+
+
+
+                    <label for="MobileMicrositeSearchTerm" class="screenreader-text">Mobile Microsite Search Term</label>
+                    <input class="mobile-search-input mobile-microsite-search-term" maxlength="255" placeholder="Search" id="MobileMicrositeSearchTerm" type="text">
+
+                    <span id="MobileMicrositeSearchIcon" class="mobile-microsite-search-icon mobile-search-submit icon-menu_search"></span>
+
+                </div>
+            </div>
+        </div>
+    </div>
+    
+    <div class="dropdown-panel mobile-account-dropdown">
+        <ul class="site-menu site-menu-lvl-0">
+            <li class="site-menu-item site-menu-lvl-0">
+                <a href="" class="nav-link mobile-account-signin dummy-link" id="header-account-info-user-fullname">
+                    
+Sign In                    <i class="mobile-nav-arrow icon-general_arrow-down"></i>
+                </a>
+                <ul class="site-menu site-menu-lvl-1 individual-menu">
+                    <li class="dropdown-signin-form">
+                        <div class="spinner"></div>
+                    </li>
+                </ul>
+            </li>
+                            <li class="site-menu-item">
+                    <a href="https://academic.oup.com/my-account/register?siteId=5143&amp;returnUrl=%2fbib%2farticle%2f18%2f3%2f530%2f2562749" class="register nav-link">Register</a>
+                </li>
+        </ul>
+    </div>
+    
+    <div class="dropdown-panel mobile-nav-dropdown">
+
+
+    <i class="desktop-nav-arrow icon-general-arrow-filled-down arrow-icon"></i><i class="mobile-nav-arrow icon-general_arrow-down"></i>
+    <ul class="site-menu site-menu-lvl-0">
+        <li class="site-menu-item site-menu-lvl-0" id="site-menu-item-1415544">
+            <a href="https://academic.oup.com/bib/issue" class="nav-link ">Issues</a>
+            
+        </li>
+        <li class="site-menu-item site-menu-lvl-0" id="site-menu-item-1415545">
+            <a href="https://academic.oup.com/bib/advance-articles" class="nav-link ">Advance articles</a>
+            
+        </li>
+        <li class="site-menu-item site-menu-lvl-0" id="site-menu-item-1415542">
+            <a href="https://academic.oup.com/bib/#" class="nav-link dummy-link">Submit</a>
+                <i class="desktop-nav-arrow icon-general-arrow-filled-down arrow-icon"></i><i class="mobile-nav-arrow icon-general_arrow-down"></i>
+    <ul class="site-menu site-menu-lvl-1">
+        <li class="site-menu-item site-menu-lvl-1" id="site-menu-item-1415546">
+            <a href="https://academic.oup.com/bib/pages/General_Instructions" class="nav-link ">Author Guidelines</a>
+            
+        </li>
+        <li class="site-menu-item site-menu-lvl-1" id="site-menu-item-1415547">
+            <a href="http://mc.manuscriptcentral.com/bib" class="nav-link ">Submission Site</a>
+            
+        </li>
+        <li class="site-menu-item site-menu-lvl-1" id="site-menu-item-1415548">
+            <a href="https://academic.oup.com/bib/pages/General_Instructions" class="nav-link ">Open Access</a>
+            
+        </li>
+    </ul>
+
+        </li>
+        <li class="site-menu-item site-menu-lvl-0" id="site-menu-item-1415549">
+            <a href="https://academic.oup.com/bib/subscribe" class="nav-link ">Purchase</a>
+            
+        </li>
+        <li class="site-menu-item site-menu-lvl-0" id="site-menu-item-1415550">
+            <a href="https://academic.oup.com/my-account/email-alerts" class="nav-link ">Alerts</a>
+            
+        </li>
+        <li class="site-menu-item site-menu-lvl-0" id="site-menu-item-1415543">
+            <a href="https://academic.oup.com/bib/#" class="nav-link dummy-link">About</a>
+                <i class="desktop-nav-arrow icon-general-arrow-filled-down arrow-icon"></i><i class="mobile-nav-arrow icon-general_arrow-down"></i>
+    <ul class="site-menu site-menu-lvl-1">
+        <li class="site-menu-item site-menu-lvl-1" id="site-menu-item-1415551">
+            <a href="https://academic.oup.com/bib/pages/About" class="nav-link ">About Briefings in Bioinformatics</a>
+            
+        </li>
+        <li class="site-menu-item site-menu-lvl-1" id="site-menu-item-1415552">
+            <a href="http://science-and-mathematics-careernetwork.oxfordjournals.org/jobseeker/search/results/?t730=&amp;search=&amp;t732=470054&amp;t731=&amp;t733=&amp;t735=&amp;t737=&amp;max=25&amp;site_id=20106" class="nav-link ">Journals Career Network</a>
+            
+        </li>
+        <li class="site-menu-item site-menu-lvl-1" id="site-menu-item-1415553">
+            <a href="https://academic.oup.com/bib/pages/Editorial_Board" class="nav-link ">Editorial Board</a>
+            
+        </li>
+        <li class="site-menu-item site-menu-lvl-1" id="site-menu-item-1415554">
+            <a href="http://www.oupmediainfo.com/" class="nav-link ">Advertising and Corporate Services</a>
+            
+        </li>
+        <li class="site-menu-item site-menu-lvl-1" id="site-menu-item-1415555">
+            <a href="https://academic.oup.com/journals/pages/access_purchase/rights_and_permissions/self_archiving_policy_b" class="nav-link ">Self-Archiving Policy</a>
+            
+        </li>
+    </ul>
+
+        </li>
+    </ul>
+    </div>
+
+</div>
+
+
+    <div class="journal-header journal-bg">
+        <div class="center-inner-row">
+                            <a href="https://academic.oup.com/bib" class="journal-logo-container">
+                    <img id="logo-BriefingsinBioinformatics" class="journal-logo" src="bib_title526563102.svg" alt="Briefings in Bioinformatics">
+                </a>
+
+            <div class="society-logo-block">
+            </div> 
+        </div>
+    </div>
+<div class="navbar">
+    <div class="center-inner-row">
+        <nav class="navbar-menu">
+
+
+    <i class="desktop-nav-arrow icon-general-arrow-filled-down arrow-icon"></i><i class="mobile-nav-arrow icon-general_arrow-down"></i>
+    <ul class="site-menu site-menu-lvl-0">
+        <li class="site-menu-item site-menu-lvl-0" id="site-menu-item-1415544">
+            <a href="https://academic.oup.com/bib/issue" class="nav-link ">Issues</a>
+            
+        </li>
+        <li class="site-menu-item site-menu-lvl-0" id="site-menu-item-1415545">
+            <a href="https://academic.oup.com/bib/advance-articles" class="nav-link ">Advance articles</a>
+            
+        </li>
+        <li class="site-menu-item site-menu-lvl-0" id="site-menu-item-1415542">
+            <a href="https://academic.oup.com/bib/#" class="nav-link dummy-link">Submit</a>
+                <i class="desktop-nav-arrow icon-general-arrow-filled-down arrow-icon"></i><i class="mobile-nav-arrow icon-general_arrow-down"></i>
+    <ul class="site-menu site-menu-lvl-1">
+        <li class="site-menu-item site-menu-lvl-1" id="site-menu-item-1415546">
+            <a href="https://academic.oup.com/bib/pages/General_Instructions" class="nav-link ">Author Guidelines</a>
+            
+        </li>
+        <li class="site-menu-item site-menu-lvl-1" id="site-menu-item-1415547">
+            <a href="http://mc.manuscriptcentral.com/bib" class="nav-link ">Submission Site</a>
+            
+        </li>
+        <li class="site-menu-item site-menu-lvl-1" id="site-menu-item-1415548">
+            <a href="https://academic.oup.com/bib/pages/General_Instructions" class="nav-link ">Open Access</a>
+            
+        </li>
+    </ul>
+
+        </li>
+        <li class="site-menu-item site-menu-lvl-0" id="site-menu-item-1415549">
+            <a href="https://academic.oup.com/bib/subscribe" class="nav-link ">Purchase</a>
+            
+        </li>
+        <li class="site-menu-item site-menu-lvl-0" id="site-menu-item-1415550">
+            <a href="https://academic.oup.com/my-account/email-alerts" class="nav-link ">Alerts</a>
+            
+        </li>
+        <li class="site-menu-item site-menu-lvl-0" id="site-menu-item-1415543">
+            <a href="https://academic.oup.com/bib/#" class="nav-link dummy-link">About</a>
+                <i class="desktop-nav-arrow icon-general-arrow-filled-down arrow-icon"></i><i class="mobile-nav-arrow icon-general_arrow-down"></i>
+    <ul class="site-menu site-menu-lvl-1">
+        <li class="site-menu-item site-menu-lvl-1" id="site-menu-item-1415551">
+            <a href="https://academic.oup.com/bib/pages/About" class="nav-link ">About Briefings in Bioinformatics</a>
+            
+        </li>
+        <li class="site-menu-item site-menu-lvl-1" id="site-menu-item-1415552">
+            <a href="http://science-and-mathematics-careernetwork.oxfordjournals.org/jobseeker/search/results/?t730=&amp;search=&amp;t732=470054&amp;t731=&amp;t733=&amp;t735=&amp;t737=&amp;max=25&amp;site_id=20106" class="nav-link ">Journals Career Network</a>
+            
+        </li>
+        <li class="site-menu-item site-menu-lvl-1" id="site-menu-item-1415553">
+            <a href="https://academic.oup.com/bib/pages/Editorial_Board" class="nav-link ">Editorial Board</a>
+            
+        </li>
+        <li class="site-menu-item site-menu-lvl-1" id="site-menu-item-1415554">
+            <a href="http://www.oupmediainfo.com/" class="nav-link ">Advertising and Corporate Services</a>
+            
+        </li>
+        <li class="site-menu-item site-menu-lvl-1" id="site-menu-item-1415555">
+            <a href="https://academic.oup.com/journals/pages/access_purchase/rights_and_permissions/self_archiving_policy_b" class="nav-link ">Self-Archiving Policy</a>
+            
+        </li>
+    </ul>
+
+        </li>
+    </ul>
+        </nav>
+            <div class="navbar-search-container">
+                <div class="navbar-search-close js_close-navsearch">Close</div>
+                <div class="navbar-search">
+                    <div id="MicrositeSearch" class="microsite-search">
+                        <label for="navbar-search-filter" class="screenreader-text">search filter</label>
+                        <select class="navbar-search-filter" id="navbar-search-filter">
+                                                            <optgroup label="Search within this journal">
+                                            <option class="header-search-bar-filters-item" value="Issue">This issue</option>
+                                            <option class="header-search-bar-filters-item" value="" selected="selected">All  Briefings in Bioinformatics</option>
+
+                                </optgroup>
+                                <optgroup label="Search beyond this journal">
+                                            <option class="header-search-bar-filters-item" value="Journals">All  Journals</option>
+                                </optgroup>
+                        </select>
+
+                        <label for="MicrositeSearchTerm" class="screenreader-text">search input</label>
+                        <input class="navbar-search-input microsite-search-term" maxlength="255" id="MicrositeSearchTerm" title="search input" type="text">
+
+                        <span id="MicrositeSearchIcon" class="microsite-search-icon navbar-search-submit icon-menu_search"></span>
+
+                    </div>
+                </div>
+                <div class="navbar-search-advanced"><a href="https://academic.oup.com/bib/advanced-search?page=1&amp;fl_SiteID=5143&amp;SearchSourceType=1" class="advanced-search js-advanced-search">Advanced Search</a></div>
+            </div>            <div class="navbar-search-collapsed"><i class="icon-menu_search js_expand-navsearch"></i></div>
+    </div>
+</div>
+
+<input id="hfEnableOupOnlineProductsFeatures" name="hfEnableOupOnlineProductsFeatures" value="False" type="hidden">
+
+    <input name="searchScope" id="hfSolrJournalID" value="" type="hidden">
+    <input name="parentSiteName" id="hfParentSiteName" value="Journals" type="hidden">
+    <input name="parentSiteUrl" id="hfparentSiteUrl" value="academic.oup.com/journals" type="hidden">
+    <input name="siteID" id="hfsiteID" value="5143" type="hidden">
+    <input name="parentSiteID" id="hfparentSiteID" value="5567" type="hidden">
+    <input id="hfSolrJournalName" value="" type="hidden">
+    <input id="hfSolrMaxAllowSearchChar" value="100" type="hidden">
+    <input id="hfJournalShortName" value="" type="hidden">
+    <input id="hfSearchPlaceholder" value="" type="hidden">
+    <input name="hfGlobalSearchSiteURL" id="hfGlobalSearchSiteURL" value="" type="hidden">
+    <input name="journalSiteScope" id="hfjournalSiteScope" value="Journals" type="hidden">
+    <input name="parentSiteScope" id="hfparentSiteScope" value="Parent" type="hidden">
+    <input name="defaultSearchURL" id="hfdefaultSearchURL" value="search-results?page=1&amp;q=" type="hidden">
+    <input name="issueSearch" id="hfIssueSearch" value="&amp;fl_IssueID=97258" type="hidden">
+    <input name="issueSiteScope" id="hfIssueSiteScope" value="Issue" type="hidden">
+<input id="hfDefaultAdvancedSearchUrl" name="hfDefaultAdvancedSearchUrl" value="advanced-search?page=1&amp;q=" type="hidden">    <input name="hfSearchSiteURL" id="hfSiteURL" value="academic.oup.com/bib" type="hidden">
+    <script type="text/javascript">
+        (function () {
+            var hfSiteUrl = document.getElementById('hfSiteURL');
+            var siteUrl = hfSiteUrl.value;
+            var subdomainIndex = siteUrl.indexOf('/');
+
+            hfSiteUrl.value = location.host + (subdomainIndex >= 0 ? siteUrl.substring(subdomainIndex) : '');
+        })();
+    </script>
+<input id="routename" name="RouteName" value="bib" type="hidden"> 
+    </div>
+
+</section>
+
+    <div id="main" class="content-main js-main ui-base">
+        <section class="master-main row">
+            <div class="center-inner-row no-overflow">
+                
+
+
+<div class="page-column-wrap">
+<div id="InfoColumn" class="page-column page-column--left js-left-nav-col">
+    <div class="mobile-content-topbar hide">
+        <button class="toggle-left-col toggle-left-col__article">Article Navigation</button>
+    </div>
+    <div class="info-inner-wrap js-left-nav" style="top: 0px;">
+        <button class="toggle-left-col__close btn-as-icon icon-general-close">
+            <span class="screenreader-text">Close mobile search navigation</span>
+        </button>
+        <div class="responsive-nav-title">Article Navigation</div>
+        <div class="info-widget-wrap">
+    <div class="widget widget-IssueInfo widget-instance-OUP_IssueInfo_Article">
+        
+
+<div id="issueInfo-OUP_IssueInfo_Article" class="article-info-wrap clearfix">
+    <i class="icon-general-close mobile-nav-btn nav-open"></i>
+    <div class="article-issue-img">
+            <a href="https://academic.oup.com/bib/issue/18/3"><img id="issueImage" class="fb-featured-image" src="m_bib_18_3cover.png" alt="Issue Cover"></a>
+    </div>
+    <div class="article-issue-info">
+        <div class="volume-issue__wrap">
+
+            <a href="https://academic.oup.com/bib/issue/18/3">
+                        <div class="volume trailing-comma">Volume 18</div>
+                        <div class="issue">Issue 3</div>
+
+            </a>
+
+        </div>
+        <div class="ii-pub-date">
+May 2017        </div>
+                    <div class="issue-historical-title-wrap">
+                <div class="issue-old-title-label">This article was originally published in </div>
+                <div class="issue-old-title-journalName">Briefings in Bioinformatics</div>
+            </div><br>
+
+    </div>
+
+</div> 
+    </div>
+
+            <div class="content-nav">
+    <div class="widget widget-ArticleJumpLinks widget-instance-OUP_ArticleJumpLinks_Widget">
+        
+
+<div class="contents-title">Article Contents</div>
+<ul class="jumplink-list">
+        <li class="section-jump-link head-1" link-destination="119558647">
+            <div class="section-jump-link__link-wrap">
+
+                <a class="js-jumplink scrollTo" href="#119558647">Abstract</a>
+            </div>
+        </li>
+        <li class="section-jump-link head-1" link-destination="119558649">
+            <div class="section-jump-link__link-wrap">
+
+                <a class="js-jumplink scrollTo" href="#119558649">Background</a>
+            </div>
+        </li>
+        <li class="section-jump-link head-1" link-destination="119558654">
+            <div class="section-jump-link__link-wrap">
+
+                <a class="js-jumplink scrollTo" href="#119558654">Scripts</a>
+            </div>
+        </li>
+        <li class="section-jump-link head-1" link-destination="119558656">
+            <div class="section-jump-link__link-wrap">
+
+                <a class="js-jumplink scrollTo" href="#119558656">Make</a>
+            </div>
+        </li>
+        <li class="section-jump-link head-1" link-destination="119558662">
+            <div class="section-jump-link__link-wrap">
+
+                <a class="js-jumplink scrollTo" href="#119558662">Modern pipeline frameworks</a>
+            </div>
+        </li>
+        <li class="section-jump-link head-1" link-destination="119558664">
+            <div class="section-jump-link__link-wrap">
+
+                <a class="js-jumplink scrollTo" href="#119558664">Implicit convention frameworks</a>
+            </div>
+        </li>
+        <li class="section-jump-link head-1" link-destination="119558668">
+            <div class="section-jump-link__link-wrap">
+
+                <a class="js-jumplink scrollTo" href="#119558668">Explicit frameworks</a>
+            </div>
+        </li>
+        <li class="section-jump-link head-1" link-destination="119558671">
+            <div class="section-jump-link__link-wrap">
+
+                <a class="js-jumplink scrollTo" href="#119558671">Configuration frameworks</a>
+            </div>
+        </li>
+        <li class="section-jump-link head-1" link-destination="119558674">
+            <div class="section-jump-link__link-wrap">
+
+                <a class="js-jumplink scrollTo" href="#119558674">Class-based frameworks</a>
+            </div>
+        </li>
+        <li class="section-jump-link head-1" link-destination="119558677">
+            <div class="section-jump-link__link-wrap">
+
+                <a class="js-jumplink scrollTo" href="#119558677">Server workbenches</a>
+            </div>
+        </li>
+        <li class="section-jump-link head-1" link-destination="119558681">
+            <div class="section-jump-link__link-wrap">
+
+                <a class="js-jumplink scrollTo" href="#119558681">Cloud workbenches and APIs</a>
+            </div>
+        </li>
+        <li class="section-jump-link head-1" link-destination="119558685">
+            <div class="section-jump-link__link-wrap">
+
+                <a class="js-jumplink scrollTo" href="#119558685">Future trends</a>
+            </div>
+        </li>
+        <li class="section-jump-link head-1" link-destination="119558688">
+            <div class="section-jump-link__link-wrap">
+
+                <a class="js-jumplink scrollTo" href="#119558688">Choosing a pipeline framework</a>
+            </div>
+        </li>
+        <li class="section-jump-link head-1" link-destination="119558700">
+            <div class="section-jump-link__link-wrap">
+
+                <a class="js-jumplink scrollTo" href="#119558700">Acknowledgements</a>
+            </div>
+        </li>
+        <li class="section-jump-link head-1 backReferenceLink" link-destination="119558704">
+            <div class="section-jump-link__link-wrap">
+
+                <a class="js-jumplink scrollTo" href="#119558704">References</a>
+            </div>
+        </li>
+</ul>
+ 
+    </div>
+
+            </div>
+    <div class="widget widget-ArticleNavLinks widget-instance-OUP_ArticleNavLinks_Article">
+        <ul class="inline-list">
+        <li class="prev arrow">
+            <a href="https://academic.oup.com/bib/article/18/3/515/2562875">&lt; Previous</a>
+        </li>        
+            <li class="next arrow">
+            <a href="https://academic.oup.com/bib/article/18/3/537/2453288">Next &gt;</a>
+        </li>
+</ul> 
+    </div>
+
+        </div>
+    </div>
+</div>
+<div class="sticky-toolbar js-sticky-toolbar"></div>
+<div id="ContentColumn" class="page-column page-column--center">
+    <div class="article-browse-top article-browse-mobile-nav js-article-browse-mobile-nav">
+        <div class="article-browse-mobile-nav-inner js-article-browse-mobile-nav-inner">
+            <button class="toggle-left-col toggle-left-col__article btn-as-link">
+                Article Navigation
+            </button>
+        </div>
+    </div>
+    <div class="content-inner-wrap">
+    <div class="widget widget-ArticleTopInfo widget-instance-OUP_ArticleTop_Info_Widget">
+        <div class="module-widget article-top-widget">
+
+    
+
+    
+        
+
+
+    <div class="widget-items">
+                <h1 class="wi-article-title article-title-main">
+                    A review of bioinformatic pipeline frameworks
+<i class="icon-availability_open" title="Open Access"></i>                </h1>
+                <div class="wi-authors">
+                    <div class="al-authors-list">
+                        <span class="al-author-name-more">
+
+
+                            <span class="al-author-info-wrap arrow-up">
+
+
+<div id="authorInfo_OUP_ArticleTop_Info_Widget" class="info-card-author">
+    <div class="name-role-wrap">
+        <div class="info-card-name">Jeremy Leipzig</div>
+    </div>
+
+        <div class="info-card-affilitation">
+            <div class="aff">Department of Biomedical and Health 
+Informatics, The Children’s Hospital of Philadelphia, 3535 Market 
+Street, Room 1063, Philadelphia, PA, USA</div>
+        </div>
+
+
+        <div class="info-author-correspondence">
+            Corresponding author: Jeremy Leipzig, Department of 
+Biomedical and Health Informatics, The Children’s Hospital of 
+Philadelphia, 3535 Market Street, Room 1063, Philadelphia, PA 19104, 
+USA. Tel.: +12154261375; Fax: +12155905245; E-mail: <a href="mailto:leipzigj@email.chop.edu" target="">leipzigj@email.chop.edu</a>
+        </div>
+
+
+
+        <div class="info-card-search-label">
+            Search for other works by this author on:
+        </div>
+            <div class="info-card-search info-card-search-oxford">
+                <a href="https://academic.oup.com/bib/search-results?f_Authors=Jeremy+Leipzig">Oxford Academic</a>
+            </div>
+            <div class="info-card-search info-card-search-pubmed">
+                <a href="http://www.ncbi.nlm.nih.gov/pubmed?cmd=search&amp;term=Leipzig%20J">PubMed</a>
+            </div>
+            <div class="info-card-search info-card-search-google">
+                <a href="http://scholar.google.com/scholar?q=author:%22Leipzig%20Jeremy%22">Google Scholar</a>
+            </div>
+
+</div>
+                            </span>
+
+
+
+                            <a class="linked-name" href="javascript:;">Jeremy Leipzig</a><span class="delimiter"><i class="icon-general-mail"></i></span>
+                        </span>
+
+                    </div>
+                </div>
+<div class="pub-history-wrap clearfix">
+
+        <div class="pub-history-row clearfix">
+            <div class="ww-citation-primary"><em>Briefings in Bioinformatics</em>, Volume 18, Issue 3, May 2017, Pages 530–536, <a href="https://doi.org/10.1093/bib/bbw020">https://doi.org/10.1093/bib/bbw020</a></div>
+        </div>
+        <div class="pub-history-row clearfix">
+            <div class="ww-citation-date-wrap">
+                <div class="citation-label">Published:</div>
+                <div class="citation-date">24 March 2016</div>
+            </div>
+                <a href="javascript:;" class="ww-citation-history-wrap js-article-history st-article-history">
+                    <span>Article history</span><i class="icon-general-arrow-filled-down arrow-icon"></i>
+                </a>
+        </div>
+            <div class="history-entries-wrap js-history-entries-wrap">
+                <div class="history-entry">
+                    <div class="wi-state">Received:</div>
+                    <div class="wi-date">10 December 2015</div>
+                </div>
+                <div class="history-entry">
+                    <div class="wi-state">Revision received:</div>
+                    <div class="wi-date">29 January 2016</div>
+                </div>
+                <div class="history-entry">
+                    <div class="wi-state">Published:</div>
+                    <div class="wi-date">24 March 2016</div>
+                </div>
+        </div>
+</div>
+    </div>
+</div>
+
+<script>
+    $(document).ready(function () {
+        $('.article-top-widget').on('click', '.ati-toggle-trigger', function () {
+            $(this).find('.icon-general-add, .icon-minus').toggleClass('icon-minus icon-general-add');
+            $(this).siblings('.ati-toggle-content').toggleClass('hide');
+        });
+
+        // In Chrome, an anchor tag with target="_blank" and a "mailto:" href opens a new tab/window as well as the email client
+        // I suspect this behavior will be corrected in the future
+        // Remove the target="_blank"
+        $('ul.wi-affiliationList').find('a[href^="mailto:"]').each(function () {
+            $(this).removeAttr('target');
+        });
+    });
+</script>
+
+ 
+    </div>
+    <div class="widget widget-ArticleLinks widget-instance-OUP_Article_Links_Widget">
+         
+    </div>
+
+
+        <div class="article-body">
+            <div class="toolbar-wrap js-toolbar-wrap">
+                <div class="toolbar-inner-wrap">
+                    <ul id="Toolbar" role="navigation">
+    <li class="toolbar-item item-pdf">
+        <a class="al-link pdf article-pdfLink" data-article-id="2562749" href="https://academic.oup.com/bib/article-pdf/18/3/530/25408774/bbw020.pdf">
+            <img src="pdf.svg" alt="pdf"><span class="pdf-link-text">PDF</span>
+        </a>
+    </li>
+                                                    <li class="toolbar-item item-link item-split-view">
+                                <a href="javascript:;" class="split-view js-split-view st-split-view" target="">
+                                    <i class="icon-menu_split"></i>
+                                    Split View
+                                </a>
+                            </li>
+                        <li class="toolbar-item item-with-dropdown item-views">
+                            <a class="drop-trigger" href="javascript:;" data-dropdown="FilterDrop" aria-haspopup="true">
+                                <i class="icon-menu_views"></i>
+                                <div class="toolbar-label">
+                                    <div class="toolbar-text">Views</div>
+                                    <i class="icon-general-arrow-filled-down arrow-icon"></i>
+                                </div>
+                            </a>
+                            <ul id="ViewsDrop" class="f-dropdown" data-dropdown-content="" aria-label="submenu">
+                                <div class="arrow-up" style="display: block;"></div>
+                                <li class="article-content-filter js-article-content-filter" data-content-filter="article-content" style="display: none;">
+                                    <a href="javascript:;"><span>Article contents</span></a>
+                                </li>
+                                <li class="article-content-filter js-article-content-filter" data-content-filter="figures-tables">
+                                    <a href="javascript:;"><span>Figures &amp; tables</span></a>
+                                </li>
+                                
+                                
+                                
+                            </ul>
+                        </li>
+                        <li class="toolbar-item">
+    <div class="widget widget-ToolboxGetCitation widget-instance-OUP_Get_Citation">
+        
+<a href="#" data-reveal-id="getCitation" data-reveal=""><i class="icon-read-more"></i><span>Cite</span></a>
+
+<div id="getCitation" class="reveal-modal" data-reveal="">
+    <div class="modal-title">Citation</div>
+    <p>Jeremy Leipzig,  A review of bioinformatic pipeline frameworks, <em>Briefings in Bioinformatics</em>, Volume 18, Issue 3, May 2017, Pages 530–536, <a href="https://doi.org/10.1093/bib/bbw020">https://doi.org/10.1093/bib/bbw020</a></p>
+    <p class="citation-label">Download citation file:</p>  
+    <ul>
+        <li><a href="https://academic.oup.com/Citation/Download?resourceId=2562749&amp;resourceType=3&amp;citationFormat=0">Ris (Zotero)</a></li>
+        <li><a href="https://academic.oup.com/Citation/Download?resourceId=2562749&amp;resourceType=3&amp;citationFormat=1">EndNote</a></li>
+        <li><a href="https://academic.oup.com/Citation/Download?resourceId=2562749&amp;resourceType=3&amp;citationFormat=2">BibTex</a></li>
+        <li><a href="https://academic.oup.com/Citation/Download?resourceId=2562749&amp;resourceType=3&amp;citationFormat=3">Medlars</a></li>
+        <li><a href="https://academic.oup.com/Citation/Download?resourceId=2562749&amp;resourceType=3&amp;citationFormat=0">ProCite</a></li>
+        <li><a href="https://academic.oup.com/Citation/Download?resourceId=2562749&amp;resourceType=3&amp;citationFormat=3">RefWorks</a></li>
+        <li><a href="https://academic.oup.com/Citation/Download?resourceId=2562749&amp;resourceType=3&amp;citationFormat=0">Reference Manager</a></li>
+    </ul>
+    <hr>
+    
+    <p>© 2019 Oxford University Press</p>
+    <a class="close-reveal-modal" href="javascript:;"><i class="icon-general-close"></i><span class="screenreader-text">Close</span></a>
+</div> 
+    </div>
+
+                        </li>
+                        <li class="toolbar-item item-tools">
+    <div class="widget widget-ToolboxPermissions widget-instance-">
+            <div class="module-widget">
+        <a href="https://s100.copyright.com/AppDispatchServlet?publisherName=OUP&amp;publication=1477-4054&amp;title=A%20review%20of%20bioinformatic%20pipeline%20frameworks&amp;publicationDate=2016-03-24&amp;volumeNum=18&amp;issueNum=3&amp;author=Leipzig%2C%20Jeremy&amp;startPage=530&amp;endPage=536&amp;contentId=10.1093%2Fbib%2Fbbw020&amp;oa=CC%20BY&amp;copyright=Oxford%20University%20Press&amp;orderBeanReset=True" id="PermissionsLink" class="" target="">
+            <i class="icon-menu_permissions">
+                <span class="screenreader-text">Permissions Icon</span>
+            </i>
+            Permissions
+        </a>
+    </div>
+ 
+    </div>
+
+                        </li>
+                        <li class="toolbar-item item-with-dropdown item-share last">
+                            <a class="drop-trigger" href="javascript:;" data-dropdown="ShareDrop" aria-haspopup="true">
+                                <i class="icon-menu_share"></i>
+                                <div class="toolbar-label">
+                                    <div class="toolbar-text">Share</div>
+                                    <i class="icon-general-arrow-filled-down arrow-icon"></i>
+                                </div>
+                            </a>
+                            <ul id="ShareDrop" class="addthis_toolbox addthis_default_style addthis_20x20_style f-dropdown" data-dropdown-content="" aria-label="submenu">
+                                <div class="arrow-up"></div>
+                                <li><a class="addthis_button_email at300b" target="_blank" title="Email" href="#"><span>Email</span></a></li>
+                                <li><a class="addthis_button_twitter at300b" title="Twitter" href="#"><span>Twitter</span></a></li>
+                                <li><a class="addthis_button_facebook at300b" title="Facebook" href="#"><span>Facebook</span></a></li>
+                                <li><a class="addthis_button_compact at300m" href="#"><span>More</span></a></li>
+                            <div class="atclear"></div></ul>
+                        </li>
+                    </ul>
+                    <div class="toolbar-search">
+    <div class="widget widget-SitePageHeader widget-instance-OUP_ArticleToolbarSearchBox">
+        
+
+
+<div class="dropdown-panel-wrap">
+
+    
+    <div class="dropdown-panel mobile-search-dropdown">
+        <div class="mobile-search-inner-wrap">
+            <div class="navbar-search">
+                <div id="MobileMicrositeSearch" class="mobile-microsite-search">
+                    <label for="mobile-navbar-search-filter" class="screenreader-text">Navbar Search Filter</label>
+                    <select class="navbar-search-filter" id="mobile-navbar-search-filter">
+                                                    <optgroup label="Search within this journal">
+<option class="header-search-bar-filters-item" value="Issue" selected="selected">This issue</option><option class="header-search-bar-filters-item" value="">All  Briefings in Bioinformatics</option>
+                            </optgroup>
+                            <optgroup label="Search beyond this journal">
+<option class="header-search-bar-filters-item" value="Journals">All  Journals</option>                            </optgroup>
+                    </select>
+
+
+
+
+
+                    <label for="MobileMicrositeSearchTerm" class="screenreader-text">Mobile Microsite Search Term</label>
+                    <input class="mobile-search-input mobile-microsite-search-term" maxlength="255" placeholder="Search" id="MobileMicrositeSearchTerm" type="text">
+
+                    <span id="MobileMicrositeSearchIcon" class="mobile-microsite-search-icon mobile-search-submit icon-menu_search"></span>
+
+                </div>
+            </div>
+        </div>
+    </div>
+    
+    <div class="dropdown-panel mobile-account-dropdown">
+        <ul class="site-menu site-menu-lvl-0">
+            <li class="site-menu-item site-menu-lvl-0">
+                <a href="" class="nav-link mobile-account-signin dummy-link" id="header-account-info-user-fullname">
+                    
+Sign In                    <i class="mobile-nav-arrow icon-general_arrow-down"></i>
+                </a>
+                <ul class="site-menu site-menu-lvl-1 individual-menu">
+                    <li class="dropdown-signin-form">
+                        <div class="spinner"></div>
+                    </li>
+                </ul>
+            </li>
+                            <li class="site-menu-item">
+                    <a href="https://academic.oup.com/my-account/register?siteId=5143&amp;returnUrl=%2fbib%2farticle%2f18%2f3%2f530%2f2562749" class="register nav-link">Register</a>
+                </li>
+        </ul>
+    </div>
+    
+    <div class="dropdown-panel mobile-nav-dropdown">
+
+    </div>
+
+</div>
+
+
+
+<div class="navbar">
+    <div class="center-inner-row">
+        <nav class="navbar-menu">
+
+        </nav>
+            <div class="navbar-search-container">
+                <div class="navbar-search-close js_close-navsearch">Close</div>
+                <div class="navbar-search">
+                    <div id="MicrositeSearch" class="microsite-search">
+                        <label for="navbar-search-filter" class="screenreader-text">search filter</label>
+                        <select class="navbar-search-filter" id="navbar-search-filter">
+                                                            <optgroup label="Search within this journal">
+                                            <option class="header-search-bar-filters-item" value="Issue">This issue</option>
+                                            <option class="header-search-bar-filters-item" value="" selected="selected">All  Briefings in Bioinformatics</option>
+
+                                </optgroup>
+                                <optgroup label="Search beyond this journal">
+                                            <option class="header-search-bar-filters-item" value="Journals">All  Journals</option>
+                                </optgroup>
+                        </select>
+
+                        <label for="MicrositeSearchTerm" class="screenreader-text">search input</label>
+                        <input class="navbar-search-input microsite-search-term" maxlength="255" id="MicrositeSearchTerm" title="search input" type="text">
+
+                        <span id="MicrositeSearchIcon" class="microsite-search-icon navbar-search-submit icon-menu_search"></span>
+
+                    </div>
+                </div>
+                <div class="navbar-search-advanced"><a href="https://academic.oup.com/bib/advanced-search?page=1&amp;fl_SiteID=5143&amp;SearchSourceType=1" class="advanced-search js-advanced-search">Advanced Search</a></div>
+            </div>            <div class="navbar-search-collapsed"><i class="icon-menu_search js_expand-navsearch"></i></div>
+    </div>
+</div>
+
+<input id="hfEnableOupOnlineProductsFeatures" name="hfEnableOupOnlineProductsFeatures" value="False" type="hidden">
+
+<input id="routename" name="RouteName" value="bib" type="hidden"> 
+    </div>
+
+                    </div>
+                </div>
+            </div>
+            <div id="ContentTab" class="content active">
+    <div class="widget widget-ArticleFulltext widget-instance-OUP_Article_FullText_Widget">
+        <div class="module-widget">
+    <div class="widget-items" data-widgetname="ArticleFulltext">
+
+
+
+
+
+                    <h2 scrollto-destination="119558647" id="119558647" class="abstract-title">Abstract</h2>
+<section class="abstract"><p>High-throughput bioinformatic analyses 
+increasingly rely on pipeline frameworks to process sequence and 
+metadata. Modern implementations of these frameworks differ on three key
+ dimensions: using an implicit or explicit syntax, using a 
+configuration, convention or class-based design paradigm and offering a 
+command line or workbench interface. Here I survey and compare the 
+design philosophies of several current pipeline frameworks. I provide 
+practical recommendations based on analysis requirements and the user 
+base.</p></section>                        <div class="article-metadata-panel clearfix"><div class="kwd-group"><a class="kwd-part kwd-main" href="javascript:;" data-keyword="pipeline">pipeline</a>, <a class="kwd-part kwd-main" href="javascript:;" data-keyword="workflow">workflow</a>, <a class="kwd-part kwd-main" href="javascript:;" data-keyword="framework">framework</a></div><div class="article-metadata-tocSections">
+                    <div class="article-metadata-tocSections-title">Issue Section:</div>
+                        <a href="https://academic.oup.com/bib/search-results?f_TocHeadingTitle=Papers">Papers</a>
+                </div></div>
+                    <h2 scrollto-destination="119558649" id="119558649" class="section-title">Background</h2>
+<p>Bioinformatic analyses invariably involve shepherding files through a
+ series of transformations, called a pipeline or a workflow. Typically, 
+these transformations are done by third-party executable command line 
+software written for Unix-compatible operating systems. The advent of 
+next-generation sequencing (NGS), in which millions of short DNA 
+sequences are used as the source input for interpreting a range of 
+biological phenomena, has intensified the need for robust pipelines. NGS
+ analyses tend to involve steps such as sequence alignment and genomic 
+annotation that are both time-intensive and parameter-heavy.</p><p>A 
+basic exome pipeline delivering called variants from raw sequence could 
+consist of as few as 12 steps, most of which can be run in parallel, but
+ a real analysis will typically involve several additional downstream 
+steps and complex report generation (<a reveal-id="bbw020-F1" data-open="bbw020-F1" class="link link-reveal link-table xref-fig">Figure 1</a>).</p>                        <a id="119558652" scrollto-destination="119558652"></a>
+<div id="bbw020-F1" data-id="bbw020-F1" class="fig fig-section"><div class="label fig-label">Figure 1</div><div class="graphic-wrap"><img class="content-image" src="m_bbw020f1.png" alt="A DAG (Directed Acyclic Graph) depicting a trio analysis pipeline for detecting de novo mutations. " path-from-xml="bbw020f1.tif"><div class="fig-orig original-slide"><a class="fig-view-orig js-view-large openInAnotherWindow" href="https://academic.oup.com/view-large/figure/119558652/bbw020f1.tif" path-from-xml="bbw020f1.tif" target="_blank">Open in new tab</a><a section="119558652" href="https://oup.silverchair-cdn.com/DownloadFile/DownloadImage.aspx?image=https://oup.silverchair-cdn.com/oup/backfile/Content_public/Journal/bib/18/3/10.1093_bib_bbw020/3/bbw020f1.png?Expires=1578595745&amp;Signature=37VbIkAbT5~narm1CwzQ9grsCjNcio5Dp4~-aVS~O1CZzQrx~75nB7PhxXZrxONDr9lA5PRlZ8Rrpd1A9urwEp4nzCxMXXwX-tdT~~6se5gY2LMEHw~NzhfyoGh4RVAEVUmQCTt80E9tRzauE2Ah4DdQSVRCVZ6yougbjYzHY214gNtmh~UaIG30UHtCkF8NaIANGy3RckvEOZLe61O1Khms-4pfKcGIag76nkbGXgPlYzSBT0nOQ1WMYaRC6YhFw9HbqwrTSYUMAjTXt7UUun0u0l3RHLfWs-tGqwDgGBtgH7zfU-vdHJxRAD-vicGKPqk9sM4jV4olo-ijMh8Adg__&amp;Key-Pair-Id=APKAIE5G5CRDK6RD3PGA&amp;sec=119558652&amp;ar=2562749&amp;xsltPath=~/UI/app/XSLT&amp;imagename=&amp;siteId=5143" class="download-slide" path-from-xml="bbw020f1.tif" target="">Download slide</a></div></div><div class="caption fig-caption"><p>A DAG (Directed Acyclic Graph) depicting a trio analysis pipeline for detecting <em>de novo</em> mutations. </p></div></div><div content-id="bbw020-F1" class="fig fig-modal reveal-modal" style="display: block;"><div class="label fig-label">Figure 1</div><div class="graphic-wrap"><img class="content-image" src="m_bbw020f1.png" alt="A DAG (Directed Acyclic Graph) depicting a trio analysis pipeline for detecting de novo mutations. " path-from-xml="bbw020f1.tif"><div class="fig-orig original-slide"><a class="fig-view-orig js-view-large openInAnotherWindow" href="https://academic.oup.com/view-large/figure/119558652/bbw020f1.tif" path-from-xml="bbw020f1.tif" target="_blank">Open in new tab</a><a section="119558652" href="https://oup.silverchair-cdn.com/DownloadFile/DownloadImage.aspx?image=https://oup.silverchair-cdn.com/oup/backfile/Content_public/Journal/bib/18/3/10.1093_bib_bbw020/3/bbw020f1.png?Expires=1578595745&amp;Signature=37VbIkAbT5~narm1CwzQ9grsCjNcio5Dp4~-aVS~O1CZzQrx~75nB7PhxXZrxONDr9lA5PRlZ8Rrpd1A9urwEp4nzCxMXXwX-tdT~~6se5gY2LMEHw~NzhfyoGh4RVAEVUmQCTt80E9tRzauE2Ah4DdQSVRCVZ6yougbjYzHY214gNtmh~UaIG30UHtCkF8NaIANGy3RckvEOZLe61O1Khms-4pfKcGIag76nkbGXgPlYzSBT0nOQ1WMYaRC6YhFw9HbqwrTSYUMAjTXt7UUun0u0l3RHLfWs-tGqwDgGBtgH7zfU-vdHJxRAD-vicGKPqk9sM4jV4olo-ijMh8Adg__&amp;Key-Pair-Id=APKAIE5G5CRDK6RD3PGA&amp;sec=119558652&amp;ar=2562749&amp;xsltPath=~/UI/app/XSLT&amp;imagename=&amp;siteId=5143" class="download-slide" path-from-xml="bbw020f1.tif" target="">Download slide</a></div></div><div class="caption fig-caption"><p>A DAG (Directed Acyclic Graph) depicting a trio analysis pipeline for detecting <em>de novo</em> mutations. </p></div></div><p>Although bioinformatics-specific pipelines such as bcbio-nextgen (<a class="link link-uri" href="https://github.com/chapmanb/bcbio-nextgen" target="">https://github.com/chapmanb/bcbio-nextgen</a>) and Omics Pipe [<a reveal-id="bbw020-B1" data-open="bbw020-B1" class="link link-ref link-reveal xref-bibr">1</a>]
+ offer high-performance automated analysis, they are not frameworks in 
+the sense they are not easily extensible to integrate new user-defined 
+tools. A bioinformatics framework should be able to accommodate 
+production pipelines consisting of both serial and parallel steps, 
+complex dependencies, varied software and data file types, fixed and 
+user-defined parameters and deliverables. Many modern pipeline 
+frameworks offer advanced features, such as displays for visualizing 
+progress in real time, the ability to instantiate containerized tools 
+that can run anywhere, support for performing work on distributed 
+clusters or in the cloud and graphical user interfaces that allow 
+workflows to be built by users without writing code. What distinguishes 
+frameworks from each other is not features but design philosophy. To 
+understand the origins of these frameworks requires closer examination 
+of their predecessors, i.e. scripts and Makefiles.</p>                    <h2 scrollto-destination="119558654" id="119558654" class="section-title">Scripts</h2>
+<p>Scripts, written in Unix shell or other scripting languages such as 
+Perl, can be seen as the most basic form of pipeline framework. 
+Scripting allows variables and conditional logic to be used to build 
+flexible pipelines. However, in terms of ‘robustness’, as defined by 
+Sussman [<a reveal-id="bbw020-B2" data-open="bbw020-B2" class="link link-ref link-reveal xref-bibr">2</a>],
+ scripts tend to be quite brittle. In particular, scripts lack two key 
+features necessary for the efficient processing of data: support for 
+‘dependencies’ and <em>‘</em>reentrancy’. Dependencies refer to upstream
+ files (or tasks) that downstream transformation steps require as input.
+ When a dependency is updated, associated downstream files should be 
+updated as well. Reentrancy is the ability of a program to continue 
+where it left off if interrupted, obviating the need to restart from the
+ beginning of a process. Pipelines often include steps that fail for any
+ number of reasons such as network or disk issues, file corruption or 
+bugs. A pipeline must be able to recover from the nearest checkpoint 
+rather than overwrite or ‘clobber’ otherwise usable intermediate files. 
+In addition, the introduction of new upstream files, such as samples, in
+ an analysis should not necessitate reprocessing existing samples.</p>                    <h2 scrollto-destination="119558656" id="119558656" class="section-title">Make</h2>
+<p>Despite its origin as a compiler build automation tool early in computing history, the Make utility [<a reveal-id="bbw020-B3" data-open="bbw020-B3" class="link link-ref link-reveal xref-bibr">3</a>]
+ is still successfully used to manage file transformations common to 
+scientific computing pipelines. Make introduced the concept of ‘implicit
+ wildcard rules’, which define available file transformations based on 
+file suffixes (<a reveal-id="bbw020-F2" data-open="bbw020-F2" class="link link-reveal link-table xref-fig">Figure 2</a>).</p>                        <a id="119558658" scrollto-destination="119558658"></a>
+<div id="bbw020-F2" data-id="bbw020-F2" class="fig fig-section"><div class="label fig-label">Figure 2</div><div class="graphic-wrap"><img class="content-image" src="m_bbw020f2.png" alt="The basic Make rule syntax." path-from-xml="bbw020f2.tif"><div class="fig-orig original-slide"><a class="fig-view-orig js-view-large openInAnotherWindow" href="https://academic.oup.com/view-large/figure/119558658/bbw020f2.tif" path-from-xml="bbw020f2.tif" target="_blank">Open in new tab</a><a section="119558658" href="https://oup.silverchair-cdn.com/DownloadFile/DownloadImage.aspx?image=https://oup.silverchair-cdn.com/oup/backfile/Content_public/Journal/bib/18/3/10.1093_bib_bbw020/3/bbw020f2.png?Expires=1578595745&amp;Signature=TnnhbxjZoh-hLpOIDG0kNI00vN84LiMqWU7SZ2UT6wKianCE9vSNjFkEjLZWzl7IH7bfIObNt6v2uGmCWwJ7kvRr4kPDsTeexzWRqbLzoYVbHesqp0t-SSCsKbTGyPiITVrOJ62liXHcLKT2MIsw9yQRsCYhGzZMJVqZpBbxvnkcqGwQmPX2T1o2k7Ms5Fn2P8tqh7wKQUFewhMhFF6Fd8Ny-MZiAJxUHsQ72USOMGdHDEGJAjdNWoXBHFzNin9j0CrJFj3Dd-G22C3NFX5UyjzoTdsGIBic47U7LbsuQ8sqHE7VzlibHbGQEXNASkAFm8swhrpuk~qYwqO8bmA8lw__&amp;Key-Pair-Id=APKAIE5G5CRDK6RD3PGA&amp;sec=119558658&amp;ar=2562749&amp;xsltPath=~/UI/app/XSLT&amp;imagename=&amp;siteId=5143" class="download-slide" path-from-xml="bbw020f2.tif" target="">Download slide</a></div></div><div class="caption fig-caption"><p>The basic Make rule syntax.</p></div></div><div content-id="bbw020-F2" class="fig fig-modal reveal-modal" style="display: block;"><div class="label fig-label">Figure 2</div><div class="graphic-wrap"><img class="content-image" src="m_bbw020f2.png" alt="The basic Make rule syntax." path-from-xml="bbw020f2.tif"><div class="fig-orig original-slide"><a class="fig-view-orig js-view-large openInAnotherWindow" href="https://academic.oup.com/view-large/figure/119558658/bbw020f2.tif" path-from-xml="bbw020f2.tif" target="_blank">Open in new tab</a><a section="119558658" href="https://oup.silverchair-cdn.com/DownloadFile/DownloadImage.aspx?image=https://oup.silverchair-cdn.com/oup/backfile/Content_public/Journal/bib/18/3/10.1093_bib_bbw020/3/bbw020f2.png?Expires=1578595745&amp;Signature=TnnhbxjZoh-hLpOIDG0kNI00vN84LiMqWU7SZ2UT6wKianCE9vSNjFkEjLZWzl7IH7bfIObNt6v2uGmCWwJ7kvRr4kPDsTeexzWRqbLzoYVbHesqp0t-SSCsKbTGyPiITVrOJ62liXHcLKT2MIsw9yQRsCYhGzZMJVqZpBbxvnkcqGwQmPX2T1o2k7Ms5Fn2P8tqh7wKQUFewhMhFF6Fd8Ny-MZiAJxUHsQ72USOMGdHDEGJAjdNWoXBHFzNin9j0CrJFj3Dd-G22C3NFX5UyjzoTdsGIBic47U7LbsuQ8sqHE7VzlibHbGQEXNASkAFm8swhrpuk~qYwqO8bmA8lw__&amp;Key-Pair-Id=APKAIE5G5CRDK6RD3PGA&amp;sec=119558658&amp;ar=2562749&amp;xsltPath=~/UI/app/XSLT&amp;imagename=&amp;siteId=5143" class="download-slide" path-from-xml="bbw020f2.tif" target="">Download slide</a></div></div><div class="caption fig-caption"><p>The basic Make rule syntax.</p></div></div><p>A
+ dependency tree is generated by Make from these rules. When Make is 
+asked to build a downstream file, or ‘target’, file modification 
+datetimes are used to determine whether any of that target’s 
+dependencies are newer than the target or its intermediates. The 
+dependency tree allows Make to infer the steps required to make any 
+target for which a rule chain exists. Make is a ‘domain-specific 
+language’ (DSL)—it provides a convention-based syntax for describing 
+inputs and outputs with special symbols ($&lt;, $@, $.) to represent 
+shortcuts for accessing filename stems, paths and suffixes of both the 
+target and prerequisites (<a reveal-id="bbw020-F3" data-open="bbw020-F3" class="link link-reveal link-table xref-fig">Figure 3</a>).</p>                        <a id="119558660" scrollto-destination="119558660"></a>
+<div id="bbw020-F3" data-id="bbw020-F3" class="fig fig-section"><div class="label fig-label">Figure 3</div><div class="graphic-wrap"><img class="content-image" src="m_bbw020f3.png" alt="A Make rule for performing a sequence alignment using bwa mem [4]. Two paired fastq (.fq) files are used to produce a SAM alignment file. Symbols are used to represent various pattern matching elements of filenames." path-from-xml="bbw020f3.tif"><div class="fig-orig original-slide"><a class="fig-view-orig js-view-large openInAnotherWindow" href="https://academic.oup.com/view-large/figure/119558660/bbw020f3.tif" path-from-xml="bbw020f3.tif" target="_blank">Open in new tab</a><a section="119558660" href="https://oup.silverchair-cdn.com/DownloadFile/DownloadImage.aspx?image=https://oup.silverchair-cdn.com/oup/backfile/Content_public/Journal/bib/18/3/10.1093_bib_bbw020/3/bbw020f3.png?Expires=1578595745&amp;Signature=wbTNCdkSH12~Ml-IwAa0q~4p4-Msw~ujVMbKaBbpIx82egsJbvTvuMUifRbv~HGYpzVIFIXOHIpeemTqnj8pEEAO0oRGc7d5c-Qg9TvsNjX75XW8aLGc7CQbB9CvJj4LMH~LfVMT4-TlQlG0thkY9FiSwFlEhWBKl9Dusoc~9zjLJTmlsc1r4PKct2Eat~Pz7bA5~GTnWjTzSTWv4A2sDszfK4JnkZWAQ-oo9xQxviggrPquHqb5WoG6pLTsDWv0pl888FqfvKHEmIhSvejcVLMWDXRqZ9GDpTl1uIMbipZq7otmuWSILpSqv8NH7ykjh7e5u3ktj1sN~ZATMoa1Ww__&amp;Key-Pair-Id=APKAIE5G5CRDK6RD3PGA&amp;sec=119558660&amp;ar=2562749&amp;xsltPath=~/UI/app/XSLT&amp;imagename=&amp;siteId=5143" class="download-slide" path-from-xml="bbw020f3.tif" target="">Download slide</a></div></div><div class="caption fig-caption"><p>A Make rule for performing a sequence alignment using bwa mem [<a reveal-id="bbw020-B4" data-open="bbw020-B4" class="link link-ref link-reveal xref-bibr">4</a>].
+ Two paired fastq (.fq) files are used to produce a SAM alignment file. 
+Symbols are used to represent various pattern matching elements of 
+filenames.</p></div></div><div content-id="bbw020-F3" class="fig fig-modal reveal-modal" style="display: block;"><div class="label fig-label">Figure 3</div><div class="graphic-wrap"><img class="content-image" src="m_bbw020f3.png" alt="A Make rule for performing a sequence alignment using bwa mem [4]. Two paired fastq (.fq) files are used to produce a SAM alignment file. Symbols are used to represent various pattern matching elements of filenames." path-from-xml="bbw020f3.tif"><div class="fig-orig original-slide"><a class="fig-view-orig js-view-large openInAnotherWindow" href="https://academic.oup.com/view-large/figure/119558660/bbw020f3.tif" path-from-xml="bbw020f3.tif" target="_blank">Open in new tab</a><a section="119558660" href="https://oup.silverchair-cdn.com/DownloadFile/DownloadImage.aspx?image=https://oup.silverchair-cdn.com/oup/backfile/Content_public/Journal/bib/18/3/10.1093_bib_bbw020/3/bbw020f3.png?Expires=1578595745&amp;Signature=wbTNCdkSH12~Ml-IwAa0q~4p4-Msw~ujVMbKaBbpIx82egsJbvTvuMUifRbv~HGYpzVIFIXOHIpeemTqnj8pEEAO0oRGc7d5c-Qg9TvsNjX75XW8aLGc7CQbB9CvJj4LMH~LfVMT4-TlQlG0thkY9FiSwFlEhWBKl9Dusoc~9zjLJTmlsc1r4PKct2Eat~Pz7bA5~GTnWjTzSTWv4A2sDszfK4JnkZWAQ-oo9xQxviggrPquHqb5WoG6pLTsDWv0pl888FqfvKHEmIhSvejcVLMWDXRqZ9GDpTl1uIMbipZq7otmuWSILpSqv8NH7ykjh7e5u3ktj1sN~ZATMoa1Ww__&amp;Key-Pair-Id=APKAIE5G5CRDK6RD3PGA&amp;sec=119558660&amp;ar=2562749&amp;xsltPath=~/UI/app/XSLT&amp;imagename=&amp;siteId=5143" class="download-slide" path-from-xml="bbw020f3.tif" target="">Download slide</a></div></div><div class="caption fig-caption"><p>A Make rule for performing a sequence alignment using bwa mem [<a reveal-id="bbw020-B4" data-open="bbw020-B4" class="link link-ref link-reveal xref-bibr">4</a>].
+ Two paired fastq (.fq) files are used to produce a SAM alignment file. 
+Symbols are used to represent various pattern matching elements of 
+filenames.</p></div></div><p>Because it was never designed for 
+scientific pipelines, Make has several limitations that render it 
+impractical for modern bioinformatic analyses. Make has no built-in 
+support for distributed computing, so dispatching tasks that can be run 
+in parallel on several nodes of a cluster is not easily done within the 
+Make framework. Make’s syntax is restricted to one wildcard per rule and
+ does not allow for lookup tables or other means of associating inputs 
+to outputs other than exact filename stem matching. Although Make allows
+ a low level of shell scripting, more sophisticated logic is difficult 
+to implement.</p>                    <h2 scrollto-destination="119558662" id="119558662" class="section-title">Modern pipeline frameworks</h2>
+<p>In recent years, a number of new pipeline frameworks have been 
+developed to address Make’s limitations in syntax, monitoring and 
+parallel processing as well as offer new features relevant to 
+bioinformatics and reproducible research, such as visualization, version
+ tracking and summary reports (<a reveal-id="bbw020-T1" data-open="bbw020-T1" class="link link-reveal link-table xref-fig">Table 1</a>). </p><div content-id="bbw020-T1" class="table-modal" style="display: block;"><div class="table-wrap" content-id="bbw020-T1"><div id="bbw020-T1" data-id="bbw020-T1" class="table-wrap-title"><div class="label">Table 1</div><div class="caption"><p>A classification of modern pipeline frameworks</p></div> </div><div class="table-overflow"><table><tbody><tr><td colspan="11"><img class="contentFigures" src="m_bbw020ilf1.png" alt="graphic" path-from-xml="bbw020ilf1.tif">&nbsp;</td></tr></tbody></table></div><div content-id="bbw020-T1" class="table-modal"><table><tbody><tr><td colspan="11"><img class="contentFigures" src="m_bbw020ilf1.png" alt="graphic" path-from-xml="bbw020ilf1.tif">&nbsp;</td></tr></tbody></table></div><div class="table-wrap-foot"><div content-id="tblfn1"><div class="fn"><p><em>Note</em>.
+ Ease of development refers to the effort required to compose workflows 
+and also wrap new tools, such as custom or publicly available scripts 
+and executables. Ease of use refers to the effort required to use 
+existing pipelines to process new data, such as samples, and also the 
+ease of sharing pipelines in a collaborative fashion. Performance refers
+ to the efficiency of the framework in executing a pipeline, in terms of
+ both parallelization and scalability. More stars connotes ‘easier’ or 
+‘faster’.</p></div></div></div></div></div><div class="table-wrap" content-id="bbw020-T1"><div id="bbw020-T1" data-id="bbw020-T1" class="table-wrap-title"><div class="label">Table 1</div><div class="caption"><p>A classification of modern pipeline frameworks</p></div> </div><div class="table-overflow"><table><tbody><tr><td colspan="11"><img class="contentFigures" src="m_bbw020ilf1.png" alt="graphic" path-from-xml="bbw020ilf1.tif">&nbsp;</td></tr></tbody></table></div><div content-id="bbw020-T1" class="table-modal"><table><tbody><tr><td colspan="11"><img class="contentFigures" src="m_bbw020ilf1.png" alt="graphic" path-from-xml="bbw020ilf1.tif">&nbsp;</td></tr></tbody></table></div><div class="table-wrap-foot"><div content-id="tblfn1"><div class="fn"><p><em>Note</em>.
+ Ease of development refers to the effort required to compose workflows 
+and also wrap new tools, such as custom or publicly available scripts 
+and executables. Ease of use refers to the effort required to use 
+existing pipelines to process new data, such as samples, and also the 
+ease of sharing pipelines in a collaborative fashion. Performance refers
+ to the efficiency of the framework in executing a pipeline, in terms of
+ both parallelization and scalability. More stars connotes ‘easier’ or 
+‘faster’.</p></div></div></div></div><p></p>                    <h2 scrollto-destination="119558664" id="119558664" class="section-title">Implicit convention frameworks</h2>
+<p>Implicit frameworks preserve the implicit wildcard idioms introduced 
+by Make while extending its capabilities, usually by leveraging 
+full-featured scripting languages such as Python to implement logic both
+ inside and outside of rules.</p><p>Snakemake [<a reveal-id="bbw020-B5" data-open="bbw020-B5" class="link link-ref link-reveal xref-bibr">5</a>]
+ builds on the implicit or wildcard-based logic of Make while extending 
+its capabilities by allowing Python to be interspersed through the 
+pipeline in conjunction with a DSL. Some implicit frameworks, such as 
+Nextflow (<a class="link link-uri" href="http://nextflow.io/" target="">http://nextflow.io</a>), provide tools to abstract and manage filenaming into global variables to reduce ambiguity. BigDataScript [<a reveal-id="bbw020-B6" data-open="bbw020-B6" class="link link-ref link-reveal xref-bibr">6</a>] is a stand-alone DSL that offers its own language-independent syntax for implementing pipeline logic (<a reveal-id="bbw020-F4" data-open="bbw020-F4" class="link link-reveal link-table xref-fig">Figure 4</a>).</p>                        <a id="119558667" scrollto-destination="119558667"></a>
+<div id="bbw020-F4" data-id="bbw020-F4" class="fig fig-section"><div class="label fig-label">Figure 5</div><div class="graphic-wrap"><img class="content-image" src="m_bbw020f5.png" alt="Tasks in Ruffus explicitly depend on other tasks, not file targets." path-from-xml="bbw020f5.tif"><div class="fig-orig original-slide"><a class="fig-view-orig js-view-large openInAnotherWindow" href="https://academic.oup.com/view-large/figure/119558667/bbw020f5.tif" path-from-xml="bbw020f5.tif" target="_blank">Open in new tab</a><a section="119558667" href="https://oup.silverchair-cdn.com/DownloadFile/DownloadImage.aspx?image=https://oup.silverchair-cdn.com/oup/backfile/Content_public/Journal/bib/18/3/10.1093_bib_bbw020/3/bbw020f5.png?Expires=1578595745&amp;Signature=e63uNK0carCFLB3IUle~LXnRmjfj9I-p-JNdsiHJUrW~IZtHAgWBWwuJ28nlSwv1sg4doHbHZyxavid4eN6kjmv401CRN2dAxzBhn1MEAS4R83JmDW9Qp~p7msKuRWL22A1UyG5I6C0ae8FMmLx3lSD4Z8wHeUeV9yv~9WiG2izDOWPIWMMbBvqus27cNtgqpBpOfAw9SyGxrpw7ELlWRoe~Yqvtxr2G98IVyfdO3b9qQ32lai87gljWtXxDZn~1CNoT9ZZU4Mdcyq8OBh7i7yKJobkUlLs5ntS0Gh8PhL6keXUPJdVoXTtRSSRsNzqbbFV7XS1SU2zsbcvD2yuPSg__&amp;Key-Pair-Id=APKAIE5G5CRDK6RD3PGA&amp;sec=119558667&amp;ar=2562749&amp;xsltPath=~/UI/app/XSLT&amp;imagename=&amp;siteId=5143" class="download-slide" path-from-xml="bbw020f5.tif" target="">Download slide</a></div></div><div class="caption fig-caption"><p>Tasks in Ruffus explicitly depend on other tasks, not file targets.</p></div></div><div content-id="bbw020-F4" class="fig fig-modal reveal-modal" style="display: block;"><div class="label fig-label">Figure 5</div><div class="graphic-wrap"><img class="content-image" src="m_bbw020f5.png" alt="Tasks in Ruffus explicitly depend on other tasks, not file targets." path-from-xml="bbw020f5.tif"><div class="fig-orig original-slide"><a class="fig-view-orig js-view-large openInAnotherWindow" href="https://academic.oup.com/view-large/figure/119558667/bbw020f5.tif" path-from-xml="bbw020f5.tif" target="_blank">Open in new tab</a><a section="119558667" href="https://oup.silverchair-cdn.com/DownloadFile/DownloadImage.aspx?image=https://oup.silverchair-cdn.com/oup/backfile/Content_public/Journal/bib/18/3/10.1093_bib_bbw020/3/bbw020f5.png?Expires=1578595745&amp;Signature=e63uNK0carCFLB3IUle~LXnRmjfj9I-p-JNdsiHJUrW~IZtHAgWBWwuJ28nlSwv1sg4doHbHZyxavid4eN6kjmv401CRN2dAxzBhn1MEAS4R83JmDW9Qp~p7msKuRWL22A1UyG5I6C0ae8FMmLx3lSD4Z8wHeUeV9yv~9WiG2izDOWPIWMMbBvqus27cNtgqpBpOfAw9SyGxrpw7ELlWRoe~Yqvtxr2G98IVyfdO3b9qQ32lai87gljWtXxDZn~1CNoT9ZZU4Mdcyq8OBh7i7yKJobkUlLs5ntS0Gh8PhL6keXUPJdVoXTtRSSRsNzqbbFV7XS1SU2zsbcvD2yuPSg__&amp;Key-Pair-Id=APKAIE5G5CRDK6RD3PGA&amp;sec=119558667&amp;ar=2562749&amp;xsltPath=~/UI/app/XSLT&amp;imagename=&amp;siteId=5143" class="download-slide" path-from-xml="bbw020f5.tif" target="">Download slide</a></div></div><div class="caption fig-caption"><p>Tasks in Ruffus explicitly depend on other tasks, not file targets.</p></div></div>                    <h2 scrollto-destination="119558668" id="119558668" class="section-title">Explicit frameworks</h2>
+<p>Implicit frameworks demand the user define rules or recipes for 
+performing file transformations separately from target(s). Although this
+ approach is logical from the standpoint of defining individual rules, 
+users typically have a preconceived idea of the order of operations. 
+Implicit frameworks force users to think more carefully about filenames 
+rather than about the process. In response, some frameworks such as 
+Ruffus [<a reveal-id="bbw020-B7" data-open="bbw020-B7" class="link link-ref link-reveal xref-bibr">7</a>] and bpipe [<a reveal-id="bbw020-B8" data-open="bbw020-B8" class="link link-ref link-reveal xref-bibr">8</a>]
+ use an explicit paradigm, as used in scripts, in which the rule 
+topology is defined by the user, the order is fixed and tasks simply 
+refer to each other rather than using a target naming scheme (<a reveal-id="bbw020-F5" data-open="bbw020-F5" class="link link-reveal link-table xref-fig">Figure 5</a>).</p>                        <a id="119558670" scrollto-destination="119558670"></a>
+<div id="bbw020-F5" data-id="bbw020-F5" class="fig fig-section"><div class="label fig-label">Figure 4</div><div class="graphic-wrap"><img class="content-image" src="m_bbw020f4.png" alt="A Snakemake rule for performing a sequence alignment. This example uses a global configuration dictionary that allows parameters to be specified in JSON or YAML-formatted configuration files or in the command line." path-from-xml="bbw020f4.tif"><div class="fig-orig original-slide"><a class="fig-view-orig js-view-large openInAnotherWindow" href="https://academic.oup.com/view-large/figure/119558670/bbw020f4.tif" path-from-xml="bbw020f4.tif" target="_blank">Open in new tab</a><a section="119558670" href="https://oup.silverchair-cdn.com/DownloadFile/DownloadImage.aspx?image=https://oup.silverchair-cdn.com/oup/backfile/Content_public/Journal/bib/18/3/10.1093_bib_bbw020/3/bbw020f4.png?Expires=1578595745&amp;Signature=VAQrLatbi8zGdkXpCvh3wS2ji3WWb-y1r-4k16dDSLM3dVHhkiZhFnddi7nkaLlVu5sXvXgUuqNw3MlBPXG2DdILIorAx8HImtRyYdeK6P1Vdc2aVRK6tffdX7ZhHMZY4nLcKZDdyiHgp851OZRJfSoazTotivTsRMOI7il~Jg-Z7phX05Fr5T85OknPu8NmxRBrgFJx2SVoooY4lEra6H4BLnShcLp0lc4oWkUwnsvQGccNjpdx-XYIFzhIclGFdhqsrdznGS5hJPp-0tZ0Wf4nIuWhn2dHjC19l5kUP-htBTBmofYdMrlmpwSusB5arbLdVQ863NOEIskHLKrm1Q__&amp;Key-Pair-Id=APKAIE5G5CRDK6RD3PGA&amp;sec=119558670&amp;ar=2562749&amp;xsltPath=~/UI/app/XSLT&amp;imagename=&amp;siteId=5143" class="download-slide" path-from-xml="bbw020f4.tif" target="">Download slide</a></div></div><div class="caption fig-caption"><p>A
+ Snakemake rule for performing a sequence alignment. This example uses a
+ global configuration dictionary that allows parameters to be specified 
+in JSON or YAML-formatted configuration files or in the command line.</p></div></div><div content-id="bbw020-F5" class="fig fig-modal reveal-modal" style="display: block;"><div class="label fig-label">Figure 4</div><div class="graphic-wrap"><img class="content-image" src="m_bbw020f4.png" alt="A Snakemake rule for performing a sequence alignment. This example uses a global configuration dictionary that allows parameters to be specified in JSON or YAML-formatted configuration files or in the command line." path-from-xml="bbw020f4.tif"><div class="fig-orig original-slide"><a class="fig-view-orig js-view-large openInAnotherWindow" href="https://academic.oup.com/view-large/figure/119558670/bbw020f4.tif" path-from-xml="bbw020f4.tif" target="_blank">Open in new tab</a><a section="119558670" href="https://oup.silverchair-cdn.com/DownloadFile/DownloadImage.aspx?image=https://oup.silverchair-cdn.com/oup/backfile/Content_public/Journal/bib/18/3/10.1093_bib_bbw020/3/bbw020f4.png?Expires=1578595745&amp;Signature=VAQrLatbi8zGdkXpCvh3wS2ji3WWb-y1r-4k16dDSLM3dVHhkiZhFnddi7nkaLlVu5sXvXgUuqNw3MlBPXG2DdILIorAx8HImtRyYdeK6P1Vdc2aVRK6tffdX7ZhHMZY4nLcKZDdyiHgp851OZRJfSoazTotivTsRMOI7il~Jg-Z7phX05Fr5T85OknPu8NmxRBrgFJx2SVoooY4lEra6H4BLnShcLp0lc4oWkUwnsvQGccNjpdx-XYIFzhIclGFdhqsrdznGS5hJPp-0tZ0Wf4nIuWhn2dHjC19l5kUP-htBTBmofYdMrlmpwSusB5arbLdVQ863NOEIskHLKrm1Q__&amp;Key-Pair-Id=APKAIE5G5CRDK6RD3PGA&amp;sec=119558670&amp;ar=2562749&amp;xsltPath=~/UI/app/XSLT&amp;imagename=&amp;siteId=5143" class="download-slide" path-from-xml="bbw020f4.tif" target="">Download slide</a></div></div><div class="caption fig-caption"><p>A
+ Snakemake rule for performing a sequence alignment. This example uses a
+ global configuration dictionary that allows parameters to be specified 
+in JSON or YAML-formatted configuration files or in the command line.</p></div></div>                    <h2 scrollto-destination="119558671" id="119558671" class="section-title">Configuration frameworks</h2>
+<p>Many pipeline frameworks dispense with inline scripting code and 
+instead use a configuration-based, rather than convention-based, means 
+of describing tasks. Pegasus [<a reveal-id="bbw020-B9" data-open="bbw020-B9" class="link link-ref link-reveal xref-bibr">9</a>]
+ is a National Science Foundation (NSF)-funded workflow system 
+originally designed for the physical sciences. Like all 
+configuration-based frameworks, Pegasus is explicit—it does not 
+implicitly infer how to produce targets but instead requires a fixed XML
+ file that describes individual job run instances and their dependencies
+ (<a reveal-id="bbw020-F6" data-open="bbw020-F6" class="link link-reveal link-table xref-fig">Figure 6</a>).</p>                        <a id="119558673" scrollto-destination="119558673"></a>
+<div id="bbw020-F6" data-id="bbw020-F6" class="fig fig-section"><div class="label fig-label">Figure 6</div><div class="graphic-wrap"><img class="content-image" src="m_bbw020f6.png" alt="A Pegasus DAX (Directed Acyclic Graph in XML). A subsequent step to alignment has been included to show that a Pegasus task relies on explicit job IDs to identify its antecedents rather than a filename pattern to identify its dependencies. Pegasus has no built-in system of variable injection, but includes APIs to produce DAX files." path-from-xml="bbw020f6.tif"><div class="fig-orig original-slide"><a class="fig-view-orig js-view-large openInAnotherWindow" href="https://academic.oup.com/view-large/figure/119558673/bbw020f6.tif" path-from-xml="bbw020f6.tif" target="_blank">Open in new tab</a><a section="119558673" href="https://oup.silverchair-cdn.com/DownloadFile/DownloadImage.aspx?image=https://oup.silverchair-cdn.com/oup/backfile/Content_public/Journal/bib/18/3/10.1093_bib_bbw020/3/bbw020f6.png?Expires=1578595745&amp;Signature=BkIGI3tH-~0p5BbQY1J3vqho2yhosrzTL4SgA2MIpjNunRcXUQYcrAibGEYU6rczID2cpoxGht~CamsPrkOvpWz5IsDO0fvgEhUCUmBe-2TD1MhB4QAqXTw5b8SLfrOxukcGAmjOe36zS~fqLomn90brKQTXYuaDtfgs2nSBbJSqVOs4g6IU9wIBCTjLZEAbJ4ba87lEP6WAJxUSd2HPzUUmyfNnE3ROaLTQ1ccc9kzP581bj6phYQWzosDfV8cOYwNX~Im-NRHgDdxoYQnoyI3QierdBWFYTNM0hbTLZNyak4LXnt6ZddG9mFxZ2HA5pcQ22YOPe3lbfKTz3mtPEw__&amp;Key-Pair-Id=APKAIE5G5CRDK6RD3PGA&amp;sec=119558673&amp;ar=2562749&amp;xsltPath=~/UI/app/XSLT&amp;imagename=&amp;siteId=5143" class="download-slide" path-from-xml="bbw020f6.tif" target="">Download slide</a></div></div><div class="caption fig-caption"><p>A
+ Pegasus DAX (Directed Acyclic Graph in XML). A subsequent step to 
+alignment has been included to show that a Pegasus task relies on 
+explicit job IDs to identify its antecedents rather than a filename 
+pattern to identify its dependencies. Pegasus has no built-in system of 
+variable injection, but includes APIs to produce DAX files.</p></div></div><div content-id="bbw020-F6" class="fig fig-modal reveal-modal" style="display: block;"><div class="label fig-label">Figure 6</div><div class="graphic-wrap"><img class="content-image" src="m_bbw020f6.png" alt="A Pegasus DAX (Directed Acyclic Graph in XML). A subsequent step to alignment has been included to show that a Pegasus task relies on explicit job IDs to identify its antecedents rather than a filename pattern to identify its dependencies. Pegasus has no built-in system of variable injection, but includes APIs to produce DAX files." path-from-xml="bbw020f6.tif"><div class="fig-orig original-slide"><a class="fig-view-orig js-view-large openInAnotherWindow" href="https://academic.oup.com/view-large/figure/119558673/bbw020f6.tif" path-from-xml="bbw020f6.tif" target="_blank">Open in new tab</a><a section="119558673" href="https://oup.silverchair-cdn.com/DownloadFile/DownloadImage.aspx?image=https://oup.silverchair-cdn.com/oup/backfile/Content_public/Journal/bib/18/3/10.1093_bib_bbw020/3/bbw020f6.png?Expires=1578595745&amp;Signature=BkIGI3tH-~0p5BbQY1J3vqho2yhosrzTL4SgA2MIpjNunRcXUQYcrAibGEYU6rczID2cpoxGht~CamsPrkOvpWz5IsDO0fvgEhUCUmBe-2TD1MhB4QAqXTw5b8SLfrOxukcGAmjOe36zS~fqLomn90brKQTXYuaDtfgs2nSBbJSqVOs4g6IU9wIBCTjLZEAbJ4ba87lEP6WAJxUSd2HPzUUmyfNnE3ROaLTQ1ccc9kzP581bj6phYQWzosDfV8cOYwNX~Im-NRHgDdxoYQnoyI3QierdBWFYTNM0hbTLZNyak4LXnt6ZddG9mFxZ2HA5pcQ22YOPe3lbfKTz3mtPEw__&amp;Key-Pair-Id=APKAIE5G5CRDK6RD3PGA&amp;sec=119558673&amp;ar=2562749&amp;xsltPath=~/UI/app/XSLT&amp;imagename=&amp;siteId=5143" class="download-slide" path-from-xml="bbw020f6.tif" target="">Download slide</a></div></div><div class="caption fig-caption"><p>A
+ Pegasus DAX (Directed Acyclic Graph in XML). A subsequent step to 
+alignment has been included to show that a Pegasus task relies on 
+explicit job IDs to identify its antecedents rather than a filename 
+pattern to identify its dependencies. Pegasus has no built-in system of 
+variable injection, but includes APIs to produce DAX files.</p></div></div>                    <h2 scrollto-destination="119558674" id="119558674" class="section-title">Class-based frameworks</h2>
+<p>Some high-performance workflow languages are implemented in a 
+class-based pure language manner. Although these may resemble DSL-based 
+frameworks superficially, class-based implementations are often closely 
+bound to an existing code library rather than various executables. 
+Class-based pipelines often contain many thousands of lines of code 
+implementing domain logic. Genome Analysis Toolkit (GATK) [<a reveal-id="bbw020-B10" data-open="bbw020-B10" class="link link-ref link-reveal xref-bibr">10</a>]
+ is a large Java library for variant analysis, and Queue is a 
+GATK-integrated Scala framework that provides abstract classes for 
+implementing pipelines. Luigi (<a class="link link-uri" href="https://github.com/spotify/luigi" target="">https://github.com/spotify/luigi</a>) and Toil (<a class="link link-uri" href="https://github.com/bd2kgenomics/toil" target="">https://github.com/bd2kgenomics/toil</a>)
+ are pure-Python frameworks that are not bound to any bioinformatics 
+codebase, but offer explicit Application Programming Interfaces (APIs) 
+for defining task dependencies from within task methods. Luigi places 
+particular emphasis on scheduled execution, monitoring, visualization 
+and the implicit dependency resolution of tasks. Toil offers a strong 
+focus on cloud execution.</p><p>Many existing implementations of 
+bioinformatics software tend to work with large ‘monolithic’ disk-based 
+files, which impedes the ability of work tasks to be efficiently farmed 
+out to individual cores or nodes in a cluster, or to ephemeral machine 
+instances in the cloud. Efforts such as Big Data Genomics (<a class="link link-uri" href="http://bdgenomics.org/" target="">http://bdgenomics.org</a>)
+ aim to make common data formats ‘splittable’ for use with Hadoop and 
+Spark-based scalable distributed computing frameworks. These efforts 
+will likely also require the use of new or existing class-based 
+pipelines for tasks to be tightly coupled to individual data structures 
+within the library, allowing a high level of granularity in terms of the
+ concurrent processing of data.</p>                    <h2 scrollto-destination="119558677" id="119558677" class="section-title">Server workbenches</h2>
+<p>Unlike the command line-based pipeline frameworks reviewed 
+previously, workbenches allow end-users, typically scientists, to design
+ analyses by linking preconfigured modular tools together, typically 
+using a drag-and-drop graphical interface. Because they require exacting
+ specifications of inputs and outputs, workbenches are intrinsically a 
+subset of configuration-based pipelines. The most popular bioinformatics
+ server workbenches are Galaxy [<a reveal-id="bbw020-B11" data-open="bbw020-B11" class="link link-ref link-reveal xref-bibr">11</a>] and Taverna [<a reveal-id="bbw020-B12" data-open="bbw020-B12" class="link link-ref link-reveal xref-bibr">12</a>].
+ Galaxy serves as a Web-based interface for command line tools, whereas 
+Taverna offers stand-alone clients and allows pipelines to access tools 
+distributed across the Internet. Both allow users to share workflows and
+ are intended for local installations (<a reveal-id="bbw020-F7" data-open="bbw020-F7" class="link link-reveal link-table xref-fig">Figure 7</a>).</p>                        <a id="119558679" scrollto-destination="119558679"></a>
+<div id="bbw020-F7" data-id="bbw020-F7" class="fig fig-section"><div class="label fig-label">Figure 7</div><div class="graphic-wrap"><img class="content-image" src="m_bbw020f7.png" alt="The Galaxy Workflow Editor allows users to link inputs, outputs and tools on a graphical canvas." path-from-xml="bbw020f7.tif"><div class="fig-orig original-slide"><a class="fig-view-orig js-view-large openInAnotherWindow" href="https://academic.oup.com/view-large/figure/119558679/bbw020f7.tif" path-from-xml="bbw020f7.tif" target="_blank">Open in new tab</a><a section="119558679" href="https://oup.silverchair-cdn.com/DownloadFile/DownloadImage.aspx?image=https://oup.silverchair-cdn.com/oup/backfile/Content_public/Journal/bib/18/3/10.1093_bib_bbw020/3/bbw020f7.png?Expires=1578595745&amp;Signature=mxZA8z8B-K6mehl4P~44j5GU-nhd4b60iw8AUDAw1EPUuayt0dfBVHx2LeIpRNwFlE5jKNY2Q4HGSFX-SMJliEaQVomU2HlFEJ1T00K1O~gotZepvcb7yVIGapMXd7lqV4UdBMdCGmQPd2b0ZVaiRjcm1d7aUivMTeyIWN-ZFgyWS~ks1i6qzC0HhyqLa2nFieDNXP6PUNHRRrvnYVZ16e21beamvLEjL1ryqXWaSvFuv6eC-13UNp4D-xiJe2ZH07A~~0wDE9pAFJqfrWwcD1MGDWd5U~JVLyd8BM3gS09mtuuFF~q-wNaGqr3Xs-dTg0SziklKD3WZ5BxRiYCI6w__&amp;Key-Pair-Id=APKAIE5G5CRDK6RD3PGA&amp;sec=119558679&amp;ar=2562749&amp;xsltPath=~/UI/app/XSLT&amp;imagename=&amp;siteId=5143" class="download-slide" path-from-xml="bbw020f7.tif" target="">Download slide</a></div></div><div class="caption fig-caption"><p>The Galaxy Workflow Editor allows users to link inputs, outputs and tools on a graphical canvas.</p></div></div><div content-id="bbw020-F7" class="fig fig-modal reveal-modal" style="display: block;"><div class="label fig-label">Figure 7</div><div class="graphic-wrap"><img class="content-image" src="m_bbw020f7.png" alt="The Galaxy Workflow Editor allows users to link inputs, outputs and tools on a graphical canvas." path-from-xml="bbw020f7.tif"><div class="fig-orig original-slide"><a class="fig-view-orig js-view-large openInAnotherWindow" href="https://academic.oup.com/view-large/figure/119558679/bbw020f7.tif" path-from-xml="bbw020f7.tif" target="_blank">Open in new tab</a><a section="119558679" href="https://oup.silverchair-cdn.com/DownloadFile/DownloadImage.aspx?image=https://oup.silverchair-cdn.com/oup/backfile/Content_public/Journal/bib/18/3/10.1093_bib_bbw020/3/bbw020f7.png?Expires=1578595745&amp;Signature=mxZA8z8B-K6mehl4P~44j5GU-nhd4b60iw8AUDAw1EPUuayt0dfBVHx2LeIpRNwFlE5jKNY2Q4HGSFX-SMJliEaQVomU2HlFEJ1T00K1O~gotZepvcb7yVIGapMXd7lqV4UdBMdCGmQPd2b0ZVaiRjcm1d7aUivMTeyIWN-ZFgyWS~ks1i6qzC0HhyqLa2nFieDNXP6PUNHRRrvnYVZ16e21beamvLEjL1ryqXWaSvFuv6eC-13UNp4D-xiJe2ZH07A~~0wDE9pAFJqfrWwcD1MGDWd5U~JVLyd8BM3gS09mtuuFF~q-wNaGqr3Xs-dTg0SziklKD3WZ5BxRiYCI6w__&amp;Key-Pair-Id=APKAIE5G5CRDK6RD3PGA&amp;sec=119558679&amp;ar=2562749&amp;xsltPath=~/UI/app/XSLT&amp;imagename=&amp;siteId=5143" class="download-slide" path-from-xml="bbw020f7.tif" target="">Download slide</a></div></div><div class="caption fig-caption"><p>The Galaxy Workflow Editor allows users to link inputs, outputs and tools on a graphical canvas.</p></div></div><p>For
+ existing tools that have an existing component plug-in, using Taverna 
+is an easy solution for end-users. Creating a new plug-in requires an 
+in-depth knowledge of the XML-based API and exact specifications of 
+acceptable input filetypes, parameter values, resource management and 
+exception behavior. The onus is entirely on the developer to provide a 
+means for new tools to exist in the Taverna ecosystem. Adding a new 
+executable to Galaxy often requires only 20 lines of configuration code,
+ but Galaxy wrappers can be less robust than those in Taverna, which 
+requires slightly more familiarity with each tool on the part of 
+end-users to implement.</p>                    <h2 scrollto-destination="119558681" id="119558681" class="section-title">Cloud workbenches and APIs</h2>
+<p>Cloud computing, defined here as the on-demand rent of virtualized 
+computing infrastructure from remote managed data centers, offers an 
+attractive scalable option for collaborative multi-institutional 
+research in terms of ‘bringing the tools to the data’. Although 
+subscription and compute costs are decreasing, the speed of file 
+transfer over the Internet to the cloud remains an issue for these 
+platforms. While all of the aforementioned pipelines can be installed on
+ cloud infrastructure [<a reveal-id="bbw020-B13" data-open="bbw020-B13" class="link link-ref link-reveal xref-bibr">13</a>], cloud workbenches offer a layer of abstraction that simplifies the complex process of provisioning servers.</p><p>Commercial workbenches, such as DNAnexus (<a class="link link-uri" href="http://dnanexus.com/" target="">http://dnanexus.com</a>), SevenBridges (<a class="link link-uri" href="http://sbgenomics.com/" target="">http://sbgenomics.com</a>) and Illumina’s BaseSpace (<a class="link link-uri" href="http://basespace.illumina.com/" target="">http://basespace.illumina.com</a>),
+ leverage the scalability of cloud computing to offer high performance 
+while offering development and user experiences comparable with local 
+server-based open source workbenches. These providers also support APIs 
+that allow users to launch automated large batch analyses without using a
+ Web interface.</p><p>Next-generation cloud-based open source workbenches, such as Curoverse’s Arvados (<a class="link link-uri" href="https://curoverse.com/" target="">https://curoverse.com</a>) and the iPlant Collaborative’s Agave [<a reveal-id="bbw020-B14" data-open="bbw020-B14" class="link link-ref link-reveal xref-bibr">14</a>],
+ largely dispense with the Web GUI as a primary design tool and instead 
+are built from the ground up as APIs designed to enable the migration of
+ local analyses to the cloud for collaborative research.</p>                    <h2 scrollto-destination="119558685" id="119558685" class="section-title">Future trends</h2>
+<p>The need for a consistent means of distributing popular tools among 
+so many frameworks is driving an effort to standardize workflow 
+description languages. The Common Workflow Language Specification (CWL; <a class="link link-uri" href="https://github.com/common-workflow-language" target="">https://github.com/common-workflow-language</a>)
+ describes a shared platform for developing new tool descriptors, which 
+has particular utility in supporting cloud-enabled workbenches and 
+plug-ins. Among the frameworks reviewed here, Taverna, Galaxy, Toil, 
+Arvados and SevenBridges have already made significant progress toward 
+supporting the CWL. Another promising trend is the containerization of 
+bioinformatic tools using Docker, lightweight virtualization software, 
+which will enable frameworks to easily accommodate tools with complex 
+software dependencies (<a reveal-id="bbw020-F8" data-open="bbw020-F8" class="link link-reveal link-table xref-fig">Figure 8</a>).</p>                        <a id="119558687" scrollto-destination="119558687"></a>
+<div id="bbw020-F8" data-id="bbw020-F8" class="fig fig-section"><div class="label fig-label">Figure 8</div><div class="graphic-wrap"><img class="content-image" src="m_bbw020f8.png" alt="A snippet of the common workflow language describing the bwa mem alignment program." path-from-xml="bbw020f8.tif"><div class="fig-orig original-slide"><a class="fig-view-orig js-view-large openInAnotherWindow" href="https://academic.oup.com/view-large/figure/119558687/bbw020f8.tif" path-from-xml="bbw020f8.tif" target="_blank">Open in new tab</a><a section="119558687" href="https://oup.silverchair-cdn.com/DownloadFile/DownloadImage.aspx?image=https://oup.silverchair-cdn.com/oup/backfile/Content_public/Journal/bib/18/3/10.1093_bib_bbw020/3/bbw020f8.png?Expires=1578595745&amp;Signature=mcOGI16Cx0TOWs~gXaclE6IdYqWTADigLv4b1htiZeIu1wV3ATQTxBXND6up4qTgQTKXqS6s9pslQMGtHUVyNIMYefpjhCr6W53aCTy9maAV6EAhECU4CMflLn4NliDuYexsf8RFJAcwOf-CmZfdgoLYNHc-osi0xzvn1eN7mTQ5P9QYZultRVYpVq33oLXJJ8ds69-fnuXywA2sAjXmexa6obJHSKTKYYteE7HdIFkCFO-2iTK9NC1XN3amljAAe5VTbEm4R5Isy8Raivjt~AteY4Qdcay4au8Px7TrBfuZ3F6OTER3RlBEyVJwPoxm~zh00GkP9hE24JUJEAamgQ__&amp;Key-Pair-Id=APKAIE5G5CRDK6RD3PGA&amp;sec=119558687&amp;ar=2562749&amp;xsltPath=~/UI/app/XSLT&amp;imagename=&amp;siteId=5143" class="download-slide" path-from-xml="bbw020f8.tif" target="">Download slide</a></div></div><div class="caption fig-caption"><p>A snippet of the common workflow language describing the bwa mem alignment program.</p></div></div><div content-id="bbw020-F8" class="fig fig-modal reveal-modal" style="display: block;"><div class="label fig-label">Figure 8</div><div class="graphic-wrap"><img class="content-image" src="m_bbw020f8.png" alt="A snippet of the common workflow language describing the bwa mem alignment program." path-from-xml="bbw020f8.tif"><div class="fig-orig original-slide"><a class="fig-view-orig js-view-large openInAnotherWindow" href="https://academic.oup.com/view-large/figure/119558687/bbw020f8.tif" path-from-xml="bbw020f8.tif" target="_blank">Open in new tab</a><a section="119558687" href="https://oup.silverchair-cdn.com/DownloadFile/DownloadImage.aspx?image=https://oup.silverchair-cdn.com/oup/backfile/Content_public/Journal/bib/18/3/10.1093_bib_bbw020/3/bbw020f8.png?Expires=1578595745&amp;Signature=mcOGI16Cx0TOWs~gXaclE6IdYqWTADigLv4b1htiZeIu1wV3ATQTxBXND6up4qTgQTKXqS6s9pslQMGtHUVyNIMYefpjhCr6W53aCTy9maAV6EAhECU4CMflLn4NliDuYexsf8RFJAcwOf-CmZfdgoLYNHc-osi0xzvn1eN7mTQ5P9QYZultRVYpVq33oLXJJ8ds69-fnuXywA2sAjXmexa6obJHSKTKYYteE7HdIFkCFO-2iTK9NC1XN3amljAAe5VTbEm4R5Isy8Raivjt~AteY4Qdcay4au8Px7TrBfuZ3F6OTER3RlBEyVJwPoxm~zh00GkP9hE24JUJEAamgQ__&amp;Key-Pair-Id=APKAIE5G5CRDK6RD3PGA&amp;sec=119558687&amp;ar=2562749&amp;xsltPath=~/UI/app/XSLT&amp;imagename=&amp;siteId=5143" class="download-slide" path-from-xml="bbw020f8.tif" target="">Download slide</a></div></div><div class="caption fig-caption"><p>A snippet of the common workflow language describing the bwa mem alignment program.</p></div></div>                    <h2 scrollto-destination="119558688" id="119558688" class="section-title">Choosing a pipeline framework</h2>
+<p>Although there is no formal study of bioinformatics pipeline users specifically, a previous survey (<a class="link link-uri" href="https://github.com/michaelbarton/bioinformatics-career-survey" target="">https://github.com/michaelbarton/bioinformatics-career-survey</a>)
+ suggests the audience for bioinformatics development is evenly mixed 
+between those with biological and computer science backgrounds, and 
+large and small institutions. The choice of framework should be informed
+ both by the demands of developing the pipeline and the requirements of 
+those using it, even if the developers and end-users are the same 
+people. The use of pipeline frameworks is intimately tied to 
+reproducible computational research [<a reveal-id="bbw020-B15" data-open="bbw020-B15" class="link link-ref link-reveal xref-bibr">15</a>], as <em>ad hoc</em>
+ analyses are not likely to be implemented in a pipeline. Reusable 
+pipelines that can be run in the cloud are often preferable in terms of 
+reproducible research and the type of collaborative ‘big science’ 
+popular in modern sequencing studies.</p><p>Choosing between an implicit
+ or explicit syntax is largely a question of personal preference. To 
+developers unfamiliar with Make rule syntax, arranging a series of 
+implicit wildcard rules and trusting the engine to infer a dependency 
+tree can seem unintuitive, but this idiomatic style offers a high level 
+of convenience for integrating executable tools.</p><p>Convention-based 
+frameworks tend to encourage a high level of internal business logic. 
+They also allow polished deliverables (Web sites, PDF reports) to be 
+easily generated from the underlying data. At the same time, pipelines 
+that ‘think on their feet’ would seem inherently less reproducible when 
+compared with configuration-based pipelines that demand a paper trail, 
+but often the latter simply forces developers to write dynamic tools to 
+generate static configurations. Because they are ‘set in stone’, 
+configuration-based pipelines often enable cluster schedulers to consume
+ an entire work plan in entirety instead of receiving tasks in a 
+piecemeal fashion, allowing the scheduler to better anticipate load and 
+allocate both memory and compute resources.</p><p>Workbenches and 
+class-based frameworks can be considered heavyweight. There are costs in
+ terms of flexibility and ease of development associated with making a 
+pipeline accessible or fast. Integrating new tools into workbenches 
+clearly increases their audience, but, ironically, the developers who 
+are most capable of developing plug-ins for workbenches are the least 
+likely to use them. Class-based frameworks offer a high level of 
+performance, but like workbenches, require highly skilled developers to 
+build and maintain, and performance improvements are not guaranteed to 
+justify additional development time. The transition to high-performance 
+computing (HPC) frameworks will likely favor class-based pipeline 
+frameworks in the future, although this will severely limit the number 
+of developers who will be able to contribute to these pipelines, owing 
+to their inherent complexity of HPC development compared with DSLs. A 
+recent survey of institutions using bioinformatics pipelines [<a reveal-id="bbw020-B16" data-open="bbw020-B16" class="link link-ref link-reveal xref-bibr">16</a>]
+ found that virtually every participant anticipated further use of 
+HPC-enabled pipelines in the future and had struggled with issues of 
+reproducibility and data provenance. These issues require intense 
+attention to implementing highly customized solutions that do not lend 
+themselves to lightweight pipelines.</p><p>For those laboratories that 
+neither serve a large number of pure biologists who demand a workbench 
+interface nor require the high level of performance that class-based 
+pipelines offer, a clear choice is not so obvious. One heuristic for 
+choosing a framework to consider is ‘return on investment’. Laboratories
+ that conduct large-scale, highly repetitive research requiring a high 
+degree of data provenance and versioning may benefit from 
+configuration-based pipelines. Laboratories doing exploratory 
+proofs-of-concept would see little reason to use more heavyweight 
+frameworks—explicit DSL-based pipelines are adequate.</p><p>Finally, 
+most laboratories, especially those without access to internal HPC 
+resources, should consider cloud-based workbenches and APIs. These offer
+ many of the features of server-based frameworks, with the added bonus 
+of unlimited scalability and collaborative research opportunities, 
+albeit incurring direct costs.</p><p>Although this review is not intended to be an exhaustive list of pipeline frameworks, such lists do exist (e.g. <a class="link link-uri" href="https://github.com/pditommaso/awesome-pipeline" target="">https://github.com/pditommaso/awesome-pipeline</a>).
+ For laboratories relying solely on scripts, the choice of a framework, 
+especially one to accommodate new custom tools, may seem overwhelming 
+and irreversible, but all frameworks use the parameterization of inputs,
+ outputs and tool descriptors. Once a script-based pipeline is 
+implemented in one framework, transitioning to a different one is 
+relatively simple should priorities change.</p><p></p><div class="boxed-text boxed-text-emphasized"><section class="sec"><div class="title">Key Points</div><ul class="bullet"><li><p>Key pipeline concepts of dependency and reentrancy were introduced by Make.</p></li><li><p>Pipelines are best distinguished not by features but by design philosophy.</p></li><li><p>Modern
+ bioinformatic frameworks use a convention, configuration or class-based
+ design paradigm and use an explicit or implicit syntax.</p></li><li><p>Workbenches
+ and class-based frameworks offer ease of use and performance, 
+respectively, but require additional investment in time and expertise to
+ integrate new tools.</p></li><li><p>Cloud-based platforms offer scalability and collaborative research advantages.</p></li><li><p>Developers choosing a pipeline framework should consider the return on investment when considering more heavyweight options.</p></li></ul></section></div><p></p><p><strong>Jeremy Leipzig</strong>
+ is a bioinformatics software developer at The Children’s Hospital of 
+Philadelphia. He received his MS in Computer Science from North Carolina
+ State University. He is pursuing a PhD in Information Studies at Drexel
+ University.</p>                    <h2 scrollto-destination="119558700" id="119558700" class="backacknowledgements-title">Acknowledgements</h2>
+<p>I thank Deanne Taylor, Chaomei Chen, and Jane Greenberg for their 
+support. I also thank the anonymous reviewers for their helpful comments
+ and suggestions.</p>                    <h3 scrollto-destination="119558702" id="119558702" class="section-title">Funding</h3>
+<p>This work is supported by The Children’s Hospital of Philadelphia.</p>                    <h2 scrollto-destination="119558704" id="119558704" class="backreferences-title">References</h2>
+<div class="ref-list"><div content-id="bbw020-B1" xmlns:helper="urn:XsltStringHelper"><div class="ref false"><div role="bbw020-B1" class="ref-content "><div class="label">1</div><div class="citation mixed-citation"><div class="person-group"><div class="name string-name"><div class="surname">Fisch</div> <div class="given-names">KM</div></div>, <div class="name string-name"><div class="surname">Meißner</div> <div class="given-names">T</div></div>, <div class="name string-name"><div class="surname">Gioia</div> <div class="given-names">L</div></div></div>, et al.&nbsp; 
+<div class="article-title">Omics pipe: a community-based framework for reproducible multi-omics data analysis</div>. <div class="source">Bioinformatics</div>&nbsp; <div class="year">2015</div>;<div class="volume">31</div>: <div class="fpage">1724</div>–<div class="lpage">8</div>.<div class="citation-links"><div class="google-scholar-ref-link"><a class="openInAnotherWindow" href="https://scholar.google.com/scholar_lookup?title=Omics%20pipe%3A%20a%20community-based%20framework%20for%20reproducible%20multi-omics%20data%20analysis&amp;author=KM%20Fisch&amp;author=T%20Mei%C3%9Fner&amp;author=L%20Gioia&amp;publication_year=2015&amp;journal=Bioinformatics&amp;volume=31&amp;pages=1724-8" target="_blank">Google Scholar</a></div><div class="crossref-doi js-ref-link"><a class="openInAnotherWindow" href="http://dx.doi.org/10.1093/bioinformatics/btv061" target="_blank">Crossref</a></div><div class="adsDoiReference hide"><a class="openInAnotherWindow" href="http://adsabs.harvard.edu/cgi-bin/basic_connect?qsearch=10.1093%2Fbioinformatics%2Fbtv061" target="_blank">Search ADS</a></div><div class="xslopenurl" style="display:none"><span class="inst-open-url-holders" data-targetid="10.1093%2Fbioinformatics%2Fbtv061"> </span></div><div class="pub-id"><a href="http://www.ncbi.nlm.nih.gov/pubmed/25637560" class="link link-pub-id openInAnotherWindow" target="_blank">PubMed</a></div><div class="worldcat-reference-ref-link js-worldcat-preview-ref-link" style="display:none"><a class="openInAnotherWindow" href="https://www.worldcat.org/search?q=ti:Omics%20pipe%3A%20a%20community-based%20framework%20for%20reproducible%20multi-omics%20data%20analysis&amp;qt=advanced&amp;dblist=638" target="_blank">WorldCat</a></div>&nbsp;</div></div></div></div></div><div content-id="bbw020-B2" xmlns:helper="urn:XsltStringHelper"><div class="ref false"><div role="bbw020-B2" class="ref-content "><div class="label">2</div><div class="citation mixed-citation"><div class="person-group"><div class="name string-name"><div class="surname">Sussman</div> <div class="given-names">GJ.</div></div></div> 
+<div class="article-title">Building robust systems an essay</div>. <div class="source">Citeseer</div>&nbsp; <div class="year">2007</div>;<div class="volume">113</div>:<div class="fpage">1324</div>.<div class="citation-links"><div class="xslopenurl" style="display:none"><span class="js-inst-open-url-holders-nodoi"><a class="openInAnotherWindow js-open-url-link" target="_blank" data-href-template="{targetURL}?sid=oup:orr&amp;genre=article&amp;atitle=Building%20robust%20systems%20an%20essay&amp;aulast=Sussman&amp;date=2007&amp;spage=1324&amp;volume=113" href="#"></a></span></div><div class="worldcat-reference-ref-link js-worldcat-preview-ref-link" style="display:none"><a class="openInAnotherWindow" href="https://www.worldcat.org/search?q=ti:Building%20robust%20systems%20an%20essay&amp;qt=advanced&amp;dblist=638" target="_blank">WorldCat</a></div>&nbsp;</div></div></div></div></div><div content-id="bbw020-B3" xmlns:helper="urn:XsltStringHelper"><div class="ref false"><div role="bbw020-B3" class="ref-content "><div class="label">3</div><div class="citation mixed-citation"><div class="person-group"><div class="name string-name"><div class="surname">Stallman</div> <div class="given-names">RM</div></div>, <div class="name string-name"><div class="surname">McGrath</div> <div class="given-names">R.</div></div></div> GNU Make: a Program for Directed Recompilation, Version 3.79.1. Boston: GNU Press, <div class="year">2002</div>.</div></div></div></div><div content-id="bbw020-B4" xmlns:helper="urn:XsltStringHelper"><div class="ref false"><div role="bbw020-B4" class="ref-content "><div class="label">4</div><div class="citation mixed-citation"><div class="person-group"><div class="name string-name"><div class="surname">Li</div> <div class="given-names">H.</div></div></div> 
+<div class="article-title">Aligning sequence reads, clone sequences and assembly contigs with BWA-MEM</div>. <div class="source">arXiv</div>&nbsp; <div class="year">2013</div>;1303.3997v2.<div class="citation-links"><div class="xslopenurl" style="display:none"><span class="js-inst-open-url-holders-nodoi"><a class="openInAnotherWindow js-open-url-link" target="_blank" data-href-template="{targetURL}?sid=oup:orr&amp;genre=article&amp;atitle=Aligning%20sequence%20reads%2C%20clone%20sequences%20and%20assembly%20contigs%20with%20BWA-MEM&amp;aulast=Li&amp;date=2013" href="#"></a></span></div><div class="worldcat-reference-ref-link js-worldcat-preview-ref-link" style="display:none"><a class="openInAnotherWindow" href="https://www.worldcat.org/search?q=ti:Aligning%20sequence%20reads%2C%20clone%20sequences%20and%20assembly%20contigs%20with%20BWA-MEM&amp;qt=advanced&amp;dblist=638" target="_blank">WorldCat</a></div>&nbsp;</div></div></div></div></div><div content-id="bbw020-B5" xmlns:helper="urn:XsltStringHelper"><div class="ref false"><div role="bbw020-B5" class="ref-content "><div class="label">5</div><div class="citation mixed-citation"><div class="person-group"><div class="name string-name"><div class="surname">Köster</div> <div class="given-names">J</div></div>, <div class="name string-name"><div class="surname">Rahmann</div> <div class="given-names">S.</div></div></div> 
+<div class="article-title">Snakemake–a scalable bioinformatics workflow engine</div>. <div class="source">Bioinformatics</div>&nbsp; <div class="year">2012</div>;<div class="volume">28</div>:<div class="fpage">2520</div>–<div class="lpage">2</div>.<div class="citation-links"><div class="google-scholar-ref-link"><a class="openInAnotherWindow" href="https://scholar.google.com/scholar_lookup?title=Snakemake%E2%80%93a%20scalable%20bioinformatics%20workflow%20engine&amp;author=J%20K%C3%B6ster&amp;author=S.%20Rahmann&amp;publication_year=2012&amp;journal=Bioinformatics&amp;volume=28&amp;pages=2520-2" target="_blank">Google Scholar</a></div><div class="crossref-doi js-ref-link"><a class="openInAnotherWindow" href="http://dx.doi.org/10.1093/bioinformatics/bts480" target="_blank">Crossref</a></div><div class="adsDoiReference hide"><a class="openInAnotherWindow" href="http://adsabs.harvard.edu/cgi-bin/basic_connect?qsearch=10.1093%2Fbioinformatics%2Fbts480" target="_blank">Search ADS</a></div><div class="xslopenurl" style="display:none"><span class="inst-open-url-holders" data-targetid="10.1093%2Fbioinformatics%2Fbts480"> </span></div><div class="pub-id"><a href="http://www.ncbi.nlm.nih.gov/pubmed/22908215" class="link link-pub-id openInAnotherWindow" target="_blank">PubMed</a></div><div class="worldcat-reference-ref-link js-worldcat-preview-ref-link" style="display:none"><a class="openInAnotherWindow" href="https://www.worldcat.org/search?q=ti:Snakemake%E2%80%93a%20scalable%20bioinformatics%20workflow%20engine&amp;qt=advanced&amp;dblist=638" target="_blank">WorldCat</a></div>&nbsp;</div></div></div></div></div><div content-id="bbw020-B6" xmlns:helper="urn:XsltStringHelper"><div class="ref false"><div role="bbw020-B6" class="ref-content "><div class="label">6</div><div class="citation mixed-citation"><div class="person-group"><div class="name string-name"><div class="surname">Cingolani</div> <div class="given-names">P</div></div>, <div class="name string-name"><div class="surname">Sladek</div> <div class="given-names">R</div></div>, <div class="name string-name"><div class="surname">Blanchette</div> <div class="given-names">M.</div></div></div> 
+<div class="article-title">BigDataScript: a scripting language for data pipelines</div>. <div class="source">Bioinformatics</div>&nbsp; <div class="year">2015</div>;<div class="volume">31</div>:<div class="fpage">10</div>–<div class="lpage">16</div>.<div class="citation-links"><div class="google-scholar-ref-link"><a class="openInAnotherWindow" href="https://scholar.google.com/scholar_lookup?title=BigDataScript%3A%20a%20scripting%20language%20for%20data%20pipelines&amp;author=P%20Cingolani&amp;author=R%20Sladek&amp;author=M.%20Blanchette&amp;publication_year=2015&amp;journal=Bioinformatics&amp;volume=31&amp;pages=10-16" target="_blank">Google Scholar</a></div><div class="crossref-doi js-ref-link"><a class="openInAnotherWindow" href="http://dx.doi.org/10.1093/bioinformatics/btu595" target="_blank">Crossref</a></div><div class="adsDoiReference hide"><a class="openInAnotherWindow" href="http://adsabs.harvard.edu/cgi-bin/basic_connect?qsearch=10.1093%2Fbioinformatics%2Fbtu595" target="_blank">Search ADS</a></div><div class="xslopenurl" style="display:none"><span class="inst-open-url-holders" data-targetid="10.1093%2Fbioinformatics%2Fbtu595"> </span></div><div class="pub-id"><a href="http://www.ncbi.nlm.nih.gov/pubmed/25189778" class="link link-pub-id openInAnotherWindow" target="_blank">PubMed</a></div><div class="worldcat-reference-ref-link js-worldcat-preview-ref-link" style="display:none"><a class="openInAnotherWindow" href="https://www.worldcat.org/search?q=ti:BigDataScript%3A%20a%20scripting%20language%20for%20data%20pipelines&amp;qt=advanced&amp;dblist=638" target="_blank">WorldCat</a></div>&nbsp;</div></div></div></div></div><div content-id="bbw020-B7" xmlns:helper="urn:XsltStringHelper"><div class="ref false"><div role="bbw020-B7" class="ref-content "><div class="label">7</div><div class="citation mixed-citation"><div class="person-group"><div class="name string-name"><div class="surname">Goodstadt</div> <div class="given-names">L.</div></div></div> 
+<div class="article-title">Ruffus: a lightweight Python library for computational pipelines</div>. <div class="source">Bioinformatics</div>&nbsp; <div class="year">2010</div>;<div class="volume">26</div>:<div class="fpage">2778</div>–<div class="lpage">9</div>.<div class="citation-links"><div class="google-scholar-ref-link"><a class="openInAnotherWindow" href="https://scholar.google.com/scholar_lookup?title=Ruffus%3A%20a%20lightweight%20Python%20library%20for%20computational%20pipelines&amp;author=L.%20Goodstadt&amp;publication_year=2010&amp;journal=Bioinformatics&amp;volume=26&amp;pages=2778-9" target="_blank">Google Scholar</a></div><div class="crossref-doi js-ref-link"><a class="openInAnotherWindow" href="http://dx.doi.org/10.1093/bioinformatics/btq524" target="_blank">Crossref</a></div><div class="adsDoiReference hide"><a class="openInAnotherWindow" href="http://adsabs.harvard.edu/cgi-bin/basic_connect?qsearch=10.1093%2Fbioinformatics%2Fbtq524" target="_blank">Search ADS</a></div><div class="xslopenurl" style="display:none"><span class="inst-open-url-holders" data-targetid="10.1093%2Fbioinformatics%2Fbtq524"> </span></div><div class="pub-id"><a href="http://www.ncbi.nlm.nih.gov/pubmed/20847218" class="link link-pub-id openInAnotherWindow" target="_blank">PubMed</a></div><div class="worldcat-reference-ref-link js-worldcat-preview-ref-link" style="display:none"><a class="openInAnotherWindow" href="https://www.worldcat.org/search?q=ti:Ruffus%3A%20a%20lightweight%20Python%20library%20for%20computational%20pipelines&amp;qt=advanced&amp;dblist=638" target="_blank">WorldCat</a></div>&nbsp;</div></div></div></div></div><div content-id="bbw020-B8" xmlns:helper="urn:XsltStringHelper"><div class="ref false"><div role="bbw020-B8" class="ref-content "><div class="label">8</div><div class="citation mixed-citation"><div class="person-group"><div class="name string-name"><div class="surname">Sadedin</div> <div class="given-names">SP</div></div>, <div class="name string-name"><div class="surname">Pope</div> <div class="given-names">B</div></div>, <div class="name string-name"><div class="surname">Oshlack</div> <div class="given-names">A.</div></div></div> 
+<div class="article-title">Bpipe: a tool for running and managing bioinformatics pipelines</div>. <div class="source">Bioinformatics</div>&nbsp; <div class="year">2012</div>;<div class="volume">28</div>:<div class="fpage">1525</div>–<div class="lpage">6</div>.<div class="citation-links"><div class="google-scholar-ref-link"><a class="openInAnotherWindow" href="https://scholar.google.com/scholar_lookup?title=Bpipe%3A%20a%20tool%20for%20running%20and%20managing%20bioinformatics%20pipelines&amp;author=SP%20Sadedin&amp;author=B%20Pope&amp;author=A.%20Oshlack&amp;publication_year=2012&amp;journal=Bioinformatics&amp;volume=28&amp;pages=1525-6" target="_blank">Google Scholar</a></div><div class="crossref-doi js-ref-link"><a class="openInAnotherWindow" href="http://dx.doi.org/10.1093/bioinformatics/bts167" target="_blank">Crossref</a></div><div class="adsDoiReference hide"><a class="openInAnotherWindow" href="http://adsabs.harvard.edu/cgi-bin/basic_connect?qsearch=10.1093%2Fbioinformatics%2Fbts167" target="_blank">Search ADS</a></div><div class="xslopenurl" style="display:none"><span class="inst-open-url-holders" data-targetid="10.1093%2Fbioinformatics%2Fbts167"> </span></div><div class="pub-id"><a href="http://www.ncbi.nlm.nih.gov/pubmed/22500002" class="link link-pub-id openInAnotherWindow" target="_blank">PubMed</a></div><div class="worldcat-reference-ref-link js-worldcat-preview-ref-link" style="display:none"><a class="openInAnotherWindow" href="https://www.worldcat.org/search?q=ti:Bpipe%3A%20a%20tool%20for%20running%20and%20managing%20bioinformatics%20pipelines&amp;qt=advanced&amp;dblist=638" target="_blank">WorldCat</a></div>&nbsp;</div></div></div></div></div><div content-id="bbw020-B9" xmlns:helper="urn:XsltStringHelper"><div class="ref false"><div role="bbw020-B9" class="ref-content "><div class="label">9</div><div class="citation mixed-citation"><div class="person-group"><div class="name string-name"><div class="surname">Deelman</div> <div class="given-names">E</div></div>, <div class="name string-name"><div class="surname">Singh</div> <div class="given-names">G</div></div>, <div class="name string-name"><div class="surname">Su</div> <div class="given-names">M-H</div></div></div>, et al.&nbsp; 
+<div class="article-title">Pegasus: a framework for mapping complex scientific workflows onto distributed systems</div>. <div class="source">Sci Program</div>&nbsp; <div class="year">2005</div>;<div class="volume">13</div>:<div class="fpage">219</div>–<div class="lpage">37</div>.<div class="citation-links"><div class="xslopenurl" style="display:none"><span class="js-inst-open-url-holders-nodoi"><a class="openInAnotherWindow js-open-url-link" target="_blank" data-href-template="{targetURL}?sid=oup:orr&amp;genre=article&amp;atitle=Pegasus%3A%20a%20framework%20for%20mapping%20complex%20scientific%20workflows%20onto%20distributed%20systems&amp;aulast=Deelman&amp;date=2005&amp;spage=219&amp;epage=37&amp;volume=13" href="#"></a></span></div><div class="worldcat-reference-ref-link js-worldcat-preview-ref-link" style="display:none"><a class="openInAnotherWindow" href="https://www.worldcat.org/search?q=ti:Pegasus%3A%20a%20framework%20for%20mapping%20complex%20scientific%20workflows%20onto%20distributed%20systems&amp;qt=advanced&amp;dblist=638" target="_blank">WorldCat</a></div>&nbsp;</div></div></div></div></div><div content-id="bbw020-B10" xmlns:helper="urn:XsltStringHelper"><div class="ref false"><div role="bbw020-B10" class="ref-content "><div class="label">10</div><div class="citation mixed-citation"><div class="person-group"><div class="name string-name"><div class="surname">DePristo</div> <div class="given-names">MA</div></div>, <div class="name string-name"><div class="surname">Banks</div> <div class="given-names">E</div></div>, <div class="name string-name"><div class="surname">Poplin</div> <div class="given-names">R</div></div></div>, et al.&nbsp; 
+<div class="article-title">A framework for variation discovery and genotyping using next-generation DNA sequencing data</div>. <div class="source">Nat Rev Clin Oncol</div>&nbsp; <div class="year">2011</div>;<div class="volume">43</div>:<div class="fpage">491</div>–<div class="lpage">8</div>.<div class="citation-links"><div class="xslopenurl" style="display:none"><span class="js-inst-open-url-holders-nodoi"><a class="openInAnotherWindow js-open-url-link" target="_blank" data-href-template="{targetURL}?sid=oup:orr&amp;genre=article&amp;atitle=A%20framework%20for%20variation%20discovery%20and%20genotyping%20using%20next-generation%20DNA%20sequencing%20data&amp;aulast=DePristo&amp;date=2011&amp;spage=491&amp;epage=8&amp;volume=43" href="#"></a></span></div><div class="worldcat-reference-ref-link js-worldcat-preview-ref-link" style="display:none"><a class="openInAnotherWindow" href="https://www.worldcat.org/search?q=ti:A%20framework%20for%20variation%20discovery%20and%20genotyping%20using%20next-generation%20DNA%20sequencing%20data&amp;qt=advanced&amp;dblist=638" target="_blank">WorldCat</a></div>&nbsp;</div></div></div></div></div><div content-id="bbw020-B11" xmlns:helper="urn:XsltStringHelper"><div class="ref false"><div role="bbw020-B11" class="ref-content "><div class="label">11</div><div class="citation mixed-citation"><div class="person-group"><div class="name string-name"><div class="surname">Goecks</div> <div class="given-names">J</div></div>, <div class="name string-name"><div class="surname">Nekrutenko</div> <div class="given-names">A</div></div>, <div class="name string-name"><div class="surname">Taylor</div> <div class="given-names">J</div></div></div>, et al.&nbsp; 
+<div class="article-title">Galaxy: a comprehensive approach for 
+supporting accessible, reproducible, and transparent computational 
+research in the life sciences</div>. <div class="source">Genome Biol</div>&nbsp; <div class="year">2010</div>;<div class="volume">11</div>:<div class="fpage">R86</div><div class="citation-links"><div class="google-scholar-ref-link"><a class="openInAnotherWindow" href="https://scholar.google.com/scholar_lookup?title=Galaxy%3A%20a%20comprehensive%20approach%20for%20supporting%20accessible%2C%20reproducible%2C%20and%20transparent%20computational%20research%20in%20the%20life%20sciences&amp;author=J%20Goecks&amp;author=A%20Nekrutenko&amp;author=J%20Taylor&amp;publication_year=2010&amp;journal=Genome%20Biol&amp;volume=11&amp;pages=R86" target="_blank">Google Scholar</a></div><div class="crossref-doi js-ref-link"><a class="openInAnotherWindow" href="http://dx.doi.org/10.1186/gb-2010-11-8-r86" target="_blank">Crossref</a></div><div class="adsDoiReference hide"><a class="openInAnotherWindow" href="http://adsabs.harvard.edu/cgi-bin/basic_connect?qsearch=10.1186%2Fgb-2010-11-8-r86" target="_blank">Search ADS</a></div><div class="xslopenurl" style="display:none"><span class="inst-open-url-holders" data-targetid="10.1186%2Fgb-2010-11-8-r86"> </span></div><div class="pub-id"><a href="http://www.ncbi.nlm.nih.gov/pubmed/20738864" class="link link-pub-id openInAnotherWindow" target="_blank">PubMed</a></div><div class="worldcat-reference-ref-link js-worldcat-preview-ref-link" style="display:none"><a class="openInAnotherWindow" href="https://www.worldcat.org/search?q=ti:Galaxy%3A%20a%20comprehensive%20approach%20for%20supporting%20accessible%2C%20reproducible%2C%20and%20transparent%20computational%20research%20in%20the%20life%20sciences&amp;qt=advanced&amp;dblist=638" target="_blank">WorldCat</a></div>&nbsp;</div></div></div></div></div><div content-id="bbw020-B12" xmlns:helper="urn:XsltStringHelper"><div class="ref false"><div role="bbw020-B12" class="ref-content "><div class="label">12</div><div class="citation mixed-citation"><div class="person-group"><div class="name string-name"><div class="surname">Wolstencroft</div> <div class="given-names">K</div></div>, <div class="name string-name"><div class="surname">Haines</div> <div class="given-names">R</div></div>, <div class="name string-name"><div class="surname">Fellows</div> <div class="given-names">D</div></div></div>, et al.&nbsp; 
+<div class="article-title">The Taverna workflow suite: designing and executing workflows of Web Services on the desktop, web or in the cloud</div>. <div class="source">Nucleic Acids Res</div>&nbsp; <div class="year">2013</div>;<div class="volume">41</div>:<div class="fpage">W557</div>–<div class="lpage">61</div>.<div class="citation-links"><div class="google-scholar-ref-link"><a class="openInAnotherWindow" href="https://scholar.google.com/scholar_lookup?title=The%20Taverna%20workflow%20suite%3A%20designing%20and%20executing%20workflows%20of%20Web%20Services%20on%20the%20desktop%2C%20web%20or%20in%20the%20cloud&amp;author=K%20Wolstencroft&amp;author=R%20Haines&amp;author=D%20Fellows&amp;publication_year=2013&amp;journal=Nucleic%20Acids%20Res&amp;volume=41&amp;pages=W557-61" target="_blank">Google Scholar</a></div><div class="crossref-doi js-ref-link"><a class="openInAnotherWindow" href="http://dx.doi.org/10.1093/nar/gkt328" target="_blank">Crossref</a></div><div class="adsDoiReference hide"><a class="openInAnotherWindow" href="http://adsabs.harvard.edu/cgi-bin/basic_connect?qsearch=10.1093%2Fnar%2Fgkt328" target="_blank">Search ADS</a></div><div class="xslopenurl" style="display:none"><span class="inst-open-url-holders" data-targetid="10.1093%2Fnar%2Fgkt328"> </span></div><div class="pub-id"><a href="http://www.ncbi.nlm.nih.gov/pubmed/23640334" class="link link-pub-id openInAnotherWindow" target="_blank">PubMed</a></div><div class="worldcat-reference-ref-link js-worldcat-preview-ref-link" style="display:none"><a class="openInAnotherWindow" href="https://www.worldcat.org/search?q=ti:The%20Taverna%20workflow%20suite%3A%20designing%20and%20executing%20workflows%20of%20Web%20Services%20on%20the%20desktop%2C%20web%20or%20in%20the%20cloud&amp;qt=advanced&amp;dblist=638" target="_blank">WorldCat</a></div>&nbsp;</div></div></div></div></div><div content-id="bbw020-B13" xmlns:helper="urn:XsltStringHelper"><div class="ref false"><div role="bbw020-B13" class="ref-content "><div class="label">13</div><div class="citation mixed-citation"><div class="person-group"><div class="name string-name"><div class="surname">Liu</div> <div class="given-names">B</div></div>, <div class="name string-name"><div class="surname">Madduri</div> <div class="given-names">RK</div></div>, <div class="name string-name"><div class="surname">Sotomayor</div> <div class="given-names">B</div></div></div>, et al.&nbsp; 
+<div class="article-title">Cloud-based bioinformatics workflow platform for large-scale next-generation sequencing analyses</div>. <div class="source">J Biomed Inform</div>&nbsp; <div class="year">2014</div>;<div class="volume">49</div>:<div class="fpage">119</div>–<div class="lpage">33</div>.<div class="citation-links"><div class="google-scholar-ref-link"><a class="openInAnotherWindow" href="https://scholar.google.com/scholar_lookup?title=Cloud-based%20bioinformatics%20workflow%20platform%20for%20large-scale%20next-generation%20sequencing%20analyses&amp;author=B%20Liu&amp;author=RK%20Madduri&amp;author=B%20Sotomayor&amp;publication_year=2014&amp;journal=J%20Biomed%20Inform&amp;volume=49&amp;pages=119-33" target="_blank">Google Scholar</a></div><div class="crossref-doi js-ref-link"><a class="openInAnotherWindow" href="http://dx.doi.org/10.1016/j.jbi.2014.01.005" target="_blank">Crossref</a></div><div class="adsDoiReference hide"><a class="openInAnotherWindow" href="http://adsabs.harvard.edu/cgi-bin/basic_connect?qsearch=10.1016%2Fj.jbi.2014.01.005" target="_blank">Search ADS</a></div><div class="xslopenurl" style="display:none"><span class="inst-open-url-holders" data-targetid="10.1016%2Fj.jbi.2014.01.005"> </span></div><div class="pub-id"><a href="http://www.ncbi.nlm.nih.gov/pubmed/24462600" class="link link-pub-id openInAnotherWindow" target="_blank">PubMed</a></div><div class="worldcat-reference-ref-link js-worldcat-preview-ref-link" style="display:none"><a class="openInAnotherWindow" href="https://www.worldcat.org/search?q=ti:Cloud-based%20bioinformatics%20workflow%20platform%20for%20large-scale%20next-generation%20sequencing%20analyses&amp;qt=advanced&amp;dblist=638" target="_blank">WorldCat</a></div>&nbsp;</div></div></div></div></div><div content-id="bbw020-B14" xmlns:helper="urn:XsltStringHelper"><div class="ref false"><div role="bbw020-B14" class="ref-content "><div class="label">14</div><div class="citation mixed-citation"><div class="person-group"><div class="name string-name"><div class="surname">Dooley</div> <div class="given-names">R</div></div>, <div class="name string-name"><div class="surname">Vaughn</div> <div class="given-names">M</div></div>, <div class="name string-name"><div class="surname">Stanzione</div> <div class="given-names">D</div></div></div>,
+ et al.&nbsp; Software-as-a-service: the iPlant foundation API. 5th IEEE
+ Workshop on Many-Task Computing on Grids and Supercomputers (MTAGS), <div class="year">2012</div>. Salt Lake City, Utah, USA.</div></div></div></div><div content-id="bbw020-B15" xmlns:helper="urn:XsltStringHelper"><div class="ref false"><div role="bbw020-B15" class="ref-content "><div class="label">15</div><div class="citation mixed-citation"><div class="person-group"><div class="name string-name"><div class="surname">Hurley</div> <div class="given-names">DG</div></div>, <div class="name string-name"><div class="surname">Budden</div> <div class="given-names">DM</div></div>, <div class="name string-name"><div class="surname">Crampin</div> <div class="given-names">EJ.</div></div></div> 
+<div class="article-title">Virtual reference environments: a simple way to make research reproducible</div>. <div class="source">Brief Bioinform</div>&nbsp; <div class="year">2015</div>;<div class="volume">16</div>:<div class="fpage">901</div>–<div class="lpage">3</div>.<div class="citation-links"><div class="google-scholar-ref-link"><a class="openInAnotherWindow" href="https://scholar.google.com/scholar_lookup?title=Virtual%20reference%20environments%3A%20a%20simple%20way%20to%20make%20research%20reproducible&amp;author=DG%20Hurley&amp;author=DM%20Budden&amp;author=EJ.%20Crampin&amp;publication_year=2015&amp;journal=Brief%20Bioinform&amp;volume=16&amp;pages=901-3" target="_blank">Google Scholar</a></div><div class="crossref-doi js-ref-link"><a class="openInAnotherWindow" href="http://dx.doi.org/10.1093/bib/bbu043" target="_blank">Crossref</a></div><div class="adsDoiReference hide"><a class="openInAnotherWindow" href="http://adsabs.harvard.edu/cgi-bin/basic_connect?qsearch=10.1093%2Fbib%2Fbbu043" target="_blank">Search ADS</a></div><div class="xslopenurl" style="display:none"><span class="inst-open-url-holders" data-targetid="10.1093%2Fbib%2Fbbu043"> </span></div><div class="pub-id"><a href="http://www.ncbi.nlm.nih.gov/pubmed/25433467" class="link link-pub-id openInAnotherWindow" target="_blank">PubMed</a></div><div class="worldcat-reference-ref-link js-worldcat-preview-ref-link" style="display:none"><a class="openInAnotherWindow" href="https://www.worldcat.org/search?q=ti:Virtual%20reference%20environments%3A%20a%20simple%20way%20to%20make%20research%20reproducible&amp;qt=advanced&amp;dblist=638" target="_blank">WorldCat</a></div>&nbsp;</div></div></div></div></div><div content-id="bbw020-B16" xmlns:helper="urn:XsltStringHelper"><div class="ref false"><div role="bbw020-B16" class="ref-content "><div class="label">16</div><div class="citation mixed-citation"><div class="person-group"><div class="name string-name"><div class="surname">Spjuth</div> <div class="given-names">O</div></div>, <div class="name string-name"><div class="surname">Bongcam-Rudloff</div> <div class="given-names">E</div></div>, <div class="name string-name"><div class="surname">Hernández</div> <div class="given-names">GC</div></div></div>, et al.&nbsp; 
+<div class="article-title">Experiences with workflows for automating data-intensive bioinformatics</div>. <div class="source">Biol Direct</div>&nbsp; <div class="year">2015</div>;<div class="volume">10</div>:<div class="fpage">43</div><div class="citation-links"><div class="google-scholar-ref-link"><a class="openInAnotherWindow" href="https://scholar.google.com/scholar_lookup?title=Experiences%20with%20workflows%20for%20automating%20data-intensive%20bioinformatics&amp;author=O%20Spjuth&amp;author=E%20Bongcam-Rudloff&amp;author=GC%20Hern%C3%A1ndez&amp;publication_year=2015&amp;journal=Biol%20Direct&amp;volume=10&amp;pages=43" target="_blank">Google Scholar</a></div><div class="crossref-doi js-ref-link"><a class="openInAnotherWindow" href="http://dx.doi.org/10.1186/s13062-015-0071-8" target="_blank">Crossref</a></div><div class="adsDoiReference hide"><a class="openInAnotherWindow" href="http://adsabs.harvard.edu/cgi-bin/basic_connect?qsearch=10.1186%2Fs13062-015-0071-8" target="_blank">Search ADS</a></div><div class="xslopenurl" style="display:none"><span class="inst-open-url-holders" data-targetid="10.1186%2Fs13062-015-0071-8"> </span></div><div class="pub-id"><a href="http://www.ncbi.nlm.nih.gov/pubmed/26282399" class="link link-pub-id openInAnotherWindow" target="_blank">PubMed</a></div><div class="worldcat-reference-ref-link js-worldcat-preview-ref-link" style="display:none"><a class="openInAnotherWindow" href="https://www.worldcat.org/search?q=ti:Experiences%20with%20workflows%20for%20automating%20data-intensive%20bioinformatics&amp;qt=advanced&amp;dblist=638" target="_blank">WorldCat</a></div>&nbsp;</div></div></div></div></div></div>        <!-- /foreach -->
+
+
+
+        
+
+        
+<div class="copyright copyright-statement">© The Author 2016. Published by Oxford University Press.</div><div class="license"><div class="license-p">This is an Open Access article distributed under the terms of the Creative Commons Attribution License (<a class="link link-uri" href="http://creativecommons.org/licenses/by/4.0/" target="">http://creativecommons.org/licenses/by/4.0/</a>), which permits unrestricted reuse, distribution, and reproduction in any medium, provided the original work is properly cited.</div></div><!-- /foreach -->
+
+        <span id="UserHasAccess" data-userhasaccess="True"></span>
+
+    </div><!-- /.widget-items -->
+</div><!-- /.module-widget -->
+
+ 
+    </div>
+    <div class="widget widget-SolrResourceMetadata widget-instance-OUP_Article_ResourceMetadata_Widget">
+        
+    
+
+ 
+    </div>
+    <div class="widget widget-EditorInformation widget-instance-OUP_Article_EditorInformation_Widget">
+        
+ 
+    </div>
+    <div class="widget widget-ArticleOpenScienceBadges widget-instance-OUP_Article_OpenScienceBadge_Widget">
+        
+ 
+    </div>
+
+                <div id="ContentTabFilteredView"></div>
+                <div class="downloadImagesppt js-download-images-ppt st-download-images-ppt">
+                    <a id="lnkDownloadAllImages" class="js-download-all-images-link" href="https://oup.silverchair-cdn.com/DownloadFile/DownloadImage.aspx?image=&amp;PPTtype=SlideSet&amp;ar=2562749&amp;xsltPath=~/UI/app/XSLT&amp;siteId=5143">Download all figures</a>
+                </div>
+                    <div class="widget widget-ArticleDataRepositories widget-instance-Article_DryadLink">
+         
+    </div>
+
+                <div class="comments">
+    <div class="widget widget-UserCommentBody widget-instance-UserCommentBody_Article">
+        
+
+ 
+    </div>
+    <div class="widget widget-UserComment widget-instance-OUP_UserComment_Article">
+         
+    </div>
+
+                </div>
+            </div>
+        </div>
+
+    </div>
+</div>
+<div id="Sidebar" class="page-column page-column--right">
+    <div class="widget widget-AdBlock widget-instance-ArticlePageTopSidebar">
+        
+
+<div id="adBlockMainBodyTop" style=" ">
+    <script>
+        googletag.cmd.push(function () { googletag.display('adBlockMainBodyTop'); });
+    </script>
+<div id="google_ads_iframe_/116097782/bib_Behind_Ad2_0__container__" style="border: 0pt none; width: 300px; height: 250px;"></div></div>
+ 
+    </div>
+<div class="widget widget-dynamic " data-count="1"> 
+
+    <div class="widget-dynamic-inner-wrap">
+
+<div class="widget widget-dynamic " data-count="10"> 
+
+    <div class="widget-dynamic-inner-wrap">
+
+    <div class="widget widget-ArticleLevelMetrics widget-instance-Article_RightRailB0Article_RightRail_ArticleLevelMetrics">
+        
+
+
+
+
+
+    <div class="artmet-condensed-wrap clearfix">
+        <div class="artmet-condensed-stats clearfix">
+            <div class="artmet-item artmet-views">
+                <span class="artmet-number">30,065</span>
+                <span class="artmet-text">Views</span>
+            </div>
+
+            <div class="artmet-item artmet-citations">
+                <span class="artmet-number">
+                     <a href="http://gateway.webofknowledge.com/gateway/Gateway.cgi?GWVersion=2&amp;SrcApp=PARTNER_APP&amp;SrcAuth=LinksAMR&amp;KeyUT=WOS:000400968000017&amp;DestLinkType=CitingArticles&amp;DestApp=ALL_WOS&amp;UsrCustomerID=61f30d8ae69c46f86624c5f98a3bc13a" target="">62</a>
+                </span>
+                <span class="artmet-text">Citations</span>
+            </div>
+    
+
+            <div class="artmet-item artmet-altmetric">
+    <div class="widget widget-AltmetricLink widget-instance-ArticleLevelMetrics_AltmetricLinkSummary">
+            <!-- Altmetrics -->
+    <div id="altmetricEmbedId" runat="server" class="altmetric-embed" data-badge-type="donut" data-hide-no-mentions="false" data-doi="10.1093/bib/bbw020" data-uuid="73de7453-63bd-3492-aada-28c3a26f0f25"><a target="_self" href="https://www.altmetric.com/details.php?domain=academic.oup.com&amp;citation_id=6309789" style="display:inline-block;">
+        <img alt="Article has an altmetric score of 97" src="https://badges.altmetric.com/?size=128&amp;score=97&amp;types=rtttttwf" style="border:0; margin:0; max-width: none;" width="64px" height="64px">
+</a></div>
+         <script type="text/javascript" src="embed.js"></script>
+ 
+    </div>
+
+            </div>
+        </div>
+
+            <div class="artmet-modal-trigger-wrap clearfix">
+                <a class="artmet-modal-trigger" data-article-id="2562749"><i class="icon-metrics"></i><span>View Metrics</span></a>
+            </div>
+    </div>
+        <div class="artmet-modal" id="MetricsModal">
+            <div class="artmet-modal-contents">
+                <a class="artmet-close-modal">×</a>
+            </div>
+        </div>
+
+ 
+    </div>
+    <div class="widget widget-Alerts widget-instance-Article_RightRailB0Article_RightRail_Alerts">
+        
+    <div class="alertsWidget">
+        <h3>Email alerts</h3>
+                <div class="userAlert alertType-1">
+                    <a role="link" aria-label="Article activity alert" data-userloggedin="False" data-alerttype="1">Article activity alert</a>
+                </div>
+                <div class="userAlert alertType-3">
+                    <a role="link" aria-label="Advance article alerts" data-userloggedin="False" data-alerttype="3">Advance article alerts</a>
+                </div>
+                <div class="userAlert alertType-5">
+                    <a role="link" aria-label="New issue alert" data-userloggedin="False" data-alerttype="5">New issue alert</a>
+                </div>
+                    <div class="userAlert alertType-MarketingLink">
+                <a role="link" aria-label="Receive exclusive offers and updates from Oxford Academic" data-userloggedin="False" data-additionalurl="/my-account/communication-preferences">Receive exclusive offers and updates from Oxford Academic</a>
+            </div>
+        <div class="userAlertSignUpModal reveal-modal small" data-reveal="">
+            <div class="userAlertSignUp"></div>
+            <label for="alert-signup-modal-close" class="screenreader-text">Close</label>
+            <a role="button" id="alert-signup-modal-close" class="close-reveal-modal" href="javascript:;">
+                <i class="icon-general-close"></i>
+            </a>
+        </div>
+    </div>
+ 
+    </div>
+    <div class="widget widget-ArticleLinks widget-instance-Article_RightRailB0Article_RightRail_ArticleLinks">
+         
+    </div>
+    <div class="widget widget-RelatedContent widget-instance-Article_RightRailB0Article_RightRail_RelatedContent">
+         
+    </div>
+    <div class="widget widget-RelatedArticleIn widget-instance-Article_RightRailB0Article_RightRail_RelatedArticleIn">
+            <h3 class="relatedArticleIn-title">Related articles in</h3>
+    <div class="relatedArticleIn-content">
+        <ul>
+                <li>
+                    <a href="http://gateway.webofknowledge.com/gateway/Gateway.cgi?GWVersion=2&amp;SrcApp=PARTNER_APP&amp;SrcAuth=LinksAMR&amp;KeyUT=WOS:000400968000017&amp;DestLinkType=RelatedRecords&amp;DestApp=ALL_WOS&amp;UsrCustomerID=61f30d8ae69c46f86624c5f98a3bc13a">Web of Science</a>
+                </li>
+                <li>
+                    <a href="https://scholar.google.com/scholar?q=related:https%3a%2f%2facademic.oup.com%2fbib%2farticle%2f18%2f3%2f530%2f2562749">Google Scholar</a>
+                </li>
+        </ul>
+    </div>
+ 
+    </div>
+    <div class="widget widget-ArticleCitedBy widget-instance-Article_RightRailB0Article_RightRail_ArticleCitedBy">
+        <div class="rail-widget_wrap vt-articles-cited-by">
+    <h3 class="article-cited-title">Citing articles via</h3>
+    <div class="widget-links_wrap">
+            <div class="article-cited-link-wrap web-of-science">
+                <a href="http://gateway.webofknowledge.com/gateway/Gateway.cgi?GWVersion=2&amp;SrcApp=PARTNER_APP&amp;SrcAuth=LinksAMR&amp;KeyUT=WOS:000400968000017&amp;DestLinkType=CitingArticles&amp;DestApp=ALL_WOS&amp;UsrCustomerID=61f30d8ae69c46f86624c5f98a3bc13a" target="">Web of Science (62)</a>
+            </div>
+                    <div class="article-cited-link-wrap google-scholar-url">
+                <a href="http://scholar.google.com/scholar?q=link:https%3A%2F%2Facademic.oup.com%2Fbib%2Farticle%2F18%2F3%2F530%2F2562749" target="">Google Scholar</a>
+            </div>
+                    <div class="article-cited-link-wrap crossref-citedby">
+                <a href="https://academic.oup.com/bib/crossref-citedby/2562749">Crossref</a>
+            </div>
+    </div>
+</div> 
+    </div>
+    <div class="widget widget-ArticleListNewAndPopular widget-instance-Article_RightRailB0Article_RightRail_ArticleNewPopularCombined">
+            <ul class="articleListNewAndPopularCombinedView">
+            <li>
+                <a href="javascript:;" class="articleListNewAndPopular-mode active" data-mode="MostRecent">Latest</a>
+            </li>
+            <li>
+                <a href="javascript:;" class="articleListNewAndPopular-mode " data-mode="MostRead">Most Read</a>
+            </li>
+            <li>
+                <a href="javascript:;" class="articleListNewAndPopular-mode " data-mode="MostCited">Most Cited</a>
+            </li>
+    </ul>
+        <section class="articleListNewPopContent articleListNewAndPopular-ContentView-MostRecent hasContent">
+
+
+
+
+<div id="newPopularList-Article_RightRailB0Article_RightRail_ArticleNewPopularCombined" class="fb">
+
+    
+
+
+
+
+
+
+
+<div class="widget-layout widget-layout--vert">
+
+
+
+
+
+
+        <div class="widget-columns widget-col-1">
+            <div class="col">
+
+                <div class="widget-dynamic-entry">
+                    
+
+
+
+                    
+                        <a href="https://academic.oup.com/bib/advance-article/doi/10.1093/bib/bbz126/5648232?searchresult=1">
+                                                        <div class="widget-dynamic-journal-title">
+                                Systematic evaluation of differential splicing tools for RNA-seq studies
+                            </div>
+                        </a>
+                    <div class="widget-dynamic-journal-image-synopsis">
+                            <div class="widget-dynamic-journal-synopsis">
+                                
+                            </div> <!-- /.widget-dynamic-journal-synopsis -->
+                    </div>
+
+                </div>
+                <div class="widget-dynamic-entry">
+                    
+
+
+
+                    
+                        <a href="https://academic.oup.com/bib/advance-article/doi/10.1093/bib/bbz119/5626336?searchresult=1">
+                                                        <div class="widget-dynamic-journal-title">
+                                Cardioinformatics: the nexus of bioinformatics and precision cardiology
+                            </div>
+                        </a>
+                    <div class="widget-dynamic-journal-image-synopsis">
+                            <div class="widget-dynamic-journal-synopsis">
+                                
+                            </div> <!-- /.widget-dynamic-journal-synopsis -->
+                    </div>
+
+                </div>
+                <div class="widget-dynamic-entry">
+                    
+
+
+
+                    
+                        <a href="https://academic.oup.com/bib/advance-article/doi/10.1093/bib/bbz142/5650982?searchresult=1">
+                                                        <div class="widget-dynamic-journal-title">
+                                RNAactDrug: a comprehensive database of 
+RNAs associated with drug sensitivity from multi-omics data
+                            </div>
+                        </a>
+                    <div class="widget-dynamic-journal-image-synopsis">
+                            <div class="widget-dynamic-journal-synopsis">
+                                
+                            </div> <!-- /.widget-dynamic-journal-synopsis -->
+                    </div>
+
+                </div>
+                <div class="widget-dynamic-entry">
+                    
+
+
+
+                    
+                        <a href="https://academic.oup.com/bib/advance-article/doi/10.1093/bib/bbz141/5650973?searchresult=1">
+                                                        <div class="widget-dynamic-journal-title">
+                                LARMD: integration of bioinformatic 
+resources to profile ligand-driven protein dynamics with a case on the 
+activation of estrogen receptor
+                            </div>
+                        </a>
+                    <div class="widget-dynamic-journal-image-synopsis">
+                            <div class="widget-dynamic-journal-synopsis">
+                                
+                            </div> <!-- /.widget-dynamic-journal-synopsis -->
+                    </div>
+
+                </div>
+                <div class="widget-dynamic-entry">
+                    
+
+
+
+                    
+                        <a href="https://academic.oup.com/bib/advance-article/doi/10.1093/bib/bbz138/5645549?searchresult=1">
+                                                        <div class="widget-dynamic-journal-title">
+                                Clustering and variable selection 
+evaluation of 13 unsupervised methods for multi-omics data integration
+                            </div>
+                        </a>
+                    <div class="widget-dynamic-journal-image-synopsis">
+                            <div class="widget-dynamic-journal-synopsis">
+                                
+                            </div> <!-- /.widget-dynamic-journal-synopsis -->
+                    </div>
+
+                </div>
+            </div>
+        </div>
+</div><!-- /.widget-layout-[orientation] --></div>
+        </section>
+        <section class="articleListNewPopContent articleListNewAndPopular-ContentView-MostRead hide">
+        </section>
+        <section class="articleListNewPopContent articleListNewAndPopular-ContentView-MostCited hide">
+        </section>
+ 
+    </div>
+
+    </div>
+
+</div>
+    </div>
+
+</div>    <div class="widget widget-AdBlock widget-instance-ArticlePageTopMainBodyBottom">
+        
+
+<div id="adBlockMainBodyBottom" style=" ">
+    <script>
+        googletag.cmd.push(function () { googletag.display('adBlockMainBodyBottom'); });
+    </script>
+<div id="google_ads_iframe_/116097782/bib_Behind_Ad3_0__container__" style="border: 0pt none; width: 300px; height: 250px;"></div></div>
+ 
+    </div>
+
+</div>
+
+</div>
+<input id="hfArticleTitle" name="hfArticleTitle" value="review of bioinformatic pipeline frameworks | Briefings in Bioinformatics | Oxford Academic" type="hidden">
+<input id="hfArticleLeftNavStickyOffset" name="hfArticleLeftNavStickyOffset" value="29" type="hidden">
+
+
+            </div><!-- /.center-inner-row no-overflow -->
+        </section>
+    </div>
+    <div class="mobile-mask">
+    </div>
+    <section class="footer_wrap vt-site-footer">
+        
+    <script type="text/javascript" src="api.js"></script>
+    <script type="text/javascript" src="article-page.js"></script>
+
+    <script type="text/javascript">
+        googletag.cmd.push(function () {
+            
+            googletag.pubads().setTargeting("jnlsdoi", "10.1093/bib/bbw020");
+            googletag.enableServices();
+        });
+    </script>
+
+        
+
+
+    <div class="widget widget-SitePageFooter widget-instance-SitePageFooter">
+        <div class="ad-banner ad-banner-footer">
+    <div class="widget widget-AdBlock widget-instance-FooterAd">
+        
+
+<div id="adBlockFooter" style=" ">
+    <script>
+        googletag.cmd.push(function () { googletag.display('adBlockFooter'); });
+    </script>
+<div id="google_ads_iframe_/116097782/bib_Behind_Ad4_0__container__" style="border: 0pt none; width: 728px; height: 90px;"></div></div>
+ 
+    </div>
+
+</div>
+
+    <div class="journal-footer journal-bg">
+        <div class="center-inner-row">
+
+                <div class="journal-footer-menu">
+
+                    <ul>
+                                <li class="link-1">
+                                    <a href="https://academic.oup.com/bib/pages/About">About Briefings in Bioinformatics</a>
+                                </li>
+                                <li class="link-2">
+                                    <a href="https://academic.oup.com/bib/pages/Editorial_Board">Editorial Board</a>
+                                </li>
+                                <li class="link-3">
+                                    <a href="https://academic.oup.com/bib/pages/General_Instructions">Author Guidelines</a>
+                                </li>
+                                <li class="link-4">
+                                    <a href="https://www.facebook.com/OUPAcademic">Facebook</a>
+                                </li>
+                                <li class="link-5">
+                                    <a href="https://twitter.com/oxfordjournals">Twitter</a>
+                                </li>
+</ul><ul>                                <li class="link-1">
+                                    <a href="https://academic.oup.com/bib/subscribe">Purchase</a>
+                                </li>
+                                <li class="link-2">
+                                    <a href="http://www.oxfordjournals.org/en/library-recommendation-form.html">Recommend to your Library</a>
+                                </li>
+                                <li class="link-3">
+                                    <a href="http://www.oupmediainfo.com/">Advertising and Corporate Services</a>
+                                </li>
+                                <li class="link-4">
+                                    <a href="http://science-and-mathematics-careernetwork.oxfordjournals.org/jobseeker/search/results/?t730=&amp;search=&amp;t732=470054&amp;t731=&amp;t733=&amp;t735=&amp;t737=&amp;max=25&amp;site_id=20106">Journals Career Network</a>
+                                </li>
+
+                    </ul>
+
+
+                </div><!-- /.journal-footer-menu -->
+
+            <div class="journal-footer-affiliations">
+                <!-- <h3>Affiliations</h3> -->
+                    <a href="" target="">
+                        <img id="footer-logo-BriefingsinBioinformatics" class="journal-footer-affiliations-logo" src="bib_f1526563102.svg" alt="Briefings in Bioinformatics">
+                    </a>
+            </div><!-- /.journal-footer-affiliations -->
+
+            <div class="journal-footer-colophon">
+                <ul>
+                        <li>Online ISSN 1477-4054</li>
+                                        <li>Copyright © 2019 Oxford University Press</li>
+                </ul>
+            </div><!-- /.journal-footer-colophon -->
+
+
+        </div><!-- /.center-inner-row -->
+    </div><!-- /.journal-footer -->
+ 
+    </div>
+
+<div class="oup-footer">
+    <div class="center-inner-row">
+    <div class="widget widget-SelfServeContent widget-instance-OupUmbrellaFooterSelfServe">
+        
+<div class="oup-footer-row journal-links">
+<div class="global-footer selfservelinks">
+<ul>
+    <li>
+    <a href="https://academic.oup.com/journals/pages/about_us">About Us</a>
+    </li>
+    <li>
+    <a href="https://academic.oup.com/journals/pages/contact_us">Contact Us</a>
+    </li>
+    <li>
+    <a href="http://global.oup.com/jobs">Careers</a>
+    </li>
+    <li>
+    <a href="https://academic.oup.com/journals/pages/help">Help</a>
+    </li>
+    <li>
+    <a href="https://academic.oup.com/journals/pages/access_purchase">Access &amp; Purchase</a></li>
+    <li>
+    <a href="https://academic.oup.com/journals/pages/access_purchase/rights_and_permissions">Rights &amp; Permissions</a>
+    </li>
+    <li>
+    <a href="https://academic.oup.com/journals/pages/open_access">Open Access</a>
+    </li>
+</ul>
+</div>
+<div class="global-footer selfservelinks">
+<h4 id="global-footer-customer services" class="title footerheader">Connect</h4>
+<ul>
+    <li>
+    <a href="https://academic.oup.com/my-account/communication-preferences">Join Our Mailing List</a>
+    </li>
+    <li>
+    <a href="http://blog.oup.com/">OUPblog</a>
+    </li>
+    <li>
+    <a href="http://twitter.com/oupacademic">Twitter</a>
+    </li>
+    <li>
+    <a href="https://www.facebook.com/OUPAcademic">Facebook</a>
+    </li>
+    <li>
+    <a href="http://www.youtube.com/playlist?list=PL3MAPgqN8JWioLLTkU4mlFM4-SNt-f1Xs">YouTube</a>
+    </li>
+    <li>
+    <a href="http://oupacademic.tumblr.com/">Tumblr</a>
+    </li>
+</ul>
+</div>
+<div class="global-footer selfservelinks">
+<h4>Resources</h4>
+<ul>
+    <li><a href="https://academic.oup.com/journals/pages/authors">Authors</a></li>
+    <li><a href="https://academic.oup.com/journals/pages/librarians">Librarians</a></li>
+    <li><a href="https://academic.oup.com/journals/pages/societies">Societies</a></li>
+    <li><a href="https://academic.oup.com/journals/pages/sponsorship_and_advertising">Sponsors &amp; Advertisers</a></li>
+    <li><a href="https://academic.oup.com/journals/pages/press">Press &amp; Media</a></li>
+    <li><a href="https://academic.oup.com/journals/pages/agents">Agents</a></li>
+</ul>
+</div>
+<div class="global-footer selfservelinks">
+<h4>Explore</h4>
+<ul>
+    <li><a href="http://global.oup.com/academic">Shop OUP Academic</a></li>
+    <li><a href="http://www.oxforddictionaries.com/">Oxford Dictionaries</a></li>
+    <li><a href="http://oxfordindex.oup.com/">Oxford Index</a></li>
+    <li><a href="https://www.epigeum.com/">Epigeum</a></li>
+    <li><a href="http://global.oup.com/">OUP Worldwide</a></li>
+    <li><a href="http://www.ox.ac.uk/">University of Oxford</a></li>
+</ul>
+</div>
+<div class="OUP-mission">
+<p>Oxford University Press is a department of the University of Oxford. 
+It furthers the University's objective of excellence in research, 
+scholarship, and education by publishing worldwide</p>
+<img class="journal-footer-logo" src="oup-logo.svg" alt="Oxford University Press" width="150" height="42">
+</div>
+</div>
+<div class="oup-footer-row">
+<div class="oup-footer-row-links">
+<ul>
+    <li>Copyright © 2019 Oxford University Press</li>
+    <li><a href="https://global.oup.com/cookiepolicy/">Cookie Policy</a></li>
+    <li><a href="https://global.oup.com/privacy">Privacy Policy</a></li>
+    <li><a href="https://academic.oup.com/journals/pages/about_us/legal/notices">Legal Notice</a></li>
+    <li><a href="https://academic.oup.com/journals/pages/sitemap">Site Map</a></li>
+    <li><a href="https://academic.oup.com/journals/pages/about_us/legal/accessibility">Accessibility</a></li>
+    <li><a href="https://get.adobe.com/reader/">Get Adobe Reader</a></li>
+</ul>
+</div>
+</div>
+<style type="text/css">
+    /* Issue right column fix for tablet/mobile */
+    @media (max-width: 1200px) {
+    .pg_issue .widget-instance-OUP_Issue {
+    width: 100%;
+    }
+    }
+</style>
+    
+    
+     
+    </div>
+
+    </div>
+</div>
+<div class="ss-ui-only">
+
+</div>
+
+    </section>
+</div>
+
+
+
+    
+
+
+
+    
+
+
+    <div id="revealModal" class="reveal-modal" data-reveal="">
+        <div id="revealContent"></div>
+        <a class="close-reveal-modal" href="javascript:;"><i class="icon-general-close"></i><span class="screenreader-text">Close</span></a>
+    </div>
+    <div id="NeedSubscription" class="reveal-modal small" data-reveal="">
+        <div class="subscription-needed">
+            <h5>This Feature Is Available To Subscribers Only</h5>
+            <p><a href="https://academic.oup.com/sign-in">Sign In</a> or <a href="https://academic.oup.com/my-account/register?siteId=5143&amp;returnUrl=%2fbib%2farticle%2f18%2f3%2f530%2f2562749">Create an Account</a></p>
+        </div>
+        <a class="close-reveal-modal" href="javascript:;"><i class="icon-general-close"></i><span class="screenreader-text">Close</span></a>
+    </div>
+    <div id="noAccessReveal" class="reveal-modal tiny" data-reveal="">
+        <p>This PDF is available to Subscribers Only</p>
+        <a class="hide-for-article-page" id="articleLinkToPurchase" data-reveal=""><span>View Article Abstract &amp; Purchase Options</span></a>
+        <div class="issue-purchase-modal">
+            <p>For full access to this pdf, sign in to an existing account, or purchase an annual subscription.</p>
+        </div>
+        <a class="close-reveal-modal" href="javascript:;"><i class="icon-general-close"></i><span class="screenreader-text">Close</span></a>
+    </div>
+
+
+    
+
+
+<script src="MathJax.js"></script>
+
+  <script type="text/javascript" src="footer.js"></script>
+  <script async="async" src="addthis_widget.js"></script>
+
+
+    
+
+    
+
+    
+    
+
+
+
+
+    
+
+
+    <!-- Copyright 2001-2010, IBM Corporation All rights reserved. -->
+    <script src="ntpagetag.js"></script>
+    <noscript>
+        <img src="//ouptag.scholarlyiq.com/ntpagetag.gif?js=0" height="1" width="1" border="0" hspace="0" vspace="0" alt="Scholarly IQ" />
+    </noscript>
+
+
+    <div class="ad-banner js-ad-riser ad-banner-riser">
+
+    <div class="widget widget-AdBlock widget-instance-RiserAd">
+        <input class="hfAdBlockInfo" data-divid="adBlockRiser" data-slotname="" data-targetname="" data-width="" data-height="" data-enabled-on-mobile="True" data-adprovider-typeid="1" type="hidden">
+
+ 
+    </div>
+
+    </div>
+
+
+
+<div data-reveal="math-jax-load" id="math-jax-modal" class="reveal-modal" style="display: none;"></div><script type="text/javascript" src="bbw020.js"></script><div style="visibility: hidden; height: 1px; width: 1px; position: absolute; top: -9999px; z-index: 100000;" id="_atssh"><iframe id="_atssh914" title="AddThis utility frame" style="height: 1px; width: 1px; position: absolute; top: 0px; z-index: 100000; border: 0px none; left: 0px;" src="https://s7.addthis.com/static/sh.f48a1a04fe8dbf021b4cda1d.html#rand=0.6072316804029534&amp;iit=1575638414173&amp;tmr=load%3D1575638414147%26core%3D1575638414168%26main%3D1575638414170%26ifr%3D1575638414176&amp;cb=0&amp;cdn=0&amp;md=0&amp;kw=&amp;ab=-&amp;dh=academic.oup.com&amp;dr=&amp;du=https%3A%2F%2Facademic.oup.com%2Fbib%2Farticle%2F18%2F3%2F530%2F2562749&amp;href=https%3A%2F%2Facademic.oup.com%2Fbib%2Farticle%2F18%2F3%2F530%2F2562749&amp;dt=review%20of%20bioinformatic%20pipeline%20frameworks&amp;dbg=0&amp;cap=tc%3D0%26ab%3D0&amp;inst=1&amp;jsl=1&amp;prod=undefined&amp;lng=en&amp;ogt=updated_time%2Cimage%2Curl%2Cdescription%2Ctitle%2Ctype%3Darticle%2Csite_name&amp;pc=men&amp;pub=xa-5265518246c10183&amp;ssl=1&amp;sid=5dea558efb88fa2c&amp;srf=0.01&amp;ver=300&amp;xck=0&amp;xtr=0&amp;og=site_name%3DOUP%2520Academic%26type%3Darticle%26title%3Dreview%2520of%2520bioinformatic%2520pipeline%2520frameworks%26description%3DAbstract.%2520%2520High-throughput%2520bioinformatic%2520analyses%2520increasingly%2520rely%2520on%2520pipeline%2520frameworks%2520to%2520process%2520sequence%2520and%2520metadata.%2520Modern%2520implementations%2520of%2520these%2520fra%26url%3Dhttps%253A%252F%252Facademic.oup.com%252Fbib%252Farticle%252F18%252F3%252F530%252F2562749%26image%3Dhttps%253A%252F%252Foup.silverchair-cdn.com%252Foup%252Fbackfile%252FContent_public%252FJournal%252Fbib%252FIssue%252F18%252F3%252F2%252Fm_bib_18_3cover.png%253FExpires%253D1638643746%2526Signature%253DuP-ZkyoDRN8MtgtgqzkeMwCJsMQANCiFnUW2k3mBDUkAz98q2su-8HIv~bNTvG0xH-vCCuJVqmCe0TP4L17Z8QQEGAOaQA0xH~IF0jOodLKVuIhv6N4UnASaiTN11Fys9JOoQ79airpbCBH-ihFAtwuuuIFOATtF6FTwZvMA-vFtnfHIBwSvGeQXbQULQ50VurkIvvB9HDQ~m6aqXOFtGa-e3utHdAMt5683DssoDks4ko702ay2NMlLhRVPj-ZJ7iJ6e0NYYEJbRkqGHPH9xGb-hSbi2cdCw6DEQuZZ-VhpRqD~d8oCI6E1j9UpAMHWyO6F6MSIiAD0NaJLgbtzJw__%2526Key-Pair-Id%253DAPKAIE5G5CRDK6RD3PGA%26updated_time%3D2016-03-24&amp;csi=undefined&amp;rev=v8.28.1-wp&amp;ct=1&amp;xld=1&amp;xd=1"></iframe></div><style id="service-icons-0"></style></body></html>

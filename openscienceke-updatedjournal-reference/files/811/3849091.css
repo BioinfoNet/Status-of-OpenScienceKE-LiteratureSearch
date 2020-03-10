@@ -1,0 +1,47 @@
+
+.container {
+    margin: 0 1.3em;
+}
+.four_col.last {
+    width: 33.3%;
+    margin-right: -6px;
+}
+.four_col .portlet {
+    margin-top: 0;
+}
+.uppercase{text-transform: uppercase;letter-spacing:.06em;}
+.caps{text-transform:capitalize;}
+.small-caps{text-transform: lowercase; font-variant:small-caps;letter-spacing:.02em;}
+.overline{text-decoration:overline;}
+.roman{font-style:normal}
+.greek{font-family:Georgia, Times,"Times New Roman", serif}
+.lower-alpha{list-style-type:lower-alpha}
+.upper-alpha{list-style-type:upper-alpha}
+.lower-roman{list-style-type:lower-roman}
+.upper-roman{list-style-type:upper-roman}
+.circle{list-style-type:circle}
+.square{list-style-type:square}
+.simple-list{list-style-type:none}
+.first-line-outdent{list-style-type:none}
+.first-line-outdent li:first-letter{margin-left:-1.5em}
+.large-number-list{margin-left:2.75em;*margin-left:3em}
+.labeled-list{}
+.labeled-list dt,.labeled-list dd{display:inline;margin:0}
+.labeled-list dd{margin-left:1.5em}
+.labeled-list dd:after{content:'\A';white-space:pre}
+.temp-labeled-list{}
+.temp-labeled-list dt{float:left;margin-right:.8em}
+.temp-labeled-list dd{vertical-align:top;display:table-cell;*display:inline-block}
+.label{margin-right:1em;}
+.figure{margin: 1.3846em 0}
+.eight_col img.fullwidth { width: 100% !important; }
+.subtitle{font-weight:bold;margin-top:-.5em}
+.def{cursor:help}
+.box.warn {border:1px solid #000;margin:42px 0 45px 0;padding:0 0 35px 0;}
+.box.warn h3 {background-color:#f7d118;border-bottom:1px solid #000;height:21px;margin: 0 0 35px;padding-top:2px;text-align:center;}
+.box.warn p {padding: 0 35px 0 35px;}	
+.box.warn * {color: #000;}
+.default_table tfoot{border:none}
+.default_table thead{border:none}
+.default_table th{background-color:inherit}
+.default_table th,.default_table td{border:none}

@@ -1,0 +1,136 @@
+ 
+Skip to main content 
+bioRxiv 
+ 
+    Home 
+    About 
+    Submit 
+    ALERTS / RSS 
+    Channels 
+        4D Nucleome 
+        Advances in Genome Biology and Technology (AGBT) General Meeting 2016 #AGBT16 
+        Allen Institute for Cell Science 
+        Biology of Genomes 2016 #BOG16 
+        Chan Zuckerberg Biohub 
+        Drug Development and Clinical Therapeutics 
+        Francis Crick Institute 
+        IMO Workshop 
+        Mathematical Oncology 
+        Micron Oxford 
+        Simons Foundation Autism Research Initiative (SFARI) 
+        Society for Molecular Biology and Evolution #SMBE2016 
+        The Sainsbury Laboratory 
+ 
+Search for this keyword 
+Advanced Search 
+New Results 
+Full Bayesian comparative phylogeography from genomic data 
+View ORCID Profile Jamie R Oaks 
+doi: https://doi.org/10.1101/324525 
+This article is a preprint and has not been peer-reviewed [ what does this mean? ]. 
+Jamie R Oaks 
+Auburn University 
+ 
+    Find this author on Google Scholar 
+    Find this author on PubMed 
+    Search for this author on this site 
+    ORCID record for Jamie R Oaks 
+    For correspondence: joaks1@gmail.com 
+ 
+    Abstract 
+    Info/History 
+    Metrics 
+    Preview PDF 
+ 
+Loading 
+Abstract 
+ 
+A challenge to understanding biological diversification is accounting for community-scale processes that cause multiple, co-distributed lineages to co-speciate. Such processes predict non-independent, temporally clustered divergences across taxa. Approximate-likelihood Bayesian computation (ABC) approaches to inferring such patterns from comparative genetic data are very sensitive to prior assumptions and often biased toward estimating shared divergences. We introduce a full-likelihood Bayesian approach, ecoevolity, which takes full advantage of information in genomic data. By analytically integrating over gene trees, we are able to directly calculate the likelihood of the population history from genomic data, and efficiently sample the model-averaged posterior via Markov chain Monte Carlo algorithms. Using simulations, we find that the new method is much more accurate and precise at estimating the number and timing of divergence events across pairs of populations than existing approximate-likelihood methods. Our full Bayesian approach also requires several orders of magnitude less computational time than existing ABC approaches. We find that despite assuming unlinked characters (e.g., unlinked single-nucleotide polymorphisms), the new method performs better if this assumption is violated in order to retain the constant characters of whole linked loci. In fact, retaining constant characters allows the new method to robustly estimate the correct number of divergence events with high posterior probability in the face of character-acquisition biases, which commonly plague loci assembled from reduced-representation genomic libraries. We apply our method to genomic data from four pairs of insular populations of Gekko lizards from the Philippines that are not expected to have co-diverged. Despite all four pairs diverging very recently, our method strongly supports that they diverged independently, and these results are robust to very disparate prior assumptions. 
+Copyright  
+The copyright holder for this preprint is the author/funder. It is made available under a CC-BY 4.0 International license . 
+Back to top 
+Previous Next 
+ 
+    Posted May 17, 2018. 
+ 
+Download PDF 
+Email 
+Share 
+Full Bayesian comparative phylogeography from genomic data 
+Jamie R Oaks 
+bioRxiv 324525; doi: https://doi.org/10.1101/324525 
+This article is a preprint and has not been peer-reviewed [ what does this mean? ]. 
+Share This Article: Copy 
+del.icio.us logo Digg logo Reddit logo Technorati logo Twitter logo CiteULike logo Connotea logo Facebook logo Google logo Mendeley logo 
+Citation Tools 
+ 
+Subject Area 
+ 
+    Evolutionary Biology 
+ 
+Subject Areas 
+All Articles 
+ 
+    Animal Behavior and Cognition (732) 
+    Biochemistry (1011) 
+    Bioengineering (628) 
+    Bioinformatics (5311) 
+    Biophysics (1746) 
+    Cancer Biology (1243) 
+    Cell Biology (1710) 
+    Clinical Trials (63) 
+    Developmental Biology (1174) 
+    Ecology (1860) 
+    Epidemiology (953) 
+    Evolutionary Biology (4040) 
+    Genetics (2834) 
+    Genomics (3645) 
+    Immunology (745) 
+    Microbiology (2906) 
+    Molecular Biology (1079) 
+    Neuroscience (7540) 
+    Paleontology (49) 
+    Pathology (149) 
+    Pharmacology and Toxicology (261) 
+    Physiology (350) 
+    Plant Biology (1048) 
+    Scientific Communication and Education (288) 
+    Synthetic Biology (437) 
+    Systems Biology (1488) 
+    Zoology (187) 
+ 
+Email this Article close 
+ 
+Thank you for your interest in spreading the word about bioRxiv. 
+ 
+NOTE: Your email address is requested solely to identify you as the sender of this article. 
+Your Email * 
+Your Name * 
+Send To * 
+Enter multiple addresses on separate lines or separate them with commas. 
+You are going to email the following Full Bayesian comparative phylogeography from genomic data 
+Message Subject (Your Name) has forwarded a page to you from bioRxiv 
+Message Body (Your Name) thought you would like to see this page from the bioRxiv website. 
+Your Personal Message 
+Citation Tools close 
+Full Bayesian comparative phylogeography from genomic data 
+Jamie R Oaks 
+bioRxiv 324525; doi: https://doi.org/10.1101/324525 
+This article is a preprint and has not been peer-reviewed [ what does this mean? ]. 
+Citation Manager Formats 
+ 
+    BibTeX 
+    Bookends 
+    EasyBib 
+    EndNote (tagged) 
+    EndNote 8 (xml) 
+    Medlars 
+    Mendeley 
+    Papers 
+    RefWorks Tagged 
+    Ref Manager 
+    RIS 
+    Zotero 
+ 
+We use cookies on this site to enhance your user experience. By clicking any link on this page you are giving your consent for us to set cookies. 
+Continue Find out more 

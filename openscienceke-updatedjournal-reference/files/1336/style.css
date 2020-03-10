@@ -1,0 +1,191 @@
+#mendeley-data-widget {
+  color: #4a4a4a;
+  font-size: 16px;
+  line-height: 16px; }
+  #mendeley-data-widget * {
+    box-sizing: border-box; }
+  #mendeley-data-widget *:last-child {
+    margin-bottom: 0; }
+  #mendeley-data-widget a.button-link {
+    display: inline-block;
+    color: #4a4a4a;
+    border: 1px solid #4a4a4a;
+    padding: 10px 20px 10px 20px;
+    transition: all 0.2s ease;
+    cursor: pointer;
+    background: #fff; }
+    #mendeley-data-widget a.button-link.arrowed {
+      padding-right: 40px;
+      background: url(dc7bc1c37b71f7bf6f87dc46a27ad4f4.svg) calc(100% - 10px) 50% no-repeat #fff;
+      background-size: 24px; }
+    #mendeley-data-widget a.button-link:hover {
+      color: #f5662d;
+      border-color: #f5662d;
+      text-decoration: none; }
+      #mendeley-data-widget a.button-link:hover.arrowed {
+        background-image: url(0ee9f5f801e059888fa07947644c3364.svg); }
+  #mendeley-data-widget .dataset {
+    padding: 30px;
+    background: #f6f7fb; }
+    #mendeley-data-widget .dataset:first-child {
+      margin-top: 20px; }
+    #mendeley-data-widget .dataset:not(:last-child) {
+      margin-bottom: 20px; }
+    #mendeley-data-widget .dataset h4,
+    #mendeley-data-widget .dataset h4 a {
+      color: #00578e;
+      font-weight: normal;
+      font-size: 18px;
+      line-height: 18px;
+      margin: 20px 0 15px; }
+    #mendeley-data-widget .dataset h4 a {
+      text-decoration: none; }
+      #mendeley-data-widget .dataset h4 a:hover {
+        text-decoration: underline; }
+    #mendeley-data-widget .dataset p {
+      margin: 15px 0; }
+    #mendeley-data-widget .dataset > p:nth-child(2) {
+      margin-top: 35px; }
+    #mendeley-data-widget .dataset h5 {
+      font-weight: normal;
+      font-size: 18px;
+      line-height: 18px;
+      margin: 0; }
+    #mendeley-data-widget .dataset .file-block {
+      margin-top: 37.5px; }
+      #mendeley-data-widget .dataset .file-block > div:first-child {
+        display: -webkit-box;
+        display: -webkit-flex;
+        display: -moz-flex;
+        display: -ms-flexbox;
+        display: flex;
+        -webkit-box-align: center;
+        -ms-flex-align: center;
+        -webkit-align-items: center;
+        -moz-align-items: center;
+        align-items: center;
+        -webkit-box-pack: justify;
+        -ms-flex-pack: justify;
+        -webkit-justify-content: space-between;
+        -moz-justify-content: space-between;
+        justify-content: space-between;
+        margin-bottom: 15px; }
+        #mendeley-data-widget .dataset .file-block > div:first-child > div a {
+          cursor: pointer;
+          color: #00578e;
+          text-decoration: none; }
+          #mendeley-data-widget .dataset .file-block > div:first-child > div a:hover {
+            color: #00578e;
+            text-decoration: underline; }
+          #mendeley-data-widget .dataset .file-block > div:first-child > div a:first-child {
+            margin-right: 20px; }
+    #mendeley-data-widget .dataset .file-list {
+      padding: 15px 0;
+      margin-bottom: 15px;
+      border-top: 2px solid #ebebeb;
+      border-bottom: 2px solid #ebebeb; }
+      #mendeley-data-widget .dataset .file-list > div {
+        display: -webkit-box;
+        display: -webkit-flex;
+        display: -moz-flex;
+        display: -ms-flexbox;
+        display: flex;
+        -webkit-box-align: center;
+        -ms-flex-align: center;
+        -webkit-align-items: center;
+        -moz-align-items: center;
+        align-items: center;
+        -webkit-box-pack: justify;
+        -ms-flex-pack: justify;
+        -webkit-justify-content: space-between;
+        -moz-justify-content: space-between;
+        justify-content: space-between; }
+        #mendeley-data-widget .dataset .file-list > div:not(:last-child) {
+          margin-bottom: 7px; }
+        #mendeley-data-widget .dataset .file-list > div > div {
+          display: -webkit-box;
+          display: -webkit-flex;
+          display: -moz-flex;
+          display: -ms-flexbox;
+          display: flex;
+          -webkit-box-align: center;
+          -ms-flex-align: center;
+          -webkit-align-items: center;
+          -moz-align-items: center;
+          align-items: center; }
+          #mendeley-data-widget .dataset .file-list > div > div > *:first-child {
+            margin-right: 15px; }
+          #mendeley-data-widget .dataset .file-list > div > div img {
+            width: 24px; }
+        #mendeley-data-widget .dataset .file-list > div a {
+          margin-left: 15px; }
+    #mendeley-data-widget .dataset .unlink-box .button-link {
+      margin-right: 5px; }
+    #mendeley-data-widget .dataset a[href] {
+      color: #00578e;
+      text-decoration: none; }
+      #mendeley-data-widget .dataset a[href]:hover {
+        text-decoration: underline; }
+    #mendeley-data-widget .dataset.upload {
+      margin-top: 20px; }
+      #mendeley-data-widget .dataset.upload a {
+        cursor: pointer; }
+      #mendeley-data-widget .dataset.upload .upload-options > div:first-child {
+        display: -webkit-box;
+        display: -webkit-flex;
+        display: -moz-flex;
+        display: -ms-flexbox;
+        display: flex;
+        -webkit-box-align: center;
+        -ms-flex-align: center;
+        -webkit-align-items: center;
+        -moz-align-items: center;
+        align-items: center;
+        -webkit-box-pack: justify;
+        -ms-flex-pack: justify;
+        -webkit-justify-content: space-between;
+        -moz-justify-content: space-between;
+        justify-content: space-between; }
+        #mendeley-data-widget .dataset.upload .upload-options > div:first-child a {
+          display: -webkit-box;
+          display: -webkit-flex;
+          display: -moz-flex;
+          display: -ms-flexbox;
+          display: flex;
+          -webkit-box-align: center;
+          -ms-flex-align: center;
+          -webkit-align-items: center;
+          -moz-align-items: center;
+          align-items: center;
+          transition: color 0.2s ease; }
+          #mendeley-data-widget .dataset.upload .upload-options > div:first-child a::before {
+            content: '';
+            display: inline-block;
+            height: 24px;
+            width: 24px;
+            background: url(f3bbe94915971ef52c11df6d4176cb34.svg) 50% 50% no-repeat;
+            background-size: 100%;
+            transition: all 0.2s ease; }
+          #mendeley-data-widget .dataset.upload .upload-options > div:first-child a:hover {
+            color: #f5662d; }
+            #mendeley-data-widget .dataset.upload .upload-options > div:first-child a:hover::before {
+              background-image: url(c0d0b6f43e6d881b12a35345ddbc2079.svg); }
+      #mendeley-data-widget .dataset.upload .upload-options > div:last-child > div {
+        display: -webkit-box;
+        display: -webkit-flex;
+        display: -moz-flex;
+        display: -ms-flexbox;
+        display: flex;
+        -webkit-box-align: center;
+        -ms-flex-align: center;
+        -webkit-align-items: center;
+        -moz-align-items: center;
+        align-items: center; }
+        #mendeley-data-widget .dataset.upload .upload-options > div:last-child > div > a {
+          width: 217px;
+          text-align: center;
+          margin-right: 20px;
+          -webkit-flex-shrink: 0;
+          -moz-flex-shrink: 0;
+          -ms-flex-negative: 0;
+          flex-shrink: 0; }

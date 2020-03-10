@@ -1,0 +1,598 @@
+DNA taxonomy and phylogeography of beetles of the Falkland Islands (Islas Malvinas) - ScienceDirect 
+Skip to main content 
+ScienceDirect 
+Journals Books Register Sign in 
+ 
+    Journals 
+    Books 
+    Register 
+ 
+    Sign In 
+    Help 
+ 
+  
+Outline 
+Download PDF Download 
+Export 
+Advanced 
+Outline 
+ 
+    Abstract 
+    Keywords 
+    1. Introduction 
+    2. Material and methods 
+    3. Results 
+    4. Discussion 
+    Acknowledgments 
+    Appendix A. Supplementary data 
+    References 
+ 
+Show full outline 
+Figures (8) 
+ 
+    Fig. 1. Map of the Falkland Islands showing the 10 sampling sites as described in Table… 
+    Fig. 2. Bayesian trees of Carabidae (left) and Curculionidae (right) 
+    Fig. 3. TCS networks for selected genera 
+    Fig. 4. (a) Nucleotide diversity (π) in various species (GMYC groups), separate for… 
+    Fig. 5. Dating of intra-generic splits using (a) MrBayes and r8s or (b) BEAST 
+    Fig. 6. Clock-constrained trees of the families Carabidae (a) and Curculionidae (b)… 
+ 
+Show all figures 
+Tables (3) 
+ 
+    Table 1 
+    Table 2 
+    Table 3 
+ 
+Extras (1) 
+ 
+    Supplementary data 
+ 
+JavaScript is disabled on your browser. Please enable JavaScript to use all the features on this page. 
+Elsevier 
+Molecular Phylogenetics and Evolution 
+Volume 53, Issue 3 , December 2009 , Pages 935-947 
+Molecular Phylogenetics and Evolution 
+DNA taxonomy and phylogeography of beetles of the Falkland Islands (Islas Malvinas) 
+Author links open overlay panel Anna Papadopoulou a b Alex G. Jones c Peter M. Hammond a Alfried P. Vogler a b 
+Show more 
+https://doi.org/10.1016/j.ympev.2009.08.027 Get rights and content 
+Abstract 
+ 
+The Falkland biota are generally considered to be derived from the nearest continental source in Patagonian South America, yet they harbor many endemic species whose taxonomy and evolutionary history remains insufficiently understood. Comprehensive sampling of Coleoptera over two field seasons from numerous sites across the Falkland archipelago produced representatives of 55 morphologically separable species, assigned to 35 genera and 13 families of Coleoptera. Partial mitochondrial Cytochrome Oxidase subunit I and 16S ribosomal RNA genes were sequenced for 283 individuals. These sequences formed 55 clusters under a Yule-Coalescent model that largely conformed to Linnean species while deep-level phylogenetic relationships were broadly congruent with the higher level classification. Detailed analysis of the most diverse families Carabidae and Curculionidae addressed the question about the age and persistence in situ of Falkland biota, showing that separation of sister species within genera based on molecular clock estimates pre-dated the Pleistocene in all cases. Intra-specific diversity of mtDNA haplotypes and nucleotide diversity were high in most species, while intra-population variation was equally high and showed local differentiation of populations, but there was no isolation-by-distance relationship. Taken together, these observations indicate that ancient endemics are unlikely to be due to the recent establishment from a source elsewhere, but have persisted in situ . The observed patterns differ greatly from those in climatically similar areas of the Northern Hemisphere. They do not support the view that postglacial ranges of insects near the limits of former glaciations are merely the result of redistribution due to changing climate. 
+ 
+    Previous article in issue 
+    Next article in issue 
+ 
+Keywords 
+Southern Ocean islands 
+Species delimitation 
+Phylogeny 
+Historical biogeography 
+Molecular clock 
+Dispersal 
+Climate change 
+1. Introduction 
+ 
+Surveys of variation in mitochondrial DNA are applied to an increasing number of taxonomic groups and biogeographical regions and continually improve the understanding of biological diversity (e.g., Avise, 2000 , Hebert and Gregory, 2005 , Hewitt, 1999 , Savolainen et al., 2005 ). The subantarctic islands of the Southern Ocean remain poorly represented in these analyses but are of great interest to taxonomy, evolutionary biology and conservation ( Chown and Convey, 2007 , Chown et al., 2008 ). Southern Ocean islands have a unique fauna and flora consisting of simplified species assemblages whose composition is determined by a harsh climate and great distances to the nearest continents. Their insect fauna is dominated by a limited set of cold-adapted lineages ( McDowall, 2005 ), including many species of beetles in the families Curculionidae (weevils) and Carabidae (ground beetles) ( Chown, 1994 , Posadas, 2008 ). In the absence of woody plants on these islands, most species are either predatory or feed and scavenge on vegetal matter and tussock grass stocks. Beetle assemblages are mostly composed of heavily built, ground-dwelling species which are frequently flightless and slow-moving. These groups contain numerous endemics that are confined to portions of the Southern Ocean provinces, such as a radiation of weevils in the Ectemnorhinus group of genera in the Southern Indian Ocean ( Chown, 1994 ). In addition, many recent aliens make up the current fauna and flora which have great impact on the native species ( Chown et al., 2008 , Ernsting, 1993 , Gaston et al., 2003 ). 
+ 
+Among the Southern Ocean islands, the Falklands (Islas Malvinas) constitute the largest archipelago with over 780 isles and a combined area of approximately 12,000 km 2 stretching from 51 o to 52 o 55′S. The Falkland Islands are rich in biodiversity compared to other Southern Ocean islands ( Gressitt, 1970 , Jones, 2004 , Jones et al., 2003 ) but their fauna remains poorly documented ( Oldfield, 1987 , Oldfield and Sheppard, 1997 , Procter and Fleming, 1999 ). A taxonomic checklist of the species present in the collections and references of the Natural History Museum (London) was published in 1984 and lists ca. 230 extant species ( Robinson, 1984 ). Coleoptera are represented by some 15 different families from a wide range of major lineages. The dominant Carabidae and Curculionidae include several groups of closely related species which are difficult to separate and whose taxonomic status is uncertain because of intra-specific variation. This variation among individuals and populations is a great problem for morphological species recognition, while recent conservation efforts ( Jones, 2004 , Oldfield and Sheppard, 1997 , UKDTCF, 1996 ) have raised the need for proper taxonomic information that also includes the frequently encountered larval stages. 
+ 
+Approximately 70% of the insect species described in the 1984 list were not then recorded elsewhere ( Robinson, 1984 ). Although this high number of presumed endemics may be inflated due to insufficient sampling in adjacent south temperate regions, a review of current knowledge on biogeographic relationships ( McDowall, 2005 ) showed that several groups of animals and plants exhibit a high proportion of species apparently unique to the islands. This analysis also revealed the overwhelming evidence for close affinities of the Falkland Islands flora and fauna with those of Patagonian South America ( McDowall, 2005 ), whereas only the most dispersive groups show affinities with other Southern Ocean islands or mainland Antarctica, including sea birds such as Southern Skuas ( Catharacta spp.) ( Ritz et al., 2008 ). The Falklands and southern South America are 450 km distant at the closest continental landfall in Tierra del Fuego. The high endemicity of the insect fauna could therefore be due to the long-term isolation of these biota, in particular for groups that are largely flightless, such as the 22 species of weevils known from the Falkland Islands of which only four are shared with the Fuegan or Valdivian provinces of southern South America ( Posadas, 2008 ). 
+ 
+The high degree of endemicity raises the question about the origin of the Falkland fauna and the role of dispersal ( Buckland and Hammond, 1997 ). Paleogeographic investigations established that the shelf region that makes up the Falklands was originally part of eastern South Africa from where it moved due to processes of plate tectonics that began with the break-up of Gondwanaland some 200 Mya. The Falkland Islands crustal block was carried westward with the South American plate to which it has been linked since before the break-up of Africa and South America some 130 Mya ( Marshall, 1994 , Storey et al., 1999 , Trewin et al., 2002 ). None of the animal and plant groups investigated to date appear to reflect these ancient geological affinities with Africa while the taxonomic relationships with the South American groups are strongly corroborated by phylogenetic studies ( Morrone and Posadas, 2005 ). Pangeographic analyses also support this major link, with minor ‘generalized tracks’ to other subantarctic islands ( Morrone and Posadas, 2005 ). Sea level changes during the Tertiary and in particular the most recent glacial cycles might have resulted in temporary land connection between these areas with a drop of sea levels of only 100–150 m ( Morrone, 1998 ). However, intermittent cold periods throughout the last ice age have subjected the islands to periglacial conditions lasting thousands of years and, although never covered by an ice sheet, led to the formation of small mountain top glaciers during the most recent cold stage between ca. 26 and 13 ka BP ( Clapperton, 1990 , Clapperton and Sugden, 1976 , Hall, 1990 , Mercer, 1983 ). Periglacial conditions might have been severe enough to cause the local extinction of most terrestrial species. Therefore it has been postulated that the current insect species found in the islands would have been colonized during the last 15–10 ka BP ( Buckland and Hammond, 1997 ). 
+ 
+Recent activities to establish baseline data for invertebrate distribution on the Falklands ( Jones, 2004 ) have produced large numbers of specimens useful for DNA extraction and evolutionary analyses that might resolve the questions about the age and origin of the Falkland fauna. Here we provide sequences for a representative sample of all species of beetles encountered in two expeditions to the islands, using two mitochondrial gene regions. The application of recently developed coalescent-based methods for species delimitation using branching patterns in DNA-based phylogenetic trees ( Fontaneto et al., 2007 , Pons et al., 2006 ) provided independent tests of morphologically defined entities and the presence of unrecognized species. In addition, the geographic extent and topographic structure of the archipelago which is characterized by a highly indented coastline and major mountain ranges of >700 m above sea level on both main islands, East Falkland (Soledad) and West Falkland (Gran Malvina), might result in substantial population subdivision. The sequence analysis, together with existing morphological analyses conducted in adjacent South American sites, provides an evolutionary framework for the beetle assemblage of the Falkland Islands, estimating the age of lineages with calibrated molecular clocks and testing the possibility of in situ speciation on the islands. 
+2. Material and methods 
+2.1. Sampling and DNA sequencing 
+ 
+Samples were obtained as a part of an insect survey carried out by the Falkland Island Invertebrates Conservation Project (FIICP), during January–February 2004 and January–March 2005. Specimens were collected using a variety of methods including pitfall trapping, Tullgren funnel extraction, Malaise trapping and hand collection, then stored in 96% ethanol and kept refrigerated at 4 °C. Specimens were sorted and identified to species against catalogues and the collection of the NHM. Preliminary identifications were maintained throughout the data analysis reported here, but may need to be re-assessed in the future. In total, sequence data were obtained for 260 adult beetles and 23 larvae. These specimens were collected across a diverse range of habitat types from numerous sites found within 16 different 10 km 2 grid squares. Specimens collected from connecting grid squares were grouped together such that they represented 10 discrete geographic localities across the Falkland main islands and adjacent islets ( Table 1 and Fig. 1 ). 
+ 
+Table 1 . Collection sites. This list describes the main collecting sites with the grid references (see Fig. 1 ). 
+Region 	Site 	Locality code 	UT grid reference 
+East Falkland 
+Mainland 	Stanley and Gypsy Cove 	EF1 	VC47 
+Cape Dolphin 	EF2 	UD61 + UD71 
+Mt. Usborne 	EF3 	UC77 
+Lafonia 	EF4 	UC54 + UC55 + UC66 
+Islands 	Pleasant Island 	EF5 	VC15 
+Bleaker Island 	EF6 	UC81 
+ 
+West Falkland 
+Mainland 	Hill Cove 	WF1 	TC88 + TC89 + TD90 
+Islands 	Carcass Island 	WF2 	TD51 
+Grand Jason 	WF3 	TD43 
+Steeple Jason 	WF4 	TD03 + TD04 
+ 
+    Download full-size image 
+ 
+Fig. 1 . Map of the Falkland Islands showing the 10 sampling sites as described in Table 1 . 
+ 
+Non-destructive DNA extraction was performed using a Qiagen DNeasy kit. Amplification of two mtDNA regions was generally successful with well-established oligonucleotides. A 826 bp fragment of Cytochrome Oxidase subunit 1 ( cox1 ) was amplified using primer pair Pat (5′TCCAATGCACTAATCTGCCATATTA3′) and Jerry (5′CAACATTTATTTTGATTTTTTGG3′) ( Simon et al., 1994 ) and partial 16S ribosomal RNA ( rrnL ), adjacent tRNA leucine 2 ( trnL2 ) and NADH Dehydroxygenase subunit 1 ( nad1 ) were amplified using forward primer 16Sar (5′CGCCTGTTTAACAAAAACAT3′) and reverse primers ND1A (5′GGTCCCTTACGAATTTGAATATATCCT3′) or 16SB2 (5′CTCCGGTTTGAACTCAGATCA3′) ( Simon et al., 1994 ). PCR fragments were sequenced in both directions on an ABI377 automated sequencer (Applied Biosystems). Sequence chromatograms were assembled and edited using the Sequencher 4.6 software (Gene Codes Corp., Ann Harbor, MI, USA). Sequences were aligned using ClustalW with the default gap opening and extension penalties ( Thompson et al., 1994 ). All sequences have been submitted to the EMBL Nucleotide Sequence Database under Accession Nos. FM994290 – FM994548 ( cox1 ) and FM994683 – FM994891 ( rrnL – trnL2 – nad1 fragment). A total of 17 sequences analyzed here had already been published in Hunt et al. (2007) (Accession Nos. in Supplementary Table S1 ). 
+2.2. Phylogenetic analysis and species delimitation 
+ 
+Bayesian analyses were performed in MrBayes 3.1.2 ( Ronquist and Huelsenbeck, 2003 ) for the full dataset and separately for the families Carabidae and Curculionidae, with two parallel runs using one cold and three incrementally heated Markov chains ( λ  = 0.1) and sampling one in every 1000 trees. Two partitions were defined a priori corresponding to the protein coding regions ( cox1 and nad1 ) and the structural RNA gene regions ( rrnL and trnL2 ), respectively, and a separate GTR+Γ+I model was applied to each partition. Moreover, in order to account for among-partition rate variation, a separate rate multiplier was assigned to each partition. Standard convergence diagnostics, as implemented in MrBayes ( sump command) were checked to ensure that the Markov chain had reached stationarity. A total of 16 million generations was performed for the full data set and 5 million generations for the Carabidae and Curculionidae data sets. Trees were summarized using an ‘all-compatible’ consensus after discarding a 50% burn-in. 
+ 
+Quantitative species delimitation was performed with the General Mixed Yule-Coalescent (GMYC) method that establishes the point of transition from slow to faster apparent branching rates of the gene tree expected at the species boundary ( Fontaneto et al., 2007 , Pons et al., 2006 ). The method optimizes a threshold age under a stochastic branching rate (Yule) model ( Nee et al., 1992 , Yule, 1924 ) and a separate process of branching for each species under a coalescent model ( Hudson, 1991 , Wakeley, 2006 ). Branches crossing the threshold define genetic clusters each obeying an independent coalescent process. The likelihood of this model is compared to a null model that the entire sample can be fitted by a single neutral coalescent model for all individuals. The GMYC model provides a credibility interval corresponding to the number of clusters at ±2log  L units of the ML estimate. The analysis was carried out using the R package ‘splits’ (SPecies LImits by Threshold Statistics) available at http://r-forge.r-project.org/projects/splits/ . We applied the GMYC method on Bayesian ‘all-compatible’ consensus trees including only unique haplotypes, which were obtained in MrBayes as described before and converted to ultrametric using penalized likelihood in r8s 1.7 ( Sanderson, 2003 ), with the optimal smoothing parameter determined by cross-validation of values between 0.01 and 1000. 
+ 
+All GMYC groups were numbered with a unique alphanumerical identifier ( Supplementary Table S1 ) from which a holotype specimen (DNA preparation) was selected to represent this sequence cluster, based on the most complete sequence (fewest missing data). Where the GMYC groups were congruent with the Linnean names, sequences were submitted to GenBank under that name. In cases of discrepancies between GMYC groups and Linnean names, or if none of the members of a GMYC group had been assigned a Linnean species identification, we appended the alphanumerical GMYC designation after the genus name for submission. This treatment is one of several possibilities to deal with the lack of one-to-one correspondence of mtDNA groups and Linnean names. The approach emphasizes the result of the current DNA-based analysis which generally provided strongly subdivided DNA-based groups that are open to further scrutiny in classical taxonomic analyses including the specimens used here, after which these alphanumerical designations may be exchanged for Linnean binomials. 
+ 
+Statistical parsimony analysis was performed with TCS 1.21 (Clement et al., 2000) which partitions the data into independent networks of haplotypes connected by changes that are non-homoplastic with a 95% probability. The analysis was performed on all genera represented by at least 10 individuals. The hierarchical levels of the resulting networks were established using specific nesting rules and separate TCS groups were defined using the 95% connection limit ( Templeton et al., 1987 , Templeton and Sing, 1993 ). Arlequin 3.11 ( Excoffier et al., 2005 ) was used to estimate within-species nucleotide diversity. 
+2.3. Divergence time estimation and data partitioning 
+ 
+In order to estimate divergence times between closely related GMYC groups, we analyzed two reduced datasets that comprised a single individual per group for the families Carabidae and Curculionidae, respectively. Analyses were performed in MrBayes as described before for the full datasets, using the same outgroup sequences and without enforcing a clock. Trees were again converted to ultrametric using penalized likelihood in r8s 1.7 using the ‘all-compatible’ consensus as an input for the cross-validation procedure in order to define the smoothing parameter, which was then applied to 2500 sampled trees from the stationary phase in order to obtain mean estimated ages and standard deviations. In the absence of fossil calibration points, we applied the widely accepted insect mitochondrial clock of 2.3% divergence per million year ( Brower, 1994 ), by fixing the mean substitution rate estimated by r8s to 0.0115 per site per My. For comparison, we also analyzed the two datasets in BEAST 1.4.8 ( Drummond et al., 2006 , Drummond and Rambaut, 2007 ) under an uncorrelated lognormal relaxed clock and without an outgroup. The mean of the branch rates (ucld.mean) was fixed to 0.0115, a Yule tree prior was employed and the default options were used for all other prior and operator settings. Two independent runs of 20 million generations were conducted for each analysis, sampling every 2000th generation, the convergence and mixing of each MCMC chain was assessed by inspection of the trace plots and the Effective Sample Sizes using Tracer 1.4.1 ( Drummond and Rambaut, 2007 ) and samples from both runs were pooled after removing a 10% burn-in using LogCombiner 1.4.8. The posterior probabilities of the individual clades and the posterior estimates and 95% Highest Posterior Density limits of the node heights were summarized using TreeAnnotator 1.4.8 and visualized using FigTree 1.2. The means and standard errors of the node heights were summarized using Tracer and standard deviations were calculated by multiplying the standard errors by the square root of the Effective Sample Size in each case. 
+ 
+We assessed the effect of rate heterogeneity among genes and codon positions for molecular dating ( Yang and Yoder, 2003 ) by applying a range of different partitioning schemes and comparing their likelihood. The following partitioning schemes were compared: P0, no partitioning; P1, protein coding regions ( cox1 and nad1 ) versus structural RNA gene regions ( rrnL and trnL 2); P2, 3rd codon positions versus non-3rd codon positions; P3, 1st plus 2nd codon positions versus 3rd codon positions versus structural RNA genes; P4, each codon position separately and non-protein coding DNA as a 4th partition. A nucleotide substitution model applied to each partition was selected by the AIC criterion as implemented in MrModeltest 2.2 ( Nylander, 2004 ). The HKY+I nucleotide substitution model was applied to the 2nd codon position when considered alone (in partition scheme P4), and a separate GTR+Γ+I model to all other partitions. Bayes Factors were calculated in order to choose the preferred partition scheme, based on the natural logarithm of the harmonic mean of the sampled likelihood values at the stationary phase, which was estimated either using the sump command in MrBayes or, in the case of the BEAST searches, by Tracer 1.4.1 with 1000 bootstrap replicates. We followed either the widely used cut-off values proposed by Kass and Raftery (1995) , when comparing partition schemes that required equal number of free parameters, or the recommendations of Pagel and Meade (2004) for penalizing over-parameterization, as applied by Miller et al. (in press) , when partition schemes differed in total number of free parameters. In this case we calculated the ratio ln(Bayes Factor)/Δ p (Δ p  = difference in number of total free parameters between alternative partition schemes) and we accepted additional free parameters only when this value was 10 or greater. The GTR+Γ+I model has 10 free parameters (5 for the substitution rate matrix, 3 for the estimated bases frequencies, 1 for the alpha parameter of the gamma distribution and 1 for the proportion of invariable sites) and the HKY+I has 5 free parameters (1 for the transition/transversion ratio, 3 for the base frequencies and 1 for the proportion of invariable sites), while each added partition adds an extra free parameter due to the partition-specific rate multiplier. P0 (no partitioning) had 10 free parameters, partition schemes P1 and P2 shared the same total number of free parameters ( p  = 21), while P3 and P4 had a total of 32 and 38 free parameters, respectively. Estimated ln(Bayes Factors) were thus used to compare P1 versus P2 while all other comparisons were based on the ratios ln(Bayes Factor)/Δ p ( Pagel and Meade, 2004 ). 
+3. Results 
+3.1. Species encountered and phylogenetic relationships 
+ 
+The collecting effort resulted in 55 morphologically recognizable species, plus three tentative groups which represented slight variants. These species could be assigned to 35 genera and 13 families of Coleoptera. The individuals encountered included several widely distributed species including several commensals likely introduced, such as the Australian Spider Beetle Ptinus tectus (Anobiidae) and the European rove beetle Atheta amicula (Staphylinidae), and others that are members of widespread genera but whose exact species identity and status as autochthonous to the Falklands were unclear, including four species of Aridius (Lathridiidae). The majority of samples was attributed to three families, Carabidae, Curculionidae and Perimylopidae. The latter family is endemic to the temperate Southern Hemisphere, while the members of Carabidae and Curculionidae also consisted of lineages with predominant distributions in subantarctic South America. 
+ 
+Sequences of 283 representative individuals for cox1 and rrnL produced a Bayesian tree ( Supplementary Fig. S1 ) that grouped the members of each family as monophyletic. Deep relationships within Polyphaga were not resolved satisfactorily, given the sporadic taxon sampling of deep lineages and the use of mtDNA which is insufficient to resolve basal relationships in Coleoptera ( Howland and Hewitt, 1995 ). Bayesian analyses were conducted individually on sequences of the two most highly represented families, Carabidae and Curculionidae ( Fig. 2 a and b). These trees show that species broadly grouped according to their morphological identification (see below) and lineages of closely related haplotypes frequently included sequences obtained from larvae for which no morphological identification was available. Likewise, taxon designations at the genus level were recovered as monophyletic groups, except for the genus Antarctobius which was paraphyletic for the single species of Germaniellus . The tribal and subfamily relationships were also as expected, with the notable exception of the paraphyly of the curculionid subfamily Entiminae ( Fig. 2 ). 
+ 
+    Download full-size image 
+ 
+Fig. 2 . Bayesian trees of Carabidae (left) and Curculionidae (right). Independent GMYC groups are marked with a square. Posterior probabilities from Bayesian analysis are given on the branches and branch length corresponds to inferred numbers of substitutions per site. Terminals are labeled according to morphological identification. See the tree in Supplementary Fig. S1 for the corresponding name codes of GMYC groups used in GenBank. 
+3.2. Species delimitation and geographic distribution of haplotypes 
+ 
+Species delimitation using the GMYC methodology was performed separately for Carabidae, Curculionidae and all other families combined. This revealed a total of 53 (45–57) independent coalescence groups from the combined data which was reduced to 47 (39–53) groups when using the less variable rrnL gene separately, although this number was affected by partially missing data for this gene. Only one of the GMYC clusters from the combined analysis was not detected when using cox1 data alone ( Table 2 ). In no case were the combined-data GMYCs inconsistent with the single-gene analyses, i.e., differences were due to lack of resolution. Most larval specimens were easily associated with one of the GMYC groups, providing an unambiguous species identification for 20 larval specimens as belonging to 9 species. Three further specimens were assigned to GMYC groups not sampled in the adult stage; one of them was closely allied to the curculionid Ca. biangulatus , a second was deeply embedded in the curculionid subfamily Cyclominae, while the third was monophyletic with the Staphylinidae plus Byrrhidae in the all-species Bayesian analysis ( Supplementary Fig. S1 ) and closest to members of Scarabaeidae ( rrnL ; 86% identity, 4% gaps) and Staphylinidae ( cox1 ; 84% identity) in Blastn searches ( E  = 0.0). 
+ 
+Table 2 . Number of morphologically defined species per genus in comparison to GMYC clusters and TCS groups. Only genera with more than 10 sampled individuals are included. Analyses were based on two mtDNA gene regions separately and in combination. Asterisks indicate cases where the results were affected by missing data for the rrnL region. 
+Genera 	Morphological species 	GMYC COI/16S/both 	TCS networks COI/16S/both 	Match morphology 
+Lissopterus 	2 	2/1/2 	2/1/2 	No 
+Metius 	3 	3/3/3 	3/3/3 	Yes 
+Trechisibus 	3 	3/3/3 	3/3/3 	Yes 
+Oopterus 	1 	1/1/1 	1/1/1 	Yes 
+Germainiellus 	1(+1) 	1/1/1 	1/1/1 	Yes 
+Antarctobius 	3 	4/4/5 	5/4/5 	No 
+Falklandius 	4 	2/2/2 	2/2/2 	No 
+Puranius 	3 	3/1∗/3 	3/1∗/3 	Yes 
+Malvinius 	2 	3/2∗/3 	5/2∗/5 	No 
+Parahelops 	4 	5/2∗/5 	5/2∗/5 	No? 
+Aridius 	4 	4/2∗/4 	4/2∗/4 	Yes 
+Chalcosphaerium 	1 	1/1/1 	1/1/1 	Yes 
+ 
+The GMYC groups were largely congruent with the morphological identifications, but with several exceptions. Complete consensus was obtained for Metius (3 species), Trechisibus (3 species), Puranius (3 species) and Aridius (4 species). The remaining five genera showed various degrees of incongruence. A single named species was separated into two or three GMYC groups in Antarctobius vulsus and Parahelops quadricollis (cryptic species). A more complicated situation was encountered in Malvinius , where one of the named species was paraphyletic for another species/GMYC group (species paraphyly); in Falklandius which showed three species collapsing into a single GMYC group (species polyphyly); and in Lissopterus showing some members of a Linnean species incorrectly assigned to a different GMYC group (conflict with named groups). Using GMYC group limits at the ±2log  L high and low estimate did not improve the fit with the morphological groups. 
+ 
+Genera with >10 representatives were also used for network construction using statistical parsimony analysis ( Templeton et al., 1987 ). These analyses produced nesting groups at between three and five hierarchical ( n -step) levels when using the cox1 gene ( Fig. 3 and Supplementary Fig. S2 ). TCS networks were fully congruent with GMYC groups, with the exception of Antarctobius and Germaniellus , where 1 and 2 additional TCS networks were encountered, respectively ( Table 2 ). The TCS analysis did not resolve the morphology–mtDNA inconsistencies but revealed more detail about the substructure within these groups due to the hierarchical arrangement implied by the nested design. In the case of paraphyletic species within Malvinus , M. nordenskioldi corresponded to a tight group at the 2-step level distant from the much more diverse and paraphyletic M. compressiventris to which it was grouped only at the 4-step level (and additional networks) ( Fig. 3 a). In the case of the polyphyletic species of Falklandius , a single TCS network was comprised of three species, in agreement with the GMYC groups. A subset of haplotypes was identical in two species ( F. goliath and F. turbificatus ) or grouped two species at the 3- and 4-step levels ( F. goliath and F. turbificatus ; F. goliath and F. kuscheli ) ( Fig. 3 b). It is also noteworthy that this multi-species network showed geographic structure, as F. goliath and F. turbificatus were confined to site W1, whereas F. kuscheli was limited to sites W2 and E4. However, this geographic arrangement was not reflected in the phylogenetic relationships of haplotypes, as the co-occurring haplotypes were from distant portions of the haplotype network ( Fig. 3 b), arguing against a scenario of vicariance that may have produced these haplotype subgroups. In the genus Lissopterus ( Fig. 3 c), one haplotype of L. hyadesi was shared with L. quadrinotatus and all L. hyadesi haplotypes were members of a single 1-step network. Each species was collected from four localities which were widely distributed throughout the West and East Falklands, while the haplotypes shared between both species were found in distant places, again arguing against vicariant scenarios of species splits. Haplotypes assigned to L. quadrinotatus were highly diverse, separating into two independent networks, and the co-occurring haplotypes were drawn from several divergent portions of the networks (e.g., at site E4 haplotypes from both 4-step and four 3-step networks were present; Fig. 3 c). 
+ 
+    Download full-size image 
+ 
+Fig. 3 . TCS networks for selected genera. Each gray field corresponds to a single individual, connected by lines representing a single mutational step. Small circles represent hypothetical haplotypes. Nesting levels are represented with broken and continuous lines from lowest to highest nesting levels, with designations of nests given in each case. The letter codes within the gray fields correspond to the specimens number (only last three digits shown; see full specimen number in Supplementary Table S1 ) and the locality according to Fig. 1 . The shape of the fields indicates the species designation according to morphological assessment. (a) Malvinius , (b) Falklandius and (c) Lissopterus . 
+ 
+There was high intra-specific variation in most species, as measured by nucleotide diversity when including all species (GMYC groups) with >10 individuals, except for the two members of Metius (Carabidae) ( Fig. 4 ). The intra-specific variation was high even in species that were encountered in a small number of populations only, and the level of variation was not correlated with the number of sampled populations per species ( r  = −0.412, p  = 0.23, for cox1 and r  = −0.192, p  = 0.59 for rrnL ; Pearson’s product-moment correlation). This confirms that diversity within populations is generally high relative to the total variation observed in a given species, and that this high diversity is not generally structured along geographically separated populations. 
+ 
+    Download full-size image 
+ 
+Fig. 4 . (a) Nucleotide diversity ( π ) in various species (GMYC groups), separate for cox1 and rrnL genes. The number behind each species name indicates the number of sites at which this species was encountered. 
+3.3. Dating the age of species divergence and data partitioning 
+ 
+We estimated divergence times between congeneric sister GMYC clusters (3 pairs in the family Carabidae and 5 in Curculionidae) based on the insect mitochondrial clock rate of 2.3% divergence per 10 6 years ( Brower, 1994 ) and using either penalized likelihood on 2500 sampled trees from the stationary phase of each MrBayes run or an uncorrelated relaxed clock in BEAST. We used Bayes Factors or the ratios ln(Bayes Factor)/Δ p to select among five data partitioning schemes (Section 2 ). The estimated harmonic means of the sampled likelihood values were consistently lower for the non-partitioned datasets and improved every time we increased the number of partitions (and free parameters) ( Table 3 ). However, using the recommendations of Pagel and Meade (2004) requiring at least a 10LnL increase per additional free parameter before accepting a more complicated model, the P2 partition scheme (3rd codons versus all other sites) was favored for both datasets (Carabidae ln BF (P2:P1)  = 264.89 in MrBayes or 206.84 in BEAST; Curculionidae ln BF (P2:P1)  = 320.12 in MrBayes or 294.26 in BEAST; while in all cases ln BF/Δ p P3:P2 , ln BF/Δ p P4:P2  < 10). 
+ 
+Table 3 . Bayes factor comparisons for selection of partitioning scheme when using (a) MrBayes or (b) BEAST. Five alternative partitioning schemes (P0–P4) were compared as described in the text. Numbers in brackets indicate the total number of free parameters required for each partitioning scheme. Below the diagonals: ln(Bayes Factor) (estimated as the difference of the natural logarithms of the harmonic mean of the likelihoods between two partition schemes), above the diagonal: ln(Bayes Factor)/Δ p (where Δ p  = difference in total number of free parameters between two partition schemes). Asterisks indicate the selected partition scheme in each case. See Table S3 for likelihood values. 
+	P0 (10) 	P1 (21) 	P2 (21) 	P3 (32) 	P4 (38) 
+(a) MrBayes 
+Carabidae 
+P0 	— 	7.57 	24.08 	40.80 	45.33 
+P1 	83.29 	— 	n/a 	33.23 	24.43 
+P2∗ 	264.89 	264.89 	— 	9.14 	8.85 
+P3 	448.77 	365.48 	100.59 	— 	8.30 
+P4 	498.58 	415.29 	150.40 	49.81 	— 
+ 
+Curculionidae 
+P0 	— 	9.50 	38.60 	45.68 	50.33 
+P1 	104.49 	— 	n/a 	36.18 	40.83 
+P2∗ 	424.61 	320.12 	— 	7.08 	7.59 
+P3 	502.46 	397.97 	77.85 	— 	8.53 
+P4 	553.66 	449.17 	129.05 	51.20 	— 
+ 
+(b) BEAST 
+Carabidae 
+P0 	— 	53.38 	72.18 	79.25 	82.88 
+P1 	587.16 	— 	n/a 	25.87 	19.09 
+P2∗ 	794.00 	206.84 	— 	7.07 	6.92 
+P3 	871.78 	284.62 	77.78 	— 	6.64 
+P4 	911.63 	324.47 	117.63 	39.85 	— 
+ 
+Curculionidae 
+P0 	— 	66.25 	93.00 	99.79 	103.62 
+P1 	728.76 	— 	n/a 	33.54 	24.18 
+P2∗ 	1023.02 	294.26 	— 	6.79 	6.87 
+P3 	1097.75 	368.99 	74.72 	— 	7.02 
+P4 	1139.84 	411.08 	116.82 	42.10 	— 
+ 
+The partitioning scheme had a major impact on the estimated divergence times. Estimated mean node ages for key nodes in the trees of Curculionidae and Carabidae ( Fig. 5 ) were generally younger for the non-partitioned data set and the least favored partitioning scheme P1, while P2, P3 and P4 which had increased marginal likelihoods, gave older mean ages for the nodes of interest ( Fig. 5 ). Differences in node ages under the preferred partitioning schemes P2–P4 were not substantial when using penalized likelihood on MrBayes trees ( Fig. 5 a) but were much greater in the BEAST analyses ( Fig 5 b). There was also a general trend of increased standard deviations for the deeper nodes. This analysis placed the youngest interspecific splits (between Lissopterus LIM1 and LIM2) at 1.15 ± 0.35 Mya (or 1.27 ± 0.56 using BEAST). Most other splits between sister GMYC groups within genera were dated to be ancient, at a minimum of 4.17 ± 1.88 Mya (or 2.75 ± 0.92 using BEAST) at the node separating Malvinius MAM-1 and M. MAM-2 , and up to 18.3 ± 7.7 Mya (or 17.6 ± 4.8 using BEAST) at the node separating Antarctobius ANM-1 and A. falklandius ( Fig. 6 ), while the age of the endemic genus Malvinius was estimated to be 12.14 ± 4.3 Mya (or 10.21 ± 3.24 using BEAST). 
+ 
+    Download full-size image 
+ 
+Fig. 5 . Dating of intra-generic splits using (a) MrBayes and r8s or (b) BEAST. Estimated mean ages for the MRCAs of 8 pairs of sister GMYC groups (3 carabids and 5 curculionids) are shown under five alternative partitioning schemes (P0–P4). The error bars correspond to 1 standard deviation, calculated across all the sampled trees from the stationary phase. The values used in the graph are provided in Supplementary Table S2 . 
+ 
+    Download full-size image 
+ 
+Fig. 6 . Clock-constrained trees of the families Carabidae (a) and Curculionidae (b) based on the P2 partitioning scheme (see text). The insect standard mtDNA rate of 2.3% divergence per My was applied using penalized likelihood. The bars correspond to 95% confidence intervals. 
+4. Discussion 
+4.1. Genetic variation and species delimitation 
+ 
+The terrestrial biota of Antarctica and surrounding Southern Ocean islands remain poorly understood evolutionarily. Here we combined taxonomic and DNA-based evolutionary analyses of an entire fauna of Coleoptera that were encountered during extensive field collecting. Ground-dwelling beetles in the families predominant in these habitats are notoriously variable morphologically, generating difficulties for taxonomy. Yet, we found an overall close match of morphologically defined species with mtDNA-derived GMYC groups. Notable disagreements ( Fig. 3 a–c) were primarily due to the presence of closely related haplotypes in individuals considered to be different species on morphological grounds. In addition, tentative separation of groups based on slight morphological differences, e.g., in the case of G. salebrosus and “ G. nr. salebrosus ” were not reflected by separation in mtDNA. This seems to confirm that the GMYC method is conservative in recognizing separated entities, in particular when using the rrnL gene with its 3–5× lower rate of variation compared to cox1 ( Fig. 3 ), due to the requirement for monophyly and for large numbers of character changes on the subtending branches ( Pons et al., 2006 ). While the rrnL sequences appear to provide insufficient variation for the detection of a shift in branching rate, cox1 or both genes combined produced a sufficient number of character changes for the application of the method. 
+ 
+While species delimitation based on mtDNA and morphology was in broad agreement, both character systems also agree on high intra-species variation. This seems to be due mostly to high within-population variation, as nucleotide diversity was high also at the level of individual collecting sites. However, haplotype distribution was highly structured geographically. For example considering the prolific site W1, sets of closely related haplotypes co-occur but this site also contains divergent haplotypes that are also present at select other sites, suggesting a composite nature of local populations. Site E4 also exhibited several cases of highly divergent haplotypes that each were encountered at different secondary sites ( Fig. 3 b and c), i.e., did not show an obvious isolation-by-distance pattern, but whose distribution is consistent with deep coalescence of local haplotypes and low gene flow within the Falklands. However, greater numbers of individuals per site and species will have to be obtained before it is possible to conduct formal analysis of isolation-by-distance or tests of matrix correlation of genetic and geographic structure. 
+ 
+The three cases of mtDNA–morphology incongruence also have to be seen in this context. Specifically, the F. goliath / F. turbificatus or L. hyadesi / L. quadrinotatus pairs showed identical or closely related haplotypes, in addition to more distantly related haplotypes in either species. This might be evidence of hybridization between these species and might indicate gene flow among populations generally, contrary to the above conclusions of in situ accumulation of local variation. However, secondary hybridization is not supported by the geographic distribution of the haplotypes in question. For example, the L. hyadesi haplotype shared with L. quadrinotatus was found at two distant localities in West and East Falklands, but the L. quadrinotatus individual that shared this haplotype did not co-occur at these sites ( Fig. 3 c). This distribution argues against a classical hybridization scenario of allopatric ranges affected by partial gene flow of mtDNA, as has been observed with ground-dwelling beetles elsewhere ( Gómez-Zurita and Vogler, 2003 ). This possibility is less easily ruled out in Falklandius because the haplotype shared by the F. goliath/F. turbificatus pair does in fact co-occur at a particular site (site W1; Fig. 3 a) but distant haplotypes were also present at this site which would still favor a scenario of ancestral alleles persisting in this population. Hence, there is no immediate evidence for hybridization to cause the sharing of haplotypes between species. Finally, morphological characters currently used to delimit these species may have to be re-assessed, while nuclear marker will have to be sequenced as well. 
+4.2. Phylogenetics and dating of Falkland lineages 
+ 
+In addition to questions about species limits and population structure, DNA profiling of the Falkland beetles also allowed a preliminary phylogenetic analysis. Good nodal support was obtained mostly at the level of genera and GMYC groups, while major families were also recovered as monophyletic clades ( Supplementary Fig. S1 ), including the Curculionidae and Carabidae that were used for analyses of dating. For the weevils, which have been intensely studied taxonomically and biogeographically ( Morrone and Posadas, 2005 , Posadas, 2008 ), our sampling appears to be largely complete at the species level, with a few caveats. In Antarctobius it was not clear if the four species encountered could be mapped correctly on the five species given in Posadas (2008) . In addition, an unidentified larva (BMNH 668310) may be Cylindrorhinus lemniscatus based on its close relationship to C. caudiculatus . This leaves only Lanteriella microphtalma , and Morronia brevirostris unsampled, the latter being a rarely collected species that was described only recently ( Posadas and Ocampo, 2001 ). An unidentified adult (BMNH 673228) may correspond to either of them, unless our survey encountered a hitherto unknown species. The phylogenetic reconstruction of all haplotypes ( Fig. 2 ) or single representatives per GMYC group ( Fig. 6 ) using Bayesian analysis resulted in similar topologies producing strong support for the monophyly of genera (except for Antarctobius that was paraphyletic for Germaniellus , and Metius that was polyphyletic in the BEAST analysis using a single individual although monophyletic in the analysis of all individuals; Fig. 2 ). 
+ 
+The topology and age estimates based on the Bayesian analyses are of great interest to establish the duration of independent lineage evolution in the Falklands. These analyses in future will benefit from the inclusion of mainland lineages, as the terminal branches unique to the Falklands and hence the inferred length of separation might be greatly reduced depending on the position of the mainland species in the trees. Only four species of Curculionidae encountered in this study ( F. antarcticus , Fa. suffodens , C. caudiculatus and H. albolimbata ) are shared with the South American mainland, while all others are endemic to the Falklands. This includes the three endemic genera Malvinius , Morronia and Lanteriella , with two, one and one species each. These are presumably ancient components with no close relatives on the mainland. In other genera, the Falkland species may have closely related mainland species, and therefore the age of Falkland endemic lineages may be younger than the branch points obtained in our analysis. Cladistic morphological analyses have shown that in most cases, including the genera Puranius ( Morrone, 1994 ), Antarctobius ( Posadas and Morrone, 2004 , Morrone, 1992 ) and Falklandius ( Morrone and Anderson, 1995 ), the Falkland species are not monophyletic. An exception was the monophyly of the three closely related F. turbificatus , F. goliath and F. kusheli which were not clearly distinguishable in our analysis ( Fig. 3 a), but were phylogenetically widely separated from F. antarcticus that has its closest relatives on the mainland ( Morrone and Anderson, 1995 ). In the morphology-based studies the Falkland endemics generally occupy basal nodes in the respective genus-level trees, as sisters to species-rich mainland lineages. This pattern in the tree topologies also led to the conclusion from dispersal-vicariance analyses that the Falkland Islands are the biogeographic sister area to the southern South American Magellanic Moorlands + Magellanic Forests provinces ( Posadas and Morrone, 2003 ). These published trees do not necessarily conform to our results, e.g., in the genus Puranius where Morrone’s (1994) study finds P. scaber as the sister to all other species and distantly related to P. championi and P. exsculpticollis , and not as sister to P. championi suggested by mtDNA. Yet, in these studies the Falkland groups generally occupy basal branches in the genus-level trees, reflecting ancient lineage splits. This supports the great divergence of the Falkland species from their mainland relatives and suggests that estimates of the age of the Falkland lineages are not likely to be greatly reduced from incorporation of species from other areas into the tree. 
+ 
+This leaves the difficult issue of calibrating the absolute node ages. In the absence of dating points for the Falkland insects we here applied a widely used clock calibration of 2.3% My −1 following Brower (1994) . Our recent re-evaluation of this estimate based on a set of co-distributed tenebrionid beetle lineages and a well-established geological event ( Papadopoulou et al., submitted for publication ) revealed a slightly higher rate of sequence divergence (2.69% My −1 ) for the same combination of gene regions and substitution models as those used here, which is a composite of a much faster rate for cox1 (3.38%) and lower for rrnL (1.09%). A survey of 30 recent studies of insect mtDNA calibrations ( Papadopoulou et al., submitted for publication ) demonstrated the great effect of allowing for among-site rate heterogeneity in the substitution models, as well as the age of the calibration point (the mtDNA rate of variation is greatly increased for ages of <1 My). Although Brower’s (1994) estimate did not correct for rate variation and the calibration nodes were very recent, the fortuitous combination of various parameters resulted in a widely accepted estimate that is consistent with many evolutionary scenarios using this divergence rate for external calibrations. In addition, the use of the GMYC model in order to select a single representative per species-level entity for the dating procedure, provides an objective measure for removing the presumably high intra-specific rate of variation from consideration. 
+ 
+Moreover, we specifically assessed the effect of data partitioning on node ages using likelihood comparisons and we found a general increase in estimated ages with the number of partitions as shown also by other recent studies ( Papadopoulou et al., submitted for publication , Poux et al., 2008 , Torres-Carvajal and de Queiroz, 2009 ). Data partitioning is known to have a great impact on estimated branch lengths in Bayesian analysis ( Marshall et al., 2006 ). Allowing for rate variation using a gamma distribution within a single DNA partition (P0) or estimating a gamma distribution per gene region (P1) has been shown to result in lower likelihood than partitioning by codon positions ( Brandley et al., 2005 , Castoe et al., 2005 , Miller et al., in press ). Accordingly, in the MrBayes analyses we found that separating the 3rd codon position from all other sites (P2) improved the likelihood considerably and at the same time changed dramatically the inferred node ages. In contrast, separating the 1st and the 2nd positions from the non-protein coding sites (P3) and from each other (P4) resulted in relatively smaller improvements of the harmonic mean and accordingly smaller differences in estimated times. Had we followed the widely used cut-off value of BF > 10 ( Kass and Raftery, 1995 ), even between models with different number of parameters, we would have preferred the most parameter-rich partitioning scheme (P4) but inferences about node ages would have not been considerably different. However, in the BEAST analyses increasing the number of partitions consistently increased the inferred node ages ( Fig. 5 b), even if the differences in likelihood among P2–P4 were similarly small ( Table S3 ). 
+ 
+Accepting the 2.3% divergence as a good approximation of the molecular rate, the preferred partitioning scheme suggests a great age of the Falkland lineages, both for nodes defining the three genus-level endemics but also for nodes within genera. For example, the genus Malvinus where the basal internal split in this lineage entirely confined to the Falklands was estimated to 4.17 ± 1.9 Mya and an even older age for the genus as a whole (12.14 ± 4.3 Mya; Fig. 6 ). Therefore, despite uncertainties about the molecular age estimates of the Falkland endemic lineages and their separation from lineages present on the mainland, the molecular analysis combined with information from species distribution and existing cladistic analyses ( McDowall, 2005 , Posadas, 2008 ) supports an ancient origin of the Falkland lineages that likely preceded the Pleistocene glaciations. 
+4.3. Biogeographic origin 
+ 
+This raises the thorny question about the in situ persistence of the Falkland ancient endemics. Coleopterists studying subarctic assemblages in the Northern Hemisphere and their response to recent glacial cycles ( Buckland and Hammond, 1997 , Coope, 1979 ) have been reluctant to ascribe the presence of endemics to in situ evolution, due to the large range shifts apparent in specimens from subfossil layers, e.g., the presence of Aphodius holderei today only known from Tibet in Late Pleistocene deposits from Britain ( Coope, 1973 ). However, this perspective was questioned by the finding of Pleistocene speciation in situ in refugial areas in the Mediterranean where populations persisted without apparent range shifts ( Ribera and Vogler, 2004 ). In the Falklands, transport across ocean seems possible, and is likely to explain the distribution of non-endemics, such as the two carabid species in the genus Metius which are widespread predators of weevils, including pest species on pasture grasses elsewhere in South America ( Ahmad, 1977 ). Their history of recent immigration may also be reflected by the low nucleotide diversity ( Fig. 4 ). However, this is an unlikely scenario for the flightless, ground-dwelling endemics, including most of the weevils. A theoretical possibility is that these species were transported recently on drift wood that regularly piles up on the shores of the Falkland archipelago ( Buckland and Hammond, 1997 ), but this requires that these lineages have gone extinct in the mainland since dispersal to the Falklands. Alternatively, species known only from the Falklands may not yet have been observed on the mainland and therefore been mistaken as endemics, but this seems equally unlikely given the numerous records in the widespread species ( Posadas, 2008 ). Sampling from mainland localities for mtDNA analysis and age estimates is now an obvious priority to confirm these conclusions. 
+ 
+However, lineage persistence in the islands should be considered as an important factor of biogeographic history. Fossil pollen studies from a Miocene to Early Pliocene site revealed the presence of forests dominated by Podocarpus (conifers) and Nothofagus (southern beeches) on the islands that resembled today’s forests in southern South America and the southwest Pacific ( Birnie and Roberts, 1986 , Macphail and Cantrill, 2006 ), while forests may have existed as recently as the onset of the last series of glacial cycles a few hundred thousand years ago ( Stone et al., 2005 ). The islands currently experience a cool-temperate oceanic climate, with a narrow mean temperature range from 9.1 °C in February to 2.2 °C in July ( McAdam, 1980 ). This climate supports an altitudinal succession of native vegetation types growing on predominantly peaty soils, from coastal ‘tussac grasslands’ through varieties of ‘oceanic heath’, and up to montane ‘feldmark’ communities ( Davies and McAdam, 1989 , Moore, 1968 ). Pollen records indicate that these vegetation types have been constant for at least 9.3 ka ( Barrow, 1978 ), and are similar to those that were present ca. 36–28 ka ( Clark et al., 1998 ), prior to the last period of periglacial conditions between ca. 26 and 13 ka ( Clapperton, 1990 ). Although there was considerable cooling and drying during the glacials and the widely found peat soils are likely to have been formed only with warming climates at around 16.5 ka ( Wilson et al., 2002 ), the islands were never covered by an ice sheet, except for small mountain top glaciers ( Clapperton, 1990 , Clapperton and Sugden, 1976 , Mercer, 1983 ). Similarly, botanists concluded from an early time of investigation that there is ‘no reason to suppose that the Falklands were destitute of vegetation’ ( Skottsberg, 1913 ; as cited in McDowall, 2005 ). This leaves the distinct possibility that species of extant Coleoptera also persisted in pockets during the last glacial. 
+ 
+If a scenario of ancient lineage persistence in situ is accepted, the age estimates from the current analysis also set the stage for the time of origin of the Falkland biota. While any biotic trace of a South African geological connection has been lost ( McDowall, 2005 ), the connection with the South American continent may have been established at any time since the geographic proximity had been first established, and could have been through trans-oceanic dispersal or via temporary land bridges at times of low eustatic sea level ( Morrone and Posadas, 2005 ). Based on the dating, these events would be pre-Pleistocene and possibly much older (>10 Mya), quite in contrast to the fauna in comparable settings in the Northern Hemisphere, such as Iceland which lacks endemic beetle species (see Buckland and Hammond, 1997 ). Based on the basal phylogenetic position of the Falkland species with respect to the Patagonian relatives ( Morrone and Posadas, 2005 ), interchange with the mainland may have been infrequent and at an early stage of the existence of genus-level taxa. The current mtDNA database will be easily extended for tests of relationships among subantarctic lineages and improved evolutionary scenarios of mainland connections and their age, including the link to other subantarctic islands, e.g., testing the multiregional origin of the insect faunas of these islands versus the ‘Paninsulantarctica’ hypothesis of a common origin of the South Atlantic island fauna ( Morrone, 1998 ). These evolutionary reconstructions, combined with genetic profiling of populations in this postglacial landscape, will aid the biogeographic and paleoclimatic understanding of biotic responses to temperature change. 
+Acknowledgments 
+ 
+This work was funded by the NHM Museum Research Fund (to A.P.V. and P.M.H.) and Darwin Initiative of the UK, in collaboration with Falklands Conservation, London. We are grateful to Jesus Gomez-Zurita for help with haplotype network analysis. Two anonymous reviewers made invaluable comments on an earlier version of the manuscript. 
+Appendix A. Supplementary data 
+ 
+    Download full-size image 
+ 
+Supplementary data . Bayesian tree of all 283 individuals, terminals labelled according to the GMYC groups. 
+ 
+    Download full-size image 
+ 
+Supplementary data . Supplementary Figure S2. 
+Download Acrobat PDF file (95KB) Help with pdf files 
+ 
+Supplementary data . Supplementary Tables S1–S3. 
+ 
+Recommended articles Citing articles ( 24 ) 
+References 
+ 
+Ahmad, 1977 
+    R. Ahmad On the knowledge of Hyperodes bonariensis Kuschel (Col., Curculionidae) and its antagonists in Argentina 
+    Anz. Schaedlingskde., Pflanzenschutz, Umweltschutz, 50 (1977), pp. 150-151 
+    CrossRef View Record in Scopus 
+Avise, 2000 
+    J.C. Avise Phylogeography: The History and Formation of Species 
+    Harvard University Press, Cambridge, MA (2000) 
+Barrow, 1978 
+    C.J. Barrow Post-glacial pollen diagrams from South Georgia (Sub-Antarctic) and West Falkland Island (South-Atlantic) 
+    J. Biogeogr., 5 (1978), p. 251 
+    CrossRef View Record in Scopus 
+Birnie and Roberts, 1986 
+    J.F. Birnie, D.E. Roberts Evidence of Tertiary forest in the Falkland Islands (Islas Malvinas) 
+    Palaeogeogr. Palaeoclimatol. Palaeoecol., 55 (1986), pp. 45-53 
+    Article Download PDF View Record in Scopus 
+Brandley et al., 2005 
+    M.C. Brandley, A. Schmitz, T.W. Reeder Partitioned Bayesian analyses, partition choice, and the phylogenetic relationships of scincid lizards 
+    Syst. Biol., 54 (2005), pp. 373-390 
+    CrossRef View Record in Scopus 
+Brower, 1994 
+    A.V.Z. Brower Rapid morphological radiation and convergence among races of the butterfly Heliconius erato inferred from patterns of mitochondrial DNA evolution 
+    Proc. Natl. Acad. Sci. USA, 91 (1994), pp. 6491-6495 
+    CrossRef View Record in Scopus 
+Buckland and Hammond, 1997 
+    P.C. Buckland, P.M. Hammond The origins of the biota of the Falkland Islands and South Georgia 
+    Quatern. Proc., 5 (1997), pp. 59-69 
+Castoe et al., 2005 
+    T.A. Castoe, M.M. Sasa, C.L. Parkinson Modeling nucleotide evolution at the mesoscale: the phylogeny of the Neotropical pitvipers of the Porthidium group (Viperidae: Crotalinae) 
+    Mol. Phylogenet. Evol., 37 (2005), pp. 881-898 
+    Article Download PDF View Record in Scopus 
+Chown, 1994 
+    S.L. Chown Historical ecology of Sub-Antarctic weevils (Coleoptera, Curculionidae)—patterns and processes on isolated islands 
+    J. Nat. Hist., 28 (1994), pp. 411-433 
+    CrossRef View Record in Scopus 
+Chown and Convey, 2007 
+    S.L. Chown, P. Convey Spatial and temporal variability across life’s hierarchies in the terrestrial Antarctic 
+    Philos. Trans. R. Soc. B, 362 (2007), pp. 2307-2331 
+    CrossRef View Record in Scopus 
+Chown et al., 2008 
+    S.L. Chown, J.E. Lee, J.D. Shaw Conservation of Southern Ocean Islands: invertebrates as exemplars 
+    J. Insect Conserv., 12 (2008), pp. 277-291 
+    CrossRef View Record in Scopus 
+Clapperton, 1990 
+    C.M. Clapperton Quaternary glaciations in the Southern Ocean and Antarctic Peninsula area 
+    Quatern. Sci. Rev., 9 (1990), pp. 229-252 
+    Article Download PDF View Record in Scopus 
+Clapperton and Sugden, 1976 
+    C.M. Clapperton, D.E. Sugden Maximum extent of glaciers in part of West Falkland 
+    J. Glaciol., 17 (1976), pp. 73-77 
+    CrossRef View Record in Scopus 
+Clark et al., 1998 
+    R. Clark, U.M. Huber, P. Wilson Late Pleistocene sediments and environmental change at Plaza Creek, Falkland Islands, South Atlantic 
+    J. Quatern. Sci., 13 (1998), pp. 95-105 
+    CrossRef View Record in Scopus 
+Clement et al., 2000 
+    M. Clement, D. Posada, K.A. Crandall TCS: a computer program to estimate gene genealogies 
+    Mol. Ecol., 9 (2000), pp. 1657-1659 
+    CrossRef View Record in Scopus 
+Coope, 1973 
+    G.R. Coope Tibetan species of dung beetle from Late Pleistocene deposits in England 
+    Nature, 245 (1973), pp. 335-336 
+    CrossRef View Record in Scopus 
+Coope, 1979 
+    G.R. Coope Late Cenozoic fossil Coleoptera: evolution, biogeography, and ecology 
+    Annu. Rev. Ecol. Syst., 10 (1979), pp. 249-267 
+Davies and McAdam, 1989 
+    T.H. Davies, J.H. McAdam Wild Flowers of the Falkland Islands 
+    Bluntisham Books, Bluntisham (1989) 
+Drummond et al., 2006 
+    A.J. Drummond, S.Y.W. Ho, M.J. Phillips, A. Rambaut Relaxed phylogenetics and dating with confidence 
+    PLoS Biol., 4 (2006), pp. 699-710 
+    View Record in Scopus 
+Drummond and Rambaut, 2007 
+    A.J. Drummond, A. Rambaut BEAST: Bayesian evolutionary analysis by sampling trees 
+    BMC Evol. Biol., 7 (2007) 
+Ernsting, 1993 
+    G. Ernsting Observations on life cycle and feeding ecology of 2 recently introduced predatory beetle species at South Georgia, Sub-Antarctic 
+    Polar Biol., 13 (1993), pp. 423-428 
+    CrossRef View Record in Scopus 
+Excoffier et al., 2005 
+    L. Excoffier, G. Laval, S. Schneider Arlequin ver. 3.0: an integrated software package for population genetics data analysis 
+    Evol. Bioinf. Online, 1 (2005), pp. 47-50 
+    View Record in Scopus 
+Fontaneto et al., 2007 
+    D. Fontaneto, E.A. Herniou, C. Boschetti, M. Caprioli, G. Melone, C. Ricci, T.G. Barraclough Independently evolving species in asexual bdelloid rotifers 
+    PLoS Biol., 5 (2007), pp. 914-921 
+    View Record in Scopus 
+Gaston et al., 2003 
+    K.J. Gaston, A.G. Jones, C. Hanel, S.L. Chown Rates of species introduction to a remote oceanic island 
+    Proc. R. Soc. B, 270 (2003), pp. 1091-1098 
+    CrossRef View Record in Scopus 
+Gressitt, 1970 
+    J.L. Gressitt Subantarctic entomology and biogeography 
+    Pac. Insects Monogr., 23 (1970), pp. 295-374 
+    View Record in Scopus 
+Gómez-Zurita and Vogler, 2003 
+    J. Gómez-Zurita, A.P. Vogler Incongruent nuclear and mitochondrial phylogeographic patterns in the Timarcha goettingensis species complex (Coleoptera, Chrysomelidae) 
+    J. Evol. Biol., 16 (2003), pp. 833-843 
+    CrossRef View Record in Scopus 
+Hall, 1990 
+    K.J. Hall Quaternary glaciations in the Southern Ocean: sector 0-degrees long.–180-degrees long. 
+    Quatern. Sci. Rev., 9 (1990), pp. 217-228 
+    Article Download PDF View Record in Scopus 
+Hebert and Gregory, 2005 
+    P.D.N. Hebert, T.R. Gregory The promise of DNA barcoding for taxonomy 
+    Syst. Biol., 54 (2005), pp. 852-859 
+    CrossRef View Record in Scopus 
+Hewitt, 1999 
+    G.M. Hewitt Post-glacial re-colonization of European biota 
+    Biol. J. Linn. Soc., 68 (1999), pp. 87-112 
+    Article Download PDF CrossRef View Record in Scopus 
+Howland and Hewitt, 1995 
+    D.E. Howland, G.M. Hewitt Phylogeny of the Coleoptera based on mitochondrial cytochrome oxidase I sequence data 
+    Insect Mol. Biol., 4 (1995), pp. 203-215 
+    CrossRef View Record in Scopus 
+Hudson, 1991 
+    R.R. Hudson Gene genealogies and the coalescent process 
+    Oxf. Surv. Evol. Biol., 7 (1991), pp. 1-44 
+    View Record in Scopus 
+Hunt et al., 2007 
+    T. Hunt, J. Bergsten, Z. Levkanicova, A. Papadopoulou, O. St-John, R. Wild, P.M. Hammond, D. Ahrens, M. Balke, M.S. Caterino, J. Gómez-Zurita, I. Ribera, T.G. Barraclough, M. Bocakova, L. Bocak, A.P. Vogler A comprehensive phylogeny of beetles reveals the evolutionary origins of a superradiation 
+    Science, 318 (2007), pp. 1913-1916 
+    CrossRef View Record in Scopus 
+Jones, 2004 
+    A.G. Jones Insects of the Falkland Islands 
+    Falklands Conservation, London (2004) 
+Jones et al., 2003 
+    A.G. Jones, S.L. Chown, P.G. Ryan, N.J.M. Gremmen, K.J. Gaston A review of conservation threats on Gough Island: a case study for terrestrial conservation in the Southern Oceans 
+    Biol. Conserv., 113 (2003), pp. 75-87 
+    Article Download PDF View Record in Scopus 
+Kass and Raftery, 1995 
+    R.E. Kass, A.E. Raftery Bayes Factors 
+    J. Am. Stat. Assoc., 90 (1995), pp. 773-795 
+    CrossRef View Record in Scopus 
+Macphail and Cantrill, 2006 
+    M. Macphail, D.J. Cantrill Age and implications of the Forest Bed, Falkland Islands, southwest Atlantic Ocean: evidence from fossil pollen and spores 
+    Palaeogeogr. Palaeoclimatol. Palaeoecol., 240 (2006), pp. 602-629 
+    Article Download PDF View Record in Scopus 
+Marshall et al., 2006 
+    D.C. Marshall, C. Simon, T.R. Buckley Accurate branch length estimation in partitioned Bayesian analyses requires accommodation of among-partition rate variation and attention to branch length priors 
+    Syst. Biol., 55 (2006), pp. 993-1003 
+    CrossRef View Record in Scopus 
+Marshall, 1994 
+    J.E.A. Marshall The Falkland Islands—a key element in Gondwana paleogeography 
+    Tectonics, 13 (1994), pp. 499-514 
+    CrossRef View Record in Scopus 
+McAdam, 1980 
+    J.H. McAdam Tatter flags and climate in the Falkland Islands 
+    Weather, 35 (1980), pp. 321-327 
+    CrossRef View Record in Scopus 
+McDowall, 2005 
+    R.M. McDowall Falkland Islands biogeography: converging trajectories in the South Atlantic Ocean 
+    J. Biogeogr., 32 (2005), pp. 49-62 
+    View Record in Scopus 
+Mercer, 1983 
+    J.H. Mercer Cenozoic glaciation in the Southern Hemisphere 
+    Annu. Rev. Earth Planet. Sci., 11 (1983), pp. 99-132 
+    CrossRef View Record in Scopus 
+Miller et al., in press 
+    Miller, K.B., Bergsten, J., Whiting, M.F., in press. Phylogeny and classification of the tribe Hydaticini (Coleoptera: Dytiscidae): partition choice for Bayesian analysis with multiple nuclear and mitochondrial protein-coding genes. Zool. Scr. doi:10.1111/j.1463-6409.2009.00393.x .  
+Moore, 1968 
+    Moore, D.M., 1968. The vascular flora of the Falkland Islands. British Antarctic Survey Reports, No. 60.  
+Morrone, 1992 
+    J.J. Morrone Revisión sistemática y análisis cladísitico del género Antarctobius Fairmaire (Coleoptera: Curculionidae) 
+    Neotropica, 38 (1992), pp. 3-20 
+    View Record in Scopus 
+Morrone, 1994 
+    J.J. Morrone Systematics, cladistics, and biogeography of the Andean weevil genera Macrostyphlus, Adioristidius, Puranius, and Amathynetoides, new genus (Coleoptera: Curculionidae) 
+    Am. Mus. Novit., 3104 (1994) 
+Morrone, 1998 
+    J.J. Morrone On Udvardy’s Insulantarctica province: a test from the weevils (Coleoptera: Curculionoidea) 
+    J. Biogeogr., 25 (1998), pp. 947-955 
+    CrossRef View Record in Scopus 
+Morrone and Anderson, 1995 
+    J.J. Morrone, R.S. Anderson The Falklandius generic group: cladistic analysis with description of new taxa (Coleoptera: Curculionidae: Rhytirrhinini) 
+    Am. Mus. Novit., 3121 (1995) 
+Morrone and Posadas, 2005 
+    J.J. Morrone, P. Posadas Falklands: facts and fiction—reply 
+    J. Biogeogr., 32 (2005), pp. 2183-2187 
+    CrossRef View Record in Scopus 
+Nee et al., 1992 
+    S. Nee, A.O. Mooers, P.H. Harvey Tempo and mode of evolution revealed from molecular phylogenies 
+    Proc. Natl. Acad. Sci. USA, 89 (1992), pp. 8322-8326 
+    CrossRef View Record in Scopus 
+Nylander, 2004 
+    J.A.A. Nylander MrModeltest v2. Program Distributed by the Author 
+    Evolutionary Biology Centre, Uppsala University (2004) 
+Oldfield, 1987 
+    S. Oldfield Fragments of Paradise: A Guide for Conservation in the UK Dependant Territories 
+    British Association of Nature Conservationists, Oxford (1987) 
+Oldfield and Sheppard, 1997 
+    S. Oldfield, C. Sheppard Conservation of biodiversity and research needs in the UK dependent territories 
+    J. Appl. Ecol., 34 (1997), pp. 1111-1121 
+    CrossRef View Record in Scopus 
+Pagel and Meade, 2004 
+    M. Pagel, A. Meade A phylogenetic mixture model for detecting pattern-heterogeneity in gene sequence or character-state data 
+    Syst. Biol., 53 (2004), pp. 571-581 
+    CrossRef View Record in Scopus 
+Papadopoulou et al., submitted for publication 
+    Papadopoulou, A., Anastasiou, I., Vogler, A.P., submitted for publication. Revisiting the insect mitochondrial molecular clock: the mid-Aegean trench calibration. Mol. Biol. Evol..  
+Pons et al., 2006 
+    J. Pons, T.G. Barraclough, J. Gomez-Zurita, A. Cardoso, D.P. Duran, S. Hazell, S. Kamoun, W.D. Sumlin, A.P. Vogler Sequence-based species delimitation for the DNA taxonomy of undescribed insects 
+    Syst. Biol., 55 (2006), pp. 595-609 
+    CrossRef View Record in Scopus 
+Posadas, 2008 
+    P. Posadas A preliminar overview of species composition and geographical distribution of Malvinian weevils (Insecta: Coleoptera: Curculionidae) 
+    Zootaxa (2008), pp. 1-26 
+    View Record in Scopus 
+Posadas and Morrone, 2003 
+    P. Posadas, J.J. Morrone Biogeografía histórica de la familia Curculionidae (Coleoptera) en las subregiones Subantártica y Chilena Central 
+    Rev. Soc. Entomol. Argent., 62 (2003), pp. 75-84 
+    View Record in Scopus 
+Posadas and Morrone, 2004 
+    P. Posadas, J.J. Morrone A new species of Antarctobius Fairmaire from Islas Malvinas (Coleoptera: Curculionidae: Cyclominae) 
+    Insect Syst. Evol., 35 (2004), pp. 353-359 
+    CrossRef View Record in Scopus 
+Posadas and Ocampo, 2001 
+    P. Posadas, F.C. Ocampo Morronia brevirostris , a new genus and species of Entimini (Coleoptera: Curculionidae: Entiminae) from Islas Malvinas 
+    Insect Syst. Evol., 32 (2001), pp. 147-153 
+    CrossRef 
+Poux et al., 2008 
+    C. Poux, O. Madsen, J. Glos, W.W. de Jong, M. Vences Molecular phylogeny and divergence times of Malagasy tenrecs: influence of data partitioning and taxon sampling on dating analyses 
+    BMC Evol. Biol., 8 (2008) 
+    Article No. 102 
+Procter and Fleming, 1999 
+    D. Procter, L.V. Fleming Biodiversity: The UK Overseas Territories 
+    Joint Nature Conservation Committee, Peterborough (1999) 
+Ribera and Vogler, 2004 
+    I. Ribera, A.P. Vogler Speciation of Iberian diving beetles in Pleistocene refugia (Coleoptera, Dytiscidae) 
+    Mol. Ecol., 13 (2004), pp. 179-193 
+    CrossRef View Record in Scopus 
+Ritz et al., 2008 
+    M.S. Ritz, C. Millar, G.D. Miller, R.A. Phillips, P. Ryan, V. Sternkopf, D. Liebers-Helbig, H.U. Peter Phylogeography of the southern skua complex-rapid colonization of the southern hemisphere during a glacial period and reticulate evolution 
+    Mol. Phylogenet. Evol., 49 (2008), pp. 292-303 
+    Article Download PDF View Record in Scopus 
+Robinson, 1984 
+    G. Robinson Insects of the Falkland Islands 
+    British Museum (Natural History), London (1984) 
+Ronquist and Huelsenbeck, 2003 
+    F. Ronquist, J.P. Huelsenbeck MrBayes 3: Bayesian phylogenetic inference under mixed models 
+    Bioinformatics, 19 (2003), pp. 1572-1574 
+    CrossRef View Record in Scopus 
+Sanderson, 2003 
+    M.J. Sanderson R8s: inferring absolute rates of molecular evolution, divergence times in the absence of a molecular clock 
+    Bioinformatics, 19 (2003), pp. 301-302 
+    CrossRef View Record in Scopus 
+Savolainen et al., 2005 
+    V. Savolainen, R.S. Cowan, A.P. Vogler, G. Roderick, R. Lane Towards writing the encyclopaedia of life: an introduction to DNA barcoding 
+    Philos. Trans. R. Soc. B, 360 (2005), pp. 1805-1811 
+    CrossRef View Record in Scopus 
+Simon et al., 1994 
+    C. Simon, F. Frati, A. Beckenbach, B. Crespi, H. Liu, P. Flook Evolution, weighting, and phylogenetic utility of mitochondrial gene sequences and a compilation of conserved polymerase chain reaction primers 
+    Ann. Entomol. Soc. Am., 87 (1994), pp. 651-701 
+    CrossRef View Record in Scopus 
+Skottsberg, 1913 
+    C. Skottsberg Botanische Ergebnisse der Schwedischen Expedition nach Patagonien und dem Feuerland 1907–1909: III. A botanical survey of the Falkland Islands 
+    Kungliga Svenska Vetenskapsakademiens Handlingar, 50 (1913), pp. 1-120 
+    View Record in Scopus 
+Stone et al., 2005 
+    P. Stone, D. Aldiss, E. Edwards Rocks and Fossils of the Falkland Islands 
+    British Geological Survey for Department of Mineral Resources, Falkland Islands Government (2005) 
+Storey et al., 1999 
+    B.C. Storey, M.L. Curtis, J.K. Ferris, M.A. Hunter, R.A. Livermore Reconstruction and break-out model for the Falkland Islands within Gondwana 
+    J. Afr. Earth Sci., 29 (1999), pp. 153-163 
+    Article Download PDF View Record in Scopus 
+Templeton et al., 1987 
+    A.R. Templeton, E. Boerwinkle, C.F. Sing A cladistic analysis of phenotypic associations with haplotypes inferred from restriction endonuclease mapping: I. Basic theory and an analysis of alcohol dehydrogenase activity in Drosophila 
+    Genetics, 117 (1987), pp. 343-351 
+    View Record in Scopus 
+Templeton and Sing, 1993 
+    A.R. Templeton, C.F. Sing A cladistic analysis of phenotypic associations with haplotypes inferred from restriction endonuclease mapping: 4. Nested analyses with cladogram uncertainty and recombination 
+    Genetics, 134 (1993), pp. 659-669 
+    View Record in Scopus 
+Thompson et al., 1994 
+    J.D. Thompson, D.G. Higgins, T.J. Gibson CLUSTAL W: improving the sensitivity of progressive multiple sequence alignment through sequence weighting, position specific gap penalties and weight matrix choice 
+    Nucleic Acids Res., 22 (1994), pp. 4673-4680 
+    CrossRef View Record in Scopus 
+Torres-Carvajal and de Queiroz, 2009 
+    O. Torres-Carvajal, K. de Queiroz Phylogeny of hoplocercine lizards (Squamata: Iguania) with estimates of relative divergence times 
+    Mol. Phylogenet. Evol., 50 (2009), pp. 31-43 
+    Article Download PDF View Record in Scopus 
+Trewin et al., 2002 
+    N.H. Trewin, D.I.M. MacDonald, C.G.C. Thomas Stratigraphy and sedimentology of the Permian of the Falkland Islands: lithostratigraphic and palaeoenvironmental links with South Africa 
+    J. Geol. Soc., 159 (2002), pp. 5-19 
+    View Record in Scopus 
+UKDTCF, 1996 
+    UKDTCF UK Dependant Territories: A Conservation Review 
+    UK Dependant Territories Conservation Forum, Leighton Buzzard, UK (1996) 
+Wakeley, 2006 
+    J. Wakeley Coalescent Theory: An Introduction 
+    Roberts & Co., Greenwood Village, Colorado (2006) 
+Wilson et al., 2002 
+    P. Wilson, R. Clark, J. Birnie, D.M. Moore Late Pleistocene and Holocene landscape evolution and environmental change in the Lake Sulivan area, Falkland Islands, South Atlantic 
+    Quatern. Sci. Rev., 21 (2002), pp. 1821-1840 
+    Article Download PDF View Record in Scopus 
+Yang and Yoder, 2003 
+    Z.H. Yang, A.D. Yoder Comparison of likelihood and Bayesian methods for estimating divergence times using multiple gene loci and calibration points, with application to a radiation of cute-looking mouse lemur species 
+    Syst. Biol., 52 (2003), pp. 705-716 
+    CrossRef View Record in Scopus 
+Yule, 1924 
+    G.U. Yule A mathematical theory of evolution based on the conclusions of Dr. J.C. Willis, FRS 
+    Philos. Trans. R. Soc. B, 213 (1924), pp. 21-87 
+    View Record in Scopus 
+ 
+Copyright © 2009 Elsevier Inc. All rights reserved. 
+Recommended articles 
+ 
+    Phylogeographic structure of Canthon cyanellus (Coleoptera: Scarabaeidae), a Neotropical dung beetle in the Mexican Transition Zone: Insights on its origin and the impacts of Pleistocene climatic fluctuations on population dynamics 
+    Molecular Phylogenetics and Evolution, Volume 109, 2017, pp. 180-190 
+    Download PDF View details 
+    Phylogeography of the bark beetle Dendroctonus mexicanus Hopkins (Coleoptera: Curculionidae: Scolytinae) 
+    Molecular Phylogenetics and Evolution, Volume 49, Issue 3, 2008, pp. 930-940 
+    Download PDF View details 
+    Phylogeography of the frog Leptodactylus validus (Amphibia: Anura): Patterns and timing of colonization events in the Lesser Antilles 
+    Molecular Phylogenetics and Evolution, Volume 53, Issue 2, 2009, pp. 571-579 
+    Download PDF View details 
+ 
+1 2 Next 
+Citing articles (24) 
+ 
+    A comprehensive multilocus phylogeny of the Neotropical cotingas (Cotingidae, Aves) with a comparative evolutionary analysis of breeding system and plumage dimorphism and a revised phylogenetic classification 
+    2014, Molecular Phylogenetics and Evolution 
+    Download PDF View details 
+    Deep mtDNA subdivision within Linnean species in an endemic radiation of tiger beetles from New Zealand (genus Neocicindela) 
+    2011, Molecular Phylogenetics and Evolution 
+    Download PDF View details 
+    Echoes of the whispering land: interacting roles of vicariance and selection in shaping the evolutionary divergence of two Calceolaria (Calceolariaceae) species from Patagonia and Malvinas/Falkland Islands 
+    2018, Evolutionary Ecology 
+    View details 
+ 
+View more articles 
+Article Metrics 
+View article metrics 
+Elsevier 
+ 
+About ScienceDirect Remote access Shopping cart Contact and support Terms and conditions Privacy policy 
+ 
+Cookies are used by this site. For more information, visit the cookies page . 
+ 
+Copyright © 2018 Elsevier B.V. or its licensors or contributors. ScienceDirect ® is a registered trademark of Elsevier B.V. 
+RELX Group 

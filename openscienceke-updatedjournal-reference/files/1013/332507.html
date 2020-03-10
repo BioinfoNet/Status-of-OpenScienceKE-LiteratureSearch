@@ -1,0 +1,1917 @@
+<!DOCTYPE html>
+<html class="no-js" lang="en"><head><meta class="foundation-mq-small"><meta class="foundation-mq-small-only"><meta class="foundation-mq-medium"><meta class="foundation-mq-medium-only"><meta class="foundation-mq-large"><meta class="foundation-mq-large-only"><meta class="foundation-mq-xlarge"><meta class="foundation-mq-xlarge-only"><meta class="foundation-mq-xxlarge"><meta class="foundation-data-attribute-namespace"><script type="text/javascript" async="" src="analytics.js"></script><script type="text/javascript" async="" src="recaptcha__en.js"></script><script type="text/javascript" src="300lo.js"></script><script type="text/javascript" src="_ate.js"></script>
+
+        <title>DnaSP v5: a software for comprehensive analysis of DNA polymorphism data | Bioinformatics | Oxford Academic</title>
+
+        <script async="" src="gtm.js"></script><script src="jquery.js" type="text/javascript"></script>
+<script>window.jQuery || document.write('<script src="/UI/app/vendor/jquery-2.2.4.js">\x3C/script>')</script>
+
+
+
+  
+
+    
+    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+
+    
+    <meta charset="utf-8">
+    <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=Edge">
+  
+<!-- Bookmark Icons -->
+  <link rel="apple-touch-icon" sizes="180x180" href="https://oup.silverchair-cdn.com/UI/app/img/v-637049159188345449/apple-touch-icon.png">
+  <link rel="icon" type="image/png" href="https://oup.silverchair-cdn.com/UI/app/img/v-637049159188345449/favicon-32x32.png" sizes="32x32">
+  <link rel="icon" type="image/png" href="https://oup.silverchair-cdn.com/UI/app/img/v-637049159188345449/favicon-16x16.png" sizes="16x16">
+  <link rel="mask-icon" href="https://oup.silverchair-cdn.com/UI/app/img/v-637049159188659123/safari-pinned-tab.svg" color="#5bbad5">
+  <link rel="shortcut icon" href="https://oup.silverchair-cdn.com/UI/app/img/v-637049159188345449/favicon.ico">
+  <link rel="manifest" href="https://oup.silverchair-cdn.com/UI/app/img/v-637049159188501645/manifest.json">
+  <meta name="msapplication-config" content="//oup.silverchair-cdn.com/UI/app/img/v-637049159188345449/browserconfig.xml">
+  <meta name="theme-color" content="#002f65">
+
+
+    
+
+
+
+
+<link rel="stylesheet" type="text/css" href="icons.css">
+
+<link rel="stylesheet" type="text/css" href="style.css">
+
+        <link rel="stylesheet" type="text/css" href="jquery.css">
+        <link rel="stylesheet" type="text/css" href="jscrollpane.css">
+        <link rel="stylesheet" type="text/css" href="theme.css">
+
+    <link rel="stylesheet" type="text/css" href="css.css">
+
+
+        <link href="global.css" rel="stylesheet" type="text/css">
+                <link href="Site2065275106.css" rel="stylesheet" type="text/css">
+    
+
+
+        <script>
+            (function (w, d, s, l, i) {
+            w[l] = w[l] || []; w[l].push({
+                'gtm.start':
+                new Date().getTime(), event: 'gtm.js'
+            }); var f = d.getElementsByTagName(s)[0],
+                j = d.createElement(s), dl = l != 'dataLayer' ? '&l=' + l : ''; j.async = true; j.src =
+                    'https://www.googletagmanager.com/gtm.js?id=' + i + dl; f.parentNode.insertBefore(j, f);
+            })(window, document, 'script', 'dataLayer', 'GTM-W6DD7HV');
+        </script>
+
+    
+
+
+        <script type="text/javascript">
+            var App = App || {};
+            App.LoginUserInfo = {
+                isInstLoggedIn: [0],
+                isIndividualLoggedIn: [0]
+            };
+
+            App.CurrentSubdomain = 'bioinformatics';
+            App.SiteURL = 'academic.oup.com/bioinformatics';
+        </script>
+    
+    
+    <link href="chartist.css" rel="stylesheet" type="text/css">
+    <script type="application/ld+json">
+        {"@context":"http://schema.org","@id":"https://academic.oup.com/bioinformatics/article/25/11/1451/332507","@type":"ScholarlyArticle","name":"DnaSP v5: a software for comprehensive analysis of DNA polymorphism data","datePublished":"2009-04-03","isPartOf":{"@id":"https://academic.oup.com/bioinformatics/issue/25/11","@type":"PublicationIssue","issueNumber":"11","datePublished":"2009-06-01","isPartOf":{"@id":"https://academic.oup.com/bioinformatics","@type":"Periodical","name":"Bioinformatics","issn":["1460-2059"]}},"url":"http://dx.doi.org/10.1093/bioinformatics/btp187","inLanguage":"en","copyrightHolder":"Oxford University Press","copyrightYear":"2019","publisher":"Oxford University Press","sameAs":"https://academic.oup.com/bioinformatics/article/25/11/1451/332507","author":[{"name":"Librado, P.","affiliation":"Departament de Genètica, Facultat de Biologia and Institut de Recerca de la Biodiversitat, Universitat de Barcelona, Diagonal 645, 08028 Barcelona, Spain","@type":"Person"},{"name":"Rozas, J.","affiliation":"Departament de Genètica, Facultat de Biologia and Institut de Recerca de la Biodiversitat, Universitat de Barcelona, Diagonal 645, 08028 Barcelona, Spain","@type":"Person"}],"description":"Abstract.  Motivation: DnaSP is a software package for a comprehensive analysis of DNA polymorphism data. Version 5 implements a number of new features and anal","pageStart":"1451","pageEnd":"1452","thumbnailURL":"https://oup.silverchair-cdn.com/oup/backfile/Content_public/Journal/bioinformatics/Issue/25/11/0/m_bioinformatics25_11.cover.gif?Expires=1633788521&Signature=RfubcEOWV9cef9EOktUmjRHCVBDNeuiheG0BgoefEAPw1YlNujF6zw-crbF~k5DJqBrXrQJu73HGsoAGg12vSySvLTbA9xycytcDqMUzB6BFV-jBrNd89EheaL~-PMhx0KAdMxGxpsRuOJt4g05UuLcfwjjQ2Ia9drL7yN0elrXUzqkn1T4CGcHy9JVaTl75tADR53uCwJbFg4~fwHEyQ~c54Vq-mw8x1rcyWDLcruKUvEk-9sQNINsa7QJ6lIwsI7OJV5yI4zJhZTs~m-sL48hvfsRx8RQoQWqi10CTd3Tr~hcZO-J5VScgGx1DwuR3qsu3uwNngPcU1d3k1F2mMA__&Key-Pair-Id=APKAIE5G5CRDK6RD3PGA","headline":"DnaSP v5: a software for comprehensive analysis of DNA polymorphism data","image":"https://oup.silverchair-cdn.com/oup/backfile/Content_public/Journal/bioinformatics/Issue/25/11/0/m_bioinformatics25_11.cover.gif?Expires=1633788521&Signature=RfubcEOWV9cef9EOktUmjRHCVBDNeuiheG0BgoefEAPw1YlNujF6zw-crbF~k5DJqBrXrQJu73HGsoAGg12vSySvLTbA9xycytcDqMUzB6BFV-jBrNd89EheaL~-PMhx0KAdMxGxpsRuOJt4g05UuLcfwjjQ2Ia9drL7yN0elrXUzqkn1T4CGcHy9JVaTl75tADR53uCwJbFg4~fwHEyQ~c54Vq-mw8x1rcyWDLcruKUvEk-9sQNINsa7QJ6lIwsI7OJV5yI4zJhZTs~m-sL48hvfsRx8RQoQWqi10CTd3Tr~hcZO-J5VScgGx1DwuR3qsu3uwNngPcU1d3k1F2mMA__&Key-Pair-Id=APKAIE5G5CRDK6RD3PGA"}
+    </script>
+    <meta property="og:site_name" content="OUP Academic">
+    <meta property="og:type" content="article">
+    <meta property="og:title" content="DnaSP v5: a software for comprehensive analysis of DNA polymorphism data">
+    <meta property="og:description" content="Abstract.  Motivation: DnaSP is a software package for a comprehensive analysis of DNA polymorphism data. Version 5 implements a number of new features and anal">
+    <meta property="og:url" content="https://academic.oup.com/bioinformatics/article/25/11/1451/332507">
+    <meta property="og:image" content="https://oup.silverchair-cdn.com/oup/backfile/Content_public/Journal/bioinformatics/Issue/25/11/0/m_bioinformatics25_11.cover.gif?Expires=1633788521&amp;Signature=RfubcEOWV9cef9EOktUmjRHCVBDNeuiheG0BgoefEAPw1YlNujF6zw-crbF~k5DJqBrXrQJu73HGsoAGg12vSySvLTbA9xycytcDqMUzB6BFV-jBrNd89EheaL~-PMhx0KAdMxGxpsRuOJt4g05UuLcfwjjQ2Ia9drL7yN0elrXUzqkn1T4CGcHy9JVaTl75tADR53uCwJbFg4~fwHEyQ~c54Vq-mw8x1rcyWDLcruKUvEk-9sQNINsa7QJ6lIwsI7OJV5yI4zJhZTs~m-sL48hvfsRx8RQoQWqi10CTd3Tr~hcZO-J5VScgGx1DwuR3qsu3uwNngPcU1d3k1F2mMA__&amp;Key-Pair-Id=APKAIE5G5CRDK6RD3PGA">
+    <meta property="og:updated_time" content="2009-04-03">
+<meta name="citation_author" content="Librado, P."><meta name="citation_author_institution" content="Departament de Genètica, Facultat de Biologia and 2Institut de Recerca de la Biodiversitat, Universitat de Barcelona, Diagonal 645, 08028 Barcelona, Spain"><meta name="citation_author" content="Rozas, J."><meta name="citation_author_institution" content="Departament de Genètica, Facultat de Biologia and 2Institut de Recerca de la Biodiversitat, Universitat de Barcelona, Diagonal 645, 08028 Barcelona, Spain"><meta name="citation_title" content="DnaSP v5: a software for comprehensive analysis of DNA polymorphism data"><meta name="citation_firstpage" content="1451"><meta name="citation_lastpage" content="1452"><meta name="citation_doi" content="10.1093/bioinformatics/btp187"><meta name="citation_journal_title" content="Bioinformatics"><meta name="citation_journal_abbrev" content="Bioinformatics"><meta name="citation_volume" content="25"><meta name="citation_issue" content="11"><meta name="citation_publication_date" content="2009/06/01"><meta name="citation_issn" content="1367-4803"><meta name="citation_publisher" content="Narnia"><meta name="citation_reference" content="citation_title=Population genomics: whole-genome analysis of polymorphism and divergence in Drosophila simulans; PLoS Biol.;  citation_year=2007;  citation_volume=6;  citation_pages=e310"><meta name="citation_reference" content="citation_title=Computer programs for population genetics data analysis: a survival guide; Nat. Rev. Genet.;  citation_year=2006;  citation_volume=7;  citation_pages=745-758; "><meta name="citation_reference" content="citation_title=Gene genealogies and the coalescent process; Oxf. Surv. Evol. Biol.;  citation_year=1990;  citation_volume=7;  citation_pages=1-44; "><meta name="citation_reference" content="citation_title=Genome-wide DNA polymorphism analyses using VariScan; BMC Bioinformatics;  citation_year=2006;  citation_volume=7;  citation_pages=409"><meta name="citation_reference" content="citation_title=The Human Genome Browser at UCSC; Genome Res.;  citation_year=2002;  citation_volume=12;  citation_pages=996-1006; "><meta name="citation_reference" content="citation_title=NEXUS: an extendible file format for systematic information; Syst. Biol.;  citation_year=1997;  citation_volume=46;  citation_pages=590-621; "><meta name="citation_reference" content="citation_title=Molecular signatures of natural selection; Annu. Rev. Genet.;  citation_year=2005;  citation_volume=39;  citation_pages=197-218; "><meta name="citation_reference" content="citation_title=Genealogical trees, coalescent theory, and the analysis of genetic polymorphisms; Nat. Rev. Genet.;  citation_year=2002;  citation_volume=3;  citation_pages=380-390; "><meta name="citation_reference" content="citation_title=DnaSP, DNA polymorphism analyses by the coalescent and other methods; Bioinformatics;  citation_year=2003;  citation_volume=19;  citation_pages=2496-2497; "><meta name="citation_reference" content="citation_title=A fast and flexible statistical model for large-scale population genotype data: applications to inferring missing genotypes and haplotypic phase; Am. J. Hum. Genet.;  citation_year=2006;  citation_volume=78;  citation_pages=629-644; "><meta name="citation_reference" content="citation_title=Next-generation DNA sequencing; Nat. Biotechnol.;  citation_year=2008;  citation_volume=26;  citation_pages=1135-1145; "><meta name="citation_reference" content="citation_title=Gaps as characters in sequence-based phylogenetic analyses; Syst. Biol.;  citation_year=2000;  citation_volume=49;  citation_pages=369-381; "><meta name="citation_reference" content="citation_title=A comparison of Bayesian methods for haplotype reconstruction from population genotype data; Am. J. Hum. Genet.;  citation_year=2003;  citation_volume=73;  citation_pages=1162-1169; "><meta name="citation_reference" content="citation_title=A new statistical method for haplotype reconstruction from population data; Am. J. Hum. Genet.;  citation_year=2001;  citation_volume=68;  citation_pages=978-989; "><meta name="citation_reference" content="citation_title=Statistical method for testing the neutral mutation hypothesis by DNA polymorphism; Genetics;  citation_year=1989;  citation_volume=123;  citation_pages=585-595; "><meta name="citation_reference" content="citation_text=The International HapMap Consortium (2003) The International HapMap Project Nature426789–796; "><meta name="citation_reference" content="citation_title=VariScan: analysis of evolutionary patterns from large-scale DNA sequence polymorphism data; Bioinformatics;  citation_year=2005;  citation_volume=21;  citation_pages=2791-2793; "><meta name="citation_reference" content="citation_title=Integrating sequence,evolution and functional genomics in regulatory genomics; Genome Biol.;  citation_year=2009;  citation_volume=10;  citation_pages=202"><meta name="citation_reference" content="citation_title=Haplotype inference by maximum parsimony; Bioinformatics;  citation_year=2003;  citation_volume=19;  citation_pages=1773-1780; "><meta name="citation_reference" content="citation_publisher=Roberts and Company Publishers, Greenwood Village; Coalescent Theory. An Introduction.;  citation_year=2009; "><meta name="citation_reference" content="citation_title=GapCoder automates the use of indel characters in phylogenetic analysis; BMC Bioinformatics;  citation_year=2003;  citation_volume=4;  citation_pages=6"><meta name="citation_fulltext_world_readable" content=""><meta name="citation_pdf_url" content="https://academic.oup.com/bioinformatics/article-pdf/25/11/1451/950342/btp187.pdf"><meta name="description" content="Abstract.  Motivation: DnaSP is a software package for a comprehensive analysis of DNA polymorphism data. Version 5 implements a number of new features and anal">    <script id="altmetric-embed-js" src="altmetric_badges-83b9c000c94cf0db897532114aa014666b0151269d0e.js"></script><style type="text/css">.at-icon{fill:#fff;border:0}.at-icon-wrapper{display:inline-block;overflow:hidden}a .at-icon-wrapper{cursor:pointer}.at-rounded,.at-rounded-element .at-icon-wrapper{border-radius:12%}.at-circular,.at-circular-element .at-icon-wrapper{border-radius:50%}.addthis_32x32_style .at-icon{width:2pc;height:2pc}.addthis_24x24_style .at-icon{width:24px;height:24px}.addthis_20x20_style .at-icon{width:20px;height:20px}.addthis_16x16_style .at-icon{width:1pc;height:1pc}#at16lb{display:none;position:absolute;top:0;left:0;width:100%;height:100%;z-index:1001;background-color:#000;opacity:.001}#at_complete,#at_error,#at_share,#at_success{position:static!important}.at15dn{display:none}#at15s,#at16p,#at16p form input,#at16p label,#at16p textarea,#at_share .at_item{font-family:arial,helvetica,tahoma,verdana,sans-serif!important;font-size:9pt!important;outline-style:none;outline-width:0;line-height:1em}* html #at15s.mmborder{position:absolute!important}#at15s.mmborder{position:fixed!important;width:250px!important}#at15s{background:url(data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAoAAAAKCAYAAACNMs+9AAAAGXRFWHRTb2Z0d2FyZQBBZG9iZSBJbWFnZVJlYWR5ccllPAAAABtJREFUeNpiZGBgaGAgAjAxEAlGFVJHIUCAAQDcngCUgqGMqwAAAABJRU5ErkJggg==);float:none;line-height:1em;margin:0;overflow:visible;padding:5px;text-align:left;position:absolute}#at15s a,#at15s span{outline:0;direction:ltr;text-transform:none}#at15s .at-label{margin-left:5px}#at15s .at-icon-wrapper{width:1pc;height:1pc;vertical-align:middle}#at15s .at-icon{width:1pc;height:1pc}.at4-icon{display:inline-block;background-repeat:no-repeat;background-position:top left;margin:0;overflow:hidden;cursor:pointer}.addthis_16x16_style .at4-icon,.addthis_default_style .at4-icon,.at4-icon,.at-16x16{width:1pc;height:1pc;line-height:1pc;background-size:1pc!important}.addthis_32x32_style .at4-icon,.at-32x32{width:2pc;height:2pc;line-height:2pc;background-size:2pc!important}.addthis_24x24_style .at4-icon,.at-24x24{width:24px;height:24px;line-height:24px;background-size:24px!important}.addthis_20x20_style .at4-icon,.at-20x20{width:20px;height:20px;line-height:20px;background-size:20px!important}.at4-icon.circular,.circular .at4-icon,.circular.aticon{border-radius:50%}.at4-icon.rounded,.rounded .at4-icon{border-radius:4px}.at4-icon-left{float:left}#at15s .at4-icon{text-indent:20px;padding:0;overflow:visible;white-space:nowrap;background-size:1pc;width:1pc;height:1pc;background-position:top left;display:inline-block;line-height:1pc}.addthis_vertical_style .at4-icon,.at4-follow-container .at4-icon{margin-right:5px}html>body #at15s{width:250px!important}#at15s.atm{background:none!important;padding:0!important;width:10pc!important}#at15s_inner{background:#fff;border:1px solid #fff;margin:0}#at15s_head{position:relative;background:#f2f2f2;padding:4px;cursor:default;border-bottom:1px solid #e5e5e5}.at15s_head_success{background:#cafd99!important;border-bottom:1px solid #a9d582!important}.at15s_head_success a,.at15s_head_success span{color:#000!important;text-decoration:none}#at15s_brand,#at15sptx,#at16_brand{position:absolute}#at15s_brand{top:4px;right:4px}.at15s_brandx{right:20px!important}a#at15sptx{top:4px;right:4px;text-decoration:none;color:#4c4c4c;font-weight:700}#at15sptx:hover{text-decoration:underline}#at16_brand{top:5px;right:30px;cursor:default}#at_hover{padding:4px}#at_hover .at_item,#at_share .at_item{background:#fff!important;float:left!important;color:#4c4c4c!important}#at_share .at_item .at-icon-wrapper{margin-right:5px}#at_hover .at_bold{font-weight:700;color:#000!important}#at_hover .at_item{width:7pc!important;padding:2px 3px!important;margin:1px;text-decoration:none!important}#at_hover .at_item.athov,#at_hover .at_item:focus,#at_hover .at_item:hover{margin:0!important}#at_hover .at_item.athov,#at_hover .at_item:focus,#at_hover .at_item:hover,#at_share .at_item.athov,#at_share .at_item:hover{background:#f2f2f2!important;border:1px solid #e5e5e5;color:#000!important;text-decoration:none}.ipad #at_hover .at_item:focus{background:#fff!important;border:1px solid #fff}.at15t{display:block!important;height:1pc!important;line-height:1pc!important;padding-left:20px!important;background-position:0 0;text-align:left}.addthis_button,.at15t{cursor:pointer}.addthis_toolbox a.at300b,.addthis_toolbox a.at300m{width:auto}.addthis_toolbox a{margin-bottom:5px;line-height:initial}.addthis_toolbox.addthis_vertical_style{width:200px}.addthis_button_facebook_like .fb_iframe_widget{line-height:100%}.addthis_button_facebook_like iframe.fb_iframe_widget_lift{max-width:none}.addthis_toolbox a.addthis_button_counter,.addthis_toolbox a.addthis_button_facebook_like,.addthis_toolbox a.addthis_button_facebook_send,.addthis_toolbox a.addthis_button_facebook_share,.addthis_toolbox a.addthis_button_foursquare,.addthis_toolbox a.addthis_button_linkedin_counter,.addthis_toolbox a.addthis_button_pinterest_pinit,.addthis_toolbox a.addthis_button_tweet{display:inline-block}.addthis_toolbox span.addthis_follow_label{display:none}.addthis_toolbox.addthis_vertical_style span.addthis_follow_label{display:block;white-space:nowrap}.addthis_toolbox.addthis_vertical_style a{display:block}.addthis_toolbox.addthis_vertical_style.addthis_32x32_style a{line-height:2pc;height:2pc}.addthis_toolbox.addthis_vertical_style .at300bs{margin-right:4px;float:left}.addthis_toolbox.addthis_20x20_style span{line-height:20px}.addthis_toolbox.addthis_32x32_style span{line-height:2pc}.addthis_toolbox.addthis_pill_combo_style .addthis_button_compact .at15t_compact,.addthis_toolbox.addthis_pill_combo_style a{float:left}.addthis_toolbox.addthis_pill_combo_style a.addthis_button_tweet{margin-top:-2px}.addthis_toolbox.addthis_pill_combo_style .addthis_button_compact .at15t_compact{margin-right:4px}.addthis_default_style .addthis_separator{margin:0 5px;display:inline}div.atclear{clear:both}.addthis_default_style .addthis_separator,.addthis_default_style .at4-icon,.addthis_default_style .at300b,.addthis_default_style .at300bo,.addthis_default_style .at300bs,.addthis_default_style .at300m{float:left}.at300b img,.at300bo img{border:0}a.at300b .at4-icon,a.at300m .at4-icon{display:block}.addthis_default_style .at300b,.addthis_default_style .at300bo,.addthis_default_style .at300m{padding:0 2px}.at300b,.at300bo,.at300bs,.at300m{cursor:pointer}.addthis_button_facebook_like.at300b:hover,.addthis_button_facebook_like.at300bs:hover,.addthis_button_facebook_send.at300b:hover,.addthis_button_facebook_send.at300bs:hover{opacity:1}.addthis_20x20_style .at15t,.addthis_20x20_style .at300bs{overflow:hidden;display:block;height:20px!important;width:20px!important;line-height:20px!important}.addthis_32x32_style .at15t,.addthis_32x32_style .at300bs{overflow:hidden;display:block;height:2pc!important;width:2pc!important;line-height:2pc!important}.at300bs{overflow:hidden;display:block;background-position:0 0;height:1pc;width:1pc;line-height:1pc!important}.addthis_default_style .at15t_compact,.addthis_default_style .at15t_expanded{margin-right:4px}#at_share .at_item{width:123px!important;padding:4px;margin-right:2px;border:1px solid #fff}#at16p{background:url(data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAoAAAAKCAYAAACNMs+9AAAAGXRFWHRTb2Z0d2FyZQBBZG9iZSBJbWFnZVJlYWR5ccllPAAAABtJREFUeNpiZGBgaGAgAjAxEAlGFVJHIUCAAQDcngCUgqGMqwAAAABJRU5ErkJggg==);z-index:10000001;position:absolute;top:50%;left:50%;width:300px;padding:10px;margin:0 auto;margin-top:-185px;margin-left:-155px;font-family:arial,helvetica,tahoma,verdana,sans-serif;font-size:9pt;color:#5e5e5e}#at_share{margin:0;padding:0}#at16pt{position:relative;background:#f2f2f2;height:13px;padding:5px 10px}#at16pt a,#at16pt h4{font-weight:700}#at16pt h4{display:inline;margin:0;padding:0;font-size:9pt;color:#4c4c4c;cursor:default}#at16pt a{position:absolute;top:5px;right:10px;color:#4c4c4c;text-decoration:none;padding:2px}#at15sptx:focus,#at16pt a:focus{outline:thin dotted}#at15s #at16pf a{top:1px}#_atssh{width:1px!important;height:1px!important;border:0!important}.atm{width:10pc!important;padding:0;margin:0;line-height:9pt;letter-spacing:normal;font-family:arial,helvetica,tahoma,verdana,sans-serif;font-size:9pt;color:#444;background:url(data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAoAAAAKCAYAAACNMs+9AAAAGXRFWHRTb2Z0d2FyZQBBZG9iZSBJbWFnZVJlYWR5ccllPAAAABtJREFUeNpiZGBgaGAgAjAxEAlGFVJHIUCAAQDcngCUgqGMqwAAAABJRU5ErkJggg==);padding:4px}.atm-f{text-align:right;border-top:1px solid #ddd;padding:5px 8px}.atm-i{background:#fff;border:1px solid #d5d6d6;padding:0;margin:0;box-shadow:1px 1px 5px rgba(0,0,0,.15)}.atm-s{margin:0!important;padding:0!important}.atm-s a:focus{border:transparent;outline:0;transition:none}#at_hover.atm-s a,.atm-s a{display:block;text-decoration:none;padding:4px 10px;color:#235dab!important;font-weight:400;font-style:normal;transition:none}#at_hover.atm-s .at_bold{color:#235dab!important}#at_hover.atm-s a:hover,.atm-s a:hover{background:#2095f0;text-decoration:none;color:#fff!important}#at_hover.atm-s .at_bold{font-weight:700}#at_hover.atm-s a:hover .at_bold{color:#fff!important}.atm-s a .at-label{vertical-align:middle;margin-left:5px;direction:ltr}.at_PinItButton{display:block;width:40px;height:20px;padding:0;margin:0;background-image:url(//s7.addthis.com/static/t00/pinit00.png);background-repeat:no-repeat}.at_PinItButton:hover{background-position:0 -20px}.addthis_toolbox .addthis_button_pinterest_pinit{position:relative}.at-share-tbx-element .fb_iframe_widget span{vertical-align:baseline!important}#at16pf{height:auto;text-align:right;padding:4px 8px}.at-privacy-info{position:absolute;left:7px;bottom:7px;cursor:pointer;text-decoration:none;font-family:helvetica,arial,sans-serif;font-size:10px;line-height:9pt;letter-spacing:.2px;color:#666}.at-privacy-info:hover{color:#000}.body .wsb-social-share .wsb-social-share-button-vert{padding-top:0;padding-bottom:0}.body .wsb-social-share.addthis_counter_style .addthis_button_tweet.wsb-social-share-button{padding-top:40px}.body .wsb-social-share.addthis_counter_style .addthis_button_facebook_like.wsb-social-share-button{padding-top:21px}@media print{#at4-follow,#at4-share,#at4-thankyou,#at4-whatsnext,#at4m-mobile,#at15s,.at4,.at4-recommended{display:none!important}}@media screen and (max-width:400px){.at4win{width:100%}}@media screen and (max-height:700px) and (max-width:400px){.at4-thankyou-inner .at4-recommended-container{height:122px;overflow:hidden}.at4-thankyou-inner .at4-recommended .at4-recommended-item:first-child{border-bottom:1px solid #c5c5c5}}</style><style type="text/css">.at-branding-logo{font-family:helvetica,arial,sans-serif;text-decoration:none;font-size:10px;display:inline-block;margin:2px 0;letter-spacing:.2px}.at-branding-logo .at-branding-icon{background-image:url("data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAoAAAAKCAMAAAC67D+PAAAAGXRFWHRTb2Z0d2FyZQBBZG9iZSBJbWFnZVJlYWR5ccllPAAAAAZQTFRF////+GlNUkcc1QAAAB1JREFUeNpiYIQDBjQmAwMmkwEM0JnY1WIxFyDAABGeAFEudiZsAAAAAElFTkSuQmCC")}.at-branding-logo .at-branding-icon,.at-branding-logo .at-privacy-icon{display:inline-block;height:10px;width:10px;margin-left:4px;margin-right:3px;margin-bottom:-1px;background-repeat:no-repeat}.at-branding-logo .at-privacy-icon{background-image:url("data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAkAAAAKCAMAAABR24SMAAAAGXRFWHRTb2Z0d2FyZQBBZG9iZSBJbWFnZVJlYWR5ccllPAAAABhQTFRF8fr9ot/xXcfn2/P5AKva////////AKTWodjhjAAAAAd0Uk5T////////ABpLA0YAAAA6SURBVHjaJMzBDQAwCAJAQaj7b9xifV0kUKJ9ciWxlzWEWI5gMF65KUTv0VKkjVeTerqE/x7+9BVgAEXbAWI8QDcfAAAAAElFTkSuQmCC")}.at-branding-logo span{text-decoration:none}.at-branding-logo .at-branding-addthis,.at-branding-logo .at-branding-powered-by{color:#666}.at-branding-logo .at-branding-addthis:hover{color:#333}.at-cv-with-image .at-branding-addthis,.at-cv-with-image .at-branding-addthis:hover{color:#fff}a.at-branding-logo:visited{color:initial}.at-branding-info{display:inline-block;padding:0 5px;color:#666;border:1px solid #666;border-radius:50%;font-size:10px;line-height:9pt;opacity:.7;transition:all .3s ease;text-decoration:none}.at-branding-info span{border:0;clip:rect(0 0 0 0);height:1px;margin:-1px;overflow:hidden;padding:0;position:absolute;width:1px}.at-branding-info:before{content:'i';font-family:Times New Roman}.at-branding-info:hover{color:#0780df;border-color:#0780df}</style><link rel="preload" href="integrator.js"><script type="text/javascript" src="integrator.js"></script><script src="pubads_impl_2019100701.js" async=""></script><style></style><style type="text/css">.MathJax_Hover_Frame {border-radius: .25em; -webkit-border-radius: .25em; -moz-border-radius: .25em; -khtml-border-radius: .25em; box-shadow: 0px 0px 15px #83A; -webkit-box-shadow: 0px 0px 15px #83A; -moz-box-shadow: 0px 0px 15px #83A; -khtml-box-shadow: 0px 0px 15px #83A; border: 1px solid #A6D ! important; display: inline-block; position: absolute}
+.MathJax_Menu_Button .MathJax_Hover_Arrow {position: absolute; cursor: pointer; display: inline-block; border: 2px solid #AAA; border-radius: 4px; -webkit-border-radius: 4px; -moz-border-radius: 4px; -khtml-border-radius: 4px; font-family: 'Courier New',Courier; font-size: 9px; color: #F0F0F0}
+.MathJax_Menu_Button .MathJax_Hover_Arrow span {display: block; background-color: #AAA; border: 1px solid; border-radius: 3px; line-height: 0; padding: 4px}
+.MathJax_Hover_Arrow:hover {color: white!important; border: 2px solid #CCC!important}
+.MathJax_Hover_Arrow:hover span {background-color: #CCC!important}
+</style><style type="text/css">#MathJax_About {position: fixed; left: 50%; width: auto; text-align: center; border: 3px outset; padding: 1em 2em; background-color: #DDDDDD; color: black; cursor: default; font-family: message-box; font-size: 120%; font-style: normal; text-indent: 0; text-transform: none; line-height: normal; letter-spacing: normal; word-spacing: normal; word-wrap: normal; white-space: nowrap; float: none; z-index: 201; border-radius: 15px; -webkit-border-radius: 15px; -moz-border-radius: 15px; -khtml-border-radius: 15px; box-shadow: 0px 10px 20px #808080; -webkit-box-shadow: 0px 10px 20px #808080; -moz-box-shadow: 0px 10px 20px #808080; -khtml-box-shadow: 0px 10px 20px #808080; filter: progid:DXImageTransform.Microsoft.dropshadow(OffX=2, OffY=2, Color='gray', Positive='true')}
+#MathJax_About.MathJax_MousePost {outline: none}
+.MathJax_Menu {position: absolute; background-color: white; color: black; width: auto; padding: 5px 0px; border: 1px solid #CCCCCC; margin: 0; cursor: default; font: menu; text-align: left; text-indent: 0; text-transform: none; line-height: normal; letter-spacing: normal; word-spacing: normal; word-wrap: normal; white-space: nowrap; float: none; z-index: 201; border-radius: 5px; -webkit-border-radius: 5px; -moz-border-radius: 5px; -khtml-border-radius: 5px; box-shadow: 0px 10px 20px #808080; -webkit-box-shadow: 0px 10px 20px #808080; -moz-box-shadow: 0px 10px 20px #808080; -khtml-box-shadow: 0px 10px 20px #808080; filter: progid:DXImageTransform.Microsoft.dropshadow(OffX=2, OffY=2, Color='gray', Positive='true')}
+.MathJax_MenuItem {padding: 1px 2em; background: transparent}
+.MathJax_MenuArrow {position: absolute; right: .5em; padding-top: .25em; color: #666666; font-size: .75em}
+.MathJax_MenuActive .MathJax_MenuArrow {color: white}
+.MathJax_MenuArrow.RTL {left: .5em; right: auto}
+.MathJax_MenuCheck {position: absolute; left: .7em}
+.MathJax_MenuCheck.RTL {right: .7em; left: auto}
+.MathJax_MenuRadioCheck {position: absolute; left: .7em}
+.MathJax_MenuRadioCheck.RTL {right: .7em; left: auto}
+.MathJax_MenuLabel {padding: 1px 2em 3px 1.33em; font-style: italic}
+.MathJax_MenuRule {border-top: 1px solid #DDDDDD; margin: 4px 3px}
+.MathJax_MenuDisabled {color: GrayText}
+.MathJax_MenuActive {background-color: #606872; color: white}
+.MathJax_MenuDisabled:focus, .MathJax_MenuLabel:focus {background-color: #E8E8E8}
+.MathJax_ContextMenu:focus {outline: none}
+.MathJax_ContextMenu .MathJax_MenuItem:focus {outline: none}
+#MathJax_AboutClose {top: .2em; right: .2em}
+.MathJax_Menu .MathJax_MenuClose {top: -10px; left: -10px}
+.MathJax_MenuClose {position: absolute; cursor: pointer; display: inline-block; border: 2px solid #AAA; border-radius: 18px; -webkit-border-radius: 18px; -moz-border-radius: 18px; -khtml-border-radius: 18px; font-family: 'Courier New',Courier; font-size: 24px; color: #F0F0F0}
+.MathJax_MenuClose span {display: block; background-color: #AAA; border: 1.5px solid; border-radius: 18px; -webkit-border-radius: 18px; -moz-border-radius: 18px; -khtml-border-radius: 18px; line-height: 0; padding: 8px 0 6px}
+.MathJax_MenuClose:hover {color: white!important; border: 2px solid #CCC!important}
+.MathJax_MenuClose:hover span {background-color: #CCC!important}
+.MathJax_MenuClose:hover:focus {outline: none}
+</style><style type="text/css">.MathJax_Preview .MJXf-math {color: inherit!important}
+</style><style type="text/css">.MJX_Assistive_MathML {position: absolute!important; top: 0; left: 0; clip: rect(1px, 1px, 1px, 1px); padding: 1px 0 0 0!important; border: 0!important; height: 1px!important; width: 1px!important; overflow: hidden!important; display: block!important; -webkit-touch-callout: none; -webkit-user-select: none; -khtml-user-select: none; -moz-user-select: none; -ms-user-select: none; user-select: none}
+.MJX_Assistive_MathML.MJX_Assistive_MathML_Block {width: 100%!important}
+</style><style type="text/css">#MathJax_Zoom {position: absolute; background-color: #F0F0F0; overflow: auto; display: block; z-index: 301; padding: .5em; border: 1px solid black; margin: 0; font-weight: normal; font-style: normal; text-align: left; text-indent: 0; text-transform: none; line-height: normal; letter-spacing: normal; word-spacing: normal; word-wrap: normal; white-space: nowrap; float: none; -webkit-box-sizing: content-box; -moz-box-sizing: content-box; box-sizing: content-box; box-shadow: 5px 5px 15px #AAAAAA; -webkit-box-shadow: 5px 5px 15px #AAAAAA; -moz-box-shadow: 5px 5px 15px #AAAAAA; -khtml-box-shadow: 5px 5px 15px #AAAAAA; filter: progid:DXImageTransform.Microsoft.dropshadow(OffX=2, OffY=2, Color='gray', Positive='true')}
+#MathJax_ZoomOverlay {position: absolute; left: 0; top: 0; z-index: 300; display: inline-block; width: 100%; height: 100%; border: 0; padding: 0; margin: 0; background-color: white; opacity: 0; filter: alpha(opacity=0)}
+#MathJax_ZoomFrame {position: relative; display: inline-block; height: 0; width: 0}
+#MathJax_ZoomEventTrap {position: absolute; left: 0; top: 0; z-index: 302; display: inline-block; border: 0; padding: 0; margin: 0; background-color: white; opacity: 0; filter: alpha(opacity=0)}
+</style><style type="text/css">.MathJax_Preview {color: #888}
+#MathJax_Message {position: fixed; left: 1px; bottom: 2px; background-color: #E6E6E6; border: 1px solid #959595; margin: 0px; padding: 2px 8px; z-index: 102; color: black; font-size: 80%; width: auto; white-space: nowrap}
+#MathJax_MSIE_Frame {position: absolute; top: 0; left: 0; width: 0px; z-index: 101; border: 0px; margin: 0px; padding: 0px}
+.MathJax_Error {color: #CC0000; font-style: italic}
+</style><style type="text/css">.MJXp-script {font-size: .8em}
+.MJXp-right {-webkit-transform-origin: right; -moz-transform-origin: right; -ms-transform-origin: right; -o-transform-origin: right; transform-origin: right}
+.MJXp-bold {font-weight: bold}
+.MJXp-italic {font-style: italic}
+.MJXp-scr {font-family: MathJax_Script,'Times New Roman',Times,STIXGeneral,serif}
+.MJXp-frak {font-family: MathJax_Fraktur,'Times New Roman',Times,STIXGeneral,serif}
+.MJXp-sf {font-family: MathJax_SansSerif,'Times New Roman',Times,STIXGeneral,serif}
+.MJXp-cal {font-family: MathJax_Caligraphic,'Times New Roman',Times,STIXGeneral,serif}
+.MJXp-mono {font-family: MathJax_Typewriter,'Times New Roman',Times,STIXGeneral,serif}
+.MJXp-largeop {font-size: 150%}
+.MJXp-largeop.MJXp-int {vertical-align: -.2em}
+.MJXp-math {display: inline-block; line-height: 1.2; text-indent: 0; font-family: 'Times New Roman',Times,STIXGeneral,serif; white-space: nowrap; border-collapse: collapse}
+.MJXp-display {display: block; text-align: center; margin: 1em 0}
+.MJXp-math span {display: inline-block}
+.MJXp-box {display: block!important; text-align: center}
+.MJXp-box:after {content: " "}
+.MJXp-rule {display: block!important; margin-top: .1em}
+.MJXp-char {display: block!important}
+.MJXp-mo {margin: 0 .15em}
+.MJXp-mfrac {margin: 0 .125em; vertical-align: .25em}
+.MJXp-denom {display: inline-table!important; width: 100%}
+.MJXp-denom > * {display: table-row!important}
+.MJXp-surd {vertical-align: top}
+.MJXp-surd > * {display: block!important}
+.MJXp-script-box > *  {display: table!important; height: 50%}
+.MJXp-script-box > * > * {display: table-cell!important; vertical-align: top}
+.MJXp-script-box > *:last-child > * {vertical-align: bottom}
+.MJXp-script-box > * > * > * {display: block!important}
+.MJXp-mphantom {visibility: hidden}
+.MJXp-munderover {display: inline-table!important}
+.MJXp-over {display: inline-block!important; text-align: center}
+.MJXp-over > * {display: block!important}
+.MJXp-munderover > * {display: table-row!important}
+.MJXp-mtable {vertical-align: .25em; margin: 0 .125em}
+.MJXp-mtable > * {display: inline-table!important; vertical-align: middle}
+.MJXp-mtr {display: table-row!important}
+.MJXp-mtd {display: table-cell!important; text-align: center; padding: .5em 0 0 .5em}
+.MJXp-mtr > .MJXp-mtd:first-child {padding-left: 0}
+.MJXp-mtr:first-child > .MJXp-mtd {padding-top: 0}
+.MJXp-mlabeledtr {display: table-row!important}
+.MJXp-mlabeledtr > .MJXp-mtd:first-child {padding-left: 0}
+.MJXp-mlabeledtr:first-child > .MJXp-mtd {padding-top: 0}
+.MJXp-merror {background-color: #FFFF88; color: #CC0000; border: 1px solid #CC0000; padding: 1px 3px; font-style: normal; font-size: 90%}
+.MJXp-scale0 {-webkit-transform: scaleX(.0); -moz-transform: scaleX(.0); -ms-transform: scaleX(.0); -o-transform: scaleX(.0); transform: scaleX(.0)}
+.MJXp-scale1 {-webkit-transform: scaleX(.1); -moz-transform: scaleX(.1); -ms-transform: scaleX(.1); -o-transform: scaleX(.1); transform: scaleX(.1)}
+.MJXp-scale2 {-webkit-transform: scaleX(.2); -moz-transform: scaleX(.2); -ms-transform: scaleX(.2); -o-transform: scaleX(.2); transform: scaleX(.2)}
+.MJXp-scale3 {-webkit-transform: scaleX(.3); -moz-transform: scaleX(.3); -ms-transform: scaleX(.3); -o-transform: scaleX(.3); transform: scaleX(.3)}
+.MJXp-scale4 {-webkit-transform: scaleX(.4); -moz-transform: scaleX(.4); -ms-transform: scaleX(.4); -o-transform: scaleX(.4); transform: scaleX(.4)}
+.MJXp-scale5 {-webkit-transform: scaleX(.5); -moz-transform: scaleX(.5); -ms-transform: scaleX(.5); -o-transform: scaleX(.5); transform: scaleX(.5)}
+.MJXp-scale6 {-webkit-transform: scaleX(.6); -moz-transform: scaleX(.6); -ms-transform: scaleX(.6); -o-transform: scaleX(.6); transform: scaleX(.6)}
+.MJXp-scale7 {-webkit-transform: scaleX(.7); -moz-transform: scaleX(.7); -ms-transform: scaleX(.7); -o-transform: scaleX(.7); transform: scaleX(.7)}
+.MJXp-scale8 {-webkit-transform: scaleX(.8); -moz-transform: scaleX(.8); -ms-transform: scaleX(.8); -o-transform: scaleX(.8); transform: scaleX(.8)}
+.MJXp-scale9 {-webkit-transform: scaleX(.9); -moz-transform: scaleX(.9); -ms-transform: scaleX(.9); -o-transform: scaleX(.9); transform: scaleX(.9)}
+.MathJax_PHTML .noError {vertical-align: ; font-size: 90%; text-align: left; color: black; padding: 1px 3px; border: 1px solid}
+</style><link id="altmetric-embed-css" rel="stylesheet" type="text/css" href="embed-a458e1093bac38cf5adc51eff02159de22f9e260b3636d0ecefba2.css"></head><body data-sitestyletemplate="Journal" theme-bioinformatics="" class="off-canvas pg_Article pg_article" data-sitename="bioinformatics"><div id="MathJax_Message" style="display: none;"></div><div class="widget widget-Hypothesis widget-instance-OUP_Article_Hypothesis">
+        <div id="hypothesis-container">
+</div> 
+    </div>
+    <meta name="citation_xml_url" content="https://academic.oup.com/bioinformatics/article-xml/25/11/1451/332507">
+
+
+
+    <link rel="canonical" href="https://academic.oup.com/bioinformatics/article/25/11/1451/332507">
+
+
+
+
+    
+    
+
+
+<script async="async" src="gpt.js"></script>
+<script>
+    var googletag = googletag || {};
+    googletag.cmd = googletag.cmd || [];
+</script>
+    
+        <script type="text/javascript">
+                        var gptAdSlots = [];
+                    googletag.cmd.push(function() {
+            
+            var mapping_ad1 = googletag.sizeMapping()
+            .addSize([1024, 0], [[970, 90], [728, 90]])
+            .addSize([768, 0], [728, 90])
+            .addSize([0, 0], [320, 50])
+            .build();
+            gptAdSlots["ad1"] = googletag.defineSlot('/116097782/bioinformatics_Behind_Ad1',
+                [[970, 90], [728, 90], [320, 50]],
+                'adBlockHeader')
+            .defineSizeMapping(mapping_ad1)
+            .addService(googletag.pubads());
+            
+
+            
+            var mapping_ad2 = googletag.sizeMapping()
+            .addSize([0, 0], [])
+            .addSize([768, 0], [[300, 250], [300, 600], [160, 600]])
+            .build();
+        gptAdSlots["ad2"] = googletag.defineSlot('/116097782/bioinformatics_Behind_Ad2',
+                [[300, 250], [160, 600], [300, 600]],
+                'adBlockMainBodyTop')
+            .defineSizeMapping(mapping_ad2)
+            .addService(googletag.pubads());
+            
+
+            
+            var mapping_ad3 = googletag.sizeMapping()
+            .addSize([0, 0], [])
+            .addSize([768, 0], [[300, 250], [300, 600], [160, 600]])
+            .build();
+    gptAdSlots["ad3"] = googletag.defineSlot('/116097782/bioinformatics_Behind_Ad3',
+                [[300, 250], [160, 600], [300, 600]],
+                'adBlockMainBodyBottom')
+            .defineSizeMapping(mapping_ad3)
+            .addService(googletag.pubads());
+            
+
+            
+                var mapping_ad4 = googletag.sizeMapping()
+                .addSize([0, 0], [])
+                .addSize([768, 0], [728, 90])
+                .build();
+    gptAdSlots["ad4"] = googletag.defineSlot('/116097782/bioinformatics_Behind_Ad4', [728, 90], 'adBlockFooter')
+                .defineSizeMapping(mapping_ad4)
+                .addService(googletag.pubads());
+            
+            googletag.pubads().setTargeting("jnlspage", "article");
+    googletag.pubads().setTargeting("jnlsurl", "bioinformatics/article/25/11/1451/332507");
+    googletag.pubads().enableSingleRequest();
+    googletag.pubads().collapseEmptyDivs();
+        });
+        </script>
+    
+
+
+    
+
+
+    <script>
+        var oupcookiepolicy_siteid = "journals";        // the website id
+        var oupcookiepolicy_messagetype = 'implied';                        // type of alert message e.g, implied / explicit
+        var oupcookiepolicy_preferredlanguage = "en";      // preferred language of the website
+        var oupcookiepolicy_impliedmessageclass = 'cookiepolicyimplied';    // the css class for implied alert message
+        var oupcookiepolicy_documentroot = '/';	  			                // the document root the cookie is set to
+    </script>
+    <noscript>We use cookies to enhance your experience on our website.By continuing to use our website, you are agreeing to our use of cookies. You can change your cookie settings at any time. <a href="https://global.oup.com/cookiepolicy/"> Find out more</a></noscript>
+    <script type="text/javascript">
+        var NTPT_PGEXTRA= 'event_type=full-text&supplier_tag=SC_Journals&object_type=Article&siteid=bioinformatics&authzrequired=false&doi=10.1093/bioinformatics/btp187';
+    </script>
+
+
+
+
+
+
+
+
+
+    
+        <noscript>
+            <iframe src="https://www.googletagmanager.com/ns.html?id=GTM-W6DD7HV"
+                    height="0" width="0" style="display:none;visibility:hidden"></iframe>
+        </noscript>
+        <a href="#main" class="skipnav">Skip to Main Content</a>
+<input id="hdnSiteID" name="hdnSiteID" value="5139" type="hidden"><input id="hdnAdDelaySeconds" name="hdnAdDelaySeconds" value="5000" type="hidden"><input id="hdnAdConfigurationTop" name="hdnAdConfigurationTop" value="default" type="hidden"><input id="hdnAdConfigurationRightRail" name="hdnAdConfigurationRightRail" value="sticky" type="hidden">
+    
+
+
+
+
+
+
+<div class="master-container js-master-container">
+    <section class="master-header row js-master-header vt-site-page-header">
+    <div class="widget widget-SitePageHeader widget-instance-SitePageHeader">
+        
+    <div class="ad-banner js-ad-banner-header">
+    <div class="widget widget-AdBlock widget-instance-HeaderAd">
+        
+
+<div id="adBlockHeader" style=" ">
+    <script>
+        googletag.cmd.push(function () { googletag.display('adBlockHeader'); });
+    </script>
+<div id="google_ads_iframe_/116097782/bioinformatics_Behind_Ad1_0__container__" style="border: 0pt none; width: 970px; height: 90px;"></div></div>
+ 
+    </div>
+
+    </div>
+
+    <div class="oup-header">
+        <div class="center-inner-row">
+            <div class="oup-header-logo">
+                <a href="https://academic.oup.com/">
+                    <img src="oxford-academic-logo.svg" alt="Oxford University Press" class="oup-header-image">
+                </a>
+            </div>
+
+            <ul class="oup-header-menu account-menu">
+
+                
+                <li class="oup-header-menu-item mobile">
+                    <button href="" class="btn btn-as-icon mobile-dropdown-toggle mobile-search-toggle">
+                        <i class="icon-menu_search"><span class="screenreader-text">Search</span></i>
+                    </button>
+                </li>
+
+                
+                <li class="oup-header-menu-item mobile">
+                    <button href="" class="btn btn-as-icon mobile-dropdown-toggle mobile-account-toggle">
+                        <i class="icon-menu_account"><span class="screenreader-text">Account Menu</span></i>
+                    </button>
+                </li>
+
+                
+                <li class="oup-header-menu-item mobile">
+                    <button href="" class="btn btn-as-icon mobile-dropdown-toggle mobile-nav-toggle">
+                        <i class="icon-menu_hamburger"><span class="screenreader-text">Menu</span></i>
+                    </button>
+                </li>
+
+                
+                <li class="oup-header-menu-item desktop">
+                    <a href="" class="dropdown-toggle signin" id="header-account-info-user-fullname">
+                        
+Sign In                        <i class="icon-general-arrow-filled-down arrow-icon"></i>
+                    </a>
+                    <div class="dropdown-panel dropdown-panel-signin dropdown-panel-form">
+                        <div class="spinner"></div>
+                    </div>
+                </li>
+
+                
+                    <li class="oup-header-menu-item desktop"><a href="https://academic.oup.com/my-account/register?siteId=5139&amp;returnUrl=%2fbioinformatics%2farticle%2f25%2f11%2f1451%2f332507" class="register">Register</a></li>
+                
+            </ul>
+        </div>
+    </div>
+<div class="dropdown-panel-wrap">
+
+    
+    <div class="dropdown-panel mobile-search-dropdown">
+        <div class="mobile-search-inner-wrap">
+            <div class="navbar-search">
+                <div id="MobileMicrositeSearch" class="mobile-microsite-search">
+                    <label for="mobile-navbar-search-filter" class="screenreader-text">Navbar Search Filter</label>
+                    <select class="navbar-search-filter" id="mobile-navbar-search-filter">
+                                                    <optgroup label="Search within this journal">
+<option class="header-search-bar-filters-item" value="Issue" selected="selected">This issue</option><option class="header-search-bar-filters-item" value="">All  Bioinformatics</option>
+                            </optgroup>
+                            <optgroup label="Search beyond this journal">
+<option class="header-search-bar-filters-item" value="Journals">All  Journals</option>                            </optgroup>
+                    </select>
+
+
+
+
+
+                    <label for="MobileMicrositeSearchTerm" class="screenreader-text">Mobile Microsite Search Term</label>
+                    <input class="mobile-search-input mobile-microsite-search-term" maxlength="255" placeholder="Search" id="MobileMicrositeSearchTerm" type="text">
+
+                    <span id="MobileMicrositeSearchIcon" class="mobile-microsite-search-icon mobile-search-submit icon-menu_search"></span>
+
+                </div>
+            </div>
+        </div>
+    </div>
+    
+    <div class="dropdown-panel mobile-account-dropdown">
+        <ul class="site-menu site-menu-lvl-0">
+            <li class="site-menu-item site-menu-lvl-0">
+                <a href="" class="nav-link mobile-account-signin dummy-link" id="header-account-info-user-fullname">
+                    
+Sign In                    <i class="mobile-nav-arrow icon-general_arrow-down"></i>
+                </a>
+                <ul class="site-menu site-menu-lvl-1 individual-menu">
+                    <li class="dropdown-signin-form">
+                        <div class="spinner"></div>
+                    </li>
+                </ul>
+            </li>
+                            <li class="site-menu-item">
+                    <a href="https://academic.oup.com/my-account/register?siteId=5139&amp;returnUrl=%2fbioinformatics%2farticle%2f25%2f11%2f1451%2f332507" class="register nav-link">Register</a>
+                </li>
+        </ul>
+    </div>
+    
+    <div class="dropdown-panel mobile-nav-dropdown">
+
+
+    <i class="desktop-nav-arrow icon-general-arrow-filled-down arrow-icon"></i><i class="mobile-nav-arrow icon-general_arrow-down"></i>
+    <ul class="site-menu site-menu-lvl-0">
+        <li class="site-menu-item site-menu-lvl-0" id="site-menu-item-1387512">
+            <a href="https://academic.oup.com/bioinformatics/issue" class="nav-link ">Issues</a>
+            
+        </li>
+        <li class="site-menu-item site-menu-lvl-0" id="site-menu-item-1387513">
+            <a href="https://academic.oup.com/bioinformatics/advance-articles" class="nav-link ">Advance articles</a>
+            
+        </li>
+        <li class="site-menu-item site-menu-lvl-0" id="site-menu-item-1387510">
+            <a href="https://academic.oup.com/bioinformatics/#" class="nav-link dummy-link">Submit</a>
+                <i class="desktop-nav-arrow icon-general-arrow-filled-down arrow-icon"></i><i class="mobile-nav-arrow icon-general_arrow-down"></i>
+    <ul class="site-menu site-menu-lvl-1">
+        <li class="site-menu-item site-menu-lvl-1" id="site-menu-item-1387514">
+            <a href="https://academic.oup.com/bioinformatics/pages/General_Instructions" class="nav-link ">Author Guidelines</a>
+            
+        </li>
+        <li class="site-menu-item site-menu-lvl-1" id="site-menu-item-1387515">
+            <a href="http://mc.manuscriptcentral.com/bioinformatics" class="nav-link ">Submission Site</a>
+            
+        </li>
+        <li class="site-menu-item site-menu-lvl-1" id="site-menu-item-1387516">
+            <a href="https://academic.oup.com/bioinformatics/pages/General_Instructions" class="nav-link ">Open Access</a>
+            
+        </li>
+    </ul>
+
+        </li>
+        <li class="site-menu-item site-menu-lvl-0" id="site-menu-item-1387517">
+            <a href="https://academic.oup.com/bioinformatics/subscribe" class="nav-link ">Purchase</a>
+            
+        </li>
+        <li class="site-menu-item site-menu-lvl-0" id="site-menu-item-1387518">
+            <a href="https://academic.oup.com/my-account/email-alerts" class="nav-link ">Alerts</a>
+            
+        </li>
+        <li class="site-menu-item site-menu-lvl-0" id="site-menu-item-1387511">
+            <a href="https://academic.oup.com/bioinformatics/#" class="nav-link dummy-link">About</a>
+                <i class="desktop-nav-arrow icon-general-arrow-filled-down arrow-icon"></i><i class="mobile-nav-arrow icon-general_arrow-down"></i>
+    <ul class="site-menu site-menu-lvl-1">
+        <li class="site-menu-item site-menu-lvl-1" id="site-menu-item-1387519">
+            <a href="https://academic.oup.com/bioinformatics/pages/About" class="nav-link ">About Bioinformatics</a>
+            
+        </li>
+        <li class="site-menu-item site-menu-lvl-1" id="site-menu-item-1387520">
+            <a href="http://science-and-mathematics-careernetwork.oxfordjournals.org/jobseeker/search/results/?t730=&amp;t732=470053&amp;t731=&amp;t733=&amp;t735=&amp;t737=&amp;max=25&amp;site_id=20106&amp;search=" class="nav-link ">Journals Career Network</a>
+            
+        </li>
+        <li class="site-menu-item site-menu-lvl-1" id="site-menu-item-1387521">
+            <a href="https://academic.oup.com/bioinformatics/pages/Editorial_Board" class="nav-link ">Editorial Board</a>
+            
+        </li>
+        <li class="site-menu-item site-menu-lvl-1" id="site-menu-item-1387522">
+            <a href="http://www.oupmediainfo.com/" class="nav-link ">Advertising and Corporate Services</a>
+            
+        </li>
+        <li class="site-menu-item site-menu-lvl-1" id="site-menu-item-1387523">
+            <a href="https://academic.oup.com/journals/pages/access_purchase/rights_and_permissions/self_archiving_policy_b" class="nav-link ">Self-Archiving Policy</a>
+            
+        </li>
+        <li class="site-menu-item site-menu-lvl-1" id="site-menu-item-1387524">
+            <a href="http://www.oxfordjournals.org/en/access-purchase/dispatch-dates.html" class="nav-link ">Dispatch Dates</a>
+            
+        </li>
+    </ul>
+
+        </li>
+    </ul>
+    </div>
+
+</div>
+
+
+    <div class="journal-header journal-bg">
+        <div class="center-inner-row">
+                            <a href="https://academic.oup.com/bioinformatics" class="journal-logo-container">
+                    <img id="logo-Bioinformatics" class="journal-logo" src="bioinformatics_title-205396838.svg" alt="Bioinformatics">
+                </a>
+
+            <div class="society-logo-block">
+                    <div class="society-block-inner-wrap">
+                            <a href="http://www.iscb.org/" target="" class="society-logo-container">
+                                <img id="logo-InternationalSocietyforComputationalBiology" class="society-logo" src="bioinformatics_h11820233911.svg" alt="International Society for Computational Biology">
+                            </a>
+                                            </div>            </div> 
+        </div>
+    </div>
+<div class="navbar">
+    <div class="center-inner-row">
+        <nav class="navbar-menu">
+
+
+    <i class="desktop-nav-arrow icon-general-arrow-filled-down arrow-icon"></i><i class="mobile-nav-arrow icon-general_arrow-down"></i>
+    <ul class="site-menu site-menu-lvl-0">
+        <li class="site-menu-item site-menu-lvl-0" id="site-menu-item-1387512">
+            <a href="https://academic.oup.com/bioinformatics/issue" class="nav-link ">Issues</a>
+            
+        </li>
+        <li class="site-menu-item site-menu-lvl-0" id="site-menu-item-1387513">
+            <a href="https://academic.oup.com/bioinformatics/advance-articles" class="nav-link ">Advance articles</a>
+            
+        </li>
+        <li class="site-menu-item site-menu-lvl-0" id="site-menu-item-1387510">
+            <a href="https://academic.oup.com/bioinformatics/#" class="nav-link dummy-link">Submit</a>
+                <i class="desktop-nav-arrow icon-general-arrow-filled-down arrow-icon"></i><i class="mobile-nav-arrow icon-general_arrow-down"></i>
+    <ul class="site-menu site-menu-lvl-1">
+        <li class="site-menu-item site-menu-lvl-1" id="site-menu-item-1387514">
+            <a href="https://academic.oup.com/bioinformatics/pages/General_Instructions" class="nav-link ">Author Guidelines</a>
+            
+        </li>
+        <li class="site-menu-item site-menu-lvl-1" id="site-menu-item-1387515">
+            <a href="http://mc.manuscriptcentral.com/bioinformatics" class="nav-link ">Submission Site</a>
+            
+        </li>
+        <li class="site-menu-item site-menu-lvl-1" id="site-menu-item-1387516">
+            <a href="https://academic.oup.com/bioinformatics/pages/General_Instructions" class="nav-link ">Open Access</a>
+            
+        </li>
+    </ul>
+
+        </li>
+        <li class="site-menu-item site-menu-lvl-0" id="site-menu-item-1387517">
+            <a href="https://academic.oup.com/bioinformatics/subscribe" class="nav-link ">Purchase</a>
+            
+        </li>
+        <li class="site-menu-item site-menu-lvl-0" id="site-menu-item-1387518">
+            <a href="https://academic.oup.com/my-account/email-alerts" class="nav-link ">Alerts</a>
+            
+        </li>
+        <li class="site-menu-item site-menu-lvl-0" id="site-menu-item-1387511">
+            <a href="https://academic.oup.com/bioinformatics/#" class="nav-link dummy-link">About</a>
+                <i class="desktop-nav-arrow icon-general-arrow-filled-down arrow-icon"></i><i class="mobile-nav-arrow icon-general_arrow-down"></i>
+    <ul class="site-menu site-menu-lvl-1">
+        <li class="site-menu-item site-menu-lvl-1" id="site-menu-item-1387519">
+            <a href="https://academic.oup.com/bioinformatics/pages/About" class="nav-link ">About Bioinformatics</a>
+            
+        </li>
+        <li class="site-menu-item site-menu-lvl-1" id="site-menu-item-1387520">
+            <a href="http://science-and-mathematics-careernetwork.oxfordjournals.org/jobseeker/search/results/?t730=&amp;t732=470053&amp;t731=&amp;t733=&amp;t735=&amp;t737=&amp;max=25&amp;site_id=20106&amp;search=" class="nav-link ">Journals Career Network</a>
+            
+        </li>
+        <li class="site-menu-item site-menu-lvl-1" id="site-menu-item-1387521">
+            <a href="https://academic.oup.com/bioinformatics/pages/Editorial_Board" class="nav-link ">Editorial Board</a>
+            
+        </li>
+        <li class="site-menu-item site-menu-lvl-1" id="site-menu-item-1387522">
+            <a href="http://www.oupmediainfo.com/" class="nav-link ">Advertising and Corporate Services</a>
+            
+        </li>
+        <li class="site-menu-item site-menu-lvl-1" id="site-menu-item-1387523">
+            <a href="https://academic.oup.com/journals/pages/access_purchase/rights_and_permissions/self_archiving_policy_b" class="nav-link ">Self-Archiving Policy</a>
+            
+        </li>
+        <li class="site-menu-item site-menu-lvl-1" id="site-menu-item-1387524">
+            <a href="http://www.oxfordjournals.org/en/access-purchase/dispatch-dates.html" class="nav-link ">Dispatch Dates</a>
+            
+        </li>
+    </ul>
+
+        </li>
+    </ul>
+        </nav>
+            <div class="navbar-search-container">
+                <div class="navbar-search-close js_close-navsearch">Close</div>
+                <div class="navbar-search">
+                    <div id="MicrositeSearch" class="microsite-search">
+                        <label for="navbar-search-filter" class="screenreader-text">search filter</label>
+                        <select class="navbar-search-filter" id="navbar-search-filter">
+                                                            <optgroup label="Search within this journal">
+                                            <option class="header-search-bar-filters-item" value="Issue">This issue</option>
+                                            <option class="header-search-bar-filters-item" value="" selected="selected">All  Bioinformatics</option>
+
+                                </optgroup>
+                                <optgroup label="Search beyond this journal">
+                                            <option class="header-search-bar-filters-item" value="Journals">All  Journals</option>
+                                </optgroup>
+                        </select>
+
+                        <label for="MicrositeSearchTerm" class="screenreader-text">search input</label>
+                        <input class="navbar-search-input microsite-search-term" maxlength="255" id="MicrositeSearchTerm" title="search input" type="text">
+
+                        <span id="MicrositeSearchIcon" class="microsite-search-icon navbar-search-submit icon-menu_search"></span>
+
+                    </div>
+                </div>
+                <div class="navbar-search-advanced"><a href="https://academic.oup.com/bioinformatics/advanced-search?page=1&amp;fl_SiteID=5139&amp;SearchSourceType=1" class="advanced-search js-advanced-search">Advanced Search</a></div>
+            </div>            <div class="navbar-search-collapsed"><i class="icon-menu_search js_expand-navsearch"></i></div>
+    </div>
+</div>
+
+<input id="hfEnableOupOnlineProductsFeatures" name="hfEnableOupOnlineProductsFeatures" value="False" type="hidden">
+
+    <input name="searchScope" id="hfSolrJournalID" value="" type="hidden">
+    <input name="parentSiteName" id="hfParentSiteName" value="Journals" type="hidden">
+    <input name="parentSiteUrl" id="hfparentSiteUrl" value="academic.oup.com/journals" type="hidden">
+    <input name="siteID" id="hfsiteID" value="5139" type="hidden">
+    <input name="parentSiteID" id="hfparentSiteID" value="5567" type="hidden">
+    <input id="hfSolrJournalName" value="" type="hidden">
+    <input id="hfSolrMaxAllowSearchChar" value="100" type="hidden">
+    <input id="hfJournalShortName" value="" type="hidden">
+    <input id="hfSearchPlaceholder" value="" type="hidden">
+    <input name="hfGlobalSearchSiteURL" id="hfGlobalSearchSiteURL" value="" type="hidden">
+    <input name="journalSiteScope" id="hfjournalSiteScope" value="Journals" type="hidden">
+    <input name="parentSiteScope" id="hfparentSiteScope" value="Parent" type="hidden">
+    <input name="defaultSearchURL" id="hfdefaultSearchURL" value="search-results?page=1&amp;q=" type="hidden">
+    <input name="issueSearch" id="hfIssueSearch" value="&amp;fl_IssueID=12565" type="hidden">
+    <input name="issueSiteScope" id="hfIssueSiteScope" value="Issue" type="hidden">
+<input id="hfDefaultAdvancedSearchUrl" name="hfDefaultAdvancedSearchUrl" value="advanced-search?page=1&amp;q=" type="hidden">    <input name="hfSearchSiteURL" id="hfSiteURL" value="academic.oup.com/bioinformatics" type="hidden">
+    <script type="text/javascript">
+        (function () {
+            var hfSiteUrl = document.getElementById('hfSiteURL');
+            var siteUrl = hfSiteUrl.value;
+            var subdomainIndex = siteUrl.indexOf('/');
+
+            hfSiteUrl.value = location.host + (subdomainIndex >= 0 ? siteUrl.substring(subdomainIndex) : '');
+        })();
+    </script>
+<input id="routename" name="RouteName" value="bioinformatics" type="hidden"> 
+    </div>
+
+</section>
+
+    <div id="main" class="content-main js-main ui-base">
+        <section class="master-main row">
+            <div class="center-inner-row no-overflow">
+                
+
+
+<div class="page-column-wrap">
+<div id="InfoColumn" class="page-column page-column--left js-left-nav-col">
+    <div class="mobile-content-topbar hide">
+        <button class="toggle-left-col toggle-left-col__article">Article Navigation</button>
+    </div>
+    <div class="info-inner-wrap js-left-nav" style="top: 0px;">
+        <button class="toggle-left-col__close btn-as-icon icon-general-close">
+            <span class="screenreader-text">Close mobile search navigation</span>
+        </button>
+        <div class="responsive-nav-title">Article Navigation</div>
+        <div class="info-widget-wrap">
+    <div class="widget widget-IssueInfo widget-instance-OUP_IssueInfo_Article">
+        
+
+<div id="issueInfo-OUP_IssueInfo_Article" class="article-info-wrap clearfix">
+    <i class="icon-general-close mobile-nav-btn nav-open"></i>
+    <div class="article-issue-img">
+            <a href="https://academic.oup.com/bioinformatics/issue/25/11"><img id="issueImage" class="fb-featured-image" src="m_bioinformatics25_11.gif" alt="Issue Cover"></a>
+    </div>
+    <div class="article-issue-info">
+        <div class="volume-issue__wrap">
+
+            <a href="https://academic.oup.com/bioinformatics/issue/25/11">
+                        <div class="volume trailing-comma">Volume 25</div>
+                        <div class="issue">Issue 11</div>
+
+            </a>
+
+        </div>
+        <div class="ii-pub-date">
+1 June 2009        </div>
+        
+    </div>
+
+</div> 
+    </div>
+
+            <div class="content-nav">
+    <div class="widget widget-ArticleJumpLinks widget-instance-OUP_ArticleJumpLinks_Widget">
+        
+
+<div class="contents-title">Article Contents</div>
+<ul class="jumplink-list">
+        <li class="section-jump-link head-1" link-destination="4584520">
+            <div class="section-jump-link__link-wrap">
+
+                <a class="js-jumplink scrollTo" href="#4584520">Abstract</a>
+            </div>
+        </li>
+        <li class="section-jump-link head-1" link-destination="4584523">
+            <div class="section-jump-link__link-wrap">
+
+                <a class="js-jumplink scrollTo" href="#4584523">1 INTRODUCTION</a>
+            </div>
+        </li>
+        <li class="section-jump-link head-1" link-destination="4584532">
+            <div class="section-jump-link__link-wrap">
+
+                <a class="js-jumplink scrollTo" href="#4584532">2 FEATURES</a>
+            </div>
+        </li>
+        <li class="section-jump-link head-1" link-destination="4584555">
+            <div class="section-jump-link__link-wrap">
+
+                <a class="js-jumplink scrollTo" href="#4584555">3 IMPLEMENTATION</a>
+            </div>
+        </li>
+        <li class="section-jump-link head-1" link-destination="4584558">
+            <div class="section-jump-link__link-wrap">
+
+                <a class="js-jumplink scrollTo" href="#4584558">ACKNOWLEDGEMENTS</a>
+            </div>
+        </li>
+        <li class="section-jump-link head-1 backReferenceLink" link-destination="4584564">
+            <div class="section-jump-link__link-wrap">
+
+                <a class="js-jumplink scrollTo" href="#4584564">REFERENCES</a>
+            </div>
+        </li>
+<li class="section-jump-link head-1"><div class="section-jump-link__link-wrap"><a class="jumplink js-jumplink scrollTo" href="#authorNotesSectionTitle">Author notes</a></div></li></ul>
+ 
+    </div>
+
+            </div>
+    <div class="widget widget-ArticleNavLinks widget-instance-OUP_ArticleNavLinks_Article">
+        <ul class="inline-list">
+        <li class="prev arrow">
+            <a href="https://academic.oup.com/bioinformatics/article/25/11/1449/332464">&lt; Previous</a>
+        </li>        
+            <li class="next arrow">
+            <a href="https://academic.oup.com/bioinformatics/article/25/11/1453/330661">Next &gt;</a>
+        </li>
+</ul> 
+    </div>
+
+        </div>
+    </div>
+</div>
+<div class="sticky-toolbar js-sticky-toolbar"></div>
+<div id="ContentColumn" class="page-column page-column--center">
+    <div class="article-browse-top article-browse-mobile-nav js-article-browse-mobile-nav">
+        <div class="article-browse-mobile-nav-inner js-article-browse-mobile-nav-inner">
+            <button class="toggle-left-col toggle-left-col__article btn-as-link">
+                Article Navigation
+            </button>
+        </div>
+    </div>
+    <div class="content-inner-wrap">
+    <div class="widget widget-ArticleTopInfo widget-instance-OUP_ArticleTop_Info_Widget">
+        <div class="module-widget article-top-widget">
+
+    
+
+    
+        
+
+
+    <div class="widget-items">
+                <h1 class="wi-article-title article-title-main">
+                    DnaSP v5: a software for comprehensive analysis of DNA polymorphism data
+<i class="icon-availability_free" title="Free"></i>                </h1>
+                <div class="wi-authors">
+                    <div class="al-authors-list">
+                        <span class="al-author-name-more">
+
+
+                            <span class="al-author-info-wrap arrow-up">
+
+
+<div id="authorInfo_OUP_ArticleTop_Info_Widget" class="info-card-author">
+    <div class="name-role-wrap">
+        <div class="info-card-name">P. Librado</div>
+    </div>
+
+        <div class="info-card-affilitation">
+            <div class="aff"><div class="label"><sup>1</sup></div>Departament de Genètica, Facultat de Biologia and <sup>2</sup>Institut de Recerca de la Biodiversitat, Universitat de Barcelona, Diagonal 645, 08028 Barcelona, Spain</div>
+        </div>
+
+
+
+
+
+        <div class="info-card-search-label">
+            Search for other works by this author on:
+        </div>
+            <div class="info-card-search info-card-search-oxford">
+                <a href="https://academic.oup.com/bioinformatics/search-results?f_Authors=P.+Librado">Oxford Academic</a>
+            </div>
+            <div class="info-card-search info-card-search-pubmed">
+                <a href="http://www.ncbi.nlm.nih.gov/pubmed?cmd=search&amp;term=Librado%20P">PubMed</a>
+            </div>
+            <div class="info-card-search info-card-search-google">
+                <a href="http://scholar.google.com/scholar?q=author:%22Librado%20P.%22">Google Scholar</a>
+            </div>
+
+</div>
+                            </span>
+
+
+
+                            <a class="linked-name" href="javascript:;">P. Librado</a><span class="delimiter">, </span>
+                        </span>
+                        <span class="al-author-name-more">
+
+
+                            <span class="al-author-info-wrap arrow-up">
+
+
+<div id="authorInfo_OUP_ArticleTop_Info_Widget" class="info-card-author">
+    <div class="name-role-wrap">
+        <div class="info-card-name">J. Rozas</div>
+    </div>
+
+        <div class="info-card-affilitation">
+            <div class="aff"><div class="label"><sup>1</sup></div>Departament de Genètica, Facultat de Biologia and <sup>2</sup>Institut de Recerca de la Biodiversitat, Universitat de Barcelona, Diagonal 645, 08028 Barcelona, Spain</div>
+        </div>
+
+                <div class="info-card-note">
+                    <a reveal-id="COR1" data-open="COR1" class="link link-ref link-reveal xref-default">*</a>
+                </div>
+
+        <div class="info-author-correspondence">
+            *To whom correspondence should be addressed.
+        </div>
+
+
+
+        <div class="info-card-search-label">
+            Search for other works by this author on:
+        </div>
+            <div class="info-card-search info-card-search-oxford">
+                <a href="https://academic.oup.com/bioinformatics/search-results?f_Authors=J.+Rozas">Oxford Academic</a>
+            </div>
+            <div class="info-card-search info-card-search-pubmed">
+                <a href="http://www.ncbi.nlm.nih.gov/pubmed?cmd=search&amp;term=Rozas%20J">PubMed</a>
+            </div>
+            <div class="info-card-search info-card-search-google">
+                <a href="http://scholar.google.com/scholar?q=author:%22Rozas%20J.%22">Google Scholar</a>
+            </div>
+
+</div>
+                            </span>
+
+
+
+                            <a class="linked-name" href="javascript:;">J. Rozas</a><span class="delimiter"><i class="icon-general-mail"></i></span>
+                        </span>
+
+                            <div class="al-author-name al-author-footnotes">
+                                <div class="al-author-info-wrap arrow-up">
+    <div class="widget widget-SingleSection widget-instance-OUP_FootnoteSection">
+        <div content-id=""><div class="fn"><div class="footnote-content">Associate Editor: Martin Bishop</div></div></div> 
+    </div>
+                                </div>
+                                <a class="js-linked-footnotes" href="javascript:;">Author Notes</a>
+                            </div>
+                    </div>
+                </div>
+<div class="pub-history-wrap clearfix">
+
+        <div class="pub-history-row clearfix">
+            <div class="ww-citation-primary"><em>Bioinformatics</em>, Volume 25, Issue 11, 1 June 2009, Pages 1451–1452, <a href="https://doi.org/10.1093/bioinformatics/btp187">https://doi.org/10.1093/bioinformatics/btp187</a></div>
+        </div>
+        <div class="pub-history-row clearfix">
+            <div class="ww-citation-date-wrap">
+                <div class="citation-label">Published:</div>
+                <div class="citation-date">03 April 2009</div>
+            </div>
+                <a href="javascript:;" class="ww-citation-history-wrap js-article-history st-article-history">
+                    <span>Article history</span><i class="icon-general-arrow-filled-down arrow-icon"></i>
+                </a>
+        </div>
+            <div class="history-entries-wrap js-history-entries-wrap">
+                <div class="history-entry">
+                    <div class="wi-state">Received:</div>
+                    <div class="wi-date">10 February 2009</div>
+                </div>
+                <div class="history-entry">
+                    <div class="wi-state">Revision received:</div>
+                    <div class="wi-date">02 April 2009</div>
+                </div>
+                <div class="history-entry">
+                    <div class="wi-state">Accepted:</div>
+                    <div class="wi-date">02 April 2009</div>
+                </div>
+                <div class="history-entry">
+                    <div class="wi-state">Published:</div>
+                    <div class="wi-date">03 April 2009</div>
+                </div>
+        </div>
+</div>
+    </div>
+</div>
+
+<script>
+    $(document).ready(function () {
+        $('.article-top-widget').on('click', '.ati-toggle-trigger', function () {
+            $(this).find('.icon-general-add, .icon-minus').toggleClass('icon-minus icon-general-add');
+            $(this).siblings('.ati-toggle-content').toggleClass('hide');
+        });
+
+        // In Chrome, an anchor tag with target="_blank" and a "mailto:" href opens a new tab/window as well as the email client
+        // I suspect this behavior will be corrected in the future
+        // Remove the target="_blank"
+        $('ul.wi-affiliationList').find('a[href^="mailto:"]').each(function () {
+            $(this).removeAttr('target');
+        });
+    });
+</script>
+
+ 
+    </div>
+    <div class="widget widget-ArticleLinks widget-instance-OUP_Article_Links_Widget">
+         
+    </div>
+
+
+        <div class="article-body">
+            <div class="toolbar-wrap js-toolbar-wrap">
+                <div class="toolbar-inner-wrap">
+                    <ul id="Toolbar" role="navigation">
+    <li class="toolbar-item item-pdf">
+        <a class="al-link pdf article-pdfLink" data-article-id="332507" href="https://academic.oup.com/bioinformatics/article-pdf/25/11/1451/950342/btp187.pdf">
+            <img src="pdf.svg" alt="pdf"><span class="pdf-link-text">PDF</span>
+        </a>
+    </li>
+                                                    <li class="toolbar-item item-link item-split-view">
+                                <a href="javascript:;" class="split-view js-split-view st-split-view" target="">
+                                    <i class="icon-menu_split"></i>
+                                    Split View
+                                </a>
+                            </li>
+                        <li class="toolbar-item item-with-dropdown item-views" style="display: none;">
+                            <a class="drop-trigger" href="javascript:;" data-dropdown="FilterDrop" aria-haspopup="true">
+                                <i class="icon-menu_views"></i>
+                                <div class="toolbar-label">
+                                    <div class="toolbar-text">Views</div>
+                                    <i class="icon-general-arrow-filled-down arrow-icon"></i>
+                                </div>
+                            </a>
+                            <ul id="ViewsDrop" class="f-dropdown" data-dropdown-content="" aria-label="submenu">
+                                <div class="arrow-up" style="display: block;"></div>
+                                <li class="article-content-filter js-article-content-filter" data-content-filter="article-content" style="display: none;">
+                                    <a href="javascript:;"><span>Article contents</span></a>
+                                </li>
+                                
+                                
+                                
+                                
+                            </ul>
+                        </li>
+                        <li class="toolbar-item">
+    <div class="widget widget-ToolboxGetCitation widget-instance-OUP_Get_Citation">
+        
+<a href="#" data-reveal-id="getCitation" data-reveal=""><i class="icon-read-more"></i><span>Cite</span></a>
+
+<div id="getCitation" class="reveal-modal" data-reveal="">
+    <div class="modal-title">Citation</div>
+    <p>P. Librado, J. Rozas,  DnaSP v5: a software for comprehensive analysis of DNA polymorphism data, <em>Bioinformatics</em>, Volume 25, Issue 11, 1 June 2009, Pages 1451–1452, <a href="https://doi.org/10.1093/bioinformatics/btp187">https://doi.org/10.1093/bioinformatics/btp187</a></p>
+    <p class="citation-label">Download citation file:</p>  
+    <ul>
+        <li><a href="https://academic.oup.com/Citation/Download?resourceId=332507&amp;resourceType=3&amp;citationFormat=0">Ris (Zotero)</a></li>
+        <li><a href="https://academic.oup.com/Citation/Download?resourceId=332507&amp;resourceType=3&amp;citationFormat=1">EndNote</a></li>
+        <li><a href="https://academic.oup.com/Citation/Download?resourceId=332507&amp;resourceType=3&amp;citationFormat=2">BibTex</a></li>
+        <li><a href="https://academic.oup.com/Citation/Download?resourceId=332507&amp;resourceType=3&amp;citationFormat=3">Medlars</a></li>
+        <li><a href="https://academic.oup.com/Citation/Download?resourceId=332507&amp;resourceType=3&amp;citationFormat=0">ProCite</a></li>
+        <li><a href="https://academic.oup.com/Citation/Download?resourceId=332507&amp;resourceType=3&amp;citationFormat=3">RefWorks</a></li>
+        <li><a href="https://academic.oup.com/Citation/Download?resourceId=332507&amp;resourceType=3&amp;citationFormat=0">Reference Manager</a></li>
+    </ul>
+    <hr>
+    
+    <p>© 2019 Oxford University Press</p>
+    <a class="close-reveal-modal" href="javascript:;"><i class="icon-general-close"></i><span class="screenreader-text">Close</span></a>
+</div> 
+    </div>
+
+                        </li>
+                        <li class="toolbar-item item-tools">
+    <div class="widget widget-ToolboxPermissions widget-instance-">
+            <div class="module-widget">
+        <a href="https://s100.copyright.com/AppDispatchServlet?publisherName=OUP&amp;publication=1460-2059&amp;title=DnaSP%20v5%3A%20a%20software%20for%20comprehensive%20analysis%20of%20DNA%20polymorphism%20data&amp;publicationDate=2009-04-03&amp;volumeNum=25&amp;issueNum=11&amp;author=Librado%2C%20P.%3B%20Rozas%2C%20J.&amp;startPage=1451&amp;endPage=1452&amp;contentId=10.1093%2Fbioinformatics%2Fbtp187&amp;oa=&amp;copyright=Oxford%20University%20Press&amp;orderBeanReset=True" id="PermissionsLink" class="" target="">
+            <i class="icon-menu_permissions">
+                <span class="screenreader-text">Permissions Icon</span>
+            </i>
+            Permissions
+        </a>
+    </div>
+ 
+    </div>
+
+                        </li>
+                        <li class="toolbar-item item-with-dropdown item-share last">
+                            <a class="drop-trigger" href="javascript:;" data-dropdown="ShareDrop" aria-haspopup="true">
+                                <i class="icon-menu_share"></i>
+                                <div class="toolbar-label">
+                                    <div class="toolbar-text">Share</div>
+                                    <i class="icon-general-arrow-filled-down arrow-icon"></i>
+                                </div>
+                            </a>
+                            <ul id="ShareDrop" class="addthis_toolbox addthis_default_style addthis_20x20_style f-dropdown" data-dropdown-content="" aria-label="submenu">
+                                <div class="arrow-up"></div>
+                                <li><a class="addthis_button_email at300b" target="" title="Email" href="#"><span>Email</span></a></li>
+                                <li><a class="addthis_button_twitter at300b" title="Twitter" href="#"><span>Twitter</span></a></li>
+                                <li><a class="addthis_button_facebook at300b" title="Facebook" href="#"><span>Facebook</span></a></li>
+                                <li><a class="addthis_button_compact at300m" href="#"><span>More</span></a></li>
+                            <div class="atclear"></div></ul>
+                        </li>
+                    </ul>
+                    <div class="toolbar-search">
+    <div class="widget widget-SitePageHeader widget-instance-OUP_ArticleToolbarSearchBox">
+        
+
+
+<div class="dropdown-panel-wrap">
+
+    
+    <div class="dropdown-panel mobile-search-dropdown">
+        <div class="mobile-search-inner-wrap">
+            <div class="navbar-search">
+                <div id="MobileMicrositeSearch" class="mobile-microsite-search">
+                    <label for="mobile-navbar-search-filter" class="screenreader-text">Navbar Search Filter</label>
+                    <select class="navbar-search-filter" id="mobile-navbar-search-filter">
+                                                    <optgroup label="Search within this journal">
+<option class="header-search-bar-filters-item" value="Issue" selected="selected">This issue</option><option class="header-search-bar-filters-item" value="">All  Bioinformatics</option>
+                            </optgroup>
+                            <optgroup label="Search beyond this journal">
+<option class="header-search-bar-filters-item" value="Journals">All  Journals</option>                            </optgroup>
+                    </select>
+
+
+
+
+
+                    <label for="MobileMicrositeSearchTerm" class="screenreader-text">Mobile Microsite Search Term</label>
+                    <input class="mobile-search-input mobile-microsite-search-term" maxlength="255" placeholder="Search" id="MobileMicrositeSearchTerm" type="text">
+
+                    <span id="MobileMicrositeSearchIcon" class="mobile-microsite-search-icon mobile-search-submit icon-menu_search"></span>
+
+                </div>
+            </div>
+        </div>
+    </div>
+    
+    <div class="dropdown-panel mobile-account-dropdown">
+        <ul class="site-menu site-menu-lvl-0">
+            <li class="site-menu-item site-menu-lvl-0">
+                <a href="" class="nav-link mobile-account-signin dummy-link" id="header-account-info-user-fullname">
+                    
+Sign In                    <i class="mobile-nav-arrow icon-general_arrow-down"></i>
+                </a>
+                <ul class="site-menu site-menu-lvl-1 individual-menu">
+                    <li class="dropdown-signin-form">
+                        <div class="spinner"></div>
+                    </li>
+                </ul>
+            </li>
+                            <li class="site-menu-item">
+                    <a href="https://academic.oup.com/my-account/register?siteId=5139&amp;returnUrl=%2fbioinformatics%2farticle%2f25%2f11%2f1451%2f332507" class="register nav-link">Register</a>
+                </li>
+        </ul>
+    </div>
+    
+    <div class="dropdown-panel mobile-nav-dropdown">
+
+    </div>
+
+</div>
+
+
+
+<div class="navbar">
+    <div class="center-inner-row">
+        <nav class="navbar-menu">
+
+        </nav>
+            <div class="navbar-search-container">
+                <div class="navbar-search-close js_close-navsearch">Close</div>
+                <div class="navbar-search">
+                    <div id="MicrositeSearch" class="microsite-search">
+                        <label for="navbar-search-filter" class="screenreader-text">search filter</label>
+                        <select class="navbar-search-filter" id="navbar-search-filter">
+                                                            <optgroup label="Search within this journal">
+                                            <option class="header-search-bar-filters-item" value="Issue">This issue</option>
+                                            <option class="header-search-bar-filters-item" value="" selected="selected">All  Bioinformatics</option>
+
+                                </optgroup>
+                                <optgroup label="Search beyond this journal">
+                                            <option class="header-search-bar-filters-item" value="Journals">All  Journals</option>
+                                </optgroup>
+                        </select>
+
+                        <label for="MicrositeSearchTerm" class="screenreader-text">search input</label>
+                        <input class="navbar-search-input microsite-search-term" maxlength="255" id="MicrositeSearchTerm" title="search input" type="text">
+
+                        <span id="MicrositeSearchIcon" class="microsite-search-icon navbar-search-submit icon-menu_search"></span>
+
+                    </div>
+                </div>
+                <div class="navbar-search-advanced"><a href="https://academic.oup.com/bioinformatics/advanced-search?page=1&amp;fl_SiteID=5139&amp;SearchSourceType=1" class="advanced-search js-advanced-search">Advanced Search</a></div>
+            </div>            <div class="navbar-search-collapsed"><i class="icon-menu_search js_expand-navsearch"></i></div>
+    </div>
+</div>
+
+<input id="hfEnableOupOnlineProductsFeatures" name="hfEnableOupOnlineProductsFeatures" value="False" type="hidden">
+
+<input id="routename" name="RouteName" value="bioinformatics" type="hidden"> 
+    </div>
+
+                    </div>
+                </div>
+            </div>
+            <div id="ContentTab" class="content active">
+    <div class="widget widget-ArticleFulltext widget-instance-OUP_Article_FullText_Widget">
+        <div class="module-widget">
+    <div class="widget-items" data-widgetname="ArticleFulltext">
+
+
+
+
+
+                    <h2 scrollto-destination="4584520" id="4584520" class="abstract-title">Abstract</h2>
+<section class="abstract"><p><strong>Motivation:</strong> DnaSP is a 
+software package for a comprehensive analysis of DNA polymorphism data. 
+Version 5 implements a number of new features and analytical methods 
+allowing extensive DNA polymorphism analyses on large datasets. Among 
+other features, the newly implemented methods allow for: (i) analyses on
+ multiple data files; (ii) haplotype phasing; (iii) analyses on 
+insertion/deletion polymorphism data; (iv) visualizing sliding window 
+results integrated with available genome annotations in the UCSC 
+browser.</p><p><strong>Availability:</strong> Freely available to academic users from: <a class="link link-uri" href="http://www.ub.edu/dnasp" target="">http://www.ub.edu/dnasp</a></p><p><strong>Contact:</strong><a href="mailto:jrozas@ub.edu" target="">jrozas@ub.edu</a></p></section>                        <div class="article-metadata-panel clearfix"><div class="article-metadata-tocSections">
+                    <div class="article-metadata-tocSections-title">Issue Section:</div>
+                        <a href="https://academic.oup.com/bioinformatics/search-results?f_TocHeadingTitle=Genetics%20and%20population%20analysis">Genetics and population analysis</a>
+                </div></div>
+                    <h2 scrollto-destination="4584523" id="4584523" class="section-title" data-legacy-id="SEC1">1 INTRODUCTION</h2>
+<p>The analysis of DNA polymorphisms is a powerful approach to 
+understand the evolutionary process and to establish the functional 
+significance of particular genomic regions (Begun <em>et al.</em>, <a reveal-id="B1" data-open="B1" class="link link-ref link-reveal xref-bibr">2007</a>; Nielsen, <a reveal-id="B7" data-open="B7" class="link link-ref link-reveal xref-bibr">2005</a>; Rosenberg and Nordborg, <a reveal-id="B8" data-open="B8" class="link link-ref link-reveal xref-bibr">2002</a>).
+ In this context, estimating the impact of natural selection (both 
+positive and negative) is of major interest. Furthermore, DNA 
+polymorphisms are relevant as a tool for a broad range of life science 
+disciplines. Consequently, many high-throughput sequencing, genotyping 
+and polymorphism detection systems have been developed and are currently
+ publicly available (Shendure and Ji, <a reveal-id="B11" data-open="B11" class="link link-ref link-reveal xref-bibr">2008</a>).
+ These new technologies are generating massive amounts of data that need
+ to be processed, analyzed and transformed effectively into knowledge.</p><p>These
+ technological advances have largely stimulated the development of both 
+analytical methods and computer applications. Population genetic 
+methods, and particularly those based on coalescent theory (Hudson, <a reveal-id="B3" data-open="B3" class="link link-ref link-reveal xref-bibr">1990</a>; Wakeley, <a reveal-id="B20" data-open="B20" class="link link-ref link-reveal xref-bibr">2009</a>),
+ are used at an increasing rate, but need to be adapted to the 
+particularities of the data (massive amounts of data, missing data, 
+genotypes, insertion/deletion (indels) polymorphisms, etc.). 
+Furthermore, new computer applications and algorithms need to be 
+developed for processing massive datasets (Excoffier and Heckel, <a reveal-id="B2" data-open="B2" class="link link-ref link-reveal xref-bibr">2006</a>),
+ and more specifically computer visualization tools for the 
+representation of DNA variation patterns. DnaSP (DNA Sequence 
+Polymorphism) is a software package that allows for extensive DNA 
+polymorphism analyses using a friendly graphical user interface (GUI) 
+(Rozas <em>et al.</em>, <a reveal-id="B9" data-open="B9" class="link link-ref link-reveal xref-bibr">2003</a>).
+ Version 5 extends the capabilities of the software, allowing 
+comprehensive DNA polymorphism analyses on multiple data files and on 
+large datasets. Altogether, the present version of DnaSP has the 
+appropriate features for exhaustive exploratory analyses using 
+high-throughput DNA polymorphism data.</p>                    <h2 scrollto-destination="4584532" id="4584532" class="section-title" data-legacy-id="SEC2">2 FEATURES</h2>
+<p>DnaSP v5 incorporates major improvements. The new version currently 
+allows for the handling and analysis of multiple data files in batch, 
+and implements new algorithms and methods; among other things (see 
+below) includes a new module to identify conserved DNA regions, this 
+feature might be useful for phylogenetic footprinting-based analyses 
+(Vingron <em>et al.</em>, <a reveal-id="B18" data-open="B18" class="link link-ref link-reveal xref-bibr">2009</a>).
+ DnaSP provides a convenient GUI facilitating all data management and 
+analytical tasks; the results can be visualized graphically as well as 
+in a text report. DnaSP accepts multiple DNA sequence alignment file 
+formats (Rozas <em>et al.</em>, <a reveal-id="B9" data-open="B9" class="link link-ref link-reveal xref-bibr">2003</a>), including NEXUS (Maddison <em>et al.</em>, <a reveal-id="B6" data-open="B6" class="link link-ref link-reveal xref-bibr">1997</a>), and HapMap3 files with phased haplotypes (The International HapMap Consortium, <a reveal-id="B16" data-open="B16" class="link link-ref link-reveal xref-bibr">2003</a>). The software allows exhaustive DNA polymorphism analyses, including those based on coalescent theory (Rozas <em>et al.</em>, <a reveal-id="B9" data-open="B9" class="link link-ref link-reveal xref-bibr">2003</a>; Wakeley, <a reveal-id="B20" data-open="B20" class="link link-ref link-reveal xref-bibr">2009</a>).</p>                    <h3 scrollto-destination="4584537" id="4584537" class="section-title" data-legacy-id="SEC2.1">2.1 Haplotype reconstruction</h3>
+<p>Haplotype reconstruction aims at resolving haplotype phase given 
+genotypic information. DnaSP implements statistical methods to infer 
+haplotype phase, and prepares adequately the phased data for subsequent 
+analyses. The input data (unphased genotype data) are required in FASTA 
+format using IUPAC nucleotide ambiguity codes to represent heterozygous 
+sites. DnaSP reconstructs the phase by applying various algorithms 
+(PHASE v2.1, fastPHASE v1.1 and HAPAR) differing in the underlying 
+population genetic assumptions. PHASE (Stephens and Donnelly, <a reveal-id="B13" data-open="B13" class="link link-ref link-reveal xref-bibr">2003</a>; Stephens <em>et al.</em>, <a reveal-id="B14" data-open="B14" class="link link-ref link-reveal xref-bibr">2001</a>)
+ assumes Hardy–Weinberg equilibrium and uses a coalescent-based Bayesian
+ method to infer haplotypes. fastPHASE (Scheet and Stephens, <a reveal-id="B10" data-open="B10" class="link link-ref link-reveal xref-bibr">2006</a>)
+ implements a modification of the PHASE algorithm taking into account 
+the patterns of linkage disequilibrium and its gradual decline with 
+physical distance. This algorithm is faster and allows for the handling 
+of larger datasets than PHASE, while being slightly less accurate. HAPAR
+ (Wang and Xu, <a reveal-id="B19" data-open="B19" class="link link-ref link-reveal xref-bibr">2003</a>)
+ infers haplotype phase by maximum parsimony, i.e. attempts to find the 
+minimum number of haplotypes explaining the genotype sample.</p>                    <h3 scrollto-destination="4584542" id="4584542" class="section-title" data-legacy-id="SEC2.2">2.2 Deletion/insertion polymorphisms</h3>
+<p>Deletion/insertion polymorphisms (DIPs) analysis can provide insights
+ into the evolutionary forces acting on DNA. This information, however, 
+has been rarely used. One obstacle has been the difficulty of defining 
+clearly homologous states (Young and Healy, <a reveal-id="B21" data-open="B21" class="link link-ref link-reveal xref-bibr">2003</a>). DnaSP incorporates an algorithm for treating indels related to the ‘simple indel coding’ method of Simmons and Ochoterena (<a reveal-id="B12" data-open="B12" class="link link-ref link-reveal xref-bibr">2000</a>).
+ Specifically, only indels with the same 5′ and 3′ termini are 
+considered homologous (resulted from a single event), and indels of 
+different lengths (even in the same position of the alignment) are 
+treated as different events. DnaSP, nevertheless, uses a slightly 
+different method for coding completely overlapping gaps, and allows the 
+user to choose the level of overlap to be coded. Subsequently, DnaSP 
+estimates a number of DIP summary statistics, such as the average indel 
+length, indel diversity, as well as Tajima's <em>D</em> (Tajima, <a reveal-id="B15" data-open="B15" class="link link-ref link-reveal xref-bibr">1989</a>) based on indel information. Additionally, it exports the recoded data in the NEXUS format file.</p>                    <h3 scrollto-destination="4584546" id="4584546" class="section-title" data-legacy-id="SEC2.3">2.3 Analysis of multiple data files</h3>
+<p>DnaSP can automatically read and analyze multiple data files 
+sequentially (in batch mode). These data files may contain a varying 
+number of sequences (from within one species, or from one species as 
+well as one outgroup), or represent diverse genomic regions. The program
+ estimates the most common DNA polymorphism and divergence summary 
+statistics (such as the nucleotide and haplotype diversity, the 
+population mutation parameter, the number of nucleotide substitutions 
+per site, etc.), and neutrality tests (such as Tajima's, Fu and Li's and
+ Fu's tests).</p>                    <h3 scrollto-destination="4584551" id="4584551" class="section-title" data-legacy-id="SEC2.4">2.4 Sliding window results visualization</h3>
+<p>The sliding window technique is a useful tool for exploratory DNA polymorphism data analysis (Hutter <em>et al.</em>, <a reveal-id="B4" data-open="B4" class="link link-ref link-reveal xref-bibr">2006</a>; Rozas <em>et al.</em>, <a reveal-id="B9" data-open="B9" class="link link-ref link-reveal xref-bibr">2003</a>; Vilella <em>et al.</em>, <a reveal-id="B17" data-open="B17" class="link link-ref link-reveal xref-bibr">2005</a>).
+ The current version of DnaSP permits visualizing results of the sliding
+ window (for example, nucleotide diversity or Tajima's <em>D</em> values along the DNA sequence) integrating available genome annotations in the UCSC browser (Kent <em>et al.</em>, <a reveal-id="B5" data-open="B5" class="link link-ref link-reveal xref-bibr">2002</a>).
+ This feature can greatly facilitate the interpretation of the results; 
+for instance, it is possible to identify the relevant genome annotations
+ (genes, intergenic regions, conserved regions, etc.), which are 
+adjacent to regions with atypical patterns of nucleotide variation.</p>                    <h2 scrollto-destination="4584555" id="4584555" class="section-title" data-legacy-id="SEC3">3 IMPLEMENTATION</h2>
+<p>DnaSP version 5 has been developed in Microsoft Visual Basic v6.0, C 
+and C++, and it runs under Microsoft Windows operating systems 
+(2000/XP/Vista). With the use of Windows emulators, DnaSP can also run 
+on Apple Macintosh platforms, Linux and Unix-based operating systems. 
+The software has been tested in all three platforms.</p>                    <h2 scrollto-destination="4584558" id="4584558" class="backacknowledgements-title">ACKNOWLEDGEMENTS</h2>
+<p>We acknowledge Sergios-Orestis Kolokotronis for helpful comments on 
+the manuscript. Special thanks to the numerous users who tested the 
+software with their data, and particularly to all members of the 
+Molecular Evolutionary Genetics group at the Departament de Genètica, 
+Universitat de Barcelona.</p><p><em>Funding</em>: Spanish Dirección 
+General de Investigación Científica y Técnica (grants BFU2004-02253 and 
+BFU2007-62927); the Catalonian Comissió Interdepartamental de Recerca i 
+Innovació Tecnològica (grant 2005SGR00166).</p><p><em>Conflict of Interest</em>: none declared.</p>                    <h2 scrollto-destination="4584564" id="4584564" class="backreferences-title">REFERENCES</h2>
+<div class="ref-list"><div content-id="B1" xmlns:helper="urn:XsltStringHelper"><div class="ref false"><div role="B1" class="ref-content "><div class="citation element-citation"><div class="person-group"><div class="name"><div class="surname">Begun</div> <div class="given-names">DJ</div></div>,&nbsp;et al.&nbsp;</div><div class="article-title">Population genomics: whole-genome analysis of polymorphism and divergence in Drosophila simulans</div>,&nbsp;<div class="source">PLoS Biol.</div>&nbsp;,&nbsp;<div class="year">2007</div>,&nbsp;vol.&nbsp;<div class="volume">6</div>&nbsp;pg.&nbsp;<div class="fpage">e310</div>&nbsp;<div class="citation-links"><div class="google-scholar-ref-link"><a class="openInAnotherWindow" href="https://scholar.google.com/scholar_lookup?title=Population%20genomics%3A%20whole-genome%20analysis%20of%20polymorphism%20and%20divergence%20in%20Drosophila%20simulans&amp;author=DJ%20Begun&amp;publication_year=2007&amp;journal=PLoS%20Biol.&amp;volume=6&amp;pages=e310" target="_blank">Google Scholar</a></div><div class="crossref-doi"><a class="openInAnotherWindow" href="http://dx.doi.org/10.1371/journal.pbio.0050310" target="_blank">Crossref</a></div><div class="adsDoiReference hide"><a class="openInAnotherWindow" href="http://adsabs.harvard.edu/cgi-bin/basic_connect?qsearch=10.1371%2Fjournal.pbio.0050310" target="_blank">Search ADS</a></div><div class="xslopenurl" style="display:none"><span class="inst-open-url-holders" data-targetid="10.1371%2Fjournal.pbio.0050310"> </span></div><div class="worldcat-reference-ref-link js-worldcat-preview-ref-link" style="display:none"><a class="openInAnotherWindow" href="https://www.worldcat.org/search?q=ti:Population%20genomics%3A%20whole-genome%20analysis%20of%20polymorphism%20and%20divergence%20in%20Drosophila%20simulans&amp;qt=advanced&amp;dblist=638" target="_blank">WorldCat</a></div>&nbsp;</div></div></div></div></div><div content-id="B2" xmlns:helper="urn:XsltStringHelper"><div class="ref false"><div role="B2" class="ref-content "><div class="citation element-citation"><div class="person-group"><div class="name"><div class="surname">Excoffier</div> <div class="given-names">L</div></div>,&nbsp; <div class="name"><div class="surname">Heckel</div> <div class="given-names">G</div></div>.&nbsp;</div><div class="article-title">Computer programs for population genetics data analysis: a survival guide</div>,&nbsp;<div class="source">Nat. Rev. Genet.</div>&nbsp;,&nbsp;<div class="year">2006</div>,&nbsp;vol.&nbsp;<div class="volume">7</div>&nbsp;(pg.&nbsp;<div class="fpage">745</div>-<div class="lpage">758</div>)<div class="citation-links"><div class="google-scholar-ref-link"><a class="openInAnotherWindow" href="https://scholar.google.com/scholar_lookup?title=Computer%20programs%20for%20population%20genetics%20data%20analysis%3A%20a%20survival%20guide&amp;author=L%20Excoffier&amp;author=G%20Heckel&amp;publication_year=2006&amp;journal=Nat.%20Rev.%20Genet.&amp;volume=7&amp;pages=745-758" target="_blank">Google Scholar</a></div><div class="crossref-doi"><a class="openInAnotherWindow" href="http://dx.doi.org/10.1038/nrg1904" target="_blank">Crossref</a></div><div class="adsDoiReference hide"><a class="openInAnotherWindow" href="http://adsabs.harvard.edu/cgi-bin/basic_connect?qsearch=10.1038%2Fnrg1904" target="_blank">Search ADS</a></div><div class="xslopenurl" style="display:none"><span class="inst-open-url-holders" data-targetid="10.1038%2Fnrg1904"> </span></div><div class="pub-id"><a href="http://www.ncbi.nlm.nih.gov/pubmed/16924258" class="link link-pub-id openInAnotherWindow" target="_blank">PubMed</a></div><div class="worldcat-reference-ref-link js-worldcat-preview-ref-link" style="display:none"><a class="openInAnotherWindow" href="https://www.worldcat.org/search?q=ti:Computer%20programs%20for%20population%20genetics%20data%20analysis%3A%20a%20survival%20guide&amp;qt=advanced&amp;dblist=638" target="_blank">WorldCat</a></div>&nbsp;</div></div></div></div></div><div content-id="B3" xmlns:helper="urn:XsltStringHelper"><div class="ref false"><div role="B3" class="ref-content "><div class="citation element-citation"><div class="person-group"><div class="name"><div class="surname">Hudson</div> <div class="given-names">RR</div></div>.&nbsp;</div><div class="article-title">Gene genealogies and the coalescent process</div>,&nbsp;<div class="source">Oxf. Surv. Evol. Biol.</div>&nbsp;,&nbsp;<div class="year">1990</div>,&nbsp;vol.&nbsp;<div class="volume">7</div>&nbsp;(pg.&nbsp;<div class="fpage">1</div>-<div class="lpage">44</div>)<div class="citation-links"><div class="xslopenurl" style="display:none"><span class="js-inst-open-url-holders-nodoi"><a class="openInAnotherWindow js-open-url-link" target="_blank" data-href-template="{targetURL}?sid=oup:orr&amp;genre=article&amp;atitle=Gene%20genealogies%20and%20the%20coalescent%20process&amp;aulast=Hudson&amp;date=1990&amp;spage=1&amp;epage=44&amp;volume=7" href="#"></a></span></div><div class="worldcat-reference-ref-link js-worldcat-preview-ref-link" style="display:none"><a class="openInAnotherWindow" href="https://www.worldcat.org/search?q=ti:Gene%20genealogies%20and%20the%20coalescent%20process&amp;qt=advanced&amp;dblist=638" target="_blank">WorldCat</a></div>&nbsp;</div></div></div></div></div><div content-id="B4" xmlns:helper="urn:XsltStringHelper"><div class="ref false"><div role="B4" class="ref-content "><div class="citation element-citation"><div class="person-group"><div class="name"><div class="surname">Hutter</div> <div class="given-names">S</div></div>,&nbsp;et al.&nbsp;</div><div class="article-title">Genome-wide DNA polymorphism analyses using VariScan</div>,&nbsp;<div class="source">BMC Bioinformatics</div>&nbsp;,&nbsp;<div class="year">2006</div>,&nbsp;vol.&nbsp;<div class="volume">7</div>&nbsp;pg.&nbsp;<div class="fpage">409</div>&nbsp;<div class="citation-links"><div class="google-scholar-ref-link"><a class="openInAnotherWindow" href="https://scholar.google.com/scholar_lookup?title=Genome-wide%20DNA%20polymorphism%20analyses%20using%20VariScan&amp;author=S%20Hutter&amp;publication_year=2006&amp;journal=BMC%20Bioinformatics&amp;volume=7&amp;pages=409" target="_blank">Google Scholar</a></div><div class="crossref-doi"><a class="openInAnotherWindow" href="http://dx.doi.org/10.1186/1471-2105-7-409" target="_blank">Crossref</a></div><div class="adsDoiReference hide"><a class="openInAnotherWindow" href="http://adsabs.harvard.edu/cgi-bin/basic_connect?qsearch=10.1186%2F1471-2105-7-409" target="_blank">Search ADS</a></div><div class="xslopenurl" style="display:none"><span class="inst-open-url-holders" data-targetid="10.1186%2F1471-2105-7-409"> </span></div><div class="pub-id"><a href="http://www.ncbi.nlm.nih.gov/pubmed/16968531" class="link link-pub-id openInAnotherWindow" target="_blank">PubMed</a></div><div class="worldcat-reference-ref-link js-worldcat-preview-ref-link" style="display:none"><a class="openInAnotherWindow" href="https://www.worldcat.org/search?q=ti:Genome-wide%20DNA%20polymorphism%20analyses%20using%20VariScan&amp;qt=advanced&amp;dblist=638" target="_blank">WorldCat</a></div>&nbsp;</div></div></div></div></div><div content-id="B5" xmlns:helper="urn:XsltStringHelper"><div class="ref false"><div role="B5" class="ref-content "><div class="citation element-citation"><div class="person-group"><div class="name"><div class="surname">Kent</div> <div class="given-names">WJ</div></div>,&nbsp;et al.&nbsp;</div><div class="article-title">The Human Genome Browser at UCSC</div>,&nbsp;<div class="source">Genome Res.</div>&nbsp;,&nbsp;<div class="year">2002</div>,&nbsp;vol.&nbsp;<div class="volume">12</div>&nbsp;(pg.&nbsp;<div class="fpage">996</div>-<div class="lpage">1006</div>)<div class="citation-links"><div class="google-scholar-ref-link"><a class="openInAnotherWindow" href="https://scholar.google.com/scholar_lookup?title=The%20Human%20Genome%20Browser%20at%20UCSC&amp;author=WJ%20Kent&amp;publication_year=2002&amp;journal=Genome%20Res.&amp;volume=12&amp;pages=996-1006" target="_blank">Google Scholar</a></div><div class="crossref-doi"><a class="openInAnotherWindow" href="http://dx.doi.org/10.1101/gr.229102.%20Article%20published%20online%20before%20print%20in%20May%202002" target="_blank">Crossref</a></div><div class="adsDoiReference hide"><a class="openInAnotherWindow" href="http://adsabs.harvard.edu/cgi-bin/basic_connect?qsearch=10.1101%2Fgr.229102.%20Article%20published%20online%20before%20print%20in%20May%202002" target="_blank">Search ADS</a></div><div class="xslopenurl" style="display:none"><span class="inst-open-url-holders" data-targetid="10.1101%2Fgr.229102. Article published online before print in May 2002"> </span></div><div class="pub-id"><a href="http://www.ncbi.nlm.nih.gov/pubmed/12045153" class="link link-pub-id openInAnotherWindow" target="_blank">PubMed</a></div><div class="worldcat-reference-ref-link js-worldcat-preview-ref-link" style="display:none"><a class="openInAnotherWindow" href="https://www.worldcat.org/search?q=ti:The%20Human%20Genome%20Browser%20at%20UCSC&amp;qt=advanced&amp;dblist=638" target="_blank">WorldCat</a></div>&nbsp;</div></div></div></div></div><div content-id="B6" xmlns:helper="urn:XsltStringHelper"><div class="ref false"><div role="B6" class="ref-content "><div class="citation element-citation"><div class="person-group"><div class="name"><div class="surname">Maddison</div> <div class="given-names">WP</div></div>,&nbsp;et al.&nbsp;</div><div class="article-title">NEXUS: an extendible file format for systematic information</div>,&nbsp;<div class="source">Syst. Biol.</div>&nbsp;,&nbsp;<div class="year">1997</div>,&nbsp;vol.&nbsp;<div class="volume">46</div>&nbsp;(pg.&nbsp;<div class="fpage">590</div>-<div class="lpage">621</div>)<div class="citation-links"><div class="google-scholar-ref-link"><a class="openInAnotherWindow" href="https://scholar.google.com/scholar_lookup?title=NEXUS%3A%20an%20extendible%20file%20format%20for%20systematic%20information&amp;author=WP%20Maddison&amp;publication_year=1997&amp;journal=Syst.%20Biol.&amp;volume=46&amp;pages=590-621" target="_blank">Google Scholar</a></div><div class="crossref-doi"><a class="openInAnotherWindow" href="http://dx.doi.org/10.1093/sysbio/46.4.590" target="_blank">Crossref</a></div><div class="adsDoiReference hide"><a class="openInAnotherWindow" href="http://adsabs.harvard.edu/cgi-bin/basic_connect?qsearch=10.1093%2Fsysbio%2F46.4.590" target="_blank">Search ADS</a></div><div class="xslopenurl" style="display:none"><span class="inst-open-url-holders" data-targetid="10.1093%2Fsysbio%2F46.4.590"> </span></div><div class="pub-id"><a href="http://www.ncbi.nlm.nih.gov/pubmed/11975335" class="link link-pub-id openInAnotherWindow" target="_blank">PubMed</a></div><div class="worldcat-reference-ref-link js-worldcat-preview-ref-link" style="display:none"><a class="openInAnotherWindow" href="https://www.worldcat.org/search?q=ti:NEXUS%3A%20an%20extendible%20file%20format%20for%20systematic%20information&amp;qt=advanced&amp;dblist=638" target="_blank">WorldCat</a></div>&nbsp;</div></div></div></div></div><div content-id="B7" xmlns:helper="urn:XsltStringHelper"><div class="ref false"><div role="B7" class="ref-content "><div class="citation element-citation"><div class="person-group"><div class="name"><div class="surname">Nielsen</div> <div class="given-names">R</div></div>.&nbsp;</div><div class="article-title">Molecular signatures of natural selection</div>,&nbsp;<div class="source">Annu. Rev. Genet.</div>&nbsp;,&nbsp;<div class="year">2005</div>,&nbsp;vol.&nbsp;<div class="volume">39</div>&nbsp;(pg.&nbsp;<div class="fpage">197</div>-<div class="lpage">218</div>)<div class="citation-links"><div class="google-scholar-ref-link"><a class="openInAnotherWindow" href="https://scholar.google.com/scholar_lookup?title=Molecular%20signatures%20of%20natural%20selection&amp;author=R%20Nielsen&amp;publication_year=2005&amp;journal=Annu.%20Rev.%20Genet.&amp;volume=39&amp;pages=197-218" target="_blank">Google Scholar</a></div><div class="crossref-doi"><a class="openInAnotherWindow" href="http://dx.doi.org/10.1146/annurev.genet.39.073003.112420" target="_blank">Crossref</a></div><div class="adsDoiReference hide"><a class="openInAnotherWindow" href="http://adsabs.harvard.edu/cgi-bin/basic_connect?qsearch=10.1146%2Fannurev.genet.39.073003.112420" target="_blank">Search ADS</a></div><div class="xslopenurl" style="display:none"><span class="inst-open-url-holders" data-targetid="10.1146%2Fannurev.genet.39.073003.112420"> </span></div><div class="pub-id"><a href="http://www.ncbi.nlm.nih.gov/pubmed/16285858" class="link link-pub-id openInAnotherWindow" target="_blank">PubMed</a></div><div class="worldcat-reference-ref-link js-worldcat-preview-ref-link" style="display:none"><a class="openInAnotherWindow" href="https://www.worldcat.org/search?q=ti:Molecular%20signatures%20of%20natural%20selection&amp;qt=advanced&amp;dblist=638" target="_blank">WorldCat</a></div>&nbsp;</div></div></div></div></div><div content-id="B8" xmlns:helper="urn:XsltStringHelper"><div class="ref false"><div role="B8" class="ref-content "><div class="citation element-citation"><div class="person-group"><div class="name"><div class="surname">Rosenberg</div> <div class="given-names">NA</div></div>,&nbsp; <div class="name"><div class="surname">Nordborg</div> <div class="given-names">M</div></div>.&nbsp;</div><div class="article-title">Genealogical trees, coalescent theory, and the analysis of genetic polymorphisms</div>,&nbsp;<div class="source">Nat. Rev. Genet.</div>&nbsp;,&nbsp;<div class="year">2002</div>,&nbsp;vol.&nbsp;<div class="volume">3</div>&nbsp;(pg.&nbsp;<div class="fpage">380</div>-<div class="lpage">390</div>)<div class="citation-links"><div class="google-scholar-ref-link"><a class="openInAnotherWindow" href="https://scholar.google.com/scholar_lookup?title=Genealogical%20trees%2C%20coalescent%20theory%2C%20and%20the%20analysis%20of%20genetic%20polymorphisms&amp;author=NA%20Rosenberg&amp;author=M%20Nordborg&amp;publication_year=2002&amp;journal=Nat.%20Rev.%20Genet.&amp;volume=3&amp;pages=380-390" target="_blank">Google Scholar</a></div><div class="crossref-doi"><a class="openInAnotherWindow" href="http://dx.doi.org/10.1038/nrg795" target="_blank">Crossref</a></div><div class="adsDoiReference hide"><a class="openInAnotherWindow" href="http://adsabs.harvard.edu/cgi-bin/basic_connect?qsearch=10.1038%2Fnrg795" target="_blank">Search ADS</a></div><div class="xslopenurl" style="display:none"><span class="inst-open-url-holders" data-targetid="10.1038%2Fnrg795"> </span></div><div class="pub-id"><a href="http://www.ncbi.nlm.nih.gov/pubmed/11988763" class="link link-pub-id openInAnotherWindow" target="_blank">PubMed</a></div><div class="worldcat-reference-ref-link js-worldcat-preview-ref-link" style="display:none"><a class="openInAnotherWindow" href="https://www.worldcat.org/search?q=ti:Genealogical%20trees%2C%20coalescent%20theory%2C%20and%20the%20analysis%20of%20genetic%20polymorphisms&amp;qt=advanced&amp;dblist=638" target="_blank">WorldCat</a></div>&nbsp;</div></div></div></div></div><div content-id="B9" xmlns:helper="urn:XsltStringHelper"><div class="ref false"><div role="B9" class="ref-content "><div class="citation element-citation"><div class="person-group"><div class="name"><div class="surname">Rozas</div> <div class="given-names">J</div></div>,&nbsp;et al.&nbsp;</div><div class="article-title">DnaSP, DNA polymorphism analyses by the coalescent and other methods</div>,&nbsp;<div class="source">Bioinformatics</div>&nbsp;,&nbsp;<div class="year">2003</div>,&nbsp;vol.&nbsp;<div class="volume">19</div>&nbsp;(pg.&nbsp;<div class="fpage">2496</div>-<div class="lpage">2497</div>)<div class="citation-links"><div class="google-scholar-ref-link"><a class="openInAnotherWindow" href="https://scholar.google.com/scholar_lookup?title=DnaSP%2C%20DNA%20polymorphism%20analyses%20by%20the%20coalescent%20and%20other%20methods&amp;author=J%20Rozas&amp;publication_year=2003&amp;journal=Bioinformatics&amp;volume=19&amp;pages=2496-2497" target="_blank">Google Scholar</a></div><div class="crossref-doi"><a class="openInAnotherWindow" href="http://dx.doi.org/10.1093/bioinformatics/btg359" target="_blank">Crossref</a></div><div class="adsDoiReference hide"><a class="openInAnotherWindow" href="http://adsabs.harvard.edu/cgi-bin/basic_connect?qsearch=10.1093%2Fbioinformatics%2Fbtg359" target="_blank">Search ADS</a></div><div class="xslopenurl" style="display:none"><span class="inst-open-url-holders" data-targetid="10.1093%2Fbioinformatics%2Fbtg359"> </span></div><div class="pub-id"><a href="http://www.ncbi.nlm.nih.gov/pubmed/14668244" class="link link-pub-id openInAnotherWindow" target="_blank">PubMed</a></div><div class="worldcat-reference-ref-link js-worldcat-preview-ref-link" style="display:none"><a class="openInAnotherWindow" href="https://www.worldcat.org/search?q=ti:DnaSP%2C%20DNA%20polymorphism%20analyses%20by%20the%20coalescent%20and%20other%20methods&amp;qt=advanced&amp;dblist=638" target="_blank">WorldCat</a></div>&nbsp;</div></div></div></div></div><div content-id="B10" xmlns:helper="urn:XsltStringHelper"><div class="ref false"><div role="B10" class="ref-content "><div class="citation element-citation"><div class="person-group"><div class="name"><div class="surname">Scheet</div> <div class="given-names">P</div></div>,&nbsp; <div class="name"><div class="surname">Stephens</div> <div class="given-names">M</div></div>.&nbsp;</div><div class="article-title">A
+ fast and flexible statistical model for large-scale population genotype
+ data: applications to inferring missing genotypes and haplotypic phase</div>,&nbsp;<div class="source">Am. J. Hum. Genet.</div>&nbsp;,&nbsp;<div class="year">2006</div>,&nbsp;vol.&nbsp;<div class="volume">78</div>&nbsp;(pg.&nbsp;<div class="fpage">629</div>-<div class="lpage">644</div>)<div class="citation-links"><div class="google-scholar-ref-link"><a class="openInAnotherWindow" href="https://scholar.google.com/scholar_lookup?title=A%20fast%20and%20flexible%20statistical%20model%20for%20large-scale%20population%20genotype%20data%3A%20applications%20to%20inferring%20missing%20genotypes%20and%20haplotypic%20phase&amp;author=P%20Scheet&amp;author=M%20Stephens&amp;publication_year=2006&amp;journal=Am.%20J.%20Hum.%20Genet.&amp;volume=78&amp;pages=629-644" target="_blank">Google Scholar</a></div><div class="crossref-doi"><a class="openInAnotherWindow" href="http://dx.doi.org/10.1086/502802" target="_blank">Crossref</a></div><div class="adsDoiReference hide"><a class="openInAnotherWindow" href="http://adsabs.harvard.edu/cgi-bin/basic_connect?qsearch=10.1086%2F502802" target="_blank">Search ADS</a></div><div class="xslopenurl" style="display:none"><span class="inst-open-url-holders" data-targetid="10.1086%2F502802"> </span></div><div class="pub-id"><a href="http://www.ncbi.nlm.nih.gov/pubmed/16532393" class="link link-pub-id openInAnotherWindow" target="_blank">PubMed</a></div><div class="worldcat-reference-ref-link js-worldcat-preview-ref-link" style="display:none"><a class="openInAnotherWindow" href="https://www.worldcat.org/search?q=ti:A%20fast%20and%20flexible%20statistical%20model%20for%20large-scale%20population%20genotype%20data%3A%20applications%20to%20inferring%20missing%20genotypes%20and%20haplotypic%20phase&amp;qt=advanced&amp;dblist=638" target="_blank">WorldCat</a></div>&nbsp;</div></div></div></div></div><div content-id="B11" xmlns:helper="urn:XsltStringHelper"><div class="ref false"><div role="B11" class="ref-content "><div class="citation element-citation"><div class="person-group"><div class="name"><div class="surname">Shendure</div> <div class="given-names">J</div></div>,&nbsp; <div class="name"><div class="surname">Ji</div> <div class="given-names">H</div></div>.&nbsp;</div><div class="article-title">Next-generation DNA sequencing</div>,&nbsp;<div class="source">Nat. Biotechnol.</div>&nbsp;,&nbsp;<div class="year">2008</div>,&nbsp;vol.&nbsp;<div class="volume">26</div>&nbsp;(pg.&nbsp;<div class="fpage">1135</div>-<div class="lpage">1145</div>)<div class="citation-links"><div class="google-scholar-ref-link"><a class="openInAnotherWindow" href="https://scholar.google.com/scholar_lookup?title=Next-generation%20DNA%20sequencing&amp;author=J%20Shendure&amp;author=H%20Ji&amp;publication_year=2008&amp;journal=Nat.%20Biotechnol.&amp;volume=26&amp;pages=1135-1145" target="_blank">Google Scholar</a></div><div class="crossref-doi"><a class="openInAnotherWindow" href="http://dx.doi.org/10.1038/nbt1486" target="_blank">Crossref</a></div><div class="adsDoiReference hide"><a class="openInAnotherWindow" href="http://adsabs.harvard.edu/cgi-bin/basic_connect?qsearch=10.1038%2Fnbt1486" target="_blank">Search ADS</a></div><div class="xslopenurl" style="display:none"><span class="inst-open-url-holders" data-targetid="10.1038%2Fnbt1486"> </span></div><div class="pub-id"><a href="http://www.ncbi.nlm.nih.gov/pubmed/18846087" class="link link-pub-id openInAnotherWindow" target="_blank">PubMed</a></div><div class="worldcat-reference-ref-link js-worldcat-preview-ref-link" style="display:none"><a class="openInAnotherWindow" href="https://www.worldcat.org/search?q=ti:Next-generation%20DNA%20sequencing&amp;qt=advanced&amp;dblist=638" target="_blank">WorldCat</a></div>&nbsp;</div></div></div></div></div><div content-id="B12" xmlns:helper="urn:XsltStringHelper"><div class="ref false"><div role="B12" class="ref-content "><div class="citation element-citation"><div class="person-group"><div class="name"><div class="surname">Simmons</div> <div class="given-names">MP</div></div>,&nbsp; <div class="name"><div class="surname">Ochoterena</div> <div class="given-names">H</div></div>.&nbsp;</div><div class="article-title">Gaps as characters in sequence-based phylogenetic analyses</div>,&nbsp;<div class="source">Syst. Biol.</div>&nbsp;,&nbsp;<div class="year">2000</div>,&nbsp;vol.&nbsp;<div class="volume">49</div>&nbsp;(pg.&nbsp;<div class="fpage">369</div>-<div class="lpage">381</div>)<div class="citation-links"><div class="google-scholar-ref-link"><a class="openInAnotherWindow" href="https://scholar.google.com/scholar_lookup?title=Gaps%20as%20characters%20in%20sequence-based%20phylogenetic%20analyses&amp;author=MP%20Simmons&amp;author=H%20Ochoterena&amp;publication_year=2000&amp;journal=Syst.%20Biol.&amp;volume=49&amp;pages=369-381" target="_blank">Google Scholar</a></div><div class="crossref-doi"><a class="openInAnotherWindow" href="http://dx.doi.org/10.1093/sysbio/49.2.369" target="_blank">Crossref</a></div><div class="adsDoiReference hide"><a class="openInAnotherWindow" href="http://adsabs.harvard.edu/cgi-bin/basic_connect?qsearch=10.1093%2Fsysbio%2F49.2.369" target="_blank">Search ADS</a></div><div class="xslopenurl" style="display:none"><span class="inst-open-url-holders" data-targetid="10.1093%2Fsysbio%2F49.2.369"> </span></div><div class="pub-id"><a href="http://www.ncbi.nlm.nih.gov/pubmed/12118412" class="link link-pub-id openInAnotherWindow" target="_blank">PubMed</a></div><div class="worldcat-reference-ref-link js-worldcat-preview-ref-link" style="display:none"><a class="openInAnotherWindow" href="https://www.worldcat.org/search?q=ti:Gaps%20as%20characters%20in%20sequence-based%20phylogenetic%20analyses&amp;qt=advanced&amp;dblist=638" target="_blank">WorldCat</a></div>&nbsp;</div></div></div></div></div><div content-id="B13" xmlns:helper="urn:XsltStringHelper"><div class="ref false"><div role="B13" class="ref-content "><div class="citation element-citation"><div class="person-group"><div class="name"><div class="surname">Stephens</div> <div class="given-names">M</div></div>,&nbsp; <div class="name"><div class="surname">Donnelly</div> <div class="given-names">P</div></div>.&nbsp;</div><div class="article-title">A comparison of Bayesian methods for haplotype reconstruction from population genotype data</div>,&nbsp;<div class="source">Am. J. Hum. Genet.</div>&nbsp;,&nbsp;<div class="year">2003</div>,&nbsp;vol.&nbsp;<div class="volume">73</div>&nbsp;(pg.&nbsp;<div class="fpage">1162</div>-<div class="lpage">1169</div>)<div class="citation-links"><div class="google-scholar-ref-link"><a class="openInAnotherWindow" href="https://scholar.google.com/scholar_lookup?title=A%20comparison%20of%20Bayesian%20methods%20for%20haplotype%20reconstruction%20from%20population%20genotype%20data&amp;author=M%20Stephens&amp;author=P%20Donnelly&amp;publication_year=2003&amp;journal=Am.%20J.%20Hum.%20Genet.&amp;volume=73&amp;pages=1162-1169" target="_blank">Google Scholar</a></div><div class="crossref-doi"><a class="openInAnotherWindow" href="http://dx.doi.org/10.1086/379378" target="_blank">Crossref</a></div><div class="adsDoiReference hide"><a class="openInAnotherWindow" href="http://adsabs.harvard.edu/cgi-bin/basic_connect?qsearch=10.1086%2F379378" target="_blank">Search ADS</a></div><div class="xslopenurl" style="display:none"><span class="inst-open-url-holders" data-targetid="10.1086%2F379378"> </span></div><div class="pub-id"><a href="http://www.ncbi.nlm.nih.gov/pubmed/14574645" class="link link-pub-id openInAnotherWindow" target="_blank">PubMed</a></div><div class="worldcat-reference-ref-link js-worldcat-preview-ref-link" style="display:none"><a class="openInAnotherWindow" href="https://www.worldcat.org/search?q=ti:A%20comparison%20of%20Bayesian%20methods%20for%20haplotype%20reconstruction%20from%20population%20genotype%20data&amp;qt=advanced&amp;dblist=638" target="_blank">WorldCat</a></div>&nbsp;</div></div></div></div></div><div content-id="B14" xmlns:helper="urn:XsltStringHelper"><div class="ref false"><div role="B14" class="ref-content "><div class="citation element-citation"><div class="person-group"><div class="name"><div class="surname">Stephens</div> <div class="given-names">M</div></div>,&nbsp;et al.&nbsp;</div><div class="article-title">A new statistical method for haplotype reconstruction from population data</div>,&nbsp;<div class="source">Am. J. Hum. Genet.</div>&nbsp;,&nbsp;<div class="year">2001</div>,&nbsp;vol.&nbsp;<div class="volume">68</div>&nbsp;(pg.&nbsp;<div class="fpage">978</div>-<div class="lpage">989</div>)<div class="citation-links"><div class="google-scholar-ref-link"><a class="openInAnotherWindow" href="https://scholar.google.com/scholar_lookup?title=A%20new%20statistical%20method%20for%20haplotype%20reconstruction%20from%20population%20data&amp;author=M%20Stephens&amp;publication_year=2001&amp;journal=Am.%20J.%20Hum.%20Genet.&amp;volume=68&amp;pages=978-989" target="_blank">Google Scholar</a></div><div class="crossref-doi"><a class="openInAnotherWindow" href="http://dx.doi.org/10.1086/319501" target="_blank">Crossref</a></div><div class="adsDoiReference hide"><a class="openInAnotherWindow" href="http://adsabs.harvard.edu/cgi-bin/basic_connect?qsearch=10.1086%2F319501" target="_blank">Search ADS</a></div><div class="xslopenurl" style="display:none"><span class="inst-open-url-holders" data-targetid="10.1086%2F319501"> </span></div><div class="pub-id"><a href="http://www.ncbi.nlm.nih.gov/pubmed/11254454" class="link link-pub-id openInAnotherWindow" target="_blank">PubMed</a></div><div class="worldcat-reference-ref-link js-worldcat-preview-ref-link" style="display:none"><a class="openInAnotherWindow" href="https://www.worldcat.org/search?q=ti:A%20new%20statistical%20method%20for%20haplotype%20reconstruction%20from%20population%20data&amp;qt=advanced&amp;dblist=638" target="_blank">WorldCat</a></div>&nbsp;</div></div></div></div></div><div content-id="B15" xmlns:helper="urn:XsltStringHelper"><div class="ref false"><div role="B15" class="ref-content "><div class="citation element-citation"><div class="person-group"><div class="name"><div class="surname">Tajima</div> <div class="given-names">F</div></div>.&nbsp;</div><div class="article-title">Statistical method for testing the neutral mutation hypothesis by DNA polymorphism</div>,&nbsp;<div class="source">Genetics</div>&nbsp;,&nbsp;<div class="year">1989</div>,&nbsp;vol.&nbsp;<div class="volume">123</div>&nbsp;(pg.&nbsp;<div class="fpage">585</div>-<div class="lpage">595</div>)<div class="citation-links"><div class="google-scholar-ref-link"><a class="openInAnotherWindow" href="https://scholar.google.com/scholar_lookup?title=Statistical%20method%20for%20testing%20the%20neutral%20mutation%20hypothesis%20by%20DNA%20polymorphism&amp;author=F%20Tajima&amp;publication_year=1989&amp;journal=Genetics&amp;volume=123&amp;pages=585-595" target="_blank">Google Scholar</a></div><div class="pub-id"><a href="http://www.ncbi.nlm.nih.gov/pubmed/2513255" class="link link-pub-id openInAnotherWindow" target="_blank">PubMed</a></div><div class="xslopenurl" style="display:none"><span class="js-inst-open-url-holders-nodoi"><a class="openInAnotherWindow js-open-url-link" target="_blank" data-href-template="{targetURL}?sid=oup:orr&amp;genre=article&amp;atitle=Statistical%20method%20for%20testing%20the%20neutral%20mutation%20hypothesis%20by%20DNA%20polymorphism&amp;aulast=Tajima&amp;date=1989&amp;spage=585&amp;epage=595&amp;volume=123" href="#"></a></span></div><div class="worldcat-reference-ref-link js-worldcat-preview-ref-link" style="display:none"><a class="openInAnotherWindow" href="https://www.worldcat.org/search?q=ti:Statistical%20method%20for%20testing%20the%20neutral%20mutation%20hypothesis%20by%20DNA%20polymorphism&amp;qt=advanced&amp;dblist=638" target="_blank">WorldCat</a></div>&nbsp;</div></div></div></div></div><div content-id="B16" xmlns:helper="urn:XsltStringHelper"><div class="ref false"><div role="B16" class="ref-content "><div class="citation element-citation"><div class="comment">The International HapMap Consortium (2003) The International HapMap Project <em>Nature</em><strong>426</strong>789–796</div><div class="citation-links"><div class="xslopenurl" style="display:none"><span class="js-inst-open-url-holders-nodoi"><a class="openInAnotherWindow js-open-url-link" target="_blank" data-href-template="{targetURL}?sid=oup:orr&amp;genre=book&amp;title=" href="#"></a></span></div><div class="copac-reference-ref-link js-copac-preview-ref-link" style="display:none" data-pubtype="book"><span class="inst-copac"><a class="openInAnotherWindow" target="_blank" href="http://copac.ac.uk/search?ti=">COPAC</a></span></div>&nbsp;</div></div></div></div></div><div content-id="B17" xmlns:helper="urn:XsltStringHelper"><div class="ref false"><div role="B17" class="ref-content "><div class="citation element-citation"><div class="person-group"><div class="name"><div class="surname">Vilella</div> <div class="given-names">AJ</div></div>,&nbsp;et al.&nbsp;</div><div class="article-title">VariScan: analysis of evolutionary patterns from large-scale DNA sequence polymorphism data</div>,&nbsp;<div class="source">Bioinformatics</div>&nbsp;,&nbsp;<div class="year">2005</div>,&nbsp;vol.&nbsp;<div class="volume">21</div>&nbsp;(pg.&nbsp;<div class="fpage">2791</div>-<div class="lpage">2793</div>)<div class="citation-links"><div class="google-scholar-ref-link"><a class="openInAnotherWindow" href="https://scholar.google.com/scholar_lookup?title=VariScan%3A%20analysis%20of%20evolutionary%20patterns%20from%20large-scale%20DNA%20sequence%20polymorphism%20data&amp;author=AJ%20Vilella&amp;publication_year=2005&amp;journal=Bioinformatics&amp;volume=21&amp;pages=2791-2793" target="_blank">Google Scholar</a></div><div class="crossref-doi"><a class="openInAnotherWindow" href="http://dx.doi.org/10.1093/bioinformatics/bti403" target="_blank">Crossref</a></div><div class="adsDoiReference hide"><a class="openInAnotherWindow" href="http://adsabs.harvard.edu/cgi-bin/basic_connect?qsearch=10.1093%2Fbioinformatics%2Fbti403" target="_blank">Search ADS</a></div><div class="xslopenurl" style="display:none"><span class="inst-open-url-holders" data-targetid="10.1093%2Fbioinformatics%2Fbti403"> </span></div><div class="pub-id"><a href="http://www.ncbi.nlm.nih.gov/pubmed/15814564" class="link link-pub-id openInAnotherWindow" target="_blank">PubMed</a></div><div class="worldcat-reference-ref-link js-worldcat-preview-ref-link" style="display:none"><a class="openInAnotherWindow" href="https://www.worldcat.org/search?q=ti:VariScan%3A%20analysis%20of%20evolutionary%20patterns%20from%20large-scale%20DNA%20sequence%20polymorphism%20data&amp;qt=advanced&amp;dblist=638" target="_blank">WorldCat</a></div>&nbsp;</div></div></div></div></div><div content-id="B18" xmlns:helper="urn:XsltStringHelper"><div class="ref false"><div role="B18" class="ref-content "><div class="citation element-citation"><div class="person-group"><div class="name"><div class="surname">Vingron</div> <div class="given-names">M</div></div>,&nbsp;et al.&nbsp;</div><div class="article-title">Integrating sequence,evolution and functional genomics in regulatory genomics</div>,&nbsp;<div class="source">Genome Biol.</div>&nbsp;,&nbsp;<div class="year">2009</div>,&nbsp;vol.&nbsp;<div class="volume">10</div>&nbsp;pg.&nbsp;<div class="fpage">202</div>&nbsp;<div class="citation-links"><div class="google-scholar-ref-link"><a class="openInAnotherWindow" href="https://scholar.google.com/scholar_lookup?title=Integrating%20sequence%2Cevolution%20and%20functional%20genomics%20in%20regulatory%20genomics&amp;author=M%20Vingron&amp;publication_year=2009&amp;journal=Genome%20Biol.&amp;volume=10&amp;pages=202" target="_blank">Google Scholar</a></div><div class="crossref-doi"><a class="openInAnotherWindow" href="http://dx.doi.org/10.1186/gb-2009-10-1-202" target="_blank">Crossref</a></div><div class="adsDoiReference hide"><a class="openInAnotherWindow" href="http://adsabs.harvard.edu/cgi-bin/basic_connect?qsearch=10.1186%2Fgb-2009-10-1-202" target="_blank">Search ADS</a></div><div class="xslopenurl" style="display:none"><span class="inst-open-url-holders" data-targetid="10.1186%2Fgb-2009-10-1-202"> </span></div><div class="pub-id"><a href="http://www.ncbi.nlm.nih.gov/pubmed/19226437" class="link link-pub-id openInAnotherWindow" target="_blank">PubMed</a></div><div class="worldcat-reference-ref-link js-worldcat-preview-ref-link" style="display:none"><a class="openInAnotherWindow" href="https://www.worldcat.org/search?q=ti:Integrating%20sequence%2Cevolution%20and%20functional%20genomics%20in%20regulatory%20genomics&amp;qt=advanced&amp;dblist=638" target="_blank">WorldCat</a></div>&nbsp;</div></div></div></div></div><div content-id="B19" xmlns:helper="urn:XsltStringHelper"><div class="ref false"><div role="B19" class="ref-content "><div class="citation element-citation"><div class="person-group"><div class="name"><div class="surname">Wang</div> <div class="given-names">L</div></div>,&nbsp; <div class="name"><div class="surname">Xu</div> <div class="given-names">Y</div></div>.&nbsp;</div><div class="article-title">Haplotype inference by maximum parsimony</div>,&nbsp;<div class="source">Bioinformatics</div>&nbsp;,&nbsp;<div class="year">2003</div>,&nbsp;vol.&nbsp;<div class="volume">19</div>&nbsp;(pg.&nbsp;<div class="fpage">1773</div>-<div class="lpage">1780</div>)<div class="citation-links"><div class="google-scholar-ref-link"><a class="openInAnotherWindow" href="https://scholar.google.com/scholar_lookup?title=Haplotype%20inference%20by%20maximum%20parsimony&amp;author=L%20Wang&amp;author=Y%20Xu&amp;publication_year=2003&amp;journal=Bioinformatics&amp;volume=19&amp;pages=1773-1780" target="_blank">Google Scholar</a></div><div class="crossref-doi"><a class="openInAnotherWindow" href="http://dx.doi.org/10.1093/bioinformatics/btg239" target="_blank">Crossref</a></div><div class="adsDoiReference hide"><a class="openInAnotherWindow" href="http://adsabs.harvard.edu/cgi-bin/basic_connect?qsearch=10.1093%2Fbioinformatics%2Fbtg239" target="_blank">Search ADS</a></div><div class="xslopenurl" style="display:none"><span class="inst-open-url-holders" data-targetid="10.1093%2Fbioinformatics%2Fbtg239"> </span></div><div class="pub-id"><a href="http://www.ncbi.nlm.nih.gov/pubmed/14512348" class="link link-pub-id openInAnotherWindow" target="_blank">PubMed</a></div><div class="worldcat-reference-ref-link js-worldcat-preview-ref-link" style="display:none"><a class="openInAnotherWindow" href="https://www.worldcat.org/search?q=ti:Haplotype%20inference%20by%20maximum%20parsimony&amp;qt=advanced&amp;dblist=638" target="_blank">WorldCat</a></div>&nbsp;</div></div></div></div></div><div content-id="B20" xmlns:helper="urn:XsltStringHelper"><div class="ref false"><div role="B20" class="ref-content "><div class="citation element-citation"><div class="person-group"><div class="name"><div class="surname">Wakeley</div> <div class="given-names">J</div></div>.&nbsp;</div>,&nbsp;<div class="source">Coalescent Theory. An Introduction.</div>&nbsp;,&nbsp;<div class="year">2009</div><div class="publisher-loc">Greenwood Village</div><div class="publisher-name">Roberts and Company Publishers</div><div class="citation-links"><div class="google-preview-ref-link js-google-preview-ref-link" style="display:none"><a class="openInAnotherWindow" href="https://www.google.com/search?q=Coalescent%20Theory.%20An%20Introduction.&amp;btnG=Search+Books&amp;tbm=bks&amp;tbo=1" target="_blank">Google Preview</a></div><div class="xslopenurl" style="display:none"><span class="js-inst-open-url-holders-nodoi"><a class="openInAnotherWindow js-open-url-link" target="_blank" data-href-template="{targetURL}?sid=oup:orr&amp;genre=book&amp;title=Coalescent%20Theory.%20An%20Introduction.&amp;aulast=Wakeley&amp;date=2009" href="#"></a></span></div><div class="worldcat-reference-ref-link js-worldcat-preview-ref-link" style="display:none"><a class="openInAnotherWindow" href="https://www.worldcat.org/search?q=ti:Coalescent%20Theory.%20An%20Introduction.&amp;qt=advanced&amp;dblist=638" target="_blank">WorldCat</a></div><div class="copac-reference-ref-link js-copac-preview-ref-link" style="display:none" data-pubtype="book"><span class="inst-copac"><a class="openInAnotherWindow" target="_blank" href="http://copac.ac.uk/search?ti=Coalescent%20Theory.%20An%20Introduction.">COPAC</a></span></div>&nbsp;</div></div></div></div></div><div content-id="B21" xmlns:helper="urn:XsltStringHelper"><div class="ref false"><div role="B21" class="ref-content "><div class="citation element-citation"><div class="person-group"><div class="name"><div class="surname">Young</div> <div class="given-names">ND</div></div>,&nbsp; <div class="name"><div class="surname">Healy</div> <div class="given-names">J</div></div>.&nbsp;</div><div class="article-title">GapCoder automates the use of indel characters in phylogenetic analysis</div>,&nbsp;<div class="source">BMC Bioinformatics</div>&nbsp;,&nbsp;<div class="year">2003</div>,&nbsp;vol.&nbsp;<div class="volume">4</div>&nbsp;pg.&nbsp;<div class="fpage">6</div>&nbsp;<div class="citation-links"><div class="google-scholar-ref-link"><a class="openInAnotherWindow" href="https://scholar.google.com/scholar_lookup?title=GapCoder%20automates%20the%20use%20of%20indel%20characters%20in%20phylogenetic%20analysis&amp;author=ND%20Young&amp;author=J%20Healy&amp;publication_year=2003&amp;journal=BMC%20Bioinformatics&amp;volume=4&amp;pages=6" target="_blank">Google Scholar</a></div><div class="crossref-doi"><a class="openInAnotherWindow" href="http://dx.doi.org/10.1186/1471-2105-4-6" target="_blank">Crossref</a></div><div class="adsDoiReference hide"><a class="openInAnotherWindow" href="http://adsabs.harvard.edu/cgi-bin/basic_connect?qsearch=10.1186%2F1471-2105-4-6" target="_blank">Search ADS</a></div><div class="xslopenurl" style="display:none"><span class="inst-open-url-holders" data-targetid="10.1186%2F1471-2105-4-6"> </span></div><div class="pub-id"><a href="http://www.ncbi.nlm.nih.gov/pubmed/12689349" class="link link-pub-id openInAnotherWindow" target="_blank">PubMed</a></div><div class="worldcat-reference-ref-link js-worldcat-preview-ref-link" style="display:none"><a class="openInAnotherWindow" href="https://www.worldcat.org/search?q=ti:GapCoder%20automates%20the%20use%20of%20indel%20characters%20in%20phylogenetic%20analysis&amp;qt=advanced&amp;dblist=638" target="_blank">WorldCat</a></div>&nbsp;</div></div></div></div></div></div>        <!-- /foreach -->
+
+
+
+        
+
+        
+                    <h2 class="authorNotes-section-title" id="authorNotesSectionTitle" scrollto-destination="authorNotesSectionTitle">Author notes</h2>
+<div content-id=""><div class="fn"><div class="footnote-content">Associate Editor: Martin Bishop</div></div></div><div class="copyright copyright-statement">©
+ The Author 2009. Published by Oxford University Press. All rights 
+reserved. For Permissions, please email: 
+journals.permissions@oxfordjournals.org</div><!-- /foreach -->
+
+        <span id="UserHasAccess" data-userhasaccess="True"></span>
+
+    </div><!-- /.widget-items -->
+</div><!-- /.module-widget -->
+
+ 
+    </div>
+    <div class="widget widget-SolrResourceMetadata widget-instance-OUP_Article_ResourceMetadata_Widget">
+        
+    
+
+ 
+    </div>
+    <div class="widget widget-EditorInformation widget-instance-OUP_Article_EditorInformation_Widget">
+        
+ 
+    </div>
+    <div class="widget widget-ArticleOpenScienceBadges widget-instance-OUP_Article_OpenScienceBadge_Widget">
+        
+ 
+    </div>
+
+                <div id="ContentTabFilteredView"></div>
+                <div class="downloadImagesppt js-download-images-ppt st-download-images-ppt">
+                    <a id="lnkDownloadAllImages" class="js-download-all-images-link" href="https://oup.silverchair-cdn.com/DownloadFile/DownloadImage.aspx?image=&amp;PPTtype=SlideSet&amp;ar=332507&amp;xsltPath=%7E/UI/app/XSLT&amp;siteId=5139">Download all figures</a>
+                </div>
+                    <div class="widget widget-ArticleDataRepositories widget-instance-Article_DryadLink">
+         
+    </div>
+
+                <div class="comments">
+    <div class="widget widget-UserCommentBody widget-instance-UserCommentBody_Article">
+        
+
+ 
+    </div>
+    <div class="widget widget-UserComment widget-instance-OUP_UserComment_Article">
+         
+    </div>
+
+                </div>
+            </div>
+        </div>
+
+    </div>
+</div>
+<div id="Sidebar" class="page-column page-column--right">
+    <div class="widget widget-AdBlock widget-instance-ArticlePageTopSidebar">
+        
+
+<div id="adBlockMainBodyTop" style=" ">
+    <script>
+        googletag.cmd.push(function () { googletag.display('adBlockMainBodyTop'); });
+    </script>
+<div id="google_ads_iframe_/116097782/bioinformatics_Behind_Ad2_0__container__" style="border: 0pt none; width: 300px; height: 250px;"></div></div>
+ 
+    </div>
+<div class="widget widget-dynamic " data-count="1"> 
+
+    <div class="widget-dynamic-inner-wrap">
+
+<div class="widget widget-dynamic " data-count="11"> 
+
+    <div class="widget-dynamic-inner-wrap">
+
+    <div class="widget widget-ArticleLevelMetrics widget-instance-Article_RightRailB0Article_RightRail_ArticleLevelMetrics">
+        
+
+
+
+
+
+    <div class="artmet-condensed-wrap clearfix">
+        <div class="artmet-condensed-stats clearfix">
+            <div class="artmet-item artmet-views">
+                <span class="artmet-number">21,395</span>
+                <span class="artmet-text">Views</span>
+            </div>
+
+            <div class="artmet-item artmet-citations">
+                <span class="artmet-number">
+                     <a href="http://gateway.webofknowledge.com/gateway/Gateway.cgi?GWVersion=2&amp;SrcApp=PARTNER_APP&amp;SrcAuth=LinksAMR&amp;KeyUT=WOS:000266109500026&amp;DestLinkType=CitingArticles&amp;DestApp=ALL_WOS&amp;UsrCustomerID=61f30d8ae69c46f86624c5f98a3bc13a" target="">8,935</a>
+                </span>
+                <span class="artmet-text">Citations</span>
+            </div>
+    
+
+            <div class="artmet-item artmet-altmetric">
+    <div class="widget widget-AltmetricLink widget-instance-ArticleLevelMetrics_AltmetricLinkSummary">
+            <!-- Altmetrics -->
+    <div id="altmetricEmbedId" runat="server" class="altmetric-embed" data-badge-type="donut" data-hide-no-mentions="false" data-doi="10.1093/bioinformatics/btp187" data-uuid="93d6b496-94ac-302b-85ab-35aa926cc3c5"><a target="_self" href="https://www.altmetric.com/details.php?domain=academic.oup.com&amp;citation_id=1729994" style="display:inline-block;">
+        <img alt="Article has an altmetric score of 13" src="a.png" style="border:0; margin:0; max-width: none;" width="64px" height="64px">
+</a></div>
+         <script type="text/javascript" src="embed.js"></script>
+ 
+    </div>
+
+            </div>
+        </div>
+
+            <div class="artmet-modal-trigger-wrap clearfix">
+                <a class="artmet-modal-trigger" data-article-id="332507"><i class="icon-metrics"></i><span>View Metrics</span></a>
+            </div>
+    </div>
+        <div class="artmet-modal" id="MetricsModal">
+            <div class="artmet-modal-contents">
+                <a class="artmet-close-modal">×</a>
+            </div>
+        </div>
+
+ 
+    </div>
+    <div class="widget widget-Alerts widget-instance-Article_RightRailB0Article_RightRail_Alerts">
+        
+    <div class="alertsWidget">
+        <h3>Email alerts</h3>
+                <div class="userAlert alertType-5">
+                    <a role="link" aria-label="New issue alert" data-userloggedin="False" data-alerttype="5">New issue alert</a>
+                </div>
+                <div class="userAlert alertType-3">
+                    <a role="link" aria-label="Advance article alerts" data-userloggedin="False" data-alerttype="3">Advance article alerts</a>
+                </div>
+                <div class="userAlert alertType-1">
+                    <a role="link" aria-label="Article activity alert" data-userloggedin="False" data-alerttype="1">Article activity alert</a>
+                </div>
+                    <div class="userAlert alertType-MarketingLink">
+                <a role="link" aria-label="Receive exclusive offers and updates from Oxford Academic" data-userloggedin="False" data-additionalurl="/my-account/communication-preferences">Receive exclusive offers and updates from Oxford Academic</a>
+            </div>
+        <div class="userAlertSignUpModal reveal-modal small" data-reveal="">
+            <div class="userAlertSignUp"></div>
+            <label for="alert-signup-modal-close" class="screenreader-text">Close</label>
+            <a role="button" id="alert-signup-modal-close" class="close-reveal-modal" href="javascript:;">
+                <i class="icon-general-close"></i>
+            </a>
+        </div>
+    </div>
+ 
+    </div>
+    <div class="widget widget-ArticleLinks widget-instance-Article_RightRailB0Article_RightRail_ArticleLinks">
+         
+    </div>
+    <div class="widget widget-RelatedContent widget-instance-Article_RightRailB0Article_RightRail_RelatedContent">
+         
+    </div>
+    <div class="widget widget-RelatedArticleIn widget-instance-Article_RightRailB0Article_RightRail_RelatedArticleIn">
+            <h3 class="relatedArticleIn-title">Related articles in</h3>
+    <div class="relatedArticleIn-content">
+        <ul>
+                <li>
+                    <a href="http://gateway.webofknowledge.com/gateway/Gateway.cgi?GWVersion=2&amp;SrcApp=PARTNER_APP&amp;SrcAuth=LinksAMR&amp;KeyUT=WOS:000266109500026&amp;DestLinkType=RelatedRecords&amp;DestApp=ALL_WOS&amp;UsrCustomerID=61f30d8ae69c46f86624c5f98a3bc13a">Web of Science</a>
+                </li>
+                <li>
+                    <a href="https://scholar.google.com/scholar?q=related:https%3a%2f%2facademic.oup.com%2fbioinformatics%2farticle%2f25%2f11%2f1451%2f332507">Google Scholar</a>
+                </li>
+        </ul>
+    </div>
+ 
+    </div>
+    <div class="widget widget-ArticleCitedBy widget-instance-Article_RightRailB0Article_RightRail_ArticleCitedBy">
+        <div class="rail-widget_wrap vt-articles-cited-by">
+    <h3 class="article-cited-title">Citing articles via</h3>
+    <div class="widget-links_wrap">
+            <div class="article-cited-link-wrap web-of-science">
+                <a href="http://gateway.webofknowledge.com/gateway/Gateway.cgi?GWVersion=2&amp;SrcApp=PARTNER_APP&amp;SrcAuth=LinksAMR&amp;KeyUT=WOS:000266109500026&amp;DestLinkType=CitingArticles&amp;DestApp=ALL_WOS&amp;UsrCustomerID=61f30d8ae69c46f86624c5f98a3bc13a" target="">Web of Science (8935)</a>
+            </div>
+                    <div class="article-cited-link-wrap google-scholar-url">
+                <a href="http://scholar.google.com/scholar?q=link:https%3A%2F%2Facademic.oup.com%2Fbioinformatics%2Farticle%2F25%2F11%2F1451%2F332507" target="">Google Scholar</a>
+            </div>
+                    <div class="article-cited-link-wrap crossref-citedby">
+                <a href="https://academic.oup.com/bioinformatics/crossref-citedby/332507">Crossref</a>
+            </div>
+    </div>
+</div> 
+    </div>
+    <div class="widget widget-ArticleListNewAndPopular widget-instance-Article_RightRailB0Article_RightRail_ArticleNewPopularCombined">
+            <ul class="articleListNewAndPopularCombinedView">
+            <li>
+                <a href="javascript:;" class="articleListNewAndPopular-mode active" data-mode="MostRecent">Latest</a>
+            </li>
+            <li>
+                <a href="javascript:;" class="articleListNewAndPopular-mode " data-mode="MostRead">Most Read</a>
+            </li>
+            <li>
+                <a href="javascript:;" class="articleListNewAndPopular-mode " data-mode="MostCited">Most Cited</a>
+            </li>
+    </ul>
+        <section class="articleListNewPopContent articleListNewAndPopular-ContentView-MostRecent hasContent">
+
+
+
+
+<div id="newPopularList-Article_RightRailB0Article_RightRail_ArticleNewPopularCombined" class="fb">
+
+    
+
+
+
+
+
+
+
+<div class="widget-layout widget-layout--vert">
+
+
+
+
+
+
+        <div class="widget-columns widget-col-1">
+            <div class="col">
+
+                <div class="widget-dynamic-entry">
+                    
+
+
+
+                    
+                        <a href="https://academic.oup.com/bioinformatics/advance-article/doi/10.1093/bioinformatics/btz761/5584235?searchresult=1">
+                                                        <div class="widget-dynamic-journal-title">
+                                ErrorTracer - an algorithm for 
+identifying the origins of inconsistencies in genome-scale metabolic 
+models
+                            </div>
+                        </a>
+                    <div class="widget-dynamic-journal-image-synopsis">
+                            <div class="widget-dynamic-journal-synopsis">
+                                
+                            </div> <!-- /.widget-dynamic-journal-synopsis -->
+                    </div>
+
+                </div>
+                <div class="widget-dynamic-entry">
+                    
+
+
+
+                    
+                        <a href="https://academic.oup.com/bioinformatics/advance-article/doi/10.1093/bioinformatics/btz752/5584234?searchresult=1">
+                                                        <div class="widget-dynamic-journal-title">
+                                SPARSim Single Cell: a count data simulator for scRNA-seq data
+                            </div>
+                        </a>
+                    <div class="widget-dynamic-journal-image-synopsis">
+                            <div class="widget-dynamic-journal-synopsis">
+                                
+                            </div> <!-- /.widget-dynamic-journal-synopsis -->
+                    </div>
+
+                </div>
+                <div class="widget-dynamic-entry">
+                    
+
+
+
+                    
+                        <a href="https://academic.oup.com/bioinformatics/advance-article/doi/10.1093/bioinformatics/btz768/5584233?searchresult=1">
+                                                        <div class="widget-dynamic-journal-title">
+                                Expectation pooling: An effective and 
+interpretable pooling method for predicting DNA-protein binding
+                            </div>
+                        </a>
+                    <div class="widget-dynamic-journal-image-synopsis">
+                            <div class="widget-dynamic-journal-synopsis">
+                                
+                            </div> <!-- /.widget-dynamic-journal-synopsis -->
+                    </div>
+
+                </div>
+                <div class="widget-dynamic-entry">
+                    
+
+
+
+                    
+                        <a href="https://academic.oup.com/bioinformatics/advance-article/doi/10.1093/bioinformatics/btz758/5584232?searchresult=1">
+                                                        <div class="widget-dynamic-journal-title">
+                                Single-sample landscape entropy reveals the imminent phase transition during disease progression
+                            </div>
+                        </a>
+                    <div class="widget-dynamic-journal-image-synopsis">
+                            <div class="widget-dynamic-journal-synopsis">
+                                
+                            </div> <!-- /.widget-dynamic-journal-synopsis -->
+                    </div>
+
+                </div>
+                <div class="widget-dynamic-entry">
+                    
+
+
+
+                    
+                        <a href="https://academic.oup.com/bioinformatics/advance-article/doi/10.1093/bioinformatics/btz760/5584198?searchresult=1">
+                                                        <div class="widget-dynamic-journal-title">
+                                SynQuant: An Automatic Tool to Quantify Synapses from Microscopy Images
+                            </div>
+                        </a>
+                    <div class="widget-dynamic-journal-image-synopsis">
+                            <div class="widget-dynamic-journal-synopsis">
+                                
+                            </div> <!-- /.widget-dynamic-journal-synopsis -->
+                    </div>
+
+                </div>
+            </div>
+        </div>
+</div><!-- /.widget-layout-[orientation] --></div>
+        </section>
+        <section class="articleListNewPopContent articleListNewAndPopular-ContentView-MostRead hide">
+        </section>
+        <section class="articleListNewPopContent articleListNewAndPopular-ContentView-MostCited hide">
+        </section>
+ 
+    </div>
+    <div class="widget widget-JobTarget widget-instance-Article_RightRailB0Article_RightRail_JobTarget">
+        <div class="wrapper">
+    <div class="header">
+        <a href="http://medicine-and-health-careernetwork.oxfordjournals.org/jobseeker/search/results/">Looking for your next opportunity?</a>
+    </div>
+
+        <div id="jobs" class="jobs-list">
+                <div class="job">
+                    <div class="job-position"><a href="https://medicine-and-health-careernetwork.oxfordjournals.org/job/infectious-diseases-assistant-or-associate-professor/51124621/20102/">Infectious Diseases Assistant or Associate Professor</a></div>
+                    <div class="job-location">
+                        Louisville, Kentucky
+                    </div>
+                </div>
+                <div class="job">
+                    <div class="job-position"><a href="https://medicine-and-health-careernetwork.oxfordjournals.org/job/research-in-home-based-care/51005043/20102/">Research in Home-based Care</a></div>
+                    <div class="job-location">
+                        New York, New York
+                    </div>
+                </div>
+                <div class="job">
+                    <div class="job-position"><a href="https://medicine-and-health-careernetwork.oxfordjournals.org/job/department-of-epidemiology-phd-scholarship/51004620/20102/">Department of Epidemiology  Ph.D. Scholarship</a></div>
+                    <div class="job-location">
+                        New Orleans, Louisiana
+                    </div>
+                </div>
+                <div class="job">
+                    <div class="job-position"><a href="https://medicine-and-health-careernetwork.oxfordjournals.org/job/physician-with-oncology-trainingsenior-investigator-for-the-investigational-new-drug-program/50990662/20102/">PHYSICIAN WITH ONCOLOGY TRAINING/SENIOR INVESTIGATOR FOR THE INVESTIGATIONAL NEW DRUG PROGRAM</a></div>
+                    <div class="job-location">
+                        Kingston, Ontario
+                    </div>
+                </div>
+        </div>
+        <div class="all-jobs"><a href="http://medicine-and-health-careernetwork.oxfordjournals.org/jobseeker/search/results/">View all jobs</a></div>
+
+    <div class="sponsor-and-jobnetwork-links">
+        <div class="job-sponsor"><a href="http://global.oup.com/"><img src="oup-logo_002.svg" alt="OXFORD University Press"></a></div>
+        <div class="job-network"><a href="http://globaljobs-careernetwork.oxfordjournals.org/home/index.cfm?site_id=20101"><img src="journals-careers-network.svg" alt="Journals Career Network"></a></div>
+    </div>
+</div>
+ 
+    </div>
+
+    </div>
+
+</div>
+    </div>
+
+</div>    <div class="widget widget-AdBlock widget-instance-ArticlePageTopMainBodyBottom">
+        
+
+<div id="adBlockMainBodyBottom" style=" ">
+    <script>
+        googletag.cmd.push(function () { googletag.display('adBlockMainBodyBottom'); });
+    </script>
+<div id="google_ads_iframe_/116097782/bioinformatics_Behind_Ad3_0__container__" style="border: 0pt none; width: 300px; height: 250px;"></div></div>
+ 
+    </div>
+
+</div>
+
+</div>
+<input id="hfArticleTitle" name="hfArticleTitle" value="DnaSP v5: a software for comprehensive analysis of DNA polymorphism data | Bioinformatics | Oxford Academic" type="hidden">
+<input id="hfArticleLeftNavStickyOffset" name="hfArticleLeftNavStickyOffset" value="29" type="hidden">
+
+
+            </div><!-- /.center-inner-row no-overflow -->
+        </section>
+    </div>
+    <div class="mobile-mask">
+    </div>
+    <section class="footer_wrap vt-site-footer">
+        
+    <script type="text/javascript" src="addthis_widget.js"></script>
+    <script type="text/javascript" src="api.js"></script>
+    <script type="text/javascript" src="chartist.js"></script>
+    <script type="text/javascript" src="article-page.js"></script>
+
+    <script type="text/javascript">
+        googletag.cmd.push(function () {
+            
+            googletag.pubads().setTargeting("jnlsdoi", "10.1093/bioinformatics/btp187");
+            googletag.enableServices();
+        });
+    </script>
+
+        
+
+
+    <div class="widget widget-SitePageFooter widget-instance-SitePageFooter">
+        <div class="ad-banner ad-banner-footer">
+    <div class="widget widget-AdBlock widget-instance-FooterAd">
+        
+
+<div id="adBlockFooter" style=" ">
+    <script>
+        googletag.cmd.push(function () { googletag.display('adBlockFooter'); });
+    </script>
+<div id="google_ads_iframe_/116097782/bioinformatics_Behind_Ad4_0__container__" style="border: 0pt none; width: 728px; height: 90px;"></div></div>
+ 
+    </div>
+
+</div>
+
+    <div class="journal-footer journal-bg">
+        <div class="center-inner-row">
+
+                <div class="journal-footer-menu">
+
+                    <ul>
+                                <li class="link-1">
+                                    <a href="https://academic.oup.com/bioinformatics/pages/About">About Bioinformatics</a>
+                                </li>
+                                <li class="link-2">
+                                    <a href="https://academic.oup.com/bioinformatics/pages/Editorial_Board">Editorial Board</a>
+                                </li>
+                                <li class="link-3">
+                                    <a href="https://academic.oup.com/bioinformatics/pages/General_Instructions">Author Guidelines</a>
+                                </li>
+                                <li class="link-4">
+                                    <a href="https://www.facebook.com/OUPAcademic">Facebook</a>
+                                </li>
+                                <li class="link-5">
+                                    <a href="https://twitter.com/oxfordjournals">Twitter</a>
+                                </li>
+</ul><ul>                                <li class="link-1">
+                                    <a href="https://academic.oup.com/bioinformatics/subscribe">Purchase</a>
+                                </li>
+                                <li class="link-2">
+                                    <a href="http://www.oxfordjournals.org/en/library-recommendation-form.html">Recommend to your Library</a>
+                                </li>
+                                <li class="link-3">
+                                    <a href="http://www.oupmediainfo.com/">Advertising and Corporate Services</a>
+                                </li>
+                                <li class="link-4">
+                                    <a href="http://science-and-mathematics-careernetwork.oxfordjournals.org/jobseeker/search/results/?t730=&amp;t732=470053&amp;t731=&amp;t733=&amp;t735=&amp;t737=&amp;max=25&amp;site_id=20106&amp;search=">Journals Career Network</a>
+                                </li>
+
+                    </ul>
+
+
+                </div><!-- /.journal-footer-menu -->
+
+            <div class="journal-footer-affiliations">
+                <!-- <h3>Affiliations</h3> -->
+                    <a href="https://academic.oup.com/bioinformatics" target="">
+                        <img id="footer-logo-Bioinformatics" class="journal-footer-affiliations-logo" src="bioinformatics_f1-205396838.svg" alt="Bioinformatics">
+                    </a>
+            </div><!-- /.journal-footer-affiliations -->
+
+            <div class="journal-footer-colophon">
+                <ul>
+                        <li>Online ISSN 1460-2059</li>
+                                            <li>Print ISSN 1367-4803</li>
+                    <li>Copyright © 2019 Oxford University Press</li>
+                </ul>
+            </div><!-- /.journal-footer-colophon -->
+
+
+        </div><!-- /.center-inner-row -->
+    </div><!-- /.journal-footer -->
+ 
+    </div>
+
+<div class="oup-footer">
+    <div class="center-inner-row">
+    <div class="widget widget-SelfServeContent widget-instance-OupUmbrellaFooterSelfServe">
+        
+<div class="oup-footer-row journal-links">
+<div class="global-footer selfservelinks">
+<ul>
+    <li>
+    <a href="https://academic.oup.com/journals/pages/about_us">About Us</a>
+    </li>
+    <li>
+    <a href="https://academic.oup.com/journals/pages/contact_us">Contact Us</a>
+    </li>
+    <li>
+    <a href="http://global.oup.com/jobs">Careers</a>
+    </li>
+    <li>
+    <a href="https://academic.oup.com/journals/pages/help">Help</a>
+    </li>
+    <li>
+    <a href="https://academic.oup.com/journals/pages/access_purchase">Access &amp; Purchase</a></li>
+    <li>
+    <a href="https://academic.oup.com/journals/pages/access_purchase/rights_and_permissions">Rights &amp; Permissions</a>
+    </li>
+    <li>
+    <a href="https://academic.oup.com/journals/pages/open_access">Open Access</a>
+    </li>
+</ul>
+</div>
+<div class="global-footer selfservelinks">
+<h4 id="global-footer-customer services" class="title footerheader">Connect</h4>
+<ul>
+    <li>
+    <a href="https://academic.oup.com/my-account/communication-preferences">Join Our Mailing List</a>
+    </li>
+    <li>
+    <a href="http://blog.oup.com/">OUPblog</a>
+    </li>
+    <li>
+    <a href="http://twitter.com/oupacademic">Twitter</a>
+    </li>
+    <li>
+    <a href="https://www.facebook.com/OUPAcademic">Facebook</a>
+    </li>
+    <li>
+    <a href="http://www.youtube.com/playlist?list=PL3MAPgqN8JWioLLTkU4mlFM4-SNt-f1Xs">YouTube</a>
+    </li>
+    <li>
+    <a href="http://oupacademic.tumblr.com/">Tumblr</a>
+    </li>
+</ul>
+</div>
+<div class="global-footer selfservelinks">
+<h4>Resources</h4>
+<ul>
+    <li><a href="https://academic.oup.com/journals/pages/authors">Authors</a></li>
+    <li><a href="https://academic.oup.com/journals/pages/librarians">Librarians</a></li>
+    <li><a href="https://academic.oup.com/journals/pages/societies">Societies</a></li>
+    <li><a href="https://academic.oup.com/journals/pages/sponsorship_and_advertising">Sponsors &amp; Advertisers</a></li>
+    <li><a href="https://academic.oup.com/journals/pages/press">Press &amp; Media</a></li>
+    <li><a href="https://academic.oup.com/journals/pages/agents">Agents</a></li>
+</ul>
+</div>
+<div class="global-footer selfservelinks">
+<h4>Explore</h4>
+<ul>
+    <li><a href="http://global.oup.com/academic">Shop OUP Academic</a></li>
+    <li><a href="http://www.oxforddictionaries.com/">Oxford Dictionaries</a></li>
+    <li><a href="http://oxfordindex.oup.com/">Oxford Index</a></li>
+    <li><a href="https://www.epigeum.com/">Epigeum</a></li>
+    <li><a href="http://global.oup.com/">OUP Worldwide</a></li>
+    <li><a href="http://www.ox.ac.uk/">University of Oxford</a></li>
+</ul>
+</div>
+<div class="OUP-mission">
+<p>Oxford University Press is a department of the University of Oxford. 
+It furthers the University's objective of excellence in research, 
+scholarship, and education by publishing worldwide</p>
+<img class="journal-footer-logo" src="oup-logo.svg" alt="Oxford University Press" width="150" height="42">
+</div>
+</div>
+<div class="oup-footer-row">
+<div class="oup-footer-row-links">
+<ul>
+    <li>Copyright © 2019 Oxford University Press</li>
+    <li><a href="https://global.oup.com/cookiepolicy/">Cookie Policy</a></li>
+    <li><a href="https://global.oup.com/privacy">Privacy Policy</a></li>
+    <li><a href="https://academic.oup.com/journals/pages/about_us/legal/notices">Legal Notice</a></li>
+    <li><a href="https://academic.oup.com/journals/pages/sitemap">Site Map</a></li>
+    <li><a href="https://academic.oup.com/journals/pages/about_us/legal/accessibility">Accessibility</a></li>
+    <li><a href="https://get.adobe.com/reader/">Get Adobe Reader</a></li>
+</ul>
+</div>
+</div>
+<style type="text/css">
+    /* Issue right column fix for tablet/mobile */
+    @media (max-width: 1200px) {
+    .pg_issue .widget-instance-OUP_Issue {
+    width: 100%;
+    }
+    }
+</style>
+    
+    
+     
+    </div>
+
+    </div>
+</div>
+<div class="ss-ui-only">
+
+</div>
+
+    </section>
+</div><div style="visibility: hidden; height: 1px; width: 1px; position: absolute; top: -9999px; z-index: 100000;" id="_atssh"><iframe id="_atssh635" title="AddThis utility frame" style="height: 1px; width: 1px; position: absolute; top: 0px; z-index: 100000; border: 0px none; left: 0px;" src="https://s7.addthis.com/static/sh.f48a1a04fe8dbf021b4cda1d.html#rand=0.6072316804029534&amp;iit=1570716715124&amp;tmr=load%3D1570716715064%26core%3D1570716715112%26main%3D1570716715118%26ifr%3D1570716715132&amp;cb=0&amp;cdn=0&amp;md=0&amp;kw=&amp;ab=-&amp;dh=academic.oup.com&amp;dr=&amp;du=https%3A%2F%2Facademic.oup.com%2Fbioinformatics%2Farticle%2F25%2F11%2F1451%2F332507&amp;href=https%3A%2F%2Facademic.oup.com%2Fbioinformatics%2Farticle%2F25%2F11%2F1451%2F332507&amp;dt=DnaSP%20v5%3A%20a%20software%20for%20comprehensive%20analysis%20of%20DNA%20polymorphism%20data&amp;dbg=0&amp;cap=tc%3D0%26ab%3D0&amp;inst=1&amp;jsl=1&amp;prod=undefined&amp;lng=en&amp;ogt=updated_time%2Cimage%2Curl%2Cdescription%2Ctitle%2Ctype%3Darticle%2Csite_name&amp;pc=men&amp;pub=xa-5265518246c10183&amp;ssl=1&amp;sid=5d9f3c2be18c1417&amp;srf=0.01&amp;ver=300&amp;xck=0&amp;xtr=0&amp;og=site_name%3DOUP%2520Academic%26type%3Darticle%26title%3DDnaSP%2520v5%253A%2520a%2520software%2520for%2520comprehensive%2520analysis%2520of%2520DNA%2520polymorphism%2520data%26description%3DAbstract.%2520%2520Motivation%253A%2520DnaSP%2520is%2520a%2520software%2520package%2520for%2520a%2520comprehensive%2520analysis%2520of%2520DNA%2520polymorphism%2520data.%2520Version%25205%2520implements%2520a%2520number%2520of%2520new%2520features%2520and%2520anal%26url%3Dhttps%253A%252F%252Facademic.oup.com%252Fbioinformatics%252Farticle%252F25%252F11%252F1451%252F332507%26image%3Dhttps%253A%252F%252Foup.silverchair-cdn.com%252Foup%252Fbackfile%252FContent_public%252FJournal%252Fbioinformatics%252FIssue%252F25%252F11%252F0%252Fm_bioinformatics25_11.cover.gif%253FExpires%253D1633788521%2526Signature%253DRfubcEOWV9cef9EOktUmjRHCVBDNeuiheG0BgoefEAPw1YlNujF6zw-crbF%7Ek5DJqBrXrQJu73HGsoAGg12vSySvLTbA9xycytcDqMUzB6BFV-jBrNd89EheaL%7E-PMhx0KAdMxGxpsRuOJt4g05UuLcfwjjQ2Ia9drL7yN0elrXUzqkn1T4CGcHy9JVaTl75tADR53uCwJbFg4%7EfwHEyQ%7Ec54Vq-mw8x1rcyWDLcruKUvEk-9sQNINsa7QJ6lIwsI7OJV5yI4zJhZTs%7Em-sL48hvfsRx8RQoQWqi10CTd3Tr%7EhcZO-J5VScgGx1DwuR3qsu3uwNngPcU1d3k1F2mMA__%2526Key-Pair-Id%253DAPKAIE5G5CRDK6RD3PGA%26updated_time%3D2009-04-03&amp;csi=undefined&amp;rev=v8.27.11-wp&amp;ct=1&amp;xld=1&amp;xd=1"></iframe></div><style id="service-icons-0"></style>
+
+
+
+    
+
+
+
+    
+
+
+    <div id="revealModal" class="reveal-modal" data-reveal="">
+        <div id="revealContent"></div>
+        <a class="close-reveal-modal" href="javascript:;"><i class="icon-general-close"></i><span class="screenreader-text">Close</span></a>
+    </div>
+    <div id="NeedSubscription" class="reveal-modal small" data-reveal="">
+        <div class="subscription-needed">
+            <h5>This Feature Is Available To Subscribers Only</h5>
+            <p><a href="https://academic.oup.com/sign-in">Sign In</a> or <a href="https://academic.oup.com/my-account/register?siteId=5139&amp;returnUrl=%2fbioinformatics%2farticle%2f25%2f11%2f1451%2f332507">Create an Account</a></p>
+        </div>
+        <a class="close-reveal-modal" href="javascript:;"><i class="icon-general-close"></i><span class="screenreader-text">Close</span></a>
+    </div>
+    <div id="noAccessReveal" class="reveal-modal tiny" data-reveal="">
+        <p>This PDF is available to Subscribers Only</p>
+        <a class="hide-for-article-page" id="articleLinkToPurchase" data-reveal=""><span>View Article Abstract &amp; Purchase Options</span></a>
+        <div class="issue-purchase-modal">
+            <p>For full access to this pdf, sign in to an existing account, or purchase an annual subscription.</p>
+        </div>
+        <a class="close-reveal-modal" href="javascript:;"><i class="icon-general-close"></i><span class="screenreader-text">Close</span></a>
+    </div>
+
+
+    
+
+
+<script type="text/javascript" src="MathJax.js"></script>
+
+    <script type="text/javascript" src="footer.js"></script>
+
+
+    
+
+    
+    
+
+
+
+
+    
+
+
+    <!-- Copyright 2001-2010, IBM Corporation All rights reserved. -->
+    <script src="ntpagetag.js"></script>
+    <noscript>
+        <img src="//ouptag.scholarlyiq.com/ntpagetag.gif?js=0" height="1" width="1" border="0" hspace="0" vspace="0" alt="Scholarly IQ" />
+    </noscript>
+
+
+    <div class="ad-banner js-ad-riser ad-banner-riser">
+
+    <div class="widget widget-AdBlock widget-instance-RiserAd">
+        <input class="hfAdBlockInfo" data-divid="adBlockRiser" data-slotname="" data-targetname="" data-width="" data-height="" data-enabled-on-mobile="True" type="hidden">
+
+ 
+    </div>
+
+    </div>
+
+
+
+<div data-reveal="math-jax-load" id="math-jax-modal" class="reveal-modal" style="display: none;"></div><script type="text/javascript" src="btp187.js"></script></body></html>

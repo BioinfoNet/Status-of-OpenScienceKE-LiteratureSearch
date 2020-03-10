@@ -1,0 +1,13 @@
+#header {background-color: #cdde4a;}
+#footer {background-color: #cdde4a;}
+table.listing tr.fastTracked {background-color: #cdde4a;}
+a {color: #172983;}
+a:link {color: #172983;}
+a:active {color: #172983;}
+a:visited {color: #172983;}
+a:hover {color: #172983;}
+input.defaultButton {color: #172983;}
+body {background-color: #ffffff;}
+input.defaultButton {background-color: #ffffff;}
+body {color: #000000;}
+input.defaultButton {color: #000000;}

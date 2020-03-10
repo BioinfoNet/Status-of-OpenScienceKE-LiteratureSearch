@@ -1,0 +1,119 @@
+.named-content_genus-species {
+    font-style:  italic;
+}
+#navBar .highRes {
+    white-space: nowrap;
+}
+
+div.articleLinks {
+    text-align: center;
+}
+
+.alert {
+  background-color: #FFFFCC;
+  color:#000000;
+  font-family: Arial, Helvetica, sans-serif;
+  font-weight: bold;
+}
+#navBar .highRes {
+    white-space: nowrap;
+}
+.resizeNote {
+    width: 700px;
+    margin-top: 0.5em;
+    float: left;
+    text-align: center;
+    font-style: italic;
+}
+#journalList .divider{
+    width:90%;
+}
+
+.captionLabel {
+    font-weight: bold;
+    display: block;
+}
+
+.popupLink .captionLabel{
+    display: inline;
+}
+
+.abstractSection {
+    margin: 1.5em 0;
+}
+input#gosearch {
+    background-image: url('/templates/jsp/_style2/_AP/images/go.gif');
+    height: 16px;
+    width: 18px;
+}
+#articleMeta{
+    padding:1em;
+}
+.pagingVerb{
+    font-weight:bold;
+}
+.resultsPager{
+    padding-top:.5em;
+    margin-bottom:2em;
+    padding-bottom:1em;
+}
+.paginationStatus{
+    float:left;
+}
+.paginationSortControl{
+    float:right;
+}
+/*move up to _AP level*/
+ul.titleListing{
+  list-style:none;
+}
+.titleListing_col1{
+    display:inline;
+    padding:4px 10px 0 10px;
+    text-align:center;
+    width:16px;
+}
+.titleListing_col2{
+    display:inline;
+    text-align:left;
+    margin: 0 4px 0 4px;
+    width:570px;
+}
+.showPublications .subjectListing .expanded{
+    background-image:none;
+}
+
+.NLM_book .NLM_abstract {
+    margin-top: 10px;
+}
+
+#mobileDevicePairing_login form{
+    width:47%;
+    float:left;
+    margin: 1em 0;
+}
+
+#mobileDevicePairing_login .personLogin{
+    margin-right:5%;
+}
+
+#mobileDevicePairing_login label{
+    float:left;
+    width:12em;
+}
+
+#mobileDevicePairing_login .field{
+    clear:left;
+    margin: 0.25em 0;
+}
+
+.headerAd a{
+    top:1px;
+    position:absolute;
+    background:#CBCCCD;
+    padding:0.4em 2em;
+    -webkit-border-radius:0.4em;
+    color:white;
+    font-weight:bold;
+    left:45%;
+}

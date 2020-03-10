@@ -1,0 +1,729 @@
+
+We use cookies to enhance your experience on our website.By continuing to use our website, you are agreeing to our use of cookies. You can change your cookie settings at any time. Find out more Skip to Main Content
+Oxford University Press
+
+    Search
+    Account Menu
+    Menu
+    Sign In
+    Register
+
+Navbar Search Filter This issue All Bioinformatics All Journals Mobile Microsite Search Term
+
+    Sign In
+    Register
+
+    Issues
+    Advance articles
+    Submit
+        Author Guidelines
+        Submission Site
+        Open Access
+    Purchase
+    Alerts
+    About
+        About Bioinformatics
+        Journals Career Network
+        Editorial Board
+        Advertising and Corporate Services
+        Self-Archiving Policy
+        Dispatch Dates
+
+Bioinformatics
+International Society for Computational Biology
+
+    Issues
+    Advance articles
+    Submit
+        Author Guidelines
+        Submission Site
+        Open Access
+    Purchase
+    Alerts
+    About
+        About Bioinformatics
+        Journals Career Network
+        Editorial Board
+        Advertising and Corporate Services
+        Self-Archiving Policy
+        Dispatch Dates
+
+Close
+search filter This issue All Bioinformatics All Journals search input
+Advanced Search
+Article Navigation
+Close mobile search navigation
+Article Navigation
+Issue Cover
+Volume 25
+Issue 11
+1 June 2009
+Article Contents
+
+    Abstract
+    1 INTRODUCTION
+    2 FEATURES
+    3 IMPLEMENTATION
+    ACKNOWLEDGEMENTS
+    REFERENCES
+    Author notes
+
+    < Previous
+    Next >
+
+Article Navigation
+DnaSP v5: a software for comprehensive analysis of DNA polymorphism data
+P. Librado
+1
+Departament de Genètica, Facultat de Biologia and 2 Institut de Recerca de la Biodiversitat, Universitat de Barcelona, Diagonal 645, 08028 Barcelona, Spain
+Search for other works by this author on:
+Oxford Academic
+PubMed
+Google Scholar
+P. Librado ,
+J. Rozas
+1
+Departament de Genètica, Facultat de Biologia and 2 Institut de Recerca de la Biodiversitat, Universitat de Barcelona, Diagonal 645, 08028 Barcelona, Spain
+*
+*To whom correspondence should be addressed.
+Search for other works by this author on:
+Oxford Academic
+PubMed
+Google Scholar
+J. Rozas
+Associate Editor: Martin Bishop
+Author Notes
+Bioinformatics , Volume 25, Issue 11, 1 June 2009, Pages 1451–1452, https://doi.org/10.1093/bioinformatics/btp187
+Published:
+03 April 2009
+Article history
+Received:
+10 February 2009
+Revision received:
+02 April 2009
+Accepted:
+02 April 2009
+Published:
+03 April 2009
+
+    pdf PDF
+    Split View
+    Views
+        Article contents
+    Cite
+    Citation
+
+    P. Librado, J. Rozas, DnaSP v5: a software for comprehensive analysis of DNA polymorphism data, Bioinformatics , Volume 25, Issue 11, 1 June 2009, Pages 1451–1452, https://doi.org/10.1093/bioinformatics/btp187
+
+    Download citation file:
+        Ris (Zotero)
+        EndNote
+        BibTex
+        Medlars
+        ProCite
+        RefWorks
+        Reference Manager
+
+    © 2019 Oxford University Press
+    Close
+    Permissions Icon Permissions
+    Share
+        Email
+        Twitter
+        Facebook
+        More
+
+Navbar Search Filter This issue All Bioinformatics All Journals Mobile Microsite Search Term
+
+    Sign In
+    Register
+
+Close
+search filter This issue All Bioinformatics All Journals search input
+Advanced Search
+Abstract
+
+Motivation: DnaSP is a software package for a comprehensive analysis of DNA polymorphism data. Version 5 implements a number of new features and analytical methods allowing extensive DNA polymorphism analyses on large datasets. Among other features, the newly implemented methods allow for: (i) analyses on multiple data files; (ii) haplotype phasing; (iii) analyses on insertion/deletion polymorphism data; (iv) visualizing sliding window results integrated with available genome annotations in the UCSC browser.
+
+Availability: Freely available to academic users from: http://www.ub.edu/dnasp
+
+Contact: jrozas@ub.edu
+Issue Section:
+Genetics and population analysis
+1 INTRODUCTION
+
+The analysis of DNA polymorphisms is a powerful approach to understand the evolutionary process and to establish the functional significance of particular genomic regions (Begun et al. , 2007 ; Nielsen, 2005 ; Rosenberg and Nordborg, 2002 ). In this context, estimating the impact of natural selection (both positive and negative) is of major interest. Furthermore, DNA polymorphisms are relevant as a tool for a broad range of life science disciplines. Consequently, many high-throughput sequencing, genotyping and polymorphism detection systems have been developed and are currently publicly available (Shendure and Ji, 2008 ). These new technologies are generating massive amounts of data that need to be processed, analyzed and transformed effectively into knowledge.
+
+These technological advances have largely stimulated the development of both analytical methods and computer applications. Population genetic methods, and particularly those based on coalescent theory (Hudson, 1990 ; Wakeley, 2009 ), are used at an increasing rate, but need to be adapted to the particularities of the data (massive amounts of data, missing data, genotypes, insertion/deletion (indels) polymorphisms, etc.). Furthermore, new computer applications and algorithms need to be developed for processing massive datasets (Excoffier and Heckel, 2006 ), and more specifically computer visualization tools for the representation of DNA variation patterns. DnaSP (DNA Sequence Polymorphism) is a software package that allows for extensive DNA polymorphism analyses using a friendly graphical user interface (GUI) (Rozas et al. , 2003 ). Version 5 extends the capabilities of the software, allowing comprehensive DNA polymorphism analyses on multiple data files and on large datasets. Altogether, the present version of DnaSP has the appropriate features for exhaustive exploratory analyses using high-throughput DNA polymorphism data.
+2 FEATURES
+
+DnaSP v5 incorporates major improvements. The new version currently allows for the handling and analysis of multiple data files in batch, and implements new algorithms and methods; among other things (see below) includes a new module to identify conserved DNA regions, this feature might be useful for phylogenetic footprinting-based analyses (Vingron et al. , 2009 ). DnaSP provides a convenient GUI facilitating all data management and analytical tasks; the results can be visualized graphically as well as in a text report. DnaSP accepts multiple DNA sequence alignment file formats (Rozas et al. , 2003 ), including NEXUS (Maddison et al. , 1997 ), and HapMap3 files with phased haplotypes (The International HapMap Consortium, 2003 ). The software allows exhaustive DNA polymorphism analyses, including those based on coalescent theory (Rozas et al. , 2003 ; Wakeley, 2009 ).
+2.1 Haplotype reconstruction
+
+Haplotype reconstruction aims at resolving haplotype phase given genotypic information. DnaSP implements statistical methods to infer haplotype phase, and prepares adequately the phased data for subsequent analyses. The input data (unphased genotype data) are required in FASTA format using IUPAC nucleotide ambiguity codes to represent heterozygous sites. DnaSP reconstructs the phase by applying various algorithms (PHASE v2.1, fastPHASE v1.1 and HAPAR) differing in the underlying population genetic assumptions. PHASE (Stephens and Donnelly, 2003 ; Stephens et al. , 2001 ) assumes Hardy–Weinberg equilibrium and uses a coalescent-based Bayesian method to infer haplotypes. fastPHASE (Scheet and Stephens, 2006 ) implements a modification of the PHASE algorithm taking into account the patterns of linkage disequilibrium and its gradual decline with physical distance. This algorithm is faster and allows for the handling of larger datasets than PHASE, while being slightly less accurate. HAPAR (Wang and Xu, 2003 ) infers haplotype phase by maximum parsimony, i.e. attempts to find the minimum number of haplotypes explaining the genotype sample.
+2.2 Deletion/insertion polymorphisms
+
+Deletion/insertion polymorphisms (DIPs) analysis can provide insights into the evolutionary forces acting on DNA. This information, however, has been rarely used. One obstacle has been the difficulty of defining clearly homologous states (Young and Healy, 2003 ). DnaSP incorporates an algorithm for treating indels related to the ‘simple indel coding’ method of Simmons and Ochoterena ( 2000 ). Specifically, only indels with the same 5′ and 3′ termini are considered homologous (resulted from a single event), and indels of different lengths (even in the same position of the alignment) are treated as different events. DnaSP, nevertheless, uses a slightly different method for coding completely overlapping gaps, and allows the user to choose the level of overlap to be coded. Subsequently, DnaSP estimates a number of DIP summary statistics, such as the average indel length, indel diversity, as well as Tajima's D (Tajima, 1989 ) based on indel information. Additionally, it exports the recoded data in the NEXUS format file.
+2.3 Analysis of multiple data files
+
+DnaSP can automatically read and analyze multiple data files sequentially (in batch mode). These data files may contain a varying number of sequences (from within one species, or from one species as well as one outgroup), or represent diverse genomic regions. The program estimates the most common DNA polymorphism and divergence summary statistics (such as the nucleotide and haplotype diversity, the population mutation parameter, the number of nucleotide substitutions per site, etc.), and neutrality tests (such as Tajima's, Fu and Li's and Fu's tests).
+2.4 Sliding window results visualization
+
+The sliding window technique is a useful tool for exploratory DNA polymorphism data analysis (Hutter et al. , 2006 ; Rozas et al. , 2003 ; Vilella et al. , 2005 ). The current version of DnaSP permits visualizing results of the sliding window (for example, nucleotide diversity or Tajima's D values along the DNA sequence) integrating available genome annotations in the UCSC browser (Kent et al. , 2002 ). This feature can greatly facilitate the interpretation of the results; for instance, it is possible to identify the relevant genome annotations (genes, intergenic regions, conserved regions, etc.), which are adjacent to regions with atypical patterns of nucleotide variation.
+3 IMPLEMENTATION
+
+DnaSP version 5 has been developed in Microsoft Visual Basic v6.0, C and C++, and it runs under Microsoft Windows operating systems (2000/XP/Vista). With the use of Windows emulators, DnaSP can also run on Apple Macintosh platforms, Linux and Unix-based operating systems. The software has been tested in all three platforms.
+ACKNOWLEDGEMENTS
+
+We acknowledge Sergios-Orestis Kolokotronis for helpful comments on the manuscript. Special thanks to the numerous users who tested the software with their data, and particularly to all members of the Molecular Evolutionary Genetics group at the Departament de Genètica, Universitat de Barcelona.
+
+Funding : Spanish Dirección General de Investigación Científica y Técnica (grants BFU2004-02253 and BFU2007-62927); the Catalonian Comissió Interdepartamental de Recerca i Innovació Tecnològica (grant 2005SGR00166).
+
+Conflict of Interest : none declared.
+REFERENCES
+Begun
+DJ
+, et al. 
+Population genomics: whole-genome analysis of polymorphism and divergence in Drosophila simulans
+, 
+PLoS Biol.
+ , 
+2007
+, vol. 
+6
+ pg. 
+e310
+ 
+Google Scholar
+Crossref
+Search ADS
+WorldCat
+ 
+Excoffier
+L
+, 
+Heckel
+G
+. 
+Computer programs for population genetics data analysis: a survival guide
+, 
+Nat. Rev. Genet.
+ , 
+2006
+, vol. 
+7
+ (pg. 
+745
+-
+758
+)
+Google Scholar
+Crossref
+Search ADS
+PubMed
+WorldCat
+ 
+Hudson
+RR
+. 
+Gene genealogies and the coalescent process
+, 
+Oxf. Surv. Evol. Biol.
+ , 
+1990
+, vol. 
+7
+ (pg. 
+1
+-
+44
+)
+WorldCat
+ 
+Hutter
+S
+, et al. 
+Genome-wide DNA polymorphism analyses using VariScan
+, 
+BMC Bioinformatics
+ , 
+2006
+, vol. 
+7
+ pg. 
+409
+ 
+Google Scholar
+Crossref
+Search ADS
+PubMed
+WorldCat
+ 
+Kent
+WJ
+, et al. 
+The Human Genome Browser at UCSC
+, 
+Genome Res.
+ , 
+2002
+, vol. 
+12
+ (pg. 
+996
+-
+1006
+)
+Google Scholar
+Crossref
+Search ADS
+PubMed
+WorldCat
+ 
+Maddison
+WP
+, et al. 
+NEXUS: an extendible file format for systematic information
+, 
+Syst. Biol.
+ , 
+1997
+, vol. 
+46
+ (pg. 
+590
+-
+621
+)
+Google Scholar
+Crossref
+Search ADS
+PubMed
+WorldCat
+ 
+Nielsen
+R
+. 
+Molecular signatures of natural selection
+, 
+Annu. Rev. Genet.
+ , 
+2005
+, vol. 
+39
+ (pg. 
+197
+-
+218
+)
+Google Scholar
+Crossref
+Search ADS
+PubMed
+WorldCat
+ 
+Rosenberg
+NA
+, 
+Nordborg
+M
+. 
+Genealogical trees, coalescent theory, and the analysis of genetic polymorphisms
+, 
+Nat. Rev. Genet.
+ , 
+2002
+, vol. 
+3
+ (pg. 
+380
+-
+390
+)
+Google Scholar
+Crossref
+Search ADS
+PubMed
+WorldCat
+ 
+Rozas
+J
+, et al. 
+DnaSP, DNA polymorphism analyses by the coalescent and other methods
+, 
+Bioinformatics
+ , 
+2003
+, vol. 
+19
+ (pg. 
+2496
+-
+2497
+)
+Google Scholar
+Crossref
+Search ADS
+PubMed
+WorldCat
+ 
+Scheet
+P
+, 
+Stephens
+M
+. 
+A fast and flexible statistical model for large-scale population genotype data: applications to inferring missing genotypes and haplotypic phase
+, 
+Am. J. Hum. Genet.
+ , 
+2006
+, vol. 
+78
+ (pg. 
+629
+-
+644
+)
+Google Scholar
+Crossref
+Search ADS
+PubMed
+WorldCat
+ 
+Shendure
+J
+, 
+Ji
+H
+. 
+Next-generation DNA sequencing
+, 
+Nat. Biotechnol.
+ , 
+2008
+, vol. 
+26
+ (pg. 
+1135
+-
+1145
+)
+Google Scholar
+Crossref
+Search ADS
+PubMed
+WorldCat
+ 
+Simmons
+MP
+, 
+Ochoterena
+H
+. 
+Gaps as characters in sequence-based phylogenetic analyses
+, 
+Syst. Biol.
+ , 
+2000
+, vol. 
+49
+ (pg. 
+369
+-
+381
+)
+Google Scholar
+Crossref
+Search ADS
+PubMed
+WorldCat
+ 
+Stephens
+M
+, 
+Donnelly
+P
+. 
+A comparison of Bayesian methods for haplotype reconstruction from population genotype data
+, 
+Am. J. Hum. Genet.
+ , 
+2003
+, vol. 
+73
+ (pg. 
+1162
+-
+1169
+)
+Google Scholar
+Crossref
+Search ADS
+PubMed
+WorldCat
+ 
+Stephens
+M
+, et al. 
+A new statistical method for haplotype reconstruction from population data
+, 
+Am. J. Hum. Genet.
+ , 
+2001
+, vol. 
+68
+ (pg. 
+978
+-
+989
+)
+Google Scholar
+Crossref
+Search ADS
+PubMed
+WorldCat
+ 
+Tajima
+F
+. 
+Statistical method for testing the neutral mutation hypothesis by DNA polymorphism
+, 
+Genetics
+ , 
+1989
+, vol. 
+123
+ (pg. 
+585
+-
+595
+)
+Google Scholar
+PubMed
+WorldCat
+ 
+The International HapMap Consortium (2003) The International HapMap Project Nature 426 789–796
+COPAC
+ 
+Vilella
+AJ
+, et al. 
+VariScan: analysis of evolutionary patterns from large-scale DNA sequence polymorphism data
+, 
+Bioinformatics
+ , 
+2005
+, vol. 
+21
+ (pg. 
+2791
+-
+2793
+)
+Google Scholar
+Crossref
+Search ADS
+PubMed
+WorldCat
+ 
+Vingron
+M
+, et al. 
+Integrating sequence,evolution and functional genomics in regulatory genomics
+, 
+Genome Biol.
+ , 
+2009
+, vol. 
+10
+ pg. 
+202
+ 
+Google Scholar
+Crossref
+Search ADS
+PubMed
+WorldCat
+ 
+Wang
+L
+, 
+Xu
+Y
+. 
+Haplotype inference by maximum parsimony
+, 
+Bioinformatics
+ , 
+2003
+, vol. 
+19
+ (pg. 
+1773
+-
+1780
+)
+Google Scholar
+Crossref
+Search ADS
+PubMed
+WorldCat
+ 
+Wakeley
+J
+. 
+, 
+Coalescent Theory. An Introduction.
+ , 
+2009
+Greenwood Village
+Roberts and Company Publishers
+Google Preview
+WorldCat
+COPAC
+ 
+Young
+ND
+, 
+Healy
+J
+. 
+GapCoder automates the use of indel characters in phylogenetic analysis
+, 
+BMC Bioinformatics
+ , 
+2003
+, vol. 
+4
+ pg. 
+6
+ 
+Google Scholar
+Crossref
+Search ADS
+PubMed
+WorldCat
+ 
+Author notes
+Associate Editor: Martin Bishop
+© The Author 2009. Published by Oxford University Press. All rights reserved. For Permissions, please email: journals.permissions@oxfordjournals.org
+Download all figures
+21,395 Views
+8,935 Citations
+Article has an altmetric score of 13
+View Metrics
+×
+Email alerts
+New issue alert
+Advance article alerts
+Article activity alert
+Receive exclusive offers and updates from Oxford Academic
+Close
+Related articles in
+
+    Web of Science
+    Google Scholar
+
+Citing articles via
+Web of Science (8935)
+Google Scholar
+Crossref
+
+    Latest
+    Most Read
+    Most Cited
+
+ErrorTracer - an algorithm for identifying the origins of inconsistencies in genome-scale metabolic models
+SPARSim Single Cell: a count data simulator for scRNA-seq data
+Expectation pooling: An effective and interpretable pooling method for predicting DNA-protein binding
+Single-sample landscape entropy reveals the imminent phase transition during disease progression
+SynQuant: An Automatic Tool to Quantify Synapses from Microscopy Images
+Looking for your next opportunity?
+Infectious Diseases Assistant or Associate Professor
+Louisville, Kentucky
+Research in Home-based Care
+New York, New York
+Department of Epidemiology Ph.D. Scholarship
+New Orleans, Louisiana
+PHYSICIAN WITH ONCOLOGY TRAINING/SENIOR INVESTIGATOR FOR THE INVESTIGATIONAL NEW DRUG PROGRAM
+Kingston, Ontario
+View all jobs
+OXFORD University Press
+Journals Career Network
+
+    About Bioinformatics
+    Editorial Board
+    Author Guidelines
+    Facebook
+    Twitter
+
+    Purchase
+    Recommend to your Library
+    Advertising and Corporate Services
+    Journals Career Network
+
+Bioinformatics
+
+    Online ISSN 1460-2059
+    Print ISSN 1367-4803
+    Copyright © 2019 Oxford University Press
+
+    About Us
+    Contact Us
+    Careers
+    Help
+    Access & Purchase
+    Rights & Permissions
+    Open Access
+
+Connect
+
+    Join Our Mailing List
+    OUPblog
+    Twitter
+    Facebook
+    YouTube
+    Tumblr
+
+Resources
+
+    Authors
+    Librarians
+    Societies
+    Sponsors & Advertisers
+    Press & Media
+    Agents
+
+Explore
+
+    Shop OUP Academic
+    Oxford Dictionaries
+    Oxford Index
+    Epigeum
+    OUP Worldwide
+    University of Oxford
+
+Oxford University Press is a department of the University of Oxford. It furthers the University's objective of excellence in research, scholarship, and education by publishing worldwide
+Oxford University Press
+
+    Copyright © 2019 Oxford University Press
+    Cookie Policy
+    Privacy Policy
+    Legal Notice
+    Site Map
+    Accessibility
+    Get Adobe Reader
+
+Close
+This Feature Is Available To Subscribers Only
+
+Sign In or Create an Account
+Close
+
+This PDF is available to Subscribers Only
+View Article Abstract & Purchase Options
+
+For full access to this pdf, sign in to an existing account, or purchase an annual subscription.
+Close
+Scholarly IQ

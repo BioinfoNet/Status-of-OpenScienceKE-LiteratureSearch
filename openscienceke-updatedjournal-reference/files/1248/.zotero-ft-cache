@@ -1,0 +1,1882 @@
+
+We use cookies to enhance your experience on our website.By continuing to use our website, you are agreeing to our use of cookies. You can change your cookie settings at any time. Find out more Skip to Main Content
+Oxford University Press
+
+    Search Menu
+    Account Menu
+    Menu
+    Sign In
+    Register
+
+Navbar Search Filter This issue All Systematic Biology All Journals Mobile Microsite Search Term Search
+
+    Sign In
+    Register
+
+    Issues
+    Advance articles
+    Submit
+        Author Guidelines
+        Submission Site
+        Open Access
+    Purchase
+    About
+        About Systematic Biology
+        About the Society of Systematic Biologists
+        Editorial Board
+        Advertising and Corporate Services
+        Journals Career Network
+        Self-Archiving Policy
+        Dispatch Dates
+        Contact Us
+        Alerts
+    Join SSB
+
+Systematic Biology
+Society of Systematic Biologists
+
+    Issues
+    Advance articles
+    Submit
+        Author Guidelines
+        Submission Site
+        Open Access
+    Purchase
+    About
+        About Systematic Biology
+        About the Society of Systematic Biologists
+        Editorial Board
+        Advertising and Corporate Services
+        Journals Career Network
+        Self-Archiving Policy
+        Dispatch Dates
+        Contact Us
+        Alerts
+    Join SSB
+
+Close
+search filter This issue All Systematic Biology All Journals search input Search
+Advanced Search
+Search Menu
+Article Navigation
+Close mobile search navigation
+Article Navigation
+Issue Cover
+Volume 56
+Issue 6
+December 2007
+Article Contents
+
+    Abstract
+    Alternative Species Concepts
+    Reconciliation
+    Consequences for Species Delimitation
+    Conclusion
+    Acknowledgments
+    References
+
+    < Previous
+    Next >
+
+Article Navigation
+Species Concepts and Species Delimitation
+Kevin De Queiroz
+Department of Vertebrate Zoology, National Museum of Natural History, Smithsonian Institution
+Washington, DC, 20560-0162, USA
+E-mail: dequeirozk@si.edu
+Search for other works by this author on:
+Oxford Academic
+PubMed
+Google Scholar
+Kevin De Queiroz
+Systematic Biology , Volume 56, Issue 6, December 2007, Pages 879–886, https://doi.org/10.1080/10635150701701083
+Published:
+01 December 2007
+Article history
+Received:
+01 November 2006
+Revision received:
+16 January 2007
+Accepted:
+21 August 2007
+Published:
+01 December 2007
+
+    pdf PDF
+    Split View
+    Views
+        Article contents
+        Figures & tables
+    Cite
+    Cite
+
+    Kevin De Queiroz, Species Concepts and Species Delimitation, Systematic Biology , Volume 56, Issue 6, December 2007, Pages 879–886, https://doi.org/10.1080/10635150701701083
+    Select Format Download citation
+    Close
+    Permissions Icon Permissions
+    Share
+        Email
+        Twitter
+        Facebook
+        More
+
+Navbar Search Filter This issue All Systematic Biology All Journals Mobile Microsite Search Term Search
+
+    Sign In
+    Register
+
+Close
+search filter This issue All Systematic Biology All Journals search input Search
+Advanced Search
+Search Menu
+Abstract
+
+The issue of species delimitation has long been confused with that of species conceptualization, leading to a half century of controversy concerning both the definition of the species category and methods for inferring the boundaries and numbers of species. Alternative species concepts agree in treating existence as a separately evolving metapopulation lineage as the primary defining property of the species category, but they disagree in adopting different properties acquired by lineages during the course of divergence (e.g., intrinsic reproductive isolation, diagnosability, monophyly) as secondary defining properties (secondary species criteria). A unified species concept can be achieved by treating existence as a separately evolving metapopulation lineage as the only necessary property of species and the former secondary species criteria as different lines of evidence (operational criteria) relevant to assessing lineage separation. This unified concept of species has several consequences for species delimitation, including the following: First, the issues of species conceptualization and species delimitation are clearly separated; the former secondary species criteria are no longer considered relevant to species conceptualization but only to species delimitation. Second, all of the properties formerly treated as secondary species criteria are relevant to species delimitation to the extent that they provide evidence of lineage separation. Third, the presence of any one of the properties (if appropriately interpreted) is evidence for the existence of a species, though more properties and thus more lines of evidence are associated with a higher degree of corroboration. Fourth, and perhaps most significantly, a unified species concept shifts emphasis away from the traditional species criteria, encouraging biologists to develop new methods of species delimitation that are not tied to those properties.
+Species concept , species criteria , species delimitation
+
+Readers of Systematic Biology hardly need to be reminded of the importance of species in biology. According to various authors, species are one of the fundamental units of biology, making them comparable in importance to genes, cells, and organisms, some of the fundamental units at lower levels of biological organization (e.g., Mayr, 1982 ; see also de Queiroz, 2005a ). However, because species exist at a higher level of organization than the humans observing them, species also are generally much larger and longer lived than their human observers. Moreover, the connections among their parts (i.e., organisms) are ephemeral. This makes it more or less impossible for humans to perceive entire species simply by looking at them, as they do for cells and organisms, which is why biologists have symposia devoted to the topic of species delimitation.
+
+To complicate matters, for roughly the past half century, the issue of species delimitation has been confused by a problem involving the concept of species itself. The problem is that currently different subgroups of biologists advocate different and at least partially incompatible species concepts (reviewed by Mayden, 1997 ; de Queiroz, 1998 ; Harrison, 1998 ). Mayden (1997) listed 24 different named species concepts, and there are even more alternative definitions (where a definition is a concise description of a concept, so that any given species concept may be associated with definitions that differ in minor details of wording). Many of these concepts and their associated definitions are incompatible in that they can lead to different conclusions concerning the boundaries and numbers of species. Thus, the species concept problem—that is, current disagreements about the theoretical concept of the species—is closely tied to the issue of species delimitation—that is, how to determine the boundaries and numbers of species from emperical data.
+
+Fortunately, this species concept problem is not as serious as it appears. Despite the obvious differences among contemporary alternative species concepts and definitions, they exhibit an underlying conceptual unity, which provides the basis for a unified concept of species. As a consequence, biologists are now in a position to free ourselves from seemingly endless debates about the concept of species and thus also the definition of the species category. One of the most significant benefits of a unified species concept is that it allows biologists to approach the problem of species delimitation in a more straightforward way. In this paper, I will review the species concept problem and a proposal about how diverse species concepts can be unified, which I have published previously ( de Queiroz, 1998 , 1999 , 2005a , 2005b , 2005c ). I will then examine some of the consequences of a unified species concept for the problem of species delimitation.
+Alternative Species Concepts
+
+Table 1 is a list of alternative species concepts. The list consists of major categories of alternative species concepts advocated by contemporary biologists, with the categories defined in terms of the properties upon which they are based. Most readers of this journal are likely knowledgeable about at least some of these proposed concepts, which include the familiar biological, ecological, evolutionary, and phylogenetic concepts, among others. Importantly, all of these concepts have advocates among contemporary biologists. In addition, many of the concepts are at least partially incompatible. For example, several authors have called attention to situations in which adoption of the biological species concept leads to the recognition of fewer species taxa than adoption of one of the alternative species concepts, such as the diagnosable version of the phylogenetic species concept (e.g., Bremer and Wanntorp, 1979 ; Cracraft, 1983 ; Zink, 1996 ).
+Table 1.
+
+Alternative contemporary species concepts (i.e., major classes of contemporary species definitions) and the properties upon which they are based (modified from de Queiroz, 2005 ). Properties (or the converses of properties) that represent thresholds crossed by diverging lineages and that are commonly viewed as necessary properties of species are marked with an asterisk (*). Note that under the proposal for unification described in this paper, the various ideas summarized in this table would no longer be considered distinct species concepts (see de Queiroz, 1998 , for an alternative terminology). All of these ideas conform to a single general concept under which species are equated with separately evolving metapopulation lineages, and many of the properties (*) are more appropriately interpreted as operational criteria (lines of evidence) relevant to assessing lineage separation.
+Species concept  	Property(ies)  	Advocates/references 
+Biological  	Interbreeding (natural reproduction resulting in viable and fertile offspring)  	Wright (1940) ; Mayr (1942) ; Dobzhansky (1950)  
+ Isolation  	*Intrinsic reproductive isolation (absence of interbreeding between heterospecific organisms based on intrinsic properties, as opposed to extrinsic [geographic] barriers)  	Mayr (1942) ; Dobzhansky (1970)  
+ Recognition  	*Shared specific mate recognition or fertilization system (mechanisms by which conspecific organisms, or their gametes, recognize one another for mating and fertilization)  	Paterson (1985) ; Masters et al. (1987) ; Lambert and Spencer (1995)  
+Ecological  	*Same niche or adaptive zone (all components of the environment with which conspecific organisms interact)  	Van Valen (1976) ; Andersson (1990)  
+Evolutionary  	Unique evolutionary role, tendencies, and historical fate  	Simpson (1951) ; Wiley (1978) ; Mayden (1997)  
+ (some interpretations)  	*Diagnosability (qualitative, fixed difference)  	Grismer ( 1999 , 2001 ) 
+Cohesion  	Phenotypic cohesion (genetic or demographic exchangeability)  	Templeton ( 1989 , 1998a ) 
+Phylogenetic  	Heterogeneous (see next four entries)  	(see next four entries) 
+ Hennigian  	Ancestor becomes extinct when lineage splits  	Hennig (1966) ; Ridley (1989) ; Meier and Willmann (2000)  
+ Monophyletic  	*Monophyly (consisting of an ancestor and all of its descendants; commonly inferred from possession of shared derived character states)  	Rosen (1979) ; Donoghue (1985) ; Mishler (1985)  
+ Genealogical  	*Exclusive coalescence of alleles (all alleles of a given gene are descended from a common ancestral allele not shared with those of other species)  	Baum and Shaw (1995) ; see also Avise and Ball (1990)  
+ Diagnosable  	*Diagnosability (qualitative, fixed difference)  	Nelson and Platnick (1981) ; Cracraft (1983) ; Nixon and Wheeler (1990)  
+Phenetic  	*Form a phenetic cluster (quantitative difference)  	Michener (1970) ; Sokal and Crovello (1970) ; Sneath and Sokal (1973)  
+Genotypic cluster (definition)  	*Form a genotypic cluster (deficits of genetic intermediates; e.g., heterozygotes)  	Mallet (1995)  
+Species concept  	Property(ies)  	Advocates/references 
+Biological  	Interbreeding (natural reproduction resulting in viable and fertile offspring)  	Wright (1940) ; Mayr (1942) ; Dobzhansky (1950)  
+ Isolation  	*Intrinsic reproductive isolation (absence of interbreeding between heterospecific organisms based on intrinsic properties, as opposed to extrinsic [geographic] barriers)  	Mayr (1942) ; Dobzhansky (1970)  
+ Recognition  	*Shared specific mate recognition or fertilization system (mechanisms by which conspecific organisms, or their gametes, recognize one another for mating and fertilization)  	Paterson (1985) ; Masters et al. (1987) ; Lambert and Spencer (1995)  
+Ecological  	*Same niche or adaptive zone (all components of the environment with which conspecific organisms interact)  	Van Valen (1976) ; Andersson (1990)  
+Evolutionary  	Unique evolutionary role, tendencies, and historical fate  	Simpson (1951) ; Wiley (1978) ; Mayden (1997)  
+ (some interpretations)  	*Diagnosability (qualitative, fixed difference)  	Grismer ( 1999 , 2001 ) 
+Cohesion  	Phenotypic cohesion (genetic or demographic exchangeability)  	Templeton ( 1989 , 1998a ) 
+Phylogenetic  	Heterogeneous (see next four entries)  	(see next four entries) 
+ Hennigian  	Ancestor becomes extinct when lineage splits  	Hennig (1966) ; Ridley (1989) ; Meier and Willmann (2000)  
+ Monophyletic  	*Monophyly (consisting of an ancestor and all of its descendants; commonly inferred from possession of shared derived character states)  	Rosen (1979) ; Donoghue (1985) ; Mishler (1985)  
+ Genealogical  	*Exclusive coalescence of alleles (all alleles of a given gene are descended from a common ancestral allele not shared with those of other species)  	Baum and Shaw (1995) ; see also Avise and Ball (1990)  
+ Diagnosable  	*Diagnosability (qualitative, fixed difference)  	Nelson and Platnick (1981) ; Cracraft (1983) ; Nixon and Wheeler (1990)  
+Phenetic  	*Form a phenetic cluster (quantitative difference)  	Michener (1970) ; Sokal and Crovello (1970) ; Sneath and Sokal (1973)  
+Genotypic cluster (definition)  	*Form a genotypic cluster (deficits of genetic intermediates; e.g., heterozygotes)  	Mallet (1995)  
+Open in new tab
+Table 1.
+
+Alternative contemporary species concepts (i.e., major classes of contemporary species definitions) and the properties upon which they are based (modified from de Queiroz, 2005 ). Properties (or the converses of properties) that represent thresholds crossed by diverging lineages and that are commonly viewed as necessary properties of species are marked with an asterisk (*). Note that under the proposal for unification described in this paper, the various ideas summarized in this table would no longer be considered distinct species concepts (see de Queiroz, 1998 , for an alternative terminology). All of these ideas conform to a single general concept under which species are equated with separately evolving metapopulation lineages, and many of the properties (*) are more appropriately interpreted as operational criteria (lines of evidence) relevant to assessing lineage separation.
+Species concept  	Property(ies)  	Advocates/references 
+Biological  	Interbreeding (natural reproduction resulting in viable and fertile offspring)  	Wright (1940) ; Mayr (1942) ; Dobzhansky (1950)  
+ Isolation  	*Intrinsic reproductive isolation (absence of interbreeding between heterospecific organisms based on intrinsic properties, as opposed to extrinsic [geographic] barriers)  	Mayr (1942) ; Dobzhansky (1970)  
+ Recognition  	*Shared specific mate recognition or fertilization system (mechanisms by which conspecific organisms, or their gametes, recognize one another for mating and fertilization)  	Paterson (1985) ; Masters et al. (1987) ; Lambert and Spencer (1995)  
+Ecological  	*Same niche or adaptive zone (all components of the environment with which conspecific organisms interact)  	Van Valen (1976) ; Andersson (1990)  
+Evolutionary  	Unique evolutionary role, tendencies, and historical fate  	Simpson (1951) ; Wiley (1978) ; Mayden (1997)  
+ (some interpretations)  	*Diagnosability (qualitative, fixed difference)  	Grismer ( 1999 , 2001 ) 
+Cohesion  	Phenotypic cohesion (genetic or demographic exchangeability)  	Templeton ( 1989 , 1998a ) 
+Phylogenetic  	Heterogeneous (see next four entries)  	(see next four entries) 
+ Hennigian  	Ancestor becomes extinct when lineage splits  	Hennig (1966) ; Ridley (1989) ; Meier and Willmann (2000)  
+ Monophyletic  	*Monophyly (consisting of an ancestor and all of its descendants; commonly inferred from possession of shared derived character states)  	Rosen (1979) ; Donoghue (1985) ; Mishler (1985)  
+ Genealogical  	*Exclusive coalescence of alleles (all alleles of a given gene are descended from a common ancestral allele not shared with those of other species)  	Baum and Shaw (1995) ; see also Avise and Ball (1990)  
+ Diagnosable  	*Diagnosability (qualitative, fixed difference)  	Nelson and Platnick (1981) ; Cracraft (1983) ; Nixon and Wheeler (1990)  
+Phenetic  	*Form a phenetic cluster (quantitative difference)  	Michener (1970) ; Sokal and Crovello (1970) ; Sneath and Sokal (1973)  
+Genotypic cluster (definition)  	*Form a genotypic cluster (deficits of genetic intermediates; e.g., heterozygotes)  	Mallet (1995)  
+Species concept  	Property(ies)  	Advocates/references 
+Biological  	Interbreeding (natural reproduction resulting in viable and fertile offspring)  	Wright (1940) ; Mayr (1942) ; Dobzhansky (1950)  
+ Isolation  	*Intrinsic reproductive isolation (absence of interbreeding between heterospecific organisms based on intrinsic properties, as opposed to extrinsic [geographic] barriers)  	Mayr (1942) ; Dobzhansky (1970)  
+ Recognition  	*Shared specific mate recognition or fertilization system (mechanisms by which conspecific organisms, or their gametes, recognize one another for mating and fertilization)  	Paterson (1985) ; Masters et al. (1987) ; Lambert and Spencer (1995)  
+Ecological  	*Same niche or adaptive zone (all components of the environment with which conspecific organisms interact)  	Van Valen (1976) ; Andersson (1990)  
+Evolutionary  	Unique evolutionary role, tendencies, and historical fate  	Simpson (1951) ; Wiley (1978) ; Mayden (1997)  
+ (some interpretations)  	*Diagnosability (qualitative, fixed difference)  	Grismer ( 1999 , 2001 ) 
+Cohesion  	Phenotypic cohesion (genetic or demographic exchangeability)  	Templeton ( 1989 , 1998a ) 
+Phylogenetic  	Heterogeneous (see next four entries)  	(see next four entries) 
+ Hennigian  	Ancestor becomes extinct when lineage splits  	Hennig (1966) ; Ridley (1989) ; Meier and Willmann (2000)  
+ Monophyletic  	*Monophyly (consisting of an ancestor and all of its descendants; commonly inferred from possession of shared derived character states)  	Rosen (1979) ; Donoghue (1985) ; Mishler (1985)  
+ Genealogical  	*Exclusive coalescence of alleles (all alleles of a given gene are descended from a common ancestral allele not shared with those of other species)  	Baum and Shaw (1995) ; see also Avise and Ball (1990)  
+ Diagnosable  	*Diagnosability (qualitative, fixed difference)  	Nelson and Platnick (1981) ; Cracraft (1983) ; Nixon and Wheeler (1990)  
+Phenetic  	*Form a phenetic cluster (quantitative difference)  	Michener (1970) ; Sokal and Crovello (1970) ; Sneath and Sokal (1973)  
+Genotypic cluster (definition)  	*Form a genotypic cluster (deficits of genetic intermediates; e.g., heterozygotes)  	Mallet (1995)  
+Open in new tab
+
+The reason for these incompatibilities has to do with the different biological properties upon which several of the alternative concepts are based; for example, intrinsic reproductive isolation in the case of the isolation version of the biological species concept, occupation of a distinct niche or adaptive zone in the case of the ecological species concept, and fixed character state differences in the case of the diagnosable version of the phylogenetic species concept ( Table 1 ). Moreover, these differences in emphasis are to be expected, because the various properties are of greatest interest to different subgroups of biologists. For example, reproductive incompatibilities are of central importance to biologists who study hybrid zones, niche differences are paramount for ecologists, and diagnosability and monophyly are fundamental for systematists. Similarly, morphological differences are central for paleontologists and museum taxonomists, whereas genetic ones are key for population geneticists and molecular systematists. On the other hand, for biologists who adopt a multidisciplinary approach, or those who can step back from their own personal investments and research interests, all of the concepts seem to have some merits. They are all based on important biological properties.
+Reconciliation
+The Common Element
+
+As I have argued previously (e.g., de Queiroz, 1998 , 1999 , 2005a , 2005b , 2005c ), the key to reconciling the alternative species concepts is identifying a common element, which implies a single, more general, concept of species. Previous attempts to solve the species concept problem have tended instead to obscure the solution by emphasizing the differences, rather than the similarities, among rival concepts. As it turns out, all contemporary species concepts share a common element and, equally important, that shared element is fundamental to the way in which species are conceptualized. The general concept to which I refer equates species with separately evolving metapopulation lineages, or more specifically, with segments of such lineages. To clarify, here the term lineage refers to an ancestor-descendant series ( Simpson, 1961 ; Hull, 1980 ) in this case of metapopulations or simply a metapopulation extended through time (cf. Simpson, 1951 ). It is not to be confused with a clade or monophyletic group, which is sometimes also called a lineage but is generally made up of several lineages (separate branches). The term metapopulation refers to an inclusive population made up of connected subpopulations ( Levins, 1970 ; Hanski and Gaggiotti, 2004 ). It is used here to distinguish species, which are traditionally considered to reside at the higher end of the population-level continuum, from populations at the lower end of the continuum, such as demes and family groups. Finally, a species is not an entire metapopulation lineage but only a segment of such a lineage. The point here is that species give rise to other species, thereby forming (species level) lineages. Any given species is but one of many segments that make up such a species level lineage.
+The Differences
+
+Given that all contemporary species concepts share the common view that species are (segments of) separately evolving metapopulation lineages (for evidence, see de Queiroz, 1998 ), it is instructive to consider how so much disagreement about species concepts can exist in spite of this general conceptual agreement. Clarification emerges when we consider the differences among alternative species concepts in the context of the common element (i.e., the idea that species are separately evolving metapopulation lineages). If we consider the common element to be the primary defining property of the species category, then the diversity of species concepts can be accounted for by positing that many of the properties that underlie alternative species concepts (those marked with an asterisk in Table 1 ) have been implicitly treated as secondary defining properties of the species category. The point is that most of the alternative species concepts adopt different properties of lineages as secondary defining properties. Thus, under all species concepts, a species is a separately evolving metapopulation lineage, but under the isolation version of the biological species concept, the lineage also has to be intrinsically reproductively isolated from other lineages; under the ecological species concept, the lineage also has to occupy a different niche; under the phenetic species concept, it also has to be phenetically distinguishable; under the phylogenetic species concept (monophyly version), it also has be monophyletic in terms of its component genes, organisms, or subpopulations, and so forth.
+
+The reason that these different secondary properties (secondary species criteria) lead to incompatible species concepts is that they arise at different times during the process of speciation (here used in a general sense to encompass all of the phenomena that have been emphasized by contemporary biologists). Speciation can be conceptualized in terms of a few general evolutionary processes: mutation, natural selection, migration (or the lack thereof), and genetic drift. The characters affected by those processes, however, are highly diverse. They may be genotypic or phenotypic; qualitative or quantitative; selectively advantageous, disadvantageous, or neutral; and they may involve many different aspects of organismal biology, including genetics, development, morphology, physiology, and behavior. With regard to the species concept problem, the important point is that changes in these characters lead to the acquisition of a number of different properties by diverging lineages. Thus, as the lineages diverge, they (or their component organisms) become phenetically distinguishable. They become diagnosable in terms of fixed character states. Their genitalia, gametes, and developmental systems become incompatible. Their mate recognition systems diverge to the point where the organisms no longer recognize one another as potential mates. They evolve distinctive ecologies. And they pass through polyphyletic, paraphyletic, and monophyletic stages in terms of their component genes. The problem is that these changes do not all occur at the same time, and they do not even necessarily occur in a regular order ( de Queiroz, 1998 ). The reason this is a problem is that each of several different species concepts adopts a different property from this set as a defining (necessary) property of the species category. This is the reason that the different species concepts, despite sharing a common fundamental element, can nonetheless lead to different conclusions concerning which lineages deserve to be recognized as species.
+
+Figure 1 is a highly simplified diagram representing the process of lineage separation and divergence (i.e., speciation). The shades of gray represent the daughter lineages becoming more and more different from one another through time, and the numbered lines represent the times at which they acquire different properties relative to each other—for example, when they become phenetically distinguishable, diagnosable, reciprocally monophyletic, reproductively incompatible, ecologically distinct, and so forth. This set of properties forms a large gray zone within which alternative species concepts come into conflict. On either side of the gray zone, there will be unanimous agreement about the number of species. Before the acquisition of the first property, everyone will agree that there is a single species, and after the acquisition of the last property, everyone will agree that there are two. In between, however, there will be disagreement. The reason is that each of several different contemporary species concepts adopts a different property (represented by the horizontal lines) as its cutoff for considering a separately evolving lineage to have become a species. Thus, some people will draw the cutoff relatively early in the process of divergence, perhaps where differences in quantitative characters make the lineages phenetically distinguishable. Others will draw the cutoff somewhat later, perhaps where the lineages develop an intrinsic reproductive barrier. And still others will draw the cutoff later yet, perhaps where both lineages form exclusive (monophyletic) groups in terms of multiple gene trees. This is cause of the species concept problem. This is the reason for the existence of so many incompatible definitions of the species category despite widespread agreement about the general nature of species.
+Figure 1
+Lineage separation and divergence (speciation) and species concepts (after de Queiroz, 1998, 1999, 2005a). This highly simplified diagram represents a single lineage (species) splitting to form two lineages (species). The gradations in shades of gray represent the daughter lineages diverging through time, and the horizontal lines labeled SC (species criterion) 1 to 9 represent the times at which they acquire different properties (i.e., when they become phenetically distinguishable, diagnosable, reciprocally monophyletic, reproductively incompatible, ecologically distinct, etc.). The entire set of properties forms a gray zone within which alternative species concepts come into conflict. On either side of the gray zone, there will be unanimous agreement about the number of species. Before the acquisition of the first property, everyone will agree that there is a single species, and after the acquisition of the last property, everyone will agree that there are two. In between, however, there will be disagreement. The reason is that different contemporary species concepts adopt different properties (represented by the horizontal lines) as their species criteria—that is, as their cutoffs for considering a separately evolving lineage to have become a species.
+Open in new tab Download slide
+
+Lineage separation and divergence (speciation) and species concepts (after de Queiroz, 1998 , 1999 , 2005a ). This highly simplified diagram represents a single lineage (species) splitting to form two lineages (species). The gradations in shades of gray represent the daughter lineages diverging through time, and the horizontal lines labeled SC (species criterion) 1 to 9 represent the times at which they acquire different properties (i.e., when they become phenetically distinguishable, diagnosable, reciprocally monophyletic, reproductively incompatible, ecologically distinct, etc.). The entire set of properties forms a gray zone within which alternative species concepts come into conflict. On either side of the gray zone, there will be unanimous agreement about the number of species. Before the acquisition of the first property, everyone will agree that there is a single species, and after the acquisition of the last property, everyone will agree that there are two. In between, however, there will be disagreement. The reason is that different contemporary species concepts adopt different properties (represented by the horizontal lines) as their species criteria—that is, as their cutoffs for considering a separately evolving lineage to have become a species.
+Figure 1
+Lineage separation and divergence (speciation) and species concepts (after de Queiroz, 1998, 1999, 2005a). This highly simplified diagram represents a single lineage (species) splitting to form two lineages (species). The gradations in shades of gray represent the daughter lineages diverging through time, and the horizontal lines labeled SC (species criterion) 1 to 9 represent the times at which they acquire different properties (i.e., when they become phenetically distinguishable, diagnosable, reciprocally monophyletic, reproductively incompatible, ecologically distinct, etc.). The entire set of properties forms a gray zone within which alternative species concepts come into conflict. On either side of the gray zone, there will be unanimous agreement about the number of species. Before the acquisition of the first property, everyone will agree that there is a single species, and after the acquisition of the last property, everyone will agree that there are two. In between, however, there will be disagreement. The reason is that different contemporary species concepts adopt different properties (represented by the horizontal lines) as their species criteria—that is, as their cutoffs for considering a separately evolving lineage to have become a species.
+Open in new tab Download slide
+
+Lineage separation and divergence (speciation) and species concepts (after de Queiroz, 1998 , 1999 , 2005a ). This highly simplified diagram represents a single lineage (species) splitting to form two lineages (species). The gradations in shades of gray represent the daughter lineages diverging through time, and the horizontal lines labeled SC (species criterion) 1 to 9 represent the times at which they acquire different properties (i.e., when they become phenetically distinguishable, diagnosable, reciprocally monophyletic, reproductively incompatible, ecologically distinct, etc.). The entire set of properties forms a gray zone within which alternative species concepts come into conflict. On either side of the gray zone, there will be unanimous agreement about the number of species. Before the acquisition of the first property, everyone will agree that there is a single species, and after the acquisition of the last property, everyone will agree that there are two. In between, however, there will be disagreement. The reason is that different contemporary species concepts adopt different properties (represented by the horizontal lines) as their species criteria—that is, as their cutoffs for considering a separately evolving lineage to have become a species.
+A Unified Species Concept
+
+The situation I have just described suggests a simple solution to the species concept problem. The solution involves a relatively minor yet still fundamental shift in the way that species are conceptualized. It retains the element that is common to all contemporary species concepts, and it eliminates the conflicts between those rival concepts without denying the importance of the properties that underlie their obvious differences. In short, it represents a unified species concept.
+
+The solution has two components. First, it retains the common element—the general concept of species as separately evolving metapopulation lineages (or, more properly, segments thereof). Second, it treats this property as the only necessary property of species. In other words, all the other properties that have previously been treated as necessary properties of species—the properties that created the incompatibilities among alternative species concepts—are reinterpreted as no longer being defining (necessary) properties of the species category. Instead, they are considered contingent properties: properties that species may or may not acquire during the course of their existence. In other words, lineages do not have to be phenetically distinguishable, diagnosable, monophyletic, intrinsically reproductively isolated, ecologically divergent, or anything else to be considered species. They only have to be evolving separately from other lineages. If this proposal is accepted, then it is no longer appropriate to refer to the ideas in question ( Table 1 ) as different species concepts, and a revised terminology is needed (see de Queiroz, 1998 ).
+
+Despite denying that certain properties are necessary properties of species, an important part of the reason that the species concept resulting from the aforementioned proposal can be considered unified is that it continues to embrace the various properties that have been considered important under the rival species concepts. Those properties—the former secondary species criteria—remain important in two ways. First, they serve as important operational criteria or lines of evidence relevant to assessing the separation of lineages. These properties, attributes such as phenetic distinguishability, reciprocal monophyly, pre- and postzygotic reproductive isolation, and so forth, are all properties that lineages acquire as they separate and diverge from one another and therefore provide evidence of lineage separation and divergence. Because species are conceptualized as (segments of) separately evolving lineages, evidence of lineage separation is evidence for the existence of different species. Thus, the properties in question remain directly relevant to the issue of species delimitation.
+
+A second way in which these properties remain important is that they can be used to define subcategories of the species category—that is, to recognize different classes of species based on the properties that those species possess. However, in contrast to the way that classes of species have been named under the alternative species concepts—that is, using overly general and therefore misleading adjectives (e.g., biological species, ecological species, phylogenetic species etc.)—a more precise and therefore more useful terminology can be developed under the unified species concept using adjectives that describe the properties of interest (e.g., reproductively isolated species, ecologically differentiated species, monophyletic species, etc.). Subcategories of the species category are important in that they are composed of those species that are relevant to addressing particular biological questions. For example, a study of reinforcement ( Butlin 1987 ) requires species that exhibit postmating reproductive incompatibilities, whereas a study that uses a species-level phylogeny to make inferences about historical biogeography might be better served using species that exhibit monophyly. In any case, the point is that a unified species concept would continue to embrace all of the properties that have been considered important by previous authors; it just would not treat any of those properties as necessary properties of species.
+
+It is appropriate to point out here that the unified species concept just described is not a new species concept but simply the clear separation of the theoretical concept of species (as separately evolving metapopulation lineages) from operational criteria (lines of evidence) that are used for its empirical application. As such, it is not surprising that several previously proposed characterizations of the species category correspond closely to the unified species concept. Thus, the ideas that Mayr (1963) termed the “interbreeding-population concept” (e.g., Wright, 1940 ; Mayr, 1942 ; Dobzhansky, 1950 ) and later (e.g., Mayr, 1969 , 1970 ) the “biological species concept” referred, at least initially, to a general theoretical concept of species (though restricted to sexually reproducing organisms) that should not be confused with Mayr's popular species definition, which incorporates the operational criterion of intrinsic reproductive isolation ( de Queiroz, 2005a ). Similarly, the species definitions of Simpson ( 1951 , 1961 ) and Wiley (1978) do not include operational criteria and thus correspond closely to the unified species concept ( de Queiroz, 1998 , 1999 ). Moreover, Mayden ( 1997 , 1999 ) has recognized both that these characterizations represent a common general concept of species and that many of the alternative views are distinguished primarily by operational criteria. Hennig's (1966) characterization of species is similar to the general biological species concept. Its distinctive property—the extinction of ancestral species when they give rise to descendant species—was adopted in the interests of strict conformity to a nested, hierarchical model ( Hennig, 1966 :64; Meier and Willmann, 2000 ) and is not an operational criterion for deciding when a lineage is sufficiently divergent to be considered a species. And finally, the properties that Templeton (1989) identified as cohesion mechanisms relevant to his species definition, though related to several operational species criteria, represent phenomena that are hypothesized to be responsible for the existence of metapopulation lineages (see Pigliucci, 2003 ; de Queiroz, 2005c ).
+Consequences for Species Delimitation
+
+A unified species concept has consequences for the issue of species delimitation, some of which I will briefly describe in the remainder of this paper.
+Conceptualization versus Delimitation
+
+One of the most important consequences of a unified species concept is that it clarifies the issue of species delimitation by clearly separating the conceptual problem of defining the species category (species conceptualization) from the methodological problem of inferring the boundaries and numbers of species (species delimitation). Previously these two issues were commonly confused in that the same properties that were used to infer species boundaries and numbers were also considered necessary for a lineage to be regarded as a species (i.e., for deciding when a lineage had diverged enough to be considered a species). Moreover, because different authors considered different properties to be necessary, they commonly disagreed about the boundaries and numbers of species. In other words, the issue of species delimitation was intimately intertwined with that of species conceptualization and hopelessly confused by disagreements about the species concept.
+
+In contrast, under a unified species concept, the properties in question are no longer considered necessary properties of species. This situation clarifies the issue of species delimitation by revealing that those properties have nothing to do with the conceptual problem of defining the species category. Instead, they are more appropriately viewed as lines of evidence relevant to the fundamentally different methodological (rather than conceptual) problem of inferring the boundaries and numbers of species—that is, species delimitation. Thus, under a unified concept of species, there should no longer be any disagreements about the boundaries and numbers of species that result purely from disagreements about the definition of the species category. Instead, disagreements about species delimitation should result from disagreements or differences concerning one or more of the following issues: the reliability of particular methods (i.e., for inferring lineage separation), the relevance of particular data, temporal scale (years versus decades versus centuries, etc.), prospective versus retrospective perspectives, and cases of incomplete lineage separation.
+Relevance of Diverse Properties
+
+Another consequence of a unified species concept is that many different properties are relevant to the issue of species delimitation. Under most of the alternative species concepts, in which various properties acquired by diverging lineages were viewed as necessary properties of species, a different one of these properties was considered necessary under each alternative concept. This practice created the undesirable situation in which each alternative species concept unduly emphasized only one of the various properties at the expense of the others ( Bush, 1995 ), with biologists engaged in an ongoing battle over which property was to be considered the most important.
+
+In contrast, under a unified species concept, most of the properties emphasized under the alternative concepts should be considered relevant to the issue of species delimitation. In the context of a unified species concept, any property that provides evidence of lineage separation is relevant to inferring the boundaries and numbers of species. Considering the properties that have previously been adopted as secondary species criteria (those marked with an asterisk in Table 1 ), either the property itself (intrinsic reproductive isolation, monophyly, exclusive coalescence, diagnosability, deficits of genetic intermediates), or its converse (incompatible fertilization systems, different niches, phenetic distinguishability), provides evidence of lineage separation. Thus, all of those properties are relevant (as lines of evidence) to the problem of species delimitation.
+Quantity of Evidence
+
+Viewing the properties in question as evidence of lineage separation has additional consequences. One is that any evidence of lineage separation is sufficient to infer the existence of separate species (compare Mayden, 1999 ). To the extent that the possession (by a set of populations) of even a single relevant property provides such evidence, it may be considered evidence for the existence of a species. This is not to say that the properties are infallible; on the contrary, any line of evidence can be misleading if interpreted inappropriately. For example, the existence of separate species is commonly inferred from reciprocal monophyly of the alleles at a given locus in allopartically or parapatrically distributed sets of populations (e.g., Moritz, 1994 ; Avise and Wollenberg, 1997 ). However, if the locus is maternally inherited, as in the case of mitochondrial DNA, then a pattern of reciprocal monophyly can also result from low dispersal distances of females even when autosomal and paternally inherited genes are being exchanged regularly between the same sets of populations (e.g., Irwin, 2002 ). In other words, two or more species might be inferred from such data even though the populations in question form a single metapopulation lineage. Thus, the point is not that the presence of a single property guarantees that a set of populations possessing that property represents a separate lineage (i.e., a species) but only that the presence of a single property constitutes evidence (which is always fallible) supporting that hypothesis.
+
+On the other hand, the absence of any one or more of the properties in question does not constitute evidence contradicting a hypothesis of lineage separation. In other words, a lineage might lack one or more of those properties even if it is evolving separately from all other lineages. The reason, of course, is that the lineage simply may not yet have evolved the properties, as might be expected if it is still in the early stages of divergence. Thus, an asymmetry exists concerning the evidence provided by the properties in question: the presence of any one of those properties constitutes evidence for lineage separation, but the absence of the same property does not constitute evidence against lineage separation—that is, against the hypothesis of separate species. When considering only the properties in question, only the absence of all of those properties should be considered evidence against the hypothesis that two (or more) sets of populations represent different species, but even this is negative evidence. On the other hand, it would seem to go without saying that recognizing a species is inappropriate in the absence of any positive evidence for its existence.
+
+Although presence of a single property provides evidence for lineage separation, a highly corroborated hypothesis of lineage separation (i.e., of the existence of separate species) requires multiple lines of evidence. In general, the farther along lineages are in the process of divergence, the larger the number of differences they can be expected to have acquired relative to one another, and therefore the easier it should be to find evidence of separation. Conversely, the earlier lineages are in the process of divergence, the more difficult it should be to find evidence of separation. In any case, multiple lines of evidence—that is, the possession of several properties that arise during lineage divergence—result in more highly corroborated hypotheses of lineage separation, and thus of the existence of different species. This point may seem obvious, and some people have been using multiple lines of evidence for years. Nonetheless, the existence of rival species concepts has worked against these efforts by effectively asking people to choose a preferred (single) operational criterion.
+Alternatives to the Traditional Properties
+
+Among the most important consequences of adopting a unified species concept is that, by emphasizing separately evolving lineages over contingent properties of those lineages, it encourages biologists to shift their attention away from the traditional species criteria and develop new methods for species delimitation. Although properties such as intrinsic reproductive isolation, diagnosability, (reciprocal) monophyly, and the like are certainly relevant to the issue of lineage separation, many of them represent somewhat artificial cutoffs in the continuous process of divergence. Moreover, most of these properties are not very useful for detecting lineage separation in the early stages of divergence. In this context, the development of new methods to test hypotheses of lineage separation that are no longer based on the traditional species criteria represents significant progress. For example, consider new methods for species delimitation being developed in the context of coalescent theory (e.g., Knowles and Carstens, 2007 ). These methods use information from gene trees, which is the same sort of information that is commonly used to assess monophyly under monophyletic and genealogical versions of the so-called phylogenetic species concept. However, in the case of these new coalescent-based methods, monophyly is not the focus. In fact, the methods in question can provide evidence for lineage separation even when none of the sampled loci exhibits monophyly within the sets of populations under consideration ( Knowles and Carstens, 2007 ).
+
+Other new methods relevant to species delimitation make more direct use of geographic information than under traditional approaches. Geographic information is crucial because nearly all species exhibit geographic variation, and it is possible for larger differences to exist between populations within the same old and geographically widespread species than between populations from different but recently separated species (de Queiroz and Good, 1997 ). This situation calls into question all methods that adopt as an operational criterion a particular level of divergence, whether derived from previously studied cases (e.g., Lefébure et al., 2006 ), theoretical models (e.g., Pons et al., 2006 ), or based on a more arbitrary criterion, such as the threshold beyond which parsimony will no longer correctly estimate the number of mutations with a probability greater than or equal to 0.95 (e.g., Cardoso and Vogler, 2005 ). (Such methods may still be useful for obtaining first approximations when screening large numbers of samples from understudied taxa, as in the cited papers.) Geographic information is necessary to distinguish true discontinuities (i.e., lineage separation) from differentiation that occurs within species as the result of phenomena such as clines and isolation by distance.
+
+Although the direct use of geographic information in methods of (or related to) species delimitation is an old idea (e.g., Gabriel and Sokal, 1969 ; Sokal and Oden, 1978a , 1978b ; Sokal, 1979 ), with certain exceptions, including Mantel tests ( Sokal, 1979 ) and nested clade analysis ( Templeton, 1998b ), such methods are underused. In addition, most of the traditional species criteria ( Table 1 ) do not explicitly incorporate geographic information. This situation is likely to change with the recent and rapid development of geographic information system technology and its application to problems involving species (see Raxworthy, 2007 ; Rissler and Apodaca, 2007 ). Moreover, methods that incorporate geographic information have recently been proposed that are not based on traditional operational criteria but instead are designed to identify abrupt changes in surfaces defined by (genetic or phenotypic) characters that are indicative of at least partial lineage separation (e.g., Manel et al., 2003 ; Manni et al., 2004 ; Miller, 2005 ). I will not say more about these or other new approaches to species delimitation, several of which will be described by other contributors to this issue (see also reviews by Sites and Marshall, 2003 , 2004 ). My purpose is not to review new or existing methods but only to point out that some of them represent movement away from the traditional species criteria toward a more explicit treatment of the problem of species delimitation as the inference of separately evolving lineages.
+Conclusion
+
+My goal in this contribution has been to describe a unified concept of species and some of its consequences for the problem of species delimitation. Several of these conclusions have been proposed by other authors; however, a long-standing confusion of the general concept of species with the operational criteria by which species are recognized and the misleading terminology that has helped to perpetuate it (see Table 1 ) has interfered with their more thorough and widespread acceptance. The realization that all modern species concepts are variations on a common theme serves as the basis for a unified species concept under which conceptual and methodological issues are clearly separated. This unified concept of species represents an end to seemingly interminable debates about the definition of the species category. Moreover, it provides a unified context for understanding the relevance of diverse methods to the problem of species delimitation (i.e., as methods for evaluating whether sets of populations constitute separately evolving lineages) and thus also for integrating the information provided by different species delimitation methods in empirical applications.
+Acknowledgments
+
+I thank J. Wiens for organizing the 2006 SSB symposium on species delimitation and for inviting me to contribute this paper. L. Knowles provided valuable information about methods based on coalescent theory, and J. Sites, J. Wiens, and an anonymous reviewer provided comments on an earlier version. I have previously acknowledged the contributions of numerous colleagues to the development of my views on species concepts (see de Queiroz, 1998 , 1999 , 2005a , 2005b , 2005c ).
+References
+Andersson
+L.
+. 
+The driving force: Species concepts and ecology
+, 
+Taxon
+, 
+1990
+, vol. 
+39
+ (pg. 
+375
+-
+382
+)
+Google Scholar
+Crossref
+Search ADS
+WorldCat
+ 
+Avise
+J. C.
+, 
+Ball
+R. M.
+Jr.
+. 
+Principles of genealogical concordance in species concepts and biological taxonomy
+, 
+Oxf. Surv. Evol. Biol.
+, 
+1990
+, vol. 
+7
+ (pg. 
+45
+-
+67
+)
+WorldCat
+ 
+Avise
+J. C.
+, 
+Wollenberg
+K.
+. 
+Phylogenetics and the origin of species
+, 
+Proc. Natl. Acad. Sci. USA
+, 
+1997
+, vol. 
+94
+ (pg. 
+7748
+-
+7755
+)
+Google Scholar
+Crossref
+Search ADS
+WorldCat
+ 
+Baum
+D. A.
+, 
+Shaw
+K. L.
+. 
+Hoch
+P. C.
+, 
+Stephenson
+A. G.
+. 
+Genealogical perspectives on the species problem
+, 
+Experimental and molecular approaches to plant biosystematics
+, 
+1995
+St. Louis
+Missouri Botanical Garden
+(pg. 
+289
+-
+303
+)
+Google Preview
+WorldCat
+COPAC
+ 
+Bremer
+K.
+, 
+Wanntorp
+H.-E.
+. 
+Geographic populations or biological species in phylogeny reconstruction
+, 
+Syst. Zool.
+, 
+1979
+, vol. 
+28
+ (pg. 
+220
+-
+224
+)
+Google Scholar
+Crossref
+Search ADS
+WorldCat
+ 
+Bush
+G. L.
+. 
+Reply from G. L. Bush
+, 
+Trends Ecol. Evol.
+, 
+1995
+, vol. 
+10
+ pg. 
+38
+ 
+Google Scholar
+Crossref
+Search ADS
+PubMed
+WorldCat
+ 
+Cardoso
+A.
+, 
+Vogler
+A. P.
+. 
+DNA taxonomy, phylogeny and Pleistocene diversification of the Cicindela hybrida species group (Coleoptera: Cicindelidae)
+, 
+Mol. Ecol.
+, 
+2005
+, vol. 
+14
+ (pg. 
+3531
+-
+3546
+)
+Google Scholar
+Crossref
+Search ADS
+PubMed
+WorldCat
+ 
+Cracraft
+J.
+. 
+Species concepts and speciation analysis
+, 
+Curr. Ornithol.
+, 
+1983
+, vol. 
+1
+ (pg. 
+159
+-
+187
+)
+Google Scholar
+Crossref
+Search ADS
+WorldCat
+ 
+de Queiroz
+K.
+. 
+Howard
+D. J.
+, 
+Berlocher
+S. H.
+. 
+The general lineage concept of species, species criteria, and the process of speciation: A conceptual unification and terminological recommendations
+, 
+Endless forms: Species and speciation
+, 
+1998
+New York
+Oxford University Press
+(pg. 
+57
+-
+75
+)
+Google Preview
+WorldCat
+COPAC
+ 
+de Queiroz
+K.
+. 
+Wilson
+R. A.
+. 
+The general lineage concept of species and the defining properties of the species category
+, 
+Species: New interdisciplinary essays
+, 
+1999
+Cambridge, Massachusetts
+MIT Press
+(pg. 
+49
+-
+89
+)
+Google Preview
+WorldCat
+COPAC
+ 
+de Queiroz
+K.
+. 
+Ernst Mayr and the modern concept of species
+, 
+Proc. Natl. Acad. Sci. USA
+, 
+2005
+, vol. 
+102
+ (pg. 
+6600
+-
+6607
+)
+Google Scholar
+Crossref
+Search ADS
+WorldCat
+ 
+de Queiroz
+K.
+. 
+A unified concept of species and its consequences for the future of taxonomy
+, 
+Proc. Calif. Acad. Sci.
+, 
+2005
+, vol. 
+56
+ (pg. 
+196
+-
+215
+)
+WorldCat
+ 
+de Queiroz
+K.
+. 
+Different species problems and their resolution
+, 
+BioEssays
+, 
+2005
+, vol. 
+27
+ (pg. 
+1263
+-
+1269
+)
+Google Scholar
+Crossref
+Search ADS
+PubMed
+WorldCat
+ 
+de Queiroz
+K.
+, 
+Good
+D. A.
+. 
+Phenetic clustering in biology: A critique
+, 
+Q. Rev. Biol.
+, 
+1997
+, vol. 
+72
+ (pg. 
+3
+-
+30
+)
+Google Scholar
+Crossref
+Search ADS
+WorldCat
+ 
+Dobzhansky
+T.
+. 
+Mendelian populations and their evolution
+, 
+Am. Nat.
+, 
+1950
+, vol. 
+84
+ (pg. 
+401
+-
+418
+)
+Google Scholar
+Crossref
+Search ADS
+WorldCat
+ 
+Dobzhansky
+T.
+. 
+, 
+Genetics of the evolutionary process
+, 
+1970
+New York
+Columbia University Press
+Google Preview
+WorldCat
+COPAC
+ 
+Donoghue
+M. J.
+. 
+A critique of the biological species concept and recommendations for a phylogenetic alternative
+, 
+Bryologist
+, 
+1985
+, vol. 
+88
+ (pg. 
+172
+-
+181
+)
+Google Scholar
+Crossref
+Search ADS
+WorldCat
+ 
+Gabriel
+K. R.
+, 
+Sokal
+R. R.
+. 
+A new statistical approach to geographic variation analysis
+, 
+Syst. Zool.
+, 
+1969
+, vol. 
+18
+ (pg. 
+259
+-
+278
+)
+Google Scholar
+Crossref
+Search ADS
+WorldCat
+ 
+Grismer
+L. L.
+. 
+An evolutionary classification of reptiles on islands in the Gulf of California, Mexico
+, 
+Herpetologica
+, 
+1999
+, vol. 
+55
+ (pg. 
+446
+-
+469
+)
+WorldCat
+ 
+Grismer
+L. L.
+. 
+An evolutionary classification and checklist of amphibians and reptiles on the Pacific islands of Baja California, Mexico
+, 
+Bull. South. Calif. Acad. Sci.
+, 
+2001
+, vol. 
+100
+ (pg. 
+12
+-
+23
+)
+WorldCat
+ 
+Hanski
+I.
+, 
+Gaggiotti
+O. E.
+. 
+Hanski
+I.
+, 
+Gaggiotti
+O. E.
+. 
+Metapopulation biology: Past, present, and future
+, 
+Ecology, genetics, and evolution of metapopulations
+, 
+2004
+Amsterdam
+Elsevier
+(pg. 
+3
+-
+22
+)
+Google Scholar
+Crossref
+Search ADS
+Google Preview
+WorldCat
+COPAC
+ 
+Harrison
+R. G.
+. 
+Howard
+D. J.
+, 
+Berlocher
+S. H.
+. 
+Linking evolutionary pattern and process
+, 
+Endless forms: Species and speciation
+, 
+1998
+New York
+Oxford University Press
+(pg. 
+19
+-
+31
+)
+Google Preview
+WorldCat
+COPAC
+ 
+Hennig
+W.
+. 
+, 
+Phylogenetic systematics
+, 
+1966
+Urbana
+University of Illinois Press
+Google Preview
+WorldCat
+COPAC
+ 
+Hull
+D. L.
+. 
+Individuality and selection
+, 
+Annu. Rev. Ecol. Syst.
+, 
+1980
+, vol. 
+11
+ (pg. 
+311
+-
+332
+)
+Google Scholar
+Crossref
+Search ADS
+WorldCat
+ 
+Irwin
+D. E.
+. 
+Phylogeographic breaks without geographic barriers to gene flow
+, 
+Evolution
+, 
+2002
+, vol. 
+56
+ (pg. 
+2383
+-
+2394
+)
+Google Scholar
+Crossref
+Search ADS
+PubMed
+WorldCat
+ 
+Knowles
+L. L.
+, 
+Carstens
+B. C.
+. 
+Delimiting species without monophyletic gene trees
+, 
+Syst. Biol.
+, 
+2007
+, vol. 
+56
+  
+This issue.
+WorldCat
+ 
+Lambert
+D. M.
+, 
+Spencer
+H. G.
+. 
+, 
+Speciation and the recognition concept: Theory and application
+, 
+1995
+Baltimore
+Johns Hopkins University Press
+Google Preview
+WorldCat
+COPAC
+ 
+Lefébure
+T.
+, 
+Douady
+C. J.
+, 
+Gouy
+M.
+, 
+Gibert
+J.
+. 
+Relationship between morphological taxonomy and molecular divergence within Crustacea: Proposal of a molecular threshold to help species delimitation
+, 
+Mol. Phylogenet. Evol.
+, 
+2006
+, vol. 
+40
+ (pg. 
+435
+-
+447
+)
+Google Scholar
+Crossref
+Search ADS
+PubMed
+WorldCat
+ 
+Levins
+R.
+. 
+Desternhaber
+M.
+. 
+Extinction
+, 
+Some mathematical problems in biology
+, 
+1970
+Providence, Rhode Island
+American Mathematical Society
+(pg. 
+77
+-
+107
+)
+Google Preview
+WorldCat
+COPAC
+ 
+Mallet
+J.
+. 
+A species definition for the modern synthesis
+, 
+Trends Ecol. Evol.
+, 
+1995
+, vol. 
+10
+ (pg. 
+294
+-
+299
+)
+Google Scholar
+Crossref
+Search ADS
+PubMed
+WorldCat
+ 
+Manel
+S.
+, 
+Schwartz
+M. K.
+, 
+Luikart
+G.
+, 
+Taberlet
+P.
+. 
+Landscape genetics: Combining landscape ecology and population genetics
+, 
+Trends Ecol. Evol.
+, 
+2003
+, vol. 
+18
+ (pg. 
+189
+-
+197
+)
+Google Scholar
+Crossref
+Search ADS
+WorldCat
+ 
+Manni
+F.
+, 
+Guérard
+E.
+, 
+Heyer
+E.
+. 
+Geographic patterns of (genetic, morphologic, linguistic) variation: How barriers can be detected using Monmonier's algorithm
+, 
+Hum. Biol.
+, 
+2004
+, vol. 
+76
+ (pg. 
+173
+-
+190
+)
+Google Scholar
+Crossref
+Search ADS
+PubMed
+WorldCat
+ 
+Masters
+J. C.
+, 
+Rayner
+R. J.
+, 
+McKay
+I. J.
+, 
+Potts
+A. D.
+, 
+Nails
+D.
+, 
+Ferguson
+J. W.
+, 
+Weissenbacher
+B. K.
+, 
+Allsopp
+M.
+, 
+Anderson
+M. L.
+. 
+The concept of species: Recognition versus isolation
+, 
+S. Afr. J. Sci.
+, 
+1987
+, vol. 
+83
+ (pg. 
+534
+-
+537
+)
+WorldCat
+ 
+Mayden
+R. L.
+. 
+Claridge
+M. F.
+, 
+Dawah
+H. A.
+, 
+Wilson
+M. R.
+. 
+A hierarchy of species concepts: The denouement in the saga of the species problem
+, 
+Species: The units of biodiversity
+, 
+1997
+London
+Chapman and Hall
+(pg. 
+381
+-
+424
+)
+Google Preview
+WorldCat
+COPAC
+ 
+Mayden
+R. L.
+. 
+Consilience and a hierarchy of species concepts: Advances toward closure on the species puzzle
+, 
+J. Nematol.
+, 
+1999
+, vol. 
+31
+ (pg. 
+95
+-
+116
+)
+Google Scholar
+PubMed
+WorldCat
+ 
+Mayr
+E.
+. 
+, 
+Systematics and the origin of species
+, 
+1942
+New York
+Columbia University Press
+Google Preview
+WorldCat
+COPAC
+ 
+Mayr
+E.
+. 
+, 
+Animal species and evolution
+, 
+1963
+Cambridge, Massachusetts
+Belknap Press of Harvard University Press
+Google Scholar
+Crossref
+Search ADS
+Google Preview
+WorldCat
+COPAC
+ 
+Mayr
+E.
+. 
+, 
+Principles of systematic zoology
+, 
+1969
+New York
+McGraw-Hill
+Google Preview
+WorldCat
+COPAC
+ 
+Mayr
+E.
+. 
+, 
+Populations, species, and evolution
+, 
+1970
+Cambridge, Massachusetts
+Belknap Press of Harvard University Press
+Google Preview
+WorldCat
+COPAC
+ 
+Mayr
+E.
+. 
+, 
+The growth of biological thought: Diversity, evolution, and inheritance
+, 
+1982
+Cambridge, Massachusetts
+Belknap Press of Harvard University Press
+Google Preview
+WorldCat
+COPAC
+ 
+Meier
+R.
+, 
+Willmann
+R.
+. 
+Wheeler
+Q. D.
+, 
+Meier
+R.
+. 
+The Hennigian species concept
+, 
+Species concepts and phylogenetic theory
+, 
+2000
+New York
+Columbia University Press
+(pg. 
+30
+-
+43
+)
+Google Preview
+WorldCat
+COPAC
+ 
+Michener
+C. D.
+. 
+Diverse approaches to systematics
+, 
+Evol. Biol.
+, 
+1970
+, vol. 
+4
+ (pg. 
+1
+-
+38
+)
+WorldCat
+ 
+Miller
+M. P.
+. 
+Alleles in space (AIS): Computer software for the joint analysis of interindividual spatial and genetic information
+, 
+J. Hered.
+, 
+2005
+, vol. 
+96
+ (pg. 
+722
+-
+724
+)
+Google Scholar
+Crossref
+Search ADS
+PubMed
+WorldCat
+ 
+Mishler
+B. D.
+. 
+The morphological, developmental, and phylogenetic basis of species concepts in bryophytes
+, 
+Bryologist
+, 
+1985
+, vol. 
+88
+ (pg. 
+207
+-
+214
+)
+Google Scholar
+Crossref
+Search ADS
+WorldCat
+ 
+Moritz
+C.
+. 
+Defining ‘evolutionarily significant units’ for conservation
+, 
+Trends Ecol. Evol.
+, 
+1994
+, vol. 
+9
+ (pg. 
+373
+-
+375
+)
+Google Scholar
+Crossref
+Search ADS
+PubMed
+WorldCat
+ 
+Nelson
+G.
+, 
+Platnick
+N. I.
+. 
+, 
+Systematics and biogeography
+, 
+1981
+New York
+Columbia University Press
+Google Preview
+WorldCat
+COPAC
+ 
+Nixon
+K. C.
+, 
+Wheeler
+Q. D.
+. 
+An amplification of the phylogenetic species concept
+, 
+Cladistics
+, 
+1990
+, vol. 
+6
+ (pg. 
+211
+-
+223
+)
+Google Scholar
+Crossref
+Search ADS
+WorldCat
+ 
+Paterson
+H. E. H.
+. 
+Vrba
+E. S.
+. 
+The recognition concept of species
+, 
+Species and speciation
+, 
+1985
+Pretoria
+Transvaal Museum
+(pg. 
+21
+-
+29
+)
+Google Preview
+WorldCat
+COPAC
+ 
+Pigliucci
+M.
+. 
+Species as family resemblance concepts
+, 
+BioEssays
+, 
+2003
+, vol. 
+25
+ (pg. 
+596
+-
+602
+)
+Google Scholar
+Crossref
+Search ADS
+PubMed
+WorldCat
+ 
+Pons
+J.
+, 
+Barraclough
+T. G.
+, 
+Gomez-Zurita
+J.
+, 
+Cardoso
+A.
+, 
+Duran
+D. P.
+, 
+Hazell
+S.
+, 
+Kamoun
+S.
+, 
+Sumlin
+W. D.
+, 
+Vogler
+A. P.
+. 
+Sequence-based species delimitation for the DNA taxonomy of undescribed Insects
+, 
+Syst. Biol.
+, 
+2006
+, vol. 
+55
+ (pg. 
+595
+-
+609
+)
+Google Scholar
+Crossref
+Search ADS
+PubMed
+WorldCat
+ 
+Raxworthy
+C. J.
+, 
+Ingram
+C.
+, 
+Rabibisoa
+N.
+, 
+Pearson
+R.
+. 
+Applications of ecological niche modeling for species delimitation: A review and empirical evaluation using day geckos ( Phelsuma ) from Madagascar
+, 
+Syst. Biol.
+, 
+2007
+, vol. 
+56
+  
+This issue.
+WorldCat
+ 
+Ridley
+M.
+. 
+The cladistic solution to the species problem
+, 
+Biol. Philos.
+, 
+1989
+, vol. 
+4
+ (pg. 
+1
+-
+16
+)
+Google Scholar
+Crossref
+Search ADS
+WorldCat
+ 
+Rissler
+L. J.
+, 
+Apodaca
+J. J.
+. 
+Adding more ecology into species delimitation: Ecological niche models and phylogeography help define cryptic species in the black salamander ( Aneides flavipunctatus )
+, 
+Syst. Biol.
+, 
+2007
+, vol. 
+56
+  
+This issue.
+WorldCat
+ 
+Rosen
+D. E.
+. 
+Fishes from the uplands and intermontane basins of Guatemala: Revisionary studies and comparative geography
+, 
+Bull. Am. Mus. Nat. Hist.
+, 
+1979
+, vol. 
+162
+ (pg. 
+267
+-
+376
+)
+WorldCat
+ 
+Simpson
+G. G.
+. 
+The species concept
+, 
+Evolution
+, 
+1951
+, vol. 
+5
+ (pg. 
+285
+-
+298
+)
+Google Scholar
+Crossref
+Search ADS
+WorldCat
+ 
+Simpson
+G. G.
+. 
+, 
+Principles of animal taxonomy
+, 
+1961
+New York
+Columbia University Press
+Google Preview
+WorldCat
+COPAC
+ 
+Sites
+J. W.
+, 
+Marshall
+J. C.
+. 
+Delimiting species: A renaissance issue in systematic biology
+, 
+Trends Ecol. Evol.
+, 
+2003
+, vol. 
+18
+ (pg. 
+462
+-
+470
+)
+Google Scholar
+Crossref
+Search ADS
+WorldCat
+ 
+Sites
+J. W.
+, 
+Marshall
+J. C.
+. 
+Operational criteria for delimiting species
+, 
+Annu. Rev. Ecol. Evol. Syst.
+, 
+2004
+, vol. 
+35
+ (pg. 
+199
+-
+227
+)
+Google Scholar
+Crossref
+Search ADS
+WorldCat
+ 
+Sneath
+P. H. A.
+, 
+Sokal
+R. R.
+. 
+, 
+Numerical taxonomy: The principles and practice of numerical classification
+, 
+1973
+San Francisco
+W. H. Freeman
+Google Preview
+WorldCat
+COPAC
+ 
+Sokal
+R. R.
+. 
+Testing statistical significance of geographic variation patterns
+, 
+Syst. Zool.
+, 
+1979
+, vol. 
+28
+ (pg. 
+227
+-
+232
+)
+Google Scholar
+Crossref
+Search ADS
+WorldCat
+ 
+Sokal
+R. R.
+, 
+Crovello
+T. J.
+. 
+The biological species concept: A critical evaluation
+, 
+Am. Nat.
+, 
+1970
+, vol. 
+104
+ (pg. 
+127
+-
+153
+)
+Google Scholar
+Crossref
+Search ADS
+WorldCat
+ 
+Sokal
+R. R.
+, 
+Oden
+N. L.
+. 
+Spatial autocorrelation in biology 1. Methodology
+, 
+Biol. J. Linn. Soc.
+, 
+1978
+, vol. 
+10
+ (pg. 
+199
+-
+228
+)
+Google Scholar
+Crossref
+Search ADS
+WorldCat
+ 
+Sokal
+R. R.
+, 
+Oden
+R. L.
+. 
+Spatial autocorrelation in biology 2. Some biological implications and four applications of evolutionary and ecological interest
+, 
+Biol. J. Linn. Soc.
+, 
+1978
+, vol. 
+10
+ (pg. 
+229
+-
+249
+)
+Google Scholar
+Crossref
+Search ADS
+WorldCat
+ 
+Templeton
+A. R.
+. 
+Otte
+D.
+, 
+Endler
+J. A.
+. 
+The meaning of species and speciation: A genetic perspective
+, 
+Speciation and its consequences
+, 
+1989
+Sunderland, Massachusetts
+Sinauer Associates
+(pg. 
+3
+-
+27
+)
+Google Preview
+WorldCat
+COPAC
+ 
+Templeton
+A. R.
+. 
+Howard
+D. J.
+, 
+Berlocher
+S. H.
+. 
+Species and speciation: Geography, population structure, ecology, and gene trees
+, 
+Endless forms: Species and speciation
+, 
+1998
+New York
+Oxford University Press
+(pg. 
+32
+-
+43
+)
+Google Preview
+WorldCat
+COPAC
+ 
+Templeton
+A. R.
+. 
+Nested clade analysis of phylogeographic data: Testing hypotheses about gene flow and population history
+, 
+Mol. Ecol.
+, 
+1998
+, vol. 
+7
+ (pg. 
+381
+-
+397
+)
+Google Scholar
+Crossref
+Search ADS
+PubMed
+WorldCat
+ 
+Van Valen
+L.
+. 
+Ecological species, multispecies, and oaks
+, 
+Taxon
+, 
+1976
+, vol. 
+25
+ (pg. 
+233
+-
+239
+)
+Google Scholar
+Crossref
+Search ADS
+WorldCat
+ 
+Wiley
+E. O.
+. 
+The evolutionary species concept reconsidered
+, 
+Syst. Zool.
+, 
+1978
+, vol. 
+27
+ (pg. 
+17
+-
+26
+)
+Google Scholar
+Crossref
+Search ADS
+WorldCat
+ 
+Wright
+S.
+. 
+Huxley
+J.
+. 
+The statistical consequences of Mendelian heredity in relation to speciation
+, 
+The new systematics
+, 
+1940
+London
+Oxford University Press
+(pg. 
+161
+-
+183
+)
+Google Preview
+WorldCat
+COPAC
+ 
+Zink
+R. M.
+. 
+Bird species diversity
+, 
+Nature
+, 
+1996
+, vol. 
+381
+ pg. 
+566
+ 
+Google Scholar
+Crossref
+Search ADS
+PubMed
+WorldCat
+ 
+© 2007 Society of Systematic Biologists
+Issue Section:
+Articles
+Download all figures
+55,677 Views
+1,686 Citations
+Article has an altmetric score of 95
+View Metrics
+×
+Email alerts
+Article activity alert
+Advance article alerts
+New issue alert
+Receive exclusive offers and updates from Oxford Academic
+Close
+Related articles in
+
+    Web of Science
+    Google Scholar
+
+Citing articles via
+Web of Science (1686)
+Google Scholar
+Crossref
+
+    Latest
+    Most Read
+    Most Cited
+
+Exploration of Plastid Phylogenomic Conflict Yields New Insights into the Deep Relationships of Leguminosae
+Longer is not always better: Optimizing barcode length for large-scale species discovery and identification
+Reliable Phylogenetic Regressions for Multivariate Comparative Data: Illustration with the MANOVA and Application to the Effect of Diet on Mandible Morphology in Phyllostomid Bats
+Global Diversification Dynamics Since the Jurassic: Low Dispersal and Habitat-Dependent Evolution Explain Hotspots of Diversity and Shell Disparity in River Snails (Viviparidae)
+Announcements
+
+    About Systematic Biology
+    Editorial Board
+    Author Guidelines
+    Contact Us
+    Facebook
+
+    Twitter
+    Purchase
+    Recommend to your Library
+    Advertising and Corporate Services
+    Journals Career Network
+
+Systematic Biology
+
+    Online ISSN 1076-836X
+    Print ISSN 1063-5157
+    Copyright © 2020 Society of Systematic Biologists
+
+    About Us
+    Contact Us
+    Careers
+    Help
+    Access & Purchase
+    Rights & Permissions
+    Open Access
+
+Connect
+
+    Join Our Mailing List
+    OUPblog
+    Twitter
+    Facebook
+    YouTube
+    Tumblr
+
+Resources
+
+    Authors
+    Librarians
+    Societies
+    Sponsors & Advertisers
+    Press & Media
+    Agents
+
+Explore
+
+    Shop OUP Academic
+    Oxford Dictionaries
+    Oxford Index
+    Epigeum
+    OUP Worldwide
+    University of Oxford
+
+Oxford University Press is a department of the University of Oxford. It furthers the University's objective of excellence in research, scholarship, and education by publishing worldwide
+Oxford University Press
+
+    Copyright © 2020 Oxford University Press
+    Cookie Policy
+    Privacy Policy
+    Legal Notice
+    Site Map
+    Accessibility
+    Get Adobe Reader
+
+Close
+This Feature Is Available To Subscribers Only
+
+Sign In or Create an Account
+Close
+
+This PDF is available to Subscribers Only
+View Article Abstract & Purchase Options
+
+For full access to this pdf, sign in to an existing account, or purchase an annual subscription.
+Close
+Scholarly IQ

@@ -1,0 +1,769 @@
+<!DOCTYPE html>
+<html dir="ltr" xmlns="http://www.w3.org/1999/xhtml" xmlns:mml="http://www.w3.org/1998/Math/MathML" class="modernizr-svg modernizr-mutationobserver modernizr-localstorage modernizr-inlinesvg modernizr-svgclippaths modernizr-matchmedia modernizr-flexbox js" lang="en"><head prefix="og: http://ogp.me/ns# article: http://ogp.me/ns/article# book: http://ogp.me/ns/book#"><script src="cbgapi.loaded_1" async=""></script><script src="cbgapi.loaded_0" async=""></script><script type="text/javascript" async="" src="6375.js"></script><script async="" src="blog_get_tweets_blogs.json"></script>
+    <!--[if IE]><![endif]-->
+<meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+<link rel="dns-prefetch" href="https://www.google-analytics.com/">
+<link rel="dns-prefetch" href="https://stats.g.doubleclick.net/">
+<link rel="dns-prefetch" href="https://d33xdlntwy0kbs.cloudfront.net/">
+<link rel="dns-prefetch" href="https://scholar.google.com/">
+<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=3, minimum-scale=1, user-scalable=yes">
+<link rel="shortcut icon" href="https://www.biorxiv.org/sites/default/files/images/favicon.ico" type="image/vnd.microsoft.icon">
+<link rel="alternate" type="text/plain" title="Full Text (Plain)" href="https://www.biorxiv.org/content/10.1101/490235v1.full.txt">
+<link rel="alternate" type="application/pdf" title="Full Text (PDF)" href="https://www.biorxiv.org/content/10.1101/490235v1.full.pdf">
+<meta name="type" content="article">
+<meta name="HW.identifier" content="/biorxiv/early/2018/12/07/490235.atom">
+<meta name="HW.pisa" content="biorxiv;490235v1">
+<meta name="DC.Format" content="text/html">
+<meta name="DC.Language" content="en">
+<meta name="DC.Title" content="Fast and accurate large multiple sequence alignments using root-to-leave regressive computation">
+<meta name="DC.Identifier" content="10.1101/490235">
+<meta name="DC.Date" content="2018-12-07">
+<meta name="DC.Publisher" content="Cold Spring Harbor Laboratory">
+<meta name="DC.Rights" content="© 2018, Posted by Cold Spring Harbor Laboratory. This pre-print is available under a Creative Commons License (Attribution-NonCommercial-NoDerivs 4.0 International), CC BY-NC-ND 4.0, as described at http://creativecommons.org/licenses/by-nc-nd/4.0/">
+<meta name="DC.AccessRights" content="restricted">
+<meta name="DC.Description" content="Inferences derived from large multiple alignments of biological sequences are critical to many areas of biology, including evolution, genomics, biochemistry, and structural biology. However, the complexity of the alignment problem imposes the use of approximate solutions. The most common is the progressive algorithm, which starts by aligning the most similar sequences, incorporating the remaining ones following the order imposed by a guide-tree. We developed and validated on protein sequences a regressive algorithm that works the other way around, aligning first the most dissimilar sequences. Our algorithm produces more accurate alignments than non-regressive methods, especially on datasets larger than 10,000 sequences. By design, it can run any existing alignment method in linear time thus allowing the scale-up required for extremely large genomic analyses.">
+<meta name="DC.Contributor" content="Edgar Garriga Nogales">
+<meta name="DC.Contributor" content="Paolo Di Tommaso">
+<meta name="DC.Contributor" content="Cedrik Magis">
+<meta name="DC.Contributor" content="Ionas Erb">
+<meta name="DC.Contributor" content="Hafid Laayouni">
+<meta name="DC.Contributor" content="Fyodor Kondrashov">
+<meta name="DC.Contributor" content="Evan Floden">
+<meta name="DC.Contributor" content="Cedric Notredame">
+<meta name="og:title" property="og:title" content="Fast and accurate large multiple sequence alignments using root-to-leave regressive computation">
+<meta name="og:url" property="og:url" content="https://www.biorxiv.org/content/10.1101/490235v1">
+<meta name="og:site_name" property="og:site_name" content="bioRxiv">
+<meta name="og:image" property="og:image" content="">
+<meta name="og:description" property="og:description" content="Inferences derived from large multiple alignments of biological sequences are critical to many areas of biology, including evolution, genomics, biochemistry, and structural biology. However, the complexity of the alignment problem imposes the use of approximate solutions. The most common is the progressive algorithm, which starts by aligning the most similar sequences, incorporating the remaining ones following the order imposed by a guide-tree. We developed and validated on protein sequences a regressive algorithm that works the other way around, aligning first the most dissimilar sequences. Our algorithm produces more accurate alignments than non-regressive methods, especially on datasets larger than 10,000 sequences. By design, it can run any existing alignment method in linear time thus allowing the scale-up required for extremely large genomic analyses.">
+<meta name="og:type" property="og:type" content="article">
+<meta name="article:published_time" content="2018-12-07">
+<meta name="article:section" content="New Results">
+<meta name="citation_title" content="Fast and accurate large multiple sequence alignments using root-to-leave regressive computation">
+<meta name="citation_abstract" content="&lt;p&gt;Inferences derived from large multiple alignments of biological sequences are critical to many areas of biology, including evolution, genomics, biochemistry, and structural biology. However, the complexity of the alignment problem imposes the use of approximate solutions. The most common is the progressive algorithm, which starts by aligning the most similar sequences, incorporating the remaining ones following the order imposed by a guide-tree. We developed and validated on protein sequences a regressive algorithm that works the other way around, aligning first the most dissimilar sequences. Our algorithm produces more accurate alignments than non-regressive methods, especially on datasets larger than 10,000 sequences. By design, it can run any existing alignment method in linear time thus allowing the scale-up required for extremely large genomic analyses.&lt;/p&gt;" lang="en">
+<meta name="citation_journal_title" content="bioRxiv">
+<meta name="citation_publisher" content="Cold Spring Harbor Laboratory">
+<meta name="citation_publication_date" content="2018/01/01">
+<meta name="citation_mjid" content="biorxiv;490235v1">
+<meta name="citation_id" content="490235v1">
+<meta name="citation_public_url" content="https://www.biorxiv.org/content/10.1101/490235v1">
+<meta name="citation_abstract_html_url" content="https://www.biorxiv.org/content/10.1101/490235v1.abstract">
+<meta name="citation_full_html_url" content="https://www.biorxiv.org/content/10.1101/490235v1.full">
+<meta name="citation_pdf_url" content="https://www.biorxiv.org/content/biorxiv/early/2018/12/07/490235.full.pdf">
+<meta name="citation_doi" content="10.1101/490235">
+<meta name="citation_section" content="New Results">
+<meta name="citation_firstpage" content="490235">
+<meta name="citation_author" content="Edgar Garriga Nogales">
+<meta name="citation_author_institution" content="Centre for Genomic Regulation (CRG);">
+<meta name="citation_author_email" content="edgar.garriga@crg.eu">
+<meta name="citation_author_orcid" content="http://orcid.org/0000-0002-9861-5294">
+<meta name="citation_author" content="Paolo Di Tommaso">
+<meta name="citation_author_institution" content="Centre for Genomic Regulation (CRG);">
+<meta name="citation_author_email" content="paolo.ditommaso@crg.eu">
+<meta name="citation_author_orcid" content="http://orcid.org/0000-0003-3220-0253">
+<meta name="citation_author" content="Cedrik Magis">
+<meta name="citation_author_institution" content="Centre for Genomic Regulation;">
+<meta name="citation_author_email" content="cedrik.magis@crg.eu">
+<meta name="citation_author_orcid" content="http://orcid.org/0000-0003-4368-445X">
+<meta name="citation_author" content="Ionas Erb">
+<meta name="citation_author_institution" content="Centre for Genomic Regulation (CRG);">
+<meta name="citation_author_email" content="ionas.erb@crg.eu">
+<meta name="citation_author_orcid" content="http://orcid.org/0000-0002-2331-9714">
+<meta name="citation_author" content="Hafid Laayouni">
+<meta name="citation_author_institution" content="Universitat Pompeu Fabra (UPF);">
+<meta name="citation_author_email" content="hafid.laayouni@upf.edu">
+<meta name="citation_author_orcid" content="http://orcid.org/0000-0003-1297-5078">
+<meta name="citation_author" content="Fyodor Kondrashov">
+<meta name="citation_author_institution" content="Institute of Science and Technology Austria">
+<meta name="citation_author_email" content="fyodor.kondrashov@ist.ac.at">
+<meta name="citation_author_orcid" content="http://orcid.org/0000-0001-8243-4694">
+<meta name="citation_author" content="Evan Floden">
+<meta name="citation_author_institution" content="Centre for Genomic Regulation (CRG);">
+<meta name="citation_author_email" content="evan.floden@crg.eu">
+<meta name="citation_author_orcid" content="http://orcid.org/0000-0002-5431-190X">
+<meta name="citation_author" content="Cedric Notredame">
+<meta name="citation_author_institution" content="Centre for Genomic Regulation (CRG);">
+<meta name="citation_author_email" content="cedric.notredame@crg.eu">
+<meta name="citation_author_orcid" content="http://orcid.org/0000-0003-1461-0988">
+<meta name="citation_date" content="2018-12-07">
+<meta name="description" content="bioRxiv - the preprint server for biology, operated by Cold Spring Harbor Laboratory, a research and educational institution">
+<meta name="generator" content="Drupal 7 (http://drupal.org)"><script type="application/json" id="user">[]</script>
+<link rel="canonical" href="https://www.biorxiv.org/content/10.1101/490235v1">
+<link rel="shortlink" href="https://www.biorxiv.org/node/145876">
+    <title>Fast and accurate large multiple sequence alignments using root-to-leave regressive computation | bioRxiv</title>  
+    <link type="text/css" rel="stylesheet" href="css__jMRAK66KMC1e4TQlwUNn3KiWVDC5AjueUAYEm1xBY_U__KSUjdT4jdc.css" media="all">
+<link type="text/css" rel="stylesheet" href="highwire.css" media="all">
+<link type="text/css" rel="stylesheet" href="css__qlYh2rDEXmsOlJKnxoaEiN2PoZU7YzDXSSTk6K1VAQE__t3VjqZkZ1Q.css" media="all">
+<link type="text/css" rel="stylesheet" href="jquery.css" media="all">
+<link type="text/css" rel="stylesheet" href="css__GFpBMW7A95ZNl4oKhiI_0u7WD_8tFHiDfbKIVNkYgis__CJDatnIuez.css" media="all">
+<style type="text/css" media="all">
+/* <![CDATA[ */
+#sliding-popup.sliding-popup-bottom,#sliding-popup.sliding-popup-bottom .eu-cookie-withdraw-banner,.eu-cookie-withdraw-tab{background:gray}#sliding-popup.sliding-popup-bottom.eu-cookie-withdraw-wrapper{background:transparent}#sliding-popup .popup-content #popup-text h1,#sliding-popup .popup-content #popup-text h2,#sliding-popup .popup-content #popup-text h3,#sliding-popup .popup-content #popup-text p,.eu-cookie-compliance-more-button,.eu-cookie-compliance-secondary-button,.eu-cookie-withdraw-tab{color:#fff !important}.eu-cookie-withdraw-tab{border-color:#fff}
+/* ]]> */
+</style>
+
+<!--[if lte IE 7]>
+<link type="text/css" rel="stylesheet" href="https://www.biorxiv.org/sites/default/files/advagg_css/css__ElJr3PIJEvw3qLXc1cnYiLj2G4KgDPSXFOfm6Phf8hw__JdWGm15cDWjsK6KrFlQVXQix9YgNeYysf22XZHj-Y-c__5SEfU_wEG09dKwY_TnFo9EtCqxKuu7HuubL_hYiRmZc.css" media="all" />
+<![endif]-->
+<link type="text/css" rel="stylesheet" href="css__B6tGdsQSt1vT8d8j-19-oS4FKJe83RrSNBkjPs9jfos__8TdH63E3mm.css" media="all">
+<link type="text/css" rel="stylesheet" href="css__QTzAniXZWfSSZyDXj0XqOzzkT7LKOfz4JmtvVSvK3FQ__F3sVKlGyHK.css" media="all">
+
+<!--[if (lt IE 9)&(!IEMobile)]>
+<link type="text/css" rel="stylesheet" href="https://www.biorxiv.org/sites/default/files/advagg_css/css__XH6bpcI0f2dImc-p674DLCZtWBGb-QwxJK1YexVGtno__vUceGprdo5nIhV6DH93X7fI3r8RcTJbChbas9TQXeW4__5SEfU_wEG09dKwY_TnFo9EtCqxKuu7HuubL_hYiRmZc.css" media="all" />
+<![endif]-->
+
+<!--[if gte IE 9]><!-->
+<link type="text/css" rel="stylesheet" href="css__2WBMox6sOrN42ss5lCnH7WWVRdFdJCxtTKnQJYRwTE4__yqNvNYLvMp.css" media="all">
+<!--<![endif]-->
+<link type="text/css" rel="stylesheet" href="css__pbvxxxyDuqZMYxNM2SU1d-hkNe9wepxREzRWuhkNTIw__5dJSaONz7i.css" media="all">
+<link type="text/css" rel="stylesheet" href="cshl_custom.css" media="all">
+    <script src="gtm.js" type="text/javascript" async=""></script><script async="" src="analytics.js"></script><script async="" src="prum.js"></script><script type="text/javascript">
+<!--//--><![CDATA[//><!--
+/*!
+ * yepnope1.5.4
+ * (c) WTFPL, GPLv2
+ */
+(function(a,b,c){function d(a){return"[object Function]"==o.call(a)}function e(a){return"string"==typeof a}function f(){}function g(a){return!a||"loaded"==a||"complete"==a||"uninitialized"==a}function h(){var a=p.shift();q=1,a?a.t?m(function(){("c"==a.t?B.injectCss:B.injectJs)(a.s,0,a.a,a.x,a.e,1)},0):(a(),h()):q=0}function i(a,c,d,e,f,i,j){function k(b){if(!o&&g(l.readyState)&&(u.r=o=1,!q&&h(),l.onload=l.onreadystatechange=null,b)){"img"!=a&&m(function(){t.removeChild(l)},50);for(var d in y[c])y[c].hasOwnProperty(d)&&y[c][d].onload()}}var j=j||B.errorTimeout,l=b.createElement(a),o=0,r=0,u={t:d,s:c,e:f,a:i,x:j};1===y[c]&&(r=1,y[c]=[]),"object"==a?l.data=c:(l.src=c,l.type=a),l.width=l.height="0",l.onerror=l.onload=l.onreadystatechange=function(){k.call(this,r)},p.splice(e,0,u),"img"!=a&&(r||2===y[c]?(t.insertBefore(l,s?null:n),m(k,j)):y[c].push(l))}function j(a,b,c,d,f){return q=0,b=b||"j",e(a)?i("c"==b?v:u,a,b,this.i++,c,d,f):(p.splice(this.i++,0,a),1==p.length&&h()),this}function k(){var a=B;return a.loader={load:j,i:0},a}var l=b.documentElement,m=a.setTimeout,n=b.getElementsByTagName("script")[0],o={}.toString,p=[],q=0,r="MozAppearance"in l.style,s=r&&!!b.createRange().compareNode,t=s?l:n.parentNode,l=a.opera&&"[object Opera]"==o.call(a.opera),l=!!b.attachEvent&&!l,u=r?"object":l?"script":"img",v=l?"script":u,w=Array.isArray||function(a){return"[object Array]"==o.call(a)},x=[],y={},z={timeout:function(a,b){return b.length&&(a.timeout=b[0]),a}},A,B;B=function(a){function b(a){var a=a.split("!"),b=x.length,c=a.pop(),d=a.length,c={url:c,origUrl:c,prefixes:a},e,f,g;for(f=0;f<d;f++)g=a[f].split("="),(e=z[g.shift()])&&(c=e(c,g));for(f=0;f<b;f++)c=x[f](c);return c}function g(a,e,f,g,h){var i=b(a),j=i.autoCallback;i.url.split(".").pop().split("?").shift(),i.bypass||(e&&(e=d(e)?e:e[a]||e[g]||e[a.split("/").pop().split("?")[0]]),i.instead?i.instead(a,e,f,g,h):(y[i.url]?i.noexec=!0:y[i.url]=1,f.load(i.url,i.forceCSS||!i.forceJS&&"css"==i.url.split(".").pop().split("?").shift()?"c":c,i.noexec,i.attrs,i.timeout),(d(e)||d(j))&&f.load(function(){k(),e&&e(i.origUrl,h,g),j&&j(i.origUrl,h,g),y[i.url]=2})))}function h(a,b){function c(a,c){if(a){if(e(a))c||(j=function(){var a=[].slice.call(arguments);k.apply(this,a),l()}),g(a,j,b,0,h);else if(Object(a)===a)for(n in m=function(){var b=0,c;for(c in a)a.hasOwnProperty(c)&&b++;return b}(),a)a.hasOwnProperty(n)&&(!c&&!--m&&(d(j)?j=function(){var a=[].slice.call(arguments);k.apply(this,a),l()}:j[n]=function(a){return function(){var b=[].slice.call(arguments);a&&a.apply(this,b),l()}}(k[n])),g(a[n],j,b,n,h))}else!c&&l()}var h=!!a.test,i=a.load||a.both,j=a.callback||f,k=j,l=a.complete||f,m,n;c(h?a.yep:a.nope,!!i),i&&c(i)}var i,j,l=this.yepnope.loader;if(e(a))g(a,0,l,0);else if(w(a))for(i=0;i<a.length;i++)j=a[i],e(j)?g(j,0,l,0):w(j)?B(j):Object(j)===j&&h(j,l);else Object(a)===a&&h(a,l)},B.addPrefix=function(a,b){z[a]=b},B.addFilter=function(a){x.push(a)},B.errorTimeout=1e4,null==b.readyState&&b.addEventListener&&(b.readyState="loading",b.addEventListener("DOMContentLoaded",A=function(){b.removeEventListener("DOMContentLoaded",A,0),b.readyState="complete"},0)),a.yepnope=k(),a.yepnope.executeStack=h,a.yepnope.injectJs=function(a,c,d,e,i,j){var k=b.createElement("script"),l,o,e=e||B.errorTimeout;k.src=a;for(o in d)k.setAttribute(o,d[o]);c=j?h:c||f,k.onreadystatechange=k.onload=function(){!l&&g(k.readyState)&&(l=1,c(),k.onload=k.onreadystatechange=null)},m(function(){l||(l=1,c(1))},e),i?k.onload():n.parentNode.insertBefore(k,n)},a.yepnope.injectCss=function(a,c,d,e,g,i){var e=b.createElement("link"),j,c=i?h:c||f;e.href=a,e.rel="stylesheet",e.type="text/css";for(j in d)e.setAttribute(j,d[j]);g||(n.parentNode.insertBefore(e,n),m(c,0))}})(this,document);
+
+//--><!]]>
+</script>
+<script type="text/javascript" src="modernizr.js"></script>
+<script type="text/javascript">
+<!--//--><![CDATA[//><!--
+yepnope({
+  test: Modernizr.matchmedia,
+  nope: '/sites/all/libraries/media-match/media.match.min.js'
+});
+//--><!]]>
+</script>
+<script type="text/javascript" src="js__jGfr-z48ZirLL12EDvReR-YRbZ4N6vPtvjD3lseF4Qk__jRmaEG3bS-J0.js"></script>
+<script type="text/javascript">
+<!--//--><![CDATA[//><!--
+var _prum=[['id', '52e95df3abe53d2e33000000'], ['mark', 'firstbyte',
+      (new Date()).getTime()]]; (function() {
+      var s=document.getElementsByTagName('script')[0],
+      p=document.createElement('script');
+      p.async='async'; p.src='//rum-static.pingdom.net/prum.min.js';s.parentNode.insertBefore(p,s);})();
+//--><!]]>
+</script>
+<script type="text/javascript" src="js___KyvuEvfmewWxdOLBXTYsSUo8Pfm_DijV6fWtGvSL_k__HSKkTgIr7nDc.js"></script>
+<script type="text/javascript" async="async" src="casa.js"></script>
+<script type="text/javascript" src="js__OGPr3wJNGw2BAY3Tj6TjIBwKmjQh5i-7muOaPrr0MFA__fCWiU_pDm6xz.js"></script>
+<script type="text/javascript" src="jquery.js"></script>
+<script type="text/javascript" src="js__hqoKSXYZqkcZkXP--ltzsy0Y3txW5TJBw6HT1khr30Y__6_HqNYoBVMxl.js"></script>
+<script type="text/javascript">
+<!--//--><![CDATA[//><!--
+window.MathJax = { menuSettings: { zoom: "Click" } };
+//--><!]]>
+</script>
+<script type="text/javascript" src="js__lrItkPGmrIuH-E_sdUWEK2i9eTqLar16BAHVxNTWqrc__FhtnljBrjuzY.js"></script>
+<script type="text/javascript">
+<!--//--><![CDATA[//><!--
+(function(i,s,o,g,r,a,m){i["GoogleAnalyticsObject"]=r;i[r]=i[r]||function(){(i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)})(window,document,"script","//www.google-analytics.com/analytics.js","ga");ga("create", "UA-45638026-1", {"cookieDomain":"auto"});ga("set", "page", location.pathname + location.search + location.hash);ga("send", "pageview");ga('create', 'UA-189672-38', 'auto', {'name': 'hwTracker'});
+ga('set', 'anonymizeIp', true);
+ga('hwTracker.send', 'pageview');
+//--><!]]>
+</script>
+<script type="text/javascript" src="js__1PtAOZ8x7l6QAi8D7X6Kj_Y7HcUOFzvWRvvYHUcCT98__U8IB92u_CnnG.js"></script>
+<script type="text/javascript">
+<!--//--><![CDATA[//><!--
+jQuery.extend(Drupal.settings,{"basePath":"\/","pathPrefix":"","ajaxPageState":{"theme":"jcore_1","theme_token":"nOWjEjh_SBHY3-tEekRUmrXFnVK95S8rxGgNVeov57U","css":{"modules\/system\/system.base.css":1,"modules\/system\/system.menus.css":1,"modules\/system\/system.messages.css":1,"modules\/system\/system.theme.css":1,"misc\/ui\/jquery.ui.core.css":1,"misc\/ui\/jquery.ui.theme.css":1,"misc\/ui\/jquery.ui.button.css":1,"misc\/ui\/jquery.ui.resizable.css":1,"misc\/ui\/jquery.ui.dialog.css":1,"misc\/ui\/jquery.ui.tooltip.css":1,"modules\/comment\/comment.css":1,"sites\/all\/modules\/contrib\/date\/date_api\/date.css":1,"sites\/all\/modules\/contrib\/date\/date_popup\/themes\/datepicker.1.7.css":1,"modules\/field\/theme\/field.css":1,"sites\/all\/modules\/highwire\/highwire\/highwire_draw\/css\/highwire-draw.css":1,"sites\/all\/modules\/highwire\/highwire\/highwire_folders\/highwire_folders.css":1,"sites\/all\/modules\/highwire\/highwire\/highwire_responsive\/css\/highwire-responsive.css":1,"sites\/all\/modules\/highwire\/highwire\/highwire_saved_searches\/highwire_saved_searches.css":1,"sites\/all\/modules\/highwire\/highwire\/highwire_user\/highwire_user.css":1,"modules\/node\/node.css":1,"modules\/search\/search.css":1,"modules\/user\/user.css":1,"modules\/forum\/forum.css":1,"sites\/all\/modules\/contrib\/views\/css\/views.css":1,"sites\/all\/modules\/contrib\/ckeditor\/css\/ckeditor.css":1,"sites\/all\/modules\/contrib\/colorbox\/styles\/default\/colorbox_style.css":1,"sites\/all\/modules\/contrib\/ctools\/css\/ctools.css":1,"sites\/all\/modules\/highwire\/highwire\/highwire.style.highwire.css":1,"sites\/all\/modules\/highwire\/highwire\/css\/nlm-elements.css":1,"sites\/all\/modules\/contrib\/panels\/css\/panels.css":1,"sites\/default\/modules\/biorxiv\/css\/biorxiv.css":1,"public:\/\/ctools\/css\/263bfdb18936424f0ade19d6bd885f37.css":1,"\/\/cdn.jsdelivr.net\/qtip2\/2.2.1\/jquery.qtip.min.css":1,"sites\/all\/modules\/contrib\/panels_ajax_tab\/css\/panels_ajax_tab.css":1,"sites\/all\/modules\/highwire\/highwire\/highwire.style.markup.css":1,"sites\/all\/modules\/highwire\/highwire\/plugins\/layouts\/highwire_2col_stacked\/highwire-2col-stacked.css":1,"sites\/all\/modules\/contrib\/forward\/forward.css":1,"sites\/all\/modules\/highwire\/highwire\/plugins\/content_types\/css\/highwire_share_link.css":1,"sites\/all\/modules\/highwire\/highwire\/plugins\/content_types\/css\/highwire_copy_permalink.css":1,"sites\/all\/modules\/contrib\/panels\/plugins\/layouts\/flexible\/flexible.css":1,"sites\/all\/modules\/highwire\/highwire\/highwire_collection\/css\/highwire_subject_collection.css":1,"sites\/all\/modules\/highwire\/highwire\/css\/highwire.highwire-list-expand.css":1,"public:\/\/ctools\/css\/bab59090150caf0c64e27afa1b36eef1.css":1,"sites\/all\/modules\/contrib\/panels\/plugins\/layouts\/onecol\/onecol.css":1,"sites\/all\/modules\/contrib\/eu_cookie_compliance\/css\/eu_cookie_compliance.css":1,"sites\/all\/modules\/highwire\/highwire\/highwire_theme_tools\/css\/font-hwicons.css":1,"sites\/all\/modules\/highwire\/highwire\/highwire_theme_tools\/css\/font-hwicons-glyphs.css":1,"0":1,"sites\/all\/themes\/highwire\/jcore_1\/eu_cookie_compliance.css":1,"sites\/all\/themes\/highwire\/jcore_1\/css\/font-awesome-ie7.css":1,"sites\/all\/themes\/contrib\/omega\/alpha\/css\/alpha-reset.css":1,"sites\/all\/themes\/contrib\/omega\/alpha\/css\/alpha-mobile.css":1,"sites\/all\/themes\/contrib\/omega\/alpha\/css\/alpha-alpha.css":1,"sites\/all\/themes\/contrib\/omega\/omega\/css\/formalize.css":1,"sites\/all\/themes\/contrib\/omega\/omega\/css\/omega-text.css":1,"sites\/all\/themes\/contrib\/omega\/omega\/css\/omega-branding.css":1,"sites\/all\/themes\/contrib\/omega\/omega\/css\/omega-menu.css":1,"sites\/all\/themes\/contrib\/omega\/omega\/css\/omega-forms.css":1,"sites\/all\/modules\/highwire\/highwire\/css\/highwire-forms.css":1,"sites\/all\/themes\/highwire\/jcore_1\/css\/mobile-reset.css":1,"sites\/all\/themes\/highwire\/jcore_1\/css\/font-awesome.css":1,"sites\/all\/themes\/highwire\/jcore_1\/css\/forms.css":1,"sites\/all\/themes\/highwire\/jcore_1\/css\/global.css":1,"sites\/all\/themes\/highwire\/jcore_1\/css\/jquery-ui-elements.css":1,"sites\/all\/themes\/highwire\/jcore_1\/css\/text.css":1,"sites\/all\/themes\/highwire\/jcore_1\/css\/colors.css.less":1,"ie::normal::sites\/all\/themes\/highwire\/jcore_1\/css\/jcore-1-jcore-default.css":1,"ie::normal::sites\/all\/themes\/highwire\/jcore_1\/css\/jcore-1-jcore-default-normal.css":1,"ie::normal::sites\/all\/themes\/highwire\/jcore_1\/css\/grid\/jcore_default\/normal\/jcore-default-normal-30.css":1,"narrow::sites\/all\/themes\/highwire\/jcore_1\/css\/jcore-1-jcore-default.css":1,"narrow::sites\/all\/themes\/highwire\/jcore_1\/css\/jcore-1-jcore-default-narrow.css":1,"sites\/all\/themes\/highwire\/jcore_1\/css\/grid\/jcore_default\/narrow\/jcore-default-narrow-30.css":1,"normal::sites\/all\/themes\/highwire\/jcore_1\/css\/jcore-1-jcore-default.css":1,"normal::sites\/all\/themes\/highwire\/jcore_1\/css\/jcore-1-jcore-default-normal.css":1,"sites\/all\/themes\/highwire\/jcore_1\/css\/grid\/jcore_default\/normal\/jcore-default-normal-30.css":1,"wide::sites\/all\/themes\/highwire\/jcore_1\/css\/jcore-1-jcore-default.css":1,"wide::sites\/all\/themes\/highwire\/jcore_1\/css\/jcore-1-jcore-default-wide.css":1,"sites\/all\/themes\/highwire\/jcore_1\/css\/grid\/jcore_default\/wide\/jcore-default-wide-30.css":1,"sites\/default\/modules\/jnl_biorxiv_styles\/css\/biorxiv-styles.css.less":1,"https:\/\/d33xdlntwy0kbs.cloudfront.net\/cshl_custom.css":1},"js":{"sites\/all\/libraries\/enquire.js\/enquire.min.js":1,"sites\/all\/modules\/highwire\/highwire\/plugins\/content_types\/js\/highwire_panels_ajax_tab.js":1,"sites\/all\/modules\/highwire\/highwire\/plugins\/highwire_markup_process\/js\/highwire_openurl.js":1,"sites\/all\/modules\/highwire\/highwire\/plugins\/highwire_markup_process\/js\/highwire_google_scholar_sprinkle.js":1,"http:\/\/d33xdlntwy0kbs.cloudfront.net\/cshl_custom.js":1,"sites\/all\/modules\/contrib\/eu_cookie_compliance\/js\/eu_cookie_compliance.js":1,"sites\/all\/libraries\/modernizr\/modernizr.min.js":1,"sites\/all\/modules\/contrib\/jquery_update\/replace\/jquery\/1.8\/jquery.min.js":1,"misc\/jquery.once.js":1,"misc\/drupal.js":1,"sites\/all\/modules\/contrib\/jquery_update\/replace\/ui\/ui\/minified\/jquery.ui.core.min.js":1,"sites\/all\/modules\/contrib\/jquery_update\/replace\/ui\/ui\/minified\/jquery.ui.widget.min.js":1,"sites\/all\/modules\/contrib\/jquery_update\/replace\/ui\/ui\/minified\/jquery.ui.button.min.js":1,"sites\/all\/modules\/contrib\/jquery_update\/replace\/ui\/ui\/minified\/jquery.ui.mouse.min.js":1,"sites\/all\/modules\/contrib\/jquery_update\/replace\/ui\/ui\/minified\/jquery.ui.draggable.min.js":1,"sites\/all\/modules\/contrib\/jquery_update\/replace\/ui\/ui\/minified\/jquery.ui.position.min.js":1,"sites\/all\/modules\/contrib\/jquery_update\/replace\/ui\/ui\/minified\/jquery.ui.resizable.min.js":1,"sites\/all\/modules\/contrib\/jquery_update\/replace\/ui\/ui\/minified\/jquery.ui.dialog.min.js":1,"sites\/all\/modules\/contrib\/jquery_update\/replace\/ui\/ui\/minified\/jquery.ui.tooltip.min.js":1,"sites\/all\/modules\/contrib\/eu_cookie_compliance\/js\/jquery.cookie-1.4.1.min.js":1,"sites\/all\/modules\/highwire\/highwire\/js\/highwire.equal-heights.js":1,"sites\/all\/modules\/highwire\/highwire\/js\/highwire.panels-ajax-tab.js":1,"sites\/default\/modules\/jnl_biorxiv_styles\/js\/biorxiv-scripts.js":1,"sites\/all\/libraries\/colorbox\/jquery.colorbox-min.js":1,"sites\/all\/modules\/contrib\/colorbox\/js\/colorbox.js":1,"sites\/all\/modules\/contrib\/colorbox\/styles\/default\/colorbox_style.js":1,"https:\/\/scholar.google.com\/scholar_js\/casa.js":1,"sites\/all\/modules\/highwire\/highwire\/highwire_log\/highwire_log.js":1,"sites\/all\/modules\/highwire\/highwire\/highwire_nps_survey\/js\/nps_survey.js":1,"sites\/all\/modules\/highwire\/highwire\/highwire_user\/js\/highwire_user_meta.js":1,"sites\/all\/modules\/contrib\/panels\/js\/panels.js":1,"\/\/cdn.jsdelivr.net\/qtip2\/2.2.1\/jquery.qtip.min.js":1,"sites\/all\/modules\/highwire\/highwire\/js\/highwire.article-citation-author-tooltip.js":1,"sites\/all\/modules\/contrib\/panels_ajax_tab\/js\/panels_ajax_tab.js":1,"sites\/all\/modules\/highwire\/highwire\/plugins\/highwire_markup_process\/js\/highwire_article_reference_popup.js":1,"sites\/all\/modules\/highwire\/highwire\/plugins\/highwire_markup_process\/js\/highwire_at_symbol.js":1,"sites\/default\/modules\/contrib\/disqus\/disqus.js":1,"misc\/textarea.js":1,"sites\/all\/modules\/highwire\/highwire\/plugins\/content_types\/js\/highwire_share_dialog.js":1,"sites\/all\/modules\/highwire\/highwire\/plugins\/content_types\/js\/clipboard.min.js":1,"sites\/all\/modules\/highwire\/highwire\/plugins\/content_types\/js\/highwire_clipboard.js":1,"sites\/all\/modules\/highwire\/highwire\/highwire_citation\/plugins\/content_types\/js\/highwire_citation_export.js":1,"sites\/all\/modules\/highwire\/highwire\/plugins\/content_types\/js\/minipanel_dialog_link.js":1,"sites\/all\/modules\/contrib\/service_links\/js\/twitter_button.js":1,"sites\/all\/modules\/contrib\/service_links\/js\/facebook_like.js":1,"sites\/all\/modules\/contrib\/service_links\/js\/google_plus_one.js":1,"sites\/all\/modules\/highwire\/highwire\/js\/highwire.highwire-list-expand.js":1,"sites\/all\/modules\/contrib\/google_analytics\/googleanalytics.js":1,"sites\/all\/themes\/highwire\/jcore_1\/js\/theme-scripts.js":1,"sites\/all\/themes\/contrib\/omega\/omega\/js\/jquery.formalize.js":1,"sites\/all\/themes\/contrib\/omega\/omega\/js\/omega-mediaqueries.js":1,"sites\/all\/themes\/contrib\/omega\/omega\/js\/omega-equalheights.js":1,"sites\/all\/modules\/highwire\/highwire\/highwire_responsive\/js\/highwire-mediaqueries.js":1}},"colorbox":{"opacity":"0.85","current":"{current} of {total}","previous":"\u00ab Prev","next":"Next \u00bb","close":"Close","maxWidth":"98%","maxHeight":"98%","fixed":true,"mobiledetect":true,"mobiledevicewidth":"480px"},"highwire":{"nid":"145876","apath":"\/biorxiv\/early\/2018\/12\/07\/490235.atom","pisa":"biorxiv;490235v1","processed":["highwire_math"],"markup":[{"requested":"full-text","variant":"full-text","view":"full","pisa":"biorxiv;490235v1"}],"modal_window_width":"560","share_modal_width":"560","share_modal_title":"Share this Article"},"jcarousel":{"ajaxPath":"\/jcarousel\/ajax\/views"},"instances":"{\u0022highwire_abstract_tooltip\u0022:{\u0022content\u0022:{\u0022text\u0022:\u0022\u0022},\u0022style\u0022:{\u0022tip\u0022:{\u0022width\u0022:20,\u0022height\u0022:20,\u0022border\u0022:1,\u0022offset\u0022:0,\u0022corner\u0022:true},\u0022classes\u0022:\u0022qtip-custom hw-tooltip hw-abstract-tooltip qtip-shadow qtip-rounded\u0022,\u0022classes_custom\u0022:\u0022hw-tooltip hw-abstract-tooltip\u0022},\u0022position\u0022:{\u0022at\u0022:\u0022right center\u0022,\u0022my\u0022:\u0022left center\u0022,\u0022viewport\u0022:true,\u0022adjust\u0022:{\u0022method\u0022:\u0022shift\u0022}},\u0022show\u0022:{\u0022event\u0022:\u0022mouseenter click \u0022,\u0022solo\u0022:true},\u0022hide\u0022:{\u0022event\u0022:\u0022mouseleave \u0022,\u0022fixed\u0022:1,\u0022delay\u0022:\u0022100\u0022}},\u0022highwire_author_tooltip\u0022:{\u0022content\u0022:{\u0022text\u0022:\u0022\u0022},\u0022style\u0022:{\u0022tip\u0022:{\u0022width\u0022:15,\u0022height\u0022:15,\u0022border\u0022:1,\u0022offset\u0022:0,\u0022corner\u0022:true},\u0022classes\u0022:\u0022qtip-custom hw-tooltip hw-author-tooltip qtip-shadow qtip-rounded\u0022,\u0022classes_custom\u0022:\u0022hw-tooltip hw-author-tooltip\u0022},\u0022position\u0022:{\u0022at\u0022:\u0022top center\u0022,\u0022my\u0022:\u0022bottom center\u0022,\u0022viewport\u0022:true,\u0022adjust\u0022:{\u0022method\u0022:\u0022\u0022}},\u0022show\u0022:{\u0022event\u0022:\u0022mouseenter \u0022,\u0022solo\u0022:true},\u0022hide\u0022:{\u0022event\u0022:\u0022mouseleave \u0022,\u0022fixed\u0022:1,\u0022delay\u0022:\u0022100\u0022}},\u0022highwire_reflinks_tooltip\u0022:{\u0022content\u0022:{\u0022text\u0022:\u0022\u0022},\u0022style\u0022:{\u0022tip\u0022:{\u0022width\u0022:15,\u0022height\u0022:15,\u0022border\u0022:1,\u0022mimic\u0022:\u0022top center\u0022,\u0022offset\u0022:0,\u0022corner\u0022:true},\u0022classes\u0022:\u0022qtip-custom hw-tooltip hw-ref-link-tooltip qtip-shadow qtip-rounded\u0022,\u0022classes_custom\u0022:\u0022hw-tooltip hw-ref-link-tooltip\u0022},\u0022position\u0022:{\u0022at\u0022:\u0022bottom left\u0022,\u0022my\u0022:\u0022top left\u0022,\u0022viewport\u0022:true,\u0022adjust\u0022:{\u0022method\u0022:\u0022flip\u0022}},\u0022show\u0022:{\u0022event\u0022:\u0022mouseenter \u0022,\u0022solo\u0022:true},\u0022hide\u0022:{\u0022event\u0022:\u0022mouseleave \u0022,\u0022fixed\u0022:1,\u0022delay\u0022:\u0022100\u0022}}}","qtipDebug":"{\u0022leaveElement\u0022:0}","panel_ajax_tab":{"path":"sites\/all\/modules\/contrib\/panels_ajax_tab"},"disqus":{"domain":"biorxivstage","url":"https:\/\/www.biorxiv.org\/content\/10.1101\/490235v1","title":"Fast and accurate large multiple sequence alignments using root-to-leave regressive computation","identifier":"node\/145876"},"panels_ajax_pane":{"new-40":"{\u0022encrypted\u0022:\u0022{\\\u0022encrypted\\\u0022:\\\u0022u+ZjuOoIUkW487PhmKq7i8nXhF6LDPzjuqjPsmsFT8CPZ8HlPWzBSzk8mdtcrwQn6M7n65XXh9KUkU1uTdj8CI9sGr+6RKhIAGhUPSfqvQ+8PUbNbcvKbS5SejRFiEbcbmIArLPCyYTr6Ue9vdwz+gQX7tK6fDbYE0RpwL9hxkLwiw3W7e0OmXyBzdwbLpfbU2AvXwyt2wJZkBYgnfGGPOJxKdcL0tb2hFSAB4LpXVmnbpiRWnU4fPFDM2EVi6NgA7y7J5JULB5S6zRyfmFqXWNiMHMQW0LH9p5kD+fI9OVb0NfiShaZxakzap6Wxlb3Be0snqMF6\\\\\\\/G394go8jUXVHKzAbVhMT7bV5S4JkB+vIen6F8IwKyR7nZZx35gSPhrQxnzEvj41p1giqE6bwdRr81MwiU5CgargWRgFAec1Op\\\\\\\/tdOsbXq7pHabsxmzL0sDd3++OgRXW1C8u9h9VaxqvGuGF5ril5k5fRD\\\\\\\/ZDhEa8duGYF9Mtj2JlIPZlFWIUN8ipyEm4ZXqzW4J+UDJqlRFTsXZCu1rs5S6shSyiWoKGyzNynara5pB6A7j7lH+EVndqqxol0Rtyp7i3Wb0rLHbYedHlzPl6E19XXfzkMARlzvVFUMeroN9r8LYSfvhlvKl6o8Yl\\\\\\\/oQ0yGc6YVCNimtBT4JYrb7aivz4Ifh26Gbup5aCmmlrvArF62XhBRjVk\\\\\\\/uPXxwf6ssY5ZM57Xpn18gMR3f1XNlOiB7LT4nncn7dzB+uHvCnRa5gWGROf01\\\\\\\/vLaIWsmtnzA2fns1NfmvR7TmmlCxtYRZLnqjPKJPWcqYoehLBaaMMxdhG0pcXy2AbFBEEBX+NXs\\\\\\\/5R37C9JZOXoe49dvh3u0SEXLe6IuU2axyDYxG6ZYvqtk5dcEKyjm+5mBtY5FMexueRSzMqDnDQ5+utRQqHhkgc6zCOcM9gpL3wjvFkzeX8VzP\\\\\\\/35lusM\\\\\\\/0bTAuRK+zjEazXITjIgwkyPRi+zW1+fkZDHFfaD+zZcsyZFtbXKo10mWEa1wU1llPmHarjzYTOJSJHpF375XwZSifujhkb3VmFW2tPHztyspY253SxPwpZ84RRWEwfG6Xvtj2KVbQf1bEO\\\\\\\/5G30HEMEvm6I54MOljfWb7IJMRX8++hWS8Yo8VAfEpzBJOMwjdShH601HAhcfE\\\\\\\/MLepjx+ZLnJ6m\\\\\\\/5qHZRhQbjzaUh05xfpjVxIgb\\\\\\\/GAJiKvLGzuJf5bUhvIuax+4GRvF3gIeUOIcVyFE0WzW1JXE3IHb9tUpwAdBAUx0xd7KwlX3s4mOFYdtg3bOa0ryD0mUjXW41UZv1YLw5c6QnqqP5QHr45V0=\\\u0022,\\\u0022iv\\\u0022:\\\u0022ZY2yrMsWYVyBl0N9qsH0SA==\\\u0022,\\\u0022salt\\\u0022:\\\u0022f9d8845712f72c9fee5db7d9ff111eab\\\u0022}\u0022,\u0022hmac\u0022:\u0022d6834182c05f42e98ea1939d4447199efc99db71c28986d2379d73bc6d48aec6\u0022}"},"urlIsAjaxTrusted":{"\/content\/10.1101\/490235v1.full":true},"ws_fl":{"width":100,"height":21},"ws_gpo":{"size":"","annotation":"","lang":"","callback":"","width":300},"color":{"logo":"https:\/\/www.biorxiv.org\/sites\/default\/files\/bioRxiv_article.jpg"},"highwire_list_expand":{"is_collapsed":"1"},"highwireResponsive":{"enquire_enabled":1,"breakpoints_configured":1,"breakpoints":{"zero":"all and (min-width: 0px)","xsmall":"all and (min-width: 380px)","narrow":"all and (min-width: 768px) and (min-device-width: 768px), (max-device-width: 800px) and (min-width: 768px) and (orientation:landscape)","normal":"all and (min-width: 980px) and (min-device-width: 980px), all and (max-device-width: 1024px) and (min-width: 1024px) and (orientation:landscape)","wide":"all and (min-width: 1220px)"}},"eu_cookie_compliance":{"popup_enabled":1,"popup_agreed_enabled":0,"popup_hide_agreed":0,"popup_clicking_confirmation":1,"popup_scrolling_confirmation":false,"popup_html_info":"\u003Cdiv\u003E\n  \u003Cdiv class =\u0022popup-content info\u0022\u003E\n    \u003Cdiv id=\u0022popup-text\u0022\u003E\n      \u003Cp\u003EWe use cookies on this site to enhance your user experience. By clicking any link on this page you are giving your consent for us to set cookies.\u003C\/p\u003E\n    \u003C\/div\u003E\n    \u003Cdiv id=\u0022popup-buttons\u0022\u003E\n      \u003Cbutton type=\u0022button\u0022 class=\u0022agree-button eu-cookie-compliance-default-button\u0022\u003EContinue\u003C\/button\u003E\n                    \u003Cbutton type=\u0022button\u0022 class=\u0022find-more-button eu-cookie-compliance-more-button\u0022\u003EFind out more\u003C\/button\u003E\n          \u003C\/div\u003E\n  \u003C\/div\u003E\n\u003C\/div\u003E","use_mobile_message":false,"mobile_popup_html_info":"\u003Cdiv\u003E\n  \u003Cdiv class =\u0022popup-content info\u0022\u003E\n    \u003Cdiv id=\u0022popup-text\u0022\u003E\n          \u003C\/div\u003E\n    \u003Cdiv id=\u0022popup-buttons\u0022\u003E\n      \u003Cbutton type=\u0022button\u0022 class=\u0022agree-button eu-cookie-compliance-default-button\u0022\u003EContinue\u003C\/button\u003E\n                    \u003Cbutton type=\u0022button\u0022 class=\u0022find-more-button eu-cookie-compliance-more-button\u0022\u003EFind out more\u003C\/button\u003E\n          \u003C\/div\u003E\n  \u003C\/div\u003E\n\u003C\/div\u003E\n","mobile_breakpoint":"768","popup_html_agreed":"\u003Cdiv\u003E\n  \u003Cdiv class =\u0022popup-content agreed\u0022\u003E\n    \u003Cdiv id=\u0022popup-text\u0022\u003E\n      \u003Ch2\u003EThank you for accepting cookies\u003C\/h2\u003E\u003Cp\u003EYou can now hide this message or find out more about cookies.\u003C\/p\u003E    \u003C\/div\u003E\n    \u003Cdiv id=\u0022popup-buttons\u0022\u003E\n      \u003Cbutton type=\u0022button\u0022 class=\u0022hide-popup-button eu-cookie-compliance-hide-button\u0022\u003EHide\u003C\/button\u003E\n              \u003Cbutton type=\u0022button\u0022 class=\u0022find-more-button eu-cookie-compliance-more-button-thank-you\u0022 \u003EMore info\u003C\/button\u003E\n          \u003C\/div\u003E\n  \u003C\/div\u003E\n\u003C\/div\u003E","popup_use_bare_css":false,"popup_height":"auto","popup_width":"100%","popup_delay":1000,"popup_link":"\/help\/cookie-policy","popup_link_new_window":1,"popup_position":null,"popup_language":"en","store_consent":false,"better_support_for_screen_readers":0,"reload_page":0,"domain":"","popup_eu_only_js":0,"cookie_lifetime":"365","cookie_session":false,"disagree_do_not_show_popup":0,"method":"default","whitelisted_cookies":"","withdraw_markup":"\u003Cbutton type=\u0022button\u0022 class=\u0022eu-cookie-withdraw-tab\u0022\u003EPrivacy settings\u003C\/button\u003E\n\u003Cdiv class=\u0022eu-cookie-withdraw-banner\u0022\u003E\n  \u003Cdiv class=\u0022popup-content info\u0022\u003E\n    \u003Cdiv id=\u0022popup-text\u0022\u003E\n      \u003Cp\u003E\u0026lt;h2\u0026gt;We use cookies on this site to enhance your user experience\u0026lt;\/h2\u0026gt;\u0026lt;p\u0026gt;You have given your consent for us to set cookies.\u0026lt;\/p\u0026gt;\u003C\/p\u003E\n    \u003C\/div\u003E\n    \u003Cdiv id=\u0022popup-buttons\u0022\u003E\n      \u003Cbutton type=\u0022button\u0022 class=\u0022eu-cookie-withdraw-button\u0022\u003EWithdraw consent\u003C\/button\u003E\n    \u003C\/div\u003E\n  \u003C\/div\u003E\n\u003C\/div\u003E\n","withdraw_enabled":false},"googleanalytics":{"trackOutbound":1,"trackMailto":1,"trackDownload":1,"trackDownloadExtensions":"7z|aac|arc|arj|asf|asx|avi|bin|csv|doc(x|m)?|dot(x|m)?|exe|flv|gif|gz|gzip|hqx|jar|jpe?g|js|mp(2|3|4|e?g)|mov(ie)?|msi|msp|pdf|phps|png|ppt(x|m)?|pot(x|m)?|pps(x|m)?|ppam|sld(x|m)?|thmx|qtm?|ra(m|r)?|sea|sit|tar|tgz|torrent|txt|wav|wma|wmv|wpd|xls(x|m|b)?|xlt(x|m)|xlam|xml|z|zip","trackColorbox":1,"trackUrlFragments":1},"omega":{"layouts":{"primary":"normal","order":["narrow","normal","wide"],"queries":{"narrow":"all and (min-width: 768px) and (min-device-width: 768px), (max-device-width: 800px) and (min-width: 768px) and (orientation:landscape)","normal":"all and (min-width: 980px) and (min-device-width: 980px), all and (max-device-width: 1024px) and (min-width: 1024px) and (orientation:landscape)","wide":"all and (min-width: 1220px)"}}}});
+//--><!]]>
+</script>
+    <!--[if lt IE 9]><script src="http://html5shiv.googlecode.com/svn/trunk/html5.js"></script><![endif]-->
+  <script charset="utf-8" src="button.js"></script><link rel="prefetch" href="https://c.disquscdn.com/next/embed/styles/lounge.d49f53e192b9080ef8880a7c9b24f1c3.css"><link rel="prefetch" href="https://c.disquscdn.com/next/embed/common.bundle.c1c826ba467260790d5c05dc3cc453f8.js"><link rel="prefetch" href="https://c.disquscdn.com/next/embed/lounge.bundle.c8f0dc192ba789fde18d281769beb36d.js"><link rel="prefetch" href="https://disqus.com/next/config.js"></head>
+  <body class="html not-front not-logged-in page-node page-node- page-node-145876 node-type-highwire-article context-content hw-default-jcode-biorxiv hw-article-category-new-results disqus-processed omega-mediaqueries-processed omega-equalheights-processed hw-responsive-layout-normal eu-cookie-compliance-processed"><div id="omega-media-query-dummy"><style media="all">#omega-media-query-dummy { position: relative; z-index: -1; }</style><!--[if (lt IE 9)&(!IEMobile)]><style media="all">#omega-media-query-dummy { z-index: 1; }</style><![endif]--><style media="all and (min-width: 768px) and (min-device-width: 768px), (max-device-width: 800px) and (min-width: 768px) and (orientation:landscape)">#omega-media-query-dummy { z-index: 0; }</style><style media="all and (min-width: 980px) and (min-device-width: 980px), all and (max-device-width: 1024px) and (min-width: 1024px) and (orientation:landscape)">#omega-media-query-dummy { z-index: 1; }</style><style media="all and (min-width: 1220px)">#omega-media-query-dummy { z-index: 2; }</style></div>
+<!-- Google Tag Manager -->
+<noscript><iframe src="//www.googletagmanager.com/ns.html?id=GTM-M677548" height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
+<script type="text/javascript">(function(w,d,s,l,i){w[l]=w[l]||[];w[l].push({'gtm.start':new Date().getTime(),event:'gtm.js'});var f=d.getElementsByTagName(s)[0];var j=d.createElement(s);var dl=l!='dataLayer'?'&l='+l:'';j.src='//www.googletagmanager.com/gtm.js?id='+i+dl;j.type='text/javascript';j.async=true;f.parentNode.insertBefore(j,f);})(window,document,'script','dataLayer','GTM-M677548');</script>
+<!-- End Google Tag Manager -->
+    <div id="skip-link">
+      <a href="#main-content" class="element-invisible element-focusable">Skip to main content</a>
+    </div>
+        <div class="page clearfix page-box-shadows footer-borders panels-page panels-layout-jcore_2col" id="page">
+      <header id="section-header" class="section section-header">
+    
+  <div id="zone-branding" class="zone zone-branding clearfix print-display-block container-30">
+    <div class="grid-15 prefix-1 region region-branding print-display-block" id="region-branding">
+  <div class="region-inner region-branding-inner">
+        <div class="branding-data clearfix">
+            <div class="logo-img">
+        <a href="https://www.biorxiv.org/" rel="home" class="" data-icon-position="" data-hide-link-title="0"><img alt="bioRxiv" src="bioRxiv_article.jpg"></a>      </div>
+                </div>
+          </div>
+</div><div class="grid-11 suffix-1 region region-branding-second print-hidden" id="region-branding-second">
+  <div class="region-inner region-branding-second-inner">
+    <div class="block block-system block-menu block-main-menu block-system-main-menu odd block-without-title" id="block-system-main-menu">
+  <div class="block-inner clearfix">
+                
+    <div class="content clearfix">
+      <nav class="menubar-nav"><ul class="menu" role="menu"><li class="first leaf" role="menuitem"><a href="https://www.biorxiv.org/" title="" class="" data-icon-position="" data-hide-link-title="0">Home</a></li>
+<li class="leaf" role="menuitem"><a href="https://www.biorxiv.org/about-biorxiv" class="" data-icon-position="" data-hide-link-title="0">About</a></li>
+<li class="leaf" role="menuitem"><a href="https://www.biorxiv.org/submit-a-manuscript" class="" data-icon-position="" data-hide-link-title="0">Submit</a></li>
+<li class="last leaf" role="menuitem"><a href="https://www.biorxiv.org/content/alertsrss" title="" class="" data-icon-position="" data-hide-link-title="0">ALERTS / RSS</a></li>
+<li class="last leaf" role="menuitem" id="channels"><a href="#" data-hide-link-title="0">Channels</a><ul class="" style="display: none;"><li><a href="http://connect.biorxiv.org/relate/content/66">4D Nucleome</a></li><li><a href="http://connect.biorxiv.org/relate/content/10">Advances in Genome Biology and Technology (AGBT) General Meeting 2016 #AGBT16</a></li><li><a href="http://connect.biorxiv.org/relate/content/71">Allen Institute for Cell Science</a></li><li><a href="http://connect.biorxiv.org/relate/content/19">Biology of Genomes 2016 #BOG16 </a><a></a></li><li><a href="http://connect.biorxiv.org/relate/content/121">Chan Zuckerberg Biohub</a></li><li><a href="http://connect.biorxiv.org/relate/content/52">Drug Development and Clinical Therapeutics</a></li><li><a href="http://connect.biorxiv.org/relate/content/159">European Molecular Biology Laboratory (EMBL)</a></li><li><a href="http://connect.biorxiv.org/relate/content/88">Francis Crick Institute</a></li><li><a href="http://connect.biorxiv.org/relate/content/151">Harvard Program in Therapeutic Sciences</a></li><li><a href="http://connect.biorxiv.org/relate/content/8">IMO Workshop</a></li><li><a href="http://connect.biorxiv.org/relate/content/1">Mathematical Oncology</a></li><li><a href="http://connect.biorxiv.org/relate/content/116">Micron Oxford</a></li><li><a href="http://connect.biorxiv.org/relate/content/74">Simons Foundation Autism Research Initiative (SFARI)</a></li><li><a href="http://connect.biorxiv.org/relate/content/29">Society for Molecular Biology and Evolution #SMBE2016</a><a></a></li><li><a href="http://connect.biorxiv.org/relate/content/98">The Sainsbury Laboratory</a></li></ul></li></ul></nav>    </div>
+  </div>
+</div><div class="block block-panels-mini block-biorxiv-search-box block-panels-mini-biorxiv-search-box even block-without-title" id="block-panels-mini-biorxiv-search-box">
+  <div class="block-inner clearfix">
+                
+    <div class="content clearfix">
+      <div class="panel-display panel-1col clearfix" id="mini-panel-biorxiv_search_box">
+  <div class="panel-panel panel-col">
+    <div><div class="panel-pane pane-highwire-seach-quicksearch">
+  
+      
+  
+  <div class="pane-content">
+    <form class="highwire-quicksearch button-style-mini button-style-mini" action="/content/10.1101/490235v1.full" method="post" id="highwire-search-quicksearch-form-0" accept-charset="UTF-8"><div><div class="form-item form-item-label-invisible form-type-textfield form-item-keywords">
+  <label class="element-invisible" for="edit-keywords">Search for this keyword </label>
+ <input placeholder="Search" id="edit-keywords" name="keywords" size="60" maxlength="128" class="form-text" type="text">
+</div>
+<div class="button-wrapper button-mini"><i class="icon-search"></i><input data-icon-only="1" data-font-icon="icon-search" data-icon-position="after" id="edit-submit--2" name="op" value="Search" class="form-submit" type="submit"></div><input name="form_build_id" value="form-eFddt8FxZUWaIjRDGZvAB2mmNYQgBN4PgaxeSfTnXdI" type="hidden">
+<input name="form_id" value="highwire_search_quicksearch_form_0" type="hidden">
+</div></form>  </div>
+
+  
+  </div>
+<div class="panel-separator"></div><div class="panel-pane pane-custom pane-2 advanced-search-link">
+  
+      
+  
+  <div class="pane-content">
+    <a href="https://www.biorxiv.org/search">Advanced Search</a>  </div>
+
+  
+  </div>
+</div>
+  </div>
+</div>
+    </div>
+  </div>
+</div>  </div>
+</div>  </div>
+  
+  <div id="zone-header" class="zone zone-header clearfix container-30">
+  	      </div>
+</header>    
+      <section id="section-content" class="section section-content">
+    
+  <div id="zone-content" class="zone zone-content clearfix container-30">    
+        
+    <div class="grid-28 suffix-1 prefix-1 region region-content" id="region-content">
+  <div class="region-inner region-content-inner">
+    <a id="main-content"></a>
+                        <div class="block block-system block-main block-system-main odd block-without-title" id="block-system-main">
+  <div class="block-inner clearfix">
+                
+    <div class="content clearfix">
+      <div class="panel-display panels-960-layout jcore-2col-layout">
+	  
+  <div class="panel-row-wrapper clearfix">
+		
+		<div class="main-content-wrapper grid-17 suffix-1 alpha">
+			<div class="panel-panel panel-region-content">
+			  <div class="inside"><div class="panel-pane pane-highwire-article-citation">
+  
+      
+  
+  <div class="pane-content">
+    <div class="highwire-article-citation highwire-citation-type-highwire-article" data-node-nid="145876" id="node145876" data-pisa="biorxiv;490235v1" data-pisa-master="biorxiv;490235" data-apath="/biorxiv/early/2018/12/07/490235.atom" data-hw-author-tooltip-instance="highwire_author_tooltip"><div class="highwire-cite highwire-cite-highwire-article highwire-citation-biorxiv-article-top clearfix has-author-tooltip">
+
+      <span class="biorxiv-article-type">
+        New Results    </span>
+  
+        <span class="comment-count" style="float:right;" id="ccountx"><a href="#disqus_thread" style="font-size:90%;">Comment on this paper</a></span><h1 class="highwire-cite-title" id="page-title">Fast and accurate large multiple sequence alignments using root-to-leave regressive computation</h1>  
+      <div class="highwire-cite-authors"><span class="highwire-citation-authors"><span class="highwire-citation-author first hw-author-orcid-logo-wrapper" data-delta="0"><a href="http://orcid.org/0000-0002-9861-5294" target="_blank" class="hw-author-orcid-logo link-icon-only link-icon"><i class="hw-icon-orcid hw-icon-color-orcid"></i> <span class="title element-invisible">View ORCID Profile</span></a><span class="nlm-given-names">Edgar</span> <span class="nlm-surname">Garriga Nogales</span></span>, <span class="highwire-citation-author hw-author-orcid-logo-wrapper" data-delta="1"><a href="http://orcid.org/0000-0003-3220-0253" target="_blank" class="hw-author-orcid-logo link-icon-only link-icon"><i class="hw-icon-orcid hw-icon-color-orcid"></i> <span class="title element-invisible">View ORCID Profile</span></a><span class="nlm-given-names">Paolo</span> <span class="nlm-surname">Di Tommaso</span></span>, <span class="highwire-citation-author hw-author-orcid-logo-wrapper" data-delta="2"><a href="http://orcid.org/0000-0003-4368-445X" target="_blank" class="hw-author-orcid-logo link-icon-only link-icon"><i class="hw-icon-orcid hw-icon-color-orcid"></i> <span class="title element-invisible">View ORCID Profile</span></a><span class="nlm-given-names">Cedrik</span> <span class="nlm-surname">Magis</span></span>, <span class="highwire-citation-author hw-author-orcid-logo-wrapper" data-delta="3"><a href="http://orcid.org/0000-0002-2331-9714" target="_blank" class="hw-author-orcid-logo link-icon-only link-icon"><i class="hw-icon-orcid hw-icon-color-orcid"></i> <span class="title element-invisible">View ORCID Profile</span></a><span class="nlm-given-names">Ionas</span> <span class="nlm-surname">Erb</span></span>, <span class="highwire-citation-author hw-author-orcid-logo-wrapper" data-delta="4"><a href="http://orcid.org/0000-0003-1297-5078" target="_blank" class="hw-author-orcid-logo link-icon-only link-icon"><i class="hw-icon-orcid hw-icon-color-orcid"></i> <span class="title element-invisible">View ORCID Profile</span></a><span class="nlm-given-names">Hafid</span> <span class="nlm-surname">Laayouni</span></span>, <span class="highwire-citation-author hw-author-orcid-logo-wrapper" data-delta="5"><a href="http://orcid.org/0000-0001-8243-4694" target="_blank" class="hw-author-orcid-logo link-icon-only link-icon"><i class="hw-icon-orcid hw-icon-color-orcid"></i> <span class="title element-invisible">View ORCID Profile</span></a><span class="nlm-given-names">Fyodor</span> <span class="nlm-surname">Kondrashov</span></span>, <span class="highwire-citation-author hw-author-orcid-logo-wrapper" data-delta="6"><a href="http://orcid.org/0000-0002-5431-190X" target="_blank" class="hw-author-orcid-logo link-icon-only link-icon"><i class="hw-icon-orcid hw-icon-color-orcid"></i> <span class="title element-invisible">View ORCID Profile</span></a><span class="nlm-given-names">Evan</span> <span class="nlm-surname">Floden</span></span>, <span class="highwire-citation-author hw-author-orcid-logo-wrapper" data-delta="7"><a href="http://orcid.org/0000-0003-1461-0988" target="_blank" class="hw-author-orcid-logo link-icon-only link-icon"><i class="hw-icon-orcid hw-icon-color-orcid"></i> <span class="title element-invisible">View ORCID Profile</span></a><span class="nlm-given-names">Cedric</span> <span class="nlm-surname">Notredame</span></span></span></div>
+  
+      <div class="highwire-cite-metadata"><span class="highwire-cite-metadata-doi highwire-cite-metadata"><span class="label">doi:</span> https://doi.org/10.1101/490235 </span><div class="pub_jnl" style="padding-top:8px;font-size:10pt;line-height:1.25em;color:gray;">This article is a preprint and has not been peer-reviewed [<a href="https://www.biorxiv.org/content/what-unrefereed-preprint" target="_blank">what does this mean?</a>].</div></div>
+  
+  
+  </div>
+<div id="hw-article-author-popups-node145876" style="display: none;"><div class="author-tooltip-0"><div class="author-tooltip-name">Edgar Garriga Nogales</div><div class="author-tooltip-affiliation"><span class="author-tooltip-text"><span class="nlm-aff">
+				 Centre for Genomic Regulation (CRG);
+			</span></span></div><ul class="author-tooltip-find-more"><li class="author-tooltip-gs-link first"><a href="https://www.biorxiv.org/lookup/google-scholar?link_type=googlescholar&amp;gs_type=author&amp;author%5B0%5D=E.%2BGarriga%20Nogales" target="_blank" class="" data-icon-position="" data-hide-link-title="0">Find this author on Google Scholar</a></li><li class="author-tooltip-pubmed-link"><a href="https://www.biorxiv.org/lookup/external-ref?access_num=Garriga%20Nogales%20E&amp;link_type=AUTHORSEARCH" target="_blank" class="" data-icon-position="" data-hide-link-title="0">Find this author on PubMed</a></li><li class="author-site-search-link"><a href="https://www.biorxiv.org/search/author1%3AEdgar%2BGarriga%2BNogales" rel="nofollow" class="" data-icon-position="" data-hide-link-title="0">Search for this author on this site</a></li><li class="author-orcid-link last"><a href="http://orcid.org/0000-0002-9861-5294" target="_blank" class="" data-icon-position="" data-hide-link-title="0">ORCID record for Edgar Garriga Nogales</a></li></ul></div><div class="author-tooltip-1"><div class="author-tooltip-name">Paolo Di Tommaso</div><div class="author-tooltip-affiliation"><span class="author-tooltip-text"><span class="nlm-aff">
+				 Centre for Genomic Regulation (CRG);
+			</span></span></div><ul class="author-tooltip-find-more"><li class="author-tooltip-gs-link first"><a href="https://www.biorxiv.org/lookup/google-scholar?link_type=googlescholar&amp;gs_type=author&amp;author%5B0%5D=P.%2BDi%20Tommaso" target="_blank" class="" data-icon-position="" data-hide-link-title="0">Find this author on Google Scholar</a></li><li class="author-tooltip-pubmed-link"><a href="https://www.biorxiv.org/lookup/external-ref?access_num=Di%20Tommaso%20P&amp;link_type=AUTHORSEARCH" target="_blank" class="" data-icon-position="" data-hide-link-title="0">Find this author on PubMed</a></li><li class="author-site-search-link"><a href="https://www.biorxiv.org/search/author1%3APaolo%2BDi%2BTommaso" rel="nofollow" class="" data-icon-position="" data-hide-link-title="0">Search for this author on this site</a></li><li class="author-orcid-link last"><a href="http://orcid.org/0000-0003-3220-0253" target="_blank" class="" data-icon-position="" data-hide-link-title="0">ORCID record for Paolo Di Tommaso</a></li></ul></div><div class="author-tooltip-2"><div class="author-tooltip-name">Cedrik Magis</div><div class="author-tooltip-affiliation"><span class="author-tooltip-text"><span class="nlm-aff">
+				 Centre for Genomic Regulation;
+			</span></span></div><ul class="author-tooltip-find-more"><li class="author-tooltip-gs-link first"><a href="https://www.biorxiv.org/lookup/google-scholar?link_type=googlescholar&amp;gs_type=author&amp;author%5B0%5D=C.%2BMagis" target="_blank" class="" data-icon-position="" data-hide-link-title="0">Find this author on Google Scholar</a></li><li class="author-tooltip-pubmed-link"><a href="https://www.biorxiv.org/lookup/external-ref?access_num=Magis%20C&amp;link_type=AUTHORSEARCH" target="_blank" class="" data-icon-position="" data-hide-link-title="0">Find this author on PubMed</a></li><li class="author-site-search-link"><a href="https://www.biorxiv.org/search/author1%3ACedrik%2BMagis" rel="nofollow" class="" data-icon-position="" data-hide-link-title="0">Search for this author on this site</a></li><li class="author-orcid-link last"><a href="http://orcid.org/0000-0003-4368-445X" target="_blank" class="" data-icon-position="" data-hide-link-title="0">ORCID record for Cedrik Magis</a></li></ul></div><div class="author-tooltip-3"><div class="author-tooltip-name">Ionas Erb</div><div class="author-tooltip-affiliation"><span class="author-tooltip-text"><span class="nlm-aff">
+				 Centre for Genomic Regulation (CRG);
+			</span></span></div><ul class="author-tooltip-find-more"><li class="author-tooltip-gs-link first"><a href="https://www.biorxiv.org/lookup/google-scholar?link_type=googlescholar&amp;gs_type=author&amp;author%5B0%5D=I.%2BErb" target="_blank" class="" data-icon-position="" data-hide-link-title="0">Find this author on Google Scholar</a></li><li class="author-tooltip-pubmed-link"><a href="https://www.biorxiv.org/lookup/external-ref?access_num=Erb%20I&amp;link_type=AUTHORSEARCH" target="_blank" class="" data-icon-position="" data-hide-link-title="0">Find this author on PubMed</a></li><li class="author-site-search-link"><a href="https://www.biorxiv.org/search/author1%3AIonas%2BErb" rel="nofollow" class="" data-icon-position="" data-hide-link-title="0">Search for this author on this site</a></li><li class="author-orcid-link last"><a href="http://orcid.org/0000-0002-2331-9714" target="_blank" class="" data-icon-position="" data-hide-link-title="0">ORCID record for Ionas Erb</a></li></ul></div><div class="author-tooltip-4"><div class="author-tooltip-name">Hafid Laayouni</div><div class="author-tooltip-affiliation"><span class="author-tooltip-text"><span class="nlm-aff">
+				 Universitat Pompeu Fabra (UPF);
+			</span></span></div><ul class="author-tooltip-find-more"><li class="author-tooltip-gs-link first"><a href="https://www.biorxiv.org/lookup/google-scholar?link_type=googlescholar&amp;gs_type=author&amp;author%5B0%5D=H.%2BLaayouni" target="_blank" class="" data-icon-position="" data-hide-link-title="0">Find this author on Google Scholar</a></li><li class="author-tooltip-pubmed-link"><a href="https://www.biorxiv.org/lookup/external-ref?access_num=Laayouni%20H&amp;link_type=AUTHORSEARCH" target="_blank" class="" data-icon-position="" data-hide-link-title="0">Find this author on PubMed</a></li><li class="author-site-search-link"><a href="https://www.biorxiv.org/search/author1%3AHafid%2BLaayouni" rel="nofollow" class="" data-icon-position="" data-hide-link-title="0">Search for this author on this site</a></li><li class="author-orcid-link last"><a href="http://orcid.org/0000-0003-1297-5078" target="_blank" class="" data-icon-position="" data-hide-link-title="0">ORCID record for Hafid Laayouni</a></li></ul></div><div class="author-tooltip-5"><div class="author-tooltip-name">Fyodor Kondrashov</div><div class="author-tooltip-affiliation"><span class="author-tooltip-text"><span class="nlm-aff">
+				 Institute of Science and Technology Austria
+			</span></span></div><ul class="author-tooltip-find-more"><li class="author-tooltip-gs-link first"><a href="https://www.biorxiv.org/lookup/google-scholar?link_type=googlescholar&amp;gs_type=author&amp;author%5B0%5D=F.%2BKondrashov" target="_blank" class="" data-icon-position="" data-hide-link-title="0">Find this author on Google Scholar</a></li><li class="author-tooltip-pubmed-link"><a href="https://www.biorxiv.org/lookup/external-ref?access_num=Kondrashov%20F&amp;link_type=AUTHORSEARCH" target="_blank" class="" data-icon-position="" data-hide-link-title="0">Find this author on PubMed</a></li><li class="author-site-search-link"><a href="https://www.biorxiv.org/search/author1%3AFyodor%2BKondrashov" rel="nofollow" class="" data-icon-position="" data-hide-link-title="0">Search for this author on this site</a></li><li class="author-orcid-link last"><a href="http://orcid.org/0000-0001-8243-4694" target="_blank" class="" data-icon-position="" data-hide-link-title="0">ORCID record for Fyodor Kondrashov</a></li></ul></div><div class="author-tooltip-6"><div class="author-tooltip-name">Evan Floden</div><div class="author-tooltip-affiliation"><span class="author-tooltip-text"><span class="nlm-aff">
+				 Centre for Genomic Regulation (CRG);
+			</span></span></div><ul class="author-tooltip-find-more"><li class="author-tooltip-gs-link first"><a href="https://www.biorxiv.org/lookup/google-scholar?link_type=googlescholar&amp;gs_type=author&amp;author%5B0%5D=E.%2BFloden" target="_blank" class="" data-icon-position="" data-hide-link-title="0">Find this author on Google Scholar</a></li><li class="author-tooltip-pubmed-link"><a href="https://www.biorxiv.org/lookup/external-ref?access_num=Floden%20E&amp;link_type=AUTHORSEARCH" target="_blank" class="" data-icon-position="" data-hide-link-title="0">Find this author on PubMed</a></li><li class="author-site-search-link"><a href="https://www.biorxiv.org/search/author1%3AEvan%2BFloden" rel="nofollow" class="" data-icon-position="" data-hide-link-title="0">Search for this author on this site</a></li><li class="author-orcid-link last"><a href="http://orcid.org/0000-0002-5431-190X" target="_blank" class="" data-icon-position="" data-hide-link-title="0">ORCID record for Evan Floden</a></li></ul></div><div class="author-tooltip-7"><div class="author-tooltip-name">Cedric Notredame</div><div class="author-tooltip-affiliation"><span class="author-tooltip-text"><span class="nlm-aff">
+				 Centre for Genomic Regulation (CRG);
+			</span></span></div><ul class="author-tooltip-find-more"><li class="author-tooltip-gs-link first"><a href="https://www.biorxiv.org/lookup/google-scholar?link_type=googlescholar&amp;gs_type=author&amp;author%5B0%5D=C.%2BNotredame" target="_blank" class="" data-icon-position="" data-hide-link-title="0">Find this author on Google Scholar</a></li><li class="author-tooltip-pubmed-link"><a href="https://www.biorxiv.org/lookup/external-ref?access_num=Notredame%20C&amp;link_type=AUTHORSEARCH" target="_blank" class="" data-icon-position="" data-hide-link-title="0">Find this author on PubMed</a></li><li class="author-site-search-link"><a href="https://www.biorxiv.org/search/author1%3ACedric%2BNotredame" rel="nofollow" class="" data-icon-position="" data-hide-link-title="0">Search for this author on this site</a></li><li class="author-orcid-link"><a href="http://orcid.org/0000-0003-1461-0988" target="_blank" class="" data-icon-position="" data-hide-link-title="0">ORCID record for Cedric Notredame</a></li><li class="author-corresp-email-link last"><span>For correspondence: <a href="mailto:cedric.notredame@crg.eu" class="" data-icon-position="" data-hide-link-title="0">cedric.notredame@crg.eu</a></span></li></ul></div></div></div>  </div>
+
+  
+  </div>
+<div class="panel-separator"></div><div class="panel-pane pane-highwire-panel-tabs pane-panels-ajax-tab-tabs panels-ajax-tabs-once-processed">
+  
+      
+  
+  <div class="pane-content">
+    <div class="item-list"><ul class="tabs inline panels-ajax-tab"><li class="first"><a href="https://www.biorxiv.org/content/10.1101/490235v1" class="panels-ajax-tab-tab panels-ajax-tabs-once-processed hw-panels-ajax-tabs-once-processed" data-panel-name="biorxiv_tab_art" data-target-id="highwire_article_tabs" data-entity-context="node:145876" data-trigger="" data-url-enabled="1" style="cursor: pointer;">Abstract</a><a href="https://www.biorxiv.org/panels_ajax_tab/biorxiv_tab_art/node:145876/1" rel="nofollow" style="display:none" class="js-crawler-link"></a></li><li class="active"><a href="https://www.biorxiv.org/content/10.1101/490235v1.full-text" class="panels-ajax-tab-tab panels-ajax-tabs-once-processed panels-ajax-tabs-first-loaded hw-panels-ajax-tabs-once-processed" data-panel-name="article_tab_full_text" data-target-id="highwire_article_tabs" data-entity-context="node:145876" data-trigger="full-text" data-url-enabled="1" style="cursor: pointer;">Full Text</a><a href="https://www.biorxiv.org/panels_ajax_tab/article_tab_full_text/node:145876/1" rel="nofollow" style="display:none" class="js-crawler-link"></a></li><li><a href="https://www.biorxiv.org/content/10.1101/490235v1.article-info" class="panels-ajax-tab-tab panels-ajax-tabs-once-processed hw-panels-ajax-tabs-once-processed" data-panel-name="biorxiv_tab_info" data-target-id="highwire_article_tabs" data-entity-context="node:145876" data-trigger="article-info" data-url-enabled="1" style="cursor: pointer;">Info/History</a><a href="https://www.biorxiv.org/panels_ajax_tab/biorxiv_tab_info/node:145876/1" rel="nofollow" style="display:none" class="js-crawler-link"></a></li><li><a href="https://www.biorxiv.org/content/10.1101/490235v1.article-metrics" class="panels-ajax-tab-tab panels-ajax-tabs-once-processed hw-panels-ajax-tabs-once-processed" data-panel-name="article_tab_metrics" data-target-id="highwire_article_tabs" data-entity-context="node:145876" data-trigger="article-metrics" data-url-enabled="1" style="cursor: pointer;">Metrics</a><a href="https://www.biorxiv.org/panels_ajax_tab/article_tab_metrics/node:145876/1" rel="nofollow" style="display:none" class="js-crawler-link"></a></li><li><a href="https://www.biorxiv.org/content/10.1101/490235v1.supplementary-material" class="panels-ajax-tab-tab panels-ajax-tabs-once-processed hw-panels-ajax-tabs-once-processed" data-panel-name="biorxiv_tab_data" data-target-id="highwire_article_tabs" data-entity-context="node:145876" data-trigger="supplementary-material" data-url-enabled="1" style="cursor: pointer;">Supplementary material</a><a href="https://www.biorxiv.org/panels_ajax_tab/biorxiv_tab_data/node:145876/1" rel="nofollow" style="display:none" class="js-crawler-link"></a></li><li class="last"><a href="https://www.biorxiv.org/content/early/2018/12/07/490235.full.pdf" class="panels-ajax-tab-tab panels-ajax-tabs-once-processed hw-panels-ajax-tabs-once-processed" data-panel-name="biorxiv_tab_pdf" data-target-id="highwire_article_tabs" data-entity-context="node:145876" data-trigger="full.pdf+html" data-url-enabled="1" style="cursor: pointer;"><i class="icon-file-alt"></i> Preview PDF</a><a href="https://www.biorxiv.org/panels_ajax_tab/biorxiv_tab_pdf/node:145876/1" rel="nofollow" style="display:none" class="js-crawler-link"></a></li></ul></div>  </div>
+
+  
+  </div>
+<div class="panel-separator"></div><div class="panel-pane pane-highwire-panel-tabs-container">
+  
+      
+  
+  <div class="pane-content">
+    <div data-panels-ajax-tab-preloaded="article_tab_full_text" id="panels-ajax-tab-container-highwire_article_tabs" class="panels-ajax-tab-container"><div class="panels-ajax-tab-loading" style="display:none"><img class="loading" src="loading.gif" alt="Loading" title="Loading"></div><div class="panels-ajax-tab-wrap-article_tab_full_text"><div class="panel-display panel-1col clearfix">
+  <div class="panel-panel panel-col">
+    <div><div class="panel-pane pane-highwire-markup">
+  
+      
+  
+  <div class="pane-content">
+    <div class="highwire-markup"><div xmlns="http://www.w3.org/1999/xhtml" id="content-block-markup" data-highwire-cite-ref-tooltip-instance="highwire_reflinks_tooltip" xmlns:xhtml="http://www.w3.org/1999/xhtml"><div class="article fulltext-view "><span class="highwire-journal-article-marker-start"></span><div class="section abstract" id="abstract-1"><h2>Abstract</h2><p id="p-2">Inferences
+ derived from large multiple alignments of biological sequences are 
+critical to many areas of biology, including evolution, genomics, 
+biochemistry, and structural biology. However, the complexity of the 
+alignment problem imposes the use of approximate solutions. The most 
+common is the progressive algorithm, which starts by aligning the most 
+similar sequences, incorporating the remaining ones following the order 
+imposed by a guide-tree. We developed and validated on protein sequences
+ a regressive algorithm that works the other way around, aligning first 
+the most dissimilar sequences. Our algorithm produces more accurate 
+alignments than non-regressive methods, especially on datasets larger 
+than 10,000 sequences. By design, it can run any existing alignment 
+method in linear time thus allowing the scale-up required for extremely 
+large genomic analyses.</p></div><span class="highwire-journal-article-marker-end"></span></div><span id="related-urls"></span></div></div>  </div>
+
+  
+  </div>
+</div>
+  </div>
+</div>
+</div></div>  </div>
+
+  
+  </div>
+<div class="panel-separator"></div><div class="panel-pane pane-disqus-comment">
+  
+      
+  
+  <div class="pane-content">
+    <div id="disqus_thread"><iframe id="dsq-app8444" name="dsq-app8444" allowtransparency="true" scrolling="no" tabindex="0" title="Disqus" style="width: 1px ! important; min-width: 100% ! important; border: medium none ! important; overflow: hidden ! important; height: 389px ! important;" src="https://disqus.com/embed/comments/?base=default&amp;f=biorxivstage&amp;t_i=node%2F145876&amp;t_u=https%3A%2F%2Fwww.biorxiv.org%2Fcontent%2F10.1101%2F490235v1&amp;t_e=Fast%20and%20accurate%20large%20multiple%20sequence%20alignments%20using%20root-to-leave%20regressive%20computation&amp;t_d=Fast%20and%20accurate%20large%20multiple%20sequence%20alignments%20using%20root-to-leave%20regressive%20computation&amp;t_t=Fast%20and%20accurate%20large%20multiple%20sequence%20alignments%20using%20root-to-leave%20regressive%20computation&amp;s_o=default#version=598e4ac0f99187bfe3fea5e0e581031d" horizontalscrolling="no" verticalscrolling="no" width="100%" frameborder="0"></iframe></div>  </div>
+
+  
+  </div>
+<div class="panel-separator"></div><div class="panel-pane pane-highwire-back-to-top">
+  
+      
+  
+  <div class="pane-content">
+    <a href="#page" class="back-to-top" data-icon-position="" data-hide-link-title="0"><i class="icon-chevron-up"></i> Back to top</a>  </div>
+
+  
+  </div>
+</div>
+			</div>
+		</div>
+		
+		<div class="sidebar-right-wrapper grid-10 omega">
+			<div class="panel-panel panel-region-sidebar-right">
+			  <div class="inside"><div class="panel-pane pane-highwire-node-pager">
+  
+      
+  
+  <div class="pane-content">
+    <div class="pager highwire-pager pager-mini clearfix highwire-node-pager highwire-article-pager"><span class="pager-prev"><a href="https://www.biorxiv.org/content/10.1101/420851v2" title="Signaling incentive and drive in the primate ventral pallidum for motivational control of goal-directed action" rel="prev" class="pager-link-prev link-icon"><i class="icon-circle-arrow-left"></i> <span class="title">Previous</span></a></span><span class="pager-next"><a href="https://www.biorxiv.org/content/10.1101/538777v1" title="Mechanism of electroneutral sodium/proton antiporter from transition-path shooting" rel="next" class="pager-link-next link-icon-right link-icon"><span class="title">Next</span> <i class="icon-circle-arrow-right"></i></a></span></div>  </div>
+
+  
+  </div>
+<div class="panel-separator"></div><div class="panel-pane pane-custom pane-1">
+  
+      
+  
+  <div class="pane-content">
+    Posted&nbsp;December 07, 2018.  </div>
+
+  
+  </div>
+<div class="panel-separator"></div><div class="panel-pane pane-panels-mini pane-biorxiv-art-tools">
+  
+      
+  
+  <div class="pane-content">
+    <div id="mini-panel-biorxiv_art_tools" class="highwire-2col-stacked panel-display">
+	  
+  <div class="panel-row-wrapper clearfix">
+		<div class="content-left-wrapper content-column">
+          <div class="panel-panel panel-region-content-left">
+            <div class="inside"><div class="panel-pane pane-highwire-variant-link">
+  
+      
+  
+  <div class="pane-content">
+    <a href="https://www.biorxiv.org/content/biorxiv/early/2018/12/07/490235.full-text.pdf" target="_self" class="article-dl-pdf-link link-icon"><i class="icon-external-link-sign"></i> <span class="title">Download PDF</span></a>  </div>
+
+  
+  </div>
+<div class="panel-separator"></div><div class="panel-pane pane-biorxiv-supplementary-fragment">
+  
+      
+  
+  <div class="pane-content">
+    <p><a href="https://www.biorxiv.org/content/10.1101/490235v1.supplementary-material"><i class="icon-file"></i>Supplementary Material </a></p>  </div>
+
+  
+  </div>
+</div>
+          </div>
+        </div>
+        
+        <div class="content-right-wrapper content-column">
+          <div class="panel-panel panel-region-content-right">
+            <div class="inside"><div class="panel-pane pane-minipanel-dialog-link pane-biorxiv-art-email">
+  
+      
+  
+  <div class="pane-content">
+    <div class="minipanel-dialog-wrapper"><div class="minipanel-dialog-link-link"><a href="https://www.biorxiv.org/" oncontextmenu="javascript: return false;" class="minipanel-dialog-link-trigger minipanel-dialog-link-trigger-processed" title="Email this Article" data-icon-position="" data-hide-link-title="0"><i class="icon-envelope"></i> Email</a></div></div>  </div>
+
+  
+  </div>
+<div class="panel-separator"></div><div class="panel-pane pane-highwire-share-link highwire_clipboard_link_ajax" id="shareit">
+  
+      
+  
+  <div class="pane-content">
+    <a href="https://www.biorxiv.org/" class="link-icon"><i class="icon-share-alt"></i> <span class="title">Share</span></a>  </div>
+
+  
+  </div>
+<div class="panel-separator"></div><div class="panel-pane pane-panels-mini pane-biorxiv-share highwire_clipboard_form_ajax_shareit">
+  
+      
+  
+  <div class="pane-content">
+    
+<div class="panel-display omega-12-onecol" id="mini-panel-biorxiv_share">
+
+		  <div class="panel-panel grid-12 panel-region-preface">
+		  <div class="inside"><div class="panel-pane pane-highwire-article-citation">
+  
+      
+  
+  <div class="pane-content">
+    <div class="highwire-article-citation highwire-citation-type-highwire-article" data-node-nid="145876" id="node145876--2" data-pisa="biorxiv;490235v1" data-pisa-master="biorxiv;490235" data-apath="/biorxiv/early/2018/12/07/490235.atom"><div class="highwire-cite highwire-cite-highwire-article highwire-citation-biorxiv-article-pap-list clearfix">
+
+      <div class="highwire-cite-title">
+      <div class="highwire-cite-title">Fast and accurate large multiple sequence alignments using root-to-leave regressive computation</div>    </div>
+  
+      <div class="highwire-cite-authors"><span class="highwire-citation-authors"><span class="highwire-citation-author first" data-delta="0"><span class="nlm-given-names">Edgar</span> <span class="nlm-surname">Garriga Nogales</span></span>, <span class="highwire-citation-author" data-delta="1"><span class="nlm-given-names">Paolo</span> <span class="nlm-surname">Di Tommaso</span></span>, <span class="highwire-citation-author" data-delta="2"><span class="nlm-given-names">Cedrik</span> <span class="nlm-surname">Magis</span></span>, <span class="highwire-citation-author" data-delta="3"><span class="nlm-given-names">Ionas</span> <span class="nlm-surname">Erb</span></span>, <span class="highwire-citation-author" data-delta="4"><span class="nlm-given-names">Hafid</span> <span class="nlm-surname">Laayouni</span></span>, <span class="highwire-citation-author" data-delta="5"><span class="nlm-given-names">Fyodor</span> <span class="nlm-surname">Kondrashov</span></span>, <span class="highwire-citation-author" data-delta="6"><span class="nlm-given-names">Evan</span> <span class="nlm-surname">Floden</span></span>, <span class="highwire-citation-author" data-delta="7"><span class="nlm-given-names">Cedric</span> <span class="nlm-surname">Notredame</span></span></span></div>
+  
+      <div class="highwire-cite-metadata"><span class="highwire-cite-metadata-journal highwire-cite-metadata">bioRxiv </span><span class="highwire-cite-metadata-pages highwire-cite-metadata">490235; </span><span class="highwire-cite-metadata-doi highwire-cite-metadata"><span class="doi_label">doi:</span> https://doi.org/10.1101/490235 </span><div class="pub_jnl" style="padding-top:8px;font-size:10pt;line-height:1.25em;color:gray;">This article is a preprint and has not been peer-reviewed [<a href="https://www.biorxiv.org/content/what-unrefereed-preprint" target="_blank">what does this mean?</a>].</div></div>
+  
+  
+  </div>
+</div>  </div>
+
+  
+  </div>
+</div>
+	  </div>
+	
+  <div class="panel-panel grid-12 panel-region-content">
+  	<div class="inside"><div class="panel-pane pane-highwire-article-clipboard-copy">
+  
+      
+  
+  <div class="pane-content">
+    <div class="clipboard-copy">
+  <span class="label-url">
+    <label for="dynamic">Share This Article:</label>
+  </span>
+  <span class="input-text-url">
+    <input id="dynamic" value="https://www.biorxiv.org/content/10.1101/490235v1" size="50" type="text">
+  </span>
+  <span class="copy-button button">
+    <button id="copy-dynamic" class="clipboardjs-button" data-clipboard-target="#dynamic" data-clipboard-alert-style="tooltip" data-clipboard-alert-text="Copied!">Copy</button>
+  </span>
+</div>
+  </div>
+
+  
+  </div>
+</div>
+  </div>
+	
+		  <div class="panel-panel grid-12 panel-region-postscript">
+	    <div class="inside"><div class="panel-pane pane-service-links">
+  
+      
+  
+  <div class="pane-content">
+    <div class="service-links"><a href="https://www.biorxiv.org/highwire_log/share/digg?link=http%3A%2F%2Fdigg.com%2Fsubmit%3Fphase%3D2%26url%3Dhttps%253A%2F%2Fwww.biorxiv.org%2Fcontent%2F10.1101%2F490235v1%26title%3DFast%2520and%2520accurate%2520large%2520multiple%2520sequence%2520alignments%2520using%2520root-to-leave%2520regressive%2520computation" id="digg" title="Digg this post on digg.com" class="service-links-digg" rel="nofollow" data-icon-position="" data-hide-link-title="0" data-log-redirect-set="true"><img src="digg.png" alt="Digg logo"></a> <a href="https://www.biorxiv.org/highwire_log/share/reddit?link=http%3A%2F%2Freddit.com%2Fsubmit%3Furl%3Dhttps%253A%2F%2Fwww.biorxiv.org%2Fcontent%2F10.1101%2F490235v1%26title%3DFast%2520and%2520accurate%2520large%2520multiple%2520sequence%2520alignments%2520using%2520root-to-leave%2520regressive%2520computation" id="reddit" title="Submit this post on reddit.com" class="service-links-reddit" rel="nofollow" data-icon-position="" data-hide-link-title="0" data-log-redirect-set="true"><img src="reddit.png" alt="Reddit logo"></a> <a href="https://www.biorxiv.org/highwire_log/share/twitter?link=http%3A%2F%2Ftwitter.com%2Fshare%3Furl%3Dhttps%253A%2F%2Fwww.biorxiv.org%2Fcontent%2F10.1101%2F490235v1%26text%3DFast%2520and%2520accurate%2520large%2520multiple%2520sequence%2520alignments%2520using%2520root-to-leave%2520regressive%2520computation" id="twitter" title="Share this on Twitter" class="service-links-twitter" rel="nofollow" data-icon-position="" data-hide-link-title="0" data-log-redirect-set="true"><img src="twitter.png" alt="Twitter logo"></a> <a href="https://www.biorxiv.org/highwire_log/share/citeulike?link=http%3A%2F%2Fwww.citeulike.org%2Fposturl%3Furl%3Dhttps%253A%2F%2Fwww.biorxiv.org%2Fcontent%2F10.1101%2F490235v1%26title%3DFast%2520and%2520accurate%2520large%2520multiple%2520sequence%2520alignments%2520using%2520root-to-leave%2520regressive%2520computation" id="citeulike" title="Share on CiteULike" class="service-links-citeulike" rel="nofollow" data-icon-position="" data-hide-link-title="0" data-log-redirect-set="true"><img src="citeyoulike.png" alt="CiteULike logo"></a> <a href="https://www.biorxiv.org/highwire_log/share/facebook?link=http%3A%2F%2Fwww.facebook.com%2Fsharer.php%3Fu%3Dhttps%253A%2F%2Fwww.biorxiv.org%2Fcontent%2F10.1101%2F490235v1%26t%3DFast%2520and%2520accurate%2520large%2520multiple%2520sequence%2520alignments%2520using%2520root-to-leave%2520regressive%2520computation" id="facebook" title="Share on Facebook" class="service-links-facebook" rel="nofollow" data-icon-position="" data-hide-link-title="0" data-log-redirect-set="true"><img src="fb-blue.png" alt="Facebook logo"></a> <a href="https://www.biorxiv.org/highwire_log/share/google?link=http%3A%2F%2Fwww.google.com%2Fbookmarks%2Fmark%3Fop%3Dadd%26bkmk%3Dhttps%253A%2F%2Fwww.biorxiv.org%2Fcontent%2F10.1101%2F490235v1%26title%3DFast%2520and%2520accurate%2520large%2520multiple%2520sequence%2520alignments%2520using%2520root-to-leave%2520regressive%2520computation" id="google" title="Bookmark this post on Google" class="service-links-google" rel="nofollow" data-icon-position="" data-hide-link-title="0" data-log-redirect-set="true"><img src="google-32.png" alt="Google logo"></a> <a href="https://www.biorxiv.org/highwire_log/share/mendeley?link=http%3A%2F%2Fwww.mendeley.com%2Fimport%2F%3Furl%3Dhttps%253A%2F%2Fwww.biorxiv.org%2Fcontent%2F10.1101%2F490235v1%26title%3DFast%2520and%2520accurate%2520large%2520multiple%2520sequence%2520alignments%2520using%2520root-to-leave%2520regressive%2520computation" id="mendeley" title="Share on Mendeley" class="service-links-mendeley" rel="nofollow" data-icon-position="" data-hide-link-title="0" data-log-redirect-set="true"><img src="mendeley.png" alt="Mendeley logo"></a></div>  </div>
+
+  
+  </div>
+</div>
+	  </div>
+	
+</div>
+  </div>
+
+  
+  </div>
+<div class="panel-separator"></div><div class="panel-pane pane-minipanel-dialog-link pane-biorxiv-cite-tool">
+  
+      
+  
+  <div class="pane-content">
+    <div class="minipanel-dialog-wrapper"><div class="minipanel-dialog-link-link"><a href="https://www.biorxiv.org/" oncontextmenu="javascript: return false;" class="minipanel-dialog-link-trigger link-icon minipanel-dialog-link-trigger-processed" title="Citation Tools"><i class="icon-globe"></i> <span class="title">Citation Tools</span></a></div></div>  </div>
+
+  
+  </div>
+</div>
+          </div>
+        </div>
+	</div> <!-- /.panel-row-wrapper -->	
+	
+	</div>
+
+  </div>
+
+  
+  </div>
+<div class="panel-separator"></div><div class="panel-pane pane-service-links">
+  
+      
+  
+  <div class="pane-content">
+    <div class="service-links"><div class="item-list"><ul><li class="first"><iframe id="twitter-widget-0" scrolling="no" allowtransparency="true" class="twitter-share-button twitter-share-button-rendered twitter-tweet-button" style="position: static; visibility: visible; width: 60px; height: 20px;" title="Twitter Tweet Button" src="https://platform.twitter.com/widgets/tweet_button.219ae0a24a0fde13418c38af0499134b.en.html#dnt=false&amp;id=twitter-widget-0&amp;lang=en&amp;original_referer=https%3A%2F%2Fwww.biorxiv.org%2Fcontent%2F10.1101%2F490235v1.full&amp;size=m&amp;text=Fast%20and%20accurate%20large%20multiple%20sequence%20alignments%20using%20root-to-leave%20regressive%20computation&amp;time=1549286328570&amp;type=share&amp;url=https%3A%2F%2Fwww.biorxiv.org%2Fcontent%2F10.1101%2F490235v1" data-url="https://www.biorxiv.org/content/10.1101/490235v1" frameborder="0"></iframe></li><li><iframe src="//www.facebook.com/plugins/like.php?href=https%3A//www.biorxiv.org/content/10.1101/490235v1&amp;layout=button_count&amp;show_faces=false&amp;action=like&amp;colorscheme=light&amp;width=100&amp;height=21&amp;font=&amp;locale=" scrolling="no" allowtransparency="true" style="border: medium none; overflow: hidden; width: 100px; height: 21px;" class="service-links-facebook-like" frameborder="0"></iframe></li><li class="last"><div style="text-indent: 0px; margin: 0px; padding: 0px; background: transparent none repeat scroll 0% 0%; border-style: none; float: none; line-height: normal; font-size: 1px; vertical-align: baseline; display: inline-block; width: 38px; height: 24px;" id="___plusone_0"><iframe ng-non-bindable="" hspace="0" marginheight="0" marginwidth="0" scrolling="no" style="position: static; top: 0px; width: 38px; margin: 0px; border-style: none; left: 0px; visibility: visible; height: 24px;" tabindex="0" vspace="0" id="I0_1549286328510" name="I0_1549286328510" src="https://apis.google.com/se/0/_/+1/fastbutton?usegapi=1&amp;width=300&amp;origin=https%3A%2F%2Fwww.biorxiv.org&amp;url=https%3A%2F%2Fwww.biorxiv.org%2Fcontent%2F10.1101%2F490235v1&amp;gsrc=3p&amp;ic=1&amp;jsh=m%3B%2F_%2Fscs%2Fapps-static%2F_%2Fjs%2Fk%3Doz.gapi.en_US.wqN35X9thIs.O%2Fam%3DwQ%2Frt%3Dj%2Fd%3D1%2Frs%3DAGLTcCOkHPRsN1C_u_VS81j7wx3iulA0pw%2Fm%3D__features__#_methods=onPlusOne%2C_ready%2C_close%2C_open%2C_resizeMe%2C_renderstart%2Concircled%2Cdrefresh%2Cerefresh&amp;id=I0_1549286328510&amp;_gfid=I0_1549286328510&amp;parent=https%3A%2F%2Fwww.biorxiv.org&amp;pfname=&amp;rpctoken=40774635" data-gapiattached="true" title="G+" width="100%" frameborder="0"></iframe></div></li></ul></div></div>  </div>
+
+  
+  </div>
+<div class="panel-separator"></div><div class="panel-pane pane-highwire-article-collections">
+  
+        <h2 class="pane-title">Subject Area</h2>
+    
+  
+  <div class="pane-content">
+    <div class="highwire-list-wrapper highwire-article-collections"><div class="highwire-list"><ul class="highwire-article-collection-term-list"><li class="first last odd"><span class="highwire-article-collection-term"><a href="https://www.biorxiv.org/collection/bioinformatics" class="highlight" data-icon-position="" data-hide-link-title="0">Bioinformatics<i class="icon-caret-right"></i>
+</a></span></li></ul></div></div>  </div>
+
+  
+  </div>
+<div class="panel-separator"></div><div class="panel-pane pane-panels-mini pane-biorxiv-subject-collections block-style-col2">
+  
+      
+  
+  <div class="pane-content">
+    <div class="panel-flexible panels-flexible-8 clearfix" id="mini-panel-biorxiv_subject_collections">
+<div class="panel-flexible-inside panels-flexible-8-inside">
+<div class="panels-flexible-region panels-flexible-region-8-center panels-flexible-region-first panels-flexible-region-last">
+  <div class="inside panels-flexible-region-inside panels-flexible-region-8-center-inside panels-flexible-region-inside-first panels-flexible-region-inside-last">
+<div class="panel-pane pane-snippet">
+  
+      
+  
+  <div class="pane-content">
+    <div class="snippet biorxiv-subject-areas-table-title" id="biorxiv-subject-areas-table-title">
+  
+      
+  <div class="snippet-content">
+    <b>Subject Areas</b>  </div>
+
+</div>
+  </div>
+
+  
+  </div>
+<div class="panel-separator"></div><div class="panel-pane pane-snippet">
+  
+      
+  
+  <div class="pane-content">
+    <div class="snippet biorxiv-subject-areas-view-papers" id="biorxiv-subject-areas-view-papers">
+  
+      
+  <div class="snippet-content">
+    <a href="https://www.biorxiv.org/content/early/recent"><strong>All Articles</strong></a>  </div>
+
+</div>
+  </div>
+
+  
+  </div>
+<div class="panel-separator"></div><div class="panel-pane pane-highwire-subject-collections">
+  
+      
+  
+  <div class="pane-content">
+    <ul id="collection" class="collection highwire-list-expand"><li class="outer collection depth-2  child first"><div class="data-wrapper"><a href="https://www.biorxiv.org/collection/animal-behavior-and-cognition" class="" data-icon-position="" data-hide-link-title="0">Animal Behavior and Cognition</a> <span class="article-count" style="display: none;">(971)</span></div></li>
+<li class="outer collection depth-2  child"><div class="data-wrapper"><a href="https://www.biorxiv.org/collection/biochemistry" class="" data-icon-position="" data-hide-link-title="0">Biochemistry</a> <span class="article-count" style="display: none;">(1444)</span></div></li>
+<li class="outer collection depth-2  child"><div class="data-wrapper"><a href="https://www.biorxiv.org/collection/bioengineering" class="" data-icon-position="" data-hide-link-title="0">Bioengineering</a> <span class="article-count" style="display: none;">(916)</span></div></li>
+<li class="outer collection depth-2  child"><div class="data-wrapper"><a href="https://www.biorxiv.org/collection/bioinformatics" class="" data-icon-position="" data-hide-link-title="0">Bioinformatics</a> <span class="article-count" style="display: none;">(6687)</span></div></li>
+<li class="outer collection depth-2  child"><div class="data-wrapper"><a href="https://www.biorxiv.org/collection/biophysics" class="" data-icon-position="" data-hide-link-title="0">Biophysics</a> <span class="article-count" style="display: none;">(2372)</span></div></li>
+<li class="outer collection depth-2  child"><div class="data-wrapper"><a href="https://www.biorxiv.org/collection/cancer-biology" class="" data-icon-position="" data-hide-link-title="0">Cancer Biology</a> <span class="article-count" style="display: none;">(1738)</span></div></li>
+<li class="outer collection depth-2  child"><div class="data-wrapper"><a href="https://www.biorxiv.org/collection/cell-biology" class="" data-icon-position="" data-hide-link-title="0">Cell Biology</a> <span class="article-count" style="display: none;">(2449)</span></div></li>
+<li class="outer collection depth-2  child"><div class="data-wrapper"><a href="https://www.biorxiv.org/collection/clinical-trials" class="" data-icon-position="" data-hide-link-title="0">Clinical Trials</a> <span class="article-count" style="display: none;">(104)</span></div></li>
+<li class="outer collection depth-2  child"><div class="data-wrapper"><a href="https://www.biorxiv.org/collection/developmental-biology" class="" data-icon-position="" data-hide-link-title="0">Developmental Biology</a> <span class="article-count" style="display: none;">(1649)</span></div></li>
+<li class="outer collection depth-2  child"><div class="data-wrapper"><a href="https://www.biorxiv.org/collection/ecology" class="" data-icon-position="" data-hide-link-title="0">Ecology</a> <span class="article-count" style="display: none;">(2495)</span></div></li>
+<li class="outer collection depth-2  child"><div class="data-wrapper"><a href="https://www.biorxiv.org/collection/epidemiology" class="" data-icon-position="" data-hide-link-title="0">Epidemiology</a> <span class="article-count" style="display: none;">(1442)</span></div></li>
+<li class="outer collection depth-2  child"><div class="data-wrapper"><a href="https://www.biorxiv.org/collection/evolutionary-biology" class="" data-icon-position="" data-hide-link-title="0">Evolutionary Biology</a> <span class="article-count" style="display: none;">(4938)</span></div></li>
+<li class="outer collection depth-2  child"><div class="data-wrapper"><a href="https://www.biorxiv.org/collection/genetics" class="" data-icon-position="" data-hide-link-title="0">Genetics</a> <span class="article-count" style="display: none;">(3543)</span></div></li>
+<li class="outer collection depth-2  child"><div class="data-wrapper"><a href="https://www.biorxiv.org/collection/genomics" class="" data-icon-position="" data-hide-link-title="0">Genomics</a> <span class="article-count" style="display: none;">(4543)</span></div></li>
+<li class="outer collection depth-2  child"><div class="data-wrapper"><a href="https://www.biorxiv.org/collection/immunology" class="" data-icon-position="" data-hide-link-title="0">Immunology</a> <span class="article-count" style="display: none;">(1110)</span></div></li>
+<li class="outer collection depth-2  child"><div class="data-wrapper"><a href="https://www.biorxiv.org/collection/microbiology" class="" data-icon-position="" data-hide-link-title="0">Microbiology</a> <span class="article-count" style="display: none;">(4107)</span></div></li>
+<li class="outer collection depth-2  child"><div class="data-wrapper"><a href="https://www.biorxiv.org/collection/molecular-biology" class="" data-icon-position="" data-hide-link-title="0">Molecular Biology</a> <span class="article-count" style="display: none;">(1570)</span></div></li>
+<li class="outer collection depth-2  child"><div class="data-wrapper"><a href="https://www.biorxiv.org/collection/neuroscience" class="" data-icon-position="" data-hide-link-title="0">Neuroscience</a> <span class="article-count" style="display: none;">(10473)</span></div></li>
+<li class="outer collection depth-2  child"><div class="data-wrapper"><a href="https://www.biorxiv.org/collection/paleontology" class="" data-icon-position="" data-hide-link-title="0">Paleontology</a> <span class="article-count" style="display: none;">(80)</span></div></li>
+<li class="outer collection depth-2  child"><div class="data-wrapper"><a href="https://www.biorxiv.org/collection/pathology" class="" data-icon-position="" data-hide-link-title="0">Pathology</a> <span class="article-count" style="display: none;">(227)</span></div></li>
+<li class="outer collection depth-2  child"><div class="data-wrapper"><a href="https://www.biorxiv.org/collection/pharmacology-and-toxicology" class="" data-icon-position="" data-hide-link-title="0">Pharmacology and Toxicology</a> <span class="article-count" style="display: none;">(395)</span></div></li>
+<li class="outer collection depth-2  child"><div class="data-wrapper"><a href="https://www.biorxiv.org/collection/physiology" class="" data-icon-position="" data-hide-link-title="0">Physiology</a> <span class="article-count" style="display: none;">(541)</span></div></li>
+<li class="outer collection depth-2  child"><div class="data-wrapper"><a href="https://www.biorxiv.org/collection/plant-biology" class="" data-icon-position="" data-hide-link-title="0">Plant Biology</a> <span class="article-count" style="display: none;">(1402)</span></div></li>
+<li class="outer collection depth-2  child"><div class="data-wrapper"><a href="https://www.biorxiv.org/collection/scientific-communication-and-education" class="" data-icon-position="" data-hide-link-title="0">Scientific Communication and Education</a> <span class="article-count" style="display: none;">(402)</span></div></li>
+<li class="outer collection depth-2  child"><div class="data-wrapper"><a href="https://www.biorxiv.org/collection/synthetic-biology" class="" data-icon-position="" data-hide-link-title="0">Synthetic Biology</a> <span class="article-count" style="display: none;">(541)</span></div></li>
+<li class="outer collection depth-2  child"><div class="data-wrapper"><a href="https://www.biorxiv.org/collection/systems-biology" class="" data-icon-position="" data-hide-link-title="0">Systems Biology</a> <span class="article-count" style="display: none;">(1841)</span></div></li>
+<li class="outer collection depth-2  child last"><div class="data-wrapper"><a href="https://www.biorxiv.org/collection/zoology" class="" data-icon-position="" data-hide-link-title="0">Zoology</a> <span class="article-count" style="display: none;">(250)</span></div></li>
+</ul>  </div>
+
+  
+  </div>
+  </div>
+</div>
+</div>
+</div>
+  </div>
+
+  
+  </div><div class="panel-separator"></div><div class="panel-pane pane-panels-mini pane-biorxiv-subject-collections block-style-col2" style="background-color:white;"><div class="pane-content"><div id="czilogo" class="panel-pane pane-czi-link" style="width:100%;text-align:right;"><a href="https://chanzuckerberg.com/" title="Chan Zuckerberg Initiative" target="_blank"><img src="czi_inside.jpg"></a></div></div></div>
+</div>
+			</div>
+		</div>
+	
+	</div> <!-- /.panel-row-wrapper -->	
+	
+	</div>
+
+    </div>
+  </div>
+</div>      </div>
+</div>  </div>
+</section>    
+  
+  </div>    <div class="region region-page-bottom" id="region-page-bottom">
+  <div class="region-inner region-page-bottom-inner">
+      </div>
+</div><script type="text/javascript" src="js__Vh5BcRYb6VtLoN3uam6O4DIKltYUVMjVDWtakoysPq0__zA_9xHyAk-lR.js"></script>
+<script type="text/javascript">
+<!--//--><![CDATA[//><!--
+function euCookieComplianceLoadScripts() {}
+//--><!]]>
+</script>
+<script type="text/javascript">
+<!--//--><![CDATA[//><!--
+var eu_cookie_compliance_cookie_name = "";
+//--><!]]>
+</script>
+<script type="text/javascript" src="cshl_custom.js"></script>
+<script type="text/javascript" src="js__WcTpt-w0y1FyXrxZNriX8Ts1KjsFTDpdvZaw9yhRn24__Zz3Wr35U3o6X.js" gapi_processed="true"></script>
+  
+
+<div class="ui-dialog ui-widget ui-widget-content ui-corner-all ui-front" style="display: none;" tabindex="-1" role="dialog" aria-describedby="ui-id-1" aria-labelledby="ui-id-2"><div class="ui-dialog-titlebar ui-widget-header ui-corner-all ui-helper-clearfix"><span id="ui-id-2" class="ui-dialog-title">Email this Article</span><button class="ui-button ui-widget ui-state-default ui-corner-all ui-button-icon-only ui-dialog-titlebar-close" role="button" aria-disabled="false" title="close"><span class="ui-button-icon-primary ui-icon ui-icon-closethick"></span><span class="ui-button-text">close</span></button></div><div class="minipanel-dialog-link-mini ui-dialog-content ui-widget-content" style="" id="ui-id-1"><div class="empty_placeholder ui-helper-hidden-accessible"><input autofocus="autofocus" type="hidden"></div>
+<div class="panel-display panel-1col clearfix" id="mini-panel-biorxiv_art_email">
+  <div class="panel-panel panel-col">
+    <div><div class="panel-pane pane-block pane-forward-form pane-forward">
+  
+      
+  
+  <div class="pane-content">
+    <form action="/content/10.1101/490235v1.full" method="post" id="forward-form" accept-charset="UTF-8"><div><div id="edit-instructions" class="form-item form-item-label-before form-type-item">
+ <p>Thank you for your interest in spreading the word about bioRxiv.</p><p>NOTE: Your email address is requested solely to identify you as the sender of this article.</p>
+</div>
+<div class="form-item form-item-label-before form-type-textfield form-item-email">
+  <label for="edit-email">Your Email <span class="form-required" title="This field is required.">*</span></label>
+ <input id="edit-email" name="email" size="58" maxlength="256" class="form-text required" type="text">
+</div>
+<div class="form-item form-item-label-before form-type-textfield form-item-name">
+  <label for="edit-name">Your Name <span class="form-required" title="This field is required.">*</span></label>
+ <input id="edit-name" name="name" size="58" maxlength="256" class="form-text required" type="text">
+</div>
+<div class="form-item form-item-label-before form-type-textarea form-item-recipients">
+  <label for="edit-recipients">Send To <span class="form-required" title="This field is required.">*</span></label>
+ <div class="form-textarea-wrapper resizable textarea-processed resizable-textarea"><textarea id="edit-recipients" name="recipients" cols="50" rows="5" class="form-textarea required"></textarea><div class="grippie"></div></div>
+<div class="description">Enter multiple addresses on separate lines or separate them with commas.</div>
+</div>
+<div id="edit-page" class="form-item form-item-label-before form-type-item">
+  <label for="edit-page">You are going to email the following </label>
+ <a href="https://www.biorxiv.org/content/10.1101/490235v1" class="active" data-icon-position="" data-hide-link-title="0">Fast and accurate large multiple sequence alignments using root-to-leave regressive computation</a>
+</div>
+<div id="edit-subject" class="form-item form-item-label-before form-type-item">
+  <label for="edit-subject">Message Subject </label>
+ (Your Name) has forwarded a page to you from bioRxiv
+</div>
+<div id="edit-body" class="form-item form-item-label-before form-type-item">
+  <label for="edit-body">Message Body </label>
+ (Your Name) thought you would like to see this page from the bioRxiv website.
+</div>
+<div class="form-item form-item-label-before form-type-textarea form-item-message">
+  <label for="edit-message--2">Your Personal Message </label>
+ <div class="form-textarea-wrapper resizable textarea-processed resizable-textarea"><textarea id="edit-message--2" name="message" cols="50" rows="10" class="form-textarea"></textarea><div class="grippie"></div></div>
+</div>
+<input name="path" value="node/145876" type="hidden">
+<input name="path_cid" value="" type="hidden">
+<input name="forward_footer" value=" " type="hidden">
+<input name="form_build_id" value="form-cxQmeZof6_gK6eyF8HvWapKFDpzm5axfOvVc7UH_j1I" type="hidden">
+<input name="form_id" value="forward_form" type="hidden">
+<div class="form-actions form-wrapper" id="edit-actions"><input id="edit-submit" name="op" value="Send Message" class="form-submit" type="submit"></div></div></form>  </div>
+
+  
+  </div>
+</div>
+  </div>
+</div>
+</div></div><div class="ui-dialog ui-widget ui-widget-content ui-corner-all ui-front" style="display: none;" tabindex="-1" role="dialog" aria-describedby="ui-id-3" aria-labelledby="ui-id-4"><div class="ui-dialog-titlebar ui-widget-header ui-corner-all ui-helper-clearfix"><span id="ui-id-4" class="ui-dialog-title">Citation Tools</span><button class="ui-button ui-widget ui-state-default ui-corner-all ui-button-icon-only ui-dialog-titlebar-close" role="button" aria-disabled="false" title="close"><span class="ui-button-icon-primary ui-icon ui-icon-closethick"></span><span class="ui-button-text">close</span></button></div><div class="minipanel-dialog-link-mini ui-dialog-content ui-widget-content" style="" id="ui-id-3"><div class="empty_placeholder ui-helper-hidden-accessible"><input autofocus="autofocus" type="hidden"></div>
+<div class="panel-display panel-1col clearfix" id="mini-panel-biorxiv_cite_tool">
+  <div class="panel-panel panel-col">
+    <div><div class="panel-pane pane-highwire-citation-export">
+  
+      
+  
+  <div class="pane-content">
+    <div class="highwire-citation-export">  
+  <div class="highwire-citation-info">
+      <div class="highwire-article-citation highwire-citation-type-highwire-article" data-node-nid="145876" id="node145876--3" data-pisa="biorxiv;490235v1" data-pisa-master="biorxiv;490235" data-apath="/biorxiv/early/2018/12/07/490235.atom"><div class="highwire-cite highwire-cite-highwire-article highwire-citation-biorxiv-article-pap-list clearfix">
+
+      <div class="highwire-cite-title">
+      <div class="highwire-cite-title">Fast and accurate large multiple sequence alignments using root-to-leave regressive computation</div>    </div>
+  
+      <div class="highwire-cite-authors"><span class="highwire-citation-authors"><span class="highwire-citation-author first" data-delta="0"><span class="nlm-given-names">Edgar</span> <span class="nlm-surname">Garriga Nogales</span></span>, <span class="highwire-citation-author" data-delta="1"><span class="nlm-given-names">Paolo</span> <span class="nlm-surname">Di Tommaso</span></span>, <span class="highwire-citation-author" data-delta="2"><span class="nlm-given-names">Cedrik</span> <span class="nlm-surname">Magis</span></span>, <span class="highwire-citation-author" data-delta="3"><span class="nlm-given-names">Ionas</span> <span class="nlm-surname">Erb</span></span>, <span class="highwire-citation-author" data-delta="4"><span class="nlm-given-names">Hafid</span> <span class="nlm-surname">Laayouni</span></span>, <span class="highwire-citation-author" data-delta="5"><span class="nlm-given-names">Fyodor</span> <span class="nlm-surname">Kondrashov</span></span>, <span class="highwire-citation-author" data-delta="6"><span class="nlm-given-names">Evan</span> <span class="nlm-surname">Floden</span></span>, <span class="highwire-citation-author" data-delta="7"><span class="nlm-given-names">Cedric</span> <span class="nlm-surname">Notredame</span></span></span></div>
+  
+      <div class="highwire-cite-metadata"><span class="highwire-cite-metadata-journal highwire-cite-metadata">bioRxiv </span><span class="highwire-cite-metadata-pages highwire-cite-metadata">490235; </span><span class="highwire-cite-metadata-doi highwire-cite-metadata"><span class="doi_label">doi:</span> https://doi.org/10.1101/490235 </span><div class="pub_jnl" style="padding-top:8px;font-size:10pt;line-height:1.25em;color:gray;">This article is a preprint and has not been peer-reviewed [<a href="https://www.biorxiv.org/content/what-unrefereed-preprint" target="_blank">what does this mean?</a>].</div></div>
+  
+  
+  </div>
+</div>  </div>
+  <div class="highwire-citation-formats">
+  	      <h2>Citation Manager Formats</h2>
+        <div class="highwire-citation-formats-links">
+      <span class="Z3988" title="ctx_ver=Z39.88-2004&amp;rft_val_fmt=info%3Aofi%2Ffmt%3Akev%3Amtx%3Ajournal&amp;rft.spage&amp;rft.epage&amp;rft.atitle=Fast%20and%20accurate%20large%20multiple%20sequence%20alignments%20using%20root-to-leave%20regressive%20computation&amp;rft.volume&amp;rft.issue&amp;rft.date=2018-01-01%2000%3A00%3A00&amp;rft.stitle&amp;rft.jtitle=bioRxiv&amp;rft.au=Garriga+Nogales%2C+Edgar&amp;rft.au=Di+Tommaso%2C+Paolo&amp;rft.au=Magis%2C+Cedrik&amp;rft.au=Erb%2C+Ionas&amp;rft.au=Laayouni%2C+Hafid&amp;rft.au=Kondrashov%2C+Fyodor&amp;rft.au=Floden%2C+Evan&amp;rft.au=Notredame%2C+Cedric"></span><ul class="hw-citation-links inline button button-alt button-grid clearfix"><li class="bibtext first"><a href="https://www.biorxiv.org/highwire/citation/145876/bibtext" class="" data-icon-position="" data-hide-link-title="0">BibTeX</a></li><li class="bookends"><a href="https://www.biorxiv.org/highwire/citation/145876/bookends" class="" data-icon-position="" data-hide-link-title="0">Bookends</a></li><li class="easybib"><a href="https://www.biorxiv.org/highwire/citation/145876/easybib" class="" data-icon-position="" data-hide-link-title="0">EasyBib</a></li><li class="endnote-tagged"><a href="https://www.biorxiv.org/highwire/citation/145876/endnote-tagged" class="" data-icon-position="" data-hide-link-title="0">EndNote (tagged)</a></li><li class="endnote-8-xml"><a href="https://www.biorxiv.org/highwire/citation/145876/endnote-8-xml" class="" data-icon-position="" data-hide-link-title="0">EndNote 8 (xml)</a></li><li class="medlars"><a href="https://www.biorxiv.org/highwire/citation/145876/medlars" class="" data-icon-position="" data-hide-link-title="0">Medlars</a></li><li class="mendeley"><a href="https://www.biorxiv.org/highwire/citation/145876/mendeley" class="" data-icon-position="" data-hide-link-title="0">Mendeley</a></li><li class="papers"><a href="https://www.biorxiv.org/highwire/citation/145876/papers" class="" data-icon-position="" data-hide-link-title="0">Papers</a></li><li class="refworks-tagged"><a href="https://www.biorxiv.org/highwire/citation/145876/refworks-tagged" class="" data-icon-position="" data-hide-link-title="0">RefWorks Tagged</a></li><li class="reference-manager"><a href="https://www.biorxiv.org/highwire/citation/145876/reference-manager" class="" data-icon-position="" data-hide-link-title="0">Ref Manager</a></li><li class="ris"><a href="https://www.biorxiv.org/highwire/citation/145876/ris" class="" data-icon-position="" data-hide-link-title="0">RIS</a></li><li class="zotero last"><a href="https://www.biorxiv.org/highwire/citation/145876/zotero" class="" data-icon-position="" data-hide-link-title="0">Zotero</a></li></ul>    </div>
+  </div>
+</div>
+  </div>
+
+  
+  </div>
+</div>
+  </div>
+</div>
+</div></div><div id="sliding-popup" style="height: auto; width: 100%; display: block; bottom: 0px;" class="sliding-popup-bottom"><div>
+  <div class="popup-content info">
+    <div id="popup-text">
+      <p>We use cookies on this site to enhance your user experience. By
+ clicking any link on this page you are giving your consent for us to 
+set cookies.</p>
+    </div>
+    <div id="popup-buttons">
+      <button type="button" class="agree-button eu-cookie-compliance-default-button">Continue</button>
+                    <button type="button" class="find-more-button eu-cookie-compliance-more-button find-more-button-processed">Find out more</button>
+          </div>
+  </div>
+</div></div><div id="cboxOverlay" style="display: none;"></div><div id="colorbox" class="" role="dialog" tabindex="-1" style="display: none;"><div id="cboxWrapper"><div><div id="cboxTopLeft" style="float: left;"></div><div id="cboxTopCenter" style="float: left;"></div><div id="cboxTopRight" style="float: left;"></div></div><div style="clear: left;"><div id="cboxMiddleLeft" style="float: left;"></div><div id="cboxContent" style="float: left;"><div id="cboxTitle" style="float: left;"></div><div id="cboxCurrent" style="float: left;"></div><button type="button" id="cboxPrevious"></button><button type="button" id="cboxNext"></button><button id="cboxSlideshow"></button><div id="cboxLoadingOverlay" style="float: left;"></div><div id="cboxLoadingGraphic" style="float: left;"></div></div><div id="cboxMiddleRight" style="float: left;"></div></div><div style="clear: left;"><div id="cboxBottomLeft" style="float: left;"></div><div id="cboxBottomCenter" style="float: left;"></div><div id="cboxBottomRight" style="float: left;"></div></div></div><div style="position: absolute; width: 9999px; visibility: hidden; display: none; max-width: none;"></div></div><iframe scrolling="no" allowtransparency="true" src="https://platform.twitter.com/widgets/widget_iframe.219ae0a24a0fde13418c38af0499134b.html?origin=https%3A%2F%2Fwww.biorxiv.org&amp;settingsEndpoint=https%3A%2F%2Fsyndication.twitter.com%2Fsettings" title="Twitter settings iframe" style="display: none;" frameborder="0"></iframe><iframe name="oauth2relay1518001659" id="oauth2relay1518001659" src="https://accounts.google.com/o/oauth2/postmessageRelay?parent=https%3A%2F%2Fwww.biorxiv.org&amp;jsh=m%3B%2F_%2Fscs%2Fapps-static%2F_%2Fjs%2Fk%3Doz.gapi.en_US.wqN35X9thIs.O%2Fam%3DwQ%2Frt%3Dj%2Fd%3D1%2Frs%3DAGLTcCOkHPRsN1C_u_VS81j7wx3iulA0pw%2Fm%3D__features__#rpctoken=855428553&amp;forcesecure=1" style="width: 1px; height: 1px; position: absolute; top: -100px;" tabindex="-1" aria-hidden="true"></iframe><iframe style="display: none;"></iframe></body></html>

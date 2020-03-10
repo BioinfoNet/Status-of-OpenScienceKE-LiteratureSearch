@@ -1,0 +1,586 @@
+We use cookies to enhance your experience on our website. By continuing to use our website, you are agreeing to our use of cookies. You can change your cookie settings at any time. Find out more Parallelization of MAFFT for large-scale multiple sequence alignments | Bioinformatics | Oxford Academic Skip to Main Content
+Oxford University Press
+
+    Search
+    Account Menu
+    Menu
+    International Institue of Tropical Agriculture (IITA)
+        International Institue of Tropical Agriculture (IITA)
+    Sign In
+    Register
+
+Navbar Search Filter This issue All Bioinformatics All Journals Mobile Microsite Search Term
+
+    Sign In
+    International Institue of Tropical Agriculture (IITA)
+        International Institue of Tropical Agriculture (IITA)
+    Register
+
+    Issues
+    Advance articles
+    Submit
+        Author Guidelines
+        Submission Site
+        Order Offprints
+        Open Access Options
+    Purchase
+    Alerts
+    About
+        About Bioinformatics
+        Journals Career Network
+        Editorial Board
+        Advertising and Corporate Services
+        Self-Archiving Policy
+        Dispatch Dates
+
+Bioinformatics
+International Society for Computational Biology
+
+    Issues
+    Advance articles
+    Submit
+        Author Guidelines
+        Submission Site
+        Order Offprints
+        Open Access Options
+    Purchase
+    Alerts
+    About
+        About Bioinformatics
+        Journals Career Network
+        Editorial Board
+        Advertising and Corporate Services
+        Self-Archiving Policy
+        Dispatch Dates
+
+Close
+search filter This issue All Bioinformatics All Journals search input
+Advanced Search
+Article Navigation
+Close mobile search navigation
+Article navigation
+Issue Cover
+Volume 34
+Issue 14
+15 July 2018
+Article Contents
+
+    Abstract
+    Acknowledgements
+    References
+    Supplementary data
+
+    < Previous
+    Next >
+
+Article Navigation
+Parallelization of MAFFT for large-scale multiple sequence alignments
+Tsukasa Nakamura
+Department of Computational Biology and Medical Sciences, Graduate School of Frontier Sciences, University of Tokyo, Chiba, JapanArtificial Intelligence Research Center (AIRC), National Institute of Advanced Industrial Science and Technology (AIST), Tokyo, Japan
+Search for other works by this author on:
+Oxford Academic
+PubMed
+Google Scholar
+Tsukasa Nakamura
+Kazunori D Yamada
+Artificial Intelligence Research Center (AIRC), National Institute of Advanced Industrial Science and Technology (AIST), Tokyo, JapanGraduate School of Information Sciences, Tohoku University, Sendai, Japan
+Search for other works by this author on:
+Oxford Academic
+PubMed
+Google Scholar
+Kazunori D Yamada
+Kentaro Tomii
+Department of Computational Biology and Medical Sciences, Graduate School of Frontier Sciences, University of Tokyo, Chiba, JapanArtificial Intelligence Research Center (AIRC), National Institute of Advanced Industrial Science and Technology (AIST), Tokyo, JapanBiotechnology Research Institute for Drug Discovery (BRD), AIST, Tokyo, JapanAIST-Tokyo Tech Real World Big-Data Computation Open Innovation Laboratory (RWBC-OIL), Tokyo, Japan
+Search for other works by this author on:
+Oxford Academic
+PubMed
+Google Scholar
+Kentaro Tomii
+Kazutaka Katoh
+Artificial Intelligence Research Center (AIRC), National Institute of Advanced Industrial Science and Technology (AIST), Tokyo, JapanResearch Institute for Microbial Diseases, Osaka University, Suita, Japan
+To whom correspondence should be addressed. katoh@ifrec.osaka-u.ac.jp
+orchid id   http://orcid.org/0000-0003-4133-8393
+Search for other works by this author on:
+Oxford Academic
+PubMed
+Google Scholar
+Kazutaka Katoh
+Bioinformatics , Volume 34, Issue 14, 15 July 2018, Pages 2490–2492, https://doi.org/10.1093/bioinformatics/bty121
+Published:
+01 March 2018
+Article history
+Received:
+19 October 2017
+Revision Received:
+07 February 2018
+Accepted:
+28 February 2018
+Close
+
+    Split View
+    Views
+        Article contents
+        Figures & tables
+        Supplementary Data
+    PDF
+    Cite
+    Citation
+
+    Tsukasa Nakamura, Kazunori D Yamada, Kentaro Tomii, Kazutaka Katoh; Parallelization of MAFFT for large-scale multiple sequence alignments, Bioinformatics , Volume 34, Issue 14, 15 July 2018, Pages 2490–2492, https://doi.org/10.1093/bioinformatics/bty121
+
+    Download citation file:
+        Ris (Zotero)
+        EndNote
+        BibTex
+        Medlars
+        ProCite
+        RefWorks
+        Reference Manager
+
+    © 2019 Oxford University Press
+    Close
+    Permissions
+    Share
+        Email
+        Twitter
+        Facebook
+
+Navbar Search Filter This issue All Bioinformatics All Journals Mobile Microsite Search Term
+
+    Sign In
+    International Institue of Tropical Agriculture (IITA)
+        International Institue of Tropical Agriculture (IITA)
+    Register
+
+Close
+search filter This issue All Bioinformatics All Journals search input
+Advanced Search
+Abstract
+Summary
+
+We report an update for the MAFFT multiple sequence alignment program to enable parallel calculation of large numbers of sequences. The G-INS-1 option of MAFFT was recently reported to have higher accuracy than other methods for large data, but this method has been impractical for most large-scale analyses, due to the requirement of large computational resources. We introduce a scalable variant, G-large-INS-1, which has equivalent accuracy to G-INS-1 and is applicable to 50 000 or more sequences.
+Availability and implementation
+
+This feature is available in MAFFT versions 7.355 or later at https://mafft.cbrc.jp/alignment/software/mpi.html .
+Supplementary information
+
+Supplementary data are available at Bioinformatics online.
+
+A large number of biological sequences from widely divergent organisms are becoming available. Accordingly, the need for multiple alignments of large numbers of sequences is increasing for various kinds of sequence analysis. The G-INS-1 option of MAFFT was recently reported to have higher accuracy than other methods for large multiple sequence alignments (MSAs) in independent benchmarks ( Le et al. , 2017 ; Yamada et al. , 2016 ). However, this method was impractical for actual analyses, requiring large computational resources in both space and time to perform all-to-all pairwise alignments by dynamic programming (DP) ( Needleman and Wunsch, 1970 ), which are used for a guide tree and a scoring function similar to COFFEE ( Notredame et al. , 1998 ). Here, we introduce a scalable variant, G-large-INS-1, which has equivalent accuracy to G-INS-1 and is applicable to 50 000 or more sequences. Our strategies to reduce computational costs are (i) parallelization across multiple machines and/or processor cores using MPI and Pthreads to increase speed and (ii) the use of a high-speed shared filesystem, which is becoming common for processing big data. An MPI-based parallelization of another high-accuracy MSA method, MSAProbs, was recently released ( González-Domínguez et al. , 2016 ), but it cannot be applied to thousands of sequences. The present update of MAFFT is designed to satisfy the need for accurately aligning large numbers of sequences but is not applicable to long genomic sequences since the length dependence of the computational cost is unchanged. The G-large-INS-1 option is available in MAFFT versions 7.355 or later and the online service ( Katoh et al. , 2017 ).
+
+Accuracy of G-large-INS-1 was compared with that of conventional G-INS-1 using different benchmarks, QuanTest ( Le et al. , 2017 ) ( Fig. 1a ), HomFam ( Sievers et al. , 2011 ), OXFam ( Raghava et al. , 2003 ; Yamada et al. , 2016 ) and ContTest ( Fox et al. , 2016 ) ( Supplementary Table S1 ). Both methods ran with different input orders and/or minor variations in pairwise alignment and guide tree (see Supplementary Data ) in order to assess instability of accuracy scores ( Boyce et al. , 2015 ). In all cases, the difference between G-INS-1 (blue lines in Fig. 1a ) and G-large-INS-1 (red lines) was small.
+Fig. 1.
+(a) QuanTest. Accuracy of protein secondary structure prediction based on various sizes of MSAs by G-large-INS-1 (red bold lines), G-INS-1 (version 7.245; blue bold lines) and other popular methods. We used 1940 (out of 2265) entries so that JPred (Drozdetskiy et al., 2015) can be consistently applied to the MSAs by all methods. (b)–(g), Parallelization efficiency of all-to-all alignment stage (b, d and f) and progressive stage (c, e and g) when applying G-large-INS-1 to LSU rRNA (b, c) sdr (d, e) and zf-CCHH (f, g). Green squares and magenta triangles are the computational time on NFS and Lustre filesystem, respectively. Lines are the expected time based on the cases using seven cores [NFS; green solid lines in (b), (d) and (f)], 35 cores [Lustre; magenta dotted lines in (b), (d) and (f)] and single core (c, e and g), assuming a perfect efficiency. The calculations with NFS (green) were performed on a heterogeneous cluster system (each node has 16–20 cores of Intel Xeon E5-2660 v3 2.6 GHz, E5-2680 2.7 GHz and E5-2670 v2 2.50 GHz with 64–128GB RAM). The calculations with the Lustre filesystem (magenta) were performed on Intel Xeon E5-2695 v4 2.10 GHz 36 cores with 256GB RAM per node using Lustre version 2.5.42
+View large Download slide
+
+( a ) QuanTest. Accuracy of protein secondary structure prediction based on various sizes of MSAs by G-large-INS-1 (red bold lines), G-INS-1 (version 7.245; blue bold lines) and other popular methods. We used 1940 (out of 2265) entries so that JPred ( Drozdetskiy et al. , 2015 ) can be consistently applied to the MSAs by all methods. ( b )–( g ), Parallelization efficiency of all-to-all alignment stage ( b , d and f ) and progressive stage ( c , e and g ) when applying G-large-INS-1 to LSU rRNA ( b , c ) sdr ( d , e ) and zf-CCHH ( f , g ). Green squares and magenta triangles are the computational time on NFS and Lustre filesystem, respectively. Lines are the expected time based on the cases using seven cores [NFS; green solid lines in ( b ), ( d ) and ( f )], 35 cores [Lustre; magenta dotted lines in ( b ), ( d ) and ( f )] and single core ( c , e and g ), assuming a perfect efficiency. The calculations with NFS (green) were performed on a heterogeneous cluster system (each node has 16–20 cores of Intel Xeon E5-2660 v3 2.6 GHz, E5-2680 2.7 GHz and E5-2670 v2 2.50 GHz with 64 – 128GB RAM). The calculations with the Lustre filesystem (magenta) were performed on Intel Xeon E5-2695 v4 2.10 GHz 36 cores with 256GB RAM per node using Lustre version 2.5.42
+Fig. 1.
+(a) QuanTest. Accuracy of protein secondary structure prediction based on various sizes of MSAs by G-large-INS-1 (red bold lines), G-INS-1 (version 7.245; blue bold lines) and other popular methods. We used 1940 (out of 2265) entries so that JPred (Drozdetskiy et al., 2015) can be consistently applied to the MSAs by all methods. (b)–(g), Parallelization efficiency of all-to-all alignment stage (b, d and f) and progressive stage (c, e and g) when applying G-large-INS-1 to LSU rRNA (b, c) sdr (d, e) and zf-CCHH (f, g). Green squares and magenta triangles are the computational time on NFS and Lustre filesystem, respectively. Lines are the expected time based on the cases using seven cores [NFS; green solid lines in (b), (d) and (f)], 35 cores [Lustre; magenta dotted lines in (b), (d) and (f)] and single core (c, e and g), assuming a perfect efficiency. The calculations with NFS (green) were performed on a heterogeneous cluster system (each node has 16–20 cores of Intel Xeon E5-2660 v3 2.6 GHz, E5-2680 2.7 GHz and E5-2670 v2 2.50 GHz with 64–128GB RAM). The calculations with the Lustre filesystem (magenta) were performed on Intel Xeon E5-2695 v4 2.10 GHz 36 cores with 256GB RAM per node using Lustre version 2.5.42
+View large Download slide
+
+( a ) QuanTest. Accuracy of protein secondary structure prediction based on various sizes of MSAs by G-large-INS-1 (red bold lines), G-INS-1 (version 7.245; blue bold lines) and other popular methods. We used 1940 (out of 2265) entries so that JPred ( Drozdetskiy et al. , 2015 ) can be consistently applied to the MSAs by all methods. ( b )–( g ), Parallelization efficiency of all-to-all alignment stage ( b , d and f ) and progressive stage ( c , e and g ) when applying G-large-INS-1 to LSU rRNA ( b , c ) sdr ( d , e ) and zf-CCHH ( f , g ). Green squares and magenta triangles are the computational time on NFS and Lustre filesystem, respectively. Lines are the expected time based on the cases using seven cores [NFS; green solid lines in ( b ), ( d ) and ( f )], 35 cores [Lustre; magenta dotted lines in ( b ), ( d ) and ( f )] and single core ( c , e and g ), assuming a perfect efficiency. The calculations with NFS (green) were performed on a heterogeneous cluster system (each node has 16–20 cores of Intel Xeon E5-2660 v3 2.6 GHz, E5-2680 2.7 GHz and E5-2670 v2 2.50 GHz with 64 – 128GB RAM). The calculations with the Lustre filesystem (magenta) were performed on Intel Xeon E5-2695 v4 2.10 GHz 36 cores with 256GB RAM per node using Lustre version 2.5.42
+
+Large amounts of RAM are required if conventional tools for high-quality MSAs are applied to a large number of sequences. For example, MAFFT-L-INS-i and MSAProbs-MPI used at most 9.23GB and 74.8GB for a subset of 1000 sequences in QuanTest. For a larger subset (4000 sequences), MAFFT-G-INS-1 and QuickProbs2 ( Gudyś and Deorowicz, 2017 ) used at most 26.0 GB and 411 GB RAM, respectively. In contrast, G-large-INS-1 used only 5.72GB at most, for the subset of 4000 sequences. Memory usage for larger problems (up to ∼90 000 sequences) is shown in Supplementary Table S1 , which suggests that this advantage increases with the number of sequences. Note that G-large-INS-1 uses files to save temporary data and thus requires a high-speed filesystem when the input sequences are very short, as discussed below.
+
+Parallelization efficiency in three examples is shown in Figure 1(b–g ) , separately for two stages: (i) the all-to-all alignment stage (b, d and f) and (ii) the progressive alignment stage (c, e and g).
+
+For LSU rRNA sequences (b, 1521–4102 bases, 1000 sequences randomly selected from the SEED alignment in Silva ( Glöckner et al. , 2017 ) and protein sequences with usual lengths (d, 21–297 amino acids, 50 157 sequences, the ‘sdr’ family taken from HomFam), the wall-clock time for the all-to-all alignment stage decreased almost linearly with the number of cores used for the calculation. However, for a dataset with very short sequences (f, 12–35 amino acids, 88 345 sequences, the ‘zf-CCHH’ family taken from HomFam), the efficiency differs depending on filesystem: high in Lustre (shown with magenta triangles) but low in NFS (shown with green squares). This difference is due to the balance between calculation and disk operations. As noted earlier, a considerable amount of temporary data is written in parallel into the filesystem: approximately 218 MB, 100 GB and 142 GB for LSU rRNA, ‘sdr’ and ‘zf-CCHH’, respectively, in the examples shown here. Overhead due to these disk operations is almost negligible in the former two cases but not in the latter case, where alignment of ∼23 amino acids takes only a short time in comparison with the time to write the temporary data to disk using NFS.
+
+Figure 1c, e and g suggest that the wall-clock time of the progressive stage varies for each run and does not linearly decrease, but usually this is not a speed-limiting step. CPU time and wall-clock time for various problems are shown in Supplementary Table S1 .
+
+Until now, it was necessary to use highly approximate methods, such as the FFT-NS-2 option of MAFFT or the progressive option of Clustal Omega, in order to construct large MSAs. In terms of the MSA itself, the accuracy of these methods tends to decrease along with the increase in the number of sequences. This was first pointed out by Sievers et al. (2013) and confirmed by Le et al. (2017) . The increase in accuracy observed in Figure 1a for more than 200 sequences is due to the prediction phase not due to the alignment phase (see the last section in Supplementary Data and black dashed lines in Supplementary Fig. S1 ). As a result, it was difficult to know how many sequences should be included in an MSA. With more sequences, the MSA has richer comparative information, but the alignment quality is expected to decrease. The optimal balance between these two factors may differ by case. In contrast, the accuracy of G-large-INS-1 and G-INS-1 (red and blue dashed lines in Supplementary Fig. S1 ) was robust to data size in this test. The number of sequences to include in the MSA can now be determined simply based on the computational resources available and the requirements for the downstream analysis.
+Acknowledgements
+
+The authors thank Daron M. Standley and John Rozewicki, Osaka University, and Shun Sakuraba, the University of Tokyo, for discussion and computational support. The NIG supercomputer at ROIS National Institute of Genetics and the Reedbush System in the Information Technology Center, the University of Tokyo, were used.
+Funding
+
+This work was supported by JSPS KAKENHI [grant numbers JP16K07464 (to K.D.Y., K.T. and K.K.) and JP17J06457 (to T.N.)] and Platform Project for Supporting Drug Discovery and Life Science Research [grant numbers JP17am0101110 (to T.N., K.D.Y. and K.T.) and JP17am0101108 (to K.K.)] from AMED, Japan.
+
+Conflict of Interest : none declared.
+References
+Boyce
+K.
+et al.  (
+2015
+)
+Instability in progressive multiple sequence alignment algorithms
+.
+Algorithms Mol Biol
+ ,
+10
+,
+26.
+Google Scholar
+Crossref
+Search ADS
+PubMed
+ 
+Drozdetskiy
+A.
+et al.  (
+2015
+)
+JPred4: a protein secondary structure prediction server
+.
+Nucleic Acids Res
+ .,
+43
+,
+W389
+–
+W394
+.
+Google Scholar
+Crossref
+Search ADS
+PubMed
+ 
+Fox
+G.
+et al.  (
+2016
+)
+Using de novo protein structure predictions to measure the quality of very large multiple sequence alignments
+.
+Bioinformatics
+ ,
+32
+,
+814
+–
+820
+.
+Google Scholar
+Crossref
+Search ADS
+PubMed
+ 
+Glöckner
+F.O.
+et al.  (
+2017
+)
+25 years of serving the community with ribosomal RNA gene reference databases and tools
+.
+J. Biotechnol
+ .,
+261
+,
+169
+–
+176
+.
+Google Scholar
+Crossref
+Search ADS
+PubMed
+ 
+González-Domínguez
+J.
+et al.  (
+2016
+)
+MSAProbs-MPI: parallel multiple sequence aligner for distributed-memory systems
+.
+Bioinformatics
+ ,
+32
+,
+3826
+–
+3828
+.
+Google Scholar
+Crossref
+Search ADS
+PubMed
+ 
+Gudyś
+A.
+,
+Deorowicz
+S.
+(
+2017
+)
+QuickProbs 2: towards rapid construction of high-quality alignments of large protein families
+.
+Sci. Rep
+ .,
+7
+,
+41553.
+Google Scholar
+Crossref
+Search ADS
+PubMed
+ 
+Katoh
+K.
+et al.  (
+2017
+)
+MAFFT online service: multiple sequence alignment, interactive sequence choice and visualization
+.
+Brief Bioinformatics
+ , in press.
+Le
+Q.
+et al.  (
+2017
+)
+Protein multiple sequence alignment benchmarking through secondary structure prediction
+.
+Bioinformatics
+ ,
+33
+,
+1331
+–
+1337
+.
+Google Scholar
+Crossref
+Search ADS
+PubMed
+ 
+Needleman
+S.B.
+,
+Wunsch
+C.D.
+(
+1970
+)
+A general method applicable to the search for similarities in the amino acid sequence of two proteins
+.
+J. Mol. Biol
+ .,
+48
+,
+443
+–
+453
+.
+Google Scholar
+Crossref
+Search ADS
+PubMed
+ 
+Notredame
+C.
+et al.  (
+1998
+)
+COFFEE: an objective function for multiple sequence alignments
+.
+Bioinformatics
+ ,
+14
+,
+407
+–
+422
+.
+Google Scholar
+Crossref
+Search ADS
+PubMed
+ 
+Raghava
+G.P.S.
+et al.  (
+2003
+)
+OXBench: a benchmark for evaluation of protein multiple sequence alignment accuracy
+.
+BMC Bioinformatics
+ ,
+4
+,
+47.
+Google Scholar
+Crossref
+Search ADS
+PubMed
+ 
+Sievers
+F.
+et al.  (
+2011
+)
+Fast, scalable generation of high-quality protein multiple sequence alignments using Clustal Omega
+.
+Mol. Syst. Biol
+ .,
+7
+,
+539
+.
+Google Scholar
+Crossref
+Search ADS
+PubMed
+ 
+Sievers
+F.
+et al.  (
+2013
+)
+Making automated multiple alignments of very large numbers of protein sequences
+.
+Bioinformatics
+ ,
+29
+,
+989
+–
+995
+.
+Google Scholar
+Crossref
+Search ADS
+PubMed
+ 
+Yamada
+K.D.
+et al.  (
+2016
+)
+Application of the MAFFT sequence alignment program to large data—reexamination of the usefulness of chained guide trees
+.
+Bioinformatics
+ ,
+32
+,
+3246
+–
+3251
+.
+Google Scholar
+Crossref
+Search ADS
+PubMed
+ 
+© The Author(s) 2018. Published by Oxford University Press.
+This is an Open Access article distributed under the terms of the Creative Commons Attribution Non-Commercial License ( http://creativecommons.org/licenses/by-nc/4.0/ ), which permits non-commercial re-use, distribution, and reproduction in any medium, provided the original work is properly cited. For commercial re-use, please contact journals.permissions@oup.com
+Issue Section:
+SEQUENCE ANALYSIS
+Associate Editor:
+John Hancock
+Associate Editor
+Search for other works by this author on:
+Oxford Academic
+PubMed
+Google Scholar
+John Hancock
+Download all figures
+Supplementary data
+Supplementary Data
+- pdf file
+2,479 Views
+6 Citations
+Article has an altmetric score of 6
+View Metrics
+×
+Email alerts
+New issue alert
+Advance article alerts
+Article activity alert
+Receive exclusive offers and updates from Oxford Academic
+Close
+Related articles in
+
+    Web of Science
+    Google Scholar
+
+Citing articles via
+Web of Science (6)
+Google Scholar
+CrossRef
+
+    Latest
+    Most Read
+    Most Cited
+
+Aligning Optical Maps to De Bruijn Graphs
+Reviewer-coerced citation: Case report, update on journal policy, and suggestions for future prevention
+Predicting runtimes of bioinformatics tools based on historical data: Five years of Galaxy usage
+Calculation of accurate interatomic contact surface areas for the quantitative analysis of non-bonded molecular interactions
+NEMO: Cancer subtyping by integration of partial multi-omic data
+
+    About Bioinformatics
+    Editorial Board
+    Author Guidelines
+    Facebook
+    Twitter
+
+    Purchase
+    Recommend to your Library
+    Advertising and Corporate Services
+    Journals Career Network
+
+Bioinformatics
+
+    Online ISSN 1460-2059
+    Print ISSN 1367-4803
+    Copyright © 2019 Oxford University Press
+
+    About Us
+    Contact Us
+    Careers
+    Help
+    Access & Purchase
+    Rights & Permissions
+    Open Access
+
+Connect
+
+    Join Our Mailing List
+    OUPblog
+    Twitter
+    Facebook
+    YouTube
+    Tumblr
+
+Resources
+
+    Authors
+    Librarians
+    Societies
+    Sponsors & Advertisers
+    Press & Media
+    Agents
+
+Explore
+
+    Shop OUP Academic
+    Oxford Dictionaries
+    Oxford Index
+    Epigeum
+    OUP Worldwide
+    University of Oxford
+
+Oxford University Press is a department of the University of Oxford. It furthers the University's objective of excellence in research, scholarship, and education by publishing worldwide
+Oxford University Press
+
+    Copyright © 2019 Oxford University Press
+    Cookie Policy
+    Privacy Policy
+    Legal Notice
+    Site Map
+    Accessibility
+    Get Adobe Reader
+
+Close
+This Feature Is Available To Subscribers Only
+
+Sign In or Create an Account
+Close
+
+This PDF is available to Subscribers Only
+View Article Abstract & Purchase Options
+
+For full access to this pdf, sign in to an existing account, or purchase an annual subscription.
+Close
+Scholarly IQ

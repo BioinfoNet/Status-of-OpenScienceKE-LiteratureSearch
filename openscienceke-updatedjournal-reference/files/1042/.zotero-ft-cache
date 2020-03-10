@@ -1,0 +1,274 @@
+TCS: a computer program to estimate gene genealogies - Clement - 2000 - Molecular Ecology - Wiley Online Library
+
+    Skip to Article Content
+    Skip to Article Information
+
+Access By ICIPE LIBRARY
+Wiley Online Library
+Wiley Online Library
+Access by ICIPE LIBRARY
+Search within
+
+    Search term
+    Advanced Search Citation Search
+    Search term
+    Advanced Search Citation Search
+
+Login / Register
+Molecular Ecology
+Volume 9, Issue 10 Molecular Ecology banner
+Full Access
+TCS: a computer program to estimate gene genealogies
+M. Clement
+
+Department of Computer Science, Brigham Young University, Provo, UT 84602, USA,
+Search for more papers by this author
+D. Posada
+
+Department of Zoology, 574 Widtsoe Building, Brigham Young University, Provo, UT 84602, USA
+Search for more papers by this author
+K. A. Crandall
+
+Corresponding Author
+
+Department of Zoology, 574 Widtsoe Building, Brigham Young University, Provo, UT 84602, USA
+Keith A. Crandall. Fax: (801) 378 7423; E‐mail:
+
+kac@email.byu.edu
+Search for more papers by this author
+M. Clement
+
+Department of Computer Science, Brigham Young University, Provo, UT 84602, USA,
+Search for more papers by this author
+D. Posada
+
+Department of Zoology, 574 Widtsoe Building, Brigham Young University, Provo, UT 84602, USA
+Search for more papers by this author
+K. A. Crandall
+
+Corresponding Author
+
+Department of Zoology, 574 Widtsoe Building, Brigham Young University, Provo, UT 84602, USA
+Keith A. Crandall. Fax: (801) 378 7423; E‐mail:
+
+kac@email.byu.edu
+Search for more papers by this author
+First published:  25 December 2001
+https://doi.org/10.1046/j.1365-294x.2000.01020.x
+Cited by: 6109
+About
+
+    Figures
+    References
+    Related
+    Information
+
+ePDF PDF
+PDF PDF
+Sections
+
+    Acknowledgements
+    References
+    Citing Literature
+
+ePDF PDF
+PDF PDF
+Tools
+
+    Request permission
+    Export citation
+    Add to favorites
+    Track citation
+
+Share
+
+Give access
+Share full text access
+Close modal
+
+Share full text access
+Please review our Terms and Conditions of Use and check box below to share full-text version of article.
+I have read and accept the Wiley Online Library Terms and Conditions of Use.
+Shareable Link
+
+Use the link below to share a full-text version of this article with your friends and colleagues. Learn more.
+Copy URL
+
+Share a link
+Share on
+
+    Email
+    Facebook
+    Twitter
+    Linked In
+    Reddit
+
+Phylogenies are extremely useful tools, not only for establishing genealogical relationships among a group of organisms or their parts (e.g. genes), but also for a variety of research once the phylogenies are estimated. In a recent review, 19 eloquently outline a number of uses for phylogenetic information from discovery of drug resistance to reconstructing the common ancestor to all of life. Phylogenies have been used to predict future trends in infectious disease ( 4 ) and have even been offered as evidence in a court of law ( 27 ). Yet phylogenies are only as useful as they are accurate.
+
+Estimating genealogical relationships among genes at the population level presents a number of difficulties to traditional methods of phylogeny reconstruction. These traditional methods such as parsimony, neighbour‐joining, and maximum‐likelihood make assumptions that are invalid at the population level. For example, these methods assume ancestral haplotypes are no longer in the population, yet coalescent theory predicts that ancestral haplotypes will be the most frequent sequences sampled in a population level study ( 28 ; 8 ; 7 ). Traditional methods require reasonably large numbers of variable characters to accurately reconstruct relationships ( 16 ) and population level studies typically lack such variation. Also, recombination is a real possibility among sequences at the population level and traditional methods assume recombination does not occur. The failure to incorporate the possibility of recombination in phylogeny reconstruction can lead to grave errors in the resulting estimated phylogeny. The combination of these effects can lead parsimony methods to infer a cumbersome amount of most parsimonious trees at the population level with no resolution among the set (e.g. over one billion trees for a set of human mitochondrial DNA (mtDNA), 9 ). These effects can also lead neighbour‐joining and traditional maximum‐likelihood methods to be over confident in the resulting relationships ( 2 ). Therefore, an alternative approach is needed to provide accurate estimates of gene genealogies at the population level that take into account these population level phenomena not addressed by traditional methods.
+
+Multiple groups have looked to network representations for population level genealogical information ( 1 ; 23 ; 9 ; 11 ). Networks allow one to naturally incorporate the often‐times nonbifurcating genealogical information associated with population level divergences. The method of 23 (TCS) has been used extensively with restriction site and nucleotide sequence data to infer population level genealogies when divergences are low ( 12 ; 20 ; 13 ; 15 ; 21 ; 26 , Gómez‐Zurita et al . 2000). TCS has been used with traditional methods to estimate relationships among organisms that span a wide range of divergence ( 6 ; 3 ). The approach has also been used extensively with a nested analysis procedure to partition population structure from population history ( 24 ; 22 ) and explore the phylogeographic history of a diversity of organisms (e.g. 17 ; 25 ). In this note, we announce the availability of a new software package, TCS, to estimate genealogical relationships among sequences using the method of 23 .
+
+The TCS software opens nucleotide sequence files in either nexus ( 18 ) or phylip ( 10 ) sequential format. Sequences should not be collapsed into haplotypes as frequency data can be incorporated into the output. The program collapses sequences into haplotypes and calculates the frequencies of the haplotypes in the sample. These frequencies are used to estimate haplotype outgroup probabilities, which correlate with haplotype age ( 8 ; 5 ). An absolute distance matrix is then calculated for all pairwise comparisons of haplotypes. The probability of parsimony [as defined in 23 , equations 6, 7, and 8] is calculated for pairwise differences until the probability exceeds 0.95. The number of mutational differences associated with the probability just before this 95% cut‐off is then the maximum number of mutational connections between pairs of sequences justified by the ‘parsimony’ criterion. These justified connections are then made resulting in a 95% set of plausible solutions. The program outputs the sequences, the pairwise absolute distance matrix, probabilities of parsimony for mutational steps just beyond the 95% cut‐off, a test listing of connections made and missing intermediates generated, and a graph output file containing the resulting network ( Fig. 1 ). This graph output file can be opened in the freeware VGJ 1.0.3 ( http://www.eng.auburn.edu/department/cse/research/graphdrawing/graphdrawing.html; distributed under the terms of the GNU General Public License, Version 2), which is packaged with the TCS algorithm. The program can handle a reasonable number of sequences. For example, an HTLV data set with 69 haplotypes of length 725 bp took over one hour to run in a Macintosh G3. Memory requirements are low, and the program will run with less than 1 MB RAM. The TCS software package, including executables for Mac and PC, documentation, and Java source code, is distributed freely and is available at our website, along with a host of other programs for population genetic and phylogenetic analyses: http://bioag.byu.edu/zoology/crandalllab/programs.htm.
+image
+Figure 1
+Open in figure viewer PowerPoint
+
+TCS Java interface. The maximum number of steps connecting parsimoniously two haplotypes is indicated. Gaps can be treated as a 5th state or as missing data. The graph can be edited and arranged using different algorithms. By double‐clicking over a haplotype, some information is displayed, such as sequences included in the haplotype and outgroup weights. The haplotype with the highest outgroup probability is displayed as a square, while other haplotypes are displayed as ovals. The size of the square or oval corresponds to the haplotype frequency.
+Acknowledgements
+
+This work was supported by the Alfred P. Sloan Foundation, a Shannon Award from the National Institutes of Health, and NIH R01‐HD34350.
+References
+
+    1 Bandelt H‐J & Dress AWM ( 1992 ) Split decomposition: a new and useful approach to phylogenetic analysis of distance data . Molecular Phylogenetics and Evolution , 1 , 242 252 .
+    Crossref PubMed Web of Science® Google Scholar
+    2 Bandelt H‐J , Forster P , Sykes BC , Richards MB ( 1995 ) Mitochondrial portraits of human populations using median networks . Genetics , 141 , 743 753 .
+    CAS PubMed Web of Science® Google Scholar
+    3 Benabib M , Kjer KM , Sites Jw Jr ( 1997 ) Mitochondrial DNA sequence‐based phylogeny and the evolution of viviparity in the Sceloporus scalaris group (Reptilia, Squamata) . Evolution , 51 , 1262 1275 .
+    Wiley Online Library CAS PubMed Web of Science® Google Scholar
+    4 Bush RM , Bender CA , Subbarao K , Cox NJ , Fitch WM ( 1999 ) Predicting the evolution of human influenza A . Science , 286 , 1921 1925 .
+    Crossref CAS PubMed Web of Science® Google Scholar
+    5 Castelloe J & Templeton AR ( 1994 ) Root probabilities for intraspecific gene trees under neutral coalescent theory . Molecular Phylogenetics and Evolution , 3 , 102 113 .
+    Crossref PubMed Web of Science® Google Scholar
+    6 Crandall KA & Fitzpatrick Jf Jr ( 1996 ) Crayfish molecular systematics: Using a combination of procedures to estimate phylogeny . Systematic Biology , 45 , 1 26 .
+    Wiley Online Library CAS PubMed Web of Science® Google Scholar
+    7 Crandall KA & Templeton AR ( 1993 ) Empirical tests of some predictions from coalescent theory with applications to intraspecific phylogeny reconstruction . Genetics , 134 , 959 969 .
+    CAS PubMed Web of Science® Google Scholar
+    8 Donnelly P & Tavaré S ( 1986 ) The ages of alleles and a coalescent . Advances in Applied Probability , 18 , 1 19 .
+    Web of Science® Google Scholar
+    9 Excoffier L & Smouse PE ( 1994 ) Using allele frequencies and geographic subdivision to reconstruct gene trees within a species: Molecular variance parsimony . Genetics , 136 , 343 359 .
+    CAS PubMed Web of Science® Google Scholar
+    10 Felsenstein J ( 1991 ) phylip: Phylogenetic Inference Package . University of Washington, Seattle, WA.
+    Google Scholar
+    11 Fitch WM ( 1997 ) Networks and viral evolution . Journal of Molecular Evolution , 44 , S65 S75 .
+    Crossref CAS PubMed Web of Science® Google Scholar
+    12 Georgiadis N , Bischof L , Templeton A et al. ( 1994 ) Structure and history of African elephant populations: I. Eastern and Southern Africa . Journal of Heredity , 85 , 100 104 .
+    Crossref PubMed Web of Science® Google Scholar
+    13 Gerber AS & Templeton AR ( 1996 ) Population sizes and within‐deme movement of Trimerotropis saxatilis (Acrididae), a grasshopper with a fragmented distribution . Oecologia , 105 , 343 350 .
+    Crossref PubMed Web of Science® Google Scholar
+    14 Gómez‐Zurita J , Petitpierre E , Juan C ( 2000 ) Nested cladistic analysis, phylogeography and speciation in the Timarcha goettingensis complex (Coleoptera, Chrysomelidae) . Molecular Ecology , 9 , 557 570 .
+    Wiley Online Library CAS PubMed Web of Science® Google Scholar
+    15 Hedin MC ( 1997 ) Speciational history in a diverse clade of habitat‐specialized spiders (Araneae: Nesticidae: Nesticus ): Inferences from geographic‐based sampling . Evolution , 51 , 1929 1945 .
+    Wiley Online Library PubMed Web of Science® Google Scholar
+    16 Huelsenbeck JP & Hillis DM ( 1993 ) Success of phylogenetic methods in the four‐taxon case . Systematic Biology , 42 , 247 264 .
+    Crossref Web of Science® Google Scholar
+    17 Johnson JB & Jordon S ( 2000 ) Phylogenetic divergence in leatherside chub ( Gila copei ) inferred from mitochondrial cytochrome b sequences . Molecular Ecology , 9 , 1029 1035 .
+    Google Scholar
+    18 Maddison DR , Swofford DL , Maddison WP ( 1997 ) nexus: an extensible file format for systematic information . Systematic Biology , 46 , 590 621 .
+    Crossref CAS PubMed Web of Science® Google Scholar
+    19 Pagel M ( 1999 ) Inferring the historical patterns of biological evolution . Nature (London) , 401 , 877 884 .
+    Crossref CAS PubMed Web of Science® Google Scholar
+    20 Routman E , Wu R , Templeton AR ( 1994 ) Parsimony, molecular evolution, and biogeography: The case of the North American Giant Salamander . Evolution , 48 , 1799 1809 .
+    Wiley Online Library PubMed Web of Science® Google Scholar
+    21 Schaal BA , Hayworth DA , Olsen KM , Rouscher JT , Smith WA ( 1998 ) Phylogeographic studies in plants: problems and prospects . Molecular Ecology , 7 , 465 474 .
+    Wiley Online Library PubMed Web of Science® Google Scholar
+    22 Templeton AR ( 1998 ) Nested clade analyses of phylogeographic data: testing hypotheses about gene flow and population history . Molecular Ecology , 7 , 381 397 .
+    Wiley Online Library CAS PubMed Web of Science® Google Scholar
+    23 Templeton AR , Crandall KA , Sing CF ( 1992 ) A cladistic analysis of phenotypic associations with haplotypes inferred from restriction endonuclease mapping and DNA sequence data. III. Cladogram estimation . Genetics , 132 , 619 633 .
+    Wiley Online Library CAS PubMed Web of Science® Google Scholar
+    24 Templeton AR , Routman E , Phillips CA ( 1995 ) Separating population structure from population history: a cladistic analysis of geographical distribution of mitochondrial DNA haplotypes in the tiger salamander, Ambystoma tigrinum . Genetics , 140 , 767 782 .
+    Google Scholar
+    25 Turner TF , Trexler JC , Harris JL , Haynes JL ( 2000 ) Nested cladisitic analysis indicates population fragmentation shapes genetic diversity in a freshwater mussel . Genetics , 154 , 777 785 .
+    CAS PubMed Web of Science® Google Scholar
+    26 Vilá C , Amorim IR , Leonard JA et al. ( 1999 ) Mitochondrial DNA phylogeography and population history of the Gray Wolf Canis lupus . Molecular Ecology , 8 , 2089 2103 .
+    Wiley Online Library CAS PubMed Web of Science® Google Scholar
+    27 Vogel G ( 1997 ) Phylogenetic analysis: getting its day in court . Science , 275 , 1559 1560 .
+    Crossref CAS PubMed Web of Science® Google Scholar
+    28 Watterson GA & Guess HA ( 1977 ) Is the most frequent allele the oldest? Theoretical Population Biology , 11 , 141 160 .
+    Crossref PubMed Web of Science® Google Scholar
+
+Citing Literature
+Publication cover image
+
+Volume 9 , Issue 10
+
+October 2000
+
+Pages 1657-1659
+This article also appears in:
+
+    Silver Anniversary
+
+    Figures
+    References
+    Related
+    Information
+
+    Metrics
+    Citations: 6109
+    Details
+
+    Keywords
+        cladogram estimation
+        gene genealogy
+        phylogeography
+        population genetics
+        software
+    Publication History
+        Issue Online: 25 December 2001
+        Version of Record online: 25 December 2001
+        Editorial history: Received 11 February 2000; revisionaccepted 26 April 2000
+
+Close Figure Viewer
+Browse All Figures Return to Figure
+Previous Figure Next Figure
+Caption
+back
+Additional links
+About Wiley Online Library
+
+    Privacy Policy
+    Terms of Use
+    Cookies
+    Accessibility
+
+Help & Support
+
+    Contact Us
+
+Opportunities
+
+    Subscription Agents
+    Advertisers & Corporate Partners
+
+Connect with Wiley
+
+    The Wiley Network
+    Wiley Press Room
+
+Copyright © 1999-2019 John Wiley & Sons, Inc . All rights reserved
+Wiley Home Page
+
+The full text of this article hosted at iucr.org is unavailable due to technical difficulties.
+Log in to Wiley Online Library
+Email or Customer ID
+Password
+Forgot password?
+NEW USER > INSTITUTIONAL LOGIN >
+Change Password
+Old Password
+New Password
+Too Short Weak Medium Strong Very Strong Too Long
+Password Changed Successfully
+
+Your password has been changed
+Create a new account
+Email or Customer ID
+Returning user
+Forgot your password?
+
+Enter your email address below.
+Email or Customer ID
+
+"Please check your email for instructions on resetting your password. If you do not receive an email within 10 minutes, your email address may not be registered, and you may need to create a new Wiley Online Library account.
+Request Username
+
+Can't sign in? Forgot your username?
+
+Enter your email address below and we will send you your username
+Email or Customer ID
+Close
+
+If the address matches an existing account you will receive an email with instructions to retrieve your username
+Close crossmark popup
+
