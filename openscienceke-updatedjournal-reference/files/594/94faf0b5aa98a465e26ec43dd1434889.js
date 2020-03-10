@@ -1,2 +1,0 @@
-Bootstrapper.bindImmediate(function(){var Bootstrapper=window["Bootstrapper"];var ensightenOptions=Bootstrapper.ensightenOptions;var consent=Bootstrapper.npg.utils.Consent;if(consent.allow(consent.TARGETING))(function(){if(window.location.hostname.match(/^(.*-?www.)?nature.com/)){var d=document,f=d.getElementsByTagName("script")[0],s=d.createElement("script");s.type="text/javascript";s.async=true;s.defer=true;s.src="//get.s-onetag.com/c692e01a-b65d-4aa9-aff9-bee34f082a39/tag.min.js";f.parentNode.insertBefore(s,
-f)}})()},2522881,542177);
