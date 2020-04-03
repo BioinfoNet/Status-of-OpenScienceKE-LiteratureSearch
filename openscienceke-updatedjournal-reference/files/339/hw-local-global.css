@@ -1,0 +1,27 @@
+@import url("hw-local-sidebars.css");
+
+ /*overrides for design2.5 - replace #999 with your dark color and #ff6600; with your light color */
+
+#header .header-buttons, #header .header-buttons a {color: #00EE76;}
+
+#header #hdr-login {color: #999;}
+
+#header .bar, #footer .bar {background-color: #00EE76;}	
+
+#content-block .toc-level a.toc-section-return {background-color:#999;}
+
+#header .bar-inner, #footer .footer-group {background-color: #00EE76;}
+
+
+ /*logo settings - adjust for size and filename/format  */
+/* #header h1 a#logo {background-image: url(/local/img/journal_logo.gif);width:375px;height:80px;} */
+#header h1  {height:80px;width:375px;margin:0 24px;}
+
+#header #logo span {
+    color: #000066;
+    display: block;
+    font: 160% "Georgia","Times New Roman",serif;
+    padding: 0.8em 0 0.5em;
+    text-indent: 0;
+    width: 725px;
+}

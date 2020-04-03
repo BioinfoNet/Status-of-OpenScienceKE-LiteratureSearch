@@ -1,0 +1,299 @@
+body	{ margin: 0em; }
+
+.regular
+	{ font-family: sans-serif;
+	  font-weight: normal;
+	  font-size: 13px;
+	}
+.note
+	{ font-family: sans-serif;
+	  font-weight: normal;
+	  font-size: 11px;
+	  font-style: italic; 
+	}
+.miolo
+	{ font-family: sans-serif;
+	  font-weight: normal;
+	  font-size: 13px;
+	}
+.bi 	{ font-family: sans-serif;
+	  font-weight: normal;
+	  font-size: 11px;
+	  text-align: right;
+	  color: darkolivegreen;
+ 	}
+.hmtext	{ font-family: sans-serif;
+	  text-align: left;
+	  font-size: 13px;
+	  color: darkolivegreen; /* dourado */
+	  font-weight: bold;
+	  font-variant: small-caps;
+	  font-style: normal;
+	  background-color: cornsilk; /* fundo do menu bege */
+	}
+.abouttext
+	{ font-family: sans-serif;
+	  text-align: left;
+	  font-size: 13px;
+	  color: #666666; /* dourado */
+	  font-weight: bold;
+	  font-style: normal;
+	  background-color: white;
+	}
+#abouton { color: darkolivegreen; font-weight: bold }
+.outterTable
+	{ background-color: white;
+          background-image: url(imgs/banner.gif);
+	}
+.headerTable
+	{ background-color: white;
+	}
+.langicon
+	{ border-left-color: darkkhaki;  /* cor da borda do menu */
+          border-left-width: 1px;
+	  border-left-style: solid;
+	  border-bottom-color: darkkhaki;  /* cor da borda do menu */
+          border-bottom-width: 1px;
+	  border-bottom-style: solid;
+	  font-family: Arial, Helvetica, sans-serif;
+	  font-size: 10px;
+	  color: darkblue;
+	  font-weight: bold;
+	  margin-left: 2px;
+	}
+.buttonBox
+	{ border-color: darkkhaki;  /* cor da borda do menu */
+          border-width: 1px;
+	  border-style: solid outset;
+	  font-size: 13px;
+	}
+.issueBox
+	{ border-color: darkkhaki;  /* cor da borda do menu */
+          border-width: 1px;
+	  border-style: solid outset;
+	  font-size: 10px;
+	}
+#topBottomLine
+	{ border-top-color: darkolivegreen;  /* cor da borda do menu */
+          border-top-width: 1px;
+	  border-top-style: solid;
+	  border-bottom-color: darkolivegreen;  /* cor da borda do menu */
+          border-bottom-width: 1px;
+	  border-bottom-style: solid;
+	}
+#bottomLine
+	{ border-bottom-color: darkolivegreen;  /* cor da borda do menu */
+          border-bottom-width: 1px;
+	  border-bottom-style: solid;
+	}
+.textBox
+	{ border-color: darkkhaki;  /* cor da borda do menu */
+          border-width: 1px;
+	  border-style: solid;
+	  font-size: 13px;
+	  background-color: ivory; /* fundo do campo */
+	}
+.selectBox
+	{ border-color: darkkhaki;  /* cor da borda do menu */
+          border-width: 1px;
+	  border-style: solid;
+	  font-size: 11px;
+	  background-color: ivory; /* fundo do campo */
+	}
+.footnote
+	{ font-family: sans-serif;
+	  font-weight: normal;
+	  font-size: 10px;
+	  text-align: center;
+	  color: darkgoldenrod;
+ 	}
+.countryName
+	{ font-family: sans-serif;
+	  font-weight: bold;
+	  font-variant: small-caps;
+	  font-size: 15px;
+	  text-align: left;
+	  color: darkgoldenrod;
+ 	}
+.pagetitle
+	{ font-family: sans-serif;
+	  font-weight: bold;
+	  font-variant: small-caps;
+	  font-size: 16px;
+	  text-align: left;
+	  color: darkolivegreen;
+ 	}
+.paperTitle
+	{ font-family: sans-serif;
+	  font-weight: bold;
+/*	  font-variant: small-caps; */
+	  font-size: 16px;
+	  text-align: left;
+	  color: darkolivegreen;
+ 	}
+.paperPublisher
+	{ font-family: sans-serif;
+	  font-weight: bold;
+	  font-variant: small-caps;
+	  font-size: 13px;
+	  text-align: left;
+	  color: darkgoldenrod;
+ 	}
+.paperISSN
+	{ font-family: sans-serif;
+	  font-weight: bold;
+	  font-variant: small-caps;
+	  font-size: 11px;
+	  text-align: left;
+	  color: darkgoldenrod;
+ 	}
+b	{ color: darkgoldenrod; font-weight: bold }
+strong	{ color: darkgoldenrod; font-weight: bold }
+.sp	{ font-style: italic;
+	  color: darkolivegreen;
+	}
+.espacinho { margin: 0px 0px 6px 0px }
+li	{ list-style: url(imgs/bullet.gif) square; padding: 3px }
+.linew	{ list-style: url(imgs/bulletnew.gif) square }
+.lifree	{ list-style: url(imgs/bulletfree.gif) square }
+.nobullet	{ list-style: url(imgs/transparent.gif) square }
+a	{ color: darkolivegreen;
+	  font-weight: normal;
+	  text-decoration: none;
+	  font-size: 13px
+	}
+a:hover	{ color: darkgoldenrod;
+	}
+#bold	{ font-weight: bold }
+#gold	{ color: darkgoldenrod }
+#gold_bold
+	{ color: darkgoldenrod;
+	  font-weight: bold;
+	}
+#olive	{ color: darkolivegreen }
+#olive_bold
+	{ color: darkolivegreen;
+	  font-weight: bold;
+	}
+#gold_bold_tachado
+	{ color: darkolivegreen;
+	  font-variant: small-caps;
+	  font-weight: bold;
+	}
+#justify
+	{ text-align: justify }
+
+.AbstractText
+	{ font-family: sans-serif;
+	  font-weight: normal;
+	  text-align: justify;
+	  font-size: 13px;
+	}
+.AbstractTitle
+	{ font-family: sans-serif;
+	  font-weight: bold;
+	  font-size: 16px;
+/*	  font-variant: small-caps; */
+	  color: darkolivegreen;
+	}
+.AbstractJournalTitle
+	{ font-family: sans-serif;
+	  font-weight: bold;
+	  font-size: 15px;
+	  font-style: italic;
+	  color: black;
+	}
+.AbstractAuthor
+	{ font-family: sans-serif;
+	  font-weight: bold;
+	  font-size: 13px;
+	  font-style: italic;
+	  color: black;
+	}
+.TOCAuthor
+	{ font-family: sans-serif;
+	  font-weight: normal;
+	  font-size: 11px;
+	  font-style: italic;
+	  color: black;
+	}
+.AbstractH1
+	{ font-family: sans-serif;
+	  font-weight: bold;
+	  font-size: 13px;
+	  font-variant: small-caps;
+	  color: darkgoldenrod;
+	}
+.h2
+	{ font-family: sans-serif;
+	  font-weight: bold;
+	  font-size: 13px;
+	  font-variant: small-caps;
+	  color: darkgoldenrod;
+	}
+h1
+	{ font-family: sans-serif;
+	  font-weight: bold;
+	  font-size: 15px;
+	  font-variant: small-caps;
+	  color: darkgoldenrod;
+	}
+h2
+	{ font-family: sans-serif;
+	  font-weight: bold;
+	  font-size: 13px;
+	  font-variant: small-caps;
+	  color: darkgoldenrod;
+	}
+h3
+	{ font-family: sans-serif;
+	  font-weight: bold;
+	  font-size: 11px;
+	  font-variant: small-caps;
+	  color: darkgoldenrod;
+	}
+h4
+	{ font-family: sans-serif;
+	  font-weight: bold;
+	  font-size: 11px;
+	  font-variant: small-caps;
+	  color: darkgoldenrod;
+	}
+.AbstractKeywordText
+	{ font-family: sans-serif;
+	  font-weight: bold;
+	  font-size: 13px;
+	  font-style: italic;
+	  color: black;
+	}
+.AbstractCopyright
+	{ font-family: sans-serif;
+	  font-weight: bold;
+	  font-size: 13px;
+	  font-style: italic;
+	  color: black;
+	}
+.notice
+	{ font-family: sans-serif;
+	  font-weight: normal;
+	  font-size: 13px;
+	  font-style: italic;
+	  color: red;
+	}
+.help   { font-size: 18px;
+	  font-weight: bold;
+	  width: 200px;
+	  vertical-align: top;
+	  text-align: center;
+	  line-height: 250%;
+	  color: darkgreen;
+	  background-color: cornsilk;
+	  padding: 10px;
+	  box-shadow: 2px 2px 5px #888888;
+}
+.survey	{ color: #cc0000; font-weight: bold;
+	  font-family: Arial, Helvetica, sans-serif;
+	  font-size: 14px;
+	  text-align: center;
+	  text-shadow: 2px 2px 5px #888888;
+	}

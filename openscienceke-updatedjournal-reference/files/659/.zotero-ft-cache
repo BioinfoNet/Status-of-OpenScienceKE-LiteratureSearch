@@ -1,0 +1,200 @@
+
+Menu ENN Search
+
+    ENN home
+    Field Exchange
+    Nutrition Exchange
+    en-net
+    Media Hub
+    Our work
+    Resources
+
+    ENN home
+    Field Exchange
+    Nutrition Exchange
+    en-net
+    Media Hub
+    Our work
+    Resources
+
+    Facebook
+    Twitter
+
+Powered by Google Translate Translate
+Admin area Edit this page Log out
+Field Exchange
+Open Data Kit Software to conduct nutrition surveys: Field experiences from Northern Kenya
+
+By Daniel Muhinja, Sisay Sinamo, Lydia Ndungu and Cynthia Nyakwama
+
+Daniel Muhinja is National Nutrition Specialist with World Vision (WV) Kenya, providing technical leadership to nutrition programming. He has over ten years’ experience in the design, management, monitoring and documentation of nutrition programmes.
+
+Dr Sisay Sinamo MPH, MD is currently Nutrition Advisor for WV International East Africa Region, supporting nine countries. He has worked in developmental and emergency nutrition programming for the past 16 years.
+
+Lydia Ndungu is Nutrition Programme Officer with WV Kenya and provides nutrition technical capacity-building, mentoring, resource mobilisation, nutrition advocacy, research, documentation, programme design, monitoring and evaluation.
+
+Cynthia Nyakwama is Health Programme Officer with WV Kenya. She has over 10 years’ experience in developing and managing national programmes and projects for health on malaria and HIV/AIDS with international non-governmental organisations.
+
+The authors acknowledge the Ministry of Health, International Rescue Committee, Save the Children and Islamic Relief. The project was funded by the Department for International Development (UKaid), World Vision UK and World Vision Canada. Thanks also to Colleen Emary, Senior Emergency Nutrition Advisor, World Vision International, for assistance in the development of this article.
+
+    Location: Kenya
+
+    What we know: Manual survey data collection and analysis is resource-intensive, with risk of errors.
+
+    What this article adds: A free, open-source mobile data collection package (Open Data Kit) (ODK) was successfully used by World Vision Kenya to conduct a SMART survey. Compared to manual data collection, it proved cheaper (less staff), quicker (instant data upload ready for analysis), less prone to error (immediate data checks possible) and abuse (GPS checks on random sampling) and more environmentally friendly (printed questionnaires not needed). Data aggregation (hosted on cloud server or internal servers) allows for further future analysis. Electricity/power packs (for charging), mobile internet (for data upload) and smartphones are needed but were not a barrier. Minor suggestions are made to the developers to improve usability.
+
+Background
+
+Nutrition programmes require high quality and timely data for appropriate decision-making. In the past, nutrition programmes used time-consuming manual processes for data collection and analysis. Open Data Kit (ODK) is a free and open-source set of tools which helps organisations author, field and manage mobile data collection solutions (see Box 1). Its core developers are researchers at the University of Washington’s (UW) Department of Computer Science and Engineering and active members of  Change , a multi-disciplinary group at UW exploring how technology can improve the lives of under-served populations around the world. WV is using ODK extensively for nutrition and health surveys across Asia and Africa; to date, 19 countries have been trained on ODK. World Vision Kenya introduced the concept of ODK for nutrition surveys conducted in Kenya; this article shares their experiences around this.
+
+Box 1: About ODK
+
+Open Data Kit is an open-source set of tools that enables online generation of forms/questionnaires, data collection on mobile phones and submission to a central server which is downloaded during analysis. ODK is made of up of three platforms:
+
+ODK Build : Enables users to create questionnaires using a drag-and-drop form designer or an Excel spreadsheet;
+
+ODK Collect : Phone-based replacement for paper forms for data collection;
+
+ODK Aggregate : Provides a ready to deploy online repository to store, view and export collected data.
+
+Data collected using ODK may be stored by Google servers or organisational servers. The server is a safe repository for data collected (cloud), and can be used for future analysis by other internal parties, such as WV-support offices.
+
+ 
+Methodology
+
+World Vision conducted a three-day LQAS (Lot Quality Assurance Sampling) survey training using ODK for 12 staff from a consortium of four non-governmental organisations (NGOs) and equipped them with skills to create a survey tool, upload data and download it for analysis. This training led to the development of a Standardised Monitoring Assessment for Relief and Transition (SMART) survey generic tool by the nutrition sector in Kenya. Sixty enumerators and 20 team leaders in Turkana County and 30 enumerators and ten team leaders in Wajir were trained for four days to conduct SMART surveys. During the fourth day, the survey teams completed a pilot exercise using smartphones. This was followed by six days of data collection in the field.
+
+Table 1 compares manual survey requirements against using ODK. Use of ODK saves on printing or photocopying bulky questionnaires and transporting them during data collection to central data entry centre. It reduces the number of staff needed to collect data, as no data entry staff are required (data is collected using the smartphones in the field), and it saves on time needed to access data that has been collected. ODK improves data quality by using a Geographic Information System to verify randomness of the data collected in the clusters (Figure 1) and by using skip logic, which ensures all questions are answered. Data collected is easily accessed and is stored in a server, hence it cannot be manipulated; WV Kenya used Google servers to store data and did not encounter any challenges. Use of smartphones in two surveys saved approximately US$8,352 compared to paper-based surveys. One survey of 25-35 clusters requires one set of six smartphones, which cost about US$3,180, and which are used for subsequent surveys.
+
+Lessons learned
+
+Developing the survey tool using Microsoft Excel is more user-friendly, easier and faster than using online ODK build function. Since Excel is offline, it is easier to work with; e.g. changes can be made that are then uploaded.
+
+Power conservation, internet connectivity and mobile network coverage influence the time to upload survey data. To enable the smartphones to keep power longer, ‘app lock’ is used to lock some applications, which reduces power wastage. Back-up power banks of about 5,200mAH were purchased by World Vision to address the challenge of some smartphones being drained of power during data collection. These power banks are able to charge a smartphone twice in a day. It is also essential to map out availability of mobile network or internet so that the survey teams can upload data daily. Survey teams were provided with data bundles to allow data upload while in the field; bulk 300MB costs about US$10 and is shared among teams.
+
+Use of smartphones is not a substitute for survey team supervision, which is key during data collection to provide support and ensure survey protocols are followed.
+
+Making survey supervisors accountable for smartphones and consistent use of one smartphone per team reduces loss and mismanagement of smartphones. To ensure responsibility and care for the equipment, supervisors signed a form accepting that the smartphone was in their custody, that they would take care of it and be responsible in case of loss.
+
+Plausibility checks were done on a daily basis and data analysis for anthropometry was done easily on downloading the data. The field survey teams uploaded survey data daily. The survey manager would download the data and conduct plausibility checks, relaying any data quality issues to the team supervisors to ensure subsequent data was of better quality.
+
+Global Positioning System (GPS) improves the quality of data by locating the sampled household. Collection of GPS information enables mapping of data during the data collection process to show randomness of the data. This protects against the risk that a data collection team could falsely complete the questionnaires.
+
+Recommendations to the developers are to increase the cloud size to accommodate more data sets, especially for organisations conducting many surveys, without charging fees for cloud storage. In addition, it is difficult set up questions normally in tabular format where each column requires different types of ODK responses. For example, for questions on utilise “add group”, the ODK output is normally a link that requires additional publication; hence more time is needed to organise the data before it is transferred to another software program for analysis.
+Conclusion
+
+ODK has proved to be a good platform for faster, cost-saving collection and aggregation of nutrition survey data. World Vision’s experience with ODK has been shared with other partners; the Nutrition Information Working Group in Kenya has embraced the platform and supports its use. The positive Kenya experience reflects World Vision’s positive experiences in other countries.
+
+For more information, contact Daniel Muhinja. Email: daniel_muhinja@wvi.org
+
+Access ODK at: opendatakit.org
+ 
+More like this
+FEX: Experiences with mobile data collection in UNHCR standardised expanded nutrition surveys
+
+By Ellen Cecilie Andresen, Mélody Tondeur, and Caroline Wilkinson Since 2011, Ellen Cecilie Andresen has been a nutritionist with the Public Health Section at UNHCR...
+FEX: Developing a mobile health app to manage acute malnutrition: a five-country experience
+
+By Tine Frank, Emily Keane, Natalie Roschnik, Colleen Emary, Melani O'Leary and Laura Snyder View this article as a pdf Tine Frank is a consultant engaged by Save the...
+FEX: Evaluation of mobile application to support the treatment of acutely malnourished children in Wajir county, Kenya
+
+Summary of presentation1 View this article as a pdf By Emily Keane, Natalie Roschnik, Joanne Chui, Ibrahim Ahmed Osman and Hassan Mohamed Osman Emily Keane is a Nutrition...
+en-net: SMART SURVEY CONSULTANT-NEEDED FOR Integrated Emergency Nutrition and WASH Response in SW Angola
+
+Project Summary
+The proposed Emergency Nutrition and WASH Response (ENWR) aims to contribute towards humanitarian lifesaving that focuses primarily on children U5. The...
+en-net: Nutrition Consultant needed for Evaluation of CMAM mhealth project in Chad
+
+Background & Rationale
+In 2014, OFDA committed funding to World Vision to implement the “Saving Children’s Lives using mHealth to Improve...
+en-net: Nutrition Consultant needed: CMAM mhealth project monitoring, CHAD
+
+Background & Rationale:
+The OFDA CMAM mHealth Project began in Chad in late 2014. World Vision (WV) Chad is currently implementing the project in 9 OTP sites in...
+FEX: Improving nutrition surveys: New developments and changes at UNHCR
+
+By Timo Luege, Caroline Wilkinson and Maeve de France Timo Luege is an independent, humanitarian communications and advocacy consultant based in Berlin, Germany. Timo has...
+FEX: Use of a two-stage approach to identify intervention priorities for reduction of acute undernutrition in Abaya district of Ethiopia
+
+By Katja Siling, Asrat Dibaba and Mark Myatt Katja Siling is an independent consultant helping organisations increase their learning capability and fulfil their mandate...
+en-net: Nutrition Survey Co-ordinator Jordan
+
+
+Nutrition Survey Co-ordinator Jordan - UNHCR
+
+Dates of consultancy: from 03/04/2016 to 24 /06/2016
+
+Duty Station: Amman and for the report...
+FEX: Comparison of LQAS and 30-by-30 two-stage cluster sampled survey method for the assessment of coverage indicators
+
+By Asrat Dibaba, Charles Chimombo, Ari Uotila, Whitney King and Mark Myatt Asrat Dibaba is the Maternal, Newborn and Child Health Advisor for World Vision East Africa Region...
+FEX: Training and workshop to integrate IYCF in CMAM
+
+Summary of report1 Training/workshop participants Between 23 and 31 August 2010, World Vision International (WVI) and the Emergency Nutrition Network (ENN) held a six day...
+FEX: Health systems strengthening in fragile contexts: A partnership model in South West State, Somalia
+
+By Kevin Paul Mackey and Sirya Ezekiel Kiptum View this article as a pdf Lisez cet article en français ici Kevin Mackey is the Programme Development and Quality...
+FEX: Impact of community-based advocacy in Kenya
+
+By Geoffrey Kipkosgei Tanui, Thatcher Ng'ong'a and Daniel Muhinja Geofrey Kipkosgei Tanui is currently working as a Community Development Officer for the Kenya Signature...
+en-net: Consultancy opportunity with World Vision for Nutrition Assessment in Sierra Leone
+
+CONSULTANT NEEDED FOR NUTRITION ASSESSMENT IN SIERRA LEONE - 45 days beginning in July 2015 - OVERALL OBJECTIVE of the nutrition assessment is to determine and evaluate the...
+FEX: World Vision
+
+Name World Vision Website www.worldvision.ca Address 1 World Drive, Mississauga, Ontario L5T 2Y4 Director The President of World Vision Canada is Dave Toycen Dr. Carolyn...
+FEX: Treatment of severe acute malnutrition through the Integrated Child Development Scheme in Jharkand State, India
+
+By Grana Pu Selvi and Colleen Emary View this article as a pdf Lisez cet article en français ici Grana Pu Selvi has postgraduate qualifications in food and nutrition...
+en-net: World Vision Job Offer: Head of Nutrition Project, Wash Nut in, Mauritania
+
+en-net: Nutrition Information Management Officer - Rapid Response Team
+
+Nutrition Information Management Officer 6 month contract position, beginning September 1, 2014 The Rapid Response Team (RRT) of the Global Nutrition Cluster (GNC) is composed...
+en-net: Updated posting for Nutrition Information Management Officer - Rapid Response Team
+
+Nutrition Information Management Officer 6 month contract position, beginning September 1, 2014 The Rapid Response Team (RRT) of the Global Nutrition Cluster (GNC) is composed...
+FEX: Practical challenges of evaluating BSFP in northern Kenya
+
+Summary of published study1 Beneficiaries of BSFP in Kenya A mass or ‘blanket’ supplementary feeding programme (BSFP) was implemented by the World Food Programme (WFP) and...
+Show more...
+Download and bookmark
+
+    Reference
+
+Tags for this page
+
+    Assessment
+
+About this article
+
+    Date: November 2016
+    Issue: Field Exchange 53
+    Page number: 67
+
+About this page
+
+    Updated on 14 February 2017
+    1,702 views
+
+Close
+Reference this page
+
+Daniel Muhinja, Sisay Sinamo, Lydia Ndungu and Cynthia Nyakwama (2016). Open Data Kit Software to conduct nutrition surveys: Field experiences from Northern Kenya. Field Exchange 53, November 2016. p67. www.ennonline.net/fex/53/opendatakitsoftwarekenya
+ 
+About us
+
+ENN Strategy Annual reports & accounts Our funding
+About you
+
+Subscribe Update your details Who you are Support the ENN
+Key links
+
+IFE Core group State of Severe Malnutrition Global Nutrition Cluster Scaling up Nutrition movement
+Contact us
+
+Email the ENN Office +44 (0)1865 324996 Map and address
+ENN is a charity in the UK no. 1115156, and a limited company no. 4889844.
+Google Translate
+Original text
+Contribute a better translation

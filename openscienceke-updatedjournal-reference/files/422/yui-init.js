@@ -1,0 +1,1 @@
+var YUI,yuiObj;if((typeof yuiObj==="undefined"||!yuiObj)&&(typeof YUI!=="undefined"&&YUI)){yuiObj=YUI({combine:false,modules:{scriptenabled:{name:"scriptenabled",type:"css",fullpath:"//"+document.domain+"/assets/styles/scriptenabled.css"}}}).use("node",function(a){a.on("available",function(){var b="yui3-skin-sam",c=a.one("body");if(!c.hasClass(b)){c.addClass(b);}},"body");});}

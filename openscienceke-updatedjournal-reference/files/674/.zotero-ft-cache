@@ -1,0 +1,455 @@
+Loading [MathJax]/jax/output/SVG/fonts/TeX/fontdata.js
+Skip to main content
+ScienceDirect
+Journals & Books Register Sign in
+
+    Journals & Books
+    Register
+
+    Sign In
+    Help 
+
+ 
+Outline
+Download PDF Download
+Export
+Advanced
+Outline
+
+    Highlights
+    Abstract
+    Keywords
+    1. Introduction
+    2. Study area and methods
+    3. Results
+    4. Discussion
+    5. Conclusion
+    Acknowledgment
+    Appendix A. Supplementary data
+    References
+
+Show full outline
+Figures (11)
+
+    Fig. 1. The Amboseli ecosystem and the Magadi area in southern Kenya showing the…
+    Fig. 2. A flow of information within a monitoring system (Lindenmayer and Likens,…
+    Fig. 3. Long term averages of vegetation biomass (g/m2) in the Amboseli ecosystem from…
+    Fig. 4. Average vegetation biomass (g/m2) mapped in four group ranches
+    Fig. 5. Long term spatial time series display of vegetation changes in representative…
+    Fig. 6. The output of grazing pressure monitored in the Amboseli swamps that serve as a…
+
+Show all figures
+Tables (2)
+
+    Table 1
+    Table 2
+
+Extras (3)
+
+    Jolly code
+    Dataset J1
+    NDVI code
+
+JavaScript is disabled on your browser. Please enable JavaScript to use all the features on this page.
+Elsevier
+Ecological Informatics
+Volume 47 , September 2018 , Pages 35-44
+Ecological Informatics
+Application of open source tools for biodiversity conservation and natural resource management in East Africa
+Author links open overlay panel Victor N. Mose a David Western a Peter Tyrrell b
+Show more
+https://doi.org/10.1016/j.ecoinf.2017.09.006 Get rights and content
+Highlights
+
+•
+
+    We use forty years data to demonstrate the application of open source tools to spatial analysis and results visualization
+•
+
+    Customized tools speed up information processing and encourages its application
+•
+
+    Local community engagement and direct feedback lowers the barriers to ecosystem monitoring
+•
+
+    Local and regional early warning systems across the rangelands are supported by these tools
+
+Abstract
+
+We use forty years of animal and plant data collected in the Amboseli and Magadi ecosystems in Kajiado county, southern Kenya to demonstrate the application of open source tools to spatial analysis and the visualization of results. These highly interactive tools developed in R contain a series of commands that perform various data functions including: examining the data structure , aggregation, exploratory data analysis, vegetation biomass, greenness and grazing pressure estimations, NDVI extraction, species population estimation and spatial mapping , among other tasks. We customized the tools to suit the local community information needs and level of expertise without losing the underlying data richness or integrity. The implementation requires basic computer knowledge and can be undertaken by local community trainees using straight forward commands.
+
+The results show that with these automated tools, long-term data in large databases can be analyzed rapidly and presented in a way that encourages community participation, ownership and uptake locally and regionally. The tools allow biodiversity scenario building and other functions such as the identification of migratory corridors, habitat utilization by animal species and general land use and resource management.
+
+    Previous article in issue
+    Next article in issue
+
+Keywords
+Open source tools
+Biodiversity conservation
+Natural resource management
+Decision support
+Community participation
+1. Introduction
+
+The application of innovative technologies to biodiversity conservation and natural resource management is fast gaining ground in Africa, with local communities becoming actively involved ( Herrick et al., 2013 ). Innovations such as mobile money transfers have enabled pastoralist communities to bank and transfer funds as well as use their phones to gather and share knowledge on rangelands conditions such as pasture health, disease prevalence and water availability ( Herrick et al., 2013 ). Decisions made to move livestock in search of water, forage and best market prices are usually based on such information ( Oba, 2012 ), now easy to upload and access on mobile platforms.
+
+The availability of user friendly open source software and the increasing broad internet connectivity across Kenya ( Macharia, 2014 ), sometimes powered by solar energy , provides a unique platform that enables the incorporation of scientifically based conservation strategies into traditional conservation methods practiced for millennia. While information dissemination has begun at different levels across Africa's rangelands ( Reid et al., 2016 ), there are few examples of data collection, processing, interpretation and application at a local community level. This is partly due to a lack of user friendly analysis tools and technical knowledge among community members, which point to reduced research output at the local level.
+
+Here we use more than forty years of animal and plant data collected in the Amboseli ecosystem, and more recently the Magadi ecosystem, in Kajiado County, southern Kenya ( Fig. 1 ), to demonstrate the application of open source tools to biodiversity conservation and natural resource management at the community level. We show how massive long-term data collected in the two ecosystems can be rapidly analyzed and presented using a set of customized open source tools. We provide examples on how these tools support quick community decision making on grazing management and provide insights on seasonal wildlife distributions and vegetation biomass (g/m 2 ) shortfalls in relation to local drought conditions ( Western et al., 2015b ).
+Fig. 1:
+
+    Download high-res image (981KB)
+    Download full-size image
+
+Fig. 1 . The Amboseli ecosystem and the Magadi area in southern Kenya showing the Amboseli National Park and community conservation areas near lake Magadi.
+
+The highly interactive tools developed in R (R Core Team, 2016 ), an open source statistical computing software with spatial analysis capabilities, contain a series of commands that perform various data tasks including: examining the data structure , aggregation, exploratory data analysis, calculation of vegetation biomass (g/m 2 ), percentage grass greenness and grazing pressure estimations, Normalized Difference Vegetation Index (NDVI) extraction, species population estimates and distribution mapping, among other functions. The tools are customized to suit the local community data needs and level of expertise without losing the underlying data richness and integrity.
+
+The open source tools require basic computer knowledge and can be executed by local community trainees using straight forward computer commands. The digital platforms allow biodiversity scenario building, model formulation such as the identification of migratory corridors, habitat utilization by animal species, and application to county spatial planning programs ( Mose and Western, 2015 ).
+2. Study area and methods
+
+The Amboseli and Magadi ecosystems ( Fig. 1 ) have a combined area of 9500 km 2 and support a large population of livestock, wildlife and pastoralists ( Groom and Western, 2013 ) freely moving over the rangelands extending into Northern Tanzania. The protected 388  km 2 Amboseli National Park is centrally located in the Amboseli ecosystem and acts as refuge for wildlife during droughts ( Western and Lindsay, 1984 ). The pastoralist in the Magadi area have not settled permanently, in contrast to the majority of households in the Amboseli ecosystem. Recently, there has been increased spread of small scale farms from the higher elevation and rainfall areas to the north and south of the Amboseli area extending to the lowlands swamps. The mean annual rainfall in these ecosystems is 350 mm and follows a bimodal pattern with the short rains generally falling in November to December and long rains from March to May ( Altmann et al., 2002 ). Periods of below average rainfall are common ( Western et al., 2015b ). Further details of the study area are provided elsewhere ( Russell, 2017 , Western and Maitumo, 2004 ). The study design and methods are based on a conceptual model ( Fig. 2 ). Table 1 shows the data requirements and prospective user groups.
+Fig. 2
+
+    Download high-res image (165KB)
+    Download full-size image
+
+Fig. 2 . A flow of information within a monitoring system ( Lindenmayer and Likens, 2009 ), showing the community-driven monitoring in grey and the scientific input and tool support in orange. The data collection, entry and analysis originates with fieldwork or remote sensing applications . Once the data collection protocols have been designed, automated scripts process the data, without losing data privacy. Digital data entry platforms that employ mobile applications compliment the manual data entry. Data integrity is ensured by scientist and local community trainees continually working together in the resource centres ( Russell, 2017 , Western, 2017 ).
+
+Table 1 . Data needs and prospective users across the Amboseli and Magadi conservation areas in southern Kenya showing use levels that include local communities, policy shapers and scientists.
+User group 	Data requirements 	Importance of data
+Individual community members 	Informal feedback through interactions with resource assessors, community meetings, and sharing of processed data. 	Immediate decisions on natural resource use by individuals within a community.
+Community committees (e.g. Group ranch, Grazing or Conservation) 	Feedback of processed data, through formal meetings and online portals. 	Seasonal and yearly decisions concerning natural resource management.
+Regional decision (e.g. County governments) 	Access to processed data through online portals and workshops. 	Contribution to county spatial planning and regional policies.
+National government 	Access to processed data through online portals and workshops. 	Contribution to national spatial planning, environmental impact assessments, and national policies.
+Scientific community 	Tidy, rigorously collected raw data. 	Contribution to long-term ecological monitoring and shorter term research questions.
+2.1. Open source tools development
+
+The open source tools developed in R include a set of codes that extract, analyze and present graphical results for a wide range of audiences ( Table 1 ). Both time series and spatially explicit data are analyzed on the same platform. Previously, these analyses were performed separately, with geographical information system (GIS) data processed outside the main analysis. The integrated platform speeds up and simplifies the delivery of information to conservation and natural resource decision-makers, planners and managers ( Western et al., 2015a , Western et al., 2015b ). The tools utilize a wide range of open source packages, making the platform highly flexible and interactive. The versatility and performance of R simplifies the delivery of data to a wide range of users through the creation of a graphical user interface (GUI) using shiny application ( Winston et al., 2016 ). We used shiny's reactive programming framework for complex calculations to prevent re-computations during interactive sessions. Shiny, through controlled data downloads, allows the data to reach a wide audience through an internet portal without the loss of data privacy.
+
+In addition, we utilized the markdown package ( Allaire et al., 2015 ) to automatically process reports in either PDF or Microsoft Word formats. The tool also displays complex multivariate datasets in the GUI and enables a variety of tasks to be performed by community members. The tasks range from NDVI extraction, animal and vegetation biomass (g/m 2 ) plotting, resource mapping, wildlife home-range analysis and corridor mapping.
+
+The development of the open source monitoring system was based on the research cycle shown in Fig. 2 . These tools build on long term monitoring programs, which have been created to answer questions relevant to local community requirements, supported by scientifically rigorous methods and techniques. The automation process places emphasis on minimizing manual data processing, analysis and feedback. This allows technical and non-technical users to perform different tasks. The modules were applied to vegetation and animal data collected in the ecosystems, with an extension to satellite data analysis.
+2.2. Vegetation monitoring
+
+The vegetation monitoring procedures used in this study were developed by Amboseli Conservation Program, ACP ( Western, 1973 ) and later adopted by South Rift Association of Land Owners (SORALO). The researcher-based programs integrate a community-based system founded on ‘resource assessors’ ( Danielsen et al., 2010 ) into the long term ecosystem monitoring ( Western, 2017 ). The resource assessors are community members who collect and disseminate information relevant to community livelihoods, conservation and development. The resource assessor team is responsible for data collection, processing and analyzing data, and for sharing and communicating the data analysis results. These teams are based at resource centres built by community groups in southern Kenya ( Russell, 2017 , Western, 2017 ).
+
+Estimates of vegetation biomass in grams per square meter (g/m 2 ), relative percentage greenness and grazing pressure are measured on selected ground plots ( Russell, 2017 , Western et al., 2015b ) on a monthly basis, using the point intercept method ( Levy and Madden, 1933 ). For each frame, ten pins were dropped through the vegetation at an angle of 67 0 ( McNaughton, 1985 ). Each plant hit was scored as green or brown and whether grazed or un-grazed. Total herbaceous biomass, total green, and total brown biomass was calculated using an equation derived from calibrating hits per pin against dry weight in grams per meter squared (g/m 2 ) ( Western and Lindsay, 1984 ). Grazing pressure was calculated as the percentage of grazed to non-grazed hits.
+
+The sampling is synchronized across the study area for ease of comparison. Further details of the vegetation sampling procedure have been presented in ( Western, 1973 , Western et al., 2015b ).
+2.3. Livestock and wildlife monitoring
+
+Long term data on livestock and wildlife species has been collected regularly by ACP for the Amboseli area since 1973 ( Western, 1975 , Western, 2017 ) and by SORALO for the Magadi area since 2005 ( Russell, 2017 ). The aerial counting method is based on a 5 by 5 km grid system in Amboseli, and a 2 by 2  km grid in Magadi. Animal population estimates for the ecosystems are made using the Jolly method 2, ( Jolly, 1969 ). Animal species were counted spatially within a Universal Transverse Mercator (UTM) grid covering approximately 25 km 2 in the Amboseli ecosystem and 4 km 2 in the Magadi area. The global population estimates (PE) and the standard error (SE) for each species were calculated as PE = N y ¯ and SE = N N − n n S 2 in which y ¯ is the sample mean, S 2 sample variance, n is the sample size and N is the number of samples needed to give complete coverage of the study area. Here, N is the total number of units (grids in the entire study area), while n , represents the number of transects flown in the north–south direction for Amboseli ecosystem and east-west direction for the Magadi area. Population densities for each grid are calculated as the number of animals observed within grid, divided by the area in (km 2 ) of the grid. The method has been comprehensively described in many studies ( Mose et al., 2013 , Mose and Western, 2015 , Norton-Griffiths, 1978 , Western, 1973 ). The processed data is centrally stored in a relational database at the ACP office.
+
+Other systematic ground-based monitoring methods that use open data kit ( Hartung et al., 2010 ) for data collection by the resource assessors, include livestock herd follows, sampling animal body condition scores, herd structure, milk yield measurement in litres and livestock market prices.
+2.4. Satellite data extraction
+
+Rainfall and NDVI datasets were extracted from Global Precipitation Climatology Centre ( Schneider et al., 2011 ) and Land Processing Distributed Active Archive Centre ( DAAC, 2012 ) respectively. Plot level values were averaged to create an aggregate monthly NDVI and rainfall values for the two ecosystems.
+3. Results
+3.1. The application of the tool to vegetation monitoring and habitat changes
+
+Vegetation monitoring data are processed by the open source platform once collected. The pasture biomass (g/m 2 ) trends and incidences of extreme conditions (below red dotted line) are shown in Fig. 3 . The period preceding the 2009 drought was characterized by continuously low biomass (g/m 2 ). The same downward trend characterized the build up to the late 2016 and early 2017 drought conditions.
+Fig. 3:
+
+    Download high-res image (201KB)
+    Download full-size image
+
+Fig. 3 . Long term averages of vegetation biomass (g/m 2 ) in the Amboseli ecosystem from 1975 to 2016, generated by open source tools once the raw data is entered. The trends in the recent months leading into harsh conditions are shown. Biomass levels below the red dotted line indicate a drought period. The extraction of the data from a central database, aggregation and updating the graphic is automated. (For interpretation of the references to color in this figure legend, the reader is referred to the web version of this article.)
+
+Fig. 4 shows the vegetation biomass (g/m 2 ) estimates in the Amboseli ecosystem processed by the spatial module of the tool. The integration of numerical and spatial data is produced on both static maps and interactive internet satellite maps. The results can be viewed online by local pastoralists, government planners and managers, conservationist and scientists.
+Fig. 4:
+
+    Download high-res image (650KB)
+    Download full-size image
+
+Fig. 4 . Average vegetation biomass (g/m 2 ) mapped in four group ranches. The integrated spatial analysis tool enables the spatial display of the vegetation data both on a static map (above) and an interactive internet satellite maps (below). Different colors represent samples from each group ranch. The larger the circle the larger the biomass value. Within the shiny framework, the package leaflet allows for an interactive mapping experience, with potential to overlay other variables as required. (For interpretation of the references to color in this figure legend, the reader is referred to the web version of this article.)
+
+Long term changes in habitat, vegetation biomass (g/m 2 ) structure, grazing pressure and agricultural spread are shown in Fig. 5 , Fig. 6 , Fig. 7 .
+Fig. 5:
+
+    Download high-res image (648KB)
+    Download full-size image
+
+Fig. 5 . Long term spatial time series display of vegetation changes in representative habitats of the Amboseli basin area, generated by the GIS module of the tool (above). Woodland cover has fallen sharply in the last five decades. An analysis of tree biomass (g/m 2 ) in the Amboseli ecosystem aggregated by genus (below) shows a continuous decline of the dominant Acacia species. The regeneration of Sesbania in the recent times is as a result of exclosures deterring elephants.
+Fig. 6:
+
+    Download high-res image (96KB)
+    Download full-size image
+
+Fig. 6 . The output of grazing pressure monitored in the Amboseli swamps that serve as a drought refuge for livestock and wildlife. Red indicates grazing pressure in excess of 50% offtake. The rise in peak grazing pressure is interrupted by the heavy rainfall during El-Nino period in 1998. (For interpretation of the references to color in this figure legend, the reader is referred to the web version of this article.)
+Fig. 7:
+
+    Download high-res image (361KB)
+    Download full-size image
+
+Fig. 7 . Agriculture expansion is shown in green. Farms spread from the moist uplands north and south of Amboseli to the low-lying swamps, and finally along the pipeline delivering water to arable and urban areas beyond the Amboseli ecosystem. (For interpretation of the references to color in this figure legend, the reader is referred to the web version of this article.)
+3.2. Applications to animal monitoring
+
+The May 2016 aerial counts ( Fig. 8 ) show the distribution of species across the Amboseli ecosystem. Most species range widely, driven by seasonal pasture and water availability . Livestock are the most abundant and widespread species and dominate the large herbivore ecosystem. Elephant and buffalo herds are clustered inside Amboseli National Park. Aerial population estimates for selected species based on the Jolly method 2 ( Jolly, 1969 ) are shown in Table 2 . The estimates in 2016 show a strong recovery from the 2009 drought that hit the Amboseli ecosystem. (See Fig. 9 .)
+Fig. 8:
+
+    Download high-res image (686KB)
+    Download full-size image
+
+Fig. 8 . Animal population density distribution in the Amboseli ecosystem for the May 2016 aerial survey conducted by ACP. The ecosystem is livestock-dominated and shows a common utilization range for both wildlife and livestock outside the protected Amboseli National Park (ANP).
+
+Table 2 . Selected species population estimates comparing the February 2010 and May 2016 aerial surveys in the Amboseli ecosystem conducted by ACP and processed by the integrated digital platform. The counts show a strong recovery from the 2009 drought.
+Species 	Population estimate
+February 2010 	May 2016
+Zebra 	3044 	15,795
+Wildebeest 	805 	8700
+Grant's gazelle 	2825 	11,338
+Thomson's gazelle 	600 	4350
+Elephant 	1098 	1284
+Eland 	2503 	3548
+Gerenuk 	146 	196
+Giraffe 	2707 	4296
+Impala 	893 	2086
+Donkey 	1200 	2015
+Cattle 	49,291 	127,199
+Sheep & goats 	97,718 	341,237
+Fig. 9:
+
+    Download high-res image (867KB)
+    Download full-size image
+
+Fig. 9 . Zebra population distribution in the Amboseli ecosystem in May 2016, mapped directly on satellite (Google) imagery for easy online visualization.
+
+The rapid release of livestock body condition scores and milk production data is vital to herder decision-making and drought avoidance through movement and market sales. Milk yields and body condition showed a steep drop leading into the 2009 drought ( Fig. 10 ) and provide a vital early-warning indicator monitored informally by individual herders, but hard for communities to assess on a wider scale.
+Fig. 10:
+
+    Download high-res image (467KB)
+    Download full-size image
+
+Fig. 10 . Fluctuations in livestock body condition scores (red line) with milk yield (green bars) in the Amboseli ecosystem in southern Kenya. Milk yield dropped to zero during the 2009 drought, corresponding to the worst body condition scores recorded. (For interpretation of the references to color in this figure legend, the reader is referred to the web version of this article.)
+3.3. Data visualization portal
+
+The current interactive data portal for SORALO, viewed at http://104.236.196.1:3838/Bomaapp/ displays data on pasture conditions, climate and rainfall, water resources , and changes in settlement pattern , among other variables collected. Automatic updates are done regularly.
+4. Discussion
+
+The results of our study showing examples of outputs from a suite of open source tools that are customized for local communities' use, provide a rapid assessment of socioeconomic and ecological resources in the pastoral rangelands of East Africa. The current slow pace of delivering information and a lack of visualization tools for easy viewing and interpretation by non-technical decision-makers hinders its application to conservation planners and managers ( Sarkar et al., 2006 ). A quick delivery of information as shown above allows for decisions from locally based monitoring to be made promptly at a local level in response to perceived threats ( Constantino et al., 2012 ). Our examples show the application of customized tools to biodiversity conservation and to signaling of extreme droughts that are becoming more severe and frequent in many ecosystems across East Africa. Vegetation monitoring and visualization of the results show the declining vegetation biomass trends for the Amboseli ecosystem in the last few decades. The decline corresponds to an increasing grazing pressure ( Fig. 6 ). Early warning indicators developed using the feedback system presented here are used to display the threat of heavy grazing on critical drought refuges and are signaled in red when offtake exceeds 50% ( Fig. 6 ).
+
+An additional advantage of the tools presented here, is the filling in of the gap created by a lack of technical capacity and scientific engagement at the lower levels ( Stephenson et al., 2015 ) which has impeded the collection, delivery and use of data, in management decisions locally and nationally. The application of customized open source programs simplifies the complex processes and steps involved in data analysis and visualization, encouraging local and direct monitoring and use of environmental data ( Raymond et al., 2010 ). Simple tools and standardized robust protocols avoid delays in the uptake and application of monitoring data. They also protect the raw data structure by extracting those components to be analyzed and applied to conservation planning and management while ensuring that data privacy, safety and integrity is maintained. The construction of resource centres in conjunction with landowner's associations has provided additional infrastructure necessary for local community involvement in research processes ( Fig. 2 ) that combine scientific and traditional ecological knowledge .
+
+These tools ( http://104.236.196.1:3838/Bomaapp/ and in supporting information provided) are also easily adjustable and require minimal changes to process similar data from different ecosystems. Outputs can be presented to user groups ( Table 1 ) through a variety of techniques that include an online data visualization portal such as the one provided above, scientific publications and community meetings in local resource centres ( Russell, 2017 ). Below, we provide specific examples of the applications of the tools to selected datasets.
+4.1. Habitat changes in the Amboseli National Park
+
+Long term vegetation changes in and around the Amboseli National Park show a progressive loss of woodland vegetation and expansion of grassland and open bush ( Western, 2007 ). The spatial time series changes presented in ( Fig. 5 ) provide a quick analysis of the changes. Before the development of the open source tools discussed here, the GIS data processing and analysis took considerable time and skills not available to community's groups.
+
+The availability has prompted ACP and Amboseli Ecosystem Trust to take steps to restore the loss of habitats, pasture and biodiversity in the Amboseli ecosystem ( Western, 2017 ) by using habitat and pasture exclosures in selected degraded areas ( Western and Maitumo, 2004 ). The restoration has seen the regrowth of tree species within the exclosures ( Fig. 5 ) lost to elephant compression across the national park.
+4.2. Aerial surveys analysis and presentation
+
+The spread of farms ( Fig. 7 ) in the Amboseli ecosystem after the 1990s led to the displacement of wildlife and intensified crop raiding by elephants. Mapping the spread of human activities and conflicts with wildlife provides information for land use planning and conflict resolution. Quick processing of aerial surveys is important for assessing conflict between wildlife and livestock. The 2016 aerial survey results ( Fig. 8 and Table 2 ) show recovery from the 2009 drought ( Western, 2017 ). The major species, including livestock, zebra, wildebeest and gazelle, show a strong recovery.
+
+The routine analysis processed both the spatial and numeric components of the survey data simultaneously for all the species ( Fig. 8 ) and results made available to stakeholders and partners in good time. The graphic is very effective in allowing the community groups to visualize the entire ecosystem and the species densities on a single platform and in understanding the spatial relationships between species and the environmental setting. The results of such counts and their significance are regularly posted on the ACP website ( Western, 2017 ) for direct use and application.
+4.3. Satellite and ground based vegetation monitoring
+
+Ground monitoring has limitation that include insufficient frequency and scale to capture regional pasture abundance and conditions ( Western et al., 2015b ). Tools that extract complementary satellite data provide managers a wide pool of information in support of informed decision-making . Early warning proxies of rainfall and NDVI are easily downloaded and visualized for selected areas. Given the GPS coordinates, the tool processes and tailors the graphics ( Fig. 11 ) for various interest groups ranging from senior managers to community grazing associations.
+Fig. 11:
+
+    Download high-res image (202KB)
+    Download full-size image
+
+Fig. 11 . Normalized Difference Vegetation Index (NDVI) and rainfall for the Amboseli and Magadi ecosystems extracted by the tool from satellite data and graphed automatically.
+
+The tools presented here allow the effective combination of satellite data with ground based measures of animal body conditions , pasture production and vegetation structure through active community participation. The local engagement and direct feedback lowers the barriers to monitoring and using local and regional early warning systems across East Africa ( Western et al., 2015b ).
+5. Conclusion
+
+Decision support in biodiversity conservation requires an effective combination of analysis tools and expertise usually unavailable locally. The formulation of these tools calls for expanded infrastructure and understanding complex ecological process ( Sarkar et al., 2006 ). Once developed, the applications are straight forward. The work presented here and applied to conservation and development planning in the Amboseli and Magadi ecosystems has encouraged other institutions, including the Northern Tanzania Rangeland Initiative, to standardize monitoring, sampling and data entry and analytical techniques , as well as collaboration in developing and applying the techniques. Use of the open source decision tools has seen previously unanalyzed historical data sets in many institutions in the region processed and results made available to communities and natural resource managers for planning purposes. We intend to develop customized mobile applications of these tool, aimed at linking social media feeds and one-stop software programs for assessing spatial trends, drought early-warning systems and ecosystem health .
+Acknowledgment
+
+We thank Lucy Waruingi, the executive director of African Conservation Centre, the staff of Amboseli Conservation Program, South Rift Association of Land Owners and Department of Resource Surveys and Remote Sensing , for their support over the years. Two anonymous reviewers provided helpful comments. Liz Claiborne Ortenberg Foundation: www.lcaof.org (Grant Number: LCAOF-ACP2014) funded the data collection.
+Appendix A. Supplementary data
+
+The following are the supplementary data related to this article.
+Download Word document (80KB) Help with docx files
+
+Jolly code . An example of one of the tools coded in R for processing aerial population estimates for livestock and wildlife species in the Amboseli ecosystem. The mapping extension is included. Information on related tools is also provided here.
+Download Comma Separated Value file (217KB) Help with csv files
+
+Dataset J1 . The 2016 aerial survey raw data for selected species in the Amboseli ecosystem.
+Download Word document (59KB) Help with docx files
+
+Tool coded in R for extracting and plotting NDVI data given the GPS location.
+
+Special issue articles Recommended articles Citing articles ( 1 )
+References
+
+Allaire et al., 2015
+    J. Allaire, et al. Markdown: “markdown” rendering for R
+    Available at:
+    https://cran.r-project.org/package=markdown (2015)
+Altmann et al., 2002
+    J. Altmann, et al. Dramatic change in local climate patterns in the Amboseli basin, Kenya
+    Afr. J. Ecol., 40 (3) (2002), pp. 248-251
+    CrossRef View Record in Scopus
+Constantino et al., 2012
+    P. Constantino, et al. Empowering local people through community-based resource monitoring: a comparison of Brazil and Namibia
+    Ecol. Soc., 17 (4) (2012)
+Core Team, 2016
+    R. Core Team R: A Language and Environment for Statistical
+    Computing (2016)
+    Available at
+    http://www.r-project.org/
+DAAC, 2012
+    L. DAAC Land Processing Distributed Active Archive Centre
+    Available at:
+    http://lpdaac.usgs.gov/get_data (2012), Accessed 30th Jan 2017
+Danielsen et al., 2010
+    F. Danielsen, N.D. Burgess, A. Balmford Guest Editorial Monitoring Matters: Examining the Potential of Locally-based Approaches
+    2005 (2010), pp. 2507-2542
+    View Record in Scopus
+Groom and Western, 2013
+    R.J. Groom, D. Western Impact of Land Subdivision and Sedentarization on Wildlife in Kenya's Southern Rangelands
+    Rangel. Ecol. Manag., 66 (1) (2013), pp. 1-9
+    Article Download PDF CrossRef View Record in Scopus
+Hartung et al., 2010
+    C. Hartung, et al. Open Data Kit: Tools to Build Information Services for Developing Regions
+    Proceedings of the 4th ACM/IEEE International Conference on Information and Communication Technologies and Development (2010), p. 18
+    View Record in Scopus
+Herrick et al., 2013
+    J.E. Herrick, et al. The Global Land-potential Knowledge System (LandPKS): Supporting Evidence-based, Site-specific Land Use and Management
+    68 (2013), pp. 5-12
+    (1)
+    View Record in Scopus
+Jolly, 1969
+    G.M. Jolly Sampling methods for aerial censuses of wildlife populations
+    East Afr. Agric. For. J., 34 (1969), pp. 46-49
+    View Record in Scopus
+Levy and Madden, 1933
+    E.B. Levy, E.A. Madden The point method of pasture analysis
+    N. Z. J. Agric., 46 (5) (1933), pp. 179-267
+Lindenmayer and Likens, 2009
+    D.B. Lindenmayer, G.E. Likens Adaptive monitoring: a new paradigm for long-term research and monitoring
+    Trends Ecol. Evol., 24 (9) (2009), pp. 482-486
+    Article Download PDF View Record in Scopus
+Macharia, 2014
+    J. Macharia Internet access is no longer a luxury. Africa Renewal
+    Available at
+    http://www.un.org/africarenewal/magazine/april-2014/internet-access-no-longer-luxury (2014)
+McNaughton, 1985
+    S.J. McNaughton Ecology of a grazing ecosystem: the Serengeti
+    Ecol. Monogr., 55 (3) (1985), pp. 259-294
+    CrossRef View Record in Scopus
+Mose and Western, 2015
+    V.N. Mose, D. Western Ecological Informatics Spatial cluster analysis for large herbivore distributions: Amboseli ecosystem, Kenya
+    Eco. Inform., 30 (2015), pp. 203-206
+    Available at
+    https://doi.org/10.1016/j.ecoinf.2015.05.010
+    Article Download PDF View Record in Scopus
+Mose et al., 2013
+    V.N. Mose, et al. Modelling the dynamics of migrations for large herbivore populations in the Amboseli National Park, Kenya. Ecological Modelling, 254 Ecologi, pp. 43–49
+    Available at:
+    http://linkinghub.elsevier.com/retrieve/pii/S0304380013000434 (2013), Accessed 14th Jul 2014
+Norton-Griffiths, 1978
+    M. Norton-Griffiths Counting animals. Handbooks on techniques currently used in African wildlife ecology
+    African Wildlife Leadership Foundation, Nairobi (1978)
+Oba, 2012
+    G. Oba Harnessing pastoralists' indigenous knowledge for rangeland management: three African case studies
+    Pastoralism, 2 (1) (2012), pp. 1-25
+    CrossRef
+Raymond et al., 2010
+    C.M. Raymond, et al. Integrating local and scientific knowledge for environmental management
+    J. Environ. Manag., 91 (8) (2010), pp. 1766-1777
+    Article Download PDF View Record in Scopus
+Reid et al., 2016
+    R.S. Reid, et al. Evolution of models to support community and policy action with science: balancing pastoral livelihoods and wildlife conservation in savannas of East Africa
+    Proc. Natl. Acad. Sci., 113 (17) (2016), pp. 4579-4584
+    Available at
+    http://www.pnas.org/lookup/
+    https://doi.org/10.1073/pnas.0900313106
+    CrossRef View Record in Scopus
+Russell, 2017
+    S. Russell South Rift Land Owners Association
+    Available at:
+    www.soralo.org (2017)
+Sarkar et al., 2006
+    S. Sarkar, et al. Biodiversity conservation planning tools: present status and challenges for the future
+    Annu. Rev. Environ. Resour., 31 (2006), pp. 123-159
+    CrossRef View Record in Scopus
+Schneider et al., 2011
+    U. Schneider, et al. GPCC full data reanalysis version 6.0 at 0.5: monthly land-surface precipitation from rain-gauges built on GTS-based and historic data
+    (2011), 10.5676/DWD_GPCC/FD_M_V6_050
+Stephenson et al., 2015
+    P.J. Stephenson, et al. Overcoming the challenges to conservation monitoring: integrating data from in-situ reporting and global data sets to measure impact and performance
+    Biodiversity, 16 (2–3) (2015), pp. 68-85
+    CrossRef View Record in Scopus
+Western, 1973
+    D. Western The structure, dynamics and changes of the Amboseli Ecosystem
+    (1973)
+Western, 1975
+    D. Western Water availability and its influence on the structure and dynamics of a savannah large mammal community
+    Afr. J. Ecol., 13 (3–4) (1975), pp. 265-286
+    CrossRef View Record in Scopus
+Western, 2007
+    D. Western A half a century of habitat change in Amboseli National Park, Kenya
+    Afr. J. Ecol., 45 (3) (2007), pp. 302-310
+    CrossRef View Record in Scopus
+Western, 2017
+    D. Western Amboseli Conservation Program
+    Available at
+    http://www.amboseliconservation.org/ (2017)
+    (Accessed January 30, 2017)
+Western and Lindsay, 1984
+    D. Western, W.K. Lindsay Seasonal herd dynamics of a savanna elephant population
+    Afr. J. Ecol., 22 (4) (1984), pp. 229-244
+    CrossRef View Record in Scopus
+Western and Maitumo, 2004
+    D. Western, D. Maitumo Woodland loss and restoration in a savanna park: a 20-year experiment
+    Afr. J. Ecol., 42 (2) (2004), pp. 111-121
+    Available at
+    http://www.blackwell-synergy.com/links/
+    https://doi.org/10.1111/j.1365-2028.2004.00506.x
+    CrossRef View Record in Scopus
+Western et al., 2015a
+    D. Western, J. Waithaka, J. Kamanga Finding space for wildlife beyond national parks and reducing conflict through community-based conservation: the Kenya experience
+    Parks, 21 (2015), pp. 51-62
+    CrossRef View Record in Scopus
+Western et al., 2015b
+    D. Western, V.N. Mose, et al. Predicting extreme droughts in Savannah Africa: a comparison of proxy and direct measures in detecting biomass fluctuations, trends and their causes
+    PLoS One, 10 (8) (2015), p. e0136516
+    Available at:
+    http://dx.plos.org/10.1371/journal.pone.0136516
+    CrossRef
+Winston et al., 2016
+    C. Winston, et al. shiny: web application framework for R. R package version 0.14.1
+    Available at:
+    https://cran.r-project.org/package=shiny (2016)
+
+© 2017 Elsevier B.V. All rights reserved.
+Part of special issue:
+The use of spatial ecology for conservation: The use of spatial ecology for conservation
+Edited by
+Mark O'Connell , Richard Smithers
+Download full issue
+Other articles from this issue
+
+    UAVs in pursuit of plant conservation - Real world experiences
+    Ecological Informatics, Volume 47, September 2018, pp. 2-9
+    Download PDF View details
+    Depiction of uncertainty in the visually interpreted land cover data
+    Ecological Informatics, Volume 47, September 2018, pp. 10-13
+    Download PDF View details
+    Obstacles to gathering conservation evidence from the monitoring of nature reserves: A spatial solution?
+    Ecological Informatics, Volume 47, September 2018, pp. 14-16
+    Download PDF View details
+
+View more articles
+Recommended articles
+No articles found.
+Citing articles (1)
+
+    Natural resource dependence and economic growth: A TOPSIS/DEA analysis of innovation efficiency
+    2018, Resources Policy
+    Download PDF View details
+
+Article Metrics
+View article metrics
+Elsevier
+
+About ScienceDirect Remote access Shopping cart Contact and support Terms and conditions Privacy policy
+
+We use cookies to help provide and enhance our service and tailor content and ads. By continuing you agree to the use of cookies .
+
+Copyright © 2018 Elsevier B.V. or its licensors or contributors. ScienceDirect ® is a registered trademark of Elsevier B.V.
+RELX Group

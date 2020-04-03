@@ -1,0 +1,140 @@
+.widgetContributor{
+    border: 1px solid #ddd;
+    padding: 5px;
+    cursor: text;
+    margin-bottom: 10px;
+    font-size: 12px;
+    max-height: 110px;
+    overflow: auto;
+    cursor: default;
+}
+/* authorityStateFlag */
+.widgetContributorFullDiv .functionWidgetContributor{
+    cursor: pointer;
+}
+.to_choose{
+    background-color: #E48561;
+    margin: 5px;
+}
+.acknowledged{
+    background-color: #65b688;
+    margin: 5px;
+}
+.disowned{
+    background-color: #969696;
+    /*background-color: #d4d3d3;*/
+    margin: 5px;
+}
+.not_exist{
+    /*background-color: #FF0000;*/
+    background-color: #d4d3d3;
+    margin: 5px;
+}
+.menuListContributors {
+    position: absolute;
+    display: none;
+    margin-top: 30px;
+    padding: 0px;
+    border: 1px solid #ddd;
+    background-color: #ffffff;
+    left: 10px;
+    top:10px;
+    width: 370px;
+    height:199px;
+    overflow-x: hidden;
+    overflow-y: auto;
+    z-index: 99;
+    cursor: pointer;
+}
+.menuListContributors ul{
+    list-style: outside none none;
+    margin: 0;
+    padding: 0;
+}
+.menuListContributors ul li{
+    padding: 10px;
+    border: 1px solid #ddd;
+    color: #333;
+    font-size: 12px;
+}
+.menuListContributors ul li:hover{
+    background-color: #65b688;
+    color: #ffffff;
+}
+.menuListContributors ul li.rowStyle{
+    border-bottom: 2px solid #ddd;
+    padding-bottom: 5px;
+}
+.menuListContributors ul li.actionmenu{
+    padding-top: 5px;
+}
+.menuListContributors .action{
+    border-top: 2px solid #000000;
+}
+.tooltipHide{
+    display: none;
+}
+.widgetLoader{
+    border: 1px solid #ddd;
+    padding: 5px;
+    cursor: text;
+    text-align: center;
+    background-color: #eee;
+}
+
+.externalContributor{
+/* 	display: none; */
+}
+
+.showExternalContributors{
+	background-color: #d4d3d3; 	
+    color: #ffffff;
+    border: 1px solid #c3c3c3;
+}
+button.showExternalContributors.btn:hover {
+    color: #ffffff;
+    background-color: #e0e0e0;
+    border: 1px solid #c3c3c3;
+}
+
+.hideRowTable{
+	display: none;
+}
+#pagination{
+	text-align: center;
+	margin-top: 10px;
+}
+#pagination li{
+	color: #333;
+	font-weight: bold;
+	display: inline-block;
+  	margin: 1px;
+}
+
+#pagination li.active span{
+	background-color: #32434D;
+	color: #ffffff;
+	padding: 6px 12px;
+}
+#pagination li a{
+	color: #333;
+	padding: 6px 12px;
+  	border-radius: 2px;
+  	-webkit-border-radius: 2px;
+  	-moz-border-radius: 2px;
+	font-weight: bold;
+}
+#pagination li a:hover{
+	color: #ffffff;
+	font-weight: bold;
+	background-color: #32434D;
+}
+#pagination li.disabled{
+    background-color: transparent;
+    color: #999;
+    padding: 6px 12px;
+}
+.rmSearchForm{
+	margin: 5px;
+}
+.contributor-belonging-label {font-weight: bold;}

@@ -1,0 +1,395 @@
+<!--?xml version="1.0" encoding="UTF-8"?-->
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" class=" js flexbox canvas canvastext webgl no-touch geolocation postmessage no-websqldatabase no-indexeddb hashchange history draganddrop websockets rgba hsla multiplebgs backgroundsize borderimage borderradius boxshadow textshadow opacity cssanimations csscolumns cssgradients no-cssreflections csstransforms csstransforms3d csstransitions fontface video audio localstorage sessionstorage webworkers applicationcache svg inlinesvg smil svgclippaths"><head>
+<meta content="text/html; charset=UTF-8" http-equiv="Content-Type">
+<meta content="IE=edge,chrome=1" http-equiv="X-UA-Compatible">
+<meta content="width=device-width,initial-scale=1.0,maximum-scale=1.0" name="viewport">
+<link rel="shortcut icon" href="https://idl-bnc-idrc.dspacedirect.org/themes/Mirage/images/favicon.ico">
+<link rel="apple-touch-icon" href="https://idl-bnc-idrc.dspacedirect.org/themes/Mirage/images/apple-touch-icon.png">
+<meta name="Generator" content="DSpace 5.8">
+<script type="text/javascript" async="" src="analytics.js"></script><script type="text/javascript" async="" src="ga.js"></script><script async="" src="gtm.js"></script><script>(function(w,d,s,l,i){w[l]=w[l]||[];w[l].push({'gtm.start':
+new Date().getTime(),event:'gtm.js'});var f=d.getElementsByTagName(s)[0],
+j=d.createElement(s),dl=l!='dataLayer'?'&amp;l='+l:'';j.async=true;j.src=
+'https://www.googletagmanager.com/gtm.js?id='+i+dl;f.parentNode.insertBefore(j,f);
+})(window,document,'script','dataLayer','GTM-K8VSQ4X');</script>
+<link type="text/css" rel="stylesheet" media="screen" href="reset.css">
+<link type="text/css" rel="stylesheet" media="screen" href="base.css">
+<link type="text/css" rel="stylesheet" media="screen" href="helper.css">
+<link type="text/css" rel="stylesheet" media="screen" href="jquery-ui-1.css">
+<link type="text/css" rel="stylesheet" media="screen" href="style.css">
+<link type="text/css" rel="stylesheet" media="screen" href="authority-control.css">
+<link type="text/css" rel="stylesheet" media="handheld" href="handheld.css">
+<link type="text/css" rel="stylesheet" media="print" href="print.css">
+<link type="text/css" rel="stylesheet" media="all" href="media.css">
+<link type="application/opensearchdescription+xml" rel="search" href="https://idl-bnc-idrc.dspacedirect.org/open-search/description.xml" title="DSpace">
+<script type="text/javascript">
+                                //Clear default text of empty text areas on focus
+                                function tFocus(element)
+                                {
+                                        if (element.value == ' '){element.value='';}
+                                }
+                                //Clear default text of empty text areas on submit
+                                function tSubmit(form)
+                                {
+                                        var defaultedElements = document.getElementsByTagName("textarea");
+                                        for (var i=0; i != defaultedElements.length; i++){
+                                                if (defaultedElements[i].value == ' '){
+                                                        defaultedElements[i].value='';}}
+                                }
+                                //Disable pressing 'enter' key to submit a form (otherwise pressing 'enter' causes a submission to start over)
+                                function disableEnterKey(e)
+                                {
+                                     var key;
+
+                                     if(window.event)
+                                          key = window.event.keyCode;     //Internet Explorer
+                                     else
+                                          key = e.which;     //Firefox and Netscape
+
+                                     if(key == 13)  //if "Enter" pressed, then disable!
+                                          return false;
+                                     else
+                                          return true;
+                                }
+
+                                function FnArray()
+                                {
+                                    this.funcs = new Array;
+                                }
+
+                                FnArray.prototype.add = function(f)
+                                {
+                                    if( typeof f!= "function" )
+                                    {
+                                        f = new Function(f);
+                                    }
+                                    this.funcs[this.funcs.length] = f;
+                                };
+
+                                FnArray.prototype.execute = function()
+                                {
+                                    for( var i=0; i < this.funcs.length; i++ )
+                                    {
+                                        this.funcs[i]();
+                                    }
+                                };
+
+                                var runAfterJSImports = new FnArray();
+            </script>
+<script xmlns:i18n="http://apache.org/cocoon/i18n/2.1" type="text/javascript" src="modernizr-1.js"> </script>
+<title>The potential of open data to impact resource allocation for poverty eradication in Kenya and Uganda</title>
+<link rel="schema.DCTERMS" href="http://purl.org/dc/terms/">
+<link rel="schema.DC" href="http://purl.org/dc/elements/1.1/">
+<meta name="DC.creator" content="Lwanga-Ntale, Charles">
+<meta name="DCTERMS.dateAccepted" content="2017-03-02T18:40:31Z" scheme="DCTERMS.W3CDTF">
+<meta name="DCTERMS.available" content="2017-03-02T18:40:31Z" scheme="DCTERMS.W3CDTF">
+<meta name="DCTERMS.dateCopyrighted" content="2014-05" scheme="DCTERMS.W3CDTF">
+<meta name="DCTERMS.issued" content="2014-05" scheme="DCTERMS.W3CDTF">
+<meta name="DC.identifier" content="http://hdl.handle.net/10625/56296" scheme="DCTERMS.URI">
+<meta name="DCTERMS.abstract" content="Between January 2013 and May 2014, Development Initiatives and Development Research and Training were part of the Open Data in Developing Countries (ODDC) study, a multi case study initiative funded by the WWF and IDRC that sought to ascertain the impact Open Data is having in transforming developing countries. The Uganda/Kenya case study investigated Impact of Open Data on resource allocation for poverty eradication in Uganda and Kenya. This case study was premised on the experiences of countries that have been involved in Open Data since the beginning. Open data has its roots in the Open Government Partnership founded in 2009 and launched in 2011, initially with a membership of eight countries but which has since grown to 63 (In East Africa, Kenya and Tanzania are members but Uganda has not yet signed up despite increasing calls to do so). Its aim is providing an international platform for domestic reformers committed to making their governments more open, accountable, and responsive to citizens. There has been increasing enthusiasm by governments since then to publish data online. Many members have since established national data webportals and made avail huge amounts of data that were previously not in the public domain. The impact of this on resource allocation and the broader transparency agenda has been significant. It has created more upward information flow, local, national and international pressures and bottom-up citizen and political pressures on governments to be more open." xml:lang="en">
+<meta name="DC.format" content="Text" xml:lang="en">
+<meta name="DCTERMS.extent" content="1 digital file (9 p. : ill.)" xml:lang="en">
+<meta name="DC.language" content="en" scheme="DCTERMS.RFC1766">
+<meta name="DC.publisher" content="World Wide Web Foundation, Washington, D.C." xml:lang="en">
+<meta name="DC.title" content="The potential of open data to impact resource allocation for poverty eradication in Kenya and Uganda" xml:lang="en">
+<meta name="DC.type" content="Policy Brief" xml:lang="en">
+
+<meta content="Policy Brief" name="citation_keywords">
+<meta content="The potential of open data to impact resource allocation for poverty eradication in Kenya and Uganda" name="citation_title">
+<meta content="World Wide Web Foundation, Washington, D.C." name="citation_publisher">
+<meta content="en" name="citation_language">
+<meta content="Lwanga-Ntale, Charles" name="citation_author">
+<meta content="https://idl-bnc-idrc.dspacedirect.org/bitstream/10625/56296/1/IDL-56296.pdf" name="citation_pdf_url">
+<meta content="2014-05" name="citation_date">
+<meta content="https://idl-bnc-idrc.dspacedirect.org/handle/10625/56296" name="citation_abstract_html_url">
+</head><body><noscript><iframe src="https://www.googletagmanager.com/ns.html?id=GTM-K8VSQ4X"
+height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript><!--[if lt IE 7 ]> <body class="ie6"> <![endif]-->
+                <!--[if IE 7 ]>    <body class="ie7"> <![endif]-->
+                <!--[if IE 8 ]>    <body class="ie8"> <![endif]-->
+                <!--[if IE 9 ]>    <body class="ie9"> <![endif]-->
+                <!--[if (gt IE 9)|!(IE)]><!--><!--<![endif]-->
+<div id="ds-main">
+<div id="ds-header-wrapper">
+<div class="clearfix" id="ds-header">
+<a id="ds-header-logo-link" href="https://idl-bnc-idrc.dspacedirect.org/">
+<span id="ds-header-logo">&nbsp;</span>
+<span id="ds-header-logo-text">IDRC Digital Library</span>
+</a>
+<h1 xmlns:i18n="http://apache.org/cocoon/i18n/2.1" class="pagetitle visuallyhidden">The potential of open data to impact resource allocation for poverty eradication in Kenya and Uganda</h1>
+<div id="ds-user-box">
+<p>
+<a href="https://idl-bnc-idrc.dspacedirect.org/login">Login</a>
+</p>
+</div>
+<div xmlns:i18n="http://apache.org/cocoon/i18n/2.1" id="ds-language-selection">
+<a href="https://idl-bnc-idrc.dspacedirect.org/handle/10625/56296?locale-attribute=en">English</a>
+<a href="https://idl-bnc-idrc.dspacedirect.org/handle/10625/56296?locale-attribute=fr">français</a>
+</div>
+</div>
+</div>
+<div id="ds-trail-wrapper">
+<ul id="ds-trail">
+<li class="ds-trail-link first-link ">
+<a href="https://idl-bnc-idrc.dspacedirect.org/">Library Home</a>
+</li>
+<li xmlns:i18n="http://apache.org/cocoon/i18n/2.1" xmlns="http://di.tamu.edu/DRI/1.0/" class="ds-trail-arrow">→</li>
+<li class="ds-trail-link ">
+<a href="https://idl-bnc-idrc.dspacedirect.org/handle/10625/32">All IDRC / CRDI Research Outputs</a>
+</li>
+<li class="ds-trail-arrow">→</li>
+<li class="ds-trail-link ">
+<a href="https://idl-bnc-idrc.dspacedirect.org/handle/10625/33">IDRC Research Results / Résultats de recherches du CRDI</a>
+</li>
+<li class="ds-trail-arrow">→</li>
+<li class="ds-trail-link last-link">View Item</li>
+</ul>
+</div>
+<div xmlns:i18n="http://apache.org/cocoon/i18n/2.1" xmlns="http://di.tamu.edu/DRI/1.0/" class="hidden" id="no-js-warning-wrapper">
+<div id="no-js-warning">
+<div class="notice failure">JavaScript is disabled for your browser. Some features of this site may not work without it.</div>
+</div>
+</div>
+<div id="ds-content-wrapper">
+<div class="clearfix" id="ds-content">
+<div id="ds-body">
+<div id="aspect_artifactbrowser_ItemViewer_div_item-view" class="ds-static-div primary">
+<!-- External Metadata URL: cocoon://metadata/handle/10625/56296/mets.xml?rightsMDTypes=METSRIGHTS-->
+<div xmlns:oreatom="http://www.openarchives.org/ore/atom/" xmlns:ore="http://www.openarchives.org/ore/terms/" xmlns:atom="http://www.w3.org/2005/Atom" class="item-summary-view-metadata">
+<h1>The potential of open data to impact resource allocation for poverty eradication in Kenya and Uganda</h1>
+<div class="simple-item-view-authors">
+<span>Lwanga-Ntale, Charles</span>
+</div>
+<div class="simple-item-view-other">
+<span class="bold">URI:</span>
+<span xmlns:i18n="http://apache.org/cocoon/i18n/2.1">
+<a href="http://hdl.handle.net/10625/56296">http://hdl.handle.net/10625/56296</a>
+</span>
+</div>
+<div class="simple-item-view-other">
+<span class="bold">Date:</span>
+<span xmlns:i18n="http://apache.org/cocoon/i18n/2.1">2014-05</span>
+</div>
+<div class="simple-item-view-description">
+<h3>Abstract:</h3>
+<div xmlns:i18n="http://apache.org/cocoon/i18n/2.1">Between January 2013
+ and May 2014, Development Initiatives and Development Research and 
+Training were part of the Open Data in Developing Countries (ODDC) 
+study, a multi case study initiative funded by the WWF and IDRC that 
+sought to ascertain the impact Open Data is having in transforming 
+developing countries. The Uganda/Kenya case study investigated Impact of
+ Open Data on resource allocation for poverty eradication in Uganda and 
+Kenya. This case study was premised on the experiences of countries that
+ have been involved in Open Data since the beginning. Open data has its 
+roots in the Open Government Partnership founded in 2009 and launched in
+ 2011, initially with a membership of eight countries but which has 
+since grown to 63 (In East Africa, Kenya and Tanzania are members but 
+Uganda has not yet signed up despite increasing calls to do so). Its aim
+ is providing an international platform for domestic reformers committed
+ to making their governments more open, accountable, and responsive to 
+citizens. There has been increasing enthusiasm by governments since then
+ to publish data online. Many members have since established national 
+data webportals and made avail huge amounts of data that were previously
+ not in the public domain. The impact of this on resource allocation and
+ the broader transparency agenda has been significant. It has created 
+more upward information flow, local, national and international 
+pressures and bottom-up citizen and political pressures on governments 
+to be more open.</div>
+</div>
+<p class="ds-paragraph item-view-toggle item-view-toggle-bottom">
+<a href="https://idl-bnc-idrc.dspacedirect.org/handle/10625/56296?show=full">Show full item record</a>
+</p>
+</div>
+<h2 xmlns:i18n="http://apache.org/cocoon/i18n/2.1" xmlns:oreatom="http://www.openarchives.org/ore/atom/" xmlns:ore="http://www.openarchives.org/ore/terms/" xmlns:atom="http://www.w3.org/2005/Atom">Files in this item</h2>
+<div xmlns:i18n="http://apache.org/cocoon/i18n/2.1" xmlns:oreatom="http://www.openarchives.org/ore/atom/" xmlns:ore="http://www.openarchives.org/ore/terms/" xmlns:atom="http://www.w3.org/2005/Atom" class="file-list">
+<div class="file-wrapper clearfix">
+<div style="width: 80px;" class="thumbnail-wrapper">
+<a class="image-link" href="https://idl-bnc-idrc.dspacedirect.org/bitstream/handle/10625/56296/IDL-56296.pdf?sequence=1&amp;isAllowed=y">
+<img alt="Thumbnail" src="IDL-56296.jpg">
+</a>
+</div>
+<div style="height: 80px;" class="file-metadata">
+<div>
+<span class="bold">Name:</span>
+<span xmlns:i18n="http://apache.org/cocoon/i18n/2.1" title="IDL-56296.pdf">IDL-56296.pdf</span>
+</div>
+<div>
+<span class="bold">Size:</span>
+<span xmlns:i18n="http://apache.org/cocoon/i18n/2.1">1.288Mb</span>
+</div>
+<div xmlns:i18n="http://apache.org/cocoon/i18n/2.1">
+<span class="bold">Format:</span>
+<span xmlns:i18n="http://apache.org/cocoon/i18n/2.1">PDF</span>
+</div>
+</div>
+<div xmlns:i18n="http://apache.org/cocoon/i18n/2.1" style="height: 80px;" class="file-link">
+<a href="https://idl-bnc-idrc.dspacedirect.org/bitstream/handle/10625/56296/IDL-56296.pdf?sequence=1&amp;isAllowed=y">View/<wbr xmlns:i18n="http://apache.org/cocoon/i18n/2.1">Open</a>
+</div>
+</div>
+</div>
+<h2 class="ds-list-head">This item appears in the following Collection(s)</h2>
+<ul xmlns:i18n="http://apache.org/cocoon/i18n/2.1" xmlns="http://di.tamu.edu/DRI/1.0/" xmlns:oreatom="http://www.openarchives.org/ore/atom/" xmlns:ore="http://www.openarchives.org/ore/terms/" xmlns:atom="http://www.w3.org/2005/Atom" class="ds-referenceSet-list">
+<!-- External Metadata URL: cocoon://metadata/handle/10625/40732/mets.xml-->
+<li>
+<a href="https://idl-bnc-idrc.dspacedirect.org/handle/10625/40732">2010-2019 / Années 2010-2019</a>
+<br>
+</li>
+<!-- External Metadata URL: cocoon://metadata/handle/10625/33/mets.xml-->
+<li>
+<a href="https://idl-bnc-idrc.dspacedirect.org/handle/10625/33">IDRC Research Results / Résultats de recherches du CRDI</a>
+<br>
+</li>
+</ul>
+</div>
+</div>
+<div id="ds-options-wrapper">
+<div id="ds-options">
+<h1 class="ds-option-set-head" id="ds-search-option-head">Search</h1>
+<div xmlns:i18n="http://apache.org/cocoon/i18n/2.1" class="ds-option-set" id="ds-search-option">
+<form method="post" id="ds-search-form" action="/discover">
+<fieldset>
+<input class="ds-text-field " name="query" type="text">
+<input xmlns:i18n="http://apache.org/cocoon/i18n/2.1" value="Go" name="submit" class="ds-button-field " onclick='
+                                        var radio = document.getElementById("ds-search-form-scope-container");
+                                        if (radio != undefined &amp;&amp; radio.checked)
+                                        {
+                                        var form = document.getElementById("ds-search-form");
+                                        form.action=
+                                    "/handle/" + radio.value + "/discover" ; 
+                                        }
+                                    ' type="submit">
+<label>
+<input checked="checked" value="" name="scope" id="ds-search-form-scope-all" type="radio">Search</label>
+<br xmlns:i18n="http://apache.org/cocoon/i18n/2.1">
+<label>
+<input name="scope" id="ds-search-form-scope-container" value="10625/33" type="radio">This Collection</label>
+</fieldset>
+</form>
+</div>
+<h1 xmlns:i18n="http://apache.org/cocoon/i18n/2.1" class="ds-option-set-head">Browse</h1>
+<div xmlns:i18n="http://apache.org/cocoon/i18n/2.1" xmlns="http://di.tamu.edu/DRI/1.0/" id="aspect_viewArtifacts_Navigation_list_browse" class="ds-option-set">
+<ul class="ds-options-list">
+<li>
+<h2 class="ds-sublist-head">All Content</h2>
+<ul xmlns:i18n="http://apache.org/cocoon/i18n/2.1" xmlns="http://di.tamu.edu/DRI/1.0/" class="ds-simple-list sublist">
+<li class="ds-simple-list-item">
+<a href="https://idl-bnc-idrc.dspacedirect.org/community-list">Communities &amp; Collections</a>
+</li>
+<li xmlns:i18n="http://apache.org/cocoon/i18n/2.1" xmlns="http://di.tamu.edu/DRI/1.0/" class="ds-simple-list-item">
+<a href="https://idl-bnc-idrc.dspacedirect.org/browse?type=dateissued">By Issue Date</a>
+</li>
+<li xmlns:i18n="http://apache.org/cocoon/i18n/2.1" xmlns="http://di.tamu.edu/DRI/1.0/" class="ds-simple-list-item">
+<a href="https://idl-bnc-idrc.dspacedirect.org/browse?type=author">Authors</a>
+</li>
+<li xmlns:i18n="http://apache.org/cocoon/i18n/2.1" xmlns="http://di.tamu.edu/DRI/1.0/" class="ds-simple-list-item">
+<a href="https://idl-bnc-idrc.dspacedirect.org/browse?type=title">Titles</a>
+</li>
+<li xmlns:i18n="http://apache.org/cocoon/i18n/2.1" xmlns="http://di.tamu.edu/DRI/1.0/" class="ds-simple-list-item">
+<a href="https://idl-bnc-idrc.dspacedirect.org/browse?type=subject">Subjects</a>
+</li>
+<li xmlns:i18n="http://apache.org/cocoon/i18n/2.1" xmlns="http://di.tamu.edu/DRI/1.0/" class="ds-simple-list-item">
+<a href="https://idl-bnc-idrc.dspacedirect.org/browse?type=language">Language</a>
+</li>
+<li xmlns:i18n="http://apache.org/cocoon/i18n/2.1" xmlns="http://di.tamu.edu/DRI/1.0/" class="ds-simple-list-item">
+<a href="https://idl-bnc-idrc.dspacedirect.org/browse?type=type">Document Type</a>
+</li>
+<li xmlns:i18n="http://apache.org/cocoon/i18n/2.1" xmlns="http://di.tamu.edu/DRI/1.0/" class="ds-simple-list-item">
+<a href="https://idl-bnc-idrc.dspacedirect.org/browse?type=project">Project Number</a>
+</li>
+</ul>
+</li>
+<li xmlns:i18n="http://apache.org/cocoon/i18n/2.1" xmlns="http://di.tamu.edu/DRI/1.0/">
+<h2 class="ds-sublist-head">This Collection</h2>
+<ul xmlns:i18n="http://apache.org/cocoon/i18n/2.1" xmlns="http://di.tamu.edu/DRI/1.0/" class="ds-simple-list sublist">
+<li class="ds-simple-list-item">
+<a href="https://idl-bnc-idrc.dspacedirect.org/handle/10625/33/browse?type=dateissued">By Issue Date</a>
+</li>
+<li xmlns:i18n="http://apache.org/cocoon/i18n/2.1" xmlns="http://di.tamu.edu/DRI/1.0/" class="ds-simple-list-item">
+<a href="https://idl-bnc-idrc.dspacedirect.org/handle/10625/33/browse?type=author">Authors</a>
+</li>
+<li xmlns:i18n="http://apache.org/cocoon/i18n/2.1" xmlns="http://di.tamu.edu/DRI/1.0/" class="ds-simple-list-item">
+<a href="https://idl-bnc-idrc.dspacedirect.org/handle/10625/33/browse?type=title">Titles</a>
+</li>
+<li xmlns:i18n="http://apache.org/cocoon/i18n/2.1" xmlns="http://di.tamu.edu/DRI/1.0/" class="ds-simple-list-item">
+<a href="https://idl-bnc-idrc.dspacedirect.org/handle/10625/33/browse?type=subject">Subjects</a>
+</li>
+<li xmlns:i18n="http://apache.org/cocoon/i18n/2.1" xmlns="http://di.tamu.edu/DRI/1.0/" class="ds-simple-list-item">
+<a href="https://idl-bnc-idrc.dspacedirect.org/handle/10625/33/browse?type=language">Language</a>
+</li>
+<li xmlns:i18n="http://apache.org/cocoon/i18n/2.1" xmlns="http://di.tamu.edu/DRI/1.0/" class="ds-simple-list-item">
+<a href="https://idl-bnc-idrc.dspacedirect.org/handle/10625/33/browse?type=type">Document Type</a>
+</li>
+<li xmlns:i18n="http://apache.org/cocoon/i18n/2.1" xmlns="http://di.tamu.edu/DRI/1.0/" class="ds-simple-list-item">
+<a href="https://idl-bnc-idrc.dspacedirect.org/handle/10625/33/browse?type=project">Project Number</a>
+</li>
+</ul>
+</li>
+</ul>
+</div>
+<h1 xmlns:i18n="http://apache.org/cocoon/i18n/2.1" xmlns="http://di.tamu.edu/DRI/1.0/" class="ds-option-set-head">My Account</h1>
+<div xmlns:i18n="http://apache.org/cocoon/i18n/2.1" xmlns="http://di.tamu.edu/DRI/1.0/" id="aspect_viewArtifacts_Navigation_list_account" class="ds-option-set">
+<ul class="ds-simple-list">
+<li class="ds-simple-list-item">
+<a href="https://idl-bnc-idrc.dspacedirect.org/login">Login</a>
+</li>
+<li xmlns:i18n="http://apache.org/cocoon/i18n/2.1" xmlns="http://di.tamu.edu/DRI/1.0/" class="ds-simple-list-item">
+<a href="https://idl-bnc-idrc.dspacedirect.org/register">Register</a>
+</li>
+</ul>
+</div>
+</div>
+</div>
+
+</div>
+</div>
+<div xmlns:i18n="http://apache.org/cocoon/i18n/2.1" xmlns="http://di.tamu.edu/DRI/1.0/" id="ds-footer-wrapper">
+<div id="ds-footer">
+<div id="ds-footer-left">
+<a target="_blank" href="http://www.dspace.org/">DSpace software</a> copyright&nbsp;©&nbsp;2002-2015&nbsp; <a target="_blank" href="http://www.duraspace.org/">DuraSpace</a>
+</div>
+<div id="ds-footer-right">
+<span class="theme-by">Powered by&nbsp;</span>
+<a id="ds-footer-logo-link" href="http://dspacedirect.org/" target="_blank" title="DSpaceDirect">
+<span id="ds-footer-logo">&nbsp;</span>
+</a>
+</div>
+<div id="ds-footer-right2">
+<span class="theme-by">A service from&nbsp;</span>
+<a id="ds-footer-logo-link2" href="http://duraspace.org/" target="_blank" title="DuraSpace">
+<span id="ds-footer-logo2">&nbsp;</span>
+</a>
+</div>
+<div id="ds-footer-links">
+<a href="https://idl-bnc-idrc.dspacedirect.org/contact">Contact Us</a> | <a xmlns:i18n="http://apache.org/cocoon/i18n/2.1" href="https://idl-bnc-idrc.dspacedirect.org/feedback">Send Feedback</a>
+</div>
+<div xmlns:i18n="http://apache.org/cocoon/i18n/2.1" id="ds-footer-idrc">
+<a xmlns:i18n="http://apache.org/cocoon/i18n/2.1" href="http://idrc.ca/en" target="_blank" title="idrc.ca">idrc.ca</a>
+</div>
+<a class="hidden" href="https://idl-bnc-idrc.dspacedirect.org/htmlmap">&nbsp;</a>
+</div>
+</div>
+</div>
+<script src="jquery.js" type="text/javascript"> </script>
+<script type="text/javascript">!window.jQuery && document.write('<script type="text/javascript" src="/static/js/jquery-1.6.2.min.js"> <\/script>')</script>
+<script type="text/javascript" src="jquery-ui-1.js"> </script><!--[if lt IE 7 ]>
+<script type="text/javascript" src="/themes/Mirage/lib/js/DD_belatedPNG_0.0.8a.js?v=1"> </script>
+<script type="text/javascript">DD_belatedPNG.fix('#ds-header-logo');DD_belatedPNG.fix('#ds-footer-logo');$.each($('img[src$=png]'), function() {DD_belatedPNG.fixPng(this);});</script><![endif]-->
+<script type="text/javascript">
+            runAfterJSImports.execute();
+        </script>
+<script type="text/javascript">
+                   var _gaq = _gaq || [];
+                   _gaq.push(['_setAccount', 'UA-92594992-1']);
+                   _gaq.push(['_trackPageview']);
+
+                   (function() {
+                       var ga = document.createElement('script'); ga.type = 'text/javascript'; ga.async = true;
+                       ga.src = ('https:' == document.location.protocol ? 'https://ssl' : 'http://www') + '.google-analytics.com/ga.js';
+                       var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(ga, s);
+                   })();
+           </script>
+<script type="text/javascript">
+                         if(typeof window.orcid === 'undefined'){
+                            window.orcid={};
+                          };
+                        window.orcid.contextPath= '';window.orcid.themePath= '/themes/Mirage';</script>
+</body></html>
