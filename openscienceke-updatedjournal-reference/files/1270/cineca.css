@@ -1,0 +1,338 @@
+/* CSS crunched with Crunch - http://crunchapp.net/ */
+@font-face {
+  font-family: 'FontAwesome';
+  src: url('../../font-awesome/fonts/fontawesome-webfont.eot?v=4.0.3');
+  src: url('../../font-awesome/fonts/fontawesome-webfont.eot?#iefix&v=4.0.3') format('embedded-opentype'), url('../../font-awesome/fonts/fontawesome-webfont.woff?v=4.0.3') format('woff'), url('../../font-awesome/fonts/fontawesome-webfont.ttf?v=4.0.3') format('truetype'), url('../../font-awesome/fonts/fontawesome-webfont.svg?v=4.0.3#fontawesomeregular') format('svg');
+  font-weight: normal;
+  font-style: normal;
+}
+[class*="fa-"] {
+  font-size: 16px;
+}
+.language.dropdown > a > img {
+  float: left;
+  margin: -3px 6px 0 0;
+}
+.dropdown-menu > li > a > img {
+  margin-top: -3px;
+}
+/*
+.dropdown-menu.icons-right > li > a > i {
+  margin-top: -15px;
+}*/
+ul.ui-autocomplete {
+  z-index: 1100;
+}
+.ui-datepicker select.ui-datepicker-month,
+.ui-datepicker select.ui-datepicker-year {
+  color: black;
+}
+.modal .date {
+  z-index: 1151;
+}
+.panel-footer .btn-xs {
+  margin: 5px 5px 0 0;
+}
+.panel-footer .btn,
+.panel-footer .btn-group {
+  margin: 3px 3px 0 0;
+}
+.nav-pills > li.complete > a,
+.nav-pills > li.complete > a:focus,
+.nav-pills > li.complete > a:hover {
+  background-color: #65B688;
+  border-color: #65B688;
+}
+
+.panel-primary .panel-heading .btn-link {
+  color: #FFFFFF;
+}
+.navigation > li > a.level-opened {
+  color: #ffffff;
+}
+.navigation > li ul li a.level-opened,
+.navigation > li ul li a.level-opened:hover {
+  color: #ffffff;
+}
+.navigation > li ul > li > a.expand:after {
+  content: "\f067";
+  background-image: none;
+  background-color: transparent;
+  background-repeat: inherit;
+  font-family: FontAwesome;
+  height: auto;
+  margin-right: auto;
+  margin-top: auto;
+}
+.navigation > li ul > li > a.level-opened:after {
+  content: "\f068";
+  background: none;
+  font-family: FontAwesome;
+  height: auto;
+  margin: auto;
+  width: auto;
+}
+.navigation-icons-left > li a.level-opened:after {
+  content: "\f068";
+  background: none;
+  font-family: FontAwesome;
+  height: auto;
+  margin: auto;
+  width: auto;
+}
+label.info {
+  border-radius: 2px;
+  -webkit-border-radius: 2px;
+  -moz-border-radius: 2px;
+}
+label.info {
+  margin-top: 6px;
+  margin-bottom: 0;
+  color: #fff;
+  background-color: #3CA2BB;
+  display: table;
+  padding: 5px 8px;
+  font-size: 11px;
+  font-weight: 600;
+  line-height: 14px;
+}
+.required-sup {top: -0.9em;}
+.required-sup i {font-size: xx-small;}
+
+/*Fix dd dt */
+dt + dd {
+	margin-top: 10px;
+}
+/*Fix fa-chevron*/
+.carousel-control .fa-chevron-left,
+.carousel-control .fa-chevron-right {
+  position: absolute;
+  top: 50%;
+  z-index: 5;
+  display: inline-block;
+}
+.carousel-control .fa-chevron-left {
+  left: 50%;
+}
+.carousel-control .fa-chevron-right {
+  right: 50%;
+}
+
+@media screen and (min-width: 768px) {
+  .carousel-control .fa-chevron-left,
+  .carousel-control .fa-chevron-right{
+    width: 30px;
+    height: 30px;
+    margin-top: -15px;
+    margin-left: -15px;
+    font-size: 30px;
+  }
+}
+
+fieldset {
+    margin-top: 10px;
+}
+fieldset>legend:hover:after {
+   content: "\f077";
+   font-family: FontAwesome;
+   font-size: small;
+   vertical-align: middle;
+   padding-left: 5px;
+}
+fieldset>legend.closed:hover:after {
+   content: "\f078";
+   font-family: FontAwesome;
+   font-size: small;
+   vertical-align: middle;
+   padding-left: 5px;
+}
+fieldset>legend.closed:before {
+   content: "\f054";
+   font-family: FontAwesome;
+   font-size: small;
+   vertical-align: middle;
+   padding-right: 5px;
+}
+fieldset>legend {
+    font-size: 18px;
+    border-color: -moz-use-text-color -moz-use-text-color #65B688;
+}
+.page-title h3 {
+    font-weight: 400;
+    line-height: 20px;
+    margin: 0;
+    padding: 0 0 15px 0;
+}
+div.exportlinks {
+  padding: 12px 0 0 0;
+  display: block;
+  float: left;
+  font-size: 12px;
+  clear: both;
+}
+.panel div.exportlinks {
+  padding: 12px 14px;
+}
+
+div.exportlinks a {text-decoration: none;}
+span.export {cursor: pointer; display: inline; }
+
+.form-group {margin-bottom: 10px;}
+
+/* timepicker */
+.ui-timepicker-div { background: white; height: 100px; border: 1px solid #DDD; padding: 5px; border-top:0px; border-bottom:0px;}
+.ui-timepicker-div .ui-widget-header { margin-bottom: 8px; }
+.ui-timepicker-div dl { text-align: left; }
+.ui-timepicker-div dl dt { height: 25px; }
+.ui-timepicker-div dl dd { margin: -25px 10px 10px 65px; }
+.ui-timepicker-div td { font-size: 90%; }
+.ui-datepicker-buttonpane { background: white; border: 1px solid #DDD; padding: 5px; border-top:0px; text-align: right; }
+.ui-datepicker-buttonpane button { 
+	background: transparent; text-decoration: underline; border: 0px; border-radius: 0; margin-left: 1px; background-color: #74bd94; border-color: #74bd94; text-decoration: none; padding: 7px 16px 8px 16px;
+	font-size: 12px; font-weight: 600;text-align: center; vertical-align: middle; cursor: pointer; background-image: none; border: 1px solid transparent;
+	white-space: nowrap;line-height: 1.42857143; text-transform: none; overflow: visible; font: inherit; margin: 0;box-sizing: border-box; color:white;margin-right:1px;}
+
+.info a {color: white;text-decoration: underline;}
+
+.tabbable {margin-bottom: 10px;}
+
+.i18n-form {margin-top: 5px;}
+
+/*FIX IRIS-1272 */
+/*
+.facet.col-xs-1,.facet.col-sm-1,.facet.col-md-1,.facet.col-lg-1,.facet.col-xs-2,.facet.col-sm-2,.facet.col-md-2,.facet.col-lg-2,.facet.col-xs-3,.facet.col-sm-3,.facet.col-md-3,.facet.col-lg-3,.facet.col-xs-4,.facet.col-sm-4,.facet.col-md-4,.facet.col-lg-4,.facet.col-xs-5,.facet.col-sm-5,.facet.col-md-5,.facet.col-lg-5,.facet.col-xs-6,.facet.col-sm-6,.facet.col-md-6,.facet.col-lg-6,.facet.col-xs-7,.facet.col-sm-7,.facet.col-md-7,.facet.col-lg-7,.facet.col-xs-8,.facet.col-sm-8,.facet.col-md-8,.facet.col-lg-8,.facet.col-xs-9,.facet.col-sm-9,.facet.col-md-9,.facet.col-lg-9,.facet.col-xs-10,.facet.col-sm-10,.facet.col-md-10,.facet.col-lg-10,.facet.col-xs-11,.facet.col-sm-11,.facet.col-md-11,.facet.col-lg-11,.facet.col-xs-12,.facet.col-sm-12,.facet.col-md-12,.facet.col-lg-12 {
+    min-height: 1px;
+    padding-left: 3px;
+    padding-right: 3px;
+}
+
+.facet .list-group-item {
+    padding: 5px 6px;
+}
+*/
+.facetsBox .list-group-item {
+    padding: 5px 6px;
+}
+
+
+
+#facets .panel-title{
+	 padding: 5px 6px 6px;
+}
+
+#facets .panel {
+    margin-bottom: 15px;
+}
+
+
+/*END FIX IRIS-1272 */
+
+.cursor-pointer {cursor: pointer;}
+
+.dropdown-menu.icons-right > li > a > i.fa-trash-o { margin-right: 2px; }
+
+
+/*DANIELA*/
+.btn-primary  { background-color:#005179; border:#306}
+
+.navbar-brand {
+  height: 54px;
+  padding: 0px 45px 0 0;
+}
+.navbar {
+  min-height: 64px;
+  border-radius: 0;
+}
+.navbar-inverse {
+	background-color:#006699;
+}
+.banner {
+  background: #FFF url("") no-repeat 0px;
+  padding: 10px 20px 10px 20px;
+  color: #333;
+  border: #dddddd solid 1px;
+  margin: 10px 0px 10px 0px;
+}
+
+.nav-tabs > li.active > a, .nav-tabs > li.active > a:hover, .nav-tabs > li.active > a:focus {
+  color: #333;
+  border-top: 3px solid #006699;
+}
+
+#events h4 {
+	text-transform:uppercase;
+  color: #900;
+
+}
+
+#events p {
+	font-size:12px;
+
+}
+
+#news h4 {
+	text-transform:uppercase;
+  color: #900;
+
+}
+/*daniela motore di ricerca */
+
+.col-sm-8 {
+    width: 100%;
+    float: left;
+}
+
+.col-md-8 {
+  width: 33%;
+}
+
+
+
+.col-sm-4 {
+  width: 100%;
+  float: left;
+}
+
+
+
+.facets{
+	margin-bottom: 0px;
+	margin-top: 20px;
+}
+
+.panel-primary {
+  border-color: #FFF;
+}
+
+.daniela{
+  border: 1px solid #ddd;
+}
+
+.discovery-query 
+{
+  color: #FFFFFF;
+  background-color: #006699;
+  }
+.panel-heading{
+  color: #FFFFFF;
+  background-color: #006699;
+  }
+  
+  
+  .panel-primary > .panel-heading {
+  background-color: #006699;
+}
+
+.panel-info > .panel-heading {
+  color: #ffffff;
+  background-color: #006699;
+  border-bottom: 0;
+  
+}
+.panel-info {
+  border: 1px solid #ddd;
+}
+
+/* funzionamento search colonne BI */
+.display-none
+{ display: none; }

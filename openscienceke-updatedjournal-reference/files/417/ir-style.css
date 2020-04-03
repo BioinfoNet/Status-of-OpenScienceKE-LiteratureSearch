@@ -1,0 +1,16 @@
+@import url("/assets/styles/ir-reset.css");
+@import url("/assets/styles/ir-layout.css");
+@import url("/assets/styles/ir-assets.css");
+
+ 
+	
+		@import url("/assets/styles/ir-left.css");
+	
+	
+
+@import url("/assets/styles/ir-submit.css");
+@import url("/assets/styles/ir-article.css");
+@import url("/assets/styles/ir-feed.css");
+@import url("/assets/styles/ir-network.css");
+@import url("/ajis/ir-adapt.css");
+@import url("/dc-mobile-nav.css");

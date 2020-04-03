@@ -1,0 +1,54 @@
+ /*SITE SPECIFIC CSS*/
+
+.featurePanel {
+	background-image: url(//academic.oup.com/data/sitebuilderassetsoriginals/images/jamia/jamia_feature_panel.jpg);
+	border: 1px solid #CFD5E4;
+}
+.navbar {
+	background-color: #231F20;
+}
+.featurePanel h3 {
+	font-family: "Source Sans Pro", Helvetica, Arial, sans-serif !important;
+	font-weight: bold !important;
+}
+.journal-bg {
+  background-color: #ffffff;
+}
+.journal-header .journal-logo {
+    width: 310px;
+}
+.journal-header .society-logo {
+    width: 200px; 
+}
+img.journal-footer-affiliations-logo {
+	width: 300px;
+}
+.pg_index .location-main-content>.widget-dynamic>.widget-dynamic-inner-wrap>.widget-dynamic[data-count]:nth-child(4):not(.row-related-titles){
+	background-color: #231F20;
+}
+.pg_index .location-main-content>.widget-dynamic>.widget-dynamic-inner-wrap>.widget-dynamic[data-count]:nth-child(4):not(.row-related-titles) .widget-dynamic__underbar.journal-bg{
+	background-color: #ffffff;
+}
+.pg_index .location-main-content>.widget-dynamic>.widget-dynamic-inner-wrap>.widget-dynamic[data-count]:nth-child(4):not(.row-related-titles) .widget-dynamic__header h3{
+	color: #ffffff;
+}
+.journal-footer-menu a { 
+	color: #2a2a2a; 
+}
+.journal-footer-colophon { 
+	color: #2a2a2a; 
+}
+.widget-dynamic__underbar.journal-bg {
+	background-color: #2a2a2a;
+}
+.journal-footer {
+	border-bottom: 1px solid #CFD5E4;
+	-webkit-font-smoothing: auto;
+}
+.journal-footer, .journal-header {
+	border-top: 1px solid #CFD5E4;
+}
+
+.society-links-logo img {
+	width: 240px;
+}

@@ -16,24 +16,47 @@ You get over **_20,000 articles_** that mention **_kenya and any of the other wo
 
 **To refine the search to _titles only_**
 ```
-alltitle:kenya("Open data"|"open science"|"open source"|"open access"|"open peer
+allintitle:kenya("Open data"|"open science"|"open source"|"open access"|"open peer
 review"|"open science"|"open review"|"open notebooks"|"open educational
 resources"|"scientific social network")
 ```
-You get **_87 artices_** that mention **_kenya and any of the other words_** in
+You get **_89 artices_** that mention **_kenya and any of the other words_** in
 the title.
 
 Includes citations and patents (there are no patents eitherway) which can be easily excluded to
-remain with **_56 articles_**.
+remain with **_61 articles_**.
 
-The results can be found on this **[Google Scholar search
-results](https://scholar.google.com/scholar?start=40&q=allintitle:+kenya\(%22Open+data%22%7C%22open+science%22%7C%22open+source%22%7C%22open+access%22%7C%22open+peer+review%22%7C%22open+science%22%7C%22open+review%22%7C%22open+notebooks%22%7C%22open+educational+resources%22%7C%22scientific+social+network%22\)&hl=en&as_sdt=0,5)**
+The results can be found on this [**Google Scholar search
+results**](https://scholar.google.com/scholar?start=40&q=allintitle:+kenya\(%22Open+data%22%7C%22open+science%22%7C%22open+source%22%7C%22open+access%22%7C%22open+peer+review%22%7C%22open+science%22%7C%22open+review%22%7C%22open+notebooks%22%7C%22open+educational+resources%22%7C%22scientific+social+network%22\)&hl=en&as_sdt=0,5)
 
 For more on advanced search in Goolgle Scholar help go to [Google Scholar: 13 search
 tips](https://www.wur.nl/en/article/Google-Scholar-13-search-tips.htm) and
 [Google search help: Refine web
 searches](https://support.google.com/websearch/answer/2466433)
 
+**For a wider look in the African continent search**
+```
+allintitle:africa("Open data"|"open science"|"open source"|"open
+access"|"open peer review"|"open science"|"open review"|"open notebooks"|"open
+educational resources"|"scientific social network")
+```
+There over **_271 results_** of articles with **_africa_** and the keywords in their
+titles (186 results when citations and patents are excluded) [**Google search results for
+Africa**](https://scholar.google.com/scholar?hl=en&as_sdt=0%2C5&q=allintitle%3Aafrica%28%22Open+data%22%7C%22open+science%22%7C%22open+source%22%7C%22open+access%22%7C%22open+peer+review%22%7C%22open+science%22%7C%22open+review%22%7C%22open+notebooks%22%7C%22open+educational+resources%22%7C%22scientific+social+network%22%29&btnG=)
+
+Futher refined results from africa that exclude any titles with **_South Africa_** in
+it
+```
+allintitle:africa("Open data"|"open science"|"open source"|"open access"|"open
+peer review"|"open science"|"open review"|"open notebooks"|"open educational
+resources"|"scientific social network") -"south africa"
+```
+Returns [126
+results for a search of **_Africa excluding South Africa_**](https://scholar.google.com/scholar?hl=en&as_sdt=0%2C5&as_vis=1&q=allintitle%3Aafrica%28%22Open+data%22%7C%22open+science%22%7C%22open+source%22%7C%22open+access%22%7C%22open+peer+review%22%7C%22open+science%22%7C%22open+review%22%7C%22open+notebooks%22%7C%22open+educational+resources%22%7C%22scientific+social+network%22%29+-%22south+africa%22&btnG=)
+
+## What has been published about Open Science in Kenya.
+
+For a detailed understanding refer to the citation file openscienceke.bib (Has a total of 69 articles relevant to openscience in kenya)
 
 # Institutional Websites
 # **The Position of Kenya's Institutions on Open Science and Open Research.**
@@ -96,6 +119,7 @@ Kenya Open Data: Is the information being utilized?
 
 
 # Surveys/Blogs
+While we could not find a poll survey on the uptake of open-science and the general practice of open access, a number of blogs have been published in relation to the subject in Kenya. From the first open workshop in Kenya, in 2010 supported by Electronic Information for Libraries ( [EIFL](http://www.eifl.net/) ), the status and progress of open science have also received mentions in blogs. One particular blogger on the subject stands out, Lilian Juma, who herself is an advocate of OA and spear-headed the first [OpenCon](https://ocsdnet.org/my-journey-as-opencon-organizer-in-nairobi-advocating-for-open-access-open-data-and-open-education/) in Nairobi (2015). In her narration, before this conference, OA seemed to have been a reserve knowledge to a select few in the higher positions in academia and research. The awareness was not extensive, but rather a benign concept, with some of the institutions charged with championing OA being reluctant. Since supporting the first workshop on OA, EIFL has done extensive work in helping institutions on OA [policies](http://www.eifl.net/blogs/oa-policies-adopted-kenya-enough), training and starting OA infrastructures such as open institutional repositories for research outputs. Survey studies on the uptake of OA have also revealed a slow pick-up of OA as captured, for instance, in Dr. Chilimo's [study](www.codesria.org/IMG/pdf/chilimo.pdf?4791/2391031eac154bf4bdd9d33f2ac1f1181a7c9a26.). While previous effort mainly revolved around awareness, policies and infrastructure, a most critical aspect of OA, in my opinion, emerges in the Open Access Week 2016 theme - _Open in Action_, the actual practising of OA. Writing in her blog, Lilian captures the importance of building capacity of trainers through a train-the-trainer workshop, [link](http://openaccessweek.org/profiles/blogs/from-nairobi-to-the-world-open-access-week-2016). More than this the actual use and practice of OA is core, because people might be aware of OA, yet be unable to use or adopt it, it is against this backdrop that the [**#OpenScienceKE**](https://twitter.com/OpenKe) project sort to do a two-thronged sensitization, running awareness campaigns and following with a practical OA training [worshop](https://kenet.or.ke/blog/admin/kenet-hosts-open-science-workshop) on tools for OA. Similar training have been held in [Kenya](https://www.poverty-action.org/blog/training-open-science-kenya) in the recent past, more recently in [Ethiopia](http://www.eifl.net/blogs/exciting-year-ahead-open-science-training) early in the year. The need for OA use training remains dire.
 
 
 
