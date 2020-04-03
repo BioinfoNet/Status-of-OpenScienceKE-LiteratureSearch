@@ -1,0 +1,282 @@
+/* -----------------------------------------------
+bepress IR local stylesheet.
+Author:   Jami Wardlow
+Version:  August 2018
+PLEASE SAVE THIS FILE LOCALLY!
+----------------------------------------------- */
+
+/* ---------------- Meta Elements ---------------- */
+
+@import url('https://fonts.googleapis.com/css?family=Ubuntu:400,500,700');
+
+	/* --- Meta styles and background --- */
+
+html { background: #003463; }
+
+body {
+	font: normal 13px 'Ubuntu', sans-serif;  /* should be medium except when fitting into a fixed container */
+	color: #666;
+	background-color: #fff;
+	background-image: url(assets/md5images/01dfd254e323832256855455be114c09.gif), url(assets/md5images/c946948804b4be07b153a889c768e53f.gif);
+	background-repeat: repeat-x, repeat-x;
+	background-position: top left, bottom left;
+}
+
+/* ---------------- Header ---------------- */
+
+#ais #header {
+	position: relative;  /* needed for logo positioning */
+	height: auto !important; /* !important overrides mbl styling */
+}
+
+#ais #banner_image {
+	display: block; /* removes descender of inline element */
+	width: 980px; /* not necessary if image is sized correctly */
+	height: auto !important;  /* avoids warping improperly sized header image / SUP-19994 */
+}
+
+	/* --- Logo --- */
+
+#ais #logo_image {
+	position: absolute !important; /* !important overrides mbl styling */
+	top: 0;
+	left: 0;  /* change to "right:" for right aligned logo */
+	width: 36.938776% !important;  /* 362 / 980 */
+	height: auto !important; /* Important avoides DC assigning incorrect height to logo image */
+}
+
+
+/* ---------------- Navigation ---------------- */
+
+#ais #navigation,
+#ais #navigation #tabs {
+	height: 50px;
+	float: left;
+	overflow: hidden; /* have seen issues with tabs extending below nav container */
+}
+
+#ais #navigation #tabs,
+#ais #navigation #tabs ul,
+#ais #navigation #tabs ul li {
+	padding: 0;
+	margin: 0;
+}
+
+#ais #navigation #tabs a {
+	font: normal 20px 'Ubuntu', sans-serif;
+	display: block;
+	width: auto !important; /* fixes "my account" not fitting in container on page load */
+	height: 50px;
+	line-height: 50px;
+	color: #fff;
+	transition: 0.3s ease-in-out;
+	background-color: #0053a0;
+	padding: 0 18px; /* with arial bold, this fits */
+	margin: 0;
+	border: 0;
+	float: left;
+}
+
+#ais #navigation #tabs a:hover,
+#ais #navigation #tabs a:active,
+#ais #navigation #tabs a:focus {
+	text-decoration: underline;
+}
+
+#ais #navigation #tabs li:last-child a { padding-right: 25px; }   /* hidden but expands to fit 240px #tabs for IE + FF */
+
+
+/* ---------------- Sidebar ---------------- */
+
+#ais #sidebar h2 {
+	font: 500 18px 'Ubuntu', sans-serif;
+	text-indent: initial;
+	color: #fff;
+	background: #0053a0;
+	padding: 15px;
+	margin: 0;
+	border-top: 1px solid #aac6df;
+}
+
+#ais #sidebar h2:first-of-type {
+	border-top: none;
+	border-bottom: 1px solid #aac6df;
+}
+
+#ais #sidebar #sb-custom-middle h2 { 
+	border-top: 1px solid #aac6df;
+	border-bottom: none;
+}
+
+#ais #sidebar a {
+	font: normal 13px 'Ubuntu', sans-serif;
+	color: #0053a0;
+	text-decoration: none;
+}
+
+#ais #sidebar a:hover,
+#ais #sidebar a:active,
+#ais #sidebar a:focus {
+	color: #000;
+	text-decoration: underline;
+}
+
+#ais #sidebar #sidebar-search label {
+	font: normal 13px 'Ubuntu', sans-serif;
+	color: #666;
+}
+
+#ais #sidebar #sidebar-search {
+	margin-top: 8px;
+	padding-left: 15px;
+}
+
+#ais #sidebar #sidebar-search span.border { background: transparent; }
+
+.searchbutton { cursor: pointer; } /* best practice, should move to ir-layout.css */
+
+
+/* ---------------- Main Content ---------------- */
+
+#ais #content { padding-top: 16px; }
+
+	/* --- Breadcrumbs --- */
+
+#ais #main.text div.crumbs a:link,
+#ais #main.text div.crumbs a:visited {
+	text-decoration: none;
+	color: #0053a0;
+}
+
+#ais #main.text div.crumbs a:hover,
+#ais #main.text div.crumbs a:active,
+#ais #main.text div.crumbs a:focus {
+	text-decoration: underline;
+	color: #000;
+}
+
+#ais #dcn-home > #homepage-intro { margin: 15px 0; }
+
+ /* adds space under full-width main-content image */
+#ais #home-page-banner { margin-bottom: 16px; }
+
+
+	/* --- Headers --- */
+
+#ais #main.text h2 {
+	font: normal 21px 'Ubuntu', sans-serif;
+}
+
+h3 {
+	margin: 0;
+	text-decoration: underline; }
+
+/* FF 55 takes parent element's color a text-deoration-color (black, usually) */
+#dcn-home #cover-browse h3 { color: #0053a0; }
+
+#ais #main.text #cover-browse h3 a {
+	font: normal 13px 'Ubuntu', sans-serif;
+	text-decoration: none;
+	line-height: 25px;
+}
+	/* --- Links --- */
+
+#ais #main.text a:link,
+#ais #main.text a:visited {
+	color: #0053a0; /* declared for #network-icon text */
+}
+
+#ais #main.text a:hover,
+#ais #main.text a:active,
+#ais #main.text a:focus {
+	color: #000;
+	text-decoration: underline;
+}
+
+	/* PotD / Top DL widgets */
+
+#ais #main.text .box.aag h2,
+#ais #main.text .box.potd h2 {
+	width: 267px;
+	margin: 0;
+	font: normal 16px 'Ubuntu', sans-serif;
+	border-bottom: 1px solid #ddd;
+}
+
+#ais #main.text .box a:link,
+#ais #main.text .box a:visited {
+	font: bold 12px 'Ubuntu', sans-serif;
+	text-decoration: none;
+	border-bottom: 1px solid #ddd;
+	background: none;
+}
+
+#ais #main.text .box a:hover,
+#ais #main.text .box a:active,
+#ais #main.text .box a:focus {
+	text-decoration: underline;
+}
+
+#ais #main.text .box span { 
+	color: #666;
+	margin-top: 6px;
+}
+
+	/* article-level text // default values 12px/13px */
+
+#alpha .element p, #custom-fields .element p { font-size: 12px; }
+
+#alpha .element h4, #custom-fields .element h4 { font-size: 13px; }
+
+
+/* ---------------- Footer ---------------- */
+
+#ais #footer { background: url(assets/md5images/c946948804b4be07b153a889c768e53f.gif) repeat-x; }
+
+#ais #footer,
+#ais #bepress a {
+	height: 83px;
+	background-color: #0053a0;
+}
+
+#ais #footer p,
+#ais #footer p a {
+	font: normal 12px/2 'Ubuntu', sans-serif;
+	color: #fff;
+	text-decoration: none;
+}
+
+#footer p:first-of-type { padding-top: 30px; }
+
+#ais #footer p a:hover,
+#ais #footer p a:active,
+#ais #footer p a:focus {
+	text-decoration: underline; }
+
+#ais #footer p#footer-blurb a { font-size: 10px; }
+
+/* ---------------- Miscellaneous fixes ---------------- */
+
+	/* --- Advanced Search --- */
+
+.legacy #ais #wrapper {	background-image: none; }
+
+
+/* ---------------- Mobile ---------------- */
+
+	/* fixes invisible space above header */
+
+header#mobile-nav { 
+    font-size: 0;
+    line-height: 0; }
+
+	/* fixes bullet underline for Browse Research and Scholarship links */
+
+.mbl #main #cover-browse h3 { text-decoration: none; }
+
+	/* stacks headings and spans in .box */
+	
+.mbl #dcn-home .box.aag span,
+.mbl #dcn-home .box.potd span {
+    display: block;
+}

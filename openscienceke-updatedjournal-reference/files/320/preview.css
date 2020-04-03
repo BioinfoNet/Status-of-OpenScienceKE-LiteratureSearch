@@ -1,0 +1,60 @@
+#previewWrapper {
+	float:right;
+	margin: 0 0 5px 5px;
+}
+#preview #top {
+	border-bottom: 1px dotted black;
+    height: 70px;
+}
+#preview #top p {
+	margin: 0 0 3px 0;
+	font-size: 1em;
+	font-weight: bold;
+}
+#preview #top .previous, #preview #top .next, #preview #top .navdivider {
+	font-size: 0.9em;
+}
+#zoomcontrols {
+	float:right;
+	overflow:hidden;
+}
+#zoomcontrols div {
+	float:left;
+	border: 1px solid #999999;
+	padding:3px;
+	margin: 0 0 0 2px;
+}
+#zoomcontrols div img{
+	display:block;
+}
+#preview .image {
+    height: 370px;
+    overflow: scroll;
+    text-align: center;
+    max-width:100%; 
+}
+#preview a {
+	color: #125AA7;
+}
+.previewthumbnailink img {
+	border: 1px solid black;
+	margin: 0;
+}
+div.previewthumbnailink {
+	position:relative;
+	cursor:pointer;
+	text-align:right;
+}
+.previewthumbnailink .previewMagnify {
+	position: absolute;
+	right: 8px;
+	bottom: 10px;
+	border:none;
+}
+#preview .filename {
+	display: none;
+}
+.previewNavGrey {
+	color: #cccccc!important;
+	cursor: default;
+}

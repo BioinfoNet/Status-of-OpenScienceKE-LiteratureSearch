@@ -1,0 +1,1780 @@
+if (typeof lc5Class == 'undefined') {
+    lc5Class = function(){};
+}
+var lc5       = new lc5Class();
+lc5.doneLoadingInline = false;
+lc5.popup       = {};
+lc5.contextPath = '';
+lc5.domain      = 'wur.livecom.net';
+lc5.sidVar      = 'sID';
+lc5.cidVar      = 'cID';
+lc5.lastURLVar  = 'lastURL';
+lc5.elements    = new Array();
+lc5.lcElements  = new Array();
+lc5.winHeight	= new Array();
+lc5.winWidth	= new Array();
+lc5.chat_scheme	= new Array();
+lc5.resizable	= new Array();
+lc5.bgColor     = new Array();
+lc5.CHAT_INLINE_POSITION        = {}; // '1' = left
+lc5.CHAT_INLINE_BADGE           = {}; // '1' = image. if there is a badge or text with background
+lc5.CHAT_INLINE_BTNBACKGROUND   = {};
+lc5.CHAT_INLINE_BTNTEXT         = {};
+lc5.CHAT_INLINE_TITLE           = {};
+lc5.CHAT_INLINE_HEADER_HTML     = {};
+lc5.TITLE_COLOR		            = {};
+lc5.AGENT_MESSAGE_BUBBLE_COLOR = {};
+lc5.VISITOR_MESSAGE_BUBBLE_COLOR = {};
+lc5.SYSTEM_MESSAGE_BUBBLE_COLOR = {};
+lc5.SUBHEADER_MESSAGE_COLOR = {};
+lc5.SUBHEADER_BACKGROUND_COLOR = {};
+lc5.VISITOR_STOP_CHAT_ENABLED   = {};
+lc5.LC5INLINE = {};
+lc5.TITLE_FONT = {};
+lc5.TITLE_FONT_SIZE = {};
+lc5.SUBHEADER_FONT = {};
+lc5.SUBHEADER_FONT_SIZE = {};
+lc5.AGENT_FONT = {};
+lc5.AGENT_FONT_SIZE = {};
+lc5.VISITOR_FONT = {};
+lc5.VISITOR_FONT_SIZE = {};
+lc5.SYSTEM_FONT = {};
+lc5.SYSTEM_FONT_SIZE= {};
+
+lc5.dg          = function(s) {
+    return document.getElementById(s);
+};
+lc5.dgt         = function(s) {
+    return document.getElementsByTagName(s);
+};
+lc5.dce         = function(s) {
+    return document.createElement(s);
+};
+lc5.firstload   = true;
+lc5.modQuery    = "";
+lc5.counter     = 0;
+lc5.refreshRate = 8000; /* MS */
+lc5.buttonRate  = 2;
+lc5.ltrRate     = NaN;
+lc5.loaderTimer;
+lc5.ID			= null;
+lc5.isCookieEn	= null;
+lc5.elFilter	= {
+    "parseButton": true
+};
+lc5.disableWindowName = false;
+
+lc5.log = function(msg) {
+    if (window.console && window.console.log) {
+        window.console.log(msg);
+    }
+};
+
+
+lc5.winNameRegex = function() {
+    return new RegExp("\r\n{.*}\r\n", "gm");
+};
+
+lc5.gec = function(oElm, strTagName, strClassName){
+
+    var arrElements = (strTagName == "*" && oElm.all)? oElm.all : oElm.getElementsByTagName(strTagName);
+    var arrReturnElements = new Array();
+    var oElement;
+    for(var i=0; i<arrElements.length; i++){
+        oElement = arrElements[i];
+        if(oElement.className.indexOf(strClassName) != -1){
+            arrReturnElements.push(oElement);
+        }
+    }
+    return arrReturnElements;
+};
+
+lc5.re = function(el) {
+    el.parentNode.removeChild(el);
+};
+
+lc5.attachEvent = function(el, event, func) {
+    if(el) {
+        if(el.attachEvent) {
+            el.attachEvent('on' + event, func);
+        } else if(el.addEventListener) {
+            el.addEventListener(event, func, false);
+        } else {
+            el.setAttribute('on' + event, func);
+        }
+    }
+};
+
+
+/*
+ called from loader.jsp to setup each groups special properties
+ */
+lc5.start = function() {
+    try {
+        /* Check domain validity */
+        if (lc5.validateDomain()) {
+            lc5.ensureInlineWidget();
+
+            /* Execute custom startup script */
+            lc5.executeBootStrap();
+
+            /* Check cookie availability */
+            lc5.isCookieEn = lc5.checkCookieAvailabiilty();
+
+            /* Generate cookie ID */
+            lc5.ID = lc5.getFixedRand(4);
+
+            /* Check if IP is allowed. */
+
+            /* TODO */
+            /* Check if referrer page is allowed. */
+
+            /* Parse the lcElements and check what modules need to be loaded. */
+            lc5.parseElements();
+
+            /* Do validation check */
+            lc5.validate();
+
+            /* Compose modules query */
+            lc5.composeMod();
+
+            /* Load libraries. */
+            lc5.update();
+            var params = lc5.loadData(true);
+        }
+    } catch (e) {
+        lc5.log(e);
+    }
+}
+
+lc5.findAttrByLcGroup = function(gid) {
+    for (var x = 0; x < lc5.lcElements.length; ++x) {
+        var attr = lc5.lcElements[x]['attr'];
+        var lcType = attr['lcType'].nodeValue;
+        // check only button/link scripts
+        if (!(lcType == 'button' || lcType == 'link')) {
+            continue;
+        }
+
+        var lcGroup = attr['lcGroup'].nodeValue;
+        if (lcGroup == gid) {
+            // lcid exists, this is the root element
+            return lc5.lcElements[x]['attr'];
+        }
+    }
+    return new Array();
+}
+
+lc5.loadNewInline = function(gid) {
+    // IE special cases
+    var bgColor = lc5.CHAT_INLINE_BTNBACKGROUND[gid];
+    if (bgColor.length < 3) {
+        bgColor = "000";
+    }
+    var titleColor = lc5.TITLE_COLOR[gid];
+    if (titleColor.length < 3) {
+        titleColor = "f00";
+    }
+
+    var attr = lc5.findAttrByLcGroup(gid);
+
+    lc5.LC5INLINE[gid] = {
+        argsOK : {
+            ctype: 'inline'
+        },
+        groupID : gid,
+        savedURL : lc5.composeClickUrl(attr, false, false),
+        currentAnchorId : 'currentAnchorId',
+        VIPopened : false,
+        agentFirstStatus : 'DONE',
+        agentStatus : {
+            state : '',
+            isChatActive: false,
+            isChatStopped: false
+        },
+        // GAYATHIRI - this is config object inline chat needs
+        chat_config: {
+            onlineWidgetSize: '2',
+            onlineColor : '#'+bgColor,
+            onlineWidgetPosition: lc5.CHAT_INLINE_POSITION[gid],
+            onlineChatButton:'//' + lc5.domain + lc5.contextPath + '/inline/img/click2chat.png',
+            onlineWidgetOnOff: lc5.CHAT_INLINE_BADGE[gid],
+            onlineMinimizedButtonBackground:'#'+bgColor,
+            onlineMinimizedButtontext: lc5.CHAT_INLINE_BTNTEXT[gid],
+            onlineTitle: lc5.CHAT_INLINE_TITLE[gid],
+            onlineTitleColor:'#'+titleColor,
+            onlineHTMLheader: lc5.CHAT_INLINE_HEADER_HTML[gid],
+            onlineStopButton: lc5.VISITOR_STOP_CHAT_ENABLED[gid],
+            onlineAgentMessageBubbleColor:lc5.AGENT_MESSAGE_BUBBLE_COLOR[gid],
+            onlineVisitorMessageBubbleColor:lc5.VISITOR_MESSAGE_BUBBLE_COLOR[gid],
+            onlineSystemMessageBubbleColor:lc5.SYSTEM_MESSAGE_BUBBLE_COLOR[gid],
+            onlineSubHeaderMessageColor:lc5.SUBHEADER_MESSAGE_COLOR[gid],
+            onlineSubHeaderBackgroundColor:lc5.SUBHEADER_BACKGROUND_COLOR[gid],
+            onlineTitleFont:lc5.TITLE_FONT[gid],
+            onlineTitleFontSize:lc5.TITLE_FONT_SIZE[gid],
+            onlineSubHeaderFont:lc5.SUBHEADER_FONT[gid],
+            onlineSubHeaderFontSize:lc5.SUBHEADER_FONT_SIZE[gid],
+            onlineAgentFont:lc5.AGENT_FONT[gid],
+            onlineAgentFontSize:lc5.AGENT_FONT_SIZE[gid],
+            onlineVisitorFont:lc5.VISITOR_FONT[gid],
+            onlineVisitorFontSize:lc5.VISITOR_FONT_SIZE[gid],
+            onlineSystemFont:lc5.SYSTEM_FONT[gid],
+            onlineSystemFontSize:lc5.SYSTEM_FONT_SIZE[gid]
+        }
+    };
+}
+
+lc5.initializeFromCookie = function() {
+    var settings = lc5.readCookie(LC5inline_INLINE_SETTINGS);
+
+    if (settings != null) {
+        // existing group - retrieve all of the relevant properties needed for the chat
+        var config = JSON.parse(decodeURIComponent(settings));
+        lc5.initializeInlineWidgetFromConfig(config);
+    }
+}
+
+lc5.initializeInlineWidget = function(gid, currentAnchorId) {
+    var copyFrom = lc5.LC5INLINE[gid];
+    if (currentAnchorId) {
+        copyFrom.currentAnchorId = currentAnchorId;
+    } else {
+        copyFrom.currentAnchorId = '';
+    }
+    lc5.initializeInlineWidgetFromConfig(copyFrom);
+    document.cookie = LC5inline_INLINE_SETTINGS + "=" + encodeURIComponent(JSON.stringify(copyFrom));
+}
+
+lc5.initializeInlineWidgetFromConfig = function(copyFrom) {
+    window.LC5inline.argsOK = copyFrom.argsOK;
+    window.LC5inline.savedURL = copyFrom.savedURL;
+    window.LC5inline.VIPopened = copyFrom.VIPopened;
+    window.LC5inline.agentFirstStatus = copyFrom.agentFirstStatus;
+    window.LC5inline.agentStatus = copyFrom.agentStatus;
+    window.LC5inline.chat_config = copyFrom.chat_config;
+    window.LC5inline.groupID = copyFrom.groupID;
+    window.LC5inline.initialized = true;
+    window.LC5inline.currentAnchorId =  copyFrom.currentAnchorId;
+}
+
+lc5.validateDomain = function() {
+
+    if (lc5.domainRestriction) {
+        return lc5.domainRestriction.test(document.location.href);
+    }
+    return true;
+};
+
+lc5.executeBootStrap = function() {
+
+    if (lc5.onStartup) {
+        lc5.onStartup();
+    }
+};
+
+lc5.checkCookieAvailabiilty = function() {
+    var v = "lc_testcookie";
+    var avail = navigator.cookieEnabled ? true : false;
+    if (typeof navigator.cookieEnabled == "undefined" && !avail) {
+        document.cookie = v;
+        avail=(document.cookie.indexOf(v)!=-1)? true : false
+    }
+    return avail;
+};
+
+lc5.parseElements = function() {
+    var el	= lc5.dgt('lcElement');
+    lc5.mod			= new Array();
+    lc5.mod['mod']	= new Array();
+    if(0 == el.length){
+        lc5.lcEl = new Array();
+        el = lc5.gec(document, 'span', 'lc5element');
+        // Transform every element into lcElement
+        for(var i = 0; i < el.length; i++) {
+            // Parse attributes and append them
+            var s = el[i].innerHTML.replace(/\s*?<!--/, '<span ');
+            s = s.replace('-->', '/>');
+            var e = document.createElement('div');
+            e.innerHTML = s;
+
+            // apply element filter to decide whether to skip or process
+            var lcType = e.firstChild.attributes['lcType'].nodeValue;
+            if (lcType == 'button' || lcType == 'link') {
+                if (!lc5.elFilter.parseButton) {
+                    continue;
+                }
+            }
+
+            lc5.lcEl[i] = e.firstChild;
+            lc5.lcElements[i]				= new Array();
+            lc5.lcElements[i]['baseparent']	= el[i]
+            lc5.lcElements[i]['attr']		= new Array();
+            lc5.lcElements[i]['attr']		= lc5.lcEl[i].attributes;
+            try {
+                lc5.processElement(i);
+            } catch (e){}
+        }
+    } else {
+        for (i = 0; i < el.length; i++) {
+            lc5.lcElements[i]				= new Array();
+            lc5.lcElements[i]['baseparent'] = el.item(i).parentNode;
+            lc5.lcElements[i]['attr']		= new Array();
+            lc5.lcElements[i]['attr']		= el.item(i).attributes;
+            try {
+                lc5.processElement(i);
+            } catch (e){}
+        }
+    }
+};
+
+lc5Class.prototype.evalAsFunction = function(f) {
+    if (typeof f != 'undefined') {
+        var result;
+        try {
+            if (f.match(/\s*function\s*\(.*\)\s*{.*}\s*/)) {
+                // IE workaround > assign function to a variable
+                var str = 'lc5.F=' + f;
+                eval(str);
+                result = lc5.F();
+            } else {
+                return f;
+            }
+        } catch (e) {
+            result = f;
+        }
+        return result;
+    }
+    return null;
+}
+
+lc5.processElement = function(i) {
+
+    var typ		= lc5.lcElements[i]['attr']['lcType'].nodeValue;
+    var attr	= lc5.lcElements[i]['attr'];
+    if (typ == 'page') {
+        lc5.aid		= attr['lcAccount'].nodeValue;
+        lc5.rawTag 	= (typeof(attr['lcTag']) == 'undefined') 	? '' : attr['lcTag'].nodeValue;
+        lc5.cat 	= (typeof(attr['lcCat']) == 'undefined') 	? '' : attr['lcCat'].nodeValue;
+
+        // eval function call
+        lc5.tag = lc5.evalAsFunction(lc5.rawTag);
+        lc5.cat = lc5.evalAsFunction(lc5.cat);
+    }
+
+    /* Check what modules are requested. */
+    if (typ == 'button' || typ == 'link') {
+        lc5.mod['chat'] = true;
+        if(typeof(attr['lcChatInline']) != 'undefined' && attr['lcChatInline'].nodeValue == 'true') {
+            if (typeof attr['lcInlinePos'] != 'undefined' && attr['lcInlinePos'].nodeValue) {
+                lc5.inlineChatPos = attr['lcInlinePos'].nodeValue;
+            }
+            if (!lc5.inlineLoaded) {
+                lc5.loadAPI('chat', '1.0', 'lc5.chat.loadInlineChat');
+                lc5.inlineLoaded = true;
+            }
+        }
+    } else if (typ == 'mod') {
+        var modName	= (typeof(attr['lcKey']) == 'undefined') ? '' : attr['lcKey'].nodeValue;
+        lc5.mod[typ].push(modName);
+        var callback;
+        switch (modName) {
+            case 'LTR' :
+                lc5.LTRGroup = (typeof(attr['lcGroup']) == 'undefined') ? '' : attr['lcGroup'].nodeValue;
+                break;
+            case 'WSS' :
+                lc5.WSSGroup = (typeof(attr['lcGroup']) == 'undefined') ? '' : attr['lcGroup'].nodeValue;
+                lc5.WSSLanguage = (typeof(attr['lcLanguage']) == 'undefined') ? null : attr['lcLanguage'].nodeValue;
+                lc5.WSSChannel = (typeof(attr['lcChannel']) == 'undefined') ? null : attr['lcChannel'].nodeValue;
+                lc5.WSSRole = (typeof(attr['lcRole']) == 'undefined') ? null : attr['lcRole'].nodeValue;
+                lc5.WSSUser = (typeof(attr['lcUser']) == 'undefined') ? null : attr['lcUser'].nodeValue;
+                lc5.WSSPass = (typeof(attr['lcPass']) == 'undefined') ? null : attr['lcPass'].nodeValue;
+                callback = (typeof(attr['lcCallback']) == 'undefined') ? null : attr['lcCallback'].nodeValue;
+                lc5.loadAPI('kb', '1.0', callback);
+                break;
+            case 'BOT' :
+                callback = (typeof(attr['lcCallback']) == 'undefined') ? null : attr['lcCallback'].nodeValue;
+                lc5.loadAPI('bot', '1.0', callback);
+                break;
+        }
+    }
+};
+
+
+
+lc5.validate = function() {
+
+    var err_msgs = new Array();
+    var n = false;
+    var y = true;
+    var vn = function() {
+        return {valid : n};
+    };
+    var vy = function() {
+        return {valid : y};
+    };
+    var lcValidation = {
+        valid : n,
+        lcType : {
+            valid : y,
+            page : {
+                valid : n,
+                lcAccount : vn(),
+                lcTag : vn()
+            },
+            button : {
+                valid : y,
+                lcGroup : vy(),
+                lcOnval : vy(),
+                lcOffval : vy()
+            },
+            link : {
+                valid : y,
+                lcGroup : vy(),
+                lcOnval : vy(),
+                lcOffval : vy()
+            },
+            mod : {
+                valid : y,
+                lcKey : vy(),
+                lcGroup : vy()
+            }
+        }
+    };
+    var e = lc5.lcElements;
+    if (e.length > 0) {
+        lcValidation.valid = y;
+    }
+    for (var i = 0; i < e.length; i++) {
+        var c = e[i];
+        var lcT = null;
+        if (c['attr']['lcType']) {
+            lcT = c['attr']['lcType'].nodeValue;
+        }
+        if (!lcT) {
+            lcValidation.lcType.valid = n;
+        }
+        if (c['attr']['lcIframeProxy']) {
+            lc5.iframeProxy = '//' + (window.location.host || window.location.hostname) + c['attr']['lcIframeProxy'].nodeValue;
+        }
+        switch(lcT) {
+            case 'page':
+                lcValidation.lcType.page.valid = y;
+                if (c['attr']['lcAccount']) {
+                    lcValidation.lcType.page.lcAccount.valid = y;
+                }
+                if (c['attr']['lcTag']) {
+                    lcValidation.lcType.page.lcTag.valid = y;
+                }
+                break;
+            case 'button':
+                lcValidation.lcType.button.valid = y;
+                if (!c['attr']['lcGroup']) {
+                    lcValidation.lcType.button.lcGroup.valid = n;
+                }
+                if (!c['attr']['lcOnval']) {
+                    lcValidation.lcType.button.lcOnval.valid = n;
+                }
+                if (!c['attr']['lcOffval']) {
+                    lcValidation.lcType.button.lcOffval.valid = n;
+                }
+                break;
+            case 'link':
+                lcValidation.lcType.link.valid = y;
+                if (!c['attr']['lcGroup']) {
+                    lcValidation.lcType.link.lcGroup.valid = n;
+                }
+                if (!c['attr']['lcOnval']) {
+                    lcValidation.lcType.link.lcOnval.valid = n;
+                }
+                if (!c['attr']['lcOffval']) {
+                    lcValidation.lcType.link.lcOffval.valid = n;
+                }
+                break;
+            case 'mod':
+                lcValidation.lcType.mod.valid = y;
+                if (!c['attr']['lcKey']) {
+                    lcValidation.lcType.mod.lcKey.valid = n;
+                }
+                if (!c['attr']['lcGroup']) {
+                    lcValidation.lcType.mod.lcGroup.valid = n;
+                }
+                break;
+            default:
+                lcValidation.lcType.valid = n;
+                break;
+        }
+    }
+    if (!lcValidation.valid) {
+        err_msgs.push(-100);
+    } else if (!lcValidation.lcType.valid){
+        err_msgs.push(-101);
+    } else {
+        var l = lcValidation.lcType;
+        if (!l.page.valid) {
+            err_msgs.push(-200);
+        } else {
+            /* page */
+            if (!l.page.lcAccount.valid) {
+                err_msgs.push(-201);
+            }
+            if (!l.page.lcTag.valid) {
+                err_msgs.push(-202);
+            }
+
+            /* button */
+            if (!l.button.lcGroup.valid) {
+                err_msgs.push(-301);
+            }
+            if (!l.button.lcOnval.valid) {
+                err_msgs.push(-302);
+            }
+            if (!l.button.lcOffval.valid) {
+                err_msgs.push(-303);
+            }
+
+            /* link */
+            if (!l.link.lcGroup.valid) {
+                err_msgs.push(-401);
+            }
+            if (!l.link.lcOnval.valid) {
+                err_msgs.push(-402);
+            }
+            if (!l.link.lcOffval.valid) {
+                err_msgs.push(-403);
+            }
+
+            /* modules */
+            if (!l.mod.lcKey.valid) {
+                err_msgs.push(-501);
+            }
+            if (!l.mod.lcGroup.valid) {
+                err_msgs.push(-502);
+            }
+        }
+    }
+    if (err_msgs.length > 0) {
+        lc5.DOMPoll(
+            function(e){
+                lc5.appendScript('lc5ErrorScript', null, '//' + lc5.domain + '/5g/ws/?error=' + encodeURIComponent(err_msgs[0]));
+            },
+            window.document.body,
+            100,
+            0,
+            600);
+        throw err_msgs;
+    }
+};
+
+lc5.DOMPoll = function(callback, el, delay, callbackLimit, limit, run) {
+    if (!run) run = 0;
+    setTimeout(function() {
+        if (!el) {
+            if (limit > run) {
+                lc5.DOMPoll(callback, el, delay, callbackLimit, limit, ++run);
+            } else {
+                if (callbackLimit) {
+                    callbackLimit();
+                }
+            }
+        } else {
+            callback(el);
+        }
+    }, !run ? 0 : delay);
+};
+
+lc5.composeMod = function() {
+    /* Compose modules into querystring. */
+    lc5.mod['mod'].sort(); // make sure the mod sequence is sorted thus enabling browser cache
+    for (var i = 0; i < lc5.mod['mod'].length; i++) {
+        lc5.modQuery += lc5.mod['mod'][i] + ';';
+    }
+    lc5.modQuery = encodeURIComponent(lc5.modQuery);
+    lc5.modQuery = '&mod=' + lc5.modQuery;
+};
+
+lc5.loadData = function(loadCode, ltr) {
+    var scriptUrl = lc5.composeQueryString();
+
+    if(scriptUrl != null && scriptUrl!='') {
+        scriptUrl = '&'+scriptUrl;
+    } else {
+        scriptUrl = '';
+    }
+
+    /* Create load Javascript object. */
+    var head = lc5.dgt('head').item(0);
+    if (!head) {
+        head = lc5.dce('head');
+        var html = lc5.dgt('html').item(0);
+
+        if (html.hasChildNodes()) {
+            html.insertBefore(html.firstChild, head);
+        } else {
+            html.appendChild(head);
+        }
+
+        html = null;
+    }
+    var script;
+    if(!loadCode) {
+        script = lc5.dg('lcscript');
+
+        if (script)
+            script.parentNode.removeChild(script);
+
+        script	= lc5.dce('script');
+        script.type	= 'text/javascript';
+        script.id	= 'lcscript';
+    } else {
+        script	= lc5.dce('script');
+        script.type	= 'text/javascript';
+        script.id	= 'lcloadscript';
+    }
+
+    /* Check whether it's needed to send click path to the server. It send URL only and only if the URL has changed or this is a new visitor */
+    var ctp = '';
+    var isURLChange = (document.location.href != lc5.winGet(lc5.lastURLVar + lc5.ID, 'lastURL') || !lc5.getSIDCID().match(/&sID.+?&cID.+/g));
+    if(isURLChange) {
+        lc5.winPut(lc5.lastURLVar + lc5.ID, document.location.href, 20, lc5.lastURLVar);
+        ctp = '&ctp=' + encodeURIComponent(document.location.href);
+        // put random into querystring if url is changed to make sure this request goes to server
+        ctp += '&r=' + lc5.getRandString(4);
+    } else {
+        lc5.winPut(lc5.lastURLVar + lc5.ID, document.location.href, 20, lc5.lastURLVar);
+    }
+    ctp += '&tag=' + encodeURIComponent(lc5.evalAsFunction(lc5.rawTag));
+    // lcgroup is used in the handler to determine if the chat may be closed by chatter
+    // but lcgroup is filled in by module TWR's lcgroup (which is always 1) rather than rootAttribute's lcgroup.
+    // TODO: discuss with gayathri if this would be the intended solution. Consider that this may conflict with the original use of lcgroup
+    if(typeof(lc5.LTRGroup) != 'undefined') {
+        lcgroup = '&lcgroup=' + encodeURIComponent(lc5.LTRGroup);
+    } else{
+        lcgroup = '';
+    }
+
+
+    /*Check whether 'sID' and 'cID' cookie can be disabled upon loading chat button*/
+    var cookieDisabled = 'false';
+    var el = lc5.lcElements;
+    for(var i = 0 ; i < el.length; i++){
+        var attr	= lc5.lcElements[i]['attr'];
+        cookieDisabled	= (typeof(attr['lcCookieDisabled']) == 'undefined') ? 'false' : attr['lcCookieDisabled'].nodeValue;
+        if(cookieDisabled == 'true'){
+            break;
+        }
+    }
+
+
+    /* If loadcode is true, send all available modules. */
+    if (loadCode) {
+        script.src	= '//' + lc5.domain + lc5.contextPath + '/5g/hdl/?loadcode=' + loadCode +
+        '&aid=' + encodeURIComponent(lc5.aid) + lc5.getSIDCID() + lcgroup + lc5.modQuery + '&s=' + lc5.lcElements.length +
+        scriptUrl +'&ref=' + encodeURIComponent(document.referrer) + ctp + '&disableCookie=' + cookieDisabled;
+    } else if (lc5.counter % lc5.buttonRate == 0) {
+        script.src	= '//' + lc5.domain + lc5.contextPath + '/5g/hdl/' + lc5.getRandString(8) +
+        '/?loadcode=' + loadCode + '&aid=' + encodeURIComponent(lc5.aid) + lc5.getSIDCID() + lcgroup + lc5.modQuery +
+        '&s=' + lc5.lcElements.length + scriptUrl + ctp;
+    } else if (lc5.counter % lc5.ltrRate == 0){
+        script.src	= '//' + lc5.domain + lc5.contextPath + '/5g/hdl/' + lc5.getRandString(8) +
+        '/?loadcode=' + loadCode + '&aid=' + encodeURIComponent(lc5.aid) + lc5.getSIDCID() + lcgroup + lc5.modQuery + ctp;
+    }
+
+    head.appendChild(script);
+
+    head	= null;
+    script	= null;
+    lc5.counter++;
+
+    /* Sync with server every x milliseconds. */
+    lc5.loaderTimer = setTimeout(function(){lc5.loadData(false)}, lc5.refreshRate);
+};
+
+lc5.update = function() {
+
+    var loadurl = lc5.composeQueryString();
+
+    /* Returns url to load dynamic content. */
+    for (var i = 0; i < lc5.lcElements.length; i++) {
+        var attr = lc5.lcElements[i]['attr'];
+        var embed = attr['lcEmbed'] && attr['lcEmbed'].nodeValue == 'true';
+        if (attr['lcType'].nodeValue == 'button') {
+            /* Display static image regardless of button state. */
+            parentObj = lc5.createAnchor(i, lc5.lcElements[i]['baseparent'], 'link', embed);
+            lc5.createButtonImage(i, parentObj);
+
+            /* Build URL for checking the availability status. */
+            loadurl += 'g' + i + '=' + attr['lcGroup'].nodeValue + '&';
+        } else if (attr['lcType'].nodeValue == 'link') {
+            lc5.createAnchor(i, null, null, embed);
+            loadurl += 'g' + i + '=' + attr['lcGroup'].nodeValue + '&';
+        }
+    }
+
+    return lc5.loadurl = ((loadurl != '') ? loadurl.substr(0, loadurl.length - 1) : '');
+};
+
+lc5.createButtonImage = function(id, parentobj) {
+    var attr = lc5.lcElements[id]['attr'];
+    if (lc5.dg('lc5_' + id) == null) {
+        var img		= lc5.dce('img');
+        img.id		= 'lc5_' + id;
+        img.border	= '0';
+
+        if (typeof(attr['lcAlt']) != 'undefined')
+            img.alt = img.title = attr['lcAlt'].nodeValue;
+
+        if(typeof(attr['lcStatic']) != 'undefined')
+            img.src = attr['lcOnval'].nodeValue;
+
+        parentobj.appendChild(img);
+
+        img = null;
+    }
+};
+
+lc5.createAnchor = function(id, parent, type, embed) {
+    var attr = lc5.lcElements[id]['attr'];
+
+    type = type || '';
+
+    /* Check if the anchor already exists. */
+    if (lc5.dg('lc5_' + id) == null) {
+        var anchor	= lc5.dce('a');
+        anchor.id	= 'lc5_' + id + type;
+        anchor.href = 'javascript:void(0);';
+
+        if (typeof(attr['lcClass']) != 'undefined')
+            anchor.className = attr['lcClass'].nodeValue;
+
+        if (attr['lcType'].nodeValue == 'link') {
+            /* Check if alt attribute is used. */
+            if (typeof(attr['lcAlt']) != 'undefined')
+                anchor.title = attr['lcAlt'].nodeValue;
+
+            /* Check if static value is used. */
+            if (typeof(attr['lcStatic']) != 'undefined')
+                anchor.innerHTML = attr['lcOnval'].nodeValue;
+        }
+
+        var gid = attr['lcGroup'].nodeValue;
+
+        if (embed) {
+            anchor.onclick = function() {
+                if (!lc5.inlineScript) {
+                    lc5.param		= lc5.composeClickUrl(attr, true);
+                    var head		= document.getElementsByTagName('head')[0];
+                    var script		= document.createElement('script');
+                    lc5.inlineScript= script;
+                    script.type		= 'text/javascript';
+                    script.charset	= 'iso-8859-1';
+                    script.src		= '//' + lc5.domain + lc5.contextPath + '/inline/js/inlinescript.js';
+                    head.appendChild(script);
+                }
+            };
+        } else {
+            anchor.onclick = function() {
+                if (lc5.win && !lc5.win.closed) {
+                    return false;
+                }
+                var url;
+                if (typeof attr['lcCollaboration'] !== 'undefined' && attr['lcCollaboration'].nodeValue === 'true') {
+                    url			= lc5.composeClickUrl(attr, false, true);
+                } else {
+                    url			= lc5.composeClickUrl(attr);
+                }
+
+                var height      = lc5.winHeight[gid];
+                var width       = lc5.winWidth[gid];
+                var chat_scheme = lc5.chat_scheme[gid];
+                var left        = (screen.width - width) / 2;
+                var top         = (screen.height - height) / 2;
+                var now         = new Date();
+
+                var tempID		= (lc5.aid).replace(/\//gi, 'SL');
+                tempID			= tempID.replace(/\+/gi, 'PL');
+                tempID			= tempID.replace(/=/gi, 'EL');
+
+                var name        = 'webbased_aws_' + tempID;
+                var winprops    = 'height=' + height + ',width=' + width + ',top=' + top + ',left=' + left + ',scrollbars=no,resizable=' + lc5.resizable[gid] + ',status=no,toolbar=no,directories=no';
+
+                var closePreviousWindowShowButton = false;
+                var previousOpenedChatWindowButtonId = '';
+                // SJC
+                if (lc5.popup[gid]) {
+                    lc5.win = window.open(chat_scheme + url, name, winprops);
+                } else {
+                    // SJC-LC - if this link / button element is changed by that set-up by inline-widget
+                    // then call the openinlinechat ipv openVIPwindow
+                    // SJC if chat minimized - make big again
+                    if(window.LC5inline && typeof window.LC5inline.currentAnchorId !== 'undefined' && window.LC5inline.currentAnchorId !== this.id){
+                        closePreviousWindowShowButton = true;
+                        previousOpenedChatWindowButtonId = window.LC5inline.currentAnchorId;
+                    }
+                    if (window.LC5inline &&
+                        (typeof window.LC5inline.groupID  === 'undefined' || window.LC5inline.groupID !== gid ||
+                        typeof window.LC5inline.initialized === 'undefined' || window.LC5inline.initialized === true)) {
+                        // on first/only click set the widget to the corresponding chat settings
+                        if(attr['lcType'].nodeValue === 'button'){
+                            lc5.initializeInlineWidget(gid, this.id);
+                        } else {
+                            lc5.initializeInlineWidget(gid, '');
+                        }
+                    }
+
+                    if (typeof window.LC5inline.VIPopened !== 'undefined' && window.LC5inline.VIPopened ) {
+                        window.LC5inline.showInlineChat();
+                        window.LC5inline.forceInBox();
+                        window.LC5inline.closeInlineStatus();
+                    } else {
+                        // open window
+                        window.LC5inline.openVIPWindow(window.LC5inline.savedURL);
+                        // SJC - clear away the original clickable - will be replaced by status etc
+                        window.LC5inline.hideChatBadge();
+                    }
+
+                    if(this.id){
+                        var currentAnchor = document.getElementById(this.id);
+                        if(currentAnchor && attr['lcType'].nodeValue === 'button'){
+                            currentAnchor.style.display = 'none';
+                        }
+                        if(closePreviousWindowShowButton) {
+                            var previousOpenedChatWindowButton = document.getElementById(previousOpenedChatWindowButtonId);
+                            if(previousOpenedChatWindowButton){
+                                previousOpenedChatWindowButton.style.display = '';
+                            }
+                        }
+                    }
+                }
+
+                if (window.lccb) {
+                    lc5.refreshRate	= 4000;
+                }
+
+                return false;
+            }; // end of anchor on click
+        }
+        var obj			= lc5.lcElements[id]['baseparent'].appendChild(anchor);
+        var anchor_id	= anchor.id;
+        anchor			= null;
+    }
+
+    return obj;
+};
+
+lc5.composeFieldsUrl = function(attr) {
+    /* Check if any elements of the page need to be send to the chat request. */
+    if (typeof(attr['lcFields']) != 'undefined') {
+        var fields	= attr['lcFields'].nodeValue.split(";");
+        var compose	= '';
+        for(var i = 0; i < fields.length; i++) {
+            compose += encodeURIComponent(fields[i]) + ':' + encodeURIComponent(lc5.dg(fields[i]).value) + ';';
+        }
+
+        return compose;
+    } else {
+        return '';
+    }
+}
+
+lc5.composeClickUrl = function(attr, returnObject, collab, isFromInvite, groupId) {
+    if (0 === attr) {
+        if (groupId) {
+            for (var i = 0; i < lc5.lcElements.length; i++) {
+                attr = lc5.lcElements[i]['attr'];
+                var gIdTempToCheck = attr['lcGroup'].nodeValue;
+                if (gIdTempToCheck === groupId) {
+                    break;
+                }
+            }
+        } else {
+            attr = lc5.lcElements[0]['attr'];
+        }
+    }
+    var gId = attr['lcGroup'].nodeValue;
+    var sIDcID	= lc5.getSIDCID(true);
+    var o = {
+        aid		: lc5.aid,
+        gid		: gId,
+        agent   : typeof attr['agent'] !== 'undefined' ? attr['agent'].nodeValue : 0,
+        skill	: lc5.skill,
+        tag		: lc5.evalAsFunction(lc5.rawTag),
+        cat		: lc5.cat,
+        chan	: attr['lcChan'].nodeValue,
+        fields	: lc5.composeFieldsUrl(attr),
+        url		: document.URL,
+        ref		: document.referrer,
+        sID		: sIDcID['sID'],
+        cID		: sIDcID['cID']
+    };
+
+    if (attr['lcCustomattributes']) {
+        o.customattr = attr['lcCustomattributes'].nodeValue;
+    }
+    if (attr['lcId']) {
+        o.lcId = lc5.evalAsFunction(attr['lcId'].nodeValue);
+    }
+
+    if (returnObject) {
+        return o;
+    }
+
+    /* Compose URL when clicking on button or link. */
+    var url = '//' + lc5.domain + lc5.contextPath;
+    if (collab) {
+        url	+= '/sitescript/collaboration/index.jsp?';
+        url	+= 'h=' + lc5.winHeight[gId];
+        url	+= '&w=' + lc5.winWidth[gId];
+        url	+= '&u=v';
+        url	+= '&aid=' + encodeURIComponent(o.aid);
+        url	+= '&gid=' + o.gid;
+        url += '&conid=' + encodeURIComponent(o.cID);
+        url += '&vid=' + encodeURIComponent(o.sID);
+        url	+= '&tag=' + encodeURIComponent(o.tag);
+        if (o.lcId) {
+            url += '&lcid=' + encodeURIComponent(o.lcId);
+        }
+        url	+= '&fields=' + encodeURIComponent(o.fields);
+        if (o.customattr) {
+            url += '&customattr=' + encodeURIComponent(o.customattr);
+        }
+        url		+= '&url=' + encodeURIComponent(o.url);
+        url     += '&ref=' + encodeURIComponent(o.ref);
+        if(isFromInvite) {
+            url += '&inv=1&invState=1';
+        }
+    } else {
+        url	+= '/5g/ch/';
+        url	+= '?___________________________________________________________='
+        url	+= '&aid=' + encodeURIComponent(o.aid);
+        url	+= '&gid=' + o.gid;
+        url	+= '&agent=' + o.agent;
+        url	+= '&skill=' + lc5.skill;
+        url	+= '&tag=' + encodeURIComponent(o.tag);
+        url	+= '&cat=' + encodeURIComponent(o.cat);
+        url	+= '&chan=' + o.chan;
+        url	+= '&fields=' + encodeURIComponent(o.fields);
+        if (o.customattr) {
+            url += '&customattr=' + encodeURIComponent(o.customattr);
+        }
+        url     += lc5.getSIDCID();
+        if(o.lcId) {
+            url	+= '&lcId=' + encodeURIComponent(o.lcId);
+        }
+        url		+= '&url=' + encodeURIComponent(o.url);
+        url     += '&ref=' + encodeURIComponent(o.ref);
+        if(isFromInvite) {
+            url += '&inv=1&invState=1';
+        }
+    }
+    return url;
+};
+
+lc5.composeQueryString = function() {
+
+    /* Return URL to load dynamic content. */
+    var loadurl = '';
+    for (var i = 0; i < lc5.lcElements.length; i++) {
+        var attr = lc5.lcElements[i]['attr'];
+        var lcType = attr['lcType'].nodeValue;
+
+        if ((lcType == 'button' || lcType == 'link') && typeof(attr['lcStatic']) == 'undefined') {
+            var gId = attr['lcGroup'].nodeValue;
+
+            /* Check if altgroup (alternate group) exists. */
+            loadurl += 'g' + i + '=' + gId + '&';
+            if(typeof(attr['lcId']) != 'undefined') {
+                loadurl += 'lcId' + i + '=' + encodeURIComponent(lc5.evalAsFunction(attr['lcId'].nodeValue)) + '&';
+            }
+        }
+    }
+    return lc5.loadurl = ((loadurl != '') ? loadurl.substr(0, loadurl.length - 1) : '');
+};
+
+lc5.refresh = function(g) {
+
+    /* Refresh on/off state of all lcElements like button and link. */
+    var el = g.split(',');
+
+    for(var j = 0; j < el.length; j++) {
+        var attr = lc5.lcElements[j]['attr'];
+
+        var domel;
+        if (attr['lcType'].nodeValue == 'button') {
+            domel = lc5.dg('lc5_' + j);
+
+            /* Check if the state has changed. */
+            if (el[j] != lc5.lcElements[j]['prev_state'] && typeof(attr['lcStatic']) === 'undefined') {
+
+                /* Call user-defined function on state change of button or link. */
+                if(typeof(attr['onchange']) !== 'undefined') {
+                    eval(attr['onchange'].nodeValue + "('" + (el[j] == '1' ? 'on' : 'off') + "', '" + el[j] + "')");
+                }
+
+                /* Update image with latest state. */
+                if (el[j] > 0) {
+                    domel.style.display = '';
+                    domel.style.visibility = '';
+                    domel.src = attr['lcOnval'].nodeValue;
+                } else {
+                    var srcVal = '';
+                    switch (el[j]) {
+                        case '-3':
+                            srcVal = 'error';
+                            break;
+                        case '-2':
+                            srcVal = attr['lcClosingHour'] ? attr['lcClosingHour'].nodeValue : '';
+                            break;
+                        case '-1':
+                            srcVal = attr['lcOccupied'] ? attr['lcOccupied'].nodeValue : '';
+                            break;
+                    }
+                    if ('' == srcVal) {
+                        srcVal = attr['lcOffval'].nodeValue;
+                    }
+                    if ('' == srcVal || 'error' == srcVal) {
+                        domel.style.display = 'none';
+                        domel.style.visibility = 'hidden';
+                    } else {
+                        domel.src = srcVal;
+                    }
+                }
+            }
+        } else if (attr['lcType'].nodeValue == 'link') {
+            /* Check if the state has changed. */
+            if (el[j] != lc5.lcElements[j]['prev_state'] && typeof(attr['lcStatic']) === 'undefined') {
+
+                /* Call user-defined function on state change of button or link. */
+                if(typeof(attr['onchange']) !== 'undefined') {
+                    eval(attr['onchange'].nodeValue + "('" + (el[j] == '1' ? 'on' : 'off') + "', '" + el[j] + "')");
+                }
+
+                /* Update the link with latest state. */
+                domel = lc5.dg('lc5_' + j);
+                if (el[j] > 0) {
+
+                    domel.innerHTML = attr['lcOnval'].nodeValue;
+                } else {
+                    var iHtml = '';
+                    switch (el[j]) {
+                        case '-3':
+                            break;
+                        case '-2':
+                            iHtml = attr['lcClosingHour'] ? attr['lcClosingHour'].nodeValue : '';
+                            break;
+                        case '-1':
+                            iHtml = attr['lcOccupied'] ? attr['lcOccupied'].nodeValue : '';
+                            break;
+                    }
+                    if ('' === iHtml) {
+                        iHtml = attr['lcOffval'].nodeValue;
+                    }
+                    domel.innerHTML = iHtml;
+                }
+            }
+        }
+
+        /* Set the current state value into variable for comparison on next function call. */
+        lc5.lcElements[j]['prev_state'] = el[j];
+    }
+};
+
+/*
+ called from handler.jsp to setup each groups special properties
+ */
+lc5.setWinParam = function(group_id, height, width, resizable, bgcolor, template_filename, chat_scheme, chat_inline_posistion, chat_inline_badge, chat_inline_btn_background, chat_inline_title, chat_inline_btn_text,
+                           title_color, chat_inline_header_html, agent_message_bubble_color, visitor_message_bubble_color, system_message_bubble_color, subheader_message_color, subheader_background_color, enable_stop_chat,
+                            title_font, title_font_size, subHeader_font, subHeader_font_size, agent_font, agent_font_size, visitor_font, visitor_font_size, system_font, system_font_size) {
+
+    var pos = '0';
+    switch (chat_inline_posistion) {
+        case 'left':
+            pos = '1';
+            break;
+        case 'right':
+            pos = '2';
+            break;
+        default:
+            pos = '0';
+            break;
+    }
+    lc5.CHAT_INLINE_POSITION[group_id] = pos;
+
+    lc5.winHeight[group_id] = height;
+    lc5.winWidth[group_id] = width;
+    lc5.chat_scheme[group_id] = chat_scheme;
+    lc5.resizable[group_id] = (resizable == 'true' ? 'yes' : 'no');
+    lc5.bgColor[group_id] = bgcolor;
+    lc5.popup[group_id] = (template_filename == 'inline-chat' ? false : true);
+    lc5.CHAT_INLINE_BADGE[group_id] = (chat_inline_badge == 'image' ? '1' : '2'); // '1' = image. if there is a badge or text with background
+    lc5.CHAT_INLINE_BTNBACKGROUND[group_id] = chat_inline_btn_background;
+    lc5.CHAT_INLINE_TITLE[group_id] = chat_inline_title;
+    lc5.CHAT_INLINE_BTNTEXT[group_id] = chat_inline_btn_text;
+    lc5.TITLE_COLOR[group_id] = title_color;
+    lc5.CHAT_INLINE_HEADER_HTML[group_id] = chat_inline_header_html;
+    lc5.VISITOR_STOP_CHAT_ENABLED[group_id] = (enable_stop_chat == '1'? 'true': 'false'); //true if stop chat is enabled.
+    lc5.AGENT_MESSAGE_BUBBLE_COLOR[group_id] = agent_message_bubble_color;
+    lc5.VISITOR_MESSAGE_BUBBLE_COLOR[group_id] = visitor_message_bubble_color;
+    lc5.SYSTEM_MESSAGE_BUBBLE_COLOR[group_id] = system_message_bubble_color;
+    lc5.SUBHEADER_MESSAGE_COLOR[group_id] = subheader_message_color;
+    lc5.SUBHEADER_BACKGROUND_COLOR[group_id] = subheader_background_color;
+    lc5.TITLE_FONT[group_id] = title_font;
+    lc5.TITLE_FONT_SIZE[group_id] = title_font_size;
+    lc5.SUBHEADER_FONT[group_id] = subHeader_font;
+    lc5.SUBHEADER_FONT_SIZE[group_id] = subHeader_font_size;
+    lc5.AGENT_FONT[group_id] = agent_font;
+    lc5.AGENT_FONT_SIZE[group_id] = agent_font_size;
+    lc5.VISITOR_FONT[group_id] = visitor_font;
+    lc5.VISITOR_FONT_SIZE[group_id] = visitor_font_size;
+    lc5.SYSTEM_FONT[group_id] = system_font;
+    lc5.SYSTEM_FONT_SIZE[group_id] = system_font_size;
+
+    if (template_filename == 'inline-chat') {
+        lc5.loadNewInline(group_id);
+    }
+};
+
+lc5.ensureInlineWidget = function() {
+    if (!lc5.doneLoadingInline) {
+        lc5.ensureLcFunction();
+        var head		= document.getElementsByTagName('head')[0];
+        var script		= document.createElement('script');
+        script.type		= 'text/javascript';
+        script.charset	= 'iso-8859-1';
+        script.src		= '//' + lc5.domain + lc5.contextPath + '/inline/js/inline-widget.js';
+        head.appendChild(script);
+        lc5.doneLoadingInline = true;
+    }
+};
+
+lc5.ensureLcFunction = function() {
+        var head		= document.getElementsByTagName('head')[0];
+        var script		= document.createElement('script');
+        script.type		= 'text/javascript';
+        script.charset	= 'iso-8859-1';
+        script.src		= '//' + lc5.domain + lc5.contextPath + '/sitescript/chat/template/inline-chat/js/lc_function.js';
+        head.appendChild(script);
+};
+
+lc5.createCookie = function(a, b, s) {
+    var d;
+    if (s) {
+        if(s==0) {
+            d = ';expires=0';
+        } else {
+            var c = new Date();
+            c.setTime(c.getTime() + (s*1000));
+            d = ';expires=' + c.toGMTString()
+        }
+    }else {
+        d = '';
+    }
+    var e = ';path=/';
+    var domain = document.domain.match(/[^\.]+?.[^\.]+?$/);
+    if (domain) {
+        e += ';domain=.' + domain[0];
+    }
+    document.cookie = a + '=' + b + d + e;
+};
+
+lc5.readCookie = function(a) {
+    var b = a + '=';
+    var d = document.cookie.split(';');
+    for(var i = 0; i < d.length; i++) {
+        var c = d[i];
+        while (c.charAt(0)== ' ') {
+            c = c.substring(1, c.length);
+        }
+        if (c.indexOf(b) == 0) {
+            return c.substring(b.length, c.length);
+        }
+    }
+    return null
+};
+
+lc5.eraseCookie = function(a) {
+    createCookie(a, '', -1)
+};
+
+/* Append new JavaScript tag with specific ID and text. Replace if already exist */
+lc5.appendScript = function(id, strScript, src, charset) {
+    lc5.log("lc5.appendScript");
+
+    var head = lc5.dgt('head').item(0);
+    if (!head) {
+        head = lc5.dce('head');
+        var html = lc5.dgt('html').item(0);
+
+        if (html.hasChildNodes()) {
+            html.insertBefore(html.firstChild, head);
+        } else {
+            html.appendChild(head);
+        }
+    }
+    var script;
+    script = lc5.dg(id);
+    if (script)
+        script.parentNode.removeChild(script);
+    script	= lc5.dce('script');
+    script.type	= 'text/javascript';
+    script.language = 'JavaScript';
+    script.id	= id;
+    if (charset) {
+        script.charset = charset;
+    }
+    if(src) {
+        script.src = src;
+    }else {
+        script.text = strScript;
+    }
+    head.appendChild(script);
+};
+
+/* Get JSON object from window.name */
+lc5.getJSON = function() {
+    var jStr;
+    var jObj;
+    var reg = lc5.winNameRegex();
+    if (jStr = reg.exec(window.name)) {
+        try {
+            jObj = JSON.decode(jStr[0]);
+
+        } finally {
+            if(typeof(jObj) !== 'undefined') {
+                return jObj;
+            }
+        }
+    }
+    if (!lc5.disableWindowName) {
+        window.name += '\r\n{}\r\n';
+    }
+    return new Object();
+};
+
+/* Put JSON Object to window.name replacing JSON String if any */
+lc5.putJSON = function(obj) {
+
+    var jStr = JSON.encode(obj);
+
+    if (!lc5.disableWindowName) {
+        window.name = window.name.replace(lc5.winNameRegex(), '');
+        window.name += '\r\n' + jStr + '\r\n';
+    }
+};
+
+/* Timed var that has to be removed after awhile */
+lc5.timedVar = new Array();
+lc5.timedVar[lc5.sidVar] = 20;
+lc5.timedVar[lc5.lastURLVar] = 10;
+lc5.isTimed = function(name) {
+    return (null != lc5.timedVar[name]);
+}
+
+/* Add name value pair from window.name. If the key already exist, it replaces the value. */
+lc5.winPut = function(key, value) {
+    var obj = lc5.getJSON();
+    obj[key] = value;
+    if(lc5.isTimed(key)) {
+        var exp = new Date()*1 + lc5.timedVar[key]*1000;
+        obj[key+'tStamp']=exp;
+    }
+    lc5.putJSON(obj);
+};
+
+/* Remove name value pair from window.name. If the key doesn't exist, do nothing. */
+lc5.winRemove = function(key) {
+    lc5.log("lc5.winRemove key:"+key);
+
+    var obj = lc5.getJSON();
+    delete obj[key];
+    lc5.putJSON(obj);
+};
+
+/* Get the value of the key. Return null if key doesn't exist. */
+lc5.winGet = function(key) {
+
+    var obj = lc5.getJSON();
+    var val = obj[key];
+    var tStamp;
+    if(key.indexOf('tStamp') == -1) {
+        if (null == (tStamp = lc5.winGet(key+'tStamp'))) {
+            return (typeof(val) != 'undefined') ? val : null;
+        } else {
+            var exp = (new Date()*1) > tStamp;
+            // if expire remove the key and tStamp
+            if(exp) {
+                lc5.winRemove(key);
+                lc5.winRemove(key+'tStamp');
+                return null;
+            } else {
+                // refresh expire time
+                lc5.winPut(key, val);
+                return (typeof(val) != 'undefined') ? val : null;
+            }
+        }
+    } else {
+        return (typeof(val) != 'undefined') ? val : null;
+    }
+};
+
+
+
+/* Put value to the client site. This method try to put value on both window.name and browser cookie */
+lc5.put = function(name, value, timeout, winName) {
+
+    if(!winName) {
+        winName = name;
+    }
+    lc5.winPut(winName, value);
+    if(lc5.isCookieEn) {
+        lc5.createCookie(encodeURIComponent(name), encodeURIComponent(value), timeout);
+    }
+};
+
+/* Get value from the client site. Try to get value from both window.name and browser cookie.
+ * Return null if name doesn't exist */
+lc5.get = function(name, winName) {
+
+    if(!winName) {
+        winName = name;
+    }
+    var v = lc5.readCookie(encodeURIComponent(name));
+    if(v) {
+        v = decodeURIComponent(v);
+    } else {
+        v = lc5.winGet(winName);
+    }
+    return v;
+};
+
+lc5.radix = new Array('0','1','2','3','4','5','6','7','8','9','A','B','C','D','E','F','G','H','I','J','K','L','M','N','O','P','Q','R','S','T','U','V','W','X','Y','Z','a','b','c','d','e','f','g','h','i','j','k','l','m','n','o','p','q','r','s','t','u','v','w','x','y','z','-','.','_','~');
+
+lc5.getRandString = function () {
+    var rand = '';
+    var millis = new Date();
+    var l = lc5.radix.length;
+    for(; millis >= l;) {
+        var index = millis%l;
+        millis = Math.floor(millis/l);
+        rand += lc5.radix[index];
+    }
+    rand += lc5.radix[millis];
+    rand += lc5.radix[Math.floor(Math.random()*l)];
+    return rand;
+};
+
+lc5.getFixedRand = function(l) {
+    var s='';
+    for(var i=0; i<l; i++) {
+        s+=lc5.radix[Math.floor(Math.random()*62)];
+    }
+    return s;
+};
+
+lc5.getSIDCID = function(returnObject) {
+    var sID = lc5.readCookie(lc5.sidVar + lc5.encodeCookie(lc5.aid));
+    var cID = lc5.readCookie(lc5.cidVar + lc5.encodeCookie(lc5.aid));
+    if(!sID) {
+        sID = lc5.get(lc5.sidVar);
+        if(sID) {
+            sID = encodeURIComponent(sID);
+        }
+    }
+    if(!cID) {
+        cID = lc5.get(lc5.cidVar);
+        if(cID) {
+            cID = encodeURIComponent(cID);
+        }
+    }
+    if (returnObject) {
+        return {
+            'sID' : decodeURIComponent(sID),
+            'cID' : decodeURIComponent(cID)
+        }
+    }
+    var sIDcID = '';
+    if(sID && sID != 'null') {
+        sIDcID = '&sID=' + sID;
+    }
+    if(cID && cID != 'null') {
+        sIDcID += '&cID=' + cID;
+    }
+    return sIDcID;
+};
+
+lc5.encodeCookie = function(v) {
+    return encodeURIComponent(v).replace(/%2F/gi, '/');
+};
+
+lc5.JSON = new function(){
+    this.decode = function(){
+        var	filter, result, self, tmp;
+        if($$("toString")) {
+            switch(arguments.length){
+                case	2:
+                    self = arguments[0];
+                    filter = arguments[1];
+                    break;
+                case	1:
+                    if($[typeof arguments[0]](arguments[0]) === Function) {
+                        self = this;
+                        filter = arguments[0];
+                    }
+                    else
+                        self = arguments[0];
+                    break;
+                default:
+                    self = this;
+                    break;
+            }
+            if(rc.test(self)){
+                try{
+                    result = e("(".concat(self, ")"));
+                    if(filter && result !== null && (tmp = $[typeof result](result)) && (tmp === Array || tmp === Object)){
+                        for(self in result)
+                            result[self] = v(self, result) ? filter(self, result[self]) : result[self];
+                    }
+                }
+                catch(z){}
+            }
+            else {
+                throw new JSONError("bad data");
+            }
+        }
+        return result;
+    };
+
+    this.encode = function(){
+        var	self = arguments.length ? arguments[0] : this,
+            result, tmp;
+        if(self === null)
+            result = "null";
+        else if(self !== undefined && (tmp = $[typeof self](self))) {
+            switch(tmp){
+                case Array:
+                    result = [];
+                    for(var	i = 0, j = 0, k = self.length; j < k; j++) {
+                        if(self[j] !== undefined && (tmp = JSON.encode(self[j])))
+                            result[i++] = tmp;
+                    }
+                    result = "[".concat(result.join(","), "]");
+                    break;
+                case Boolean:
+                    result = String(self);
+                    break;
+                case Date:
+                    result = '"'.concat(self.getFullYear(), '-', d(self.getMonth() + 1), '-', d(self.getDate()), 'T', d(self.getHours()), ':', d(self.getMinutes()), ':', d(self.getSeconds()), '"');
+                    break;
+                case Function:
+                    break;
+                case Number:
+                    result = isFinite(self) ? String(self) : "null";
+                    break;
+                case String:
+                    result = '"'.concat(self.replace(rs, s).replace(ru, u), '"');
+                    break;
+                default:
+                    var	i = 0, key;
+                    result = [];
+                    for(key in self) {
+                        if(self[key] !== undefined && (tmp = JSON.encode(self[key])))
+                            result[i++] = '"'.concat(key.replace(rs, s).replace(ru, u), '":', tmp);
+                    }
+                    result = "{".concat(result.join(","), "}");
+                    break;
+            }
+        }
+        return result;
+    };
+
+    this.toDate = function(){
+        var	self = arguments.length ? arguments[0] : this,
+            result;
+        if(rd.test(self)){
+            result = new Date;
+            result.setHours(i(self, 11, 2));
+            result.setMinutes(i(self, 14, 2));
+            result.setSeconds(i(self, 17, 2));
+            result.setMonth(i(self, 5, 2) - 1);
+            result.setDate(i(self, 8, 2));
+            result.setFullYear(i(self, 0, 4));
+        }
+        else if(rt.test(self))
+            result = new Date(self * 1000);
+        return result;
+    };
+
+
+    var	c = {"\b":"b","\t":"t","\n":"n","\f":"f","\r":"r",'"':'"',"\\":"\\","/":"/"},
+        d = function(n){return n<10?"0".concat(n):n},
+        e = function(c,f,e){
+            //disable safe evaluation since it might cause error / conflict with some prototype function
+            f=eval(""+c);
+            return f;
+        },
+        i = function(e,p,l){return 1*e.substr(p,l)},
+        p = ["","000","00","0",""],
+        rc = null,
+        rd = /^[0-9]{4}\-[0-9]{2}\-[0-9]{2}T[0-9]{2}:[0-9]{2}:[0-9]{2}$/,
+        rs = /(\x5c|\x2F|\x22|[\x0c-\x0d]|[\x08-\x0a])/g,
+        rt = /^([0-9]+|[0-9]+[,\.][0-9]{1,3})$/,
+        ru = /([\x00-\x07]|\x0b|[\x0e-\x1f])/g,
+        s = function(i,d){return "\\".concat(c[d])},
+        u = function(i,d){
+            var	n=d.charCodeAt(0).toString(16);
+            return "\\u".concat(p[n.length],n)
+        },
+        v = function(k,v){return $[typeof result](result)!==Function&&(v.hasOwnProperty?v.hasOwnProperty(k):v.constructor.prototype[k]!==v[k])},
+        $ = {
+            "boolean":function(){return Boolean},
+            "function":function(){return Function},
+            "number":function(){return Number},
+            "object":function(o){return o instanceof o.constructor?o.constructor:null},
+            "string":function(){return String},
+            "undefined":function(){return null}
+        },
+        $$ = function(m){
+            function $(c,t){t=c[m];delete c[m];try{e(c)}catch(z){c[m]=t;return 1}}
+            return $(Array)&&$(Object)
+        };
+    try{rc=new RegExp('^("(\\\\.|[^"\\\\\\n\\r])*?"|[,:{}\\[\\]0-9.\\-+Eaeflnr-u \\n\\r\\t])+?$')}
+    catch(z){rc=/^(true|false|null|\[.*\]|\{.*\}|".*"|\d+|\d+\.\d+)$/}
+};
+
+if (!window.JSON) {
+    JSON = {}
+}
+
+switch(typeof JSON) {
+    case 'object':
+        if (typeof JSON.stringify === 'function') {
+            JSON.encode = JSON.stringify;
+        } else {
+            JSON.encode = lc5.JSON.encode;
+        }
+        if (typeof JSON.parse === 'function') {
+            JSON.decode = JSON.parse;
+        } else {
+            JSON.decode = lc5.JSON.decode;
+        }
+        if (typeof JSON.toDate !== 'function') {
+            JSON.toDate = lc5.JSON.toDate;
+        }
+        break;
+    case 'function':
+        if (typeof JSON.stringify === 'function') {
+            JSON.prototype.encode = JSON.stringify;
+        } else {
+            JSON.prototype.encode = lc5.JSON.encode;
+        }
+        if (typeof JSON.parse === 'function') {
+            JSON.prototype.decode = JSON.parse;
+        } else {
+            JSON.prototype.decode = lc5.JSON.decode;
+        }
+        if (typeof JSON.toDate !== 'function') {
+            JSON.prototype.toDate = lc5.JSON.toDate;
+        }
+        break;
+}
+
+// custom data buffer
+lc5.customData = new Array();
+
+// add custom data to the buffer
+lc5.addCustomData = function(key, value) {
+    try {
+        if (2 != arguments.length)
+            throw "e1";
+        if ((!key && 0 !== key) || (!value && 0 !== value))
+            throw 'e2';
+        if (key === '') {
+            throw 'e3';
+        }
+        var d = lc5.customData;
+        d[d.length] = key;
+        d[d.length] = value;
+        return lc5;
+    } catch(e) {
+        try {
+            switch(e) {
+                case 'e1': {
+                    lc5.log('Syntax Error: lc5.addCustomData(key, value) requires 2 arguments');
+                    break;
+                }
+                case 'e2': {
+                    lc5.log('Arguments error: lc5.addCustomData(key, value) - key or value undefined');
+                    break;
+                }
+                case 'e3': {
+                    lc5.log('Arguments error: lc5.addCustomData(key, value) - key cannot be empty');
+                    break;
+                }
+            }
+        } catch(er) {}
+    }
+};
+
+// Send data in the buffer
+lc5.sendData = function() {
+    lc5.transfer('customData', lc5.customData);
+    lc5.customData.length = 0;
+};
+
+// Ask server to invite this visitor
+lc5.triggerInvitation = function(invitationId, coolDown, optional, destGroupId) {
+    lc5.log("lc5.triggerInvitation:");
+
+    try {
+        var cbActive = false;
+        try {
+            if (window.lccb && window.lccb.lccbLoaded) {
+                cbActive = true;
+            }
+        } catch(e) {}
+        if (!cbActive) {
+            var inKey = 'invExp' + invitationId;
+            var cd = lc5.winGet(inKey);
+            var now = new Date()*1;
+            if (cd == null || (cd && cd <= (now))) {
+                if (!invitationId) {
+                    invitationId = 0;
+                } else {
+                    invitationId = parseInt(invitationId);
+                }
+                var inv = new Object();
+                inv.invitationId = invitationId;
+                if (null != optional) {
+                    inv.customData = optional;
+                }
+                if (typeof destGroupId === 'number') {
+                    inv.destGroupId = destGroupId;
+                }
+                lc5.transfer('triggerInvitation', inv);
+                if (!coolDown)
+                    coolDown = 0;
+                lc5.winPut('invCD' + invitationId, coolDown);
+            }
+        }
+    } catch (e) {
+        lc5.log('Error triggering invite: ' + e);
+    }
+};
+
+// Send custom data to the server
+lc5.transfer = function(type, data) {
+    var act = 0;
+    switch(type) {
+        case 'customData': {
+            act = 1;
+            break;
+        }
+        case 'triggerInvitation': {
+            act = 2;
+            break;
+        }
+    }
+    var json = encodeURIComponent(JSON.encode(data));
+    var src = '//' + lc5.domain + lc5.contextPath + '/sitescript/gate.jsp?&aid=' +
+        encodeURIComponent(lc5.aid) + lc5.getSIDCID() + '&act=' + act + '&json=' +
+        json;
+    if (act !== 0) {
+        lc5.appendScript("customData", null, src);
+    }
+};
+
+lc5.getContactId = function() {
+    var SIDCID = lc5.getSIDCID(true);
+    return SIDCID.cID;
+};
+
+lc5.getSessionId = function() {
+    lc5.log("lc5.getSessionId");
+
+    var SIDCID = lc5.getSIDCID(true);
+    return SIDCID.sID;
+};
+
+lc5.groupAvailability = function(groupId, callback) {
+    lc5.log("lc5.groupAvailability");
+
+    if(groupId && callback) {
+        lc5.appendScript('group_availability', '', '//' + lc5.domain + lc5.contextPath + '/xhub/xhub-js.jsp?aid=' + encodeURIComponent(lc5.aid) + '&cmd=groupAvailability&gid=' + groupId + '&callback=' + encodeURIComponent(callback));
+    } else {
+        if(callback && typeof eval(callback) == 'function') {
+            eval(callback + '(-1)');
+        }
+    }
+};
+
+/* load javascript api module when it's necessary */
+lc5.loadAPI = function(module, version, callback) {
+
+    lc5.log("lc5.loadAPI");
+
+    if (!lc5.common) {
+        var temp = lc5.onCommonLoad; // previous job to load API must be executed
+        lc5.onCommonLoad = function() {
+            if (temp) {
+                temp();
+            }
+            lc5.loadAPI(module, version, callback);
+        }
+        if (!lc5.commonLoadRxed) {
+            lc5.appendScript("lc_api_common", null, '//' + lc5.domain + lc5.contextPath + '/api/script/common/' + version);
+        }
+        lc5.commonLoadRxed = true;
+        return;
+    }
+    // force to run onload callback everytime in IE9+
+    if (lc5[module] && navigator.userAgent.indexOf('MSIE 9') === -1) {
+        return;
+    }
+    lc5['on' + module.substring(0,1).toUpperCase() + module.substring(1, module.length) + 'Load'] = function() {
+        if(typeof callback === 'function') {
+            callback(true);
+        } else if (typeof callback === 'string') {
+            eval(callback + '(true);');
+        }
+    };
+    lc5.appendScript('lc_api_' + module, null, '//' + lc5.domain + lc5.contextPath + '/api/script/' + module + '/' + version);
+};
+
+/* Custom event API */
+lc5.ce = {};
+
+lc5.ce.sendCustomEvent = function(hash, keyValues, callback) {
+
+    var url = lc5.ce.keyValsToURL(keyValues);
+    if (url.length > 0) {
+        url = '&' + url;
+    }
+    if (callback) {
+        url = 'lcCallback=' + encodeURIComponent(callback) + url;
+    }
+    lc5.appendScript('ce_request', null, '//' + lc5.domain + lc5.contextPath + '/form/?' + hash + '&' + url);
+};
+
+lc5.ce.keyValsToURL = function(keyValues) {
+
+    var result = [];
+    if (keyValues instanceof Array) {
+        for (var i = 0; i < keyValues.length; i++) {
+            var k = keyValues[i];
+            var key = k.key;
+            var values = k.values;
+            if (values instanceof Array) {
+                for (var j = 0; j < values.length; j++) {
+                    var value = values[j];
+
+                    // encodes
+                    key = encodeURIComponent(key);
+                    value = encodeURIComponent(value);
+
+                    result.push(key + '=' + value);
+                }
+            }
+        }
+    }
+    return result.join('&');
+};
+;lc5.start();

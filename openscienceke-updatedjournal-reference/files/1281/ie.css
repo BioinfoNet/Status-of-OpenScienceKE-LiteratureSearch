@@ -1,0 +1,15 @@
+@font-face {
+	font-family:'TLLMedium';
+	src:url('../fonts/tll-webfont.eot');
+	src:url('../fonts/tll-webfont.eot?#iefix') format('embedded-opentype');
+	font-weight:normal;
+	font-style:normal;
+}
+
+@font-face {
+    font-family: 'JunicodeRegular';
+    src: url('../fonts/junicode-regular-webfont.eot');
+    src: url('../fonts/junicode-regular-webfont.eot?#iefix') format('embedded-opentype');
+    font-weight: normal;
+    font-style: normal;
+}

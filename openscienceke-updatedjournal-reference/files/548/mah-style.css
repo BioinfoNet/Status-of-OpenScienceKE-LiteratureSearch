@@ -1,0 +1,159 @@
+
+/* This is an override from base.css in Mirage theme */
+/* #444 looks better than black: twitter.com/H_FJ/statuses/11800719859 - I disagree /Jacob */
+body, select, input, textarea { color:#000000; }
+
+/* This is an override from style.css in Mirage theme */
+
+body {
+    background-color: #FAFAFA;
+}
+
+h1 {
+    color: #000000;
+    text-align: left;
+}
+
+#ds-header-wrapper {
+    background-color: #FAFAFA;
+    vertical-align: middle;
+}
+
+#ds-header {
+    background-color: #FFFFFF;
+}
+
+#no-js-warning,
+#ds-trail,
+#ds-header,
+#ds-content {
+    background-color: #FFFFFF;
+    padding-right: 10px;
+}
+
+.ds-artifact-item{
+    padding-top: 5px;
+    padding-bottom: 5px;
+}
+
+#ds-footer {
+/*    background-color: #8E8E8E; */
+    background-color: #0d0d0d;
+}
+
+.ie6 #ds-trail,
+.ie6 #ds-header,
+.ie6 #ds-footer,
+.ie6 #ds-content {
+    padding-right: 10px;
+}
+
+#ds-footer-wrapper {
+  margin-top: 0px;
+}
+
+#ds-footer {
+    border-top: 1px solid #FFFFFF;
+}
+
+#ds-footer-right {
+    text-decoration: none;
+    color: #FFFFFF;
+    margin-top: -4px;
+    margin-right: 10px;
+}
+
+#ds-footer-right a:link, a:visited, a:active, a:hover{
+    text-decoration: none;
+}
+
+#ds-footer-right span.theme-by{
+    vertical-align: middle;
+}
+
+#ds-body {
+    padding-left: 10px;
+    padding-right: 10px;
+    min-height: 600px;
+}
+
+#ds-options-wrapper {
+    padding-bottom:10px;
+}
+
+select#aspect_submission_submit_SelectCollectionStep_field_handle,
+select#aspect_submission_submit_SelectCollectionStep_field_handle option{
+    max-width: 650px; /* MAH fix long communities or collection names */
+}
+
+a.ds-artifact-list {
+    font-weight:bold;
+}
+
+.community .artifact-title a {
+    text-decoration: none;
+}
+
+.collection .artifact-title a {
+    font-weight: bold;
+}
+
+a.artifact-title	{
+    font-weight: bold;
+}
+ 
+.artifact-title {
+    font-size: 100%;
+}
+
+.artifact-info {
+    color: black;
+}
+
+/* Move down the Recently Added */
+.repository {
+    margin-top: 50px;
+}
+
+/* item-view override stuff */
+
+th, td {
+    vertical-align: top;
+}
+
+.label-cell {
+    font-weight: normal;
+}
+
+.ds-table-row{
+    text-align: left;
+    vertical-align: top;
+}
+
+.file-wrapper{
+    padding-top:10px;
+    padding-bottom:10px;
+}
+
+.file-metadata{
+    width:auto;
+}
+
+h1.ds-option-set-head{
+    color: white;
+    font-size: 100%;
+    background-color: rgb(174, 8, 23);
+}
+
+.image-link{
+    text-decoration: none;
+}
+
+.artifact-note, .artifact-type{
+    color: #656580;
+    font-size: 0.85em;
+}
+
+.file-list a{
+text-decoration:none;
+}

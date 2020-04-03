@@ -1,0 +1,7 @@
+@import url("hw-publisher-sidebars.css");
+
+#header .header-buttons, #header .header-buttons a, #header #hdr-login {color: #999;}
+#header .bar, #footer .bar, #content-block .toc-level a.toc-section-return {background: #999;}
+#header .bar-inner, #footer .footer-group {background: #f60;}
+.sidebar-icon-group {text-align: center;}
+.publisher-icon {margin-bottom: 1.2em;}

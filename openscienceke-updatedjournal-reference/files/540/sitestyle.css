@@ -1,0 +1,214 @@
+@charset "utf-8";
+/* CSS Document */
+
+body{
+	font-family:Arial, Helvetica, sans-serif;
+	font-size:14px;
+	background:#ffffff;
+	}
+h2{
+	font-size:26px; 
+	color:#9d2e34;
+	font-weight:bold;
+	}
+h3{
+	font-size:18px; 
+	color:#9d2e34;
+	font-weight:bold;
+	}
+p{
+	font-size:14px;
+	line-height:22px;
+	}
+a{
+ text-decoration:underline;
+ color:#9d2e34;
+ }
+a:hover{
+ text-decoration:underline;
+ color:#9d2e34;
+ background:#ffffff;
+ }
+a:visited{ 
+ color:#9d2e34; 
+ }
+a:link{ 
+ color:#9d2e34; 
+ }
+	
+/***---Styling for menu---**/
+#container{	
+	}
+#header{
+	background:#fdfada;
+	border-bottom:5px solid #9d2e34;
+	}
+#headerTitle{
+	background:#fdfada;
+	}
+div#navbar{
+	background:#9d2e34;
+	height:25px;
+	}
+div#navbar ul{
+	padding:1% 0 0 0;
+	margin:0;	
+	list-style:none;
+	}
+div#navbar ul li{
+	color:#fffac2;
+	}
+div#navbar ul li a{
+	color:#fffac2;
+	text-decoration:none;
+	font-size:14px;
+	padding:9px 5px 9px 5px;
+	background:none;	
+	}
+div#navbar ul li a:hover{
+	background:#fdfada;
+	color:#9d2e34;
+	}
+	
+/**---Styling for bradcrumb---**/	
+div#breadcrumb{
+	border-bottom:none;
+	}
+div#breadcrumb a{
+	color:#9d2e34;
+	text-decoration:none;
+	font-size:12px;
+	}
+div#breadcrumb a:hover{
+	color:#9d2e34;	
+	background:#fffffff;
+	}
+div#breadcrumb a.current:hover{
+	text-decoration:underline;
+	}
+	
+/**---styling for journals---**/
+#content{
+	font-size:14px;
+	}
+div#journals{
+	}
+div#journals ul{
+	}
+div#journals ul li a{
+	font-size:14px;
+	line-height:22px;
+	color:#000000;
+	}
+div#journals ul li a:hover{	
+	color:#9d2e34;
+	text-decoration:underline;
+	}
+#journal-test h4{
+	padding-bottom:2%;
+	}
+#journal-test h4 a{
+	color:#000000;
+	text-decoration:underline;	
+	}
+#journal-test h4 a:hover{
+	color:#9d2e34;
+	text-decoration:underline;
+	}
+	
+table.announcements{
+	font-size:12px;
+	}
+table.announcementsMore{
+	font-size:12px;
+	}
+table.announcementsMore a:hover{
+	color:#9d2e34;
+	}
+	
+/**----Authors table of contents----*/	
+table.tocArticle{	
+	}
+table.tocArticle a{
+	font-size:14px;
+	}
+table.tocArticle a:hover{
+	color:#9d2e34;
+	}
+	
+div.tocAuthors{
+	font-size:12px;
+	}
+	
+/**---List of About us---**/
+div#content div{
+	}
+div#content div a{
+	font-size:14px;
+	}
+div#content div a:hover{
+	color:#9d2e34;
+	}
+	
+div#myAccount{
+	}
+div#myAccount ul{
+	}
+div#myAccount ul li a{
+	color:#000000;
+	}
+div#myAccount ul li a:hover{
+	color:#9d2e34;
+	}
+	
+div#principalcontact{
+	font-size:14px;
+	}	
+	
+/**---Editorial team---**/
+ol.editorialTeam{
+	}
+ol.editorialTeam li{
+	margin:1% 0 1% 0;
+	}
+
+/**---Right side bar---*/
+#rightSidebar{
+	font-size:14px;
+	}
+#rightSidebar a.blockTitle{
+	display:none;
+	}
+span.blockTitle{
+	color:#9d2e34;
+	font-weight:bold;
+	font-size:18px;
+	}
+#sidebarUser ul li a{
+	text-decoration:none;	
+	}
+#sidebarUser ul li a:hover{	
+	color:#9d2e34;
+	text-decoration:underline;
+	}
+#notification ul li a{
+	text-decoration:none;	
+	}
+#notification ul li a:hover{	
+	color:#9d2e34;
+	text-decoration:underline;
+	}
+#sidebarInformation ul li a{
+	text-decoration:none;	
+	}
+#sidebarInformation ul li a:hover{	
+	color:#9d2e34;
+	text-decoration:underline;
+	}
+#sidebarNavigation ul li a{
+	text-decoration:none;	
+	}
+#sidebarNavigation ul li a:hover{	
+	color:#9d2e34;
+	text-decoration:underline;
+	}

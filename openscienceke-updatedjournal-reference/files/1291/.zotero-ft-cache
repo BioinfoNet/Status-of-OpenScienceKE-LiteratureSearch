@@ -1,0 +1,578 @@
+
+Welcome INTERNATIONAL CENTRE OF INSECT PHYSIOLOGY & ECOLOGY ICIPE
+Emerald logo
+Discover Journals, Books & Case Studies
+
+    Emerald logo
+    Discover Journals, Books & Case Studies
+    Explore Our Content
+    My Products
+    Explore Our Content
+    Journals Books Case Studies Expert Briefings Open Access
+    Reset Authentication
+    Register Login
+
+Journals Books Case Studies Expert Briefings Open Access
+Search
+Advanced search
+Diffusion of open source integrated library systems in academic libraries in Africa: The case of Uganda
+Shana Rachel Ponelis , Philliam Adoma
+Shana Rachel Ponelis (Department of Information Studies, University of Wisconsin , Milwaukee, Wisconsin, USA )
+Philliam Adoma (Department of Library Services, Muni University , Arua, Uganda )
+
+Library Management
+
+ISSN : 0143-5124
+
+Publication date: 13 August 2018 Reprints & Permissions
+pdf (236 KB) Article view Figure view Cited ( 10 ) cite article
+
+    Abstract
+    1. Introduction
+    2. Literature review and background
+    3. Research methodology
+    4. Results
+    5. Discussion
+    6. Implications and recommendations
+    7. Further research
+    8. Conclusion
+
+    Table of Contents
+        Abstract
+        1. Introduction
+        2. Literature review and background
+        3. Research methodology
+        4. Results
+        5. Discussion
+        6. Implications and recommendations
+        7. Further research
+        8. Conclusion
+
+Abstract
+Purpose
+
+Libraries globally automate their operations and services using integrated library systems (ILS) to increase operational efficiency and meet the ever-evolving demands of their users. Open source ILS (OS ILS) has become more popular globally. The purpose of this paper is to better understand the diffusion of OS ILS in academic libraries in Uganda.
+Design/methodology/approach
+
+Rogers’ diffusion of innovation (DoI) supplemented by the fit-viability theory was used as a theoretical framework. A questionnaire was developed based on extant literature and distributed electronically to representative members of a Ugandan university library association.
+Findings
+
+The diffusion of OS ILS in Ugandan academic libraries approximates the S-curve expected based on DoI. Ugandan academic libraries are adopting OS ILS for more flexibility to meet changing needs at what is perceived as an affordable cost but not all are fully satisfied. Koha is the most adopted OS ILS and is also being considered by all libraries without any ILS or a proprietary ILS. The information and communication technology (ICT) infrastructure, organizational procurement policies and national procurement legislation, human resource capacity and limited finances are barriers to diffusion. The total cost of ownership and technical skills required are of particular concern for OS ILS.
+Research limitations/implications
+
+The research was limited to a single African country and the recommendations may not be transferable to other African countries. Future research can expand the survey, the countries studied and/or address the methodological limitations of this study.
+Practical implications
+
+When embarking upon library automation using OS ILS or migrating to an OS ILS solution libraries should consider their ICT infrastructure, local support community, available training and be realistic about the costs. Local library associations should provide guidance on OS ILS selection, ongoing training, and opportunities for knowledge sharing. LIS schools should consider expanding their curriculum to include library automation and, in Uganda incorporate training on Koha as OS ILS. Libraries and library associations should advocate to reduce restrictive organizational procurement policies and national procurement legislation.
+Originality/value
+
+Studies on country-level diffusion of ILS are comparatively few, particularly in African countries. This is the first country-level study of OS ILS diffusion in Uganda. This study can positively impact future patterns of diffusion for optimal deployment of OS ILS software by informing academic libraries, university management, library association, LIS schools, and policymakers in Uganda and across the African continent, and encouraging academics and researchers to teach and study library automation using OS ILS.
+Keywords
+
+    Academic libraries
+    Developing countries
+    Diffusion of innovation
+    IT adoption
+    Open source software
+    Integrated library systems (ILS)
+
+Citation
+
+Ponelis, S. and Adoma, P. (2018), "Diffusion of open source integrated library systems in academic libraries in Africa: The case of Uganda", Library Management , Vol. 39 No. 6-7, pp. 430-448. https://doi.org/10.1108/LM-05-2017-0052
+Download as .RIS
+Publisher
+:
+
+Emerald Publishing Limited
+
+Copyright © 2018, Emerald Publishing Limited
+1. Introduction
+
+Library automation is the application of information and communications technologies (ICTs) to perform library functions such as acquisition, circulation, cataloguing, reference service, and serials control ( Amekuedee, 2005 ) to improve efficiency and enhance access to library resources ( Webber and Peters, 2010 ). Libraries automate their operations and services not only to increase the efficiency of the operations but also to meet the ever-evolving demands of their users who seek seamless connections to information sources that facilitate remote access to local and international databases to meet their information needs, and to make locally generated knowledge accessible globally. The most common information system that facilitates library automation remains the integrated library system (ILS). The effective adoption of ILS in academic libraries will ultimately “accelerate the level of knowledge acquisition and consequently improve national development” ( Ani et al. , 2005 , p. 706).
+
+Access to information and knowledge can be promoted by increasing awareness among all stakeholders of the possibilities offered by “different software models, including proprietary, open source and free software, in order to increase competition, access by users, diversity of choice, and to enable all users to develop solutions which best meet their requirements” ( World Summit on the Information Society, 2003 ). Free and open source software is “licensed to users with the freedom to run the program for any purpose, to study and modify the program and freely redistribute copies of either the original or modified program without royalties” ( Singh and Sanaman, 2012 , p. 810). Commercial vendors have traditionally provided ILS software but several open source ILS (OS ILS) solutions have been developed over the past several years since the first comprehensive OS ILS, Koha, which was first developed in 1999. Since it is challenging for proprietary ILS vendors to offer all the features required by the many diverse global user communities and provide localized support at an affordable cost, OS ILS software seems to offer a viable alternative to facilitate and accelerate automation in libraries in developing countries ( Hopkinson, 2009 ; Singh and Sanaman, 2012 ) to support access to information, dissemination of knowledge in support of teaching, research and innovation and local knowledge generation, and knowledge dissemination. There is a history of OS diffusion and adoption in academic libraries in African countries such with Unesco’s CDS/ISIS cataloguing software released in 1985 ( Hopkinson, 2009 ). Nevertheless, according to Adera Amollo (2013) , OS software has not yet been optimally deployed in libraries, particularly in developing countries.
+
+Several studies of OS ILS implementations at particular institutions are reported in the literature including, in Kenya ( Adera Amollo, 2013 ), Nigeria ( Egunjobi and Awoyemi, 2012 ; Omeluzor et al. , 2012 ; Uzomba et al. , 2015 ) and Uganda ( Buwule and Ponelis, 2017 ; Greenberg and Versluis, 2005 ). Country-level studies, such as the study of ILS adoption in South Africa ( Stilwell and Hoskins, 2012 ), are comparatively fewer. The purpose of this study is to better understand the diffusion of OS ILS in academic libraries in Uganda. The results of the study can therefore serve to better inform librarians and university management in Uganda and beyond when making decisions about OS ILS adoption in academic libraries in order to positively impact future patterns of diffusion for optimal deployment of OS software. Professional library associations in Uganda as well as policymakers and legislators may find the recommendations helpful in this regard. The results may also be of value to faculty at LIS schools in terms of curricular development and research. Although Uganda represents a particular country context, there may be similarities to other African countries relative to countries outside the continent that may make recommendations more relevant and transferable to other African countries than studies from outside the continent.
+
+The paper is structured as follows: first, relevant literature is reviewed and background context is provided. Second, the research objectives and questions are defined in the context of the theoretical framework used for the study followed by the research methodology and the results of the study followed by a discussion thereof. The paper concludes after recommendations and suggestions for future research.
+2. Literature review and background
+2.1 Open source software ILS
+
+Library automation was initiated in North America and Europe, predominantly in the USA and the UK in the early 1960s with the advent of computerization. Initially library automation relied on in-house software development. Over time, some of the larger systems developed in-house were commercialized and made available to other libraries as packaged software solutions. Subsequently, software vendors started developing proprietary ILS solutions. The first comprehensive OS ILS solution was developed in 1999 and options proliferated in the 2000s. Although initially considered risky propositions because of limited functionality and uncertain futures, several open source solutions are now considered viable and attractive options to not only small libraries but large library systems in developed countries with “open source products achiev[ing] satisfaction levels similar to proprietary products” ( Breeding, 2016 ). With the dramatic increase in the number of options available when selecting an ILS, the need for guidance to better understand the different types of options available as well as the implications of each option is greater than before.
+
+Apart from the ethos of open source software being similar to the values of librarianship ( Adera Amollo, 2013 ; Müller, 2010 ; Singh, 2013a ; Singh and Sanaman, 2012 ), the main driver of OS ILS is reported to be the reduced cost in a time of increased budgetary constraints, increased flexibility to customize and adapt the software to unique needs and share it without legal or cost implications, and the multiplicity of support options ( Singh and Sanaman, 2012 ). There are, however, disadvantages to OS ILS, in particular, the need for in-house IT expertise. Although Macan et al. (2013) are optimistic, stating that “increased functionalities and better manuals” could mitigate for a lack of dedicated IT staff in libraries, the use of OS ILS requires sufficient technical expertise to perform the installation and migration of data, modify source code in order to customize features and functionalities based on libraries’ needs, ongoing troubleshooting and maintenance ( Bilal, 2014 ; Webber and Peters, 2010 ). Most OS ILS have vibrant user communities that can provide support although a timely response is not guaranteed. If in-house skills and community support are not sufficient a library can contract a commercial affiliate/third-party service provider to provide support.
+
+Some of the more well-known OS ILS are Koha, NewGenLib, ABCD, and Evergreen. In a comprehensive study of 40 ILS by Müller (2010) , Koha was found to be the only mature OS ILS, the most complete in terms of functionality, the best quality in terms of implementation features, and with a sustainable community in terms of the number of developers and frequency of releases. Furthermore, Koha offers the most international options in terms of date format, type of MARC record, and language ( Müller, 2010 , p. 67). In a thorough comparative evaluation, Koha outperformed or matched NewGenLib in many of the aspects evaluated ( Singh and Sanaman, 2012 ) although Müller (2010) earlier rejected NewGenLib in his study for lack of adequate community involvement and support. Macan et al. (2013) found that, although Koha has more functionalities, ABCD, which is derived from ISIS, is worth considering by libraries without IT support. In a study comparing Koha and Evergreen with two proprietary ILS, Pruett and Choi (2013) found that both Koha and Evergreen are viable alternatives to major proprietary vendors; these two OS ILS are the most popular in the USA ( Singh, 2013a ).
+2.2 Library automation in African academic libraries
+
+In Sub-Saharan Africa computerization and subsequent library automation lagged and started much later with the University of Botswana being among the first to initiate automation in 1986 ( Mutula, 2012 ). In 2000, Mulimila observed that public university libraries in the East African region (Kenya, Tanzania and Uganda) were struggling to catch up in the application of ICT to facilitate information access and that this negatively impacted on library automation across the region. In Uganda, the National Library of Uganda undertook the first automation effort, using CDS/ISIS for cataloguing with stand-alone computers in 1998 ( Ikoja, 2004 ). Makerere University was the first academic institution in Uganda to embark on automation in 1999 with a proposal for funding to SIDA/SAREC to integrate ICT use in library operations ( Sager and Walterson, 2005 ). Subsequently, many academic libraries in Uganda have embarked on automation projects with varying degrees of success (see e.g. Buwule and Ponelis (2017) for a case study of Kyambogo University and Jibia et al. (2013) for a case study of Cavendish University Uganda).
+
+Barriers to adopting ICT and ILS in Sub-Saharan African countries are well documented. Mulimila (2000) reported that academic libraries in East Africa faced several challenges to introduce ICT into their libraries, namely, a shortage of adequately trained and skilled personnel, financial constraints with major dependence on donors, a lack of co-operation among university libraries, inadequate telecommunication facilities (low bandwidth), power outages, and attitudinal problems. Amekuedee (2005) reported that in Ghana additional barriers include the apathy on the part of university and library management, lack of training for staff, inadequate ICT equipment and a lack of maintenance thereof, and frequent breakdowns of ICT equipment. A statement in a report of Kenya’s Moi University’s experience of library automation captures the scope and extent of the reported challenges well: “Managing a library automation project in a developing country may pose greater managerial and technical challenges than managing one in a developed country” ( Ondari-Okemwa, 1999 ).
+
+During a workshop held at Makerere University in 2000, university librarians resolved to increase collaboration by instituting an association that would bring universities together to share information, knowledge and resources and allow for linkages. As a result, the Consortium of Uganda University Libraries (CUUL) was established in 2001 as non-profit association with financial support by, among others, EIFL, Sida, and Carnegie, to facilitate effective and efficient resource sharing and collaboration among the 41 university and other academic institution library members. CUUL recommended and encouraged the adoption of the OS ILS Koha and in March 2012 arranged a 3-day workshop for its members that was attended by 37 participants, stating that “Most libraries in Uganda have learned that the path to becoming a strong and interactive research library must start with implementing an integrated library management system” ( EIFL, 2012 , p. 7).
+3. Research methodology
+3.1 Theoretical framework
+
+The diffusion of OS ILS as innovation in Ugandan academic libraries can be viewed in terms of Rogers’ Diffusion of Innovations (DoI) theory. Rogers (2003) defined diffusion as “the process in which an innovation is communicated through certain channels over time among the members of a social system” (p. 5). The DoI theory seeks to explain the rate and reasons for the spread of new innovations including technological innovations such as ICT and information systems.
+
+Rogers (2003 , p. 11) postulated four main elements in the DoI: the innovation itself (its relative advantage, compatibility, complexity, trialability, and observability), communication channels, time, and the social system. Contextual factors influence how much adaptation is needed and how long the process will take for adopters to fit the innovation in their particular circumstances ( Minishi-Majanja and Kiplang’at, 2005 ). In developing countries such as Uganda, the socio-economic realities as well as issues such as available infrastructure, finances, human resource capacity, and the cultural and political environment are also expected to have an impact on the diffusion of an innovation ( Lor, 2014 ) and can act as barriers to adoption ( Ondari-Okemwa, 1999 ). Barriers are forces, trends, events or circumstances that will hinder, delay or halt a particular innovation’s adoption and diffusion. Drivers, on the other hand, are forces, trends, events or circumstances that will foster and propel an innovation’s diffusion and adoption. A particular set of drivers and barriers surrounding an innovation determine the extent and pattern of diffusion. As an innovation is diffused through a population the adoption thereof usually follows a bell curve with an increase as the early and late majority start following innovators and early adopters followed by a drop-off over time as laggards adopt (or reject) the innovation. This diffusion process results in an S-curve of cumulative adopters over time.
+
+The diffusion of an innovation is subject to the innovation-decision process (IDP) that comprises five stages, namely, knowledge, persuasion, decision, implementation and confirmation ( Rogers, 2003 ). During the first stage, individuals are made aware of an innovation and acquire knowledge about it. In the persuasion stage individuals form a positive or negative image of the innovation, which then impacts the decision. In the decision stage the advantages and disadvantages are considered and a decision is made whether to accept (adopt) or reject the innovation. The implementation stage involves the adoption and use of the innovation. During the confirmation stage the decision is made whether to continue using the innovation or not based on the experience during the implementation stage. Drivers and barriers play a role throughout this IDP. Furthermore, a driver in one stage may become a barrier in another.
+
+The study of the organizational and individual adoption of technology during the implementation stage has led to numerous theories and models [1] , often with improvements and extensions to existing theories and models over time to increase the predictive power. These theories and models hypothesize various factors that drive or inhibit adoption with a variety of dependent variables including behavioral intention to use, actual system usage/use behavior, and performance. One of these theories, the fit-viability theory ( Tjan, 2001 ), which is an extension of the task-technology fit model ( Goodhue and Thompson, 1995 ), attempts to predict the performance of an adopted technology in an organization. Fit measures the extent to which the features of a particular technology match the needs of the task at hand. Viability refers to the extent to which the infrastructure of the organization is ready for the adoption of the particular technology. Viability includes the general economic feasibility, the existing technical infrastructure, and the social readiness of the organization. The resulting performance is likely to affect the subsequent confirmation in the IDP. The contextual factors that act as drivers and barriers for the IDP within a particular organization can be seen through the lens of fit-viability theory.
+3.2 Research purpose, objectives and questions
+
+Our purpose is to determine the extent and pattern of diffusion of OS ILS and to better understand the drivers and barriers that will influence diffusion of OS ILS in Uganda. Understanding the drivers and barriers that have affected and continue to affect the diffusion can inform strategic decision-making and action to affect future patterns of diffusion. The primary objective of this study is thus to determine the extent and pattern of diffusion of OS ILS as innovation in Ugandan academic libraries as well as the drivers and barriers for the adoption thereof.
+
+A secondary objective was to determine whether there are differences between public and private university libraries’ adoption of OS ILS [2] . There are 38 licensed and recognized universities in Uganda, of which six are public and 32 are private, including both secular and religious institutions ( National Council for Higher Education, 2015 ). The majority of these universities are located in Central Uganda (84 percent). The first public university was established in 1922 but the first private university was established in 1988. The number of private universities has since grown rapidly, also in terms of enrollments. Nevertheless, roughly only 35 percent of those who qualify for tertiary education find a place at one of the universities in Uganda. Universities can expect further increases in enrollments in future, making the need for efficient services on Ugandan campuses all the more urgent.
+
+This objective leads to the following research questions:
+RQ1.
+
+To what extent have OS ILS been diffused through Ugandan academic libraries? Is there a difference between public and private university libraries’ adoption of OS ILS?
+RQ2.
+
+What are the drivers for deciding to adopt an OS ILS solution? (IDP knowledge, persuasion and decision stages).
+RQ3.
+
+What are the barriers for implementing OS ILS solutions? (IDP implementation stage).
+RQ4.
+
+How satisfied are Ugandan academic libraries if they adopted an OS ILS? Are any Ugandan academic libraries planning to migrate from a proprietary ILS to an OS ILS or vice versa? (IDP confirmation stage).
+
+3.3 Data collection method
+
+Given the geographic distances involved the survey method was used. A questionnaire containing both open-ended and closed-ended questions in English [3] was designed based on a review of the literature on ILS diffusion and adoption globally in both developed and developing countries ( Adera Amollo, 2013 ; Boss, 2008 ; Breeding, 2008, 2009, 2014 ; Egunjobi and Awoyemi, 2012 ; Emmanuel and Sife, 2008 ; Hopkinson, 2009 ; Kumar and Abraham, n.d. ; Müller, 2010 ; Pruett and Choi, 2013 ; Singh, n.d ; 2013a, b ; Singh and Sanaman, 2012 ). The questionnaire [4] included two relevant sections, demographic information, and the current and future library automation situation. The questionnaire contained several branching questions and the researchers opted for electronic distribution that allowed for automatic sequencing rather than relying on respondents to correctly skip questions. The questionnaire was set up in Qualtrics survey software that allows for anonymization and automated personalized dissemination with a unique link to the online survey and e-mail reminders to respondents.
+3.4 Sampling
+
+Librarians representing academic libraries under CUUL were purposefully selected to participate in this study in order to answer the research questions above since CUUL played a central role in disseminating information on OS ILS. A total of 25 responses were recorded at the end of the three-week data collection period from the sample of 63 CUUL representatives. During this time two follow-up reminders were sent to respondents who had not yet responded via e-mail messages generated by the survey software. One response was from a CUUL member at a non-academic institution and was therefore omitted from analysis. Three responses contained very limited or no data and therefore were excluded from analysis. The average time taken to complete a questionnaire was just over 32 minutes. The study thus included 21 responses representing 13 different academic libraries from across Uganda giving a response rate of 33 percent for respondents and 34 percent for institutions ( Table I ).
+
+Table II lists institutional and individual responses by region. The majority of responses were received from institutions in the Central region of Uganda where the capital Kampala is located (41 percent) followed by the Northern region (33 percent), Western region (29 percent percent) and Eastern region (17 percent). In terms of questionnaires completed by individuals the Central region dominated (76 percent) responses. This is not unexpected since the majority of universities are located in this region.
+3.5 Data analysis
+
+Given the low frequencies inferential statistical analysis was not possible. Nevertheless, researchers were able to summarize the data, detect patterns and communicate results from the close-ended questions supplemented by qualitative data from open-ended questions.
+3.6 Limitations
+
+It emerged from the comments of one questionnaire that the respondent was not in charge of the ILS at their institution. This means that some of the data in the third part of the questionnaire on the current and future situation with regard to the ILS might not be fully reliable, particularly in larger libraries with greater separation of duties. However, some degree of triangulation was achieved with multiple librarians responding from the six larger participating universities.
+
+Some universities do not have reliable internet access and rely on internet cafes or costlier dial-up modem connections for internet access. A web-based questionnaire therefore biases the responses towards librarians with reliable and affordable internet access. This may explain the lower relative response rate from regions outside the Central region. However, given that the study focused on the use of ICT, in particular the adoption of an ILS, the assumption is that respondents with regular internet access represent institutions that are more likely to be innovators or early adopters of ILS.
+4. Results
+
+After presenting brief demographic data profiling respondents the results from the study are presented according to the corresponding research questions on the adoption of OS ILS in academic libraries in Uganda. Discussion of the results follows in a separate section hereafter.
+4.1 Demographics
+
+Respondents are all qualified as librarians: of the 21 respondents 12 (48 percent) respondents hold a Bachelor degree, 8 (32 percent) respondents hold a Master’s degree, and 1 respondent (4 percent) holds a doctoral degree. Most respondents also have significant experience in the profession as shown in Table III with relatively low staff turnover.
+
+Collection sizes in Table IV reflect a range of library sizes participating in the study, both larger, more established libraries and more recently established university libraries with relatively smaller collections.
+4.2 Extent of diffusion of OS ILS
+
+The analysis in Table V shows that the majority of participating academic libraries have adopted an OS ILS with eight (61.5 percent) of the responding libraries currently operating an OS ILS. However, public universities have adopted OS ILS to a lesser extent than private universities (50 percent vs 71 percent).
+
+Table VI shows the adoption of OS ILS since 2008, the year the first OS ILS was reported as adopted by a Ugandan university library. Private universities took the innovator and early adopter lead in 2008 and public universities followed in 2012. Koha is the only OS ILS adopted, most likely as a result of CUUL’s recommendation and training in 2012. This is confirmed by reasons for adoption provided in open-ended comments, namely, “Limited knowledge of alternative open source solutions” and “Promotion move by CUUL to adopt Koha.” This is expected according to Rogers’ DoI theory with communication to share relevant knowledge in the first two stages of the IDP in order to diffuse an innovation. The cumulative adoption of OS ILS approximates the S-curve of the diffusion process ( Figure 1 ).
+4.3 Drivers for ILS adoption
+
+Flexibility (85 percent) and costs (77 percent) are the major drivers for adopting OS ILS while ease of use (60 percent), timely support (40 percent) and affordable maintenance (40 percent) rank highest as drivers for adopting proprietary solutions ( Table VII ).
+
+Open-ended comments from respondents capture the primacy of financial considerations:
+
+    “[…] adopting the open ILS will greatly help the library to cut costs of maintaining the proprietary ILS.”
+
+    “the biggest driver for our library to go for Open Source ILS is because [of] budget constraints. […] Open Source ILS will continue to exist and used widely in libraries due to the ever reducing [sic] library budget costs coupled with the desire of libraries to automate their services to meet the ever changing [sic] demands of their patrons.”
+
+When examining reasons for OS ILS selection by type of university, public universities are primarily concerned with flexibility (80 percent) while private universities consider affordable maintenance the primary motivation (100 percent) followed by flexibility (88 percent). Both public and private universities rank timely support lowest (29 percent combined in Table VII ; 20 and 38 percent, respectively in Table VIII ).
+
+The economic reality of the organization and the ability to increase the fit of the technology to the organization’s needs (tasks) dominate when it comes to drivers for OS ILS diffusion in both for public and private universities.
+4.4 Barriers to adoption of OS ILS
+
+Of institutions that adopted an OS ILS only half installed and put into production their most recently selected ILS according to their planned schedule in the implementation stage ( Table IX ). Public university libraries fared worse compared to their private counterparts (20 percent vs 63 percent according to plan).
+
+In a follow-up, open-ended question on the obstacles encountered during the implementation, the number of comments from public university respondents far exceeded those by private university participants although the challenges were similar in nature. The themes that emerged are summarized in Table X below.
+
+Procurement of the necessary hardware (servers, barcode printers and scanners, etc.) is a major obstacle, particularly as a result of lengthy and bureaucratic budgeting processes and procurement procedures, in particular in public universities that are subject to the Public Procurement and Disposal of Public Assets Act 1 of 2003, coupled with ever-present financial constraints.
+
+As mentioned earlier open source software require significant skills to customize and therefore lack of appropriate technical skills is a major obstacle. As one respondent stated, “If money was there, commercial ILS are better because they save time, no need for the daunting task of customization.” Data entry/conversion is also much more complex and thus time-consuming than initially expected.
+
+As shown in Table XI , public universities with an OS ILS are most likely to seek support from another library (60 percent). Private universities, on the other hand, prefer to direct their OS ILS support questions to online forums and support groups (50 percent) or their third-party service provider (25 percent). In universities with a proprietary ILS, on the other hand, public universities seek support from the vendor (75 percent) or from the university’s ICT support services (25 percent) and private universities exclusively from the vendor (100 percent). Public universities may tend to be more open to collaborating with other universities than private universities who may be in competition with one another.
+
+The lack of sufficient IT infrastructure combined with the economic reality of the organizations acts as barriers and reduces the OS ILS performance. Furthermore, the broader regulatory environment presents barriers for public universities.
+4.5 Satisfaction with OS ILS and future migration
+
+In all, 13 librarians responded from the eight libraries that have adopted an OS ILS. Although none of the responding librarians are unsatisfied with the OS ILS in their respective libraries only just under a third (31 percent) are “very satisfied” ( Table XII ). Whilst half of librarians from private academic libraries are very satisfied (50 percent) and the vast majority (87.5 percent) satisfied or very satisfied, the majority of public academic libraries are only somewhat satisfied (80 percent). Private university librarians may be more satisfied overall since they have started adopting OS ILS earlier and may have mastered some of the obstacles that public academic libraries may still be facing.
+
+The lower satisfaction with regard to the management of electronic resources compared to print resources in both public and private universities in Table XIII agree with earlier findings ( Breeding, 2016 ; Macan et al. , 2013 ).
+
+Breaking down the satisfaction in Table XIII by type of university shows that public universities are less satisfied than private universities about their ability to meet the libraries’ needs and to maintain their OS ILS implementations ( Table XIV ). There also appears to be a significant difference in terms of the satisfaction regarding the cost of maintenance with half of public universities unsatisfied. Flexibility to meet the library’s needs and ease of use was considered major reasons for OS ILS adoption by public universities (ranked first and second respectively in Table VIII ), while affordable maintenance was not a primary consideration (ranked fourth). Presumably the lack of adequate IT infrastructure and the economic realities of the libraries that act as barriers to performance according to the fit-viability theory is leading to reduced satisfaction.
+
+Respondents were asked whether their libraries are considering migration to another ILS. In spite of less than total satisfaction, none of the participating libraries were considering abandoning the OS ILS solutions they adopted. Some of the open-ended responses reflecting this confirmation:
+
+    “We do not intend to migrate to another ILS because we have just moved away from [an] internally developed one which did not help us much […], since there are many other institutions in the consortium using it, we shall have to benchmark and seek assistance from them.”
+
+    “We do not have intentions of changing but rather keep updating to a higher version that will be made available.”
+
+Both libraries with proprietary ILS were considering migrating to an OS ILS, specifically Koha, even though librarians from both institutions perceived proprietary/commercial ILS to offer superior functionality. Respondents from one university reported that while the university had successfully adopted a proprietary ILS with the support of donor funding, it is considering migrating to an OS ILS, most likely also Koha, due to the cost of maintaining the proprietary ILS exceeding the available budget after donor funding ran out. The two libraries that are not automated are also both considering adopting the OS ILS Koha.
+5. Discussion
+
+As expected according to Rogers’ DoI theory, the cumulative adoption of OS ILS in Ugandan academic libraries approximates the S-curve. The expectation is that the curve will continue to rise with the intention of those academic libraries not yet using an OS ILS to migrate to an OS ILS solution in Uganda. With respect to OS ILS private universities are the innovators and early adopters with public universities following their lead. The results show that public universities, compared to private universities, struggle more to implement their OS ILS according to their planned schedule and are also less satisfied, particularly on drivers that ranked highly in their decision process to adopt the OS ILS. This may be due in part that established public universities are more likely to migrate to the OS ILS from another ILS, a process that is more challenging than migrating from a manual system ( Raju et al. , 2007 ). Nevertheless, all of the participating libraries confirmed their decision to adopt the OS ILS and that they will continue to use, implement, and maintain the selected OS ILS.
+
+Contextual factors such as the available ICT infrastructure, organizational procurement policies and national procurement legislation, human resource capacity, limited finances and organizational culture impacts negatively on the adoption of OS ILS. These barriers are similar to those reported in the literature for proprietary ILS implementations. However, underestimating and/or not fully understanding the total cost of an OS implementation and that there is a greater need for IT expertise, either in-house or through third-party support, is particularly relevant to OS ILS implementations.
+
+The lower direct cost of OS ILS is a major driver for the adoption in the decision stage of the IDP in the face of ongoing budget constraints experienced in Ugandan academic libraries, confirming what has been reported in the literature in other developing and developed countries (e.g. Gireesh Kumar and Jayapradeep (2015) in India and Singh (2013b) in the USA). According to Webber and Peters (2010) , the availability of varied ILS software models requires informed decisions on ILS that best fits needs of library and its users and is the most cost effective. But, as Singh (2013b) states, not all stakeholders are “well informed about the decision-making process of OS vs proprietary ILSs” (p. 215). While OS ILS is attractive because of a lower explicit financial commitment, decision-makers may be failing to take into account the total cost of ownership (TCO) of an OS ILS. The TCO includes the costs of ensuring adequate in-house skills and the technical support to perform the necessary customization to meet local needs, create documentation, conduct training, provide support as well as perform ongoing maintenance. With OS ILS reported to be more expensive than initially anticipated in Singh’s (2013b) study this is especially important to ensure a successful implementation and ongoing use.
+
+The customizability and flexibility that open source software offers to meet library needs is another major driver for the OS ILS adoption decision stage, which signals recognition among library staff of the impact of the different country context in which the ILS is being used. However, it is challenging to exploit during the implementation stage without sufficient ICT equipment and enabling infrastructure, skills and/or support, factors that determine viability. Although necessary, ICT equipment and enabling infrastructure alone are not sufficient. As Negash et al. (2012) state, “It takes far more skill to build and implement an [ILS] than to turn on a computer or install some software. While countries need people with IT skills, they have a greater need for [ILS] specialists if they are to extract value from their IT” (p. 270). This is of great concern since training and support for OS ILS is neither widely available nor standardized. OS ILS training and support are either bought from a vendor/service provider or performed internally ( Dimant, 2010 ; Singh, 2013a ) but with limited in-house expertise, availability and funding presents an obstacle for many libraries. The decision taken by the professional body CUUL to increase awareness among library professionals about the potential of OS ILS in Uganda, to encourage adoption of a single OS ILS, and to provide training to support the knowledge and persuasion stages of the IDP is commendable.
+6. Implications and recommendations
+
+Our purpose was to understand the drivers and barriers that influence the diffusion for OS ILS in Ugandan academic libraries and in order to make recommendations that we believe will advance its diffusion. Drivers and barriers have a significant impact on the DoI throughout the IDP and thus offer valuable opportunities to accelerate diffusion through decision and action at governmental, professional association, university and/or the library level. Fit can be improved through better customization of the technology to meet the needs of the tasks in academic libraries, which requires technical skills. Viability must be improved through increased economic feasibility and improved technical infrastructure to increase the readiness of the organization for adoption.
+
+Because ICT plays such a central and highly visible role in library automation it is easy to forget that library automation as an innovation encompasses far more than just the information technology itself, that is, the hardware and software. The successful adoption and adaptation of information systems such as an ILS requires the diffusion of supporting higher-context dependence innovations around techniques, procedures, education and training, funding policies and governance policies ( Lor, 2014 ). Library and university management need to be informed during the stages preceding the decision stage of the IDP that the investment required for the implementation stage must include these aspects in addition to the cost of the software and hardware.
+
+Furthermore, although open source software has reduced initial cost it relies heavily on technical skills for customization and thus paying for support from third-party service providers and/or training may be necessary if in-house skills are not sufficient. As Avgerou (2008) states, “Even if the technologies implemented in an IS [information system] project are common and widespread, the local IS implementation experience constitutes an innovation for the organization[s] undertaking it and it may well constitute innovation for its socio-economic context” (p. 134). This innovation during the implementation stage, often requiring local improvisation, is not widely recognized as being part of the labor required to ensure an IS performs as expected in a particular socio-economic context ( Philip et al. , 2012 ). Broader recognition for the importance of the intellectual effort required to customize an IS such as an ILS to a particular context, particularly one for which it may not have been initially designed, may increase the general recognition and support on the part of stakeholders for this vital process.
+
+Action at the national level by CUUL acting as change agent to initiate the IDP by sharing knowledge among academic libraries appear to have played a decisive role in the diffusion of OS ILS in general and Koha in particular. With multiple institutions adopting and implementing the same OS ILS it is possible to build in-country expertise, share experiences, knowledge and skills, provide assistance, and benchmark against peer institutions. Collaborative schemes between institutions can be aimed at professional development, staff exchange programs, information sharing or internships. These help in sharing best practices and help reduce costs associated with consultancy or hiring of third-party service providers. The flexibility of OS ILS allows easy tweaking and partnering can also help standardization of customizations ( Gireesh Kumar and Jayapradeep, 2015 ), which in turn that makes collaborating on training and resource development easier ( Singh, 2013b ). Greater efforts to offer tailored, just-in-time training to educate members already in the profession about OS ILS adoption processes, in addition to technical training, and to further encourage collaboration and community-based support can help to reduce the barriers to OS ILS adoption and improve academic librarians’ satisfaction with the eventually implemented OS ILS solution. Leveraging the network effect can greatly increase the diffusion and performance of Koha as OS ILS in Uganda.
+
+Furthermore, similar to Burnett’s (2013) recommendation for Tanzania, LIS programs offered by Ugandan institutions must review their curricula to ensure that they graduate competent staff able to work in the field and produce expected results that extract value, especially in the application of ICT in libraries. Given the pervasive diffusion of OS ILS in Uganda, including the knowledge and skills to implement, maintain, service and adapt OS ILS in the curriculum is especially important for librarians entering the profession. University management and administration as well as the government must recognize that additional resources will be required, given that Okello-Obura and Kigongo-Bukenya (2011) found that there are inadequate educators in IT-related courses and that LIS schools have poor technology infrastructure.
+
+Given that the Ugandan Government is set to “transform higher education with innovation into vehicles of industrialization, employment/wealth creation, inclusive and sustainable development and socio-economic transformation in line with Uganda Vision 2040,” according to Tickodri-Togboa (2016) , Ugandan academic libraries need to position themselves and petition those in decision-making positions to ensure that they can contribute to their fullest potential to the nation’s development. It is incumbent on all relevant role players to address barriers to the fullest extent possible to promote OS ILS diffusion over time. Academic librarians must be empowered with the necessary educational, infrastructural, and institutional support to use ICT in general and ILS in particular to optimally serve their user communities. If our recommendations are acted upon, we expect to see not only an inflection in the diffusion curve but also reduced implementation time and increased performance. This would mean that an improvement in the rate of diffusion has occurred and an improvement in service delivery in academic libraries should result.
+7. Further research
+
+Based on the results from this study the scope of the survey can be expanded by specifically asking whether another proprietary or OS ILS was used before the current ILS, the source(s) of funding for the library automation project and the impact thereof on the selection decision and subsequent adoption, if any, and the effort expended on data conversion. The availability and adequacy of training and investment in staff development, the availability, completeness and relevance of documentation and extent of co-operative development to customize the OS ILS to local needs should also be investigated.
+
+Methodological limitations can also be addressed in future research. This study is limited in that it does not represent all Uganda academic libraries. To increase response rates from outlying areas and those without reliable internet connections alternative completion options should be offered, for example, printed questionnaires for return via fax or by postal service (although postal delays can be substantial when posting remote areas) or telephone interviews for richer data. Surveys should preferably be distributed to system librarians or those with greatest responsibility for the ILS.
+
+This study presented a snapshot but since “ICT diffusion is an on-going activity” ( Minishi-Majanja and Kiplang’at, 2005 ) future studies to monitor adoption of ILS, both open source and proprietary, in Ugandan academic libraries would be valuable to track patterns of diffusion and changes in context. Finally, additional African countries can be studied to provide a richer picture of OS ILS adoption on the continent.
+8. Conclusion
+
+This study shows that diffusion of OS ILS, in particular Koha, is taking place in both public and private Ugandan academic libraries regardless of collection size in order to continue deriving the benefits of library automation with the flexibility to meet changing needs at what is perceived to be an affordable cost. Participating libraries that are not automated or using proprietary software are all considering implementing Koha. The preponderance for Koha is most likely as a result of CUUL efforts to inform and encourage adoption. All participating libraries were at least somewhat satisfied with OS ILS but there is room for improvement with regard to the implementation stage, particularly in public academic libraries.
+
+The diffusion of OS ILS can be promoted by amplifying the drivers and reducing the barriers experienced with respect to the IDP. This will lead to increased adoption and improved performance due to better a fit and viability of the OS ILS in academic libraries and, ultimately, improved services to an ever-growing user population. When embarking upon library automation or migration using OS ILS libraries should consider their ICT infrastructure, local support community, available training and be realistic about the costs. Local library associations should provide guidance on OS ILS selection, ongoing training and opportunities for knowledge sharing. LIS schools should consider expanding their curriculum to include library automation and, in Uganda incorporate training on Koha as OS ILS. Libraries and library associations should advocate to reduce restrictive organizational procurement policies and national procurement legislation.
+Figures
+Adoption curve for OS ILS in participating academic libraries in Uganda Adoption curve for OS ILS in participating academic libraries in Uganda
+Figure 1
+
+Adoption curve for OS ILS in participating academic libraries in Uganda
+
+Table I
+
+Response rates by university type
+	Population 	Responses
+Region 	Public 	Private 	Total 	Public 	Private 	Total ( n ) 	Total (%)
+Respondents 	– 	– 	63 	11 	10 	21 	33.3
+Libraries 	6 	32 	38 	6 	8 	13 	34.2
+Table II
+
+Institutional and individual response rates by Ugandan region
+Region 	Number of institutions 	Number of institutions represented 	Institutional response rate from region 	Number of individual respondents 	Percentage of responses ( n =21)
+Central 	22 	9 	40.9 	16 	76.2
+Western 	7 	2 	28.6 	3 	14.3
+Northern 	3 	1 	33.3 	1 	4.8
+Eastern 	6 	1 	16.7 	1 	4.8
+Total 	38 	13 	34.2 	21 	100
+Table III
+
+Respondents’ years of experience
+Years of experience […] 	[…] in the library profession ( n =21) 	[…] at current institution ( n =21)
+0-5 	2 	5
+6-10 	7 	8
+11-15 	3 	3
+16-20 	4 	2
+21-25 	2 	3
+25+ 	3 	–
+Average 	16.1 	11
+Median 	10 	8
+Mode 	15 	9
+Table IV
+
+Approximate number of items in libraries’ print and electronic collections
+Collection size 	Public 	Private 	Total
+0-10,000 	1 	2 	3
+10,001-50,000 	2 	2 	4
+50,001-100,000 	1 	1 	2
+100,001-250,000 	1 	1 	2
+250,001-500,000 	– 	– 	–
+500,001-1,000,000 	1 	1 	2
+Total 	6 	7 	13
+
+Note: Counts where collection size was provided
+Table V
+
+Library adoption by nature of ILS
+	Frequency 	
+Nature of ILS 	Public 	Private 	Total 	Percentage
+Open source 	3 	5 	8 	61.5
+Proprietary 	1 	1 	2 	15.4
+In-house developed solution 	– 	1 	1 	7.7
+Not automated 	2 	– 	2 	15.4
+Total 	6 	7 	13 	100
+Table VI
+
+Year of ILS adoption in Ugandan academic libraries
+Nature of university 	2008 	2009 	2010 	2011 	2012 	2013 	2014
+Private 	Koha 	Koha 	Koha 	Koha 		Koha
+Public 					Koha 		Koha
+					Koha 	
+Table VII
+
+Respondent’s reasons ILS was selected by nature of adopted ILS
+Reason 	OS ILS 	Proprietary ILS 	Total
+	( n =13) 	(%) 	Rank 	( n =5) 	(%) 	Rank 	( n =21) 	(%)
+Flexibility to add additional functionality if library’s needs change 	11 	84.6 	1 	1 	20 	4 	12 	57.14
+Affordable maintenance 	10 	76.9 	2 	2 	40 	2 	12 	57.14
+No additional cost to upgrade to new release 	10 	76.9 	2 	– 	– 	– 	10 	47.62
+Ease of use 	9 	69.2 	4 	3 	60 	1 	13 	61.90
+Prompt response to support queries 	4 	30.8 	5 	2 	40 	2 	6 	28.57
+Table VIII
+
+Respondent’s reasons OS ILS was selected by type of university
+	Public university 	Private university 	Total 	
+Reason 	( n =5) 	(%) 	Rank 	( n =8) 	(%) 	Rank 	( n =13) 	(%)
+Flexibility to add additional functionality if library’s needs change 	4 	80 	1 	7 	87.5 	2 	11 	84.6
+Ease of use 	3 	60 	2 	6 	75 	3 	9 	69.2
+No additional cost to upgrade to new release 	3 	60 	2 	6 	75 	3 	10 	76.9
+Affordable maintenance 	2 	40 	4 	8 	100 	1 	10 	76.9
+Prompt response to support queries 	1 	20 	5 	3 	37.5 	5 	4 	30.8
+Table IX
+
+Implementationn of adopted OS ILS according to planned schedule
+	According to planned schedule 	Not according to planned schedule
+Nature of university 	( n ) 	(%) 	( n ) 	(%)
+Public 	1 	20 	4 	80
+Private 	5 	62.5 	3 	37.5
+Total 	6 	46.2 	7 	53.8
+Table X
+
+Main obstacles to ILS implementation
+Obstacle 	Public university libraries 	Private university libraries
+Lack of ICT equipment and enabling infrastructure 	X 	X
+Lengthy procurement procedures due to PPDA legislation 	X 	
+Resistance by procurement and finance department for budgeted expenditure 	X 	
+Time-consuming data entry and conversion 	X 	X
+Staff resistance 		X
+Lack of technical skills 	X 	X
+Table XI
+
+Most frequent source of support for respondents at institutions with an OS ILS
+	Public university 	Private university 		
+Source of support 	( n ) 	(%) 	( n ) 	(%) 	Total ( n ) 	Total (%)
+Through another library 	3 	60 	1 	12.5 	4 	30.8
+Online forums and support groups 	– 	– 	4 	50 	4 	30.8
+Consortium 	1 	20 	1 	12.5 	2 	15.4
+Vendor 	– 	– 	2 	25 	2 	15.4
+Other: unspecified 	1 	20 	– 	– 	1 	7.7
+Total 	5 	100 	8 	100 	13 	100
+Table XII
+
+Librarians’ overall satisfaction with adopted OS ILS by nature of university
+	At public universities 	At private universities 		
+Level of satisfaction 	( n ) 	(%) 	( n ) 	(%) 	Total ( n ) 	Total (%)
+Very satisfied 	– 	– 	4 	50 	4 	30.8
+Satisfied 	1 	20 	3 	37.5 	4 	30.8
+Somewhat satisfied 	4 	80 	1 	12.5 	5 	38.5
+Not satisfied 	– 	– 	– 	– 	– 	–
+Total 	5 	100 	8 	100 	13 	100
+Table XIII
+
+Respondents satisfaction with particular aspects of adopted OS ILS
+		Not satisfied 	Somewhat satisfied 	Satisfied 	Very satisfied
+Aspect 	Respondents 	n 	% 	n 	% 	n 	% 	n 	%
+Managing of print resources 	13 	2 	15.4 	1 	7.7 	8 	61.5 	2 	15.4
+Managing of electronic resources 	12 	4 	33.3 	3 	25.0 	2 	16.7 	3 	25.0
+Meeting the library’s needs 	12 	1 	8.3 	3 	25.0 	6 	50.0 	2 	16.7
+Meeting the users’ needs 	12 	1 	8.3 	5 	41.7 	5 	41.7 	1 	8.3
+Efficiency 	12 	2 	16.7 	1 	8.3 	9 	75.0 	0 	0.0
+Ability of the library to maintain the ILS 	12 	2 	16.7 	4 	33.3 	5 	41.7 	1 	8.3
+Cost of maintenance 	11 	3 	27.3 	1 	9.1 	6 	54.5 	1 	9.1
+Table XIV
+
+Respondents satisfaction with particular aspects of adopted OS ILS by university type
+			Not satisfied 	Somewhat satisfied 	Satisfied 	Very satisfied
+Aspect 	Type 	Respondents 	n 	% 	n 	% 	n 	% 	n 	%
+Meeting the library’s needs 	Public 	5 	1 	20 	2 	40 	2 	40 	0 	0
+	Private 	7 	0 	0 	1 	14.3 	4 	57.1 	2 	28.6
+Ability of the library to maintain the ILS 	Public 	5 	2 	40 	2 	40 	1 	20 	0 	0
+	Private 	7 	0 	0 	2 	28.6 	4 	57.1 	1 	14.3
+Cost of maintenance 	Public 	4 	2 	50 	0 	0 	2 	50 	0 	0
+	Private 	7 	1 	14.3 	1 	14.3 	4 	57.1 	1 	14.3
+Notes
+1.
+
+In their comprehensive review of 345 articles on innovation adoption, acceptance and diffusion, published in 19 top tier peer-reviewed journals in library and information science, management information systems and computer science between 1985 and 2007 Dwivedi et al. (2008) found that 56 theories/models were used. DoI was used second most frequently (16.3 percent) with the Technology Acceptance Model (TAM) used most often (29.2 percent).
+2.
+
+For the purpose of this paper a private university is a university of which the proprietor is a person, firm or organization other than government and is maintained out of funds other than public funds (Universities and Other Tertiary Institutions Act, 2001).
+3.
+
+Although Uganda is a multi-lingual country with more than 40 different languages, English was inherited from the colonial period as the language of government and education.
+4.
+
+The questionnaire is available upon request from the lead author.
+References
+
+Adera Amollo , B. ( 2013 ), “ Feasibility of adaptation of open source ILS for libraries in Kenya: a practical evaluation ”, The Electronic Library , Vol. 31 No. 5 , pp. 608 - 634 .
+
+Amekuedee , J.-O. ( 2005 ), “ An evaluation of library automation in some Ghanaian university libraries ”, The Electronic Library , Vol. 23 No. 4 , pp. 442 - 452 , doi: 10.1108/02640470510611508 .
+
+Ani , O.E. , Esin , J.E. and Edem , N. ( 2005 ), “ Adoption of information and communication technology (ICT) in academic libraries ”, The Electronic Library , Vol. 23 No. 6 , pp. 701 - 708 .
+
+Avgerou , C. ( 2008 ), “ Information systems in developing countries: a critical research review ”, Journal of Information Technology , Vol. 23 No. 3 , pp. 133 - 146 .
+
+Bilal , D. ( 2014 ), Library Automation: Core Concepts and Practical Systems Analysis , Libraries Unlimited , Santa Barbara, CA .
+
+Boss , R.W. ( 2008 ), “ Open source” integrated library system software ”, PLA Tech Notes available at: https://alair.ala.org/bitstream/handle/11213/258/Open%20Source%20ILS%20Software.pdf?sequence=101&isAllowed=y (accessed May 22, 2018 ).
+
+Breeding , M. ( 2008 ), “ The commercial angle ”, Library Technology Reports , Vol. 44 No. 8 , pp. 11 - 16 .
+
+Breeding , M. ( 2009 ), “ The viability of open source ILS ”, Bulletin of the American Society for Information Science and Technology , Vol. 35 No. 2 , pp. 20 - 25 .
+
+Breeding , M. ( 2014 ), “ Library systems report 2014 ”, American Libraries, May , pp. 21 - 33 .
+
+Breeding , M. ( 2016 ), “ Perceptions 2015: an international survey of library automation [online] ”, Library Technology Guides, available at: http://librarytechnology.org/perceptions/2015/ (accessed May 22, 2018 ).
+
+Burnett , P. ( 2013 ), Challenges and Problems of Library and Information Science Education in Selected African Countries , IFLA World Library and Information Congress (WLIC), June 30, available at: http://library.ifla.org/175/1/199-burnett-en.pdf (accessed May 22, 2018 ).
+
+Buwule , R.S. and Ponelis , S.R. ( 2017 ), “ Perspectives on university library automation and national development in Uganda ”, IFLA Journal , Vol. 43 No. 3 , pp. 256 - 265 , doi: 10.1177/0340035217710539 .
+
+Dimant , N. ( 2010 ), “ Breaking the barriers: the role of support companies in making open source a reality ”, Library Review , Vol. 59 No. 9 , pp. 662 - 666 .
+
+Dwivedi , Y. , Williams , M.D. , Lal , B. and Schwarz , A. ( 2008 ), “ Profiling adoption, acceptance and diffusion research in the information systems discipline ”, Proceedings of the 16th European Conference on Information Systems , Galway , 9-11 June .
+
+Egunjobi , R.A. and Awoyemi , R.A. ( 2012 ), “ Library automation with Koha ”, Library Hi Tech News , Vol. 29 No. 3 , pp. 12 - 15 .
+
+EIFL ( 2012 ), “ The EIFL newsletter ”, November/December 2012, No. 60, available at: www.eifl.net/sites/default/files/resources/201505/eifl_newsletter_60.pdf (accessed May 22, 2018 ).
+
+Emmanuel , G. and Sife , A. ( 2008 ), “ Challenges of managing information and communication technologies for education: experiences from Sokoine National Agricultural Library ”, International Journal of Education and Development using Information and Communication Technology (IJEDICT) , Vol. 4 No. 3 , pp. 137 - 142 .
+
+Gireesh Kumar , T.K. and Jayapradeep , M. ( 2015 ), “ Perceptions of LIS professionals on open source integrated library system and adoptability of Koha over LibSys in India ”, International Journal of Information Dissemination and Technology , Vol. 5 No. 2 , pp. 100 - 105 .
+
+Goodhue , D.L. and Thompson , R.L. ( 1995 ), “ Task-technology fit and individual performance ”, MIS Quarterly , Vol. 19 No. 2 , pp. 213 - 236 .
+
+Greenberg , A. and Versluis , G. ( 2005 ), “ SIDA supported ICT project at Makerere University in Uganda ”, available at: www.sida.se/globalassets/global/partners/universities-and-researchers/assisting-makerere-university-in-uganda.pdf (accessed May 22, 2018 ).
+
+Hopkinson , A. ( 2009 ), “ Library automation in developing countries: the last 25 years ”, Information Development , Vol. 25 No. 4 , pp. 304 - 312 .
+
+Ikoja , R. ( 2004 ), “ Nakaseke multipurpose community telecentre and library ”, in Chisenga , J. (Ed.), The Use of ICTs in African Public Libraries: A Survey of Ten Countries in Anglophone Africa , International Network for the Availability of Scientific Publications (INASP) , Oxford , pp. 108 - 110 .
+
+Jibia , M.S. , Mubaraka , C.M. and Odie , M. ( 2013 ), “ Integrating ICT in library management: design and development of an automated library management system for Cavendish university Uganda ”, Innovative Systems Design and Engineering , Vol. 4 No. 5 , pp. 1 - 11 , available at: www.iiste.org/Journals/index.php/ISDE/article/viewFile/5530/5644
+
+Kumar , V. and Abraham , T. ( n.d. ), “ Eight things you should know about open source integrated library systems ”, available at: http://eprints.rclis.org/13858/1/20.pdf (accessed May 22, 2018 ).
+
+Lor , P.J. ( 2014 ), “ Understanding innovation, policy transfer and policy borrowing: implications for LIS in Africa ”, 7th Annual Public Lecture on African Librarianship in the 21st Century, University of South Africa, Pretoria, 22 May, available at: https://pjlor.files.wordpress.com/2014/06/understanding-innovation.pdf (accessed May 22, 2018 ).
+
+Macan , B. , Fernández , G.V. and Stojanovski , J. ( 2013 ), “ Open source solutions for libraries: ABCD vs Koha ”, Program , Vol. 47 No. 2 , pp. 136 - 154 .
+
+Minishi-Majanja , M.K. and Kiplang’at , J. ( 2005 ), “ The diffusion of innovations theory as a theoretical framework in library and information science research: research article ”, South African Journal of Libraries and Information Science , Vol. 71 No. 3 , pp. 211 - 224 .
+
+Mulimila , R. ( 2000 ), “ Information technology applications in East Africa government-owned university libraries ”, Library Review , Vol. 49 No. 4 , pp. 186 - 192 .
+
+Müller , T. ( 2010 ), “ How to choose a free and open source integrated library system ”, OCLC Systems & Services: International Digital Library Perspectives , Vol. 27 No. 1 , pp. 57 - 78 .
+
+Mutula , S.M. ( 2012 ), “ Library automation in sub Saharan Africa: case study of the University of Botswana ”, Program: Electronic Library and Information Systems , Vol. 46 No. 3 , pp. 292 - 307 .
+
+National Council for Higher Education ( 2015 ), “ Institutions [online] ”, available at: www.unche.or.ug/institutions (accessed May 22, 2018 ).
+
+Negash , S. , Anteneh , S. and Watson , R.T. ( 2012 ), “ A PhD in information systems for emerging economies: the Addis Ababa University model ”, Information Technology for Development , Vol. 18 No. 3 , pp. 270 - 276 .
+
+Okello-Obura , C. and Kigongo-Bukenya , I.M.N. ( 2011 ), “ Library and information science education and training in Uganda: trends, challenges, and the way forward ”, Education Research International , available at: www.hindawi.com/journals/edri/2011/705372/ref/ (accessed May 22, 2018 ).
+
+Omeluzor , S.U. , Adara , O. , Ezinwayi , M. , Bamidele , A.I. and Umahi , F.O. ( 2012 ), “ Implementation of Koha integrated library management software (ILMS): the Babcock university experience ”, Canadian Social Science , Vol. 8 No. 4 , pp. 211 - 221 .
+
+Ondari-Okemwa , E. ( 1999 ), “ Managing a library automation project: the Moi University experience ”, Library Management , Vol. 20 No. 4 , pp. 228 - 234 .
+
+Philip , K. , Irani , L. and Dourish , P. ( 2012 ), “ Postcolonial Computing: A Tactical Survey ”, Science, Technology, & Human Values , Vol. 37 No. 1 , pp. 3 - 29 .
+
+Pruett , J. and Choi , N. ( 2013 ), “ A comparison between select open source and proprietary integrated library systems ”, Library Hi Tech , Vol. 31 No. 3 , pp. 435 - 454 .
+
+Raju , R. , Moodley , S.R. , Jagarnath , O. , Chetty , S. , Shongwe , B. and Raju , J. ( 2007 ), “ The migration of integrated library systems with special reference to the rollout of Unicorn in the province of KZN ”, South African Journal Libraries & Information Science , Vol. 73 No. 2 , pp. 168 - 179 .
+
+Rogers , E.M. ( 2003 ), Diffusion of Innovations , 5th ed. , Free Press , New York, NY .
+
+Sager , C. and Walterson , K. ( 2005 ), “ Into an electronic era: a case study of the automation at Makerere University Library, Kampala, Uganda, University College of Borås ”, Swedish School of Library and Information Science (SSLIS), available at: http://bada.hb.se/bitstream/2320/1392/1/05-113.pdf (accessed May 22, 2018 ).
+
+Singh , M. and Sanaman , G. ( 2012 ), “ Open source integrated library management systems: comparative analysis of Koha and NewGenLib ”, The Electronic Library , Vol. 30 No. 6 , pp. 809 - 832 .
+
+Singh , V. ( 2013a ), “ Experiences of migrating to an open source integrated library systems ”, Information Technology and Libraries , Vol. 32 No. 1 , pp. 36 - 53 .
+
+Singh , V. ( 2013b ), “ Why migrate to an open source ILS? Librarians with adoption experience share their reasons and experiences ”, Libri , Vol. 63 No. 3 , pp. 206 - 219 .
+
+Singh , V. ( n.d ), Comparison of Technical Support for Open Source Software Versus Proprietary Software , University of Tennessee , Knoxville, TN , available at: www.asis.org/asist2010/proceedings/proceedings/ASIST_AM10/submissions/437_Final_Submission.pdf (accessed May 22, 2018 ).
+
+Stilwell , C. and Hoskins , R. ( 2012 ), “ Integrated library management systems: a review of choices made and their sustainability in South Africa ”, Information Development , Vol. 29 No. 2 , pp. 154 - 171 .
+
+Tickodri-Togboa , S.S. ( 2016 ), Why White Paper on Omaswa Report? , available at: www.facebook.com/permalink.php?story_fbid=1044052002340158&id=553727154705981 (accessed May 22, 2018 ).
+
+Tjan , A.K. ( 2001 ), “ Finally, a way to put your internet portfolio in order ”, Harvard Business Review , Vol. 79 No. 2 , pp. 76 - 85 .
+
+Uzomba , E.C. , Jesudunni , O.O. and Izuchukwu , A.C. ( 2015 ), “ The use and application of open source integrated library system in academic libraries in Nigeria: Koha example ”, Library Philosophy and Practice , available at: http://digitalcommons.unl.edu/libphilprac/1250 (accessed May 22, 2018 ).
+
+Webber , D. and Peters , A. ( 2010 ), Integrated Library Systems: Planning Selecting and Implementing , Libraries Unlimited , Santa Barbara, CA .
+
+World Summit on the Information Society ( 2003 ), “ WSIS declaration of principles: building the information society: a global challenge in the new millennium ”, (WSIS-03/GENEVA/DOC/4-E), Geneva, December 12, available at: www.itu.int/net/wsis/docs/geneva/official/dop.html (accessed May 22, 2018 ).
+Further reading
+
+IFLA ( 2014 ), “ Lyon declaration on access to information and development ”, IFLA Journal , Vol. 40 No. 4 , pp. 240 - 241 .
+
+Mulindwa , G.K. ( 2010 ), “ Management of national libraries in Africa: a case of Uganda ”, Library Management , Vol. 31 No. 6 , pp. 427 - 439 .
+
+Musoke , M.G. ( 2008 ), “ Strategies for addressing the university library users’ changing needs and practices in Sub-Saharan Africa ”, The Journal of Academic Librarianship , Vol. 34 No. 6 , pp. 532 - 538 .
+
+Republic of Uganda ( 2013 ), Uganda Vision 2040 , National Planning Authority , Kampala .
+
+Rosenberg , D. ( 1998 ), “ IT and university libraries in Africa ”, Internet Research , Vol. 8 No. 1 , pp. 5 - 13 .
+Acknowledgements
+
+The authors express their thanks to all the librarians who were willing and able to take the time to complete the questionnaire and to share their thoughts and experiences regarding OS ILS in general and in their institutions in particular. Limited initial results from this study were presented at the IFLA 2015 IT Section Satellite Meeting “Transforming libraries with open digital technologies”, Stellenbosch, South Africa, August 13-14, 2015.
+Corresponding author
+Shana Rachel Ponelis can be contacted at: ponelis@uwm.edu
+Emerald Publishing
+
+    Opens in new window
+    Opens in new window
+    Opens in new window
+    Opens in new window
+
+© 2020 Emerald Publishing Limited
+Services
+
+    Authors Opens in new window
+    Editors Opens in new window
+    Librarians Opens in new window
+    Researchers Opens in new window
+    Reviewers Opens in new window
+
+About
+
+    About Emerald Opens in new window
+    Working for Emerald Opens in new window
+    Contact us Opens in new window
+    Publication Sitemap
+
+Policies and information
+
+    Privacy notice
+    Site policies
+    Modern Slavery Act Opens in new window
+
+We use cookies to enhance your online experience. By continuing to browse this site, you agree to accept them in accordance with our cookie policy .
+I agree
+×
+Share feedback
+We’re listening — tell us what you think
+
+    Something didn’t work…
+
+    Report bugs here
+    All feedback is valuable
+
+    Please share your general feedback
+    Member of Emerald’s Library Advisory Network?
+
+    You can start or join in a discussion here .
+    If you’d like to know more about The Network, please email us
+
+Join us on our journey
+
+    Platform update page
+
+    Visit emeraldpublishing.com/platformupdate to discover the latest news and updates
+    Frequently Asked Questions
+
+    Your questions answered here
+

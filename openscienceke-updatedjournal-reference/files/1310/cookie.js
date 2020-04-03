@@ -1,0 +1,1 @@
+_gfp_s_({"_cookies_":[{"_value_":"ID=84a534a5bd398b9e:T=1583831163:S=ALNI_MYNSKOBZ5fYOnndsfa4c0NL9PRUwg","_expires_":1646903163,"_path_":"/","_domain_":"learntechlib.org"}]});
