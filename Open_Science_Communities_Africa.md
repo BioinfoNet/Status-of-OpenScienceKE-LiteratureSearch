@@ -1,0 +1,3 @@
+Organization| what they do| Lead| Location| Contact| Website| Social Media
+---|---|---|---|---|---|---
+OpenScienceKE | Sensitizing and promoting open, reproducible and collaborative Bioinformatics research among researchers, graduate students and highly motivated undergraduate students in local universities within Nairobi | [Dr. Caleb Kibet](https://twitter.com/Calkibet) | Nairobi, Kenya | <ul><li> Email: kenyabioinformaticsnetwork@gmail.com </li><li> Twitter: [@OpenKe](https://twitter.com/OpenKe)</li></ul>| https://bioinfonet.github.io/OpenScienceKE/ | <ul><li> Twitter: [@OpenKe](https://twitter.com/OpenKe)</li></ul>
