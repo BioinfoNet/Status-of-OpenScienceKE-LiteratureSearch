@@ -124,7 +124,21 @@ While we could not find a poll survey on the uptake of open-science and the gene
 
 
 # Social Media
+Since 2010 open access to research has expounded through workshops, seminars and conference targeting researchers, professionals and early career academic students. Social media has become a place of sharing information regarding open access to scientific data. The platform has been used to create awareness on open-science through posting of links that help researchers get access to research materials.
 
+Therefore, realizing the potential of open approaches to publish and access information will help to generate scientific knowledge through collaborative efforts. These collaborations will help to explore new ideas jointly and facilitate co-designing and co-producing research while making sure that all user are involved in the process.
+
+Several workshops have been conducted by different organizations to help people understand open science and why it is important. This workshops are made available to people through social media sites such as twitter, face book and google plus. Medical student association of Kenya carried out an open access workshop. The workshop targeted medical students from university of Nairobi, Kenyatta university, Moi university and Egerton university. http://uonlibrary.uonbi.ac.ke/node/1052
+
+It was suggested that there should be a connection between libraries and publishers which will aid in reducing the publishing costs and in turn enable many researchers to make their research fellows accessible to fellow researchers. The connection was able to recognize the difficulties such as navigating the complex process of applying to waivers offered by different journals research face in understanding various open access options
+
+Lilian Juma a blogger uses face book to advocate open science through her guest blog post where she defines open access as movement and for the movement’s impact to be felt, solidarity amongst individuals and institutions is crucial. She says, “I guess there is always a first time for everything, just like how open access was Greek to me the first time I came across it”
+
+The blogger carried out a conference which played a great role in disseminating open research among scientists and researchers. Open science therefore seeks to bring together the most capable, motivated students and early career academic professionals from around the world to advance Open Access, Open Education, and Open Data. The conference made her embrace open science despite the challenges she encountered. https://ocsdnet.org/my-journey-as-opencon-organizer-in-nairobi-advocating-for-open-access-open-data-and-open-education/
+
+In Kenya, a majority of the population, including professors, have no idea of what Open Access. Therefore, it would be of need to have post conference transition, which includes a chain of initiatives targeting undergraduate, Masters and PhD students’ clubs and associations as well as non-governmental organizations and government departments. The majority of these people are actively involved in research, and have the potential to share their research to facilitate faster scientific discoveries regarding Kenya’s challenges thereby encouraging open science.
+
+Social media provides a platform where researchers can be able to access Kenya journals that are free and relevant to their studies through links provided by the platforms. http://kenyajournals.com/List%20of%20Journals.htm.
 
 
 # News Articles
