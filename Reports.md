@@ -20,11 +20,10 @@ allintitle:kenya("Open data"|"open science"|"open source"|"open access"|"open pe
 review"|"open science"|"open review"|"open notebooks"|"open educational
 resources"|"scientific social network")
 ```
-You get **_89 artices_** that mention **_kenya and any of the other words_** in
+You get **_128 items_** that mention **_kenya and any of the other words_** in
 the title.
 
-Includes citations and patents (there are no patents eitherway) which can be easily excluded to
-remain with **_61 articles_**.
+Includes citations and patents (there were no patents eitherway) which can be easily excluded by unchecking in a checkbox to remain with **_94 articles_**.
 
 The results can be found on this [**Google Scholar search
 results**](https://scholar.google.com/scholar?start=40&q=allintitle:+kenya\(%22Open+data%22%7C%22open+science%22%7C%22open+source%22%7C%22open+access%22%7C%22open+peer+review%22%7C%22open+science%22%7C%22open+review%22%7C%22open+notebooks%22%7C%22open+educational+resources%22%7C%22scientific+social+network%22\)&hl=en&as_sdt=0,5)
@@ -40,19 +39,15 @@ allintitle:africa("Open data"|"open science"|"open source"|"open
 access"|"open peer review"|"open science"|"open review"|"open notebooks"|"open
 educational resources"|"scientific social network")
 ```
-There over **_271 results_** of articles with **_africa_** and the keywords in their
-titles (186 results when citations and patents are excluded) [**Google search results for
-Africa**](https://scholar.google.com/scholar?hl=en&as_sdt=0%2C5&q=allintitle%3Aafrica%28%22Open+data%22%7C%22open+science%22%7C%22open+source%22%7C%22open+access%22%7C%22open+peer+review%22%7C%22open+science%22%7C%22open+review%22%7C%22open+notebooks%22%7C%22open+educational+resources%22%7C%22scientific+social+network%22%29&btnG=)
+There over **_339 results_** of articles with **_africa_** and the keywords in their titles (186 results when citations and patents are excluded) [**Google search results for Africa**](https://scholar.google.com/scholar?hl=en&as_sdt=0%2C5&q=allintitle%3Aafrica%28%22Open+data%22%7C%22open+science%22%7C%22open+source%22%7C%22open+access%22%7C%22open+peer+review%22%7C%22open+science%22%7C%22open+review%22%7C%22open+notebooks%22%7C%22open+educational+resources%22%7C%22scientific+social+network%22%29&btnG=)
 
-Futher refined results from africa that exclude any titles with **_South Africa_** in
-it
+Futher refined results from africa that exclude any titles with **_South Africa_** in it
 ```
 allintitle:africa("Open data"|"open science"|"open source"|"open access"|"open
 peer review"|"open science"|"open review"|"open notebooks"|"open educational
 resources"|"scientific social network") -"south africa"
 ```
-Returns [126
-results for a search of **_Africa excluding South Africa_**](https://scholar.google.com/scholar?hl=en&as_sdt=0%2C5&as_vis=1&q=allintitle%3Aafrica%28%22Open+data%22%7C%22open+science%22%7C%22open+source%22%7C%22open+access%22%7C%22open+peer+review%22%7C%22open+science%22%7C%22open+review%22%7C%22open+notebooks%22%7C%22open+educational+resources%22%7C%22scientific+social+network%22%29+-%22south+africa%22&btnG=)
+Returns [151 results for a search of **_Africa excluding South Africa_**](https://scholar.google.com/scholar?hl=en&as_sdt=0%2C5&as_vis=1&q=allintitle%3Aafrica%28%22Open+data%22%7C%22open+science%22%7C%22open+source%22%7C%22open+access%22%7C%22open+peer+review%22%7C%22open+science%22%7C%22open+review%22%7C%22open+notebooks%22%7C%22open+educational+resources%22%7C%22scientific+social+network%22%29+-%22south+africa%22&btnG=)
 
 ## What has been published about Open Science in Kenya.
 
